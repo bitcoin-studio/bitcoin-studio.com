@@ -85,12 +85,16 @@ class WorkshopPreRegistration extends React.Component {
             <p>In this course we will study the Bitcoin protocol quite in-depth and various other aspects like its
               historical context, the broader ecosystem, the socio-economic
               implications, the governance of open source decentralized systems, etc. You will also learn all the
-              specific
-              concepts and vocabulary used in this technology.
+              specific concepts and vocabulary used in this technology.
               Designed with an academic approach, we will alternate between theory and code practice (command line, Javascript, Python).
               This training will allow you to deeply understand and evaluate
               blockchain protocols and will provide you a solid basis to work on Bitcoin or on any blockchain.
             </p>
+
+            <p>Bitcoin In-depth is primarily intended to developers. Together we will explore the scripting language and Lightning Network. Focusing on the new Segregated Witness transaction format, we will learn how to construct regular transactions, P2WSH smart contracts, multi-signatures and timelock transactions; composing raw transactions and using Javascript libraries.
+              Attendees are expected to master the main aspects of Bitcoin, otherwise it is recommended to take the Bitcoin Essentials course before. Also, in order to make sure that this course suits you well, you will have a small interview with our team.
+            </p>
+
             <p>
               After this course, you’ll know everything you need to be able to separate fact from fiction when reading
               claims about Bitcoin and other cryptocurrencies. You’ll have the conceptual foundations you need, and
@@ -98,7 +102,7 @@ class WorkshopPreRegistration extends React.Component {
             </p>
 
             <h3>Public and Prerequisite</h3>
-            <p>This course is intended to individuals that needs a deep-dive in Bitcoin protocols. Ideal if you already have a project, a business idea, or simply the strong desire to learn Bitcoin seriously.</p>
+            <p>This course is intended to individuals that needs a deep-dive into Bitcoin protocols. Ideal if you already have a project, a business idea, or simply the strong desire to learn Bitcoin seriously.</p>
 
             <h3>Programme</h3>
             <p>

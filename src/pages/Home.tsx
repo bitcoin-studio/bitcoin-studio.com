@@ -10,6 +10,7 @@ class Home extends React.Component {
           <div className={'box'}>
             <p>Bitcoin expertise ...and more</p>
             <p>Extensive knowledge on blockchain tech</p>
+            <p>A network of real experts</p>
           </div>
 
           <h2>Services</h2>
@@ -26,7 +27,7 @@ class Home extends React.Component {
             <li>Consulting for companies</li>
             <li>Private consulting for individuals</li>
             <li>Custom Bitcoin development (layer 1, layer 2)</li>
-            <li>Bitcoin server/node installation</li>
+            <li>Bitcoin server / node installation / Node as a service</li>
           </ul>
         </div>
       </div>
