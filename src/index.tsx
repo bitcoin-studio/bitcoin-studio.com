@@ -1,8 +1,15 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import './global.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+
+import 'normalize.css/normalize.css'
+import '@blueprintjs/icons/lib/css/blueprint-icons.css'
+import '@blueprintjs/core/lib/css/blueprint.css'
+import './global.css';
+import 'flexboxgrid/css/flexboxgrid.css'
+
+import App from './components/App';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

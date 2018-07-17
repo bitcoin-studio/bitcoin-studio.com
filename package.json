@@ -7,6 +7,9 @@
     "fuse-box-react-scripts-ts": "3.0.80"
   },
   "dependencies": {
+    "@blueprintjs/core": "^3.0.1",
+    "flexboxgrid": "^6.3.1",
+    "fuse-react": "^1.0.14",
     "react": "^16.4.1",
     "react-dom": "^16.4.1"
   },
