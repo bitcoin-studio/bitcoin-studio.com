@@ -1,4 +1,5 @@
 import * as React from 'react'
+import {FormWorkshop} from '../components/FormWorkshop'
 
 class WorkshopPreRegistration extends React.Component {
   render() {
@@ -65,9 +66,12 @@ class WorkshopPreRegistration extends React.Component {
 
             <h3>Public and Prerequisite</h3>
             <p>This workshop is intended to curious people wanting to better understand Bitcoin and blockchain
-              technology. This workshop is technical but should stay accessible as long as you have a basic understanding of
-              computer science. It is intended to all individuals wishing to deepen their knowledge of Bitcoin and blockchain
-              technology, either you are a developer, product manager, attorney, designer, builder, entrepreneur, etc.</p>
+              technology. This workshop is technical but should stay accessible as long as you have a basic
+              understanding of
+              computer science. It is intended to all individuals wishing to deepen their knowledge of Bitcoin and
+              blockchain
+              technology, either you are a developer, product manager, attorney, designer, builder, entrepreneur,
+              etc.</p>
             <h3>Programme</h3>
             <p>Focus on the essentials</p>
           </div>
@@ -86,13 +90,19 @@ class WorkshopPreRegistration extends React.Component {
               historical context, the broader ecosystem, the socio-economic
               implications, the governance of open source decentralized systems, etc. You will also learn all the
               specific concepts and vocabulary used in this technology.
-              Designed with an academic approach, we will alternate between theory and code practice (command line, Javascript, Python).
+              Designed with an academic approach, we will alternate between theory and code practice (command line,
+              Javascript, Python).
               This training will allow you to deeply understand and evaluate
               blockchain protocols and will provide you a solid basis to work on Bitcoin or on any blockchain.
             </p>
 
-            <p>Bitcoin In-depth is primarily intended to developers. Together we will explore the scripting language and Lightning Network. Focusing on the new Segregated Witness transaction format, we will learn how to construct regular transactions, P2WSH smart contracts, multi-signatures and timelock transactions; composing raw transactions and using Javascript libraries.
-              Attendees are expected to master the main aspects of Bitcoin, otherwise it is recommended to take the Bitcoin Essentials course before. Also, in order to make sure that this course suits you well, you will have a small interview with our team.
+            <p>Bitcoin In-depth is primarily intended to developers. Together we will explore the scripting language and
+              Lightning Network. Focusing on the new Segregated Witness transaction format, we will learn how to
+              construct regular transactions, P2WSH smart contracts, multi-signatures and timelock transactions;
+              composing raw transactions and using Javascript libraries.
+              Attendees are expected to master the main aspects of Bitcoin, otherwise it is recommended to take the
+              Bitcoin Essentials course before. Also, in order to make sure that this course suits you well, you will
+              have a small interview with our team.
             </p>
 
             <p>
@@ -102,79 +112,79 @@ class WorkshopPreRegistration extends React.Component {
             </p>
 
             <h3>Public and Prerequisite</h3>
-            <p>This course is intended to individuals that needs a deep-dive into Bitcoin protocols. Ideal if you already have a project, a business idea, or simply the strong desire to learn Bitcoin seriously.</p>
+            <p>This course is intended to individuals that needs a deep-dive into Bitcoin protocols. Ideal if you
+              already have a project, a business idea, or simply the strong desire to learn Bitcoin seriously.</p>
 
             <h3>Programme</h3>
-            <p>
-              <ul>
-                General background
-                <li>Emergence of cryptography</li>
-                <li>The Cypherpunks movement</li>
-                <li>Internet</li>
-                <li>Blockchain ecosystem</li>
-              </ul>
+            <ul>
+              General background
+              <li>Emergence of cryptography</li>
+              <li>The Cypherpunks movement</li>
+              <li>Internet</li>
+              <li>Blockchain ecosystem</li>
+            </ul>
 
-              <ul>
-                Bitcoin background
-                <li>Project history</li>
-                <li>Block size debate</li>
-                <li>Main Core developers</li>
-                <li>Ecosystem</li>
-                <li>Governance model</li>
-              </ul>
+            <ul>
+              Bitcoin background
+              <li>Project history</li>
+              <li>Block size debate</li>
+              <li>Main Core developers</li>
+              <li>Ecosystem</li>
+              <li>Governance model</li>
+            </ul>
 
-              <ul>
-                Cryptography 101
-                <li>General cryptography concepts</li>
-                <li>Symmetrical and asymmetrical encryption</li>
-                <li>Digital signatures</li>
-                <li>Hash functions</li>
-                <li>Merkle trees, …</li>
-              </ul>
+            <ul>
+              Cryptography 101
+              <li>General cryptography concepts</li>
+              <li>Symmetrical and asymmetrical encryption</li>
+              <li>Digital signatures</li>
+              <li>Hash functions</li>
+              <li>Merkle trees, …</li>
+            </ul>
 
-              <ul>
-                P2P network
-                <li>Topology</li>
-                <li>Different types of node</li>
-              </ul>
+            <ul>
+              P2P network
+              <li>Topology</li>
+              <li>Different types of node</li>
+            </ul>
 
-              <ul>
-                Mining, consensus and forks
-                <li>Proof of Work</li>
-                <li>Blockchain mechanisms</li>
-              </ul>
+            <ul>
+              Mining, consensus and forks
+              <li>Proof of Work</li>
+              <li>Blockchain mechanisms</li>
+            </ul>
 
-              <ul>
-                Wallets, keys and addresses
-                <li>Elliptic curve digital signature algorithm (ECDSA)</li>
-                <li>Bitcoin address</li>
-                <li>HD wallets</li>
-                <li>Mnemonic backup</li>
-              </ul>
+            <ul>
+              Wallets, keys and addresses
+              <li>Elliptic curve digital signature algorithm (ECDSA)</li>
+              <li>Bitcoin address</li>
+              <li>HD wallets</li>
+              <li>Mnemonic backup</li>
+            </ul>
 
-              <ul>
-                Transactions
-                <li>Structure (input, output, witness)</li>
-                <li>Signing and verification</li>
-                <li>Different types (regular, smart contracts)</li>
-                <li>Different versions (legacy, Segwit nested in legacy, native Segwit)</li>
-                <li>Data recording output (colored coins)</li>
-              </ul>
+            <ul>
+              Transactions
+              <li>Structure (input, output, witness)</li>
+              <li>Signing and verification</li>
+              <li>Different types (regular, smart contracts)</li>
+              <li>Different versions (legacy, Segwit nested in legacy, native Segwit)</li>
+              <li>Data recording output (colored coins)</li>
+            </ul>
 
-              <ul>
-                Advanced scripting and transactions
-                <li>Main language opcodes</li>
-                <li>P2WSH smart contracts</li>
-                <li>Multi-signatures</li>
-                <li>Timelocks</li>
-                <li>Payment channels (Lightning Network)</li>
-              </ul>
-            </p>
+            <ul>
+              Advanced scripting and transactions
+              <li>Main language opcodes</li>
+              <li>P2WSH smart contracts</li>
+              <li>Multi-signatures</li>
+              <li>Timelocks</li>
+              <li>Payment channels (Lightning Network)</li>
+            </ul>
           </div>
 
           &nbsp;
 
           <h3>Form. BTCpay server / fiat</h3>
+          <FormWorkshop/>
         </div>
       </div>
     )
