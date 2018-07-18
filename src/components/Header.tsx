@@ -7,7 +7,7 @@ class Header extends React.Component {
     return (
       <Navbar>
         <Navbar.Group align="left">
-          <Navbar.Heading>D10e Consulting</NavbarHeading>
+          <Navbar.Heading>D10e Consulting</Navbar.Heading>
           <Navbar.Divider/>
           <Button className="bp3-minimal" icon="home" onClick={() => navigate('/')} text="Home"/>
           <Button className="bp3-minimal" icon="document" onClick={() => navigate('/services')} text="Services"/>
