@@ -61,7 +61,10 @@ exports.initBuilder = function ({
         isProduction &&
         !component &&
         !componentdocs &&
-        QuantumPlugin({removeExportsInterop: false, uglify: true}),
+        QuantumPlugin({
+          removeExportsInterop: false,
+          uglify: false,
+        }),
       ],
     })
     if (componentdocs) {
