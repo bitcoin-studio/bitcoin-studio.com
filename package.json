@@ -4,7 +4,13 @@
   "private": true,
   "devDependencies": {
     "fuse-box-react-scripts": "3.0.80",
-    "fuse-box-react-scripts-ts": "3.0.80"
+    "fuse-box-react-scripts-ts": "3.0.80",
+    "@storybook/react": "^3.4.8",
+    "@storybook/addon-actions": "^3.4.8",
+    "@storybook/addon-links": "^3.4.8",
+    "@storybook/addons": "^3.4.8",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0"
   },
   "dependencies": {
     "@blueprintjs/core": "^3.0.1",
@@ -21,7 +27,9 @@
     "build": "fuse-box-react-scripts build",
     "test": "fuse-box-react-scripts test --env=jsdom",
     "eject": "fuse-box-react-scripts eject",
-    "ejectconfig": "fuse-box-react-scripts ejectconfig"
+    "ejectconfig": "fuse-box-react-scripts ejectconfig",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "browserslist": {
     "development": [
