@@ -1,3 +1,4 @@
+console.log('process.env.NODE_ENV:', process.env.NODE_ENV)
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import App from './App';

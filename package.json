@@ -26,6 +26,7 @@
     "start": "fuse-box-react-scripts start",
     "build": "fuse-box-react-scripts build",
     "test": "fuse-box-react-scripts test --env=jsdom",
+    "test:debug": "fuse-box-react-scripts --inspect-brk test --runInBand --env=jsdom",
     "eject": "fuse-box-react-scripts eject",
     "ejectconfig": "fuse-box-react-scripts ejectconfig",
     "storybook": "start-storybook -p 6006",

@@ -2,8 +2,6 @@ import * as React from 'react'
 import {FormWorkshop} from '../components/FormWorkshop'
 import bitcoin_essentials from '../img/bitcoin_essentials.png'
 
-//var bitcoin_essentials = require('../img/bitcoin_essentials.png');
-
 class WorkshopPreRegistration extends React.Component {
   render() {
     return (
