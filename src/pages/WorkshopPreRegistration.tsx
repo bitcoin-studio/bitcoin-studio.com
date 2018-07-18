@@ -1,13 +1,17 @@
 import * as React from 'react'
 import {FormWorkshop} from '../components/FormWorkshop'
+import bitcoin_essentials from '../img/bitcoin_essentials.png'
+
+//var bitcoin_essentials = require('../img/bitcoin_essentials.png');
 
 class WorkshopPreRegistration extends React.Component {
   render() {
     return (
-      <div className="row">
-        <div className={'col-xs-10 col-xs-offset-1'}>
-          <h1>Workshop Pre-registration</h1>
-          <div className="tease">
+      <div>
+        <h1>Workshop Pre-registration</h1>
+
+        <div className="row tease">
+          <div className="col-xs">
             <p>25% off</p>
             <p>Sign Up!</p>
             <p>3 tickets for 2</p>
@@ -35,11 +39,18 @@ class WorkshopPreRegistration extends React.Component {
               smart-contract functionality. Finally, Lightning Network, the new micropayment feature, should bring
               tremendous new business opportunities.</p>
           </div>
+        </div>
 
-          &nbsp;
-          &nbsp;
+        &nbsp;
+        &nbsp;
 
-          <div>
+        <img className="col-xs" src={bitcoin_essentials} alt="bitcoin essential flyer"/>
+
+        &nbsp;
+        &nbsp;
+
+        <div className="offers">
+          <div className={''}>
             <h2>Practical: Bitcoin workshop 1 day</h2>
             <h3>Price</h3>
             <p>100€ inc. VAT. Satisfied or refunded</p>
@@ -180,12 +191,12 @@ class WorkshopPreRegistration extends React.Component {
               <li>Payment channels (Lightning Network)</li>
             </ul>
           </div>
-
-          &nbsp;
-
-          <h3>Form. BTCpay server / fiat</h3>
-          <FormWorkshop/>
         </div>
+
+        &nbsp;
+
+        <h3>Form. BTCpay server / fiat</h3>
+        <FormWorkshop/>
       </div>
     )
   }

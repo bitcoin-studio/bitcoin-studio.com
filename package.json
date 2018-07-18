@@ -9,6 +9,7 @@
   "dependencies": {
     "@blueprintjs/core": "^3.0.1",
     "@blueprintjs/docs-theme": "^3.0.1",
+    "@blueprintjs/select": "^3.0.0",
     "flexboxgrid": "^6.3.1",
     "fuse-react": "^1.0.14",
     "react": "^16.4.1",
@@ -35,6 +36,6 @@
     ]
   },
   "directories": {
-    "config": "node_modules/fuse-box-react-scripts-ts/config"
+    "config": "config"
   }
 }
