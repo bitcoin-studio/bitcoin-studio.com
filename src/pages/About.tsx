@@ -13,7 +13,8 @@ class About extends React.Component {
             I founded D10e Consulting to offer blockchain technical trainings (Bitcoin, Ethereum and a variety of
             related topics) and application development on Bitcoin and Ethereum.
           </p>
-          <p>
+
+          <div>
             <ul>
               <li>I start working on Bitcoin in 2015 at the Hardware wallet company Ledger.</li>
               <li>Worked on Ethereum in 2016 - mid-2017</li>
@@ -27,7 +28,7 @@ class About extends React.Component {
               <li>Bitcoin Workshops (Practical, Essentials, In-depth)</li>
               <li>Bitcoin development</li>
             </ul>
-          </p>
+          </div>
           <p>Contact form</p>
         </div>
       </div>
