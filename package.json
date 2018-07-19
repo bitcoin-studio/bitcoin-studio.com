@@ -23,7 +23,7 @@
     "react-dom": "^16.4.1"
   },
   "scripts": {
-    "dev": "fuse-box-react-scripts start",
+    "start": "fuse-box-react-scripts start",
     "build": "fuse-box-react-scripts build",
     "test": "fuse-box-react-scripts test --env=jsdom",
     "test:debug": "fuse-box-react-scripts --inspect-brk test --runInBand --env=jsdom",
