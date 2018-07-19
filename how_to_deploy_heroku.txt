@@ -1,0 +1,6 @@
+I used this https://github.com/mars/create-react-app-buildpack
+
+So basically just this command:
+$ heroku create d10econsulting --buildpack https://github.com/mars/create-react-app-buildpack.git
+
+Then commit, push, it's live!
