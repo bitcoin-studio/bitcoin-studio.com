@@ -1016,7 +1016,7 @@ if (FuseBox.isServer) {
 });
 return ___scope___.entry = "index.js";
 });
-FuseBox.import("fusebox-hot-reload").connect(3000, "", false)
+FuseBox.import("fusebox-hot-reload").connect(5000, "", false)
 FuseBox.target = "browser"
 
 FuseBox.import("default/index.jsx");
