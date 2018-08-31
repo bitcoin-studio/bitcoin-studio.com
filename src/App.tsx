@@ -9,7 +9,7 @@ import Main from './components/Main'
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <div className={"App"}>
         <Header/>
 
         <div className="row">

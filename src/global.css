@@ -6,6 +6,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background: #e4e8e9 url(/assets/background.jpg) repeat left top;
+
 }
 
 code {
