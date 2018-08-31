@@ -43,19 +43,21 @@ ___scope___.file("components/Header.jsx", function(exports, require, module, __f
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = require("react");
-const core_1 = require("@blueprintjs/core");
 const fuse_react_1 = require("fuse-react");
 class Header extends React.Component {
     render() {
-        return (React.createElement(core_1.Navbar, null,
-            React.createElement(core_1.Navbar.Group, { align: "left" },
-                React.createElement(core_1.Navbar.Heading, null, "D10e Consulting"),
-                React.createElement(core_1.Navbar.Divider, null),
-                React.createElement(core_1.Button, { className: "bp3-minimal", icon: "home", onClick: () => fuse_react_1.navigate('/'), text: "Home" }),
-                React.createElement(core_1.Button, { className: "bp3-minimal", icon: "document", onClick: () => fuse_react_1.navigate('/services'), text: "Services" }),
-                React.createElement(core_1.Button, { className: "bp3-minimal", icon: "document", onClick: () => fuse_react_1.navigate('/workshop-preregistration'), text: "Worshops" }),
-                React.createElement(core_1.Button, { className: "bp3-minimal", icon: "document", onClick: () => fuse_react_1.navigate('/ressources'), text: "Ressources" }),
-                React.createElement(core_1.Button, { className: "bp3-minimal", icon: "document", onClick: () => fuse_react_1.navigate('/about'), text: "About" }))));
+        return (React.createElement("nav", { id: "nav" },
+            React.createElement("ul", null,
+                React.createElement("li", null,
+                    React.createElement(fuse_react_1.Link, { activeClassName: "active", to: "/" }, "Home")),
+                React.createElement("li", null,
+                    React.createElement(fuse_react_1.Link, { to: "/services" }, "Services")),
+                React.createElement("li", null,
+                    React.createElement(fuse_react_1.Link, { to: "/workshop-preregistration" }, "Worshops")),
+                React.createElement("li", null,
+                    React.createElement(fuse_react_1.Link, { to: "/ressources" }, "Ressources")),
+                React.createElement("li", null,
+                    React.createElement(fuse_react_1.Link, { to: "/about" }, "About")))));
     }
 }
 exports.default = Header;
@@ -472,7 +474,7 @@ exports.unregister = unregister;
 ___scope___.file("global.css", function(exports, require, module, __filename, __dirname){
 
 
-require("fuse-box-css")("global.css", "body {\n  margin: 0;\n  padding: 0;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Roboto\", \"Oxygen\",\n    \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\",\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n\n  background: #e4e8e9 url(/assets/background.jpg) repeat left top;\n\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, \"Courier New\",\n    monospace;\n}\n")
+require("fuse-box-css")("global.css", "body {\n  margin: 0;\n  padding: 0;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Roboto\", \"Oxygen\",\n    \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\",\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n\n  background: #e4e8e9 url(/assets/background.jpg) repeat left top;\n\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, \"Courier New\",\n    monospace;\n}\n\n#nav {\n\n}\n\n#nav ul {\n  margin: 0;\n  padding: 0;\n  list-style: none;\n}")
 });
 return ___scope___.entry = "index.jsx";
 });
@@ -1016,7 +1018,7 @@ if (FuseBox.isServer) {
 });
 return ___scope___.entry = "index.js";
 });
-FuseBox.import("fusebox-hot-reload").connect(5000, "", false)
+FuseBox.import("fusebox-hot-reload").connect(3000, "", false)
 FuseBox.target = "browser"
 
 FuseBox.import("default/index.jsx");

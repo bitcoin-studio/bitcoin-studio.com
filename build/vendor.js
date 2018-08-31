@@ -39226,1033 +39226,6 @@ return index;
 });
 return ___scope___.entry = "dist/ResizeObserver.js";
 });
-FuseBox.pkg("fuse-react", {"path-to-regexp":"2.2.1"}, function(___scope___){
-___scope___.file("index.js", function(exports, require, module, __filename, __dirname){
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var Route_1 = require("./Router/Route");
-exports.Route = Route_1.Route;
-exports.navigate = Route_1.navigate;
-exports.mergeQuery = Route_1.mergeQuery;
-exports.setQuery = Route_1.setQuery;
-var Link_1 = require("./Router/Link");
-exports.Link = Link_1.Link;
-var Switch_1 = require("./Router/Switch");
-exports.Switch = Switch_1.Switch;
-var Store_1 = require("./Store");
-exports.connect = Store_1.connect;
-exports.dispatch = Store_1.dispatch;
-exports.getStore = Store_1.getStore;
-exports.createStore = Store_1.createStore;
-var Query_1 = require("./Query");
-exports.Query = Query_1.Query;
-var Fusion_1 = require("./Fusion");
-exports.Fusion = Fusion_1.Fusion;
-var Utils_1 = require("./Utils");
-exports.cls = Utils_1.cls;
-exports.classProp = Utils_1.classProp;
-
-});
-___scope___.file("Router/Route.js", function(exports, require, module, __filename, __dirname){
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const Fusion_1 = require("../Fusion");
-const Store_1 = require("../Store");
-const Query_1 = require("../Query");
-function navigate(path, query) {
-    if (query) {
-        path = `${path}${Query_1.Query.createString(query)}`;
-    }
-    window.history.pushState({}, "", path);
-    Store_1.dispatch("router", () => ({
-        location: path,
-        query: Query_1.Query.get()
-    }));
-}
-exports.navigate = navigate;
-function mergeQuery(query, doDispatch = true) {
-    const data = Query_1.Query.merge(query);
-    const path = `${location.pathname}${data.str}`;
-    window.history.pushState({}, "", path);
-    if (doDispatch) {
-        Store_1.dispatch("router", () => ({
-            location: location.pathname,
-            query: Query_1.Query.get()
-        }));
-    }
-}
-exports.mergeQuery = mergeQuery;
-function setQuery(query, doDispatch = true) {
-    const data = Query_1.Query.createString(query);
-    const path = `${location.pathname}${data}`;
-    window.history.pushState({}, "", path);
-    if (doDispatch) {
-        Store_1.dispatch("router", () => ({
-            location: location.pathname,
-            query: Query_1.Query.get()
-        }));
-    }
-}
-exports.setQuery = setQuery;
-class Route extends Fusion_1.Fusion {
-    render() {
-        return this.props.children;
-    }
-}
-exports.Route = Route;
-
-});
-___scope___.file("Fusion.js", function(exports, require, module, __filename, __dirname){
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const React = require("react");
-const Store_1 = require("./Store");
-const equal = require("deep-equal");
-const Subscriptions = Store_1.getSubscriptions();
-class Fusion extends React.Component {
-    constructor() {
-        super(...arguments);
-        this.state = {};
-        this.store = Store_1.getStore();
-    }
-    _hasSubscriptions(obj) {
-        const subscriptions = this.getConnectedStoreKeys();
-        const store = Store_1.getStore();
-        if (subscriptions) {
-            for (const key in obj) {
-                const hasSubscription = subscriptions[key];
-                if (hasSubscription) {
-                    if (!hasSubscription.deep) {
-                        return true;
-                    }
-                    if (hasSubscription.deep && !equal(store[key], obj[key])) {
-                        return true;
-                    }
-                }
-            }
-        }
-        return false;
-    }
-    getConnectedStoreKeys() {
-        return this.constructor['$_connected_store_props'] || {};
-    }
-    _initialize() {
-        if (typeof this["init"] === "function") {
-            this["init"].apply(this, [this.props]);
-            return true;
-        }
-        return false;
-    }
-    componentWillMount() {
-        const keys = this.getConnectedStoreKeys();
-        if (Object.keys(keys).length) {
-            Subscriptions.push(this);
-        }
-        this._initialize();
-    }
-    componentWillUnmount() {
-        const index = Subscriptions.indexOf(this);
-        if (index > -1) {
-            Subscriptions.splice(index, 1);
-        }
-    }
-    componentWillReceiveProps(newProps) {
-        this.props = newProps;
-        this._initialize();
-    }
-}
-exports.Fusion = Fusion;
-
-});
-___scope___.file("Store.js", function(exports, require, module, __filename, __dirname){
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const Init_1 = require("./Router/Init");
-function contextWithDefaultValues(obj) {
-    obj["initial"] = true;
-    obj["router"] = Init_1.getRouterObject();
-    return obj;
-}
-exports.Context = contextWithDefaultValues({});
-exports.Wrapper = {};
-let storage;
-if (FuseBox.isBrowser) {
-    storage = window;
-}
-if (FuseBox.isServer) {
-    storage = {};
-}
-storage.__Subscriptions = [];
-class StoreWrapper {
-    constructor(store) {
-        this.store = store;
-        this.listeners = {};
-    }
-    susbcribe(key, fn) {
-        if (!this.listeners[key]) {
-            this.listeners[key] = [];
-        }
-        this.listeners[key].push(fn);
-    }
-    trigger(updates) {
-        for (const key in updates) {
-            if (this.listeners[key]) {
-                this.listeners[key].forEach(fn => {
-                    fn(updates[key]);
-                });
-            }
-        }
-    }
-}
-exports.StoreWrapper = StoreWrapper;
-function createStore(myClassContext) {
-    exports.Context = contextWithDefaultValues(new myClassContext());
-    if (typeof exports.Context["init"] === "function") {
-        exports.Context["init"]();
-    }
-    exports.Wrapper = new StoreWrapper(exports.Context);
-    return exports.Wrapper;
-}
-exports.createStore = createStore;
-function getStore() {
-    return exports.Context;
-}
-exports.getStore = getStore;
-function getSubscriptions() {
-    return storage.__Subscriptions;
-}
-exports.getSubscriptions = getSubscriptions;
-function dispatch(obj, value) {
-    const Subscriptions = storage.__Subscriptions;
-    const store = getStore();
-    let updates = obj;
-    if (typeof obj === "object") {
-        for (const key in obj) {
-            if (typeof obj[key] === "function") {
-                updates[key] = obj[key](store);
-            }
-            else {
-                updates[key] = obj[key];
-            }
-        }
-    }
-    if (typeof obj === "string" && value) {
-        updates = {};
-        updates[obj] = value(store[obj]);
-    }
-    exports.Wrapper && exports.Wrapper.trigger && exports.Wrapper.trigger(updates);
-    const componentsForUpdate = [];
-    Subscriptions.forEach(component => {
-        if (component._hasSubscriptions(updates)) {
-            componentsForUpdate.push(component);
-        }
-    });
-    for (const key in updates) {
-        store[key] = updates[key];
-    }
-    componentsForUpdate.forEach(item => {
-        item._initialize();
-        item.forceUpdate();
-    });
-}
-exports.dispatch = dispatch;
-function connect(...args) {
-    return (Target) => {
-        if (args.length) {
-            const collection = {};
-            for (const i in args) {
-                if (args.hasOwnProperty(i)) {
-                    let key = args[i];
-                    let deepEqual = false;
-                    if (key[0] === "@") {
-                        key = key.slice(1);
-                        deepEqual = true;
-                    }
-                    collection[key] = { deep: deepEqual };
-                }
-            }
-            Target["$_connected_store_props"] = collection;
-        }
-        return Target;
-    };
-}
-exports.connect = connect;
-// reset initial load to false
-setTimeout(() => {
-    dispatch("initial", () => false);
-}, 0);
-
-});
-___scope___.file("Router/Init.js", function(exports, require, module, __filename, __dirname){
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const Query_1 = require("../Query");
-const Store_1 = require("../Store");
-function updateStoreBrowserHistory() {
-    setTimeout(() => {
-        Store_1.dispatch("router", () => getRouterObject());
-    }, 0);
-}
-window.onpopstate = history["onpushstate"] = function (e) { updateStoreBrowserHistory(); };
-function getRouterObject() {
-    return {
-        location: location.pathname,
-        query: Query_1.Query.get()
-    };
-}
-exports.getRouterObject = getRouterObject;
-
-});
-___scope___.file("Query.js", function(exports, require, module, __filename, __dirname){
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-class Query {
-    static parse(url) {
-        const split = url.split(/\?/);
-        return {
-            origin: split[0],
-            query: split[1],
-        };
-    }
-    static get(userURL) {
-        // This function is anonymous, is executed immediately and
-        // the return value is assigned to QueryString!
-        var query_string = {};
-        let url;
-        if (userURL) {
-            const parsed = this.parse(userURL);
-            if (parsed.query === undefined) {
-                return {};
-            }
-            url = parsed.query;
-        }
-        var query = url || window.location.search.substring(1);
-        var vars = query.split("&");
-        for (var i = 0; i < vars.length; i++) {
-            var pair = vars[i].split("=");
-            // If first entry with this name
-            if (typeof query_string[pair[0]] === "undefined") {
-                if (pair[0]) {
-                    query_string[pair[0]] = decodeURIComponent(pair[1]);
-                }
-                // If second entry with this name
-            }
-            else if (typeof query_string[pair[0]] === "string") {
-                var arr = [query_string[pair[0]], decodeURIComponent(pair[1])];
-                query_string[pair[0]] = arr;
-                // If third or later entry with this name
-            }
-            else {
-                query_string[pair[0]].push(decodeURIComponent(pair[1]));
-            }
-        }
-        return query_string;
-    }
-    static createString(data) {
-        var stringData = [];
-        for (const key in data) {
-            stringData.push(key + "=" + encodeURI(data[key]));
-        }
-        var str = stringData.join("&");
-        if (stringData.length > 0) {
-            str = "?" + str;
-        }
-        return str;
-    }
-    static merge(input, userURL) {
-        const current = this.get(userURL);
-        for (const key in input) {
-            if (input[key] === undefined) {
-                delete current[key];
-            }
-            else {
-                current[key] = input[key];
-            }
-        }
-        const response = { str: this.createString(current), obj: current };
-        if (userURL) {
-            const parsed = this.parse(userURL);
-            response.origin = parsed.origin;
-            response.url = `${parsed.origin}${response.str}`;
-        }
-        return response;
-    }
-}
-exports.Query = Query;
-
-});
-___scope___.file("Router/Link.js", function(exports, require, module, __filename, __dirname){
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const tslib_1 = require("tslib");
-const React = require("react");
-const Fusion_1 = require("../Fusion");
-const Store_1 = require("../Store");
-const Utils_1 = require("../Utils");
-const Query_1 = require("../Query");
-let Link = class Link extends Fusion_1.Fusion {
-    navigate() {
-        const path = this.props.to;
-        window.history.pushState({}, "", path);
-        Store_1.dispatch("router", () => ({
-            location: path,
-            query: Query_1.Query.get()
-        }));
-    }
-    linkClicked(e) {
-        e.preventDefault();
-        if (this.props.onClick) {
-            this.props.onClick(e);
-        }
-        this.navigate();
-    }
-    render() {
-        let toLink = this.props.match || this.props.to;
-        if (!this.props.exact) {
-            toLink += "(.*)";
-        }
-        const matched = Utils_1.pathMatch(this.store.router.location, toLink);
-        if (this.props.render) {
-            return this.props.render(matched !== undefined, () => this.navigate());
-        }
-        else {
-            const classes = [];
-            if (this.props.className) {
-                classes.push(this.props.className);
-            }
-            if (matched && this.props.activeClassName) {
-                classes.push(this.props.activeClassName);
-            }
-            return React.createElement("a", { className: classes.join(' '), onClick: e => this.linkClicked(e), href: this.props.to }, this.props.children);
-        }
-    }
-};
-Link = tslib_1.__decorate([
-    Store_1.connect('@router')
-], Link);
-exports.Link = Link;
-
-});
-___scope___.file("Utils.js", function(exports, require, module, __filename, __dirname){
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const pathToRegexp = require("path-to-regexp");
-function pathMatch(location, path) {
-    const keys = [];
-    const re = pathToRegexp(path, keys);
-    let matched = re.exec(location);
-    if (matched) {
-        const params = {};
-        for (let k = 0; k < keys.length; k++) {
-            let item = keys[k];
-            params[item.name] = matched[k + 1];
-        }
-        return params;
-    }
-}
-exports.pathMatch = pathMatch;
-function classProp(...any) {
-    return { className: cls.apply(undefined, arguments) };
-}
-exports.classProp = classProp;
-function cls(...any) {
-    let clsNames = [];
-    const args = arguments;
-    for (const i in arguments) {
-        const arg = arguments[i];
-        if (typeof arg === "string") {
-            clsNames.push(arg);
-        }
-        else {
-            if (Array.isArray(arg)) {
-                arg.forEach(a => clsNames.push(a));
-            }
-            else {
-                if (typeof arg === "object") {
-                    for (const key in arg) {
-                        if (arg[key]) {
-                            clsNames.push(key);
-                        }
-                    }
-                }
-            }
-        }
-    }
-    return clsNames.join(" ");
-}
-exports.cls = cls;
-
-});
-___scope___.file("Router/Switch.js", function(exports, require, module, __filename, __dirname){
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const tslib_1 = require("tslib");
-const React = require("react");
-const Fusion_1 = require("../Fusion");
-const Route_1 = require("./Route");
-const Utils_1 = require("../Utils");
-const Store_1 = require("../Store");
-let Switch = class Switch extends Fusion_1.Fusion {
-    render() {
-        const children = [].concat(this.props.children);
-        return children.map((item, i) => {
-            if (item.type !== Route_1.Route) {
-                throw new Error('Children of Switch must have only Route object');
-            }
-            let match = item.props.path;
-            if (!item.props.exact) {
-                match += "(.*)";
-            }
-            const location = this.store.router.location;
-            const params = Utils_1.pathMatch(location, match);
-            if (params) {
-                if (item.props.component) {
-                    const match = {
-                        params: params,
-                        location: location,
-                        path: item.props.path
-                    };
-                    const Component = item.props.component;
-                    return React.createElement(Component, Object.assign({ key: i }, { match: match }));
-                }
-                return item.props.children;
-            }
-        });
-    }
-};
-Switch = tslib_1.__decorate([
-    Store_1.connect("@router")
-], Switch);
-exports.Switch = Switch;
-
-});
-return ___scope___.entry = "index.js";
-});
-FuseBox.pkg("deep-equal", {}, function(___scope___){
-___scope___.file("index.js", function(exports, require, module, __filename, __dirname){
-
-var pSlice = Array.prototype.slice;
-var objectKeys = require('./lib/keys.js');
-var isArguments = require('./lib/is_arguments.js');
-
-var deepEqual = module.exports = function (actual, expected, opts) {
-  if (!opts) opts = {};
-  // 7.1. All identical values are equivalent, as determined by ===.
-  if (actual === expected) {
-    return true;
-
-  } else if (actual instanceof Date && expected instanceof Date) {
-    return actual.getTime() === expected.getTime();
-
-  // 7.3. Other pairs that do not both pass typeof value == 'object',
-  // equivalence is determined by ==.
-  } else if (!actual || !expected || typeof actual != 'object' && typeof expected != 'object') {
-    return opts.strict ? actual === expected : actual == expected;
-
-  // 7.4. For all other Object pairs, including Array objects, equivalence is
-  // determined by having the same number of owned properties (as verified
-  // with Object.prototype.hasOwnProperty.call), the same set of keys
-  // (although not necessarily the same order), equivalent values for every
-  // corresponding key, and an identical 'prototype' property. Note: this
-  // accounts for both named and indexed properties on Arrays.
-  } else {
-    return objEquiv(actual, expected, opts);
-  }
-}
-
-function isUndefinedOrNull(value) {
-  return value === null || value === undefined;
-}
-
-function isBuffer (x) {
-  if (!x || typeof x !== 'object' || typeof x.length !== 'number') return false;
-  if (typeof x.copy !== 'function' || typeof x.slice !== 'function') {
-    return false;
-  }
-  if (x.length > 0 && typeof x[0] !== 'number') return false;
-  return true;
-}
-
-function objEquiv(a, b, opts) {
-  var i, key;
-  if (isUndefinedOrNull(a) || isUndefinedOrNull(b))
-    return false;
-  // an identical 'prototype' property.
-  if (a.prototype !== b.prototype) return false;
-  //~~~I've managed to break Object.keys through screwy arguments passing.
-  //   Converting to array solves the problem.
-  if (isArguments(a)) {
-    if (!isArguments(b)) {
-      return false;
-    }
-    a = pSlice.call(a);
-    b = pSlice.call(b);
-    return deepEqual(a, b, opts);
-  }
-  if (isBuffer(a)) {
-    if (!isBuffer(b)) {
-      return false;
-    }
-    if (a.length !== b.length) return false;
-    for (i = 0; i < a.length; i++) {
-      if (a[i] !== b[i]) return false;
-    }
-    return true;
-  }
-  try {
-    var ka = objectKeys(a),
-        kb = objectKeys(b);
-  } catch (e) {//happens when one is a string literal and the other isn't
-    return false;
-  }
-  // having the same number of owned properties (keys incorporates
-  // hasOwnProperty)
-  if (ka.length != kb.length)
-    return false;
-  //the same set of keys (although not necessarily the same order),
-  ka.sort();
-  kb.sort();
-  //~~~cheap key test
-  for (i = ka.length - 1; i >= 0; i--) {
-    if (ka[i] != kb[i])
-      return false;
-  }
-  //equivalent values for every corresponding key, and
-  //~~~possibly expensive deep test
-  for (i = ka.length - 1; i >= 0; i--) {
-    key = ka[i];
-    if (!deepEqual(a[key], b[key], opts)) return false;
-  }
-  return typeof a === typeof b;
-}
-
-});
-___scope___.file("lib/keys.js", function(exports, require, module, __filename, __dirname){
-
-exports = module.exports = typeof Object.keys === 'function'
-  ? Object.keys : shim;
-
-exports.shim = shim;
-function shim (obj) {
-  var keys = [];
-  for (var key in obj) keys.push(key);
-  return keys;
-}
-
-});
-___scope___.file("lib/is_arguments.js", function(exports, require, module, __filename, __dirname){
-
-var supportsArgumentsClass = (function(){
-  return Object.prototype.toString.call(arguments)
-})() == '[object Arguments]';
-
-exports = module.exports = supportsArgumentsClass ? supported : unsupported;
-
-exports.supported = supported;
-function supported(object) {
-  return Object.prototype.toString.call(object) == '[object Arguments]';
-};
-
-exports.unsupported = unsupported;
-function unsupported(object){
-  return object &&
-    typeof object == 'object' &&
-    typeof object.length == 'number' &&
-    Object.prototype.hasOwnProperty.call(object, 'callee') &&
-    !Object.prototype.propertyIsEnumerable.call(object, 'callee') ||
-    false;
-};
-
-});
-return ___scope___.entry = "index.js";
-});
-FuseBox.pkg("path-to-regexp@2.2.1", {}, function(___scope___){
-___scope___.file("index.js", function(exports, require, module, __filename, __dirname){
-
-/**
- * Expose `pathToRegexp`.
- */
-module.exports = pathToRegexp
-module.exports.parse = parse
-module.exports.compile = compile
-module.exports.tokensToFunction = tokensToFunction
-module.exports.tokensToRegExp = tokensToRegExp
-
-/**
- * Default configs.
- */
-var DEFAULT_DELIMITER = '/'
-var DEFAULT_DELIMITERS = './'
-
-/**
- * The main path matching regexp utility.
- *
- * @type {RegExp}
- */
-var PATH_REGEXP = new RegExp([
-  // Match escaped characters that would otherwise appear in future matches.
-  // This allows the user to escape special characters that won't transform.
-  '(\\\\.)',
-  // Match Express-style parameters and un-named parameters with a prefix
-  // and optional suffixes. Matches appear as:
-  //
-  // "/:test(\\d+)?" => ["/", "test", "\d+", undefined, "?"]
-  // "/route(\\d+)"  => [undefined, undefined, undefined, "\d+", undefined]
-  '(?:\\:(\\w+)(?:\\(((?:\\\\.|[^\\\\()])+)\\))?|\\(((?:\\\\.|[^\\\\()])+)\\))([+*?])?'
-].join('|'), 'g')
-
-/**
- * Parse a string for the raw tokens.
- *
- * @param  {string}  str
- * @param  {Object=} options
- * @return {!Array}
- */
-function parse (str, options) {
-  var tokens = []
-  var key = 0
-  var index = 0
-  var path = ''
-  var defaultDelimiter = (options && options.delimiter) || DEFAULT_DELIMITER
-  var delimiters = (options && options.delimiters) || DEFAULT_DELIMITERS
-  var pathEscaped = false
-  var res
-
-  while ((res = PATH_REGEXP.exec(str)) !== null) {
-    var m = res[0]
-    var escaped = res[1]
-    var offset = res.index
-    path += str.slice(index, offset)
-    index = offset + m.length
-
-    // Ignore already escaped sequences.
-    if (escaped) {
-      path += escaped[1]
-      pathEscaped = true
-      continue
-    }
-
-    var prev = ''
-    var next = str[index]
-    var name = res[2]
-    var capture = res[3]
-    var group = res[4]
-    var modifier = res[5]
-
-    if (!pathEscaped && path.length) {
-      var k = path.length - 1
-
-      if (delimiters.indexOf(path[k]) > -1) {
-        prev = path[k]
-        path = path.slice(0, k)
-      }
-    }
-
-    // Push the current path onto the tokens.
-    if (path) {
-      tokens.push(path)
-      path = ''
-      pathEscaped = false
-    }
-
-    var partial = prev !== '' && next !== undefined && next !== prev
-    var repeat = modifier === '+' || modifier === '*'
-    var optional = modifier === '?' || modifier === '*'
-    var delimiter = prev || defaultDelimiter
-    var pattern = capture || group
-
-    tokens.push({
-      name: name || key++,
-      prefix: prev,
-      delimiter: delimiter,
-      optional: optional,
-      repeat: repeat,
-      partial: partial,
-      pattern: pattern ? escapeGroup(pattern) : '[^' + escapeString(delimiter) + ']+?'
-    })
-  }
-
-  // Push any remaining characters.
-  if (path || index < str.length) {
-    tokens.push(path + str.substr(index))
-  }
-
-  return tokens
-}
-
-/**
- * Compile a string to a template function for the path.
- *
- * @param  {string}             str
- * @param  {Object=}            options
- * @return {!function(Object=, Object=)}
- */
-function compile (str, options) {
-  return tokensToFunction(parse(str, options))
-}
-
-/**
- * Expose a method for transforming tokens into the path function.
- */
-function tokensToFunction (tokens) {
-  // Compile all the tokens into regexps.
-  var matches = new Array(tokens.length)
-
-  // Compile all the patterns before compilation.
-  for (var i = 0; i < tokens.length; i++) {
-    if (typeof tokens[i] === 'object') {
-      matches[i] = new RegExp('^(?:' + tokens[i].pattern + ')$')
-    }
-  }
-
-  return function (data, options) {
-    var path = ''
-    var encode = (options && options.encode) || encodeURIComponent
-
-    for (var i = 0; i < tokens.length; i++) {
-      var token = tokens[i]
-
-      if (typeof token === 'string') {
-        path += token
-        continue
-      }
-
-      var value = data ? data[token.name] : undefined
-      var segment
-
-      if (Array.isArray(value)) {
-        if (!token.repeat) {
-          throw new TypeError('Expected "' + token.name + '" to not repeat, but got array')
-        }
-
-        if (value.length === 0) {
-          if (token.optional) continue
-
-          throw new TypeError('Expected "' + token.name + '" to not be empty')
-        }
-
-        for (var j = 0; j < value.length; j++) {
-          segment = encode(value[j], token)
-
-          if (!matches[i].test(segment)) {
-            throw new TypeError('Expected all "' + token.name + '" to match "' + token.pattern + '"')
-          }
-
-          path += (j === 0 ? token.prefix : token.delimiter) + segment
-        }
-
-        continue
-      }
-
-      if (typeof value === 'string' || typeof value === 'number' || typeof value === 'boolean') {
-        segment = encode(String(value), token)
-
-        if (!matches[i].test(segment)) {
-          throw new TypeError('Expected "' + token.name + '" to match "' + token.pattern + '", but got "' + segment + '"')
-        }
-
-        path += token.prefix + segment
-        continue
-      }
-
-      if (token.optional) {
-        // Prepend partial segment prefixes.
-        if (token.partial) path += token.prefix
-
-        continue
-      }
-
-      throw new TypeError('Expected "' + token.name + '" to be ' + (token.repeat ? 'an array' : 'a string'))
-    }
-
-    return path
-  }
-}
-
-/**
- * Escape a regular expression string.
- *
- * @param  {string} str
- * @return {string}
- */
-function escapeString (str) {
-  return str.replace(/([.+*?=^!:${}()[\]|/\\])/g, '\\$1')
-}
-
-/**
- * Escape the capturing group by escaping special characters and meaning.
- *
- * @param  {string} group
- * @return {string}
- */
-function escapeGroup (group) {
-  return group.replace(/([=!:$/()])/g, '\\$1')
-}
-
-/**
- * Get the flags for a regexp from the options.
- *
- * @param  {Object} options
- * @return {string}
- */
-function flags (options) {
-  return options && options.sensitive ? '' : 'i'
-}
-
-/**
- * Pull out keys from a regexp.
- *
- * @param  {!RegExp} path
- * @param  {Array=}  keys
- * @return {!RegExp}
- */
-function regexpToRegexp (path, keys) {
-  if (!keys) return path
-
-  // Use a negative lookahead to match only capturing groups.
-  var groups = path.source.match(/\((?!\?)/g)
-
-  if (groups) {
-    for (var i = 0; i < groups.length; i++) {
-      keys.push({
-        name: i,
-        prefix: null,
-        delimiter: null,
-        optional: false,
-        repeat: false,
-        partial: false,
-        pattern: null
-      })
-    }
-  }
-
-  return path
-}
-
-/**
- * Transform an array into a regexp.
- *
- * @param  {!Array}  path
- * @param  {Array=}  keys
- * @param  {Object=} options
- * @return {!RegExp}
- */
-function arrayToRegexp (path, keys, options) {
-  var parts = []
-
-  for (var i = 0; i < path.length; i++) {
-    parts.push(pathToRegexp(path[i], keys, options).source)
-  }
-
-  return new RegExp('(?:' + parts.join('|') + ')', flags(options))
-}
-
-/**
- * Create a path regexp from string input.
- *
- * @param  {string}  path
- * @param  {Array=}  keys
- * @param  {Object=} options
- * @return {!RegExp}
- */
-function stringToRegexp (path, keys, options) {
-  return tokensToRegExp(parse(path, options), keys, options)
-}
-
-/**
- * Expose a function for taking tokens and returning a RegExp.
- *
- * @param  {!Array}  tokens
- * @param  {Array=}  keys
- * @param  {Object=} options
- * @return {!RegExp}
- */
-function tokensToRegExp (tokens, keys, options) {
-  options = options || {}
-
-  var strict = options.strict
-  var end = options.end !== false
-  var delimiter = escapeString(options.delimiter || DEFAULT_DELIMITER)
-  var delimiters = options.delimiters || DEFAULT_DELIMITERS
-  var endsWith = [].concat(options.endsWith || []).map(escapeString).concat('$').join('|')
-  var route = ''
-  var isEndDelimited = tokens.length === 0
-
-  // Iterate over the tokens and create our regexp string.
-  for (var i = 0; i < tokens.length; i++) {
-    var token = tokens[i]
-
-    if (typeof token === 'string') {
-      route += escapeString(token)
-      isEndDelimited = i === tokens.length - 1 && delimiters.indexOf(token[token.length - 1]) > -1
-    } else {
-      var prefix = escapeString(token.prefix)
-      var capture = token.repeat
-        ? '(?:' + token.pattern + ')(?:' + prefix + '(?:' + token.pattern + '))*'
-        : token.pattern
-
-      if (keys) keys.push(token)
-
-      if (token.optional) {
-        if (token.partial) {
-          route += prefix + '(' + capture + ')?'
-        } else {
-          route += '(?:' + prefix + '(' + capture + '))?'
-        }
-      } else {
-        route += prefix + '(' + capture + ')'
-      }
-    }
-  }
-
-  if (end) {
-    if (!strict) route += '(?:' + delimiter + ')?'
-
-    route += endsWith === '$' ? '$' : '(?=' + endsWith + ')'
-  } else {
-    if (!strict) route += '(?:' + delimiter + '(?=' + endsWith + '))?'
-    if (!isEndDelimited) route += '(?=' + delimiter + '|' + endsWith + ')'
-  }
-
-  return new RegExp('^' + route, flags(options))
-}
-
-/**
- * Normalize the given path string, returning a regular expression.
- *
- * An empty array can be passed in for the keys, which will hold the
- * placeholder key descriptions. For example, using `/user/:id`, `keys` will
- * contain `[{ name: 'id', delimiter: '/', optional: false, repeat: false }]`.
- *
- * @param  {(string|RegExp|Array)} path
- * @param  {Array=}                keys
- * @param  {Object=}               options
- * @return {!RegExp}
- */
-function pathToRegexp (path, keys, options) {
-  if (path instanceof RegExp) {
-    return regexpToRegexp(path, keys)
-  }
-
-  if (Array.isArray(path)) {
-    return arrayToRegexp(/** @type {!Array} */ (path), keys, options)
-  }
-
-  return stringToRegexp(/** @type {string} */ (path), keys, options)
-}
-
-});
-return ___scope___.entry = "index.js";
-});
 FuseBox.pkg("@blueprintjs/docs-theme", {}, function(___scope___){
 ___scope___.file("lib/cjs/index.js", function(exports, require, module, __filename, __dirname){
 
@@ -43640,6 +42613,1033 @@ ___scope___.file("lib/matcher.js", function(exports, require, module, __filename
 
 });
 return ___scope___.entry = "lib/fuzzaldrin.js";
+});
+FuseBox.pkg("fuse-react", {"path-to-regexp":"2.2.1"}, function(___scope___){
+___scope___.file("index.js", function(exports, require, module, __filename, __dirname){
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Route_1 = require("./Router/Route");
+exports.Route = Route_1.Route;
+exports.navigate = Route_1.navigate;
+exports.mergeQuery = Route_1.mergeQuery;
+exports.setQuery = Route_1.setQuery;
+var Link_1 = require("./Router/Link");
+exports.Link = Link_1.Link;
+var Switch_1 = require("./Router/Switch");
+exports.Switch = Switch_1.Switch;
+var Store_1 = require("./Store");
+exports.connect = Store_1.connect;
+exports.dispatch = Store_1.dispatch;
+exports.getStore = Store_1.getStore;
+exports.createStore = Store_1.createStore;
+var Query_1 = require("./Query");
+exports.Query = Query_1.Query;
+var Fusion_1 = require("./Fusion");
+exports.Fusion = Fusion_1.Fusion;
+var Utils_1 = require("./Utils");
+exports.cls = Utils_1.cls;
+exports.classProp = Utils_1.classProp;
+
+});
+___scope___.file("Router/Route.js", function(exports, require, module, __filename, __dirname){
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Fusion_1 = require("../Fusion");
+const Store_1 = require("../Store");
+const Query_1 = require("../Query");
+function navigate(path, query) {
+    if (query) {
+        path = `${path}${Query_1.Query.createString(query)}`;
+    }
+    window.history.pushState({}, "", path);
+    Store_1.dispatch("router", () => ({
+        location: path,
+        query: Query_1.Query.get()
+    }));
+}
+exports.navigate = navigate;
+function mergeQuery(query, doDispatch = true) {
+    const data = Query_1.Query.merge(query);
+    const path = `${location.pathname}${data.str}`;
+    window.history.pushState({}, "", path);
+    if (doDispatch) {
+        Store_1.dispatch("router", () => ({
+            location: location.pathname,
+            query: Query_1.Query.get()
+        }));
+    }
+}
+exports.mergeQuery = mergeQuery;
+function setQuery(query, doDispatch = true) {
+    const data = Query_1.Query.createString(query);
+    const path = `${location.pathname}${data}`;
+    window.history.pushState({}, "", path);
+    if (doDispatch) {
+        Store_1.dispatch("router", () => ({
+            location: location.pathname,
+            query: Query_1.Query.get()
+        }));
+    }
+}
+exports.setQuery = setQuery;
+class Route extends Fusion_1.Fusion {
+    render() {
+        return this.props.children;
+    }
+}
+exports.Route = Route;
+
+});
+___scope___.file("Fusion.js", function(exports, require, module, __filename, __dirname){
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const React = require("react");
+const Store_1 = require("./Store");
+const equal = require("deep-equal");
+const Subscriptions = Store_1.getSubscriptions();
+class Fusion extends React.Component {
+    constructor() {
+        super(...arguments);
+        this.state = {};
+        this.store = Store_1.getStore();
+    }
+    _hasSubscriptions(obj) {
+        const subscriptions = this.getConnectedStoreKeys();
+        const store = Store_1.getStore();
+        if (subscriptions) {
+            for (const key in obj) {
+                const hasSubscription = subscriptions[key];
+                if (hasSubscription) {
+                    if (!hasSubscription.deep) {
+                        return true;
+                    }
+                    if (hasSubscription.deep && !equal(store[key], obj[key])) {
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
+    }
+    getConnectedStoreKeys() {
+        return this.constructor['$_connected_store_props'] || {};
+    }
+    _initialize() {
+        if (typeof this["init"] === "function") {
+            this["init"].apply(this, [this.props]);
+            return true;
+        }
+        return false;
+    }
+    componentWillMount() {
+        const keys = this.getConnectedStoreKeys();
+        if (Object.keys(keys).length) {
+            Subscriptions.push(this);
+        }
+        this._initialize();
+    }
+    componentWillUnmount() {
+        const index = Subscriptions.indexOf(this);
+        if (index > -1) {
+            Subscriptions.splice(index, 1);
+        }
+    }
+    componentWillReceiveProps(newProps) {
+        this.props = newProps;
+        this._initialize();
+    }
+}
+exports.Fusion = Fusion;
+
+});
+___scope___.file("Store.js", function(exports, require, module, __filename, __dirname){
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Init_1 = require("./Router/Init");
+function contextWithDefaultValues(obj) {
+    obj["initial"] = true;
+    obj["router"] = Init_1.getRouterObject();
+    return obj;
+}
+exports.Context = contextWithDefaultValues({});
+exports.Wrapper = {};
+let storage;
+if (FuseBox.isBrowser) {
+    storage = window;
+}
+if (FuseBox.isServer) {
+    storage = {};
+}
+storage.__Subscriptions = [];
+class StoreWrapper {
+    constructor(store) {
+        this.store = store;
+        this.listeners = {};
+    }
+    susbcribe(key, fn) {
+        if (!this.listeners[key]) {
+            this.listeners[key] = [];
+        }
+        this.listeners[key].push(fn);
+    }
+    trigger(updates) {
+        for (const key in updates) {
+            if (this.listeners[key]) {
+                this.listeners[key].forEach(fn => {
+                    fn(updates[key]);
+                });
+            }
+        }
+    }
+}
+exports.StoreWrapper = StoreWrapper;
+function createStore(myClassContext) {
+    exports.Context = contextWithDefaultValues(new myClassContext());
+    if (typeof exports.Context["init"] === "function") {
+        exports.Context["init"]();
+    }
+    exports.Wrapper = new StoreWrapper(exports.Context);
+    return exports.Wrapper;
+}
+exports.createStore = createStore;
+function getStore() {
+    return exports.Context;
+}
+exports.getStore = getStore;
+function getSubscriptions() {
+    return storage.__Subscriptions;
+}
+exports.getSubscriptions = getSubscriptions;
+function dispatch(obj, value) {
+    const Subscriptions = storage.__Subscriptions;
+    const store = getStore();
+    let updates = obj;
+    if (typeof obj === "object") {
+        for (const key in obj) {
+            if (typeof obj[key] === "function") {
+                updates[key] = obj[key](store);
+            }
+            else {
+                updates[key] = obj[key];
+            }
+        }
+    }
+    if (typeof obj === "string" && value) {
+        updates = {};
+        updates[obj] = value(store[obj]);
+    }
+    exports.Wrapper && exports.Wrapper.trigger && exports.Wrapper.trigger(updates);
+    const componentsForUpdate = [];
+    Subscriptions.forEach(component => {
+        if (component._hasSubscriptions(updates)) {
+            componentsForUpdate.push(component);
+        }
+    });
+    for (const key in updates) {
+        store[key] = updates[key];
+    }
+    componentsForUpdate.forEach(item => {
+        item._initialize();
+        item.forceUpdate();
+    });
+}
+exports.dispatch = dispatch;
+function connect(...args) {
+    return (Target) => {
+        if (args.length) {
+            const collection = {};
+            for (const i in args) {
+                if (args.hasOwnProperty(i)) {
+                    let key = args[i];
+                    let deepEqual = false;
+                    if (key[0] === "@") {
+                        key = key.slice(1);
+                        deepEqual = true;
+                    }
+                    collection[key] = { deep: deepEqual };
+                }
+            }
+            Target["$_connected_store_props"] = collection;
+        }
+        return Target;
+    };
+}
+exports.connect = connect;
+// reset initial load to false
+setTimeout(() => {
+    dispatch("initial", () => false);
+}, 0);
+
+});
+___scope___.file("Router/Init.js", function(exports, require, module, __filename, __dirname){
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Query_1 = require("../Query");
+const Store_1 = require("../Store");
+function updateStoreBrowserHistory() {
+    setTimeout(() => {
+        Store_1.dispatch("router", () => getRouterObject());
+    }, 0);
+}
+window.onpopstate = history["onpushstate"] = function (e) { updateStoreBrowserHistory(); };
+function getRouterObject() {
+    return {
+        location: location.pathname,
+        query: Query_1.Query.get()
+    };
+}
+exports.getRouterObject = getRouterObject;
+
+});
+___scope___.file("Query.js", function(exports, require, module, __filename, __dirname){
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+class Query {
+    static parse(url) {
+        const split = url.split(/\?/);
+        return {
+            origin: split[0],
+            query: split[1],
+        };
+    }
+    static get(userURL) {
+        // This function is anonymous, is executed immediately and
+        // the return value is assigned to QueryString!
+        var query_string = {};
+        let url;
+        if (userURL) {
+            const parsed = this.parse(userURL);
+            if (parsed.query === undefined) {
+                return {};
+            }
+            url = parsed.query;
+        }
+        var query = url || window.location.search.substring(1);
+        var vars = query.split("&");
+        for (var i = 0; i < vars.length; i++) {
+            var pair = vars[i].split("=");
+            // If first entry with this name
+            if (typeof query_string[pair[0]] === "undefined") {
+                if (pair[0]) {
+                    query_string[pair[0]] = decodeURIComponent(pair[1]);
+                }
+                // If second entry with this name
+            }
+            else if (typeof query_string[pair[0]] === "string") {
+                var arr = [query_string[pair[0]], decodeURIComponent(pair[1])];
+                query_string[pair[0]] = arr;
+                // If third or later entry with this name
+            }
+            else {
+                query_string[pair[0]].push(decodeURIComponent(pair[1]));
+            }
+        }
+        return query_string;
+    }
+    static createString(data) {
+        var stringData = [];
+        for (const key in data) {
+            stringData.push(key + "=" + encodeURI(data[key]));
+        }
+        var str = stringData.join("&");
+        if (stringData.length > 0) {
+            str = "?" + str;
+        }
+        return str;
+    }
+    static merge(input, userURL) {
+        const current = this.get(userURL);
+        for (const key in input) {
+            if (input[key] === undefined) {
+                delete current[key];
+            }
+            else {
+                current[key] = input[key];
+            }
+        }
+        const response = { str: this.createString(current), obj: current };
+        if (userURL) {
+            const parsed = this.parse(userURL);
+            response.origin = parsed.origin;
+            response.url = `${parsed.origin}${response.str}`;
+        }
+        return response;
+    }
+}
+exports.Query = Query;
+
+});
+___scope___.file("Router/Link.js", function(exports, require, module, __filename, __dirname){
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+const React = require("react");
+const Fusion_1 = require("../Fusion");
+const Store_1 = require("../Store");
+const Utils_1 = require("../Utils");
+const Query_1 = require("../Query");
+let Link = class Link extends Fusion_1.Fusion {
+    navigate() {
+        const path = this.props.to;
+        window.history.pushState({}, "", path);
+        Store_1.dispatch("router", () => ({
+            location: path,
+            query: Query_1.Query.get()
+        }));
+    }
+    linkClicked(e) {
+        e.preventDefault();
+        if (this.props.onClick) {
+            this.props.onClick(e);
+        }
+        this.navigate();
+    }
+    render() {
+        let toLink = this.props.match || this.props.to;
+        if (!this.props.exact) {
+            toLink += "(.*)";
+        }
+        const matched = Utils_1.pathMatch(this.store.router.location, toLink);
+        if (this.props.render) {
+            return this.props.render(matched !== undefined, () => this.navigate());
+        }
+        else {
+            const classes = [];
+            if (this.props.className) {
+                classes.push(this.props.className);
+            }
+            if (matched && this.props.activeClassName) {
+                classes.push(this.props.activeClassName);
+            }
+            return React.createElement("a", { className: classes.join(' '), onClick: e => this.linkClicked(e), href: this.props.to }, this.props.children);
+        }
+    }
+};
+Link = tslib_1.__decorate([
+    Store_1.connect('@router')
+], Link);
+exports.Link = Link;
+
+});
+___scope___.file("Utils.js", function(exports, require, module, __filename, __dirname){
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const pathToRegexp = require("path-to-regexp");
+function pathMatch(location, path) {
+    const keys = [];
+    const re = pathToRegexp(path, keys);
+    let matched = re.exec(location);
+    if (matched) {
+        const params = {};
+        for (let k = 0; k < keys.length; k++) {
+            let item = keys[k];
+            params[item.name] = matched[k + 1];
+        }
+        return params;
+    }
+}
+exports.pathMatch = pathMatch;
+function classProp(...any) {
+    return { className: cls.apply(undefined, arguments) };
+}
+exports.classProp = classProp;
+function cls(...any) {
+    let clsNames = [];
+    const args = arguments;
+    for (const i in arguments) {
+        const arg = arguments[i];
+        if (typeof arg === "string") {
+            clsNames.push(arg);
+        }
+        else {
+            if (Array.isArray(arg)) {
+                arg.forEach(a => clsNames.push(a));
+            }
+            else {
+                if (typeof arg === "object") {
+                    for (const key in arg) {
+                        if (arg[key]) {
+                            clsNames.push(key);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    return clsNames.join(" ");
+}
+exports.cls = cls;
+
+});
+___scope___.file("Router/Switch.js", function(exports, require, module, __filename, __dirname){
+
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
+const React = require("react");
+const Fusion_1 = require("../Fusion");
+const Route_1 = require("./Route");
+const Utils_1 = require("../Utils");
+const Store_1 = require("../Store");
+let Switch = class Switch extends Fusion_1.Fusion {
+    render() {
+        const children = [].concat(this.props.children);
+        return children.map((item, i) => {
+            if (item.type !== Route_1.Route) {
+                throw new Error('Children of Switch must have only Route object');
+            }
+            let match = item.props.path;
+            if (!item.props.exact) {
+                match += "(.*)";
+            }
+            const location = this.store.router.location;
+            const params = Utils_1.pathMatch(location, match);
+            if (params) {
+                if (item.props.component) {
+                    const match = {
+                        params: params,
+                        location: location,
+                        path: item.props.path
+                    };
+                    const Component = item.props.component;
+                    return React.createElement(Component, Object.assign({ key: i }, { match: match }));
+                }
+                return item.props.children;
+            }
+        });
+    }
+};
+Switch = tslib_1.__decorate([
+    Store_1.connect("@router")
+], Switch);
+exports.Switch = Switch;
+
+});
+return ___scope___.entry = "index.js";
+});
+FuseBox.pkg("deep-equal", {}, function(___scope___){
+___scope___.file("index.js", function(exports, require, module, __filename, __dirname){
+
+var pSlice = Array.prototype.slice;
+var objectKeys = require('./lib/keys.js');
+var isArguments = require('./lib/is_arguments.js');
+
+var deepEqual = module.exports = function (actual, expected, opts) {
+  if (!opts) opts = {};
+  // 7.1. All identical values are equivalent, as determined by ===.
+  if (actual === expected) {
+    return true;
+
+  } else if (actual instanceof Date && expected instanceof Date) {
+    return actual.getTime() === expected.getTime();
+
+  // 7.3. Other pairs that do not both pass typeof value == 'object',
+  // equivalence is determined by ==.
+  } else if (!actual || !expected || typeof actual != 'object' && typeof expected != 'object') {
+    return opts.strict ? actual === expected : actual == expected;
+
+  // 7.4. For all other Object pairs, including Array objects, equivalence is
+  // determined by having the same number of owned properties (as verified
+  // with Object.prototype.hasOwnProperty.call), the same set of keys
+  // (although not necessarily the same order), equivalent values for every
+  // corresponding key, and an identical 'prototype' property. Note: this
+  // accounts for both named and indexed properties on Arrays.
+  } else {
+    return objEquiv(actual, expected, opts);
+  }
+}
+
+function isUndefinedOrNull(value) {
+  return value === null || value === undefined;
+}
+
+function isBuffer (x) {
+  if (!x || typeof x !== 'object' || typeof x.length !== 'number') return false;
+  if (typeof x.copy !== 'function' || typeof x.slice !== 'function') {
+    return false;
+  }
+  if (x.length > 0 && typeof x[0] !== 'number') return false;
+  return true;
+}
+
+function objEquiv(a, b, opts) {
+  var i, key;
+  if (isUndefinedOrNull(a) || isUndefinedOrNull(b))
+    return false;
+  // an identical 'prototype' property.
+  if (a.prototype !== b.prototype) return false;
+  //~~~I've managed to break Object.keys through screwy arguments passing.
+  //   Converting to array solves the problem.
+  if (isArguments(a)) {
+    if (!isArguments(b)) {
+      return false;
+    }
+    a = pSlice.call(a);
+    b = pSlice.call(b);
+    return deepEqual(a, b, opts);
+  }
+  if (isBuffer(a)) {
+    if (!isBuffer(b)) {
+      return false;
+    }
+    if (a.length !== b.length) return false;
+    for (i = 0; i < a.length; i++) {
+      if (a[i] !== b[i]) return false;
+    }
+    return true;
+  }
+  try {
+    var ka = objectKeys(a),
+        kb = objectKeys(b);
+  } catch (e) {//happens when one is a string literal and the other isn't
+    return false;
+  }
+  // having the same number of owned properties (keys incorporates
+  // hasOwnProperty)
+  if (ka.length != kb.length)
+    return false;
+  //the same set of keys (although not necessarily the same order),
+  ka.sort();
+  kb.sort();
+  //~~~cheap key test
+  for (i = ka.length - 1; i >= 0; i--) {
+    if (ka[i] != kb[i])
+      return false;
+  }
+  //equivalent values for every corresponding key, and
+  //~~~possibly expensive deep test
+  for (i = ka.length - 1; i >= 0; i--) {
+    key = ka[i];
+    if (!deepEqual(a[key], b[key], opts)) return false;
+  }
+  return typeof a === typeof b;
+}
+
+});
+___scope___.file("lib/keys.js", function(exports, require, module, __filename, __dirname){
+
+exports = module.exports = typeof Object.keys === 'function'
+  ? Object.keys : shim;
+
+exports.shim = shim;
+function shim (obj) {
+  var keys = [];
+  for (var key in obj) keys.push(key);
+  return keys;
+}
+
+});
+___scope___.file("lib/is_arguments.js", function(exports, require, module, __filename, __dirname){
+
+var supportsArgumentsClass = (function(){
+  return Object.prototype.toString.call(arguments)
+})() == '[object Arguments]';
+
+exports = module.exports = supportsArgumentsClass ? supported : unsupported;
+
+exports.supported = supported;
+function supported(object) {
+  return Object.prototype.toString.call(object) == '[object Arguments]';
+};
+
+exports.unsupported = unsupported;
+function unsupported(object){
+  return object &&
+    typeof object == 'object' &&
+    typeof object.length == 'number' &&
+    Object.prototype.hasOwnProperty.call(object, 'callee') &&
+    !Object.prototype.propertyIsEnumerable.call(object, 'callee') ||
+    false;
+};
+
+});
+return ___scope___.entry = "index.js";
+});
+FuseBox.pkg("path-to-regexp@2.2.1", {}, function(___scope___){
+___scope___.file("index.js", function(exports, require, module, __filename, __dirname){
+
+/**
+ * Expose `pathToRegexp`.
+ */
+module.exports = pathToRegexp
+module.exports.parse = parse
+module.exports.compile = compile
+module.exports.tokensToFunction = tokensToFunction
+module.exports.tokensToRegExp = tokensToRegExp
+
+/**
+ * Default configs.
+ */
+var DEFAULT_DELIMITER = '/'
+var DEFAULT_DELIMITERS = './'
+
+/**
+ * The main path matching regexp utility.
+ *
+ * @type {RegExp}
+ */
+var PATH_REGEXP = new RegExp([
+  // Match escaped characters that would otherwise appear in future matches.
+  // This allows the user to escape special characters that won't transform.
+  '(\\\\.)',
+  // Match Express-style parameters and un-named parameters with a prefix
+  // and optional suffixes. Matches appear as:
+  //
+  // "/:test(\\d+)?" => ["/", "test", "\d+", undefined, "?"]
+  // "/route(\\d+)"  => [undefined, undefined, undefined, "\d+", undefined]
+  '(?:\\:(\\w+)(?:\\(((?:\\\\.|[^\\\\()])+)\\))?|\\(((?:\\\\.|[^\\\\()])+)\\))([+*?])?'
+].join('|'), 'g')
+
+/**
+ * Parse a string for the raw tokens.
+ *
+ * @param  {string}  str
+ * @param  {Object=} options
+ * @return {!Array}
+ */
+function parse (str, options) {
+  var tokens = []
+  var key = 0
+  var index = 0
+  var path = ''
+  var defaultDelimiter = (options && options.delimiter) || DEFAULT_DELIMITER
+  var delimiters = (options && options.delimiters) || DEFAULT_DELIMITERS
+  var pathEscaped = false
+  var res
+
+  while ((res = PATH_REGEXP.exec(str)) !== null) {
+    var m = res[0]
+    var escaped = res[1]
+    var offset = res.index
+    path += str.slice(index, offset)
+    index = offset + m.length
+
+    // Ignore already escaped sequences.
+    if (escaped) {
+      path += escaped[1]
+      pathEscaped = true
+      continue
+    }
+
+    var prev = ''
+    var next = str[index]
+    var name = res[2]
+    var capture = res[3]
+    var group = res[4]
+    var modifier = res[5]
+
+    if (!pathEscaped && path.length) {
+      var k = path.length - 1
+
+      if (delimiters.indexOf(path[k]) > -1) {
+        prev = path[k]
+        path = path.slice(0, k)
+      }
+    }
+
+    // Push the current path onto the tokens.
+    if (path) {
+      tokens.push(path)
+      path = ''
+      pathEscaped = false
+    }
+
+    var partial = prev !== '' && next !== undefined && next !== prev
+    var repeat = modifier === '+' || modifier === '*'
+    var optional = modifier === '?' || modifier === '*'
+    var delimiter = prev || defaultDelimiter
+    var pattern = capture || group
+
+    tokens.push({
+      name: name || key++,
+      prefix: prev,
+      delimiter: delimiter,
+      optional: optional,
+      repeat: repeat,
+      partial: partial,
+      pattern: pattern ? escapeGroup(pattern) : '[^' + escapeString(delimiter) + ']+?'
+    })
+  }
+
+  // Push any remaining characters.
+  if (path || index < str.length) {
+    tokens.push(path + str.substr(index))
+  }
+
+  return tokens
+}
+
+/**
+ * Compile a string to a template function for the path.
+ *
+ * @param  {string}             str
+ * @param  {Object=}            options
+ * @return {!function(Object=, Object=)}
+ */
+function compile (str, options) {
+  return tokensToFunction(parse(str, options))
+}
+
+/**
+ * Expose a method for transforming tokens into the path function.
+ */
+function tokensToFunction (tokens) {
+  // Compile all the tokens into regexps.
+  var matches = new Array(tokens.length)
+
+  // Compile all the patterns before compilation.
+  for (var i = 0; i < tokens.length; i++) {
+    if (typeof tokens[i] === 'object') {
+      matches[i] = new RegExp('^(?:' + tokens[i].pattern + ')$')
+    }
+  }
+
+  return function (data, options) {
+    var path = ''
+    var encode = (options && options.encode) || encodeURIComponent
+
+    for (var i = 0; i < tokens.length; i++) {
+      var token = tokens[i]
+
+      if (typeof token === 'string') {
+        path += token
+        continue
+      }
+
+      var value = data ? data[token.name] : undefined
+      var segment
+
+      if (Array.isArray(value)) {
+        if (!token.repeat) {
+          throw new TypeError('Expected "' + token.name + '" to not repeat, but got array')
+        }
+
+        if (value.length === 0) {
+          if (token.optional) continue
+
+          throw new TypeError('Expected "' + token.name + '" to not be empty')
+        }
+
+        for (var j = 0; j < value.length; j++) {
+          segment = encode(value[j], token)
+
+          if (!matches[i].test(segment)) {
+            throw new TypeError('Expected all "' + token.name + '" to match "' + token.pattern + '"')
+          }
+
+          path += (j === 0 ? token.prefix : token.delimiter) + segment
+        }
+
+        continue
+      }
+
+      if (typeof value === 'string' || typeof value === 'number' || typeof value === 'boolean') {
+        segment = encode(String(value), token)
+
+        if (!matches[i].test(segment)) {
+          throw new TypeError('Expected "' + token.name + '" to match "' + token.pattern + '", but got "' + segment + '"')
+        }
+
+        path += token.prefix + segment
+        continue
+      }
+
+      if (token.optional) {
+        // Prepend partial segment prefixes.
+        if (token.partial) path += token.prefix
+
+        continue
+      }
+
+      throw new TypeError('Expected "' + token.name + '" to be ' + (token.repeat ? 'an array' : 'a string'))
+    }
+
+    return path
+  }
+}
+
+/**
+ * Escape a regular expression string.
+ *
+ * @param  {string} str
+ * @return {string}
+ */
+function escapeString (str) {
+  return str.replace(/([.+*?=^!:${}()[\]|/\\])/g, '\\$1')
+}
+
+/**
+ * Escape the capturing group by escaping special characters and meaning.
+ *
+ * @param  {string} group
+ * @return {string}
+ */
+function escapeGroup (group) {
+  return group.replace(/([=!:$/()])/g, '\\$1')
+}
+
+/**
+ * Get the flags for a regexp from the options.
+ *
+ * @param  {Object} options
+ * @return {string}
+ */
+function flags (options) {
+  return options && options.sensitive ? '' : 'i'
+}
+
+/**
+ * Pull out keys from a regexp.
+ *
+ * @param  {!RegExp} path
+ * @param  {Array=}  keys
+ * @return {!RegExp}
+ */
+function regexpToRegexp (path, keys) {
+  if (!keys) return path
+
+  // Use a negative lookahead to match only capturing groups.
+  var groups = path.source.match(/\((?!\?)/g)
+
+  if (groups) {
+    for (var i = 0; i < groups.length; i++) {
+      keys.push({
+        name: i,
+        prefix: null,
+        delimiter: null,
+        optional: false,
+        repeat: false,
+        partial: false,
+        pattern: null
+      })
+    }
+  }
+
+  return path
+}
+
+/**
+ * Transform an array into a regexp.
+ *
+ * @param  {!Array}  path
+ * @param  {Array=}  keys
+ * @param  {Object=} options
+ * @return {!RegExp}
+ */
+function arrayToRegexp (path, keys, options) {
+  var parts = []
+
+  for (var i = 0; i < path.length; i++) {
+    parts.push(pathToRegexp(path[i], keys, options).source)
+  }
+
+  return new RegExp('(?:' + parts.join('|') + ')', flags(options))
+}
+
+/**
+ * Create a path regexp from string input.
+ *
+ * @param  {string}  path
+ * @param  {Array=}  keys
+ * @param  {Object=} options
+ * @return {!RegExp}
+ */
+function stringToRegexp (path, keys, options) {
+  return tokensToRegExp(parse(path, options), keys, options)
+}
+
+/**
+ * Expose a function for taking tokens and returning a RegExp.
+ *
+ * @param  {!Array}  tokens
+ * @param  {Array=}  keys
+ * @param  {Object=} options
+ * @return {!RegExp}
+ */
+function tokensToRegExp (tokens, keys, options) {
+  options = options || {}
+
+  var strict = options.strict
+  var end = options.end !== false
+  var delimiter = escapeString(options.delimiter || DEFAULT_DELIMITER)
+  var delimiters = options.delimiters || DEFAULT_DELIMITERS
+  var endsWith = [].concat(options.endsWith || []).map(escapeString).concat('$').join('|')
+  var route = ''
+  var isEndDelimited = tokens.length === 0
+
+  // Iterate over the tokens and create our regexp string.
+  for (var i = 0; i < tokens.length; i++) {
+    var token = tokens[i]
+
+    if (typeof token === 'string') {
+      route += escapeString(token)
+      isEndDelimited = i === tokens.length - 1 && delimiters.indexOf(token[token.length - 1]) > -1
+    } else {
+      var prefix = escapeString(token.prefix)
+      var capture = token.repeat
+        ? '(?:' + token.pattern + ')(?:' + prefix + '(?:' + token.pattern + '))*'
+        : token.pattern
+
+      if (keys) keys.push(token)
+
+      if (token.optional) {
+        if (token.partial) {
+          route += prefix + '(' + capture + ')?'
+        } else {
+          route += '(?:' + prefix + '(' + capture + '))?'
+        }
+      } else {
+        route += prefix + '(' + capture + ')'
+      }
+    }
+  }
+
+  if (end) {
+    if (!strict) route += '(?:' + delimiter + ')?'
+
+    route += endsWith === '$' ? '$' : '(?=' + endsWith + ')'
+  } else {
+    if (!strict) route += '(?:' + delimiter + '(?=' + endsWith + '))?'
+    if (!isEndDelimited) route += '(?=' + delimiter + '|' + endsWith + ')'
+  }
+
+  return new RegExp('^' + route, flags(options))
+}
+
+/**
+ * Normalize the given path string, returning a regular expression.
+ *
+ * An empty array can be passed in for the keys, which will hold the
+ * placeholder key descriptions. For example, using `/user/:id`, `keys` will
+ * contain `[{ name: 'id', delimiter: '/', optional: false, repeat: false }]`.
+ *
+ * @param  {(string|RegExp|Array)} path
+ * @param  {Array=}                keys
+ * @param  {Object=}               options
+ * @return {!RegExp}
+ */
+function pathToRegexp (path, keys, options) {
+  if (path instanceof RegExp) {
+    return regexpToRegexp(path, keys)
+  }
+
+  if (Array.isArray(path)) {
+    return arrayToRegexp(/** @type {!Array} */ (path), keys, options)
+  }
+
+  return stringToRegexp(/** @type {string} */ (path), keys, options)
+}
+
+});
+return ___scope___.entry = "index.js";
 });
 FuseBox.pkg("normalize.css", {}, function(___scope___){
 ___scope___.file("normalize.css", function(exports, require, module, __filename, __dirname){
