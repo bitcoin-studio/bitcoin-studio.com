@@ -1,27 +1,120 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  background: #e4e8e9 url(/assets/background.jpg) repeat left top;
-
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #e4e8e9 url(/assets/background.jpg) repeat left top;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+
+
+
+.wrapper {
+    display:grid;
+
+    /*grid-template-columns: 70% 30%;*/
+    /*grid-template-columns:repeat(3, 1fr);*/
+    grid-template-columns: 1fr 2fr 6fr 2fr 1fr;
+
+    grid-template-rows: 145px auto 100px;
+
+    /*grid-auto-rows:minmax(100px, auto);*/
+
+    grid-template-areas:
+            ".     .        nav     .       ."
+            ".     main     main    main    ."
+            ".     footer   footer  footer  .";
+
+    /*
+    grid-column-gap:1em;
+    grid-row-gap:1em;
+    grid-gap:1em;
+    */
 }
 
-#nav {
 
+
+
+
+
+/**
+    Navigation - Header
+ */
+.nav {
+    grid-area: nav;
+    background-color: #a0e9b7;
 }
 
-#nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav ul li {
+    font-family: 'Pathway Gothic One', Helvetica, Arial, "Trebuchet MS", sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+.nav ul li a {
+    height: 145px;
+    width: 100px;
+    display: block;
+    padding-top: 70px;
+}
+
+.nav ul li a:hover {
+    background: url(/assets/nav_item_hover.png) top no-repeat;
+    text-decoration: none;
+}
+
+.nav ul li a.active {
+    background: url(/assets/nav_item_active.png) no-repeat 0px 0px;
+    color: #fff;
+}
+
+
+
+.hero {
+    grid-area: hero;
+    background-color: #61dafb;
+}
+
+main {
+    grid-area: main;
+}
+
+main > div {
+    display: grid;
+
+    grid-template-columns: 2fr 6fr 2fr;
+
+    grid-template-areas:
+            ".         hero        ."
+            "content   content     content";
+}
+
+footer {
+    grid-area: footer;
+    background-color: #e9e826;
+}
+
+
+.content {
+    grid-area: content;
+    background-color: #e9375c;
+}
+
+
+.hero h1 {
+    font-family: 'Pathway Gothic One', Helvetica, Arial, "Trebuchet MS", sans-serif;
+    font-size: 5em;
+    line-height: 100%;
+    letter-spacing: 0.15em;
+    font-weight: normal;
 }

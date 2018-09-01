@@ -17,22 +17,22 @@ class Header extends React.Component {
         </Navbar.Group>
       </Navbar>*/
 
-      <nav id={"nav"}>
+      <nav className={"nav"}>
         <ul>
           <li>
-            <Link activeClassName="active" to="/">Home</Link>
+            <Link activeClassName="active" to="/">HOME</Link>
           </li>
           <li>
-            <Link to="/services">Services</Link>
+            <Link to="/services">SERVICES</Link>
           </li>
           <li>
-            <Link to="/workshop-preregistration">Worshops</Link>
+            <Link to="/workshop-preregistration">WORKSHOPS</Link>
           </li>
           <li>
-            <Link to="/ressources">Ressources</Link>
+            <Link to="/ressources">RESSOURCES</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about">ABOUT</Link>
           </li>
         </ul>
       </nav>

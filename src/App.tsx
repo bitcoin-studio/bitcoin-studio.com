@@ -2,6 +2,7 @@ import * as React from 'react'
 
 import Header from './components/Header'
 import Main from './components/Main'
+import Footer from './components/Footer'
 
 /**
  * Shell
@@ -9,15 +10,12 @@ import Main from './components/Main'
 class App extends React.Component {
   render() {
     return (
-      <div className={"App"}>
+      <div className={'wrapper'}>
         <Header/>
 
-        <div className="row">
-          <div className={'col-xs-10 col-xs-offset-1'}>
-            <Main/>
-          </div>
-        </div>
+        <Main/>
 
+        <Footer/>
       </div>
     )
   }
