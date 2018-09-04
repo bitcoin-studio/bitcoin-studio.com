@@ -7,7 +7,7 @@ class Home extends React.Component {
     return (
       <div className={'homePage'}>
         <div className={'hero'}>
-          <h1>THIS NOT IS TEIXIDÓ</h1>
+          <h1>BITCOIN STUDIO #1</h1>
           <p>
             Bitcoin expertise ...and more
             Extensive knowledge on blockchain tech
@@ -58,6 +58,37 @@ class Home extends React.Component {
             </p>
           </div>
         </div>
+
+
+        <div id="call2action" className="call2action">
+          <div id="call2action_ribbon">
+            <div className=""><h1>STOP BEING INVISIBLE TODAY</h1></div>
+            <div className=""><p>Are you tired of being invisible to your customers? Let’s talk for
+              real then.</p></div>
+            <div className="">
+              <p><a href="mailto:hello@bitcoin-studio.co">Request Proposal</a></p>
+            </div>
+          </div>
+
+          <div id="call2action_ribbon_prop" className="">
+            <div className="ribbon_prop_1">
+              <div className="inside">
+                <span><a href="mailto:hello@bitcoin-studio.co" className="clickhere">Click Here to</a></span>
+                <h1><a href="mailto:hello@bitcoin-studio.co" className="request">REQUEST</a></h1>
+                <span><a href="mailto:hello@bitcoin-studio.co" className="proposal">a Proposal</a></span>
+              </div>
+            </div>
+
+            <div className="ribbon_prop_2">
+              <div className="inside">
+                <span><a href="mailto:hello@bitcoin-studio.co" className="clickhere">Click Here to</a></span>
+                <h1><a href="mailto:hello@bitcoin-studio.co" className="request">REQUEST</a></h1>
+                <span><a href="mailto:hello@bitcoin-studio.co" className="proposal">a Proposal</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     )
   }

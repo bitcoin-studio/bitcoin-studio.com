@@ -1,3 +1,21 @@
+/**
+    Polices
+
+    TrumpGothicEastMedium => Pathway Gothic One  (headers)
+
+    republic-web => roboto slab (normal text)
+
+    pill-gothic => roboto condensed (bold text)
+
+
+
+    CSS Gird
+    .wrapper => 5 cols (1, 2, 6, 2, 1)  nav, main, footer
+
+    main > div => 3 cols (2, 6, 2)
+ */
+
+
 body {
     margin: 0;
     padding: 0;
@@ -5,7 +23,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background: #e4e8e9 url(/assets/background.jpg) repeat left top;
 }
-
 
 
 
@@ -42,7 +59,6 @@ body {
  */
 .nav {
     grid-area: nav;
-    background-color: #a0e9b7;
 }
 
 .nav ul {
@@ -66,6 +82,7 @@ body {
     width: 100px;
     display: block;
     padding-top: 70px;
+    text-align: center;
 }
 
 .nav ul li a:hover {
@@ -82,7 +99,6 @@ body {
 
 .hero {
     grid-area: hero;
-    background-color: #61dafb;
 }
 
 main {
@@ -95,20 +111,102 @@ main > div {
     grid-template-columns: 2fr 6fr 2fr;
 
     grid-template-areas:
-            ".         hero        ."
-            "content   content     content";
+            ".           hero        ."
+            "content     content     content"
+            "call2action call2action call2action";
 }
 
+
+
+
+/**
+    FOOTER
+ */
 footer {
     grid-area: footer;
-    background-color: #e9e826;
+    /*background-color: #e9e826;*/
+
+    display: flex;
+
+    width: 1200px;
+    height: 207px;
+    /*height: 166px;*/
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 240px;
+    line-height: 140%;
+
+    background: url(/assets/footer_right_207px.png) no-repeat scroll right bottom,
+    url(/assets/footer_left_207px.png) no-repeat scroll left bottom,
+    url(/assets/footer_bg_207px.png) repeat scroll right bottom transparent;
 }
+
+footer > div {
+    width: 248px;
+    padding-top: 20px;
+}
+
+footer > div > h2 {
+    font-family: 'Pathway Gothic One', Helvetica, Arial, "Trebuchet MS", sans-serif;
+    font-size: 26px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+footer > div > nav > ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+footer > div > nav > ul > li {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 14px;
+    letter-spacing: normal;
+    line-height: 175%;
+}
+
+footer > div > nav > ul > li > a {
+    color: #39444a;
+    text-decoration: none;
+    padding-left: 14px;
+    background: url(/assets/footer_li_arrow.png) no-repeat 0px 1px;
+}
+
+footer > div > nav > ul > li > a:hover {
+    color: #fff;
+    text-decoration: none;
+    padding-left: 14px;
+    background: url(/assets/footer_li_arrow.png) no-repeat 0px -18px;
+}
+/**
+    END FOOTER
+ */
+
+
+
 
 
 .content {
     grid-area: content;
-    background-color: #e9375c;
+
 }
+
+.content p, li {
+    font-family: "Roboto Slab",serif;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+}
+
+.content h1, h2, h3 {
+    font-family: 'Pathway Gothic One', Helvetica, Arial, "Trebuchet MS", sans-serif;
+    font-size: 40px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
 
 
 .hero h1 {
@@ -117,4 +215,65 @@ footer {
     line-height: 100%;
     letter-spacing: 0.15em;
     font-weight: normal;
+}
+
+.hero p {
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    margin-bottom: 30px;
+}
+
+.call2action {
+    grid-area: call2action;
+    display: flex;
+    margin-top: 100px;
+}
+
+#call2action_ribbon {
+    display: flex;
+    padding: 81px 44px 0px 84px;
+    background: url(/assets/call2action_invisible.gif) no-repeat 352px 47px,
+    url(/assets/call2action_ribbon.jpg) no-repeat left center,
+    url(/assets/call2action.png) repeat-x center left;
+}
+
+#call2action_ribbon_prop {
+    width: 206px;
+    height: 205px;
+    float: left;
+    position: relative;
+    text-align: center;
+    background: url(/assets/call2action_circle_bg.png) left no-repeat;
+}
+
+#call2action_ribbon h1 {
+    font-family: 'Pathway Gothic One', Helvetica, Arial, "Trebuchet MS", sans-serif;
+    font-size: 33px;
+    letter-spacing: 2px;
+}
+
+.ribbon_prop_1 {
+    position: absolute;
+    background: url(/assets/call2action_circle.png) left 0px no-repeat;
+    width: 206px;
+    height: 205px;
+    z-index: 2;
+}
+
+.ribbon_prop_1:hover {
+    opacity: 0
+}
+
+.ribbon_prop_2 {
+    position: absolute;
+    background: url(/assets/call2action_circle.png) left -205px no-repeat;
+    width: 206px;
+    height: 205px;
+}
+
+.ribbon_prop_2:hover {
+    opacity: 1
 }
