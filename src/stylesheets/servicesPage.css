@@ -1,0 +1,42 @@
+/**
+    Services Page Stylesheet
+ */
+
+main > div#servicesPage {
+    grid-template-areas:
+            ".                               hero-sp        ."
+            "workshops-sp                    workshops-sp                    workshops-sp"
+            "consultingForCompanies-sp       consultingForCompanies-sp       consultingForCompanies-sp"
+            "consultingForIndividuals-sp     consultingForIndividuals-sp     consultingForIndividuals-sp";
+}
+
+
+/**
+    Hero Services Page
+ */
+#hero-servicesPage {
+    grid-area: hero-sp;
+}
+#hero-servicesPage h1 {
+    font-family: 'Pathway Gothic One', Helvetica, Arial, "Trebuchet MS", sans-serif;
+    font-size: 8em;
+    font-weight: bold;
+}
+#hero-servicesPage p {
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    margin-bottom: 30px;
+}
+
+#workshops-servicesPage {
+    grid-area: workshops-sp;
+}
+#consultingForCompanies-servicesPage {
+    grid-area: consultingForCompanies-sp;
+}
+#consultingForIndividuals-servicesPage {
+    grid-area: consultingForIndividuals-sp;
+}

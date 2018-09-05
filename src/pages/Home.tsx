@@ -1,13 +1,12 @@
 import * as React from 'react'
-
 //import { Button, Intent } from "@blueprintjs/core";
 
 class Home extends React.Component {
   render() {
     return (
-      <div className={'homePage'}>
+      <div id={'homePage'}>
 
-        <div className={'hero'}>
+        <div id={'hero-homePage'}>
           <h1>BITCOIN STUDIO #1</h1>
           <p>
             Expertise on blockchain tech, particularly Bitcoin. A network of real experts, design studio, web/interface
@@ -17,7 +16,7 @@ class Home extends React.Component {
           </p>
         </div>
 
-        <section className={'services'}>
+        <section id={'services-homePage'}>
           <div className="hr">
             <hr/>
           </div>
@@ -30,7 +29,7 @@ class Home extends React.Component {
             nemo quidem vitae. </p>
         </section>
 
-        <section className={'stuff'}>
+        <section id={'stuff-homePage'}>
           <div className="hr">
             <hr/>
           </div>
@@ -54,7 +53,7 @@ class Home extends React.Component {
           </p>
         </section>
 
-        <section className={'workshops'}>
+        <section id={'workshops-homePage'}>
           <div className="hr">
             <hr/>
           </div>
@@ -83,7 +82,7 @@ class Home extends React.Component {
         </section>
 
 
-        <section id="call2action" className="call2action">
+        <section id="call2action-homePage">
           <div id="call2action_ribbon">
             <h1>STOP BEING A FOLLOWER</h1>
             <p>Are you tired of the financial system? Let’s talk for real then.</p>
