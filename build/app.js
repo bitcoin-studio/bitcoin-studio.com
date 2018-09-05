@@ -344,23 +344,28 @@ class Ressources extends React.Component {
                 React.createElement("div", { className: 'slideItemContainer2' },
                     React.createElement("div", { className: 'slideItemContainer' },
                         React.createElement("object", { className: 'slideItem', type: "application/pdf", data: "workshopSlides/Bitcoin_forks_history.pdf" })),
-                    React.createElement("a", { href: "workshopSlides/Bitcoin_forks_history.pdf", download: true }, "Download")),
+                    React.createElement("button", null,
+                        React.createElement("a", { href: "workshopSlides/Bitcoin_forks_history.pdf", download: true }, "DOWNLOAD"))),
                 React.createElement("div", { className: 'slideItemContainer2' },
                     React.createElement("div", { className: 'slideItemContainer' },
                         React.createElement("object", { className: 'slideItem', type: "application/pdf", data: "workshopSlides/Bitcoin_keys_addresses_wallets.pdf" })),
-                    React.createElement("a", { href: "workshopSlides/Bitcoin_keys_addresses_wallets.pdf", download: true }, "Download")),
+                    React.createElement("button", null,
+                        React.createElement("a", { href: "workshopSlides/Bitcoin_keys_addresses_wallets.pdf", download: true }, "DOWNLOAD"))),
                 React.createElement("div", { className: 'slideItemContainer2' },
                     React.createElement("div", { className: 'slideItemContainer' },
                         React.createElement("object", { className: 'slideItem', type: "application/pdf", data: "workshopSlides/Mining-Consensus-Forks.pdf" })),
-                    React.createElement("a", { href: "workshopSlides/Mining-Consensus-Forks.pdf", download: true }, "Download")),
+                    React.createElement("button", null,
+                        React.createElement("a", { href: "workshopSlides/Mining-Consensus-Forks.pdf", download: true }, "DOWNLOAD"))),
                 React.createElement("div", { className: 'slideItemContainer2' },
                     React.createElement("div", { className: 'slideItemContainer' },
                         React.createElement("object", { className: 'slideItem', type: "application/pdf", data: "workshopSlides/Next_challenges_of_Bitcoin.pdf" })),
-                    React.createElement("a", { href: "workshopSlides/Next_challenges_of_Bitcoin.pdf", download: true }, "Download")),
+                    React.createElement("button", null,
+                        React.createElement("a", { href: "workshopSlides/Next_challenges_of_Bitcoin.pdf", download: true }, "DOWNLOAD"))),
                 React.createElement("div", { className: 'slideItemContainer2' },
                     React.createElement("div", { className: 'slideItemContainer' },
                         React.createElement("object", { className: 'slideItem', type: "application/pdf", data: "workshopSlides/Bitcoin_transaction.pdf" })),
-                    React.createElement("a", { href: "workshopSlides/Bitcoin_transaction.pdf", download: true }, "Download")))));
+                    React.createElement("button", null,
+                        React.createElement("a", { href: "workshopSlides/Bitcoin_transaction.pdf", download: true }, "DOWNLOAD"))))));
     }
 }
 exports.default = Ressources;
@@ -540,7 +545,7 @@ require("fuse-box-css")("stylesheets/workshopPage.css", "main > div#workshopPage
 ___scope___.file("stylesheets/ressourcesPage.css", function(exports, require, module, __filename, __dirname){
 
 
-require("fuse-box-css")("stylesheets/ressourcesPage.css", "main > div#ressourcesPage {\n    grid-template-areas:\n            \".            hero-rp        .\"\n            \"hr-slides-rp hr-slides-rp   hr-slides-rp\"\n            \"slides       slides         slides\";\n}\n\n#hero-ressourcesPage {\n    grid-area: hero-rp;\n}\n\n#slides-ressourcesPage {\n    grid-area: slides;\n\n    display: flex;\n    flex-wrap: wrap;\n    flex-direction: row;\n    justify-content: space-between;\n}\n\n.slideItemContainer {\n    overflow: hidden;\n    height: 169px;\n}\n\n.slideItemContainer2 {\n    height: 169px;\n    margin-bottom: 20px;\n    width: calc(1 / 4 * 100% - (1 - 1 / 4) * 20px);\n}\n\n\n\n\n\n\n/*\n.slideItemContainer a {\n    height: 169px;\n    width: 189px;\n    cursor: pointer;\n}\n*/\n\nobject.slideItem {\n    top: -56px;\n    position: relative;\n    height: 225px;\n}\n\n#slides-ressourcesPage h2 {\n    width: 100%;\n    margin-bottom: 1.5em;\n}\n\n#hr-slides-ressourcesPage {\n    grid-area: hr-slides-rp;\n    position: relative;\n    top: 27px;\n    margin-top: 30px;\n}")
+require("fuse-box-css")("stylesheets/ressourcesPage.css", "main > div#ressourcesPage {\n    grid-template-areas:\n            \".            hero-rp        .\"\n            \"hr-slides-rp hr-slides-rp   hr-slides-rp\"\n            \"slides       slides         slides\";\n}\n\n#hero-ressourcesPage {\n    grid-area: hero-rp;\n}\n\n#slides-ressourcesPage {\n    grid-area: slides;\n\n    display: flex;\n    flex-wrap: wrap;\n    flex-direction: row;\n    justify-content: space-between;\n}\n\n.slideItemContainer {\n    overflow: hidden;\n    height: 169px;\n}\n\n.slideItemContainer2 {\n    height: 169px;\n    margin-bottom: 50px;\n    width: calc(1 / 4 * 100% - (1 - 1 / 4) * 20px);\n}\n.slideItemContainer2 button {\n    outline: none;\n    width: 100%;\n    border-radius: 0.1px;\n    cursor: pointer;\n    margin-top: 5px;\n    border: 1px groove;\n    background-color: rgba(0, 0, 0, 0);\n\n    color: rgba(255,255,255,1);\n    -webkit-transition: all 0.5s;\n    -moz-transition: all 0.5s;\n    -o-transition: all 0.5s;\n    transition: all 0.5s;\n    border: 1px groove rgba(57, 68, 74, 0.3);\n    position: relative;\n}\n\n.slideItemContainer2 button a {\n    text-decoration: none;\n    color: #39444a;\n    z-index: 2;\n    display: block;\n    width: 100%;\n    height: 100%;\n\n    font-weight: bold;\n    font-family: \"Pathway Gothic One\",serif;\n    font-size: 14px;\n    letter-spacing: 10px;\n}\n\n.slideItemContainer2 button::before{\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    z-index: -1;\n    opacity: 0;\n    background-color: rgba(255,255,255,0.5);\n    -webkit-transition: all 0.4s;\n    -moz-transition: all 0.4s;\n    -o-transition: all 0.4s;\n    transition: all 0.4s;\n    -webkit-transform: scale(0.5, 1);\n    transform: scale(0.5, 1);\n}\n.slideItemContainer2 button:hover::before{\n    opacity: 1;\n    -webkit-transform: scale(1, 1);\n    transform: scale(1, 1);\n}\n\n\nobject.slideItem {\n    top: -56px;\n    position: relative;\n    height: 225px;\n}\n\n#slides-ressourcesPage h2 {\n    width: 100%;\n    margin-bottom: 1.5em;\n}\n\n#hr-slides-ressourcesPage {\n    grid-area: hr-slides-rp;\n    position: relative;\n    top: 27px;\n    margin-top: 30px;\n}")
 });
 ___scope___.file("stylesheets/aboutPage.css", function(exports, require, module, __filename, __dirname){
 

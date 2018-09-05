@@ -25,22 +25,64 @@ main > div#ressourcesPage {
 
 .slideItemContainer2 {
     height: 169px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     width: calc(1 / 4 * 100% - (1 - 1 / 4) * 20px);
 }
-
-
-
-
-
-
-/*
-.slideItemContainer a {
-    height: 169px;
-    width: 189px;
+.slideItemContainer2 button {
+    outline: none;
+    width: 100%;
+    border-radius: 0.1px;
     cursor: pointer;
+    margin-top: 5px;
+    border: 1px groove;
+    background-color: rgba(0, 0, 0, 0);
+
+    color: rgba(255,255,255,1);
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    border: 1px groove rgba(57, 68, 74, 0.3);
+    position: relative;
 }
-*/
+
+.slideItemContainer2 button a {
+    text-decoration: none;
+    color: #39444a;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    font-weight: bold;
+    font-family: "Pathway Gothic One",serif;
+    font-size: 14px;
+    letter-spacing: 10px;
+}
+
+.slideItemContainer2 button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    background-color: rgba(255,255,255,0.5);
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-transform: scale(0.5, 1);
+    transform: scale(0.5, 1);
+}
+.slideItemContainer2 button:hover::before{
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
 
 object.slideItem {
     top: -56px;
