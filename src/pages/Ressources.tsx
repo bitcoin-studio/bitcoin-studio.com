@@ -24,40 +24,40 @@ class Ressources extends React.Component {
           <div className={'slideItemContainer2'}>
             <div className={'slideItemContainer'}>
               <object className={'slideItem'} type="application/pdf"
-                      data="workshopSlides/Bitcoin_forks_history.pdf"></object>
+                      data="workshopSlides/Bitcoin_forks_history_S_Roche.pdf"></object>
             </div>
             <button>
-              <a href="workshopSlides/Bitcoin_forks_history.pdf" download>DOWNLOAD</a>
+              <a href="workshopSlides/Bitcoin_forks_history_S_Roche.pdf" download>DOWNLOAD</a>
             </button>
           </div>
 
           <div className={'slideItemContainer2'}>
             <div className={'slideItemContainer'}>
               <object className={'slideItem'} type="application/pdf"
-                      data="workshopSlides/Bitcoin_keys_addresses_wallets.pdf"></object>
+                      data="workshopSlides/Bitcoin_keys_addresses_wallets_S_Roche.pdf"></object>
             </div>
             <button>
-            <a href="workshopSlides/Bitcoin_keys_addresses_wallets.pdf" download>DOWNLOAD</a>
+            <a href="workshopSlides/Bitcoin_keys_addresses_wallets_S_Roche.pdf" download>DOWNLOAD</a>
             </button>
           </div>
 
           <div className={'slideItemContainer2'}>
             <div className={'slideItemContainer'}>
               <object className={'slideItem'} type="application/pdf"
-                      data="workshopSlides/Mining-Consensus-Forks.pdf"></object>
+                      data="workshopSlides/Mining_consensus_forks_S_Roche.pdf"></object>
             </div>
             <button>
-            <a href="workshopSlides/Mining-Consensus-Forks.pdf" download>DOWNLOAD</a>
+            <a href="workshopSlides/Mining_consensus_forks_S_Roche.pdf" download>DOWNLOAD</a>
             </button>
           </div>
 
           <div className={'slideItemContainer2'}>
             <div className={'slideItemContainer'}>
               <object className={'slideItem'} type="application/pdf"
-                      data="workshopSlides/Next_challenges_of_Bitcoin.pdf"></object>
+                      data="workshopSlides/Next_challenges_of_Bitcoin_S_Roche.pdf"></object>
             </div>
             <button>
-            <a href="workshopSlides/Next_challenges_of_Bitcoin.pdf" download>DOWNLOAD</a>
+            <a href="workshopSlides/Next_challenges_of_Bitcoin_S_Roche.pdf" download>DOWNLOAD</a>
             </button>
           </div>
 
@@ -65,10 +65,10 @@ class Ressources extends React.Component {
           <div className={'slideItemContainer2'}>
             <div className={'slideItemContainer'}>
               <object className={'slideItem'} type="application/pdf"
-                      data="workshopSlides/Bitcoin_transaction.pdf"></object>
+                      data="workshopSlides/Bitcoin_transaction_S_Roche.pdf"></object>
             </div>
             <button>
-            <a href="workshopSlides/Bitcoin_transaction.pdf" download>DOWNLOAD</a>
+            <a href="workshopSlides/Bitcoin_transaction_S_Roche.pdf" download>DOWNLOAD</a>
             </button>
           </div>
         </section>
