@@ -77,6 +77,23 @@ main > div#ressourcesPage {
     -webkit-transform: scale(0.5, 1);
     transform: scale(0.5, 1);
 }
+.slideItemContainer2.fakeItemContainer button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0;
+    background-color: rgba(201, 24, 0, 0.5);
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-transform: scale(0.5, 1);
+    transform: scale(0.5, 1);
+}
 .slideItemContainer2 button:hover::before{
     opacity: 1;
     -webkit-transform: scale(1, 1);
@@ -88,6 +105,10 @@ object.slideItem {
     top: -56px;
     position: relative;
     height: 225px;
+}
+
+object.slideItem.fakeItem {
+    filter: blur(0.3rem);
 }
 
 #slides-ressourcesPage h2 {

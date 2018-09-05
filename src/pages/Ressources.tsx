@@ -71,6 +71,36 @@ class Ressources extends React.Component {
             <a href="workshopSlides/Bitcoin_transaction_S_Roche.pdf" download>DOWNLOAD</a>
             </button>
           </div>
+
+          <div className={'slideItemContainer2'}>
+            <div className={'slideItemContainer'}>
+              <object className={'slideItem'} type="application/pdf"
+                      data="workshopSlides/TheBeginningOfYourBlockchainJourney_S_Roche.pdf"></object>
+            </div>
+            <button>
+              <a href="workshopSlides/TheBeginningOfYourBlockchainJourney_S_Roche.pdf" download>DOWNLOAD</a>
+            </button>
+          </div>
+
+          <div className={'slideItemContainer2 fakeItemContainer'}>
+            <div className={'slideItemContainer'}>
+              <object className={'slideItem fakeItem'}
+                      data="workshopSlides/slide_fake.png"></object>
+            </div>
+            <button>
+              <a>DOWNLOAD</a>
+            </button>
+          </div>
+
+          <div className={'slideItemContainer2 fakeItemContainer'}>
+            <div className={'slideItemContainer'}>
+              <object className={'slideItem fakeItem'}
+                      data="workshopSlides/slide_fake.png"></object>
+            </div>
+            <button>
+              <a>DOWNLOAD</a>
+            </button>
+          </div>
         </section>
       </div>
     )

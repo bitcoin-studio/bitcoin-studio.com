@@ -243,7 +243,7 @@ class WorkshopPreRegistration extends React.Component {
                 React.createElement("section", { className: 'practical-offer-workshopPage' },
                     React.createElement("div", { className: "hr40pc" },
                         React.createElement("hr", null)),
-                    React.createElement("h2", null, "Practical: Bitcoin workshop 1 day"),
+                    React.createElement("h2", null, "Practical Bitcoin workshop 1 day"),
                     React.createElement("h3", null, "Price"),
                     React.createElement("p", null, "100\u20AC inc. VAT. Satisfied or refunded"),
                     React.createElement("h3", null, "Goals"),
@@ -255,7 +255,7 @@ class WorkshopPreRegistration extends React.Component {
                 React.createElement("section", { className: 'essentials-offer-workshopPage' },
                     React.createElement("div", { className: "hr40pc" },
                         React.createElement("hr", null)),
-                    React.createElement("h2", null, "Essentials: Bitcoin workshop 2 days"),
+                    React.createElement("h2", null, "Essentials Bitcoin workshop 2 days"),
                     React.createElement("h3", null, "Price"),
                     React.createElement("p", null, "369\u20AC inc. VAT. Satisfied or refunded"),
                     React.createElement("h3", null, "Goals"),
@@ -267,7 +267,7 @@ class WorkshopPreRegistration extends React.Component {
                 React.createElement("section", { className: 'indepth-offer-workshopPage' },
                     React.createElement("div", { className: "hr40pc" },
                         React.createElement("hr", null)),
-                    React.createElement("h2", null, "In-depth: Bitcoin workshop 5 days"),
+                    React.createElement("h2", null, "In-depth Bitcoin workshop 5 days"),
                     React.createElement("h3", null, "Price"),
                     React.createElement("p", null, "500\u20AC inc. VAT. Satisfied or refunded"),
                     React.createElement("h3", null, "Goals"),
@@ -375,7 +375,22 @@ class Ressources extends React.Component {
                     React.createElement("div", { className: 'slideItemContainer' },
                         React.createElement("object", { className: 'slideItem', type: "application/pdf", data: "workshopSlides/Bitcoin_transaction_S_Roche.pdf" })),
                     React.createElement("button", null,
-                        React.createElement("a", { href: "workshopSlides/Bitcoin_transaction_S_Roche.pdf", download: true }, "DOWNLOAD"))))));
+                        React.createElement("a", { href: "workshopSlides/Bitcoin_transaction_S_Roche.pdf", download: true }, "DOWNLOAD"))),
+                React.createElement("div", { className: 'slideItemContainer2' },
+                    React.createElement("div", { className: 'slideItemContainer' },
+                        React.createElement("object", { className: 'slideItem', type: "application/pdf", data: "workshopSlides/TheBeginningOfYourBlockchainJourney_S_Roche.pdf" })),
+                    React.createElement("button", null,
+                        React.createElement("a", { href: "workshopSlides/TheBeginningOfYourBlockchainJourney_S_Roche.pdf", download: true }, "DOWNLOAD"))),
+                React.createElement("div", { className: 'slideItemContainer2 fakeItemContainer' },
+                    React.createElement("div", { className: 'slideItemContainer' },
+                        React.createElement("object", { className: 'slideItem fakeItem', data: "workshopSlides/slide_fake.png" })),
+                    React.createElement("button", null,
+                        React.createElement("a", null, "DOWNLOAD"))),
+                React.createElement("div", { className: 'slideItemContainer2 fakeItemContainer' },
+                    React.createElement("div", { className: 'slideItemContainer' },
+                        React.createElement("object", { className: 'slideItem fakeItem', data: "workshopSlides/slide_fake.png" })),
+                    React.createElement("button", null,
+                        React.createElement("a", null, "DOWNLOAD"))))));
     }
 }
 exports.default = Ressources;
@@ -555,7 +570,7 @@ require("fuse-box-css")("stylesheets/workshopPage.css", "main > div#workshopPage
 ___scope___.file("stylesheets/ressourcesPage.css", function(exports, require, module, __filename, __dirname){
 
 
-require("fuse-box-css")("stylesheets/ressourcesPage.css", "main > div#ressourcesPage {\n    grid-template-areas:\n            \".            hero-rp        .\"\n            \"hr-slides-rp hr-slides-rp   hr-slides-rp\"\n            \"slides       slides         slides\";\n}\n\n#hero-ressourcesPage {\n    grid-area: hero-rp;\n}\n\n#slides-ressourcesPage {\n    grid-area: slides;\n\n    display: flex;\n    flex-wrap: wrap;\n    flex-direction: row;\n    justify-content: space-between;\n}\n\n.slideItemContainer {\n    overflow: hidden;\n    height: 169px;\n}\n\n.slideItemContainer2 {\n    height: 169px;\n    margin-bottom: 50px;\n    width: calc(1 / 4 * 100% - (1 - 1 / 4) * 20px);\n}\n.slideItemContainer2 button {\n    outline: none;\n    width: 100%;\n    border-radius: 0.1px;\n    cursor: pointer;\n    margin-top: 5px;\n    border: 1px groove;\n    background-color: rgba(0, 0, 0, 0);\n\n    color: rgba(255,255,255,1);\n    -webkit-transition: all 0.5s;\n    -moz-transition: all 0.5s;\n    -o-transition: all 0.5s;\n    transition: all 0.5s;\n    border: 1px groove rgba(57, 68, 74, 0.3);\n    position: relative;\n}\n\n.slideItemContainer2 button a {\n    text-decoration: none;\n    color: #39444a;\n    z-index: 2;\n    display: block;\n    width: 100%;\n    height: 100%;\n\n    font-weight: bold;\n    font-family: \"Pathway Gothic One\",serif;\n    font-size: 14px;\n    letter-spacing: 10px;\n}\n\n.slideItemContainer2 button::before{\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    z-index: -1;\n    opacity: 0;\n    background-color: rgba(255,255,255,0.5);\n    -webkit-transition: all 0.4s;\n    -moz-transition: all 0.4s;\n    -o-transition: all 0.4s;\n    transition: all 0.4s;\n    -webkit-transform: scale(0.5, 1);\n    transform: scale(0.5, 1);\n}\n.slideItemContainer2 button:hover::before{\n    opacity: 1;\n    -webkit-transform: scale(1, 1);\n    transform: scale(1, 1);\n}\n\n\nobject.slideItem {\n    top: -56px;\n    position: relative;\n    height: 225px;\n}\n\n#slides-ressourcesPage h2 {\n    width: 100%;\n    margin-bottom: 1.5em;\n}\n\n#hr-slides-ressourcesPage {\n    grid-area: hr-slides-rp;\n    position: relative;\n    top: 27px;\n    margin-top: 30px;\n}")
+require("fuse-box-css")("stylesheets/ressourcesPage.css", "main > div#ressourcesPage {\n    grid-template-areas:\n            \".            hero-rp        .\"\n            \"hr-slides-rp hr-slides-rp   hr-slides-rp\"\n            \"slides       slides         slides\";\n}\n\n#hero-ressourcesPage {\n    grid-area: hero-rp;\n}\n\n#slides-ressourcesPage {\n    grid-area: slides;\n\n    display: flex;\n    flex-wrap: wrap;\n    flex-direction: row;\n    justify-content: space-between;\n}\n\n.slideItemContainer {\n    overflow: hidden;\n    height: 169px;\n}\n\n.slideItemContainer2 {\n    height: 169px;\n    margin-bottom: 50px;\n    width: calc(1 / 4 * 100% - (1 - 1 / 4) * 20px);\n}\n.slideItemContainer2 button {\n    outline: none;\n    width: 100%;\n    border-radius: 0.1px;\n    cursor: pointer;\n    margin-top: 5px;\n    border: 1px groove;\n    background-color: rgba(0, 0, 0, 0);\n\n    color: rgba(255,255,255,1);\n    -webkit-transition: all 0.5s;\n    -moz-transition: all 0.5s;\n    -o-transition: all 0.5s;\n    transition: all 0.5s;\n    border: 1px groove rgba(57, 68, 74, 0.3);\n    position: relative;\n}\n\n.slideItemContainer2 button a {\n    text-decoration: none;\n    color: #39444a;\n    z-index: 2;\n    display: block;\n    width: 100%;\n    height: 100%;\n\n    font-weight: bold;\n    font-family: \"Pathway Gothic One\",serif;\n    font-size: 14px;\n    letter-spacing: 10px;\n}\n\n.slideItemContainer2 button::before{\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    z-index: -1;\n    opacity: 0;\n    background-color: rgba(255,255,255,0.5);\n    -webkit-transition: all 0.4s;\n    -moz-transition: all 0.4s;\n    -o-transition: all 0.4s;\n    transition: all 0.4s;\n    -webkit-transform: scale(0.5, 1);\n    transform: scale(0.5, 1);\n}\n.slideItemContainer2.fakeItemContainer button::before{\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    z-index: -1;\n    opacity: 0;\n    background-color: rgba(201, 24, 0, 0.5);\n    -webkit-transition: all 0.4s;\n    -moz-transition: all 0.4s;\n    -o-transition: all 0.4s;\n    transition: all 0.4s;\n    -webkit-transform: scale(0.5, 1);\n    transform: scale(0.5, 1);\n}\n.slideItemContainer2 button:hover::before{\n    opacity: 1;\n    -webkit-transform: scale(1, 1);\n    transform: scale(1, 1);\n}\n\n\nobject.slideItem {\n    top: -56px;\n    position: relative;\n    height: 225px;\n}\n\nobject.slideItem.fakeItem {\n    filter: blur(0.3rem);\n}\n\n#slides-ressourcesPage h2 {\n    width: 100%;\n    margin-bottom: 1.5em;\n}\n\n#hr-slides-ressourcesPage {\n    grid-area: hr-slides-rp;\n    position: relative;\n    top: 27px;\n    margin-top: 30px;\n}")
 });
 ___scope___.file("stylesheets/aboutPage.css", function(exports, require, module, __filename, __dirname){
 
