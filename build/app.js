@@ -49,19 +49,29 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const React = require("react");
 const fuse_react_1 = require("fuse-react");
 class Header extends React.Component {
+    constructor(props) {
+        super(props);
+        this.activate = this.activate.bind(this);
+        this.state = {
+            activeItem: 'HOME'
+        };
+    }
+    activate(item) {
+        this.setState({ activeItem: item });
+    }
     render() {
         return (React.createElement("nav", { className: "nav" },
             React.createElement("ul", null,
                 React.createElement("li", null,
-                    React.createElement(fuse_react_1.Link, { activeClassName: "active", to: "/" }, "HOME")),
+                    React.createElement(fuse_react_1.Link, { className: this.state.activeItem === 'HOME' ? 'active' : '', onClick: this.activate.bind(this, 'HOME'), to: "/" }, "HOME")),
                 React.createElement("li", null,
-                    React.createElement(fuse_react_1.Link, { to: "/services" }, "SERVICES")),
+                    React.createElement(fuse_react_1.Link, { className: this.state.activeItem === 'SERVICES' ? 'active' : '', onClick: this.activate.bind(this, 'SERVICES'), to: "/services" }, "SERVICES")),
                 React.createElement("li", null,
-                    React.createElement(fuse_react_1.Link, { to: "/workshop-preregistration" }, "WORKSHOPS")),
+                    React.createElement(fuse_react_1.Link, { className: this.state.activeItem === 'WORKSHOPS' ? 'active' : '', onClick: this.activate.bind(this, 'WORKSHOPS'), to: "/workshop-preregistration" }, "WORKSHOPS")),
                 React.createElement("li", null,
-                    React.createElement(fuse_react_1.Link, { to: "/ressources" }, "RESSOURCES")),
+                    React.createElement(fuse_react_1.Link, { className: this.state.activeItem === 'RESSOURCES' ? 'active' : '', onClick: this.activate.bind(this, 'RESSOURCES'), to: "/ressources" }, "RESSOURCES")),
                 React.createElement("li", null,
-                    React.createElement(fuse_react_1.Link, { to: "/about" }, "ABOUT")))));
+                    React.createElement(fuse_react_1.Link, { className: this.state.activeItem === 'ABOUT' ? 'active' : '', onClick: this.activate.bind(this, 'ABOUT'), to: "/about" }, "ABOUT")))));
     }
 }
 exports.default = Header;
