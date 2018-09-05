@@ -3,16 +3,65 @@ import * as React from 'react'
 class Ressources extends React.Component {
   render() {
     return (
-      <div className="row">
-        <div className={'col-xs-10 col-xs-offset-1'}>
+      <div id="ressourcesPage">
+        <div className={'hero'} id={'hero-ressourcesPage'}>
           <h1>Ressources</h1>
-          <p>Workshop slides</p>
-          <ul>
-            <li>Keys, wallet, addresses</li>
-            <li>Consensus, mining, forks</li>
-            <li>All about transactions (legacy and segwit format)</li>
-          </ul>
+          <p>Workshop slides - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequatur delectus
+            doloremque eos mollitia, nihil sint velit. Aspernatur fuga iste labore perferendis quasi rem! A delectus
+            enim ipsum modi quam.</p>
+          <p>Keys, wallet, addresses, Consensus, mining, forks, All about transactions (legacy and segwit format)</p>
         </div>
+
+        <div id="hr-slides-ressourcesPage">
+          <div className="hr">
+            <hr/>
+          </div>
+        </div>
+
+        <section id={'slides-ressourcesPage'}>
+          <h2>BITCOIN TRAININGS SLIDES</h2>
+
+          <div className={'slideItemContainer2'}>
+            <div className={'slideItemContainer'}>
+              <object className={'slideItem'} type="application/pdf"
+                      data="workshopSlides/Bitcoin_forks_history.pdf"></object>
+            </div>
+            <a href="workshopSlides/Bitcoin_forks_history.pdf" download>Download</a>
+          </div>
+
+          <div className={'slideItemContainer2'}>
+            <div className={'slideItemContainer'}>
+              <object className={'slideItem'} type="application/pdf"
+                      data="workshopSlides/Bitcoin_keys_addresses_wallets.pdf"></object>
+            </div>
+            <a href="workshopSlides/Bitcoin_keys_addresses_wallets.pdf" download>Download</a>
+          </div>
+
+          <div className={'slideItemContainer2'}>
+            <div className={'slideItemContainer'}>
+              <object className={'slideItem'} type="application/pdf"
+                      data="workshopSlides/Mining-Consensus-Forks.pdf"></object>
+            </div>
+            <a href="workshopSlides/Mining-Consensus-Forks.pdf" download>Download</a>
+          </div>
+
+          <div className={'slideItemContainer2'}>
+            <div className={'slideItemContainer'}>
+              <object className={'slideItem'} type="application/pdf"
+                      data="workshopSlides/Next_challenges_of_Bitcoin.pdf"></object>
+            </div>
+            <a href="workshopSlides/Next_challenges_of_Bitcoin.pdf" download>Download</a>
+          </div>
+
+
+          <div className={'slideItemContainer2'}>
+            <div className={'slideItemContainer'}>
+              <object className={'slideItem'} type="application/pdf"
+                      data="workshopSlides/Bitcoin_transaction.pdf"></object>
+            </div>
+            <a href="workshopSlides/Bitcoin_transaction.pdf" download>Download</a>
+          </div>
+        </section>
       </div>
     )
   }

@@ -5,7 +5,7 @@ class Services extends React.Component {
     return (
       <div id={'servicesPage'}>
 
-        <div id={'hero-servicesPage'}>
+        <div className={"hero"} id={'hero-servicesPage'}>
           <h1>OUR SERVICES</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eius illum ipsum, itaque laboriosam magni

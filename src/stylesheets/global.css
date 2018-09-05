@@ -20,7 +20,6 @@
     secondary: #fffff;
  */
 
-
 body {
     margin: 0;
     padding: 0;
@@ -57,13 +56,22 @@ main > div {
     letter-spacing: 0.3px;
 }
 
-/*
-main > div p {
-    font-family: "Roboto Slab",serif;
-    font-size: 14px;
-    letter-spacing: 0.3px;
+/**
+    Hero
+ */
+.hero h1 {
+    font-family: 'Pathway Gothic One', Helvetica, Arial, "Trebuchet MS", sans-serif;
+    font-size: 8em;
+    font-weight: bold;
 }
-*/
+.hero p {
+    font-family: "Roboto Condensed", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    margin-bottom: 30px;
+}
 
 
 /**
@@ -74,6 +82,12 @@ main > div p {
     height: 6px;
     background: url(/assets/border.png) top repeat-x;
     width: 100%;
+}
+.hr40pc {
+    clear: both;
+    height: 6px;
+    background: url(/assets/border.png) top repeat-x;
+    width: 40%;
 }
 
 h1, h2, h3 {

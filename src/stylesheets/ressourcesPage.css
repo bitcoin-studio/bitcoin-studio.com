@@ -1,0 +1,61 @@
+main > div#ressourcesPage {
+    grid-template-areas:
+            ".            hero-rp        ."
+            "hr-slides-rp hr-slides-rp   hr-slides-rp"
+            "slides       slides         slides";
+}
+
+#hero-ressourcesPage {
+    grid-area: hero-rp;
+}
+
+#slides-ressourcesPage {
+    grid-area: slides;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.slideItemContainer {
+    overflow: hidden;
+    height: 169px;
+}
+
+.slideItemContainer2 {
+    height: 169px;
+    margin-bottom: 20px;
+    width: calc(1 / 4 * 100% - (1 - 1 / 4) * 20px);
+}
+
+
+
+
+
+
+/*
+.slideItemContainer a {
+    height: 169px;
+    width: 189px;
+    cursor: pointer;
+}
+*/
+
+object.slideItem {
+    top: -56px;
+    position: relative;
+    height: 225px;
+}
+
+#slides-ressourcesPage h2 {
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+
+#hr-slides-ressourcesPage {
+    grid-area: hr-slides-rp;
+    position: relative;
+    top: 27px;
+    margin-top: 30px;
+}

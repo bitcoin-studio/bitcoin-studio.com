@@ -3,9 +3,15 @@ import * as React from 'react'
 class About extends React.Component {
   render() {
     return (
-      <div className="row">
-        <div className={'col-xs-10 col-xs-offset-1'}>
+      <div id={'aboutPage'}>
+        <div className={'hero'} id={'hero-aboutPage'}>
           <h1>About</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid autem blanditiis delectus deserunt
+            doloribus ducimus ea earum error explicabo harum, iusto nihil omnis optio quia sunt voluptates?
+            Necessitatibus, repudiandae.</p>
+        </div>
+
+        <section id={'description-aboutPage'}>
           <p>Over the past years, I have dedicated myself to P2P decentralized consensus systems, aka blockchain,
             (mainly Bitcoin and Ethereum) and became a strong advocate of crypto-anarchy.
             I highly appreciate working in a field at the crossroad of a multitude of varying disciplines, like computer
@@ -30,7 +36,7 @@ class About extends React.Component {
             </ul>
           </div>
           <p>Contact form</p>
-        </div>
+        </section>
       </div>
     )
   }

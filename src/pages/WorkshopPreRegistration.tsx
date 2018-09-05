@@ -5,50 +5,46 @@ import bitcoin_essentials from '../img/bitcoin_essentials.png'
 class WorkshopPreRegistration extends React.Component {
   render() {
     return (
-      <div>
-        <h1>Workshop Pre-registration</h1>
+      <div id={'workshopPage'}>
 
-        <div className="row tease">
-          <div className="col-xs">
-            <p>25% off</p>
-            <p>Sign Up!</p>
-            <p>3 tickets for 2</p>
-            <p>First session: 10 people</p>
-            <p>Get refunded at any time</p>
+        <div id={'hero-workshopPage'} className={"hero"}>
+          <h1>WORKSHOP <br/> PRE-REGISTRATION</h1>
 
-            <p>Interested in Bitcoin and blockchain? Do you wonder how it works?
-              Let’s study the first, most mature, secure and decentralized blockchain that has given birth to a whole
-              new
-              industry!
-              Stéphane Roche/D10eConsulting offer you a 15 hours immersive course on Bitcoin (Practical, Essentials,
-              In-depth)
-            </p>
+          <p>Interested in Bitcoin and blockchain? Do you wonder how it works?
+            Let’s study the first, most mature, secure and decentralized blockchain that has given birth to a whole
+            new
+            industry!
+            Stéphane Roche/D10eConsulting offer you a 15 hours immersive course on Bitcoin (Practical, Essentials,
+            In-depth)
+          </p>
 
-            <p> If you plan to work anywhere in the blockchain industry, mastering Bitcoin is an essential skill. It is
-              the first of its kind, which means the most attacked and therefore the most robust blockchain.
-              Main Bitcoin Core developers are highly experienced, the ecosystem is big, it has the biggest market
-              capitalization, etc.
-              More than 75% of the blockchains today are, directly or indirectly, software forks of Bitcoin (Litecoin,
-              Dash, Zcash,
-              Decred, Komodo, Factom, Particl, Dogecoin, and thousands of others).
-              Working in the field but skipping Bitcoin is in our view irresponsible.
+          <p> If you plan to work anywhere in the blockchain industry, mastering Bitcoin is an essential skill. It is
+            the first of its kind, which means the most attacked and therefore the most robust blockchain.
+            Main Bitcoin Core developers are highly experienced, the ecosystem is big, it has the biggest market
+            capitalization, etc.
+            More than 75% of the blockchains today are, directly or indirectly, software forks of Bitcoin (Litecoin,
+            Dash, Zcash,
+            Decred, Komodo, Factom, Particl, Dogecoin, and thousands of others).
+            Working in the field but skipping Bitcoin is in our view irresponsible.
 
-              Bitcoin is also a great start because it has the simplest protocol design, with a non-Turing-complete
-              smart-contract functionality. Finally, Lightning Network, the new micropayment feature, should bring
-              tremendous new business opportunities.</p>
-          </div>
+            Bitcoin is also a great start because it has the simplest protocol design, with a non-Turing-complete
+            smart-contract functionality. Finally, Lightning Network, the new micropayment feature, should bring
+            tremendous new business opportunities.</p>
+
+          <p>25% off</p>
+          <p>Sign Up!</p>
+          <p>3 tickets for 2</p>
+          <p>First session: 10 people</p>
+          <p>Get refunded at any time</p>
         </div>
 
-        &nbsp;
-        &nbsp;
+        <img id="workshopFlyer-workshopPage" src={bitcoin_essentials} alt="bitcoin essential flyer"/>
 
-        <img className="col-xs" src={bitcoin_essentials} alt="bitcoin essential flyer"/>
 
-        &nbsp;
-        &nbsp;
+        <section id="offers-workshopPage">
 
-        <div className="offers">
-          <div className={''}>
+          <section className={'practical-offer-workshopPage'}>
+            <div className="hr40pc"><hr/></div>
             <h2>Practical: Bitcoin workshop 1 day</h2>
             <h3>Price</h3>
             <p>100€ inc. VAT. Satisfied or refunded</p>
@@ -60,11 +56,10 @@ class WorkshopPreRegistration extends React.Component {
             <p>This workshop is a first hands-on Bitcoin. Accessible by everyone</p>
             <h3>Programme</h3>
             <p>Wallet, key management, transaction, fees, Lightning Network instant payment. Q&A</p>
-          </div>
+          </section>
 
-          &nbsp;
-
-          <div>
+          <section className={'essentials-offer-workshopPage'}>
+            <div className="hr40pc"><hr/></div>
             <h2>Essentials: Bitcoin workshop 2 days</h2>
 
             <h3>Price</h3>
@@ -83,11 +78,11 @@ class WorkshopPreRegistration extends React.Component {
               etc.</p>
             <h3>Programme</h3>
             <p>Focus on the essentials</p>
-          </div>
+          </section>
 
-          &nbsp;
 
-          <div>
+          <section className={'indepth-offer-workshopPage'}>
+            <div className="hr40pc"><hr/></div>
             <h2>In-depth: Bitcoin workshop 5 days</h2>
             <h3>Price</h3>
             <p>
@@ -188,13 +183,15 @@ class WorkshopPreRegistration extends React.Component {
               <li>Timelocks</li>
               <li>Payment channels (Lightning Network)</li>
             </ul>
-          </div>
-        </div>
+          </section>
+        </section>
 
-        &nbsp;
-
-        <h3>Form. BTCpay server / fiat</h3>
-        <FormWorkshop/>
+        {/*
+        <section className={'formPreRegistration-workshopPage'}>
+          <h3>Form. BTCpay server / fiat</h3>
+          <FormWorkshop/>
+        </section>
+        */}
       </div>
     )
   }

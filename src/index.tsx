@@ -10,6 +10,7 @@ import '@blueprintjs/core/lib/css/blueprint.css'
 import './stylesheets/global.css';
 import './stylesheets/homePage.css';
 import './stylesheets/servicesPage.css';
+import './stylesheets/workshopPage.css';
 import './stylesheets/ressourcesPage.css';
 import './stylesheets/aboutPage.css';
 

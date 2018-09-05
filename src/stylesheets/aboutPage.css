@@ -1,0 +1,13 @@
+main > div#aboutPage {
+    grid-template-areas:
+            ".           hero-ap        ."
+            "desc-ap     desc-ap        desc-ap";
+}
+
+#hero-aboutPage {
+    grid-area: hero-ap;
+}
+
+#description-aboutPage {
+    grid-area: desc-ap;
+}

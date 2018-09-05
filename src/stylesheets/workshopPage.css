@@ -1,0 +1,27 @@
+main > div#workshopPage {
+    grid-template-areas:
+            ".                hero-wp          ."
+            "workshopFlyer-wp workshopFlyer-wp workshopFlyer-wp"
+            "offers-wp        offers-wp        offers-wp";
+}
+
+#hero-workshopPage {
+    grid-area: hero-wp
+}
+#hero-workshopPage.hero h1 {
+    line-height: 100%;
+}
+#workshopFlyer-workshopPage {
+    grid-area: workshopFlyer-wp;
+    grid-column: 1 / 4;
+    width:100%;
+}
+#offers-workshopPage {
+    grid-area: offers-wp;
+    grid-template-columns: 4fr 4fr 4fr;
+    display: grid;
+}
+
+#offers-workshopPage h2 {
+    line-height: 110%;
+}

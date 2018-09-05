@@ -16,6 +16,7 @@ require("@blueprintjs/core/lib/css/blueprint.css");
 require("./stylesheets/global.css");
 require("./stylesheets/homePage.css");
 require("./stylesheets/servicesPage.css");
+require("./stylesheets/workshopPage.css");
 require("./stylesheets/ressourcesPage.css");
 require("./stylesheets/aboutPage.css");
 ReactDOM.render(React.createElement(App_1.default, null), document.getElementById('root'));
@@ -99,7 +100,7 @@ const React = require("react");
 class Home extends React.Component {
     render() {
         return (React.createElement("div", { id: 'homePage' },
-            React.createElement("div", { id: 'hero-homePage' },
+            React.createElement("div", { id: 'hero-homePage', className: "hero" },
                 React.createElement("h1", null, "BITCOIN STUDIO #1"),
                 React.createElement("p", null, "Expertise on blockchain tech, particularly Bitcoin. A network of real experts, design studio, web/interface that blah blah blah. In all seriousness, we can pretty much write whatever we want here and chances are, nobody will notice. The itsy bitsy spider went up the water spout. Down came the rain, and washed the spider out. See what we mean? Scroll down and find out why this happens...")),
             React.createElement("section", { id: 'services-homePage' },
@@ -166,7 +167,7 @@ const React = require("react");
 class Services extends React.Component {
     render() {
         return (React.createElement("div", { id: 'servicesPage' },
-            React.createElement("div", { id: 'hero-servicesPage' },
+            React.createElement("div", { className: "hero", id: 'hero-servicesPage' },
                 React.createElement("h1", null, "OUR SERVICES"),
                 React.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eius illum ipsum, itaque laboriosam magni natus quasi quisquam quos rerum similique sint ut, veritatis voluptas, voluptatem! Aut dolorem inventore ipsum?")),
             React.createElement("section", { id: 'workshops-servicesPage' },
@@ -211,26 +212,27 @@ ___scope___.file("pages/WorkshopPreRegistration.jsx", function(exports, require,
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = require("react");
-const FormWorkshop_1 = require("../components/FormWorkshop");
 const bitcoin_essentials_png_1 = require("../img/bitcoin_essentials.png");
 class WorkshopPreRegistration extends React.Component {
     render() {
-        return (React.createElement("div", null,
-            React.createElement("h1", null, "Workshop Pre-registration"),
-            React.createElement("div", { className: "row tease" },
-                React.createElement("div", { className: "col-xs" },
-                    React.createElement("p", null, "25% off"),
-                    React.createElement("p", null, "Sign Up!"),
-                    React.createElement("p", null, "3 tickets for 2"),
-                    React.createElement("p", null, "First session: 10 people"),
-                    React.createElement("p", null, "Get refunded at any time"),
-                    React.createElement("p", null, "Interested in Bitcoin and blockchain? Do you wonder how it works? Let\u2019s study the first, most mature, secure and decentralized blockchain that has given birth to a whole new industry! St\u00E9phane Roche/D10eConsulting offer you a 15 hours immersive course on Bitcoin (Practical, Essentials, In-depth)"),
-                    React.createElement("p", null, " If you plan to work anywhere in the blockchain industry, mastering Bitcoin is an essential skill. It is the first of its kind, which means the most attacked and therefore the most robust blockchain. Main Bitcoin Core developers are highly experienced, the ecosystem is big, it has the biggest market capitalization, etc. More than 75% of the blockchains today are, directly or indirectly, software forks of Bitcoin (Litecoin, Dash, Zcash, Decred, Komodo, Factom, Particl, Dogecoin, and thousands of others). Working in the field but skipping Bitcoin is in our view irresponsible. Bitcoin is also a great start because it has the simplest protocol design, with a non-Turing-complete smart-contract functionality. Finally, Lightning Network, the new micropayment feature, should bring tremendous new business opportunities."))),
-            "\u00A0 \u00A0",
-            React.createElement("img", { className: "col-xs", src: bitcoin_essentials_png_1.default, alt: "bitcoin essential flyer" }),
-            "\u00A0 \u00A0",
-            React.createElement("div", { className: "offers" },
-                React.createElement("div", { className: '' },
+        return (React.createElement("div", { id: 'workshopPage' },
+            React.createElement("div", { id: 'hero-workshopPage', className: "hero" },
+                React.createElement("h1", null,
+                    "WORKSHOP ",
+                    React.createElement("br", null),
+                    " PRE-REGISTRATION"),
+                React.createElement("p", null, "Interested in Bitcoin and blockchain? Do you wonder how it works? Let\u2019s study the first, most mature, secure and decentralized blockchain that has given birth to a whole new industry! St\u00E9phane Roche/D10eConsulting offer you a 15 hours immersive course on Bitcoin (Practical, Essentials, In-depth)"),
+                React.createElement("p", null, " If you plan to work anywhere in the blockchain industry, mastering Bitcoin is an essential skill. It is the first of its kind, which means the most attacked and therefore the most robust blockchain. Main Bitcoin Core developers are highly experienced, the ecosystem is big, it has the biggest market capitalization, etc. More than 75% of the blockchains today are, directly or indirectly, software forks of Bitcoin (Litecoin, Dash, Zcash, Decred, Komodo, Factom, Particl, Dogecoin, and thousands of others). Working in the field but skipping Bitcoin is in our view irresponsible. Bitcoin is also a great start because it has the simplest protocol design, with a non-Turing-complete smart-contract functionality. Finally, Lightning Network, the new micropayment feature, should bring tremendous new business opportunities."),
+                React.createElement("p", null, "25% off"),
+                React.createElement("p", null, "Sign Up!"),
+                React.createElement("p", null, "3 tickets for 2"),
+                React.createElement("p", null, "First session: 10 people"),
+                React.createElement("p", null, "Get refunded at any time")),
+            React.createElement("img", { id: "workshopFlyer-workshopPage", src: bitcoin_essentials_png_1.default, alt: "bitcoin essential flyer" }),
+            React.createElement("section", { id: "offers-workshopPage" },
+                React.createElement("section", { className: 'practical-offer-workshopPage' },
+                    React.createElement("div", { className: "hr40pc" },
+                        React.createElement("hr", null)),
                     React.createElement("h2", null, "Practical: Bitcoin workshop 1 day"),
                     React.createElement("h3", null, "Price"),
                     React.createElement("p", null, "100\u20AC inc. VAT. Satisfied or refunded"),
@@ -240,8 +242,9 @@ class WorkshopPreRegistration extends React.Component {
                     React.createElement("p", null, "This workshop is a first hands-on Bitcoin. Accessible by everyone"),
                     React.createElement("h3", null, "Programme"),
                     React.createElement("p", null, "Wallet, key management, transaction, fees, Lightning Network instant payment. Q&A")),
-                "\u00A0",
-                React.createElement("div", null,
+                React.createElement("section", { className: 'essentials-offer-workshopPage' },
+                    React.createElement("div", { className: "hr40pc" },
+                        React.createElement("hr", null)),
                     React.createElement("h2", null, "Essentials: Bitcoin workshop 2 days"),
                     React.createElement("h3", null, "Price"),
                     React.createElement("p", null, "369\u20AC inc. VAT. Satisfied or refunded"),
@@ -251,8 +254,9 @@ class WorkshopPreRegistration extends React.Component {
                     React.createElement("p", null, "This workshop is intended to curious people wanting to better understand Bitcoin and blockchain technology. This workshop is technical but should stay accessible as long as you have a basic understanding of computer science. It is intended to all individuals wishing to deepen their knowledge of Bitcoin and blockchain technology, either you are a developer, product manager, attorney, designer, builder, entrepreneur, etc."),
                     React.createElement("h3", null, "Programme"),
                     React.createElement("p", null, "Focus on the essentials")),
-                "\u00A0",
-                React.createElement("div", null,
+                React.createElement("section", { className: 'indepth-offer-workshopPage' },
+                    React.createElement("div", { className: "hr40pc" },
+                        React.createElement("hr", null)),
                     React.createElement("h2", null, "In-depth: Bitcoin workshop 5 days"),
                     React.createElement("h3", null, "Price"),
                     React.createElement("p", null, "500\u20AC inc. VAT. Satisfied or refunded"),
@@ -310,78 +314,11 @@ class WorkshopPreRegistration extends React.Component {
                         React.createElement("li", null, "P2WSH smart contracts"),
                         React.createElement("li", null, "Multi-signatures"),
                         React.createElement("li", null, "Timelocks"),
-                        React.createElement("li", null, "Payment channels (Lightning Network)")))),
-            "\u00A0",
-            React.createElement("h3", null, "Form. BTCpay server / fiat"),
-            React.createElement(FormWorkshop_1.FormWorkshop, null)));
+                        React.createElement("li", null, "Payment channels (Lightning Network)"))))));
     }
 }
 exports.default = WorkshopPreRegistration;
 //# sourceMappingURL=WorkshopPreRegistration.js.map
-});
-___scope___.file("components/FormWorkshop.jsx", function(exports, require, module, __filename, __dirname){
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const React = require("react");
-const core_1 = require("@blueprintjs/core");
-const docs_theme_1 = require("@blueprintjs/docs-theme");
-const IntentSelect_1 = require("./IntentSelect");
-class FormWorkshop extends React.PureComponent {
-    constructor() {
-        super(...arguments);
-        this.state = {
-            disabled: false,
-            helperText: false,
-            inline: false,
-            intent: core_1.Intent.NONE,
-            requiredLabel: true,
-        };
-        this.handleDisabledChange = docs_theme_1.handleBooleanChange(disabled => this.setState({ disabled }));
-        this.handleHelperTextChange = docs_theme_1.handleBooleanChange(helperText => this.setState({ helperText }));
-        this.handleInlineChange = docs_theme_1.handleBooleanChange(inline => this.setState({ inline }));
-        this.handleRequiredLabelChange = docs_theme_1.handleBooleanChange(requiredLabel => this.setState({ requiredLabel }));
-        this.handleIntentChange = docs_theme_1.handleStringChange((intent) => this.setState({ intent }));
-    }
-    render() {
-        const { disabled, helperText, inline, intent, requiredLabel } = this.state;
-        const options = (React.createElement(React.Fragment, null,
-            React.createElement(core_1.H5, null, "Props"),
-            React.createElement(core_1.Switch, { label: "Disabled", checked: disabled, onChange: this.handleDisabledChange }),
-            React.createElement(core_1.Switch, { label: "Inline", checked: inline, onChange: this.handleInlineChange }),
-            React.createElement(core_1.Switch, { label: "Show helper text", checked: helperText, onChange: this.handleHelperTextChange }),
-            React.createElement(core_1.Switch, { label: "Show label info", checked: requiredLabel, onChange: this.handleRequiredLabelChange }),
-            React.createElement(IntentSelect_1.IntentSelect, { intent: intent, onChange: this.handleIntentChange })));
-        return (React.createElement(docs_theme_1.Example, Object.assign({ options: options }, this.props),
-            React.createElement(core_1.FormGroup, { disabled: disabled, helperText: helperText && 'Helper text with details...', inline: inline, intent: intent, label: "Name", labelFor: "text-input", labelInfo: requiredLabel && '(required)' },
-                React.createElement(core_1.InputGroup, { id: "text-input", placeholder: "Placeholder text", disabled: disabled, intent: intent })),
-            React.createElement(core_1.FormGroup, { disabled: disabled, helperText: helperText && 'Helper text with details...', inline: inline, intent: intent, label: "Mail", labelFor: "text-input", labelInfo: requiredLabel && '(required)' },
-                React.createElement(core_1.InputGroup, { id: "text-input", placeholder: "Placeholder text", disabled: disabled, intent: intent })),
-            React.createElement(core_1.FormGroup, { disabled: disabled, helperText: helperText && 'Helper text with details...', inline: inline, intent: intent, label: "Additional info", labelFor: "text-input", labelInfo: requiredLabel && '(required)' },
-                React.createElement(core_1.Switch, { id: "text-input", label: "Pay with Bitcoin?", disabled: disabled }),
-                React.createElement(core_1.Switch, { id: "text-input", label: "Are you ready?", disabled: disabled }))));
-    }
-}
-exports.FormWorkshop = FormWorkshop;
-//# sourceMappingURL=FormWorkshop.js.map
-});
-___scope___.file("components/IntentSelect.jsx", function(exports, require, module, __filename, __dirname){
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const core_1 = require("@blueprintjs/core");
-const React = require("react");
-const INTENTS = [
-    { label: "None", value: core_1.Intent.NONE },
-    { label: "Primary", value: core_1.Intent.PRIMARY },
-    { label: "Success", value: core_1.Intent.SUCCESS },
-    { label: "Warning", value: core_1.Intent.WARNING },
-    { label: "Danger", value: core_1.Intent.DANGER },
-];
-exports.IntentSelect = props => (React.createElement(core_1.Label, null,
-    "Intent",
-    React.createElement(core_1.HTMLSelect, { value: props.intent, onChange: props.onChange, options: INTENTS })));
-//# sourceMappingURL=IntentSelect.js.map
 });
 ___scope___.file("img/bitcoin_essentials.png", function(exports, require, module, __filename, __dirname){
 
@@ -394,14 +331,36 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const React = require("react");
 class Ressources extends React.Component {
     render() {
-        return (React.createElement("div", { className: "row" },
-            React.createElement("div", { className: 'col-xs-10 col-xs-offset-1' },
+        return (React.createElement("div", { id: "ressourcesPage" },
+            React.createElement("div", { className: 'hero', id: 'hero-ressourcesPage' },
                 React.createElement("h1", null, "Ressources"),
-                React.createElement("p", null, "Workshop slides"),
-                React.createElement("ul", null,
-                    React.createElement("li", null, "Keys, wallet, addresses"),
-                    React.createElement("li", null, "Consensus, mining, forks"),
-                    React.createElement("li", null, "All about transactions (legacy and segwit format)")))));
+                React.createElement("p", null, "Workshop slides - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequatur delectus doloremque eos mollitia, nihil sint velit. Aspernatur fuga iste labore perferendis quasi rem! A delectus enim ipsum modi quam."),
+                React.createElement("p", null, "Keys, wallet, addresses, Consensus, mining, forks, All about transactions (legacy and segwit format)")),
+            React.createElement("div", { id: "hr-slides-ressourcesPage" },
+                React.createElement("div", { className: "hr" },
+                    React.createElement("hr", null))),
+            React.createElement("section", { id: 'slides-ressourcesPage' },
+                React.createElement("h2", null, "BITCOIN TRAININGS SLIDES"),
+                React.createElement("div", { className: 'slideItemContainer2' },
+                    React.createElement("div", { className: 'slideItemContainer' },
+                        React.createElement("object", { className: 'slideItem', type: "application/pdf", data: "workshopSlides/Bitcoin_forks_history.pdf" })),
+                    React.createElement("a", { href: "workshopSlides/Bitcoin_forks_history.pdf", download: true }, "Download")),
+                React.createElement("div", { className: 'slideItemContainer2' },
+                    React.createElement("div", { className: 'slideItemContainer' },
+                        React.createElement("object", { className: 'slideItem', type: "application/pdf", data: "workshopSlides/Bitcoin_keys_addresses_wallets.pdf" })),
+                    React.createElement("a", { href: "workshopSlides/Bitcoin_keys_addresses_wallets.pdf", download: true }, "Download")),
+                React.createElement("div", { className: 'slideItemContainer2' },
+                    React.createElement("div", { className: 'slideItemContainer' },
+                        React.createElement("object", { className: 'slideItem', type: "application/pdf", data: "workshopSlides/Mining-Consensus-Forks.pdf" })),
+                    React.createElement("a", { href: "workshopSlides/Mining-Consensus-Forks.pdf", download: true }, "Download")),
+                React.createElement("div", { className: 'slideItemContainer2' },
+                    React.createElement("div", { className: 'slideItemContainer' },
+                        React.createElement("object", { className: 'slideItem', type: "application/pdf", data: "workshopSlides/Next_challenges_of_Bitcoin.pdf" })),
+                    React.createElement("a", { href: "workshopSlides/Next_challenges_of_Bitcoin.pdf", download: true }, "Download")),
+                React.createElement("div", { className: 'slideItemContainer2' },
+                    React.createElement("div", { className: 'slideItemContainer' },
+                        React.createElement("object", { className: 'slideItem', type: "application/pdf", data: "workshopSlides/Bitcoin_transaction.pdf" })),
+                    React.createElement("a", { href: "workshopSlides/Bitcoin_transaction.pdf", download: true }, "Download")))));
     }
 }
 exports.default = Ressources;
@@ -414,9 +373,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const React = require("react");
 class About extends React.Component {
     render() {
-        return (React.createElement("div", { className: "row" },
-            React.createElement("div", { className: 'col-xs-10 col-xs-offset-1' },
+        return (React.createElement("div", { id: 'aboutPage' },
+            React.createElement("div", { className: 'hero', id: 'hero-aboutPage' },
                 React.createElement("h1", null, "About"),
+                React.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid autem blanditiis delectus deserunt doloribus ducimus ea earum error explicabo harum, iusto nihil omnis optio quia sunt voluptates? Necessitatibus, repudiandae.")),
+            React.createElement("section", { id: 'description-aboutPage' },
                 React.createElement("p", null, "Over the past years, I have dedicated myself to P2P decentralized consensus systems, aka blockchain, (mainly Bitcoin and Ethereum) and became a strong advocate of crypto-anarchy. I highly appreciate working in a field at the crossroad of a multitude of varying disciplines, like computer science, economics, politics, game theory, cryptography, ... I founded D10e Consulting to offer blockchain technical trainings (Bitcoin, Ethereum and a variety of related topics) and application development on Bitcoin and Ethereum."),
                 React.createElement("div", null,
                     React.createElement("ul", null,
@@ -559,17 +520,32 @@ exports.unregister = unregister;
 ___scope___.file("stylesheets/global.css", function(exports, require, module, __filename, __dirname){
 
 
-require("fuse-box-css")("stylesheets/global.css", "/**\n    Polices\n\n    TrumpGothicEastMedium => Pathway Gothic One  (headers)\n\n    republic-web => roboto slab (normal text)\n\n    pill-gothic => roboto condensed (bold text)\n\n\n\n    CSS Grid\n    .wrapper => 5 cols (1, 2, 6, 2, 1)  nav, main, footer\n\n    main > div => 3 cols (2, 6, 2)\n\n\n    Colors\n    primary: #39444a;\n    secondary: #fffff;\n */\n\n\nbody {\n    margin: 0;\n    padding: 0;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n    background: #e4e8e9 url(/assets/background.jpg) repeat left top;\n    color: #39444a;\n    line-height: 150%;\n}\n\n.wrapper {\n    display:grid;\n    grid-template-columns: 1fr 2fr 6fr 2fr 1fr;\n    grid-template-areas:\n            \".     .        nav     .       .\"\n            \".     main     main    main    .\"\n            \".     footer   footer  footer  .\";\n}\n\n\n\n/**\n    Main\n */\nmain {\n    grid-area: main;\n}\nmain > div {\n    display: grid;\n    grid-template-columns: 2fr 6fr 2fr;\n\n    font-family: \"Roboto Slab\",serif;\n    font-size: 14px;\n    letter-spacing: 0.3px;\n}\n\n/*\nmain > div p {\n    font-family: \"Roboto Slab\",serif;\n    font-size: 14px;\n    letter-spacing: 0.3px;\n}\n*/\n\n\n/**\n    Lines\n */\n.hr {\n    clear: both;\n    height: 6px;\n    background: url(/assets/border.png) top repeat-x;\n    width: 100%;\n}\n\nh1, h2, h3 {\n    font-family: 'Pathway Gothic One', Helvetica, Arial, \"Trebuchet MS\", sans-serif;\n    letter-spacing: 4px;\n    text-transform: uppercase;\n}\nh1 { font-size: 8em;}\nh2 { font-size: 2.75em;}\nh3 { font-size: 2em}\n\nsection {\n    margin: 25px 0;\n}\n\n\n\n/**\n    Navigation - Header\n */\n.nav {\n    grid-area: nav;\n}\n\n.nav ul {\n    margin: 0;\n    padding: 0;\n    list-style: none;\n\n    display: flex;\n    justify-content: space-between;\n}\n\n.nav ul li {\n    font-family: 'Pathway Gothic One', Helvetica, Arial, \"Trebuchet MS\", sans-serif;\n    font-size: 25px;\n    font-weight: normal;\n    /*letter-spacing: 1px;*/\n}\n\n.nav ul li a {\n    height: 145px;\n    width: 100px;\n    color: #39444a;\n    display: block;\n    padding-top: 70px;\n    text-align: center;\n}\n\n.nav ul li a:hover {\n    background: url(/assets/nav_item_hover.png) top no-repeat;\n    text-decoration: none;\n}\n\n.nav ul li a.active {\n    background: url(/assets/nav_item_active.png) no-repeat 0px 0px;\n    color: #fff;\n}\n\n\n/**\n    FOOTER\n */\nfooter {\n    grid-area: footer;\n    /*background-color: #e9e826;*/\n\n    display: flex;\n\n    width: 1200px;\n    height: 207px;\n    /*height: 166px;*/\n    margin-top: 50px;\n    margin-bottom: 50px;\n    padding-left: 240px;\n    line-height: 140%;\n\n    background: url(/assets/footer_right_207px.png) no-repeat scroll right bottom,\n    url(/assets/footer_left_207px.png) no-repeat scroll left bottom,\n    url(/assets/footer_bg_207px.png) repeat scroll right bottom transparent;\n}\n\nfooter > div {\n    width: 248px;\n    padding-top: 20px;\n}\n\nfooter > div > h2 {\n    font-family: 'Pathway Gothic One', Helvetica, Arial, \"Trebuchet MS\", sans-serif;\n    font-size: 26px;\n    font-weight: normal;\n    letter-spacing: 3px;\n    margin-right: 20px;\n    margin-bottom: 10px;\n}\n\nfooter > div > nav > ul {\n    margin: 0;\n    padding: 0;\n    list-style-type: none;\n}\n\nfooter > div > nav > ul > li {\n    font-family: \"Roboto Condensed\", sans-serif;\n    font-size: 14px;\n    letter-spacing: normal;\n    line-height: 175%;\n}\n\nfooter > div > nav > ul > li > a {\n    color: #39444a;\n    text-decoration: none;\n    padding-left: 14px;\n    background: url(/assets/footer_li_arrow.png) no-repeat 0px 1px;\n}\n\nfooter > div > nav > ul > li > a:hover {\n    color: #fff;\n    text-decoration: none;\n    padding-left: 14px;\n    background: url(/assets/footer_li_arrow.png) no-repeat 0px -18px;\n}\n/**\n    END FOOTER\n */")
+require("fuse-box-css")("stylesheets/global.css", "/**\n    Polices\n\n    TrumpGothicEastMedium => Pathway Gothic One  (headers)\n\n    republic-web => roboto slab (normal text)\n\n    pill-gothic => roboto condensed (bold text)\n\n\n\n    CSS Grid\n    .wrapper => 5 cols (1, 2, 6, 2, 1)  nav, main, footer\n\n    main > div => 3 cols (2, 6, 2)\n\n\n    Colors\n    primary: #39444a;\n    secondary: #fffff;\n */\n\nbody {\n    margin: 0;\n    padding: 0;\n    -webkit-font-smoothing: antialiased;\n    -moz-osx-font-smoothing: grayscale;\n    background: #e4e8e9 url(/assets/background.jpg) repeat left top;\n    color: #39444a;\n    line-height: 150%;\n}\n\n.wrapper {\n    display:grid;\n    grid-template-columns: 1fr 2fr 6fr 2fr 1fr;\n    grid-template-areas:\n            \".     .        nav     .       .\"\n            \".     main     main    main    .\"\n            \".     footer   footer  footer  .\";\n}\n\n\n\n/**\n    Main\n */\nmain {\n    grid-area: main;\n}\nmain > div {\n    display: grid;\n    grid-template-columns: 2fr 6fr 2fr;\n\n    font-family: \"Roboto Slab\",serif;\n    font-size: 14px;\n    letter-spacing: 0.3px;\n}\n\n/**\n    Hero\n */\n.hero h1 {\n    font-family: 'Pathway Gothic One', Helvetica, Arial, \"Trebuchet MS\", sans-serif;\n    font-size: 8em;\n    font-weight: bold;\n}\n.hero p {\n    font-family: \"Roboto Condensed\", sans-serif;\n    font-style: normal;\n    font-weight: 400;\n    font-size: 20px;\n    line-height: 160%;\n    margin-bottom: 30px;\n}\n\n\n/**\n    Lines\n */\n.hr {\n    clear: both;\n    height: 6px;\n    background: url(/assets/border.png) top repeat-x;\n    width: 100%;\n}\n.hr40pc {\n    clear: both;\n    height: 6px;\n    background: url(/assets/border.png) top repeat-x;\n    width: 40%;\n}\n\nh1, h2, h3 {\n    font-family: 'Pathway Gothic One', Helvetica, Arial, \"Trebuchet MS\", sans-serif;\n    letter-spacing: 4px;\n    text-transform: uppercase;\n}\nh1 { font-size: 8em;}\nh2 { font-size: 2.75em;}\nh3 { font-size: 2em}\n\nsection {\n    margin: 25px 0;\n}\n\n\n\n/**\n    Navigation - Header\n */\n.nav {\n    grid-area: nav;\n}\n\n.nav ul {\n    margin: 0;\n    padding: 0;\n    list-style: none;\n\n    display: flex;\n    justify-content: space-between;\n}\n\n.nav ul li {\n    font-family: 'Pathway Gothic One', Helvetica, Arial, \"Trebuchet MS\", sans-serif;\n    font-size: 25px;\n    font-weight: normal;\n    /*letter-spacing: 1px;*/\n}\n\n.nav ul li a {\n    height: 145px;\n    width: 100px;\n    color: #39444a;\n    display: block;\n    padding-top: 70px;\n    text-align: center;\n}\n\n.nav ul li a:hover {\n    background: url(/assets/nav_item_hover.png) top no-repeat;\n    text-decoration: none;\n}\n\n.nav ul li a.active {\n    background: url(/assets/nav_item_active.png) no-repeat 0px 0px;\n    color: #fff;\n}\n\n\n/**\n    FOOTER\n */\nfooter {\n    grid-area: footer;\n    /*background-color: #e9e826;*/\n\n    display: flex;\n\n    width: 1200px;\n    height: 207px;\n    /*height: 166px;*/\n    margin-top: 50px;\n    margin-bottom: 50px;\n    padding-left: 240px;\n    line-height: 140%;\n\n    background: url(/assets/footer_right_207px.png) no-repeat scroll right bottom,\n    url(/assets/footer_left_207px.png) no-repeat scroll left bottom,\n    url(/assets/footer_bg_207px.png) repeat scroll right bottom transparent;\n}\n\nfooter > div {\n    width: 248px;\n    padding-top: 20px;\n}\n\nfooter > div > h2 {\n    font-family: 'Pathway Gothic One', Helvetica, Arial, \"Trebuchet MS\", sans-serif;\n    font-size: 26px;\n    font-weight: normal;\n    letter-spacing: 3px;\n    margin-right: 20px;\n    margin-bottom: 10px;\n}\n\nfooter > div > nav > ul {\n    margin: 0;\n    padding: 0;\n    list-style-type: none;\n}\n\nfooter > div > nav > ul > li {\n    font-family: \"Roboto Condensed\", sans-serif;\n    font-size: 14px;\n    letter-spacing: normal;\n    line-height: 175%;\n}\n\nfooter > div > nav > ul > li > a {\n    color: #39444a;\n    text-decoration: none;\n    padding-left: 14px;\n    background: url(/assets/footer_li_arrow.png) no-repeat 0px 1px;\n}\n\nfooter > div > nav > ul > li > a:hover {\n    color: #fff;\n    text-decoration: none;\n    padding-left: 14px;\n    background: url(/assets/footer_li_arrow.png) no-repeat 0px -18px;\n}\n/**\n    END FOOTER\n */")
 });
 ___scope___.file("stylesheets/homePage.css", function(exports, require, module, __filename, __dirname){
 
 
-require("fuse-box-css")("stylesheets/homePage.css", "main > div#homePage {\n    grid-template-areas:\n            \".           hero        .\"\n            \"services    services    services\"\n            \"stuff       stuff       stuff\"\n            \"workshops      workshops      workshops\"\n            \"call2action call2action call2action\";\n}\n\n\n\n/**\n    Hero\n */\n#hero-homePage {\n    grid-area: hero;\n}\n#hero-homePage h1 {\n    font-family: 'Pathway Gothic One', Helvetica, Arial, \"Trebuchet MS\", sans-serif;\n    font-size: 8em;\n    font-weight: bold;\n}\n#hero-homePage p {\n    font-family: \"Roboto Condensed\", sans-serif;\n    font-style: normal;\n    font-weight: 400;\n    font-size: 20px;\n    line-height: 160%;\n    margin-bottom: 30px;\n}\n\n\n/**\n    Services (text content 1)\n */\n#services-homePage {\n    grid-area: services;\n    grid-column: 2 / 3;\n}\n#stuff-homePage {\n    grid-area: stuff;\n}\n#workshops-homePage {\n    grid-area: workshops;\n    grid-column: 2 / 3;\n}\n\n\n\n/**\n    Call 2 action\n */\n#call2action-homePage {\n    grid-area: call2action;\n    display: grid;\n    grid-template-columns: 5fr 1fr;\n}\n\n#call2action_ribbon {\n    display: grid;\n    grid-template-columns: 6fr 6fr;\n    align-items: baseline;\n    padding-top: 63px;\n    padding-left: 60px;\n    background: url(/assets/call2action_invisible.gif) no-repeat 352px 47px,\n    url(/assets/call2action_ribbon.jpg) no-repeat left center,\n    url(/assets/call2action.png) repeat-x center left;\n}\n\n#call2action_ribbon h1 {\n    margin-right: 30px;\n    justify-self: center;\n}\n\n#call2action_ribbon_prop {\n    width: 206px;\n    height: 207px;\n    position: relative;\n    text-align: center;\n    background: url(/assets/call2action_circle_bg.png) left no-repeat;\n}\n\n#call2action_ribbon_prop .inside {\n    margin-top: 49px;\n\n}\n\n#call2action_ribbon_prop span:nth-child(odd) {\n    font-size: 16px;\n    font-style: italic;\n    font-family: times;\n}\n\n#call2action_ribbon h1 {\n    font-family: 'Pathway Gothic One', Helvetica, Arial, \"Trebuchet MS\", sans-serif;\n    font-size: 33px;\n    letter-spacing: 2px;\n}\n\n.ribbon_prop_1 {\n    position: absolute;\n    background: url(/assets/call2action_circle.png) left 0px no-repeat;\n    width: 206px;\n    height: 205px;\n    z-index: 2;\n}\n\n.ribbon_prop_1 .inside span > a {\n    color: #ffffff;\n}\n\n.ribbon_prop_2 .inside span > a {\n    color: #39444a;\n}\n\n.ribbon_prop_1:hover {\n    opacity: 0;\n    cursor: pointer;\n}\n\n.ribbon_prop_2 {\n    position: absolute;\n    background: url(/assets/call2action_circle.png) left -205px no-repeat;\n    width: 206px;\n    height: 205px;\n}\n\n.ribbon_prop_2:hover {\n    opacity: 1;\n}\n\n\n\n/**\n\n */\n.request {\n    font-family: 'Pathway Gothic One', Helvetica, Arial, \"Trebuchet MS\", sans-serif;\n    font-size: 2.75em;\n    line-height: 100%;\n    margin-top: 10px;\n    letter-spacing: 3px;\n    display: block;\n}")
+require("fuse-box-css")("stylesheets/homePage.css", "main > div#homePage {\n    grid-template-areas:\n            \".           hero        .\"\n            \"services    services    services\"\n            \"stuff       stuff       stuff\"\n            \"workshops      workshops      workshops\"\n            \"call2action call2action call2action\";\n}\n\n\n\n/**\n    Hero\n */\n#hero-homePage {\n    grid-area: hero;\n}\n\n\n/**\n    Services (text content 1)\n */\n#services-homePage {\n    grid-area: services;\n    grid-column: 2 / 3;\n}\n#stuff-homePage {\n    grid-area: stuff;\n}\n#workshops-homePage {\n    grid-area: workshops;\n    grid-column: 2 / 3;\n}\n\n\n\n/**\n    Call 2 action\n */\n#call2action-homePage {\n    grid-area: call2action;\n    display: grid;\n    grid-template-columns: 5fr 1fr;\n}\n\n#call2action_ribbon {\n    display: grid;\n    grid-template-columns: 6fr 6fr;\n    align-items: baseline;\n    padding-top: 63px;\n    padding-left: 60px;\n    background: url(/assets/call2action_invisible.gif) no-repeat 352px 47px,\n    url(/assets/call2action_ribbon.jpg) no-repeat left center,\n    url(/assets/call2action.png) repeat-x center left;\n}\n\n#call2action_ribbon h1 {\n    margin-right: 30px;\n    justify-self: center;\n}\n\n#call2action_ribbon_prop {\n    width: 206px;\n    height: 207px;\n    position: relative;\n    text-align: center;\n    background: url(/assets/call2action_circle_bg.png) left no-repeat;\n}\n\n#call2action_ribbon_prop .inside {\n    margin-top: 49px;\n\n}\n\n#call2action_ribbon_prop span:nth-child(odd) {\n    font-size: 16px;\n    font-style: italic;\n    font-family: times;\n}\n\n#call2action_ribbon h1 {\n    font-family: 'Pathway Gothic One', Helvetica, Arial, \"Trebuchet MS\", sans-serif;\n    font-size: 33px;\n    letter-spacing: 2px;\n}\n\n.ribbon_prop_1 {\n    position: absolute;\n    background: url(/assets/call2action_circle.png) left 0px no-repeat;\n    width: 206px;\n    height: 205px;\n    z-index: 2;\n}\n\n.ribbon_prop_1 .inside span > a {\n    color: #ffffff;\n}\n\n.ribbon_prop_2 .inside span > a {\n    color: #39444a;\n}\n\n.ribbon_prop_1:hover {\n    opacity: 0;\n    cursor: pointer;\n}\n\n.ribbon_prop_2 {\n    position: absolute;\n    background: url(/assets/call2action_circle.png) left -205px no-repeat;\n    width: 206px;\n    height: 205px;\n}\n\n.ribbon_prop_2:hover {\n    opacity: 1;\n}\n\n\n\n/**\n\n */\n.request {\n    font-family: 'Pathway Gothic One', Helvetica, Arial, \"Trebuchet MS\", sans-serif;\n    font-size: 2.75em;\n    line-height: 100%;\n    margin-top: 10px;\n    letter-spacing: 3px;\n    display: block;\n}")
 });
 ___scope___.file("stylesheets/servicesPage.css", function(exports, require, module, __filename, __dirname){
 
 
-require("fuse-box-css")("stylesheets/servicesPage.css", "/**\n    Services Page Stylesheet\n */\n\nmain > div#servicesPage {\n    grid-template-areas:\n            \".                               hero-sp        .\"\n            \"workshops-sp                    workshops-sp                    workshops-sp\"\n            \"consultingForCompanies-sp       consultingForCompanies-sp       consultingForCompanies-sp\"\n            \"consultingForIndividuals-sp     consultingForIndividuals-sp     consultingForIndividuals-sp\";\n}\n\n\n/**\n    Hero Services Page\n */\n#hero-servicesPage {\n    grid-area: hero-sp;\n}\n#hero-servicesPage h1 {\n    font-family: 'Pathway Gothic One', Helvetica, Arial, \"Trebuchet MS\", sans-serif;\n    font-size: 8em;\n    font-weight: bold;\n}\n#hero-servicesPage p {\n    font-family: \"Roboto Condensed\", sans-serif;\n    font-style: normal;\n    font-weight: 400;\n    font-size: 20px;\n    line-height: 160%;\n    margin-bottom: 30px;\n}\n\n#workshops-servicesPage {\n    grid-area: workshops-sp;\n}\n#consultingForCompanies-servicesPage {\n    grid-area: consultingForCompanies-sp;\n}\n#consultingForIndividuals-servicesPage {\n    grid-area: consultingForIndividuals-sp;\n}")
+require("fuse-box-css")("stylesheets/servicesPage.css", "/**\n    Services Page Stylesheet\n */\n\nmain > div#servicesPage {\n    grid-template-areas:\n            \".                               hero-sp        .\"\n            \"workshops-sp                    workshops-sp                    workshops-sp\"\n            \"consultingForCompanies-sp       consultingForCompanies-sp       consultingForCompanies-sp\"\n            \"consultingForIndividuals-sp     consultingForIndividuals-sp     consultingForIndividuals-sp\";\n}\n\n\n/**\n    Hero Services Page\n */\n#hero-servicesPage {\n    grid-area: hero-sp;\n}\n#workshops-servicesPage {\n    grid-area: workshops-sp;\n}\n#consultingForCompanies-servicesPage {\n    grid-area: consultingForCompanies-sp;\n}\n#consultingForIndividuals-servicesPage {\n    grid-area: consultingForIndividuals-sp;\n}")
+});
+___scope___.file("stylesheets/workshopPage.css", function(exports, require, module, __filename, __dirname){
+
+
+require("fuse-box-css")("stylesheets/workshopPage.css", "main > div#workshopPage {\n    grid-template-areas:\n            \".                hero-wp          .\"\n            \"workshopFlyer-wp workshopFlyer-wp workshopFlyer-wp\"\n            \"offers-wp        offers-wp        offers-wp\";\n}\n\n#hero-workshopPage {\n    grid-area: hero-wp\n}\n#hero-workshopPage.hero h1 {\n    line-height: 100%;\n}\n#workshopFlyer-workshopPage {\n    grid-area: workshopFlyer-wp;\n    grid-column: 1 / 4;\n    width:100%;\n}\n#offers-workshopPage {\n    grid-area: offers-wp;\n    grid-template-columns: 4fr 4fr 4fr;\n    display: grid;\n}\n\n#offers-workshopPage h2 {\n    line-height: 110%;\n}")
+});
+___scope___.file("stylesheets/ressourcesPage.css", function(exports, require, module, __filename, __dirname){
+
+
+require("fuse-box-css")("stylesheets/ressourcesPage.css", "main > div#ressourcesPage {\n    grid-template-areas:\n            \".            hero-rp        .\"\n            \"hr-slides-rp hr-slides-rp   hr-slides-rp\"\n            \"slides       slides         slides\";\n}\n\n#hero-ressourcesPage {\n    grid-area: hero-rp;\n}\n\n#slides-ressourcesPage {\n    grid-area: slides;\n\n    display: flex;\n    flex-wrap: wrap;\n    flex-direction: row;\n    justify-content: space-between;\n}\n\n.slideItemContainer {\n    overflow: hidden;\n    height: 169px;\n}\n\n.slideItemContainer2 {\n    height: 169px;\n    margin-bottom: 20px;\n    width: calc(1 / 4 * 100% - (1 - 1 / 4) * 20px);\n}\n\n\n\n\n\n\n/*\n.slideItemContainer a {\n    height: 169px;\n    width: 189px;\n    cursor: pointer;\n}\n*/\n\nobject.slideItem {\n    top: -56px;\n    position: relative;\n    height: 225px;\n}\n\n#slides-ressourcesPage h2 {\n    width: 100%;\n    margin-bottom: 1.5em;\n}\n\n#hr-slides-ressourcesPage {\n    grid-area: hr-slides-rp;\n    position: relative;\n    top: 27px;\n    margin-top: 30px;\n}")
+});
+___scope___.file("stylesheets/aboutPage.css", function(exports, require, module, __filename, __dirname){
+
+
+require("fuse-box-css")("stylesheets/aboutPage.css", "main > div#aboutPage {\n    grid-template-areas:\n            \".           hero-ap        .\"\n            \"desc-ap     desc-ap        desc-ap\";\n}\n\n#hero-aboutPage {\n    grid-area: hero-ap;\n}\n\n#description-aboutPage {\n    grid-area: desc-ap;\n}")
 });
 return ___scope___.entry = "index.jsx";
 });

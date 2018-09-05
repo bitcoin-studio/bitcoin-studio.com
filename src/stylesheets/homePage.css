@@ -15,19 +15,6 @@ main > div#homePage {
 #hero-homePage {
     grid-area: hero;
 }
-#hero-homePage h1 {
-    font-family: 'Pathway Gothic One', Helvetica, Arial, "Trebuchet MS", sans-serif;
-    font-size: 8em;
-    font-weight: bold;
-}
-#hero-homePage p {
-    font-family: "Roboto Condensed", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 160%;
-    margin-bottom: 30px;
-}
 
 
 /**

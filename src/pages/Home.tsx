@@ -6,7 +6,7 @@ class Home extends React.Component {
     return (
       <div id={'homePage'}>
 
-        <div id={'hero-homePage'}>
+        <div id={'hero-homePage'} className={"hero"}>
           <h1>BITCOIN STUDIO #1</h1>
           <p>
             Expertise on blockchain tech, particularly Bitcoin. A network of real experts, design studio, web/interface
@@ -17,9 +17,7 @@ class Home extends React.Component {
         </div>
 
         <section id={'services-homePage'}>
-          <div className="hr">
-            <hr/>
-          </div>
+          <div className="hr"><hr/></div>
           <h2>THE BEST BITCOIN STUDIO</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequuntur dicta expedita magni minus
             numquam perspiciatis quod sint sunt vero? Laboriosam non pariatur repellat repellendus similique. Inventore
@@ -30,9 +28,7 @@ class Home extends React.Component {
         </section>
 
         <section id={'stuff-homePage'}>
-          <div className="hr">
-            <hr/>
-          </div>
+          <div className="hr"><hr/></div>
           <h2>WHEN THE WEB MEETS BITCOIN</h2>
           <p>
             They just scan it. They glance at it in the same way you glance at advertisements in a magazine. Don’t
