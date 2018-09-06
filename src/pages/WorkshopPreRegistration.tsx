@@ -44,7 +44,7 @@ class WorkshopPreRegistration extends React.Component {
         <section id="offers-workshopPage">
 
           <section className={'practical-offer-workshopPage'}>
-            <div className="hr40pc"><hr/></div>
+            <div className="hr75pc"><hr/></div>
             <h2>Practical Bitcoin workshop 1 day</h2>
             <h3>Price</h3>
             <p>100€ inc. VAT. Satisfied or refunded</p>
@@ -59,7 +59,7 @@ class WorkshopPreRegistration extends React.Component {
           </section>
 
           <section className={'essentials-offer-workshopPage'}>
-            <div className="hr40pc"><hr/></div>
+            <div className="hr75pc"><hr/></div>
             <h2>Essentials Bitcoin workshop 2 days</h2>
 
             <h3>Price</h3>
@@ -82,7 +82,7 @@ class WorkshopPreRegistration extends React.Component {
 
 
           <section className={'indepth-offer-workshopPage'}>
-            <div className="hr40pc"><hr/></div>
+            <div className="hr75pc"><hr/></div>
             <h2>In-depth Bitcoin workshop 5 days</h2>
             <h3>Price</h3>
             <p>

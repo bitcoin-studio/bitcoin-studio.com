@@ -83,11 +83,14 @@ main > div {
     background: url(/assets/border.png) top repeat-x;
     width: 100%;
 }
-.hr40pc {
+.hr hr {
+    display: none;
+}
+.hr75pc {
     clear: both;
     height: 6px;
     background: url(/assets/border.png) top repeat-x;
-    width: 40%;
+    width: 75%;
 }
 
 h1, h2, h3 {
@@ -100,7 +103,7 @@ h2 { font-size: 2.75em;}
 h3 { font-size: 2em}
 
 section {
-    margin: 25px 0;
+    margin: 20px 0;
 }
 
 
@@ -125,7 +128,6 @@ section {
     font-family: 'Pathway Gothic One', Helvetica, Arial, "Trebuchet MS", sans-serif;
     font-size: 25px;
     font-weight: normal;
-    /*letter-spacing: 1px;*/
 }
 
 .nav ul li a {

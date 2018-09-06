@@ -13,22 +13,18 @@ class About extends React.Component {
         </div>
 
         <section id={'description-aboutPage'}>
+          <div className="hr"><hr/></div>
+          <h2>STEPHANE - CEO/CTO</h2>
           <p>
-            I highly appreciate working in a field at the crossroad of a multitude of varying disciplines, like computer
-            science, economics, politics, game theory, cryptography, ...
-            I founded D10e Consulting to offer blockchain technical trainings (Bitcoin, Ethereum and a variety of
-            related topics) and application development on Bitcoin and Ethereum.
-          </p>
-
-          <p>
-            Stéphane start working on Bitcoin in 2015 at the hardware wallet company Ledger. From 2016 to mid-2017 he is working on the Ethereum Platform. He has co-founded the french non-profit organization Asseth to promote Ethereum, now the biggest Ethereum non-profit
+            Stéphane starts working on Bitcoin in 2015 at the hardware wallet company Ledger. From 2016 to mid-2017 he is working on the Ethereum Platform. He has co-founded the french non-profit organization Asseth to promote Ethereum, now the biggest Ethereum non-profit
             across Europe and created the website <a href="http://asseth.fr" target={"_blank"}>asseth.fr</a>. Research work on the UI of dao1901, using Web3 and state of the art Javascript librairies (React, Redux, Redux-sagas). Heavily involved in the making of the <a
             href="https://dether.io/" target={"_blank"}>Dether.io</a> smart contracts and the Javascript tests.
           </p>
 
           <p>
-            Since mid-2017, Stéphane is focusing on Bitcoin, building a solid expertise, and now offering Bitcoin Workshops (Practical, Essentials, In-depth) and custom development.
+            Since mid-2017, he is focusing on Bitcoin, building a solid expertise, and now offering Bitcoin Workshops (Practical, Essentials, In-depth) and custom development.
             At Bitcoin Studio we use the best web technologies (Typescript, Fusebox, React, Redux, Redux-sagas, ...) and the latest Bitcoin developments.
+            Over the years he gained lot of experience on Bitcoin and blockchain technology.
           </p>
 
           <p>
