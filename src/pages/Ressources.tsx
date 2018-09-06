@@ -6,10 +6,10 @@ class Ressources extends React.Component {
       <div id="ressourcesPage">
         <div className={'hero'} id={'hero-ressourcesPage'}>
           <h1>Ressources</h1>
-          <p>Workshop slides - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad consequatur delectus
-            doloremque eos mollitia, nihil sint velit. Aspernatur fuga iste labore perferendis quasi rem! A delectus
-            enim ipsum modi quam.</p>
-          <p>Keys, wallet, addresses, Consensus, mining, forks, All about transactions (legacy and segwit format)</p>
+          <p>
+            Have a look at our work. You can view and download some of the Bitcoin presentations made by Stéphane Roche, exploring a variety of aspects like cryptographic keys, HD wallet, consensus, mining, forks, transactions (legacy and segwit format), ...
+            More soon!
+          </p>
         </div>
 
         <div id="hr-slides-ressourcesPage">

@@ -49,8 +49,7 @@ main > div#homePage {
     align-items: baseline;
     padding-top: 63px;
     padding-left: 60px;
-    background: url(/assets/call2action_invisible.gif) no-repeat 352px 47px,
-    url(/assets/call2action_ribbon.jpg) no-repeat left center,
+    background: url(/assets/call2action_ribbon.jpg) no-repeat left center,
     url(/assets/call2action.png) repeat-x center left;
 }
 

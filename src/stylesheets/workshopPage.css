@@ -10,6 +10,7 @@ main > div#workshopPage {
 }
 #hero-workshopPage.hero h1 {
     line-height: 100%;
+    margin: 30px 0;
 }
 #workshopFlyer-workshopPage {
     grid-area: workshopFlyer-wp;
