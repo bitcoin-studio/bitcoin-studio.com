@@ -16,6 +16,18 @@ class Home extends React.Component {
           </p>
         </div>
 
+        <section id={'pictures-homePage'}>
+          <figure id={'picture1'}>
+            <img src="https://loremflickr.com/760/420" alt="Tree frog" />
+            <figcaption>Random placeholder carefully chosen</figcaption>
+          </figure>
+
+          <figure id={'picture2'}>
+            <img src="https://loremflickr.com/436/420" alt="Tree frog" />
+            <figcaption>Random placeholder carefully chosen</figcaption>
+          </figure>
+        </section>
+
         <section id={'services-homePage'}>
           <div className="hr"><hr/></div>
           <h2>THE BEST BITCOIN STUDIO</h2>
