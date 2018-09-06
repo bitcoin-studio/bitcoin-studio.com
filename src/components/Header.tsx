@@ -15,7 +15,14 @@ class Header extends React.Component<MyProps, MyState> {
     }
   }
 
-  //todo set state activeItem after loading page
+  componentDidMount() {
+    let page = window.location.pathname
+    if (page === '/') this.setState({activeItem: 'HOME'})
+    else if (page === '/services') this.setState({activeItem: 'SERVICES'})
+    else if (page === '/workshop-preregistration') this.setState({activeItem: 'WORKSHOPS'})
+    else if (page === '/ressources') this.setState({activeItem: 'RESSOURCES'})
+    else if (page === '/about') this.setState({activeItem: 'ABOUT'})
+  }
 
   activate(item) {
     this.setState({activeItem: item})
