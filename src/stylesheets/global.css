@@ -27,7 +27,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background: #e4e8e9 url(/assets/background.jpg) repeat left top;
     color: #39444a;
-    line-height: 150%;
+    line-height: 180%;
 }
 
 .wrapper {
@@ -93,13 +93,19 @@ main > div {
     width: 75%;
 }
 
+/**
+    HEADERS
+ */
 h1, h2, h3 {
     font-family: 'Pathway Gothic One', Helvetica, Arial, "Trebuchet MS", sans-serif;
     letter-spacing: 4px;
     text-transform: uppercase;
 }
 h1 { font-size: 8em;}
-h2 { font-size: 2.75em;}
+h2 {
+    font-size: 2.75em;
+    margin: 15px 0 25px 0;
+}
 h3 { font-size: 2em}
 
 section {

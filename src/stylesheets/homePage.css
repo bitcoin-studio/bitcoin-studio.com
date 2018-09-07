@@ -1,11 +1,11 @@
 main > div#homePage {
     grid-template-areas:
-            ".              hero           ."
-            "pictures       pictures       pictures"
-            "services       services       services"
-            "stuff          stuff          stuff"
-            "workshops      workshops      workshops"
-            "call2action    call2action    call2action";
+            ".                 hero-hp           ."
+            "pictures-hp       pictures-hp      pictures-hp"
+            "services-hp       services-hp       services-hp"
+            "details-hp  details-hp details-hp"
+            "workshops-hp      workshops-hp      workshops-hp"
+            "call2action-hp    call2action-hp    call2action-hp";
 }
 
 
@@ -14,7 +14,7 @@ main > div#homePage {
     Hero
  */
 #hero-homePage {
-    grid-area: hero;
+    grid-area: hero-hp;
 }
 
 
@@ -22,24 +22,38 @@ main > div#homePage {
     Services (text content 1)
  */
 #services-homePage {
-    grid-area: services;
+    grid-area: services-hp;
     grid-column: 2 / 3;
+}
+#servicesDetails-homePage {
+    grid-area: details-hp;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 1em;
 }
 #stuff-homePage {
-    grid-area: stuff;
+    grid-area: stuff-hp;
 }
 #workshops-homePage {
-    grid-area: workshops;
+    grid-area: workshops-hp;
     grid-column: 2 / 3;
 }
 
-
-
+#servicesDetails-homePage .serviceItem {
+    text-align: center;
+}
+#servicesDetails-homePage .serviceItem p {
+    text-align: initial;
+}
+#servicesDetails-homePage .serviceItem p span {
+    margin-bottom: 5px;
+    display: block;
+}
 /**
     Call 2 action
  */
 #call2action-homePage {
-    grid-area: call2action;
+    grid-area: call2action-hp;
     display: grid;
     grid-template-columns: 5fr 1fr;
 }
@@ -134,7 +148,7 @@ main > div#homePage {
     Pictures home page
  */
 #pictures-homePage {
-    grid-area: pictures;
+    grid-area: pictures-hp;
     display: grid;
     grid-template-columns: 8fr 4fr;
     grid-column-gap: 2em;

@@ -37,56 +37,75 @@ class Home extends React.Component {
             expedita magni minus
             numquam perspiciatis quod sint sunt vero? Laboriosam non pariatur repellat repellendus similique. Inventore
             nemo quidem vitae. </p>
+
+          <p>Consectetur adipisicing elit. Aliquid consequuntur dicta
+            expedita magni minus
+            numquam perspiciatis quod sint sunt vero? Laboriosam non pariatur repellat repellendus similique. Inventore
+            nemo quidem vitae. </p>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequuntur dicta expedita magni minus
+            numquam perspiciatis quod sint sunt vero? Laboriosam non pariatur repellat repellendus similique. Inventore
+            nemo quidem vitae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequuntur dicta
+            expedita magni minus
+            numquam perspiciatis quod sint sunt vero? Laboriosam non pariatur repellat repellendus similique. Inventore
+            nemo quidem vitae. </p>
         </section>
 
-        <section id={'stuff-homePage'}>
-          <div className="hr"><hr/></div>
-          <h2>WHEN THE WEB MEETS BITCOIN</h2>
-          <p>
-            They just scan it. They glance at it in the same way you glance at advertisements in a magazine. Don’t
-            believe us? Just think about this for a second. Think about your own browsing behavior. How many times have
-            you Googled a website, clicked on one of the first results, waited for the page to load, scrolled down,
-            scrolled back up and then gone back to the results page? We’re guessing more than once.
+        <section id={'servicesDetails-homePage'}>
+          <div className={'serviceItem'}>
+            <img src="https://loremflickr.com/200/150" alt="img22"/>
+            <p>
+              <span><em>When the web meets Bitcoin</em></span>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam doloremque ex hic itaque non, perspiciatis totam voluptas? Debitis doloribus nulla omnis quaerat quis reprehenderit similique totam ut veniam voluptate!
+            </p>
+          </div>
 
-            Ten years ago you were wondering whether you even needed a website. Nowadays the question is: What can you
-            do to your website so it will stop being invisible to your potential customers?
 
-            You need to be authentic — you can’t fake it anymore. The new consumer is choosier and more knowledgeable
-            than ever before. They just won’t consume brands, nor spend time on websites that don’t ooze authenticity,
-            passion and quality. Why should they? They’ve got so many options to choose from and so little time to make
-            their choices.
+          <div className={'serviceItem'}>
+            <img src="https://loremflickr.com/200/150" alt="img22"/>
+            <p>
+              <span><em>Help people grasp the tech</em></span>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam doloremque ex hic itaque non, perspiciatis totam voluptas? Debitis doloribus nulla omnis quaerat quis reprehenderit similique totam ut veniam voluptate!
+            </p>
+          </div>
 
-            This is where we come in. Through a streamlined, five-milestone process we will PLAN, DESIGN, BUILD, LAUNCH
-            and MANAGE your professional and high-impact online presence for your company.
-          </p>
+          <div className={'serviceItem'}>
+            <img src="https://loremflickr.com/200/150" alt="img22"/>
+            <p>
+              <span><em>Help companies build products</em></span>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam doloremque ex hic itaque non, perspiciatis totam voluptas? Debitis doloribus nulla omnis quaerat quis reprehenderit similique totam ut veniam voluptate!
+            </p>
+          </div>
+
+          <div className={'serviceItem'}>
+            <img src="https://loremflickr.com/200/150" alt="img22"/>
+            <p>
+              <span><em>Node installation</em></span>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam doloremque ex hic itaque non, perspiciatis totam voluptas? Debitis doloribus nulla omnis quaerat quis reprehenderit similique totam ut veniam voluptate!
+            </p>
+          </div>
+
+          <div className={'serviceItem'}>
+            <img src="https://loremflickr.com/200/150" alt="img22"/>
+            <p>
+              <span><em>Node as a Service</em></span>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam doloremque ex hic itaque non, perspiciatis totam voluptas? Debitis doloribus nulla omnis quaerat quis reprehenderit similique totam ut veniam voluptate!
+            </p>
+          </div>
         </section>
 
         <section id={'workshops-homePage'}>
           <div className="hr">
             <hr/>
           </div>
-          <h2>WORD CLASS WORKSHOPS</h2>
+          <h2>A NETWORK OF TALENTED PEOPLE</h2>
           <p>
             <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus commodi, deleniti dicta eos error eum fugit, officiis quaerat quas quibusdam provident?</span>
             <span>Alias culpa magni obcaecati tempore. Alias aspernatur incidunt nam quas reprehenderit ut voluptatum. Ab adipisci aut  magni modi molestias nam perferendis quibusdam tenetur, voluptatibus.</span>
             <span>Adipisci aliquam, animi beatae cum delectus deleniti dignissimos exercitationem fugit ipsam iure laborum  officia sint velit veniam. Cumque debitis eius est ipsam itaque iusto molestiae mollitia rem!</span>
-            <span>Architecto corporis deleniti dolorum eos esse est eveniet, ex exercitationem fugit laboriosam magnam. Itaque maxime nobis odio quasi, quia repellat rerum! Illo.</span>
           </p>
-          <ul>
-            <li>
-              Bitcoin workshops
-              <ul>
-                <li>Practical: Bitcoin workshop 1 day</li>
-                <li>Essentials: Bitcoin workshop 2 days</li>
-                <li>In-depth: Bitcoin workshop 5 days</li>
-              </ul>
-            </li>
 
-            <li>Consulting for companies</li>
-            <li>Private consulting for individuals</li>
-            <li>Custom Bitcoin development (layer 1, layer 2)</li>
-            <li>Bitcoin server / node installation / Node as a service</li>
-          </ul>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam amet aperiam at cumque esse ipsam itaque laboriosam laudantium molestias reiciendis rem sequi, similique sint, sit suscipit totam ullam, vitae?</p>
         </section>
 
 
