@@ -7,44 +7,49 @@ class WorkshopPreRegistration extends React.Component {
     return (
       <div id={'workshopPage'}>
 
-        <div id={'hero-workshopPage'} className={"hero"}>
-          <h1>WORKSHOP <br/> PRE-REGISTRATION</h1>
+        <div id={'hero-workshopPage'} className={'hero'}>
+          <h1>BITCOIN WORKSHOPS</h1>
 
-          <p>Interested in Bitcoin and blockchain? Do you wonder how it works?
-            Let’s study the first, most mature, secure and decentralized blockchain that has given birth to a whole
-            new
-            industry!
-            Stéphane Roche/D10eConsulting offer you a 15 hours immersive course on Bitcoin (Practical, Essentials,
-            In-depth)
+          <p>
+            Do you wonder how Bitcoin and blockchain works and how to use it?
+            Let’s explore the first, most mature, secure and decentralized blockchain that has given birth to a whole new industry!
+            Bitcoin Studio offers you three different courses on Bitcoin depending on your needs (Practical, Essentials, In-depth).
           </p>
-
-          <p> If you plan to work anywhere in the blockchain industry, mastering Bitcoin is an essential skill. It is
-            the first of its kind, which means the most attacked and therefore the most robust blockchain.
-            Main Bitcoin Core developers are highly experienced, the ecosystem is big, it has the biggest market
-            capitalization, etc.
-            More than 75% of the blockchains today are, directly or indirectly, software forks of Bitcoin (Litecoin,
-            Dash, Zcash,
-            Decred, Komodo, Factom, Particl, Dogecoin, and thousands of others).
-            Working in the field but skipping Bitcoin is in our view irresponsible.
-
-            Bitcoin is also a great start because it has the simplest protocol design, with a non-Turing-complete
-            smart-contract functionality. Finally, Lightning Network, the new micropayment feature, should bring
-            tremendous new business opportunities.</p>
-
-          <p>25% off</p>
-          <p>Sign Up!</p>
-          <p>3 tickets for 2</p>
-          <p>First session: 10 people</p>
-          <p>Get refunded at any time</p>
         </div>
 
-        <img id="workshopFlyer-workshopPage" src={bitcoin_essentials} alt="bitcoin essential flyer"/>
+        <section id={'section1-workshopPage'}>
+          <div className="hr"><hr/></div>
+          <h2>MASTER THE KING OF CRYPTO</h2>
+          <p>
+            If you plan to work anywhere in the blockchain industry, mastering Bitcoin is an essential skill. It is
+            the first of its kind, which means the most attacked and therefore the most robust blockchain.
+            Bitcoin Core developers are highly experienced, the ecosystem is big, has the biggest market
+            capitalization, etc.
+            More than 75% of the blockchains today are, directly or indirectly, software forks of Bitcoin.
+          </p>
+          <p>
+            Bitcoin is also a great start because it has the simplest protocol design, with a non-Turing-complete
+            smart-contract functionality. Finally, the new micropayment feature Lightning Network is bringing
+            tremendous new business opportunities.
+          </p>
+        </section>
 
+
+        <section id="workshopFlyer-workshopPage">
+          <img src={bitcoin_essentials} alt="bitcoin essential flyer"/>
+
+          <div id={'teaserWorkshop'}>
+            <p>
+              Got 3 tickets for 2 bought! <br/>
+              First session @ 10 people <br/>
+              Satisfied or refunded!
+            </p>
+          </div>
+        </section>
 
         <section id="offers-workshopPage">
-
           <section className={'practical-offer-workshopPage'}>
-            <div className="hr75pc"><hr/></div>
+            <div className="hr hr75pc"><hr/></div>
             <h2>Practical Bitcoin workshop 1 day</h2>
             <h3>Price</h3>
             <p>100€ inc. VAT. Satisfied or refunded</p>
@@ -59,7 +64,9 @@ class WorkshopPreRegistration extends React.Component {
           </section>
 
           <section className={'essentials-offer-workshopPage'}>
-            <div className="hr75pc"><hr/></div>
+            <div className="hr hr75pc">
+              <hr/>
+            </div>
             <h2>Essentials Bitcoin workshop 2 days</h2>
 
             <h3>Price</h3>
@@ -82,7 +89,9 @@ class WorkshopPreRegistration extends React.Component {
 
 
           <section className={'indepth-offer-workshopPage'}>
-            <div className="hr75pc"><hr/></div>
+            <div className="hr hr75pc">
+              <hr/>
+            </div>
             <h2>In-depth Bitcoin workshop 5 days</h2>
             <h3>Price</h3>
             <p>

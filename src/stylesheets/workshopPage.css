@@ -1,8 +1,9 @@
 main > div#workshopPage {
     grid-template-areas:
-            ".                hero-wp          ."
-            "workshopFlyer-wp workshopFlyer-wp workshopFlyer-wp"
-            "offers-wp        offers-wp        offers-wp";
+            ".                 hero-wp           ."
+            "workshopFlyer-wp  workshopFlyer-wp  workshopFlyer-wp"
+            "section1-wp section1-wp section1-wp"
+            "offers-wp         offers-wp         offers-wp";
 }
 
 #hero-workshopPage {
@@ -14,8 +15,13 @@ main > div#workshopPage {
 }
 #workshopFlyer-workshopPage {
     grid-area: workshopFlyer-wp;
-    grid-column: 1 / 4;
+    display: grid;
+    grid-template-columns: 8fr 4fr;
+    grid-column-gap: 1.5em;
+}
+#workshopFlyer-workshopPage img {
     width:100%;
+    border: 7px solid #fff;
 }
 #offers-workshopPage {
     grid-area: offers-wp;
@@ -25,4 +31,17 @@ main > div#workshopPage {
 
 #offers-workshopPage h2 {
     line-height: 110%;
+}
+
+#teaserWorkshop {
+    font-weight: bold;
+    line-height: 3em;
+    font-size: 2em;
+    text-align: center;
+    border: 7px solid #fff;
+    align-self: center;
+}
+#section1-workshopPage {
+    grid-area: section1-wp;
+    grid-column: 2 / 3;
 }
