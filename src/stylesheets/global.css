@@ -221,6 +221,52 @@ footer > div > nav > ul > li > a:hover {
     padding-left: 14px;
     background: url(/assets/footer_li_arrow.png) no-repeat 0px -18px;
 }
+
+
 /**
-    END FOOTER
+    Collapsible
  */
+.toggle-box {
+    display: none;
+}
+
+.toggle-box + label {
+    cursor: pointer;
+    display: block;
+    line-height: 21px;
+    margin: 25px 0;
+}
+
+.toggle-box + label + div {
+    opacity: 0;
+    margin-bottom: 10px;
+    height: 0px;
+    transition: height 2s, opacity 2s;
+}
+.toggle-box:checked + label + div {
+    display: block;
+    opacity: 1;
+    height: 350px;
+}
+
+.toggle-box + label:before {
+    padding-left: 1px;
+    background-color: #39444ab8;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    content: "+";
+    display: block;
+    float: left;
+    font-weight: bold;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 5px;
+    text-align: center;
+    width: 20px;
+}
+
+.toggle-box:checked + label:before {
+    content: "\2212";
+}

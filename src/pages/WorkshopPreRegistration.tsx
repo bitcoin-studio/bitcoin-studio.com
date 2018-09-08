@@ -108,7 +108,8 @@ class WorkshopPreRegistration extends React.Component {
                 Exploring the technology more closely, this intermediary course will give you a solid basis to start
                 your Bitcoin journey. Without going too technical, the goal is really to learn the different protocols
                 that compose the Bitcoin blockchain. We will review the basics of how Bitcoin works in enough details,
-                diving into several Bitcoin Improvement Proposals (the formal specifications) and looking into the broader ecosystem.
+                diving into several Bitcoin Improvement Proposals (the formal specifications) and looking into the
+                broader ecosystem.
                 You will learn all the specific concepts and vocabulary in use.
               </p>
               <p>
@@ -152,28 +153,32 @@ class WorkshopPreRegistration extends React.Component {
 
             <div className={'goals-workshopPage'}>
               <h3>Goals</h3>
-              <p>In this course we will study the Bitcoin protocol quite in-depth and various other aspects like its
-                historical context, the broader ecosystem, the socio-economic
+              <p>After an introduction to cryptography and Elliptic Curves in particular we will study the Bitcoin protocols quite in-depth, including the layer 2 Lightning Network.
+                We will also have a look at various other aspects like its historical context, the broader ecosystem, the socio-economic
                 implications, the governance of open source decentralized systems, etc.
+              </p>
+              <p>
                 Designed with an academic approach, we will alternate between theory and code practice (command line,
-                Javascript).
-                This training will allow you to deeply understand and evaluate
+                Javascript). This training will allow you to deeply understand and evaluate
                 blockchain protocols and will provide you a solid basis to work on Bitcoin or on any blockchain.
               </p>
 
-              <p>Together we will explore the scripting language and Lightning Network. Focusing on the new Segregated
-                Witness transaction format, we will learn how to
-                construct regular transactions, P2WSH smart contracts, multi-signatures and timelock transactions;
-                composing raw transactions and using Javascript libraries.
-                Attendees are expected to master the basics of blockchain, otherwise it is recommended to take the
-                Bitcoin Essentials course before.
-              </p>
+              <input className="toggle-box" id="goalsInDepthToggle" type="checkbox"/>
+              <label htmlFor="goalsInDepthToggle">Read More</label>
 
-              <p>
-                After this course, you’ll know everything you need to be able to separate fact from fiction when reading
-                claims about Bitcoin and other cryptocurrencies. You’ll have the conceptual foundations you need in order
-                to develop on top of Bitcoin or any blockchain.
-              </p>
+              <div id="expandCollapsible">
+                <p>Together we will explore the scripting language and Lightning Network.
+                  Focusing on the new Segregated Witness transaction format, we will learn how to
+                  construct regular transactions, P2WSH smart contracts, multi-signatures and timelock transactions;
+                  composing raw transactions using Javascript libraries.
+                </p>
+
+                <p>
+                  After this course, you’ll know everything you need to be able to separate fact from fiction when
+                  reading claims about Bitcoin and other cryptocurrencies. You’ll have the conceptual foundations you
+                  need in order to develop on top of Bitcoin or any blockchain.
+                </p>
+              </div>
             </div>
 
             <div>
@@ -182,6 +187,8 @@ class WorkshopPreRegistration extends React.Component {
                 This course is intended to individuals that needs a deep-dive into Bitcoin protocols. Ideal if you
                 already have a project, a business idea, or simply the strong desire to learn Bitcoin seriously.
                 Bitcoin In-depth is primarily intended to developers.
+                Attendees are expected to master the basics of blockchain, otherwise it is recommended to take the
+                Bitcoin Essentials course before.
               </p>
             </div>
 
