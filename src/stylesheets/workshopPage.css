@@ -24,15 +24,19 @@ main > div#workshopPage {
     border: 7px solid #fff;
 }
 #offers-workshopPage {
+    display: grid;
     grid-area: offers-wp;
     grid-template-columns: 4fr 4fr 4fr;
-    display: grid;
+    grid-column-gap: 5em;
 }
 
 #offers-workshopPage h2 {
     line-height: 110%;
 }
 
+#offers-workshopPage .goals-workshopPage {
+    min-height: 500px;
+}
 #teaserWorkshop {
     font-weight: bold;
     line-height: 3em;
