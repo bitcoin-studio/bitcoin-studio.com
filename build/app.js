@@ -92,7 +92,6 @@ ___scope___.file("components/Main.jsx", function(exports, require, module, __fil
 Object.defineProperty(exports, "__esModule", { value: true });
 const React = require("react");
 const Home_1 = require("../pages/Home");
-const Services_1 = require("../pages/Services");
 const WorkshopPreRegistration_1 = require("../pages/WorkshopPreRegistration");
 const Ressources_1 = require("../pages/Ressources");
 const About_1 = require("../pages/About");
@@ -102,7 +101,6 @@ class Main extends React.Component {
         return (React.createElement("main", null,
             React.createElement(fuse_react_1.Switch, null,
                 React.createElement(fuse_react_1.Route, { exact: true, path: '/', component: Home_1.default }),
-                React.createElement(fuse_react_1.Route, { exact: true, path: '/services', component: Services_1.default }),
                 React.createElement(fuse_react_1.Route, { exact: true, path: '/workshop-preregistration', component: WorkshopPreRegistration_1.default }),
                 React.createElement(fuse_react_1.Route, { exact: true, path: '/ressources', component: Ressources_1.default }),
                 React.createElement(fuse_react_1.Route, { exact: true, path: '/about', component: About_1.default }))));
