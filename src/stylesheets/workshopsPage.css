@@ -9,10 +9,6 @@ main > div#workshopPage {
 #hero-workshopPage {
     grid-area: hero-wp
 }
-#hero-workshopPage.hero h1 {
-    line-height: 100%;
-    margin: 12px 0 -7px 0;
-}
 #workshopFlyer-workshopPage {
     grid-area: workshopFlyer-wp;
     display: grid;
@@ -28,10 +24,6 @@ main > div#workshopPage {
     grid-area: offers-wp;
     grid-template-columns: 4fr 4fr 4fr;
     grid-column-gap: 5em;
-}
-
-#offers-workshopPage h2 {
-    line-height: 110%;
 }
 
 #offers-workshopPage .goals-workshopPage {
