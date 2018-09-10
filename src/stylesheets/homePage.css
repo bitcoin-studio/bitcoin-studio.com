@@ -153,7 +153,7 @@ main > div#homePage {
     grid-area: pictures-hp;
     display: grid;
     grid-template-columns: 8fr 4fr;
-    grid-column-gap: 2em;
+    grid-column-gap: 5em;
     margin-top: 0;
 }
 
@@ -163,16 +163,10 @@ main > div#homePage {
 
 #pictures-homePage img {
     border: 10px solid #fff;
-    height: 400px;
-}
-
-#picture1 {
-    grid-area: picture1;
-    grid-column: 1 / 2;
+    /*height: 400px;*/
+    width: 100%;
 }
 
 #picture2 {
-    grid-area: picture2;
-    grid-column: 2 / 3;
     background-color: #dee2e5;
 }

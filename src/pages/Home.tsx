@@ -17,7 +17,7 @@ class Home extends React.Component {
 
         <section id={'pictures-homePage'}>
           <figure id={'picture1'}>
-            <img src="https://loremflickr.com/760/420" alt="Tree frog"/>
+            <img src="https://loremflickr.com/760/380" alt="Tree frog"/>
             <figcaption>Random placeholder carefully chosen</figcaption>
           </figure>
 

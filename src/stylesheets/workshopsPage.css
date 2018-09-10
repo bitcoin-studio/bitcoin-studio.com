@@ -13,7 +13,7 @@ main > div#workshopPage {
     grid-area: workshopFlyer-wp;
     display: grid;
     grid-template-columns: 8fr 4fr;
-    grid-column-gap: 1.5em;
+    grid-column-gap: 5em;
 }
 #workshopFlyer-workshopPage img {
     width:100%;
