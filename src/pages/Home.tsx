@@ -22,7 +22,7 @@ class Home extends React.Component {
           </figure>
 
           <figure id={'picture2'}>
-            <img src="https://loremflickr.com/436/420" alt="Tree frog"/>
+            <img src="assets/bitcoin_logo_264.png" alt="Bitcoin logo"/>
             <figcaption>Random placeholder carefully chosen</figcaption>
           </figure>
         </section>
@@ -32,12 +32,13 @@ class Home extends React.Component {
             <hr/>
           </div>
           <h2>THE BEST BITCOIN STUDIO</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequuntur dicta expedita magni minus
-            numquam perspiciatis quod sint sunt vero? Laboriosam non pariatur repellat repellendus similique. Inventore
-            nemo quidem vitae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequuntur dicta
-            expedita magni minus
-            numquam perspiciatis quod sint sunt vero? Laboriosam non pariatur repellat repellendus similique. Inventore
-            nemo quidem vitae. </p>
+          <p>
+            Fascinated by the idea and realisation of a digital, decentralized, open platform, open source,
+            censorship-resistant money,
+            we at Bitcoin Studio have a strong will to take part of this revolution.
+            The company is mainly composed by Stéphane Roche, blockchain developer (mainly Bitcoin and Ethereum),
+            then team can be constituted depending on the needs.
+          </p>
 
           <p>Consectetur adipisicing elit. Aliquid consequuntur dicta
             expedita magni minus
@@ -68,7 +69,8 @@ class Home extends React.Component {
             <img src="https://loremflickr.com/200/150" alt="img22"/>
             <p>
               <span><em>Workshops</em></span>
-              We are offering three Bitcoin trainings, Practical, Essentials and In-depth, each of them is gradually more thorough.
+              We are offering three Bitcoin trainings, Practical, Essentials and In-depth, each of them is gradually
+              more thorough.
               They are taking place in the beautiful city of Lisbon, given by instructor Stéphane Roche.
             </p>
           </div>
@@ -95,7 +97,7 @@ class Home extends React.Component {
             <img src="https://loremflickr.com/200/150" alt="img22"/>
             <p>
               <span><em>Node as a Service</em></span>
-              Partnering with the French company ADAPP, we host and manage all kind of nodes (full nodes, LN nodes,
+              Partnering with the French company <a href="https://www.adapp.tech/" target={"_blank"}>ADAPP</a>, we host and manage all kind of nodes (full nodes, LN nodes,
               BTCpay).
               Our unique deployment stack allows for easy setup, safety and a production-ready infrastructure.
             </p>

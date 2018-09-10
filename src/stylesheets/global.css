@@ -114,9 +114,11 @@ h3 {
 
 a {
     text-decoration: none;
-    color: #0f41dc;
+    color: #1a057d;
 }
-
+a:hover {
+    color: #f79513;
+}
 
 section {
     margin: 20px 0;
