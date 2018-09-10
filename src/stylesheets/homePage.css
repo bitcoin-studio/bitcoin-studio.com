@@ -42,6 +42,9 @@ main > div#homePage {
 #servicesDetails-homePage .serviceItem {
     text-align: center;
 }
+#servicesDetails-homePage .serviceItem img {
+    width: 100%;
+}
 #servicesDetails-homePage .serviceItem p {
     text-align: initial;
 }
