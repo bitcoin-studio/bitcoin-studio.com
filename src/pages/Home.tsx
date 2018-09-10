@@ -1,4 +1,5 @@
 import * as React from 'react'
+
 //import { Button, Intent } from "@blueprintjs/core";
 
 class Home extends React.Component {
@@ -6,7 +7,7 @@ class Home extends React.Component {
     return (
       <div id={'homePage'}>
 
-        <div id={'hero-homePage'} className={"hero"}>
+        <div id={'hero-homePage'} className={'hero'}>
           <h1>BITCOIN STUDIO #1</h1>
           <p>
             Expertise on blockchain tech, particularly Bitcoin. A network of real experts, design studio, web/interface
@@ -18,18 +19,20 @@ class Home extends React.Component {
 
         <section id={'pictures-homePage'}>
           <figure id={'picture1'}>
-            <img src="https://loremflickr.com/760/420" alt="Tree frog" />
+            <img src="https://loremflickr.com/760/420" alt="Tree frog"/>
             <figcaption>Random placeholder carefully chosen</figcaption>
           </figure>
 
           <figure id={'picture2'}>
-            <img src="https://loremflickr.com/436/420" alt="Tree frog" />
+            <img src="https://loremflickr.com/436/420" alt="Tree frog"/>
             <figcaption>Random placeholder carefully chosen</figcaption>
           </figure>
         </section>
 
         <section id={'services-homePage'}>
-          <div className="hr"><hr/></div>
+          <div className="hr">
+            <hr/>
+          </div>
           <h2>THE BEST BITCOIN STUDIO</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequuntur dicta expedita magni minus
             numquam perspiciatis quod sint sunt vero? Laboriosam non pariatur repellat repellendus similique. Inventore
@@ -55,8 +58,10 @@ class Home extends React.Component {
           <div className={'serviceItem'}>
             <img src="https://loremflickr.com/200/150" alt="img22"/>
             <p>
-              <span><em>When the web meets Bitcoin</em></span>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam doloremque ex hic itaque non, perspiciatis totam voluptas? Debitis doloribus nulla omnis quaerat quis reprehenderit similique totam ut veniam voluptate!
+              <span><em>Software development</em></span>
+              Bitcoin Studio reconcile Bitcoin with web development (mainly Typescript, React, Redux), offering custom
+              software development on layer 1 and 2.
+              System architecture, complex transaction, scripts, …
             </p>
           </div>
 
@@ -64,24 +69,27 @@ class Home extends React.Component {
           <div className={'serviceItem'}>
             <img src="https://loremflickr.com/200/150" alt="img22"/>
             <p>
-              <span><em>Help people grasp the tech</em></span>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam doloremque ex hic itaque non, perspiciatis totam voluptas? Debitis doloribus nulla omnis quaerat quis reprehenderit similique totam ut veniam voluptate!
+              <span><em>Workshops</em></span>
+              We are offering three Bitcoin trainings, Practical, Essentials and In-depth, each of them is gradually more thorough.
+              They are taking place in the beautiful city of Lisbon, given by instructor Stéphane Roche.
             </p>
           </div>
 
           <div className={'serviceItem'}>
             <img src="https://loremflickr.com/200/150" alt="img22"/>
             <p>
-              <span><em>Help companies build products</em></span>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam doloremque ex hic itaque non, perspiciatis totam voluptas? Debitis doloribus nulla omnis quaerat quis reprehenderit similique totam ut veniam voluptate!
+              <span><em>In-house trainings</em></span>
+              Bitcoin trainings can be given directly at your office, tailored to your specific needs.
+              Prepare yourself for the financial revolution!
             </p>
           </div>
 
           <div className={'serviceItem'}>
             <img src="https://loremflickr.com/200/150" alt="img22"/>
             <p>
-              <span><em>Node installation</em></span>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam doloremque ex hic itaque non, perspiciatis totam voluptas? Debitis doloribus nulla omnis quaerat quis reprehenderit similique totam ut veniam voluptate!
+              <span><em>Private consulting</em></span>
+              Bitcoin Studio can respond to your specific needs.
+              Key management best practices, endeavors to recover lost coins, recover coins of Bitcoin forks, etc.
             </p>
           </div>
 
@@ -89,7 +97,9 @@ class Home extends React.Component {
             <img src="https://loremflickr.com/200/150" alt="img22"/>
             <p>
               <span><em>Node as a Service</em></span>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam doloremque ex hic itaque non, perspiciatis totam voluptas? Debitis doloribus nulla omnis quaerat quis reprehenderit similique totam ut veniam voluptate!
+              Partnering with the French company ADAPP, we host and manage all kind of nodes (full nodes, LN nodes,
+              BTCpay).
+              Our unique deployment stack allows for easy setup, safety and a production-ready infrastructure.
             </p>
           </div>
         </section>
@@ -105,7 +115,9 @@ class Home extends React.Component {
             <span>Adipisci aliquam, animi beatae cum delectus deleniti dignissimos exercitationem fugit ipsam iure laborum  officia sint velit veniam. Cumque debitis eius est ipsam itaque iusto molestiae mollitia rem!</span>
           </p>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam amet aperiam at cumque esse ipsam itaque laboriosam laudantium molestias reiciendis rem sequi, similique sint, sit suscipit totam ullam, vitae?</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam amet aperiam at cumque esse ipsam
+            itaque laboriosam laudantium molestias reiciendis rem sequi, similique sint, sit suscipit totam ullam,
+            vitae?</p>
         </section>
 
 

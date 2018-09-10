@@ -92,7 +92,7 @@ class WorkshopPreRegistration extends React.Component {
               <h3>Programme</h3>
               <p>
                 We will talk about all the main topics you need to know to be comfortable with Bitcoin.
-                Mining, wallet, key management, transaction, fees, Lightning Network instant payment etc.
+                Mining, wallet, key management best practices, transaction, fees, Lightning Network instant payment etc.
               </p>
               <p>
                 The day will end with an informal Q&A session.

@@ -29,7 +29,7 @@ main > div#homePage {
     grid-area: details-hp;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-column-gap: 1em;
+    grid-column-gap: 2.5em;
 }
 #stuff-homePage {
     grid-area: stuff-hp;
