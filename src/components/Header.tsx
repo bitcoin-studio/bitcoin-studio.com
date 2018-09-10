@@ -18,7 +18,6 @@ class Header extends React.Component<MyProps, MyState> {
   componentDidMount() {
     let page = window.location.pathname
     if (page === '/') this.setState({activeItem: 'HOME'})
-    else if (page === '/services') this.setState({activeItem: 'SERVICES'})
     else if (page === '/workshop-preregistration') this.setState({activeItem: 'WORKSHOPS'})
     else if (page === '/ressources') this.setState({activeItem: 'RESSOURCES'})
     else if (page === '/about') this.setState({activeItem: 'ABOUT'})
@@ -34,9 +33,6 @@ class Header extends React.Component<MyProps, MyState> {
         <ul>
           <li>
             <Link className={this.state.activeItem === 'HOME' ? 'active' : ''}  onClick={this.activate.bind(this, 'HOME')} to="/">HOME</Link>
-          </li>
-          <li>
-            <Link className={this.state.activeItem === 'SERVICES' ? 'active' : ''} onClick={this.activate.bind(this,'SERVICES')} to="/services">SERVICES</Link>
           </li>
           <li>
             <Link className={this.state.activeItem === 'WORKSHOPS' ? 'active' : ''} onClick={this.activate.bind(this, 'WORKSHOPS')} to="/workshop-preregistration">WORKSHOPS</Link>

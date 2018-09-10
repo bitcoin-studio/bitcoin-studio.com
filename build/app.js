@@ -60,8 +60,6 @@ class Header extends React.Component {
         let page = window.location.pathname;
         if (page === '/')
             this.setState({ activeItem: 'HOME' });
-        else if (page === '/services')
-            this.setState({ activeItem: 'SERVICES' });
         else if (page === '/workshop-preregistration')
             this.setState({ activeItem: 'WORKSHOPS' });
         else if (page === '/ressources')
@@ -77,8 +75,6 @@ class Header extends React.Component {
             React.createElement("ul", null,
                 React.createElement("li", null,
                     React.createElement(fuse_react_1.Link, { className: this.state.activeItem === 'HOME' ? 'active' : '', onClick: this.activate.bind(this, 'HOME'), to: "/" }, "HOME")),
-                React.createElement("li", null,
-                    React.createElement(fuse_react_1.Link, { className: this.state.activeItem === 'SERVICES' ? 'active' : '', onClick: this.activate.bind(this, 'SERVICES'), to: "/services" }, "SERVICES")),
                 React.createElement("li", null,
                     React.createElement(fuse_react_1.Link, { className: this.state.activeItem === 'WORKSHOPS' ? 'active' : '', onClick: this.activate.bind(this, 'WORKSHOPS'), to: "/workshop-preregistration" }, "WORKSHOPS")),
                 React.createElement("li", null,
@@ -205,54 +201,6 @@ class Home extends React.Component {
 }
 exports.default = Home;
 //# sourceMappingURL=Home.js.map
-});
-___scope___.file("pages/Services.jsx", function(exports, require, module, __filename, __dirname){
-
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const React = require("react");
-class Services extends React.Component {
-    render() {
-        return (React.createElement("div", { id: 'servicesPage' },
-            React.createElement("div", { className: "hero", id: 'hero-servicesPage' },
-                React.createElement("h1", null, "OUR SERVICES"),
-                React.createElement("p", null, "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eius illum ipsum, itaque laboriosam magni natus quasi quisquam quos rerum similique sint ut, veritatis voluptas, voluptatem! Aut dolorem inventore ipsum?")),
-            React.createElement("section", { id: 'workshops-servicesPage' },
-                React.createElement("div", { className: "hr" },
-                    React.createElement("hr", null)),
-                React.createElement("h2", null, "WORKSHOPS"),
-                React.createElement("p", null,
-                    "We are offering three Bitcoin trainings.",
-                    React.createElement("b", null, "Bitcoin Practical"),
-                    " on 1 day, ",
-                    React.createElement("b", null, "Bitcoin Essentials"),
-                    " on 2 days and ",
-                    React.createElement("b", null, "Bitcoin In-depth"),
-                    " on 5 days. Each of them is gradually more thorough. The workshops are taking place in the beautiful city of Lisbon, given by instructor St\u00E9phane Roche. Prepare yourself for the financial revolution!")),
-            React.createElement("section", { id: 'consultingForCompanies-servicesPage' },
-                React.createElement("div", { className: "hr" },
-                    React.createElement("hr", null)),
-                React.createElement("h2", null, "IN-HOUSE TRAININGS"),
-                React.createElement("p", null, "Bitcoin trainings can be given directly at your office, tailored to your specific needs."),
-                React.createElement("br", null),
-                React.createElement("div", { className: "hr" },
-                    React.createElement("hr", null)),
-                React.createElement("h2", null, "SOFTWARE DEVELOPMENT"),
-                React.createElement("p", null, "Bitcoin Studio reconcile Bitcoin with web development (mainly Typescript, React, Redux), offering custom software development on layer 1 and 2. System architecture, complex transaction, scripts, \u2026 Bitcoin Studio is also capable of helping you setting up a node (Bitcoin, LN, BTCPay, Tor bridge)."),
-                React.createElement("br", null),
-                React.createElement("div", { className: "hr" },
-                    React.createElement("hr", null)),
-                React.createElement("h2", null, "NODE AS A SERVICE"),
-                React.createElement("p", null, "Partnering with the French company ADAPP, we host and manage all kind of nodes (full nodes, LN nodes, BTCpay). Thanks to our unique deployment stack we offer\u00A0easy setup, safety\u00A0and\u00A0a production-ready infrastructure.")),
-            React.createElement("section", { id: 'consultingForIndividuals-servicesPage' },
-                React.createElement("div", { className: "hr" },
-                    React.createElement("hr", null)),
-                React.createElement("h2", null, "PRIVATE CONSULTING & DEVELOPMENT FOR INDIVIDUALS"),
-                React.createElement("p", null, "Bitcoin Studio can answer your specific needs. Endeavors to recover lost coins, recover coins of Bitcoin forks."))));
-    }
-}
-exports.default = Services;
-//# sourceMappingURL=Services.js.map
 });
 ___scope___.file("pages/WorkshopPreRegistration.jsx", function(exports, require, module, __filename, __dirname){
 
@@ -573,11 +521,6 @@ ___scope___.file("stylesheets/homePage.css", function(exports, require, module, 
 
 
 require("fuse-box-css")("stylesheets/homePage.css", "main > div#homePage {\n    grid-template-areas:\n            \".                 hero-hp           .\"\n            \"pictures-hp       pictures-hp      pictures-hp\"\n            \"services-hp       services-hp       services-hp\"\n            \"details-hp  details-hp details-hp\"\n            \"workshops-hp      workshops-hp      workshops-hp\"\n            \"call2action-hp    call2action-hp    call2action-hp\";\n}\n\n\n\n/**\n    Hero\n */\n#hero-homePage {\n    grid-area: hero-hp;\n}\n\n\n/**\n    Services (text content 1)\n */\n#services-homePage {\n    grid-area: services-hp;\n    grid-column: 2 / 3;\n}\n#servicesDetails-homePage {\n    grid-area: details-hp;\n    display: grid;\n    grid-template-columns: repeat(5, 1fr);\n    grid-column-gap: 2.5em;\n}\n#stuff-homePage {\n    grid-area: stuff-hp;\n}\n#workshops-homePage {\n    grid-area: workshops-hp;\n    grid-column: 2 / 3;\n}\n\n#servicesDetails-homePage .serviceItem {\n    text-align: center;\n}\n#servicesDetails-homePage .serviceItem p {\n    text-align: initial;\n}\n#servicesDetails-homePage .serviceItem p span {\n    margin-bottom: 5px;\n    display: block;\n}\n/**\n    Call 2 action\n */\n#call2action-homePage {\n    grid-area: call2action-hp;\n    display: grid;\n    grid-template-columns: 5fr 1fr;\n}\n\n#call2action_ribbon {\n    display: grid;\n    grid-template-columns: 6fr 6fr;\n    align-items: baseline;\n    padding-top: 63px;\n    padding-left: 60px;\n    background: url(/assets/call2action_ribbon.jpg) no-repeat left center,\n    url(/assets/call2action.png) repeat-x center left;\n}\n\n#call2action_ribbon h1 {\n    margin-right: 30px;\n    justify-self: center;\n}\n\n#call2action_ribbon_prop {\n    width: 206px;\n    height: 207px;\n    position: relative;\n    text-align: center;\n    background: url(/assets/call2action_circle_bg.png) left no-repeat;\n}\n\n#call2action_ribbon_prop .inside {\n    margin-top: 49px;\n\n}\n\n#call2action_ribbon_prop span:nth-child(odd) {\n    font-size: 16px;\n    font-style: italic;\n    font-family: times;\n}\n\n#call2action_ribbon h1 {\n    font-family: 'Pathway Gothic One', Helvetica, Arial, \"Trebuchet MS\", sans-serif;\n    font-size: 33px;\n    letter-spacing: 2px;\n}\n\n.ribbon_prop_1 {\n    position: absolute;\n    background: url(/assets/call2action_circle.png) left 0px no-repeat;\n    width: 206px;\n    height: 205px;\n    z-index: 2;\n}\n\n.ribbon_prop_1 .inside span > a {\n    color: #ffffff;\n}\n\n.ribbon_prop_2 .inside span > a {\n    color: #39444a;\n}\n\n.ribbon_prop_1:hover {\n    opacity: 0;\n    cursor: pointer;\n}\n\n.ribbon_prop_2 {\n    position: absolute;\n    background: url(/assets/call2action_circle.png) left -205px no-repeat;\n    width: 206px;\n    height: 205px;\n}\n\n.ribbon_prop_2:hover {\n    opacity: 1;\n}\n\n\n\n/**\n\n */\n.request {\n    font-family: 'Pathway Gothic One', Helvetica, Arial, \"Trebuchet MS\", sans-serif;\n    font-size: 2.75em;\n    line-height: 100%;\n    margin-top: 10px;\n    letter-spacing: 3px;\n    display: block;\n}\n\n/**\n    Pictures home page\n */\n#pictures-homePage {\n    grid-area: pictures-hp;\n    display: grid;\n    grid-template-columns: 8fr 4fr;\n    grid-column-gap: 2em;\n    margin-top: 0;\n}\n\n#pictures-homePage figure {\n    margin: 0;\n}\n\n#pictures-homePage img {\n    border: 10px solid #fff;\n    width: 100%;\n    height: 400px;\n}\n\n#picture1 {\n    grid-area: picture1;\n    grid-column: 1 / 2;\n}\n\n#picture2 {\n    grid-area: picture2;\n    grid-column: 2 / 3;\n}")
-});
-___scope___.file("stylesheets/servicesPage.css", function(exports, require, module, __filename, __dirname){
-
-
-require("fuse-box-css")("stylesheets/servicesPage.css", "/**\n    Services Page Stylesheet\n */\n\nmain > div#servicesPage {\n    grid-template-areas:\n            \".                               hero-sp        .\"\n            \"workshops-sp                    workshops-sp                    workshops-sp\"\n            \"consultingForCompanies-sp       consultingForCompanies-sp       consultingForCompanies-sp\"\n            \"consultingForIndividuals-sp     consultingForIndividuals-sp     consultingForIndividuals-sp\";\n}\n\n\n/**\n    Hero Services Page\n */\n#hero-servicesPage {\n    grid-area: hero-sp;\n}\n#workshops-servicesPage {\n    grid-area: workshops-sp;\n}\n#consultingForCompanies-servicesPage {\n    grid-area: consultingForCompanies-sp;\n}\n#consultingForIndividuals-servicesPage {\n    grid-area: consultingForIndividuals-sp;\n}")
 });
 ___scope___.file("stylesheets/workshopPage.css", function(exports, require, module, __filename, __dirname){
 
