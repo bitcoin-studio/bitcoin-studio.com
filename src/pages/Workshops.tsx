@@ -1,9 +1,7 @@
 import * as React from 'react'
-import {FormWorkshop} from '../components/FormWorkshop'
-// @ts-ignore
 import bitcoin_essentials from '../img/bitcoin_essentials.png'
 
-class WorkshopPreRegistration extends React.Component {
+class Workshops extends React.Component {
   render() {
     return (
       <div id={'workshopPage'}>
@@ -226,16 +224,9 @@ class WorkshopPreRegistration extends React.Component {
             </div>
           </section>
         </section>
-
-        {/*
-        <section className={'formPreRegistration-workshopPage'}>
-          <h3>Form. BTCpay server / fiat</h3>
-          <FormWorkshop/>
-        </section>
-        */}
       </div>
     )
   }
 }
 
-export default WorkshopPreRegistration
+export default Workshops

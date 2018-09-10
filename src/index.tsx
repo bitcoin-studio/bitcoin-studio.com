@@ -5,12 +5,9 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import 'normalize.css/normalize.css'
-import '@blueprintjs/icons/lib/css/blueprint-icons.css'
-import '@blueprintjs/core/lib/css/blueprint.css'
 import './stylesheets/global.css';
 import './stylesheets/homePage.css';
-import './stylesheets/servicesPage.css';
-import './stylesheets/workshopPage.css';
+import './stylesheets/workshopsPage.css';
 import './stylesheets/ressourcesPage.css';
 import './stylesheets/aboutPage.css';
 

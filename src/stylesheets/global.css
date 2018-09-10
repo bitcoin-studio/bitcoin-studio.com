@@ -63,6 +63,7 @@ main > div {
     font-family: 'Pathway Gothic One', Helvetica, Arial, "Trebuchet MS", sans-serif;
     font-size: 8em;
     font-weight: bold;
+    margin: 55px 0;
 }
 .hero p {
     font-family: "Roboto Condensed", sans-serif;
@@ -111,6 +112,12 @@ h3 {
     margin: 30px 0 15px 0;
 }
 
+a {
+    text-decoration: none;
+    color: #0f41dc;
+}
+
+
 section {
     margin: 20px 0;
 }
@@ -122,6 +129,7 @@ section {
  */
 .nav {
     grid-area: nav;
+    height: 145px;
 }
 
 .nav ul {
@@ -144,6 +152,7 @@ section {
     width: 100px;
     color: #39444a;
     display: block;
+    text-decoration: none;
     padding-top: 70px;
     text-align: center;
 }
@@ -164,11 +173,7 @@ section {
  */
 footer {
     grid-area: footer;
-    /*background-color: #e9e826;*/
-
     display: flex;
-
-    width: 1200px;
     height: 207px;
     /*height: 166px;*/
     margin-top: 50px;
@@ -246,7 +251,7 @@ footer > div > nav > ul > li > a:hover {
 .toggle-box:checked + label + div {
     display: block;
     opacity: 1;
-    height: 350px;
+    height: 390px;
 }
 
 .toggle-box + label:before {

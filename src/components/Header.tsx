@@ -1,6 +1,5 @@
 import * as React from 'react'
-import {Button, Navbar} from '@blueprintjs/core'
-import {Link, navigate, mergeQuery, setQuery} from 'fuse-react'
+import { Link } from 'fuse-react'
 
 type MyProps = {  };
 type MyState = { activeItem: string };
@@ -18,7 +17,7 @@ class Header extends React.Component<MyProps, MyState> {
   componentDidMount() {
     let page = window.location.pathname
     if (page === '/') this.setState({activeItem: 'HOME'})
-    else if (page === '/workshop-preregistration') this.setState({activeItem: 'WORKSHOPS'})
+    else if (page === '/workshops') this.setState({activeItem: 'WORKSHOPS'})
     else if (page === '/ressources') this.setState({activeItem: 'RESSOURCES'})
     else if (page === '/about') this.setState({activeItem: 'ABOUT'})
   }
@@ -35,7 +34,7 @@ class Header extends React.Component<MyProps, MyState> {
             <Link className={this.state.activeItem === 'HOME' ? 'active' : ''}  onClick={this.activate.bind(this, 'HOME')} to="/">HOME</Link>
           </li>
           <li>
-            <Link className={this.state.activeItem === 'WORKSHOPS' ? 'active' : ''} onClick={this.activate.bind(this, 'WORKSHOPS')} to="/workshop-preregistration">WORKSHOPS</Link>
+            <Link className={this.state.activeItem === 'WORKSHOPS' ? 'active' : ''} onClick={this.activate.bind(this, 'WORKSHOPS')} to="/workshops">WORKSHOPS</Link>
           </li>
           <li>
             <Link className={this.state.activeItem === 'RESSOURCES' ? 'active' : ''} onClick={this.activate.bind(this, 'RESSOURCES')} to="/ressources">RESSOURCES</Link>
