@@ -80,14 +80,23 @@ class WorkshopPreRegistration extends React.Component {
               </p>
             </div>
 
-            <div>
+            <div className={'public-workshopPage'}>
               <h3>Public and Prerequisite</h3>
-              <p>This workshop is a first hands-on Bitcoin. Accessible by everyone</p>
+              <p>
+                This workshop is a hands-on training accessible to everybody.
+                Attendees don't need prior knowledge on Bitcoin, blockchain or computer science.
+              </p>
             </div>
 
-            <div>
+            <div className={'programme-workshopPage'}>
               <h3>Programme</h3>
-              <p>Wallet, key management, transaction, fees, Lightning Network instant payment. Q&A</p>
+              <p>
+                We will talk about all the main topics you need to know to be comfortable with Bitcoin.
+                Mining, wallet, key management, transaction, fees, Lightning Network instant payment etc.
+              </p>
+              <p>
+                The day will end with an informal Q&A session.
+              </p>
             </div>
           </section>
 
@@ -120,20 +129,25 @@ class WorkshopPreRegistration extends React.Component {
 
             </div>
 
-            <div>
+            <div className={'public-workshopPage'}>
               <h3>Public and Prerequisite</h3>
-              <p>This workshop is intended to curious people wanting to better understand Bitcoin and blockchain
-                technology. This workshop is technical but should stay accessible as long as you have a basic
-                understanding of
-                computer science. It is intended to all individuals wishing to deepen their knowledge of Bitcoin and
-                blockchain
-                technology, either you are a developer, product manager, attorney, designer, builder, entrepreneur,
+              <p>While technical, it should stay accessible as long as you have a basic
+                knowledge of computer science. It is intended to all individuals wishing to deepen their knowledge of
+                Bitcoin and
+                blockchain technology, either you are a developer, product manager, attorney, coffee maker, builder,
+                entrepreneur,
                 etc.</p>
             </div>
 
-            <div>
+            <div className={'programme-workshopPage'}>
               <h3>Programme</h3>
-              <p>Focus on the essentials</p>
+              <p>
+                Focusing on the essentials, this course will teach you the main technologies that compose Bitcoin
+                (asymmetric cryptography, P2P networking, proof-of-work consensus and mining) and other good-to-knows.
+              </p>
+              <p>
+                Depending on the audience we may alternate between lecture and coding in Javascript.
+              </p>
             </div>
           </section>
 
@@ -153,8 +167,10 @@ class WorkshopPreRegistration extends React.Component {
 
             <div className={'goals-workshopPage'}>
               <h3>Goals</h3>
-              <p>After an introduction to cryptography and Elliptic Curves in particular we will study the Bitcoin protocols quite in-depth, including the layer 2 Lightning Network.
-                We will also have a look at various other aspects like its historical context, the broader ecosystem, the socio-economic
+              <p>After an introduction to cryptography and Elliptic Curves in particular we will study the Bitcoin
+                protocols quite in-depth, including the layer 2 Lightning Network.
+                We will also have a look at various other aspects like its historical context, the broader ecosystem,
+                the socio-economic
                 implications, the governance of open source decentralized systems, etc.
               </p>
               <p>
@@ -181,82 +197,32 @@ class WorkshopPreRegistration extends React.Component {
               </div>
             </div>
 
-            <div>
+            <div className={'public-workshopPage'}>
               <h3>Public and Prerequisite</h3>
               <p>
                 This course is intended to individuals that needs a deep-dive into Bitcoin protocols. Ideal if you
                 already have a project, a business idea, or simply the strong desire to learn Bitcoin seriously.
-                Bitcoin In-depth is primarily intended to developers.
-                Attendees are expected to master the basics of blockchain, otherwise it is recommended to take the
+                Bitcoin In-depth is primarily intended to developers that already master the basics of blockchain,
+                otherwise it is recommended to take the
                 Bitcoin Essentials course before.
               </p>
             </div>
 
-            <div>
+            <div className={'programme-workshopPage'}>
               <h3>Programme</h3>
-              <ul>
-                General background
-                <li>Emergence of cryptography</li>
-                <li>The Cypherpunks movement</li>
-                <li>Internet</li>
-                <li>Blockchain ecosystem</li>
-              </ul>
-
-              <ul>
-                Bitcoin background
-                <li>Project history</li>
-                <li>Block size debate</li>
-                <li>Main Core developers</li>
-                <li>Ecosystem</li>
-                <li>Governance model</li>
-              </ul>
-
-              <ul>
-                Cryptography 101
-                <li>General cryptography concepts</li>
-                <li>Symmetrical and asymmetrical encryption</li>
-                <li>Digital signatures</li>
-                <li>Hash functions</li>
-                <li>Merkle trees, …</li>
-              </ul>
-
-              <ul>
-                P2P network
-                <li>Topology</li>
-                <li>Different types of node</li>
-              </ul>
-
-              <ul>
-                Mining, consensus and forks
-                <li>Proof of Work</li>
-                <li>Blockchain mechanisms</li>
-              </ul>
-
-              <ul>
-                Wallets, keys and addresses
-                <li>Elliptic curve digital signature algorithm (ECDSA)</li>
-                <li>Bitcoin address</li>
-                <li>HD wallets</li>
-                <li>Mnemonic backup</li>
-              </ul>
-
-              <ul>
-                Transactions
-                <li>Structure (input, output, witness)</li>
-                <li>Signing and verification</li>
-                <li>Different types (regular, smart contracts)</li>
-                <li>Different versions (legacy, Segwit nested in legacy, native Segwit)</li>
-                <li>Data recording output (colored coins)</li>
-              </ul>
-
-              <ul>
-                Advanced scripting and transactions
-                <li>Main language opcodes</li>
-                <li>P2WSH smart contracts</li>
-                <li>Multi-signatures</li>
-                <li>Timelocks</li>
-                <li>Payment channels (Lightning Network)</li>
-              </ul>
+              <p>
+                This five days training has been thought to be the most comprehensive as possible.
+                Starting with some general background, we will talk about the Cypherpunk movement, cryptography,
+                followed by some Bitcoin background (project history, block size debate, main Core developers,
+                governance model, ...).
+              </p>
+              <p>
+                We will then study quite extensively all the different technologies that compose Bitcoin, naming the P2P
+                network, mining, consensus, forks, wallets, keys, addresses, the different types of transactions in
+                detail, advanced scripting, layer two scaling solution Lightning Network, atomic swaps,
+                privacy solutions, etc.
+                We will alternate between lecture and coding in Javascript.
+              </p>
             </div>
           </section>
         </section>

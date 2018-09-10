@@ -15,9 +15,7 @@ class Services extends React.Component {
         </div>
 
         <section id={'workshops-servicesPage'}>
-          <div className="hr">
-            <hr/>
-          </div>
+          <div className="hr"><hr/></div>
           <h2>WORKSHOPS</h2>
           <p>Practical: Bitcoin workshop 1 day</p>
           <p>Essentials: Bitcoin workshop 2 days</p>

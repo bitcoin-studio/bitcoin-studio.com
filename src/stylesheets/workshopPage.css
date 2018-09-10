@@ -49,3 +49,10 @@ main > div#workshopPage {
     grid-area: section1-wp;
     grid-column: 2 / 3;
 }
+
+.public-workshopPage {
+    height: 260px;
+}
+.programme-workshopPage {
+    height: 420px;
+}
