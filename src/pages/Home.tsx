@@ -20,19 +20,15 @@ class Home extends React.Component {
         <section id={'pictures-homePage'}>
           <figure id={'picture1'}>
             <img src="https://loremflickr.com/760/380" alt="Tree frog"/>
-            <figcaption>Random placeholder carefully chosen</figcaption>
           </figure>
 
           <figure id={'picture2'}>
-            <img src="assets/bitcoin_logo_264.png" alt="Bitcoin logo"/>
-            <figcaption>Random placeholder carefully chosen</figcaption>
+            <img src="assets/bitcoin_logo.png" alt="Bitcoin logo"/>
           </figure>
         </section>
 
         <section id={'services-homePage'}>
-          <div className="hr">
-            <hr/>
-          </div>
+          <div className="hr"><hr/></div>
           <h2>THE BEST BITCOIN STUDIO</h2>
           <p>
             Fascinated by the idea and realisation of a digital, decentralized, open platform, open source,
