@@ -28,9 +28,8 @@ main > div#homePage {
 #servicesDetails-homePage {
     grid-area: details-hp;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 145px 310px;
-    grid-column-gap: 2.5em;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 2.5em;
 }
 #stuff-homePage {
     grid-area: stuff-hp;
@@ -44,12 +43,18 @@ main > div#homePage {
     text-align: center;
 }
 #servicesDetails-homePage .serviceItem img {
-    width: 75%;
-    height: 100%;
+    width: 50%;
+    object-fit: scale-down;
 }
 #servicesDetails-homePage .serviceItem p {
     text-align: initial;
 }
+@media screen and (max-width: 500px) {
+    #servicesDetails-homePage .serviceItem p {
+        padding: 0 20px;
+    }
+}
+
 #servicesDetails-homePage .serviceItem p span {
     margin-bottom: 5px;
     display: block;
