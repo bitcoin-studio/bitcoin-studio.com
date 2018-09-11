@@ -3,6 +3,13 @@ main > div#aboutPage {
             ".           hero-ap        ."
             "desc-ap     desc-ap        desc-ap";
 }
+@media screen and (max-width: 780px) {
+    main > div#aboutPage {
+        grid-template-areas:
+                "hero-ap           hero-ap           hero-ap  "
+                "desc-ap           desc-ap           desc-ap";
+    }
+}
 
 #hero-aboutPage {
     grid-area: hero-ap;

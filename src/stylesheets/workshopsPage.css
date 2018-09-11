@@ -1,9 +1,23 @@
+/**
+    Workshops page
+ */
+
+
 main > div#workshopPage {
     grid-template-areas:
             ".                 hero-wp           ."
             "workshopFlyer-wp  workshopFlyer-wp  workshopFlyer-wp"
             "section1-wp       section1-wp       section1-wp"
             "offers-wp         offers-wp         offers-wp";
+}
+@media screen and (max-width: 780px) {
+    main > div#workshopPage {
+        grid-template-areas:
+                "hero-wp           hero-wp           hero-wp"
+                "workshopFlyer-wp  workshopFlyer-wp  workshopFlyer-wp"
+                "section1-wp       section1-wp       section1-wp"
+                "offers-wp         offers-wp         offers-wp";
+    }
 }
 
 #hero-workshopPage {
@@ -14,6 +28,11 @@ main > div#workshopPage {
     display: grid;
     grid-template-columns: 8fr 4fr;
     grid-column-gap: 5em;
+}
+@media screen and (max-width: 550px) {
+    #workshopFlyer-workshopPage {
+        display: none;
+    }
 }
 #workshopFlyer-workshopPage img {
     width:100%;
@@ -71,7 +90,11 @@ and (max-width: 2500px) {
 
 #section1-workshopPage {
     grid-area: section1-wp;
-    grid-column: 2 / 3;
+}
+@media screen and (min-width: 550px) {
+    #section1-workshopPage {
+        grid-column: 2 / 3;
+    }
 }
 
 .public-workshopPage {

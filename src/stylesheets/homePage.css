@@ -7,7 +7,7 @@ main > div#homePage {
             "workshops-hp      workshops-hp      workshops-hp"
             "call2action-hp    call2action-hp    call2action-hp";
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 780px) {
     main > div#homePage {
         grid-template-areas:
                 "hero-hp           hero-hp           hero-hp  "

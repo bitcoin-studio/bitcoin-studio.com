@@ -1,9 +1,22 @@
+/**
+    Ressources page
+ */
+
 main > div#ressourcesPage {
     grid-template-areas:
             ".            hero-rp        ."
             "hr-slides-rp hr-slides-rp   hr-slides-rp"
             "slides       slides         slides";
 }
+@media screen and (max-width: 780px) {
+    main > div#ressourcesPage {
+        grid-template-areas:
+                "hero-rp           hero-rp           hero-rp"
+                "hr-slides-rp      hr-slides-rp      hr-slides-rp"
+                "slides            slides            slides";
+    }
+}
+
 
 #hero-ressourcesPage {
     grid-area: hero-rp;
