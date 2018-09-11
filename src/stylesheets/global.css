@@ -245,7 +245,7 @@ footer {
     /*height: 166px;*/
     margin-top: 50px;
     margin-bottom: 50px;
-    padding-left: 240px;
+    padding-left: 20%;
     line-height: 140%;
 
     background: url(/assets/footer_right_207px.png) no-repeat scroll right bottom,
@@ -256,6 +256,12 @@ footer {
 footer > div {
     width: 248px;
     padding-top: 20px;
+}
+@media screen and (max-width: 780px) {
+    footer > div {
+        width: 200px;
+        padding: 20px;
+    }
 }
 
 footer > div > h2 {
@@ -293,6 +299,14 @@ footer > div > nav > ul > li > a:hover {
     padding-left: 14px;
     background: url(/assets/footer_li_arrow.png) no-repeat 0px -18px;
 }
+@media screen and (max-width: 550px) {
+    footer #services_footer {
+        display: none;
+    }
+}
+
+
+
 
 #copyrights {
     grid-area: copyrights;
@@ -308,7 +322,11 @@ footer > div > nav > ul > li > a:hover {
     width: 50%;
     border: solid 0.5px;
 }
-
+@media screen and (max-width: 780px) {
+    #copyrights {
+        line-height: 140%;
+    }
+}
 
 /**
     Collapsible

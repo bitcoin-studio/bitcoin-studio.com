@@ -87,6 +87,11 @@ main > div#homePage {
     display: grid;
     grid-template-columns: 5fr 1fr;
 }
+@media screen and (max-width: 780px) {
+    #call2action-homePage {
+        display: none;
+    }
+}
 
 #call2action_ribbon {
     display: grid;
