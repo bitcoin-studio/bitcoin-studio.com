@@ -166,6 +166,11 @@ main > div#homePage {
     grid-column-gap: 5em;
     margin-top: 0;
 }
+@media screen and (max-width: 768px) {
+    #pictures-homePage {
+        display: none;
+    }
+}
 
 #pictures-homePage figure {
     margin: 0;
@@ -173,6 +178,5 @@ main > div#homePage {
 
 #pictures-homePage img {
     border: 10px solid #fff;
-    /*height: 400px;*/
     width: 100%;
 }
