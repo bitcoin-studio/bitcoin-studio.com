@@ -6,7 +6,7 @@ class Home extends React.Component {
       <div id={'homePage'}>
 
         <div id={'hero-homePage'} className={'hero'}>
-          <h1>BITCOIN STUDIO #1</h1>
+          <h1>BITCOIN STUDIO</h1>
           <p>
             Bitcoin company based in the beautiful city of Lisbon. We do software development, workshops and in-house
             trainings, focused on bitcoin technology and quality web development. Want to discover Bitcoin, or choose to

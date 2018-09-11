@@ -86,6 +86,11 @@ h1 {
     line-height: 85%;
     margin: 20px 0 0 0;
 }
+@media screen and (max-width: 550px) {
+    h1 {
+        font-size: 4.5em;
+    }
+}
 h2 {
     line-height: 100%;
     font-size: 2.75em;
@@ -136,6 +141,22 @@ section {
     font-family: 'Pathway Gothic One', Helvetica, Arial, "Trebuchet MS", sans-serif;
     font-size: 25px;
     font-weight: normal;
+    position: relative;
+    left: -25px;
+}
+@media screen and (max-width: 550px) {
+    .nav ul li {
+        font-size: 16px;
+        letter-spacing: -1px;
+        left: 0;
+    }
+}
+@media screen
+and (min-width: 550px)
+and (max-width: 980px) {
+    .nav ul li {
+        left: 0;
+    }
 }
 
 .nav ul li a {
@@ -148,13 +169,30 @@ section {
     text-align: center;
 }
 
+
+@media screen and (max-width: 550px) {
+    .nav ul li a {
+        width: 60px;
+        padding: 80px 0 0 0;
+    }
+}
+@media screen
+and (min-width: 550px)
+and (max-width: 980px) {
+    .nav ul li a {
+        padding: 80px 12px 10px 12px;
+    }
+}
+
+
+
 .nav ul li a:hover {
     background: url(/assets/nav_item_hover.png) top no-repeat;
     text-decoration: none;
 }
 
 .nav ul li a.active {
-    background: url(/assets/nav_item_active.png) no-repeat 0px 0px;
+    background: url(/assets/nav_item_active.png) no-repeat 50% 0px;
     color: #fff;
 }
 
