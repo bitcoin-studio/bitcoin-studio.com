@@ -31,14 +31,40 @@ body {
 }
 
 .wrapper {
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr 2fr 6fr 2fr 1fr;
-    grid-template-areas:
-            ".           .           nav         .           ."
-            ".           main        main        main        ."
-            ".           footer      footer      footer      ."
-            ".           copyrights  copyrights  copyrights  .";
 }
+@media screen and (max-width: 550px) {
+    .wrapper {
+        grid-template-areas:
+                ".           nav         nav       nav           ."
+                ".           main        main        main        ."
+                ".           footer      footer      footer      ."
+                ".           copyrights  copyrights  copyrights  .";
+    }
+}
+@media screen
+and (min-width: 550px)
+and (max-width: 980px) {
+    .wrapper {
+        grid-template-areas:
+                ".           .           nav         .           ."
+                ".           main        main        main        ."
+                ".           footer      footer      footer      ."
+                ".           copyrights  copyrights  copyrights  .";
+    }
+}
+@media screen and (min-width: 980px) {
+    .wrapper {
+        grid-template-areas:
+                ".           .           nav         .           ."
+                ".           main        main        main        ."
+                ".           footer      footer      footer      ."
+                ".           copyrights  copyrights  copyrights  .";
+    }
+}
+
+
 
 main {
     grid-area: main;
@@ -46,7 +72,6 @@ main {
 main > div {
     display: grid;
     grid-template-columns: 2fr 6fr 2fr;
-
     font-family: "Roboto Slab",serif;
     font-size: 14px;
     letter-spacing: 0.3px;

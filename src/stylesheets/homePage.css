@@ -7,7 +7,17 @@ main > div#homePage {
             "workshops-hp      workshops-hp      workshops-hp"
             "call2action-hp    call2action-hp    call2action-hp";
 }
-
+@media screen and (max-width: 550px) {
+    main > div#homePage {
+        grid-template-areas:
+                "hero-hp           hero-hp           hero-hp  "
+                "pictures-hp       pictures-hp       pictures-hp"
+                "services-hp       services-hp       services-hp"
+                "details-hp  details-hp details-hp"
+                "workshops-hp      workshops-hp      workshops-hp"
+                "call2action-hp    call2action-hp    call2action-hp";
+    }
+}
 
 
 /**
@@ -23,7 +33,11 @@ main > div#homePage {
  */
 #services-homePage {
     grid-area: services-hp;
-    grid-column: 2 / 3;
+}
+@media screen and (min-width: 550px) {
+    #services-homePage {
+        grid-column: 2 / 3;
+    }
 }
 #servicesDetails-homePage {
     grid-area: details-hp;
@@ -36,7 +50,11 @@ main > div#homePage {
 }
 #workshops-homePage {
     grid-area: workshops-hp;
-    grid-column: 2 / 3;
+}
+@media screen and (min-width: 550px) {
+    #workshops-homePage {
+        grid-column: 2 / 3;
+    }
 }
 
 #servicesDetails-homePage .serviceItem {
