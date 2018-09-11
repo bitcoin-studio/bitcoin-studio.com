@@ -34,9 +34,10 @@ body {
     display:grid;
     grid-template-columns: 1fr 2fr 6fr 2fr 1fr;
     grid-template-areas:
-            ".     .        nav     .       ."
-            ".     main     main    main    ."
-            ".     footer   footer  footer  .";
+            ".           .           nav         .           ."
+            ".           main        main        main        ."
+            ".           footer      footer      footer      ."
+            ".           copyrights  copyrights  copyrights  .";
 }
 
 main {
@@ -228,6 +229,21 @@ footer > div > nav > ul > li > a:hover {
     text-decoration: none;
     padding-left: 14px;
     background: url(/assets/footer_li_arrow.png) no-repeat 0px -18px;
+}
+
+#copyrights {
+    grid-area: copyrights;
+    text-align: center;
+    line-height: 75%;
+    margin-bottom: 30px;
+}
+#copyrights a {
+    color: #3a454b !important;
+}
+#copyrights .strike {
+    display: inline-block;
+    width: 50%;
+    border: solid 0.5px;
 }
 
 

@@ -29,6 +29,7 @@ main > div#homePage {
     grid-area: details-hp;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 145px 310px;
     grid-column-gap: 2.5em;
 }
 #stuff-homePage {
@@ -43,7 +44,8 @@ main > div#homePage {
     text-align: center;
 }
 #servicesDetails-homePage .serviceItem img {
-    width: 100%;
+    width: 75%;
+    height: 100%;
 }
 #servicesDetails-homePage .serviceItem p {
     text-align: initial;
