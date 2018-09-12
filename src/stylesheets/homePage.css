@@ -79,6 +79,8 @@ main > div#homePage {
     font-weight: bold;
     font-size: 1.3em;
 }
+
+
 /**
     Call 2 action
  */
@@ -94,18 +96,23 @@ main > div#homePage {
 }
 
 #call2action_ribbon {
-    display: grid;
-    grid-template-columns: 6fr 6fr;
+    display: flex;
     align-items: baseline;
-    padding-top: 63px;
-    padding-left: 60px;
+    padding-top: 80px;
+    padding-left: 52px;
     background: url(/assets/call2action_ribbon.jpg) no-repeat left center,
     url(/assets/call2action.png) repeat-x center left;
 }
 
 #call2action_ribbon h1 {
-    margin-right: 30px;
-    justify-self: center;
+    flex: 5;
+    margin: 0 30px 0 20px;
+}
+#call2action_ribbon p {
+    flex: 7;
+    margin: 0 20px 0 0;
+    letter-spacing: 0px;
+    line-height: 100%;
 }
 
 #call2action_ribbon_prop {
@@ -117,7 +124,7 @@ main > div#homePage {
 }
 
 #call2action_ribbon_prop .inside {
-    margin-top: 49px;
+    margin-top: 45px;
 
 }
 
