@@ -23,6 +23,12 @@ main > div#workshopPage {
 #hero-workshopPage {
     grid-area: hero-wp
 }
+@media screen and (max-width: 550px) {
+    #hero-workshopPage h1 {
+        white-space: normal;
+    }
+}
+
 #workshopFlyer-workshopPage {
     grid-area: workshopFlyer-wp;
     display: grid;

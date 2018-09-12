@@ -19,7 +19,7 @@ class Home extends React.Component {
 
         <section id={'pictures-homePage'}>
           <figure id={'picture1'}>
-            <img src="https://loremflickr.com/760/380" alt="Tree frog"/>
+            <img src="assets/lisbon.jpg" alt="Lisbon"/>
           </figure>
 
           <figure id={'picture2'}>
