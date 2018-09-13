@@ -126,6 +126,13 @@ object.slideItem {
     position: relative;
     height: 225px;
 }
+/* Target Firefox only */
+@-moz-document url-prefix() {
+    object.slideItem {
+        top: -28px;
+        float: right;
+    }
+}
 
 object.slideItem.fakeItem {
     filter: blur(0.3rem);
