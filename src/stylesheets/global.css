@@ -310,7 +310,11 @@ footer > div > nav > ul > li {
     letter-spacing: normal;
     line-height: 175%;
 }
-
+@media screen and (max-width: 768px) {
+    footer > div > nav > ul > li {
+        letter-spacing: -1px;
+    }
+}
 footer > div > nav > ul > li > a {
     color: #39444a;
     text-decoration: none;

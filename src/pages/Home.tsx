@@ -116,7 +116,7 @@ class Home extends React.Component {
 
         <section id="call2action-homePage">
           <div id="call2action_ribbon">
-            <h1>STOP BEING A FOLLOWER</h1>
+            <h3>STOP BEING A FOLLOWER</h3>
             <p>Are you tired of the financial system? Let’s talk for real then.</p>
           </div>
 

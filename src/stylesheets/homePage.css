@@ -104,10 +104,6 @@ main > div#homePage {
     url(/assets/call2action.png) repeat-x center left;
 }
 
-#call2action_ribbon h1 {
-    flex: 5;
-    margin: 0 30px 0 20px;
-}
 #call2action_ribbon p {
     flex: 7;
     margin: 0 20px 0 0;
@@ -134,10 +130,12 @@ main > div#homePage {
     font-family: times;
 }
 
-#call2action_ribbon h1 {
+#call2action_ribbon h3 {
     font-family: 'Pathway Gothic One', Helvetica, Arial, "Trebuchet MS", sans-serif;
     font-size: 33px;
     letter-spacing: 2px;
+    flex: 5;
+    margin: 0 30px 0 20px;
 }
 
 .ribbon_prop_1 {
