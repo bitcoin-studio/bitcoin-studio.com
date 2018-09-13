@@ -8,7 +8,7 @@ import 'normalize.css/normalize.css'
 import './stylesheets/global.css';
 import './stylesheets/homePage.css';
 import './stylesheets/workshopsPage.css';
-import './stylesheets/ressourcesPage.css';
+import './stylesheets/resourcesPage.css';
 import './stylesheets/aboutPage.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));

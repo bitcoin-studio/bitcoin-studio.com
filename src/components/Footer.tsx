@@ -10,7 +10,7 @@ class Footer extends React.Component {
            <ul>
              <li><a href="./">Homepage</a></li>
              <li><a href="./about">About our Studio</a></li>
-             <li><a href="./ressources">Selected Works</a></li>
+             <li><a href="./resources">Selected Works</a></li>
              <li><a href='&#109;ailto&#58;&#114;s&#116;eph%61ne&#37;40%70ro%74%6Fn&#37;6D&#97;il&#46;co&#37;6&#68;'>Contact Information</a></li>
            </ul>
          </nav>

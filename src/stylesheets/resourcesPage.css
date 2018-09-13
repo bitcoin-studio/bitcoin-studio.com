@@ -1,15 +1,15 @@
 /**
-    Ressources page
+    Resources page
  */
 
-main > div#ressourcesPage {
+main > div#resourcesPage {
     grid-template-areas:
             ".            hero-rp        ."
             "hr-slides-rp hr-slides-rp   hr-slides-rp"
             "slides       slides         slides";
 }
 @media screen and (max-width: 780px) {
-    main > div#ressourcesPage {
+    main > div#resourcesPage {
         grid-template-areas:
                 "hero-rp           hero-rp           hero-rp"
                 "hr-slides-rp      hr-slides-rp      hr-slides-rp"
@@ -18,11 +18,11 @@ main > div#ressourcesPage {
 }
 
 
-#hero-ressourcesPage {
+#hero-resourcesPage {
     grid-area: hero-rp;
 }
 
-#slides-ressourcesPage {
+#slides-resourcesPage {
     grid-area: slides;
     display: flex;
     flex-flow: row wrap;
@@ -54,9 +54,7 @@ main > div#ressourcesPage {
     border-radius: 0.1px;
     cursor: pointer;
     margin-top: 5px;
-    border: 1px groove;
     background-color: rgba(0, 0, 0, 0);
-
     color: rgba(255,255,255,1);
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -139,7 +137,7 @@ object.slideItem.fakeItem {
     max-width: 300px;
 }
 
-#slides-ressourcesPage h2 {
+#slides-resourcesPage h2 {
     width: 100%;
     margin-bottom: 1.5em;
 }
