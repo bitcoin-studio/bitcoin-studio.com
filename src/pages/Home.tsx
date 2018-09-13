@@ -51,7 +51,7 @@ class Home extends React.Component {
             <img src="assets/icons/software_512.png" alt="software development"/>
             <p>
               <span><em>Software development</em></span>
-              Bitcoin Studio reconcile Bitcoin with web development (mainly Typescript, React, Redux), offering custom
+              Bitcoin Studio reconciles Bitcoin with web development (mainly Typescript, React, Redux), offering custom
               software development on layer 1 and 2.
               System architecture, complex transaction, scripts, …
             </p>
@@ -63,7 +63,7 @@ class Home extends React.Component {
             <img src="assets/icons/education_512.png" alt="workshops"/>
             <p>
               <span><em>Workshops</em></span>
-              We are offering three Bitcoin trainings, Practical, Essentials and In-depth, each of them is gradually
+              We are offering three Bitcoin trainings, Practical, Essentials and In-depth, each of them being gradually
               more thorough.
               They are taking place in the beautiful city of Lisbon, given by instructor Stéphane Roche.
             </p>
@@ -83,7 +83,7 @@ class Home extends React.Component {
             <p>
               <span><em>Private consulting</em></span>
               Bitcoin Studio can respond to your specific needs.
-              Key management best practices, endeavors to recover lost coins, recover coins of Bitcoin forks, etc.
+              Key management best practices, endeavors to recover lost coins, recover coins from Bitcoin forks, etc.
             </p>
           </div>
 
@@ -93,7 +93,7 @@ class Home extends React.Component {
               <span><em>Node as a Service</em></span>
               Partnering with the French company <a href="https://www.adapp.tech/" target={'_blank'}>ADAPP</a>, we host
               and manage all kind of nodes (full nodes, LN nodes,
-              BTCpay).
+              BTCPay).
               Our unique deployment stack allows for easy setup, safety and a production-ready infrastructure.
             </p>
           </div>
