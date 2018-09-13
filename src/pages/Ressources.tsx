@@ -12,13 +12,8 @@ class Ressources extends React.Component {
           </p>
         </div>
 
-        <div id="hr-slides-ressourcesPage">
-          <div className="hr">
-            <hr/>
-          </div>
-        </div>
-
         <section id={'slides-ressourcesPage'}>
+          <div className="hr"><hr/></div>
           <h2>BITCOIN TRAININGS SLIDES</h2>
 
           <div className={'slideItemContainer2'}>
@@ -100,6 +95,18 @@ class Ressources extends React.Component {
             <button>
               <a>DOWNLOAD</a>
             </button>
+          </div>
+
+          <div className={'slideItemContainer2 extraItem'}>
+          </div>
+
+          <div className={'slideItemContainer2 extraItem'}>
+          </div>
+
+          <div className={'slideItemContainer2 extraItem'}>
+          </div>
+
+          <div className={'slideItemContainer2 extraItem'}>
           </div>
         </section>
       </div>

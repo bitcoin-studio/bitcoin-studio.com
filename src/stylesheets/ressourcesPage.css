@@ -24,10 +24,8 @@ main > div#ressourcesPage {
 
 #slides-ressourcesPage {
     grid-area: slides;
-
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-between;
 }
 
@@ -38,9 +36,18 @@ main > div#ressourcesPage {
 
 .slideItemContainer2 {
     height: 169px;
+    min-width: 100px;
     margin-bottom: 50px;
-    width: calc(1 / 4 * 100% - (1 - 1 / 4) * 20px);
+    flex: 0 0 20em;
 }
+/* Trick for positioning last element correctly */
+.extraItem {
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+
 .slideItemContainer2 button {
     outline: none;
     width: 100%;
@@ -122,16 +129,10 @@ object.slideItem {
 
 object.slideItem.fakeItem {
     filter: blur(0.3rem);
+    max-width: 300px;
 }
 
 #slides-ressourcesPage h2 {
     width: 100%;
     margin-bottom: 1.5em;
-}
-
-#hr-slides-ressourcesPage {
-    grid-area: hr-slides-rp;
-    position: relative;
-    top: 27px;
-    margin-top: 30px;
 }
