@@ -51,6 +51,11 @@ main > div#workshopPage {
     grid-column-gap: 5em;
 }
 
+#offers-workshopPage > section {
+    display: grid;
+    grid-template-rows: 0px 180px 100px auto 400px 600px;
+}
+
 #offers-workshopPage .goals-workshopPage {
     min-height: 520px;
 }
