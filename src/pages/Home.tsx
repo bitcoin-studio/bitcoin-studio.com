@@ -28,7 +28,9 @@ class Home extends React.Component {
         </section>
 
         <section id={'services-homePage'}>
-          <div className="hr"><hr/></div>
+          <div className="hr">
+            <hr/>
+          </div>
           <h2>THE BEST BITCOIN STUDIO</h2>
           <p>
             Fascinated by the idea and realisation of a digital, decentralized, open platform, open source,
@@ -103,14 +105,16 @@ class Home extends React.Component {
           </div>
           <h2>A NETWORK OF TALENTED PEOPLE</h2>
           <p>
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusamus commodi, deleniti dicta eos error eum fugit, officiis quaerat quas quibusdam provident?</span>
-            <span>Alias culpa magni obcaecati tempore. Alias aspernatur incidunt nam quas reprehenderit ut voluptatum. Ab adipisci aut  magni modi molestias nam perferendis quibusdam tenetur, voluptatibus.</span>
-            <span>Adipisci aliquam, animi beatae cum delectus deleniti dignissimos exercitationem fugit ipsam iure laborum  officia sint velit veniam. Cumque debitis eius est ipsam itaque iusto molestiae mollitia rem!</span>
+            Finding the right people for the right job can be hard, especially where we have a shortage of manpower.
+            But still, hiring the right people is crucial for the success of your business.
+            After many years involved in the crypto space, Stéphane should know enough people to be able to constitute
+            the perfect team for your project. People are living in France, Portugal and all over the world.
           </p>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquam amet aperiam at cumque esse ipsam
-            itaque laboriosam laudantium molestias reiciendis rem sequi, similique sint, sit suscipit totam ullam,
-            vitae?</p>
+          <p>
+            Surely there are many awesome people with the desire to work in this delightful and refreshing field of
+            Bitcoin and digital currencies. Don't hesitate to contact us if you are interested to join our network and
+            motivated to lend your expertise, talents and creativity.
+          </p>
         </section>
 
 
