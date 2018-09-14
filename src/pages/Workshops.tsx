@@ -1,4 +1,5 @@
 import * as React from 'react'
+// @ts-ignore
 import bitcoin_essentials from '../img/bitcoin_essentials.png'
 
 class Workshops extends React.Component {
@@ -130,7 +131,7 @@ class Workshops extends React.Component {
             <div className={'public-workshopPage'}>
               <h3>Public and Prerequisite</h3>
               <p>While technical, it should stay accessible as long as you have a basic
-                knowledge of computer science. It is intended to all individuals wishing to deepen their knowledge of
+                knowledge of computer science. It is intended for all individuals wishing to deepen their knowledge of
                 Bitcoin and
                 blockchain technology, either you are a developer, product manager, attorney, coffee maker, builder,
                 entrepreneur,
@@ -198,11 +199,10 @@ class Workshops extends React.Component {
             <div className={'public-workshopPage'}>
               <h3>Public and Prerequisite</h3>
               <p>
-                This course is intended to individuals that needs a deep-dive into Bitcoin protocols. Ideal if you
+                This course has been designed for individuals that needs a deep-dive into Bitcoin protocols. Ideal if you
                 already have a project, a business idea, or simply the strong desire to learn Bitcoin seriously.
-                Bitcoin In-depth is primarily intended to developers that already master the basics of blockchain,
-                otherwise it is recommended to take the
-                Bitcoin Essentials course before.
+                Bitcoin In-depth is primarily intended for developers that already master the basics of blockchain,
+                otherwise it is recommended to take the Bitcoin Essentials course before.
               </p>
             </div>
 
