@@ -120,7 +120,15 @@ h1 {
     margin: 20px 0 0 0;
     white-space: nowrap;
 }
-@media screen and (max-width: 550px) {
+@media screen
+and (max-width: 350px) {
+    h1 {
+        font-size: 3.15em;
+    }
+}
+@media screen
+and (min-width: 350px)
+and (max-width: 550px) {
     h1 {
         font-size: 3.5em;
     }
