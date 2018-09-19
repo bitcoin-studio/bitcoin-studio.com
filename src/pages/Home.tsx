@@ -8,8 +8,8 @@ class Home extends React.Component {
         <div id={'hero-homePage'} className={'hero'}>
           <h1>BITCOIN STUDIO</h1>
           <p>
-            Bitcoin company based in the beautiful city of Lisbon. We do software development, workshops and in-house
-            trainings, focused on bitcoin technology and quality web development. Want to discover Bitcoin, or choose to
+            Bitcoin company based in the beautiful city of Lisbon. We offer software development, workshops and in-house
+            training, focusing on bitcoin technology and quality web development. Want to discover Bitcoin, or choose to
             integrate Bitcoin to your sales?
             Need to refresh your website with a new user interface, experimenting with the power of digital money?
             Bitcoin Studio, a network of experts from a variety of backgrounds and driven by the same ideals, is here
@@ -23,7 +23,7 @@ class Home extends React.Component {
           </figure>
 
           <figure id={'picture2'}>
-            <img src="assets/bitcoin_logo.png" alt="Bitcoin logo"/>
+            <img src="assets/btc_logo.png" alt="Bitcoin logo"/>
           </figure>
         </section>
 
@@ -70,9 +70,9 @@ class Home extends React.Component {
           </div>
 
           <div className={'serviceItem'}>
-            <img src="assets/icons/thought_512.png" alt="in-house trainings"/>
+            <img src="assets/icons/thought_512.png" alt="in-house training"/>
             <p>
-              <span><em>In-house trainings</em></span>
+              <span><em>In-house training</em></span>
               Bitcoin trainings can be given directly at your office, tailored to your specific needs.
               Prepare yourself for the financial revolution!
             </p>

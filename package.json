@@ -1,6 +1,6 @@
 {
-  "name": "d10e_website",
-  "version": "0.1.0",
+  "name": "bitcoin-studio",
+  "version": "1.0.0",
   "private": true,
   "devDependencies": {
     "fuse-box-react-scripts": "^3.0.80",
