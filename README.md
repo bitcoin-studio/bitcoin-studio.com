@@ -1,4 +1,10 @@
+# Welcome to the Bitcoin Studio website repository
+ 
 This project was bootstrapped with [Fuse-Box Create React App] for TypeScript(https://github.com/offgridnetworks/fuse-box-create-react-app).
+No CSS framework has been used, only pure CSS including Flexbox and CSS Grid. 
+
+
+
 
 Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/offgridnetworks/fuse-box-create-react-app/blob/master/packages/fuse-box-react-scripts/template/README.md).
