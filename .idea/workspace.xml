@@ -2,128 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec2d7219-c83d-4ad7-a949-386313fa425c" name="Default" comment="Fix title size for iphone 5 SE">
-      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react-ui/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react-ui/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/PathwayGothicOne-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/PathwayGothicOne-Regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/background.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/border.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/border.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/call2action.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/call2action.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/call2action_circle.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/call2action_circle.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/call2action_circle_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/call2action_circle_bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/call2action_ribbon.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/call2action_ribbon.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/footer_bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/footer_bg.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/footer_bg_207px.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/footer_bg_207px.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/footer_left.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/footer_left.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/footer_left_207px.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/footer_left_207px.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/footer_li_arrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/footer_li_arrow.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/footer_right.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/footer_right.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/footer_right_207px.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/footer_right_207px.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/icons/consulting_512.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/icons/consulting_512.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/icons/education_512.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/icons/education_512.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/icons/hosting_512.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/icons/hosting_512.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/icons/software_512.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/icons/software_512.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/icons/thought_512.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/icons/thought_512.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/nav_item_active.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/nav_item_active.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/nav_item_hover.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/nav_item_hover.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/workshopSlides/Bitcoin_forks_history_S_Roche.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/workshopSlides/Bitcoin_forks_history_S_Roche.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/workshopSlides/Bitcoin_keys_addresses_wallets_S_Roche.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/workshopSlides/Bitcoin_keys_addresses_wallets_S_Roche.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/workshopSlides/Bitcoin_transaction_S_Roche.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/workshopSlides/Bitcoin_transaction_S_Roche.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/workshopSlides/Mining_consensus_forks_S_Roche.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/workshopSlides/Mining_consensus_forks_S_Roche.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/workshopSlides/Next_challenges_of_Bitcoin_S_Roche.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/workshopSlides/Next_challenges_of_Bitcoin_S_Roche.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/workshopSlides/TheBeginningOfYourBlockchainJourney_S_Roche.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/workshopSlides/TheBeginningOfYourBlockchainJourney_S_Roche.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/workshopSlides/slide_fake.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/workshopSlides/slide_fake.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/fuse.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/config/fuse.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/declarations.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/declarations.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/how_to_deploy_heroku.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/PathwayGothicOne-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/background.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/border.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/btc_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/btc_logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/call2action.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/call2action_circle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/call2action_circle_bg.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/call2action_ribbon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/favicons/android-icon-144x144.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/android-icon-144x144.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/favicons/android-icon-192x192.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/android-icon-192x192.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/favicons/android-icon-36x36.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/android-icon-36x36.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/favicons/android-icon-48x48.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/android-icon-48x48.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/favicons/android-icon-72x72.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/android-icon-72x72.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/favicons/android-icon-96x96.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/android-icon-96x96.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/favicons/apple-icon-114x114.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/apple-icon-114x114.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/favicons/apple-icon-120x120.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/apple-icon-120x120.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/favicons/apple-icon-144x144.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/apple-icon-144x144.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/favicons/apple-icon-152x152.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/apple-icon-152x152.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/favicons/apple-icon-180x180.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/apple-icon-180x180.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/favicons/apple-icon-57x57.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/apple-icon-57x57.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/favicons/apple-icon-60x60.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/apple-icon-60x60.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/favicons/apple-icon-72x72.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/apple-icon-72x72.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/favicons/apple-icon-76x76.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/apple-icon-76x76.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/favicons/apple-icon-precomposed.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/apple-icon-precomposed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/favicons/apple-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/apple-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/favicons/favicon-16x16.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/favicon-16x16.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/favicons/favicon-32x32.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/favicon-32x32.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/favicons/favicon-96x96.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/favicon-96x96.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/favicons/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/favicons/ms-icon-144x144.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/ms-icon-144x144.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/favicons/ms-icon-150x150.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/ms-icon-150x150.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/favicons/ms-icon-310x310.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/ms-icon-310x310.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/favicons/ms-icon-70x70.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/ms-icon-70x70.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/footer_bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/footer_bg_207px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/footer_left.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/footer_left_207px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/footer_li_arrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/footer_right.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/footer_right_207px.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/icons/consulting_512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/icons/education_512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/icons/hosting_512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/icons/software_512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/icons/thought_512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/lisbon.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/lisbon.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/nav_item_active.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/nav_item_hover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/server.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/workshopSlides/Bitcoin_forks_history_S_Roche.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/workshopSlides/Bitcoin_keys_addresses_wallets_S_Roche.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/workshopSlides/Bitcoin_transaction_S_Roche.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/workshopSlides/Mining_consensus_forks_S_Roche.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/workshopSlides/Next_challenges_of_Bitcoin_S_Roche.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/workshopSlides/TheBeginningOfYourBlockchainJourney_S_Roche.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/workshopSlides/slide_fake.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/App.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/components/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/components/Main.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/custom.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/custom.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/bitcoin_essentials.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/img/bitcoin_essentials.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/pages/About.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/pages/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Resources.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/pages/Resources.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Workshops.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/pages/Workshops.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.ts" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/serviceWorker.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/aboutPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/stylesheets/aboutPage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/stylesheets/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/homePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/stylesheets/homePage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/resourcesPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/stylesheets/resourcesPage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/workshopsPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/stylesheets/workshopsPage.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-ui/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/.gitignore" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -220,13 +102,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="Procfile" value="3" />
+          <entry key="Procfile" value="4" />
           <entry key="css" value="2" />
-          <entry key="env" value="1" />
-          <entry key="gitignore" value="2" />
+          <entry key="env" value="2" />
+          <entry key="gitignore" value="3" />
           <entry key="html" value="4" />
           <entry key="js" value="4" />
-          <entry key="json" value="16" />
+          <entry key="json" value="17" />
           <entry key="md" value="5" />
           <entry key="tsx" value="1" />
           <entry key="txt" value="5" />
@@ -235,12 +117,12 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="2" />
-          <entry key="Git file" value="2" />
+          <entry key="Git file" value="3" />
           <entry key="HTML" value="4" />
-          <entry key="JSON" value="16" />
+          <entry key="JSON" value="17" />
           <entry key="JavaScript" value="4" />
           <entry key="Markdown" value="5" />
-          <entry key="PLAIN_TEXT" value="9" />
+          <entry key="PLAIN_TEXT" value="11" />
           <entry key="TypeScript JSX" value="1" />
         </counts>
       </usages-collector>
@@ -251,7 +133,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Procfile" value="19" />
+          <entry key="Procfile" value="25" />
           <entry key="css" value="11" />
           <entry key="gitignore" value="1" />
           <entry key="html" value="81" />
@@ -270,7 +152,7 @@
           <entry key="JSON" value="163" />
           <entry key="JavaScript" value="73" />
           <entry key="Markdown" value="309" />
-          <entry key="PLAIN_TEXT" value="247" />
+          <entry key="PLAIN_TEXT" value="253" />
           <entry key="TypeScript JSX" value="11" />
         </counts>
       </usages-collector>
@@ -325,11 +207,43 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/react-ui/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
+            <state relative-caret-position="585">
               <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Procfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -434,7 +348,6 @@
         <option value="$PROJECT_DIR$/public/manifest.json" />
         <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/stylesheets/global.css" />
-        <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/react-ui/README.md" />
         <option value="$PROJECT_DIR$/how_to_deploy_heroku.txt" />
         <option value="$PROJECT_DIR$/react-ui/.gitignore" />
@@ -444,6 +357,7 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/server/index.js" />
         <option value="$PROJECT_DIR$/react-ui/package.json" />
+        <option value="$PROJECT_DIR$/Procfile" />
       </list>
     </option>
   </component>
@@ -523,16 +437,6 @@
             <path>
               <item name="bitcoin-studio" type="b2602c69:ProjectViewProjectNode" />
               <item name="bitcoin-studio" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bitcoin-studio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bitcoin-studio" type="462c0819:PsiDirectoryNode" />
-              <item name="react-ui" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bitcoin-studio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bitcoin-studio" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -691,7 +595,7 @@
       <workItem from="1537288605529" duration="684000" />
       <workItem from="1537358375812" duration="2286000" />
       <workItem from="1537361928265" duration="2112000" />
-      <workItem from="1538476602645" duration="4731000" />
+      <workItem from="1538476602645" duration="5265000" />
     </task>
     <task id="LOCAL-00032" summary="Fix menu when direct url access">
       <created>1536247847025</created>
@@ -1040,7 +944,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169014000" />
+    <option name="totallyTimeSpent" value="169548000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1061,7 +965,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3299363" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" sideWeight="0.49964765" visible="true" weight="0.27515924" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" sideWeight="0.49964765" visible="true" weight="0.45477706" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -1330,20 +1234,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/react-ui/.env">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/static.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1357,24 +1251,10 @@
     <entry file="file://$PROJECT_DIR$/react-ui/package-lock.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/how_to_deploy_heroku.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="3" column="131" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="131" />
         </state>
       </provider>
     </entry>
@@ -1417,8 +1297,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/react-ui/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
+        <state relative-caret-position="585">
           <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
