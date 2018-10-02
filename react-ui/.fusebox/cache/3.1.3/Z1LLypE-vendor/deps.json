@@ -1,0 +1,175 @@
+{
+  "tree": {
+    "react@16.5.2": {
+      "deps": {
+        "object-assign@4.1.1": {
+          "deps": {},
+          "name": "object-assign",
+          "version": "4.1.1"
+        },
+        "prop-types@15.6.2": {
+          "deps": {
+            "process@0.0.0": {
+              "deps": {},
+              "name": "process",
+              "version": "0.0.0"
+            }
+          },
+          "name": "prop-types",
+          "version": "15.6.2"
+        }
+      },
+      "name": "react",
+      "version": "16.5.2"
+    },
+    "react-dom@16.5.2": {
+      "deps": {
+        "schedule@0.5.0": {
+          "deps": {},
+          "name": "schedule",
+          "version": "0.5.0"
+        }
+      },
+      "name": "react-dom",
+      "version": "16.5.2"
+    },
+    "fuse-react@1.0.21": {
+      "deps": {
+        "deep-equal@1.0.1": {
+          "deps": {},
+          "name": "deep-equal",
+          "version": "1.0.1"
+        },
+        "tslib@1.9.3": {
+          "deps": {},
+          "name": "tslib",
+          "version": "1.9.3"
+        },
+        "path-to-regexp@2.4.0": {
+          "deps": {},
+          "name": "path-to-regexp",
+          "version": "2.4.0"
+        }
+      },
+      "name": "fuse-react",
+      "version": "1.0.21"
+    },
+    "normalize.css@8.0.0": {
+      "deps": {
+        "fuse-box-css@0.0.1": {
+          "deps": {},
+          "name": "fuse-box-css",
+          "version": "0.0.1"
+        }
+      },
+      "name": "normalize.css",
+      "version": "8.0.0"
+    }
+  },
+  "flat": {
+    "react@16.5.2": {
+      "name": "react",
+      "version": "16.5.2",
+      "files": [
+        "index.js",
+        "cjs/react.production.min.js",
+        "cjs/react.development.js"
+      ]
+    },
+    "object-assign@4.1.1": {
+      "name": "object-assign",
+      "version": "4.1.1",
+      "files": [
+        "index.js"
+      ]
+    },
+    "prop-types@15.6.2": {
+      "name": "prop-types",
+      "version": "15.6.2",
+      "files": [
+        "checkPropTypes.js",
+        "lib/ReactPropTypesSecret.js"
+      ]
+    },
+    "process@0.0.0": {
+      "name": "process",
+      "version": "0.0.0",
+      "files": [
+        "index.js"
+      ]
+    },
+    "react-dom@16.5.2": {
+      "name": "react-dom",
+      "version": "16.5.2",
+      "files": [
+        "index.js",
+        "cjs/react-dom.production.min.js",
+        "cjs/react-dom.development.js"
+      ]
+    },
+    "schedule@0.5.0": {
+      "name": "schedule",
+      "version": "0.5.0",
+      "files": [
+        "index.js",
+        "cjs/schedule.production.min.js",
+        "cjs/schedule.development.js",
+        "tracing.js",
+        "cjs/schedule-tracing.production.min.js",
+        "cjs/schedule-tracing.development.js"
+      ]
+    },
+    "fuse-react@1.0.21": {
+      "name": "fuse-react",
+      "version": "1.0.21",
+      "files": [
+        "index.js",
+        "Router/Route.js",
+        "Fusion.js",
+        "Store.js",
+        "Router/Init.js",
+        "Query.js",
+        "Router/Link.js",
+        "Utils.js",
+        "Router/Switch.js"
+      ]
+    },
+    "deep-equal@1.0.1": {
+      "name": "deep-equal",
+      "version": "1.0.1",
+      "files": [
+        "index.js",
+        "lib/keys.js",
+        "lib/is_arguments.js"
+      ]
+    },
+    "tslib@1.9.3": {
+      "name": "tslib",
+      "version": "1.9.3",
+      "files": [
+        "tslib.js"
+      ]
+    },
+    "path-to-regexp@2.4.0": {
+      "name": "path-to-regexp@2.4.0",
+      "version": "2.4.0",
+      "files": [
+        "index.js"
+      ]
+    },
+    "normalize.css@8.0.0": {
+      "name": "normalize.css",
+      "version": "8.0.0",
+      "files": [
+        "normalize.css"
+      ]
+    },
+    "fuse-box-css@0.0.1": {
+      "name": "fuse-box-css",
+      "version": "0.0.1",
+      "files": [
+        "index.js"
+      ]
+    }
+  }
+}

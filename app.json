@@ -1,0 +1,21 @@
+{
+  "name": "bitcoin-studio",
+  "description": "Software development, workshops and in-house training, focusing on bitcoin technology and quality web development",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}

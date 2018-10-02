@@ -3,7 +3,11 @@
 This project was bootstrapped with [Fuse-Box Create React App] for TypeScript(https://github.com/offgridnetworks/fuse-box-create-react-app).
 No CSS framework has been used, only pure CSS including Flexbox and CSS Grid. 
 
-
+Code architecture has been modified and buildpack cleared in order to work with a Node server on Heroku. 
+This was necessary to redirect naked domain to www in https mode.
+See:
+- http://ericsowell.com/blog/2017/5/16/create-react-app-and-express
+- https://github.com/mars/heroku-cra-node#switching-from-create-react-app-buildpack
 
 
 Below you will find some information on how to perform common tasks.<br>
@@ -2053,11 +2057,11 @@ option in the `SWPrecacheWebpackPlugin` section of
 ### Progressive Web App Metadata
 
 The default configuration includes a web app manifest located at
-[`public/manifest.json`](public/manifest.json), that you can customize with
+[`public/manifest.json`](react-ui/public/manifest.json), that you can customize with
 details specific to your web application.
 
 When a user adds a web app to their homescreen using Chrome or Firefox on
-Android, the metadata in [`manifest.json`](public/manifest.json) determines what
+Android, the metadata in [`manifest.json`](react-ui/public/manifest.json) determines what
 icons, names, and branding colors to use when the web app is displayed.
 [The Web App Manifest guide](https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/)
 provides more context about what each field means, and how your customizations
@@ -2176,7 +2180,7 @@ If you’re using [Apache Tomcat](http://tomcat.apache.org/), you need to follow
 
 Now requests to `/todos/42` will be handled correctly both in development and in production.
 
-When users install your app to the homescreen of their device the default configuration will make a shortcut to `/`. This may not work if you don't use a client-side router and expect the app to be served from `/index.html`. In this case, the web app manifest at [`public/manifest.json`](public/manifest.json) and change `start_url` to `./index.html`.
+When users install your app to the homescreen of their device the default configuration will make a shortcut to `/`. This may not work if you don't use a client-side router and expect the app to be served from `/index.html`. In this case, the web app manifest at [`public/manifest.json`](react-ui/public/manifest.json) and change `start_url` to `./index.html`.
 
 ### Service Worker Considerations
 

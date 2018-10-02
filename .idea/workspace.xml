@@ -1,0 +1,1441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ec2d7219-c83d-4ad7-a949-386313fa425c" name="Default" comment="Fix title size for iphone 5 SE">
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-ui/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/PathwayGothicOne-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/PathwayGothicOne-Regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/background.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/background.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/border.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/border.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/call2action.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/call2action.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/call2action_circle.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/call2action_circle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/call2action_circle_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/call2action_circle_bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/call2action_ribbon.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/call2action_ribbon.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/footer_bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/footer_bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/footer_bg_207px.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/footer_bg_207px.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/footer_left.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/footer_left.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/footer_left_207px.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/footer_left_207px.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/footer_li_arrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/footer_li_arrow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/footer_right.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/footer_right.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/footer_right_207px.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/footer_right_207px.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/icons/consulting_512.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/icons/consulting_512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/icons/education_512.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/icons/education_512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/icons/hosting_512.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/icons/hosting_512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/icons/software_512.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/icons/software_512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/icons/thought_512.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/icons/thought_512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/nav_item_active.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/nav_item_active.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/assets/nav_item_hover.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/nav_item_hover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/workshopSlides/Bitcoin_forks_history_S_Roche.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/workshopSlides/Bitcoin_forks_history_S_Roche.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/workshopSlides/Bitcoin_keys_addresses_wallets_S_Roche.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/workshopSlides/Bitcoin_keys_addresses_wallets_S_Roche.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/workshopSlides/Bitcoin_transaction_S_Roche.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/workshopSlides/Bitcoin_transaction_S_Roche.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/workshopSlides/Mining_consensus_forks_S_Roche.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/workshopSlides/Mining_consensus_forks_S_Roche.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/workshopSlides/Next_challenges_of_Bitcoin_S_Roche.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/workshopSlides/Next_challenges_of_Bitcoin_S_Roche.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/workshopSlides/TheBeginningOfYourBlockchainJourney_S_Roche.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/workshopSlides/TheBeginningOfYourBlockchainJourney_S_Roche.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/workshopSlides/slide_fake.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/workshopSlides/slide_fake.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/fuse.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/config/fuse.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/declarations.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/declarations.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/how_to_deploy_heroku.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/PathwayGothicOne-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/border.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/btc_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/btc_logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/call2action.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/call2action_circle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/call2action_circle_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/call2action_ribbon.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/favicons/android-icon-144x144.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/android-icon-144x144.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/favicons/android-icon-192x192.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/android-icon-192x192.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/favicons/android-icon-36x36.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/android-icon-36x36.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/favicons/android-icon-48x48.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/android-icon-48x48.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/favicons/android-icon-72x72.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/android-icon-72x72.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/favicons/android-icon-96x96.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/android-icon-96x96.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/favicons/apple-icon-114x114.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/apple-icon-114x114.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/favicons/apple-icon-120x120.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/apple-icon-120x120.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/favicons/apple-icon-144x144.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/apple-icon-144x144.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/favicons/apple-icon-152x152.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/apple-icon-152x152.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/favicons/apple-icon-180x180.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/apple-icon-180x180.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/favicons/apple-icon-57x57.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/apple-icon-57x57.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/favicons/apple-icon-60x60.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/apple-icon-60x60.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/favicons/apple-icon-72x72.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/apple-icon-72x72.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/favicons/apple-icon-76x76.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/apple-icon-76x76.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/favicons/apple-icon-precomposed.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/apple-icon-precomposed.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/favicons/apple-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/apple-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/favicons/favicon-16x16.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/favicon-16x16.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/favicons/favicon-32x32.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/favicon-32x32.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/favicons/favicon-96x96.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/favicon-96x96.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/favicons/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/favicons/ms-icon-144x144.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/ms-icon-144x144.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/favicons/ms-icon-150x150.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/ms-icon-150x150.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/favicons/ms-icon-310x310.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/ms-icon-310x310.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/favicons/ms-icon-70x70.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/favicons/ms-icon-70x70.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/footer_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/footer_bg_207px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/footer_left.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/footer_left_207px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/footer_li_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/footer_right.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/footer_right_207px.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/icons/consulting_512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/icons/education_512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/icons/hosting_512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/icons/software_512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/icons/thought_512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/lisbon.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/public/assets/lisbon.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/nav_item_active.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/nav_item_hover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/workshopSlides/Bitcoin_forks_history_S_Roche.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/workshopSlides/Bitcoin_keys_addresses_wallets_S_Roche.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/workshopSlides/Bitcoin_transaction_S_Roche.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/workshopSlides/Mining_consensus_forks_S_Roche.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/workshopSlides/Next_challenges_of_Bitcoin_S_Roche.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/workshopSlides/TheBeginningOfYourBlockchainJourney_S_Roche.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/workshopSlides/slide_fake.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/App.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/components/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/components/Main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/custom.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/custom.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/bitcoin_essentials.png" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/img/bitcoin_essentials.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/pages/About.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/pages/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Resources.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/pages/Resources.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Workshops.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/pages/Workshops.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serviceWorker.ts" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/serviceWorker.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/aboutPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/stylesheets/aboutPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/stylesheets/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/homePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/stylesheets/homePage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/resourcesPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/stylesheets/resourcesPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheets/workshopsPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/src/stylesheets/workshopsPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/react-ui/tsconfig.json" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="301575664">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="19" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.2" value="4" />
+          <entry key="project.open.time.3" value="4" />
+          <entry key="project.open.time.4" value="4" />
+          <entry key="project.open.time.5" value="4" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.opened" value="19" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="0" value="1" />
+          <entry key="css" value="69" />
+          <entry key="env" value="1" />
+          <entry key="gitignore" value="7" />
+          <entry key="html" value="9" />
+          <entry key="ico" value="1" />
+          <entry key="jpg" value="3" />
+          <entry key="js" value="1" />
+          <entry key="json" value="15" />
+          <entry key="png" value="13" />
+          <entry key="svg" value="2" />
+          <entry key="ts" value="3" />
+          <entry key="tsx" value="87" />
+          <entry key="txt" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="69" />
+          <entry key="Git file" value="5" />
+          <entry key="HTML" value="9" />
+          <entry key="Image" value="17" />
+          <entry key="JSON" value="12" />
+          <entry key="JavaScript" value="1" />
+          <entry key="PLAIN_TEXT" value="8" />
+          <entry key="SVG" value="2" />
+          <entry key="TypeScript" value="3" />
+          <entry key="TypeScript JSX" value="87" />
+          <entry key="tsconfig" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="TypeScriptServerServiceImpl" value="13" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="5341" />
+          <entry key="gitignore" value="34" />
+          <entry key="html" value="37" />
+          <entry key="json" value="25" />
+          <entry key="tsx" value="10308" />
+          <entry key="txt" value="1189" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="5341" />
+          <entry key="Git file" value="34" />
+          <entry key="HTML" value="37" />
+          <entry key="JSON" value="14" />
+          <entry key="PLAIN_TEXT" value="1189" />
+          <entry key="TypeScript JSX" value="10308" />
+          <entry key="tsconfig" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
+    </session>
+    <session id="1517189244">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="Procfile" value="3" />
+          <entry key="css" value="2" />
+          <entry key="env" value="1" />
+          <entry key="gitignore" value="2" />
+          <entry key="html" value="4" />
+          <entry key="js" value="4" />
+          <entry key="json" value="16" />
+          <entry key="md" value="5" />
+          <entry key="tsx" value="1" />
+          <entry key="txt" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="2" />
+          <entry key="Git file" value="2" />
+          <entry key="HTML" value="4" />
+          <entry key="JSON" value="16" />
+          <entry key="JavaScript" value="4" />
+          <entry key="Markdown" value="5" />
+          <entry key="PLAIN_TEXT" value="9" />
+          <entry key="TypeScript JSX" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.js.language.service.starts">
+        <counts>
+          <entry key="TypeScriptServerServiceImpl" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Procfile" value="19" />
+          <entry key="css" value="11" />
+          <entry key="gitignore" value="1" />
+          <entry key="html" value="81" />
+          <entry key="js" value="73" />
+          <entry key="json" value="163" />
+          <entry key="md" value="309" />
+          <entry key="tsx" value="11" />
+          <entry key="txt" value="228" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="11" />
+          <entry key="Git file" value="1" />
+          <entry key="HTML" value="81" />
+          <entry key="JSON" value="163" />
+          <entry key="JavaScript" value="73" />
+          <entry key="Markdown" value="309" />
+          <entry key="PLAIN_TEXT" value="247" />
+          <entry key="TypeScript JSX" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages" />
+    </session>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="d10e_website" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="147">
+              <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="135">
+                <caret line="9" column="83" lean-forward="true" selection-start-line="9" selection-start-column="83" selection-end-line="9" selection-end-column="83" />
+                <folding>
+                  <element signature="e#0#41#0" expanded="true" />
+                  <element signature="e#0#41#0" expanded="true" />
+                  <element signature="e#0#26#0" expanded="true" />
+                  <element signature="e#0#42#0" expanded="true" />
+                  <element signature="e#0#26#0" expanded="true" />
+                  <element signature="e#0#35#0" expanded="true" />
+                  <element signature="e#0#26#0" expanded="true" />
+                  <element signature="e#0#26#0" expanded="true" />
+                  <element signature="e#0#26#0" expanded="true" />
+                  <element signature="e#0#28#0" expanded="true" />
+                  <element signature="e#0#28#0" expanded="true" />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/react-ui/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="492">
+              <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>reques</find>
+      <find>line</find>
+      <find>_xs</find>
+      <find>.gif</find>
+      <find>hr40pc</find>
+      <find>hr75pc</find>
+      <find>inp</find>
+      <find>workshop-preregistration</find>
+      <find>tslib</find>
+      <find>blueprint</find>
+      <find>picture2</find>
+      <find>ada</find>
+      <find>services_footer</find>
+      <find>grid-column: 2 / 3;</find>
+      <find>.fusebox</find>
+      <find>app</find>
+      <find>hero</find>
+      <find>build</find>
+      <find>h1</find>
+      <find>now</find>
+      <find>ressources</find>
+      <find>Ressources</find>
+      <find>RESSOURCES</find>
+      <find>coins of Bitcoin forks</find>
+      <find>res</find>
+      <find>resou</find>
+      <find>intended</find>
+      <find>d10e</find>
+      <find>training</find>
+      <find>in-house</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>FormWorkshop</replace>
+      <replace>call2action</replace>
+      <replace>workshops</replace>
+      <replace>_S_Roche</replace>
+      <replace>resources</replace>
+      <replace>Resources</replace>
+      <replace>RESOURCES</replace>
+      <replace>coins from Bitcoin forks</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/src</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/components/IntentSelect.tsx" />
+        <option value="$PROJECT_DIR$/config/fuse.config.js" />
+        <option value="$PROJECT_DIR$/public/server.js" />
+        <option value="$PROJECT_DIR$/public/package.json" />
+        <option value="$PROJECT_DIR$/declarations.d.ts" />
+        <option value="$PROJECT_DIR$/src/App.test.tsx" />
+        <option value="$PROJECT_DIR$/src/test.css" />
+        <option value="$PROJECT_DIR$/src/components/FormWorkshop.tsx" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/deploy.txt" />
+        <option value="$PROJECT_DIR$/src/homePage.css" />
+        <option value="$PROJECT_DIR$/src/global.css" />
+        <option value="$PROJECT_DIR$/src/servicesPage.css" />
+        <option value="$PROJECT_DIR$/src/stylesheets/servicesPage.css" />
+        <option value="$PROJECT_DIR$/src/stylesheets/workshopPage.css" />
+        <option value="$PROJECT_DIR$/src/pages/WorkshopPreRegistration.tsx" />
+        <option value="$PROJECT_DIR$/src/pages/Services.tsx" />
+        <option value="$PROJECT_DIR$/src/components/Header.tsx" />
+        <option value="$PROJECT_DIR$/tsconfig.json" />
+        <option value="$PROJECT_DIR$/src/index.tsx" />
+        <option value="$PROJECT_DIR$/src/App.tsx" />
+        <option value="$PROJECT_DIR$/src/components/Footer.tsx" />
+        <option value="$PROJECT_DIR$/src/stylesheets/aboutPage.css" />
+        <option value="$PROJECT_DIR$/static.json" />
+        <option value="$PROJECT_DIR$/src/stylesheets/homePage.css" />
+        <option value="$PROJECT_DIR$/src/stylesheets/workshopsPage.css" />
+        <option value="$PROJECT_DIR$/src/stylesheets/ressourcesPage.css" />
+        <option value="$PROJECT_DIR$/src/pages/About.tsx" />
+        <option value="$PROJECT_DIR$/src/pages/Ressources.tsx" />
+        <option value="$PROJECT_DIR$/src/pages/Resources.tsx" />
+        <option value="$PROJECT_DIR$/src/components/Main.tsx" />
+        <option value="$PROJECT_DIR$/src/stylesheets/resourcesPage.css" />
+        <option value="$PROJECT_DIR$/src/pages/Workshops.tsx" />
+        <option value="$PROJECT_DIR$/src/pages/Home.tsx" />
+        <option value="$PROJECT_DIR$/public/manifest.json" />
+        <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/src/stylesheets/global.css" />
+        <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/react-ui/README.md" />
+        <option value="$PROJECT_DIR$/how_to_deploy_heroku.txt" />
+        <option value="$PROJECT_DIR$/react-ui/.gitignore" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/app.json" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/server/index.js" />
+        <option value="$PROJECT_DIR$/react-ui/package.json" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/react-ui/package.json" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+    <handled-path value="$PROJECT_DIR$/react-ui/node_modules" />
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+      <path value="$PROJECT_DIR$/react-ui/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+    <dismissed value="$PROJECT_DIR$/react-ui/package.json" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>JSON</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript validity issuesJavaScript</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>JSON</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="bitcoin-studio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bitcoin-studio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bitcoin-studio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bitcoin-studio" type="462c0819:PsiDirectoryNode" />
+              <item name="react-ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bitcoin-studio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bitcoin-studio" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="use-file-nesting-rules" value="false" />
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/.env" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="javascript.nodejs.core.library.configured.version" value="5.3.0" />
+    <property name="js.buildTools.grunt.grunt-cli.package" value="/usr/local/lib/node_modules/grunt-cli" />
+    <property name="js.buildTools.grunt.node_interpreter" value="/usr/local/bin/node" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="/usr/local/lib/node_modules/gulp" />
+    <property name="js.buildTools.gulp.node_interpreter" value="/usr/local/bin/node" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.prettier" value="true" />
+    <property name="node.js.path.for.package.prettier" value="project" />
+    <property name="node.js.selected.package.prettier" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/react-ui" />
+      <recent name="$PROJECT_DIR$/server/index.js" />
+      <recent name="$PROJECT_DIR$/index.js" />
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.D10e">
+    <configuration default="true" type="NodeJSRemoteDebug" factoryName="Node.js Remote Debug">
+      <node-js-remote-debug />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptNodeJsTraceType" factoryName="Spy-js for Node.js" config="" node="project" node-params="" app="" app-params="" working-dir="" proxy-port="3547" pass-parent-env="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="D10e" type="JavascriptDebugType" factoryName="JavaScript Debug" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="NodeunitConfigurationType" factoryName="Nodeunit">
+      <setting name="nodePath" value="/usr/local/bin/node" />
+      <envs />
+      <setting name="nodeunitModuleDir" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="testType" value="JS_FILE" />
+      <setting name="jsFile" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.grunt" factoryName="Grunt.js">
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>/usr/local/bin/node</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" factoryName="npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>/usr/local/bin/node</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.D10e" />
+      <item itemvalue="npm.start" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ec2d7219-c83d-4ad7-a949-386313fa425c" name="Default" comment="" />
+      <created>1531754857053</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1531754857053</updated>
+      <workItem from="1531754859883" duration="3682000" />
+      <workItem from="1531814170299" duration="14161000" />
+      <workItem from="1531848331000" duration="3671000" />
+      <workItem from="1531906989074" duration="10312000" />
+      <workItem from="1531947103652" duration="565000" />
+      <workItem from="1532000746252" duration="4305000" />
+      <workItem from="1532423448897" duration="126000" />
+      <workItem from="1535750109539" duration="121000" />
+      <workItem from="1535750327138" duration="3770000" />
+      <workItem from="1535813103066" duration="9760000" />
+      <workItem from="1536067144862" duration="38479000" />
+      <workItem from="1536242648356" duration="24000" />
+      <workItem from="1536242698991" duration="7070000" />
+      <workItem from="1536328713804" duration="5361000" />
+      <workItem from="1536351160930" duration="695000" />
+      <workItem from="1536410788169" duration="10147000" />
+      <workItem from="1536571607780" duration="21734000" />
+      <workItem from="1536679363927" duration="2420000" />
+      <workItem from="1536684528102" duration="6962000" />
+      <workItem from="1536746297806" duration="6063000" />
+      <workItem from="1536844902347" duration="6814000" />
+      <workItem from="1536878498108" duration="1701000" />
+      <workItem from="1536883818036" duration="441000" />
+      <workItem from="1537265488603" duration="817000" />
+      <workItem from="1537288605529" duration="684000" />
+      <workItem from="1537358375812" duration="2286000" />
+      <workItem from="1537361928265" duration="2112000" />
+      <workItem from="1538476602645" duration="4731000" />
+    </task>
+    <task id="LOCAL-00032" summary="Fix menu when direct url access">
+      <created>1536247847025</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1536247847025</updated>
+    </task>
+    <task id="LOCAL-00033" summary="Add pictures in home page">
+      <created>1536251434916</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1536251434916</updated>
+    </task>
+    <task id="LOCAL-00034" summary="About text, css fixes">
+      <created>1536252409518</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1536252409518</updated>
+    </task>
+    <task id="LOCAL-00035" summary="layout css home">
+      <created>1536333137163</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1536333137164</updated>
+    </task>
+    <task id="LOCAL-00036" summary="layout css workshop page">
+      <created>1536338144613</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1536338144613</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Add text in workshop page + css">
+      <created>1536414437756</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1536414437757</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Add collapsible">
+      <created>1536429866207</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1536429866207</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Improve text workshop page">
+      <created>1536574312716</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1536574312716</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Improve text home page">
+      <created>1536586810033</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1536586810033</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Remove Service page">
+      <created>1536587040832</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1536587040832</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Remove Service page">
+      <created>1536587292942</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1536587292942</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Remove blueprint and unused files + css fixes">
+      <created>1536591684116</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1536591684116</updated>
+    </task>
+    <task id="LOCAL-00044" summary="add btc logo, misc">
+      <created>1536598169357</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1536598169357</updated>
+    </task>
+    <task id="LOCAL-00045" summary="refactor css">
+      <created>1536601513422</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1536601513422</updated>
+    </task>
+    <task id="LOCAL-00046" summary="fixes css responsive images">
+      <created>1536602545667</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1536602545667</updated>
+    </task>
+    <task id="LOCAL-00047" summary="media queries for font in #teaserWorkshop">
+      <created>1536604020663</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1536604020663</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Add illustrations homepage">
+      <created>1536679026371</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1536679026371</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Responsive layout home">
+      <created>1536682856937</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1536682856937</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Fix btc img">
+      <created>1536685092321</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1536685092322</updated>
+    </task>
+    <task id="LOCAL-00051" summary="no images on small screens">
+      <created>1536689128100</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1536689128100</updated>
+    </task>
+    <task id="LOCAL-00052" summary="media queries for responsive menu">
+      <created>1536693349386</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1536693349386</updated>
+    </task>
+    <task id="LOCAL-00053" summary="media queries for content home">
+      <created>1536694621229</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1536694621229</updated>
+    </task>
+    <task id="LOCAL-00054" summary="media queries for footer home">
+      <created>1536696268085</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1536696268085</updated>
+    </task>
+    <task id="LOCAL-00055" summary="responsive fixes misc">
+      <created>1536697093730</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1536697093730</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Gitignore, add /build">
+      <created>1536751127401</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1536751127401</updated>
+    </task>
+    <task id="LOCAL-00057" summary="responsive fixes call2action">
+      <created>1536751182304</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1536751182304</updated>
+    </task>
+    <task id="LOCAL-00058" summary="build">
+      <created>1536751378642</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1536751378642</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Add static.json for Heroku">
+      <created>1536753261433</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1536753261434</updated>
+    </task>
+    <task id="LOCAL-00060" summary="CSS rules for 4k screens">
+      <created>1536755335211</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1536755335211</updated>
+    </task>
+    <task id="LOCAL-00061" summary="gitignore">
+      <created>1536755353950</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1536755353950</updated>
+    </task>
+    <task id="LOCAL-00062" summary="fixing .gitignore">
+      <created>1536758186152</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1536758186152</updated>
+    </task>
+    <task id="LOCAL-00063" summary="responsive font h1">
+      <created>1536758224585</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1536758224585</updated>
+    </task>
+    <task id="LOCAL-00064" summary="fix large screen">
+      <created>1536758775952</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1536758775952</updated>
+    </task>
+    <task id="LOCAL-00065" summary="trying to fix gitignore..">
+      <created>1536758999532</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1536758999533</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Responsive grid slide items">
+      <created>1536855897849</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1536855897849</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Responsive fixes">
+      <created>1536859159305</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1536859159305</updated>
+    </task>
+    <task id="LOCAL-00068" summary="responsive grid workshops">
+      <created>1536863551576</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1536863551576</updated>
+    </task>
+    <task id="LOCAL-00069" summary="better text">
+      <created>1536867344652</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1536867344652</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Need special css for firefox built-in pdf viewer">
+      <created>1536867390480</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1536867390480</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Replace lorem with meaningful text">
+      <created>1536869318771</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1536869318771</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Fix 'resources', single s">
+      <created>1536879556175</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1536879556175</updated>
+    </task>
+    <task id="LOCAL-00073" summary="fix bad english">
+      <created>1536879916830</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1536879916830</updated>
+    </task>
+    <task id="LOCAL-00074" summary="fix bad english">
+      <created>1536884050928</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1536884050929</updated>
+    </task>
+    <task id="LOCAL-00075" summary="prod build">
+      <created>1537289467365</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1537289467366</updated>
+    </task>
+    <task id="LOCAL-00076" summary="favicons, fix txt, img logo">
+      <created>1537360399279</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1537360399279</updated>
+    </task>
+    <task id="LOCAL-00077" summary="update readme">
+      <created>1537361102717</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1537361102717</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Add meta tags for SEO">
+      <created>1537363292393</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1537363292393</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Add meta tags for SEO">
+      <created>1537363307562</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1537363307562</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Fix title size for iphone 5 SE">
+      <created>1537367758398</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1537367758398</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="169014000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7103321" visible="true" weight="0.3104435" />
+      <window_info id="Structure" order="1" sideWeight="0.29020333" side_tool="true" weight="0.24947146" />
+      <window_info id="npm" order="2" sideWeight="0.50063694" side_tool="true" weight="0.24947146" />
+      <window_info id="Favorites" order="3" sideWeight="0.50063694" side_tool="true" weight="0.24947146" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3299363" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" sideWeight="0.49964765" visible="true" weight="0.27515924" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32866243" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5003524" side_tool="true" weight="0.3490446" />
+      <window_info anchor="bottom" id="Messages" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.6" />
+      <window_info anchor="bottom" id="TypeScript" order="11" weight="0.15769231" />
+      <window_info anchor="bottom" id="Docker" order="12" weight="0.32866243" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Cargo" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection>
+                  <UserGroup>
+                    <option name="users">
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </option>
+                  </UserGroup>
+                  <UserGroup>
+                    <option name="users">
+                      <list>
+                        <option value="gandi/master" />
+                      </list>
+                    </option>
+                  </UserGroup>
+                </collection>
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="media queries for footer home" />
+    <MESSAGE value="responsive fixes misc" />
+    <MESSAGE value="Gitignore, add /build" />
+    <MESSAGE value="responsive fixes call2action" />
+    <MESSAGE value="build" />
+    <MESSAGE value="Add static.json for Heroku" />
+    <MESSAGE value="CSS rules for 4k screens" />
+    <MESSAGE value="gitignore" />
+    <MESSAGE value="fixing .gitignore" />
+    <MESSAGE value="responsive font h1" />
+    <MESSAGE value="fix large screen" />
+    <MESSAGE value="trying to fix gitignore.." />
+    <MESSAGE value="Responsive grid slide items" />
+    <MESSAGE value="Responsive fixes" />
+    <MESSAGE value="responsive grid workshops" />
+    <MESSAGE value="better text" />
+    <MESSAGE value="Need special css for firefox built-in pdf viewer" />
+    <MESSAGE value="Replace lorem with meaningful text" />
+    <MESSAGE value="Fix 'resources', single s" />
+    <MESSAGE value="fix bad english" />
+    <MESSAGE value="prod build" />
+    <MESSAGE value="favicons, fix txt, img logo" />
+    <MESSAGE value="update readme" />
+    <MESSAGE value="Add meta tags for SEO" />
+    <MESSAGE value="Fix title size for iphone 5 SE" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix title size for iphone 5 SE" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <default-breakpoints>
+        <breakpoint type="dart-exception">
+          <properties />
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/stylesheets/servicesPage.css" />
+    <entry file="file://$PROJECT_DIR$/src/pages/Services.tsx" />
+    <entry file="file://$PROJECT_DIR$/build/app.js" />
+    <entry file="file://$PROJECT_DIR$/src/test.css" />
+    <entry file="file://$PROJECT_DIR$/declarations.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/FormWorkshop.tsx" />
+    <entry file="file://$PROJECT_DIR$/src/components/IntentSelect.tsx" />
+    <entry file="file://$PROJECT_DIR$/.fusebox/cache/3.1.3/Z1zkDe9-vendor/%40blueprintjs%2Ficons%403.0.0" />
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="38" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/bitcoin_logo512x512.png" />
+    <entry file="file://$PROJECT_DIR$/react-ui/public/assets/footer_right.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/bitcoin_logo.png" />
+    <entry file="file://$PROJECT_DIR$/react-ui/src/index.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/icons/icons8-development-skill.png" />
+    <entry file="file://$PROJECT_DIR$/public/assets/icons/icons8-course-assign-filled-50.png" />
+    <entry file="file://$PROJECT_DIR$/public/assets/icons/icons8-development-skill-50.png" />
+    <entry file="file://$PROJECT_DIR$/public/assets/icons/software_256.png" />
+    <entry file="file://$PROJECT_DIR$/react-ui/src/custom.d.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-ui/src/App.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/bitcoin_logo_264.png" />
+    <entry file="file://$PROJECT_DIR$/public/assets/bitcoin_logo.svg" />
+    <entry file="file://$PROJECT_DIR$/react-ui/src/stylesheets/aboutPage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-ui/src/App.test.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-ui/src/stylesheets/homePage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="132" column="24" selection-start-line="132" selection-start-column="24" selection-end-line="132" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-ui/src/stylesheets/workshopsPage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="55" column="46" selection-start-line="55" selection-start-column="46" selection-end-line="55" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-ui/src/pages/About.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="25" column="58" selection-start-line="25" selection-start-column="58" selection-end-line="25" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-ui/src/components/Main.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="43" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-ui/src/components/Footer.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="90" selection-start-line="23" selection-start-column="90" selection-end-line="23" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/Ressources.tsx" />
+    <entry file="file://$PROJECT_DIR$/react-ui/src/components/Header.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="39" column="121" selection-start-line="39" selection-start-column="121" selection-end-line="39" selection-end-column="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-ui/src/pages/Resources.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="104" selection-start-line="104" selection-end-line="104" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-ui/src/stylesheets/resourcesPage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="53" column="25" selection-start-line="53" selection-start-column="25" selection-end-line="53" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-ui/src/pages/Workshops.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="133" column="61" selection-start-line="133" selection-start-column="53" selection-end-line="133" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/fuse.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1159" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-ui/src/pages/Home.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-ui/public/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-ui/src/stylesheets/global.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="135" column="13" selection-start-line="135" selection-start-column="13" selection-end-line="135" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/index.js/server.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-ui/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-ui/.env">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-ui/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="44" column="62" selection-start-line="44" selection-start-column="62" selection-end-line="44" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-ui/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/how_to_deploy_heroku.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="3" column="131" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="131" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="135">
+            <caret line="9" column="83" lean-forward="true" selection-start-line="9" selection-start-column="83" selection-end-line="9" selection-end-column="83" />
+            <folding>
+              <element signature="e#0#41#0" expanded="true" />
+              <element signature="e#0#41#0" expanded="true" />
+              <element signature="e#0#26#0" expanded="true" />
+              <element signature="e#0#42#0" expanded="true" />
+              <element signature="e#0#26#0" expanded="true" />
+              <element signature="e#0#35#0" expanded="true" />
+              <element signature="e#0#26#0" expanded="true" />
+              <element signature="e#0#26#0" expanded="true" />
+              <element signature="e#0#26#0" expanded="true" />
+              <element signature="e#0#28#0" expanded="true" />
+              <element signature="e#0#28#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/react-ui/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
