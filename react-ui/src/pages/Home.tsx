@@ -90,11 +90,9 @@ class Home extends React.Component {
           <div className={'serviceItem'}>
             <img src="assets/icons/hosting_512.png" alt="node as a service"/>
             <p>
-              <span><em>Node as a Service</em></span>
-              Partnering with the French company <a href="https://www.adapp.tech/" target={'_blank'}>ADAPP</a>, we host
-              and manage all kind of nodes (full nodes, LN nodes,
-              BTCPay).
-              Our unique deployment stack allows for easy setup, safety and a production-ready infrastructure.
+              <span><em>Full node</em></span>
+              We can help you setting up Bitcoin full node, Lightning node and BTCPay server, on your single-board
+              computer or hosted and managed by our partners in a safe and production-ready infrastructure.
             </p>
           </div>
         </section>
