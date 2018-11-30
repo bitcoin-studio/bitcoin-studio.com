@@ -7,11 +7,25 @@ class Resources extends React.Component {
         <div className={'hero'} id={'hero-resourcesPage'}>
           <h1>Resources</h1>
           <p>
-            Have a look at our work. You can view and download some of the Bitcoin presentations made by Stéphane Roche,
-            exploring a variety of aspects like cryptographic keys, HD wallet, consensus, mining, forks, transactions
-            (legacy and segwit format), ...
+            At Bitcoin Studio we are dedicated to move the Bitcoin tech community forward. This is why we put at your
+            disposal various free educational works.
+            The presentations made by Stéphane Roche are exploring numerous aspects of the Bitcoin protocol like
+            cryptographic keys, HD wallet, consensus, mining, forks, transactions (legacy and Segwit format), etc.
           </p>
         </div>
+
+
+        <section id={'resourcesPage-BitcoinJSGuide'}>
+          <div className="hr"><hr/></div>
+          <h2>Programming Bitcoin with BitcoinJS</h2>
+          <p>
+            If you are interested learning Bitcoin programming with Javascript, you should definitely check out the 
+            open-source guide we wrote on BitcoinJS. We present how to do all the various types of transaction, and is
+            sufficiently detailed to be accessible to new developers. <br/>
+            <a href="https://github.com/bitcoin-studio/Programming-Bitcoin-with-BitcoinJS" target={"_blank"}>➱ Programming Bitcoin with BitcoinJS</a>
+          </p>
+        </section>
+
 
         <section id={'slides-resourcesPage'}>
           <div className="hr"><hr/></div>
