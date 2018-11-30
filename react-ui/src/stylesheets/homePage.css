@@ -45,9 +45,6 @@ main > div#homePage {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 2.5em;
 }
-#stuff-homePage {
-    grid-area: stuff-hp;
-}
 #workshops-homePage {
     grid-area: workshops-hp;
 }
