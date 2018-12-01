@@ -6,15 +6,15 @@ const lisbon = import('../assets/img/lisbon.jpg')
 // @ts-ignore
 const btc_logo = import('../assets/img/btc_logo.png')
 // @ts-ignore
-const software_512 = import('../assets/icons/software_512.png')
+const software_512 = import('../assets/img/home_software_512.png')
 // @ts-ignore
-const education_512 = import('../assets/icons/education_512.png')
+const education_512 = import('../assets/img/home_education_512.png')
 // @ts-ignore
-const thought_512 = import('../assets/icons/thought_512.png')
+const thought_512 = import('../assets/img/home_thought_512.png')
 // @ts-ignore
-const consulting_512 = import('../assets/icons/consulting_512.png')
+const consulting_512 = import('../assets/img/home_consulting_512.png')
 // @ts-ignore
-const hosting_512 = import('../assets/icons/hosting_512.png')
+const hosting_512 = import('../assets/img/home_hosting_512.png')
 
 
 interface IState {
