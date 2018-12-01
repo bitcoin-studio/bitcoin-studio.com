@@ -97,8 +97,8 @@ main > div#homePage {
     align-items: baseline;
     padding-top: 80px;
     padding-left: 52px;
-    background: url(/assets/call2action_ribbon.jpg) no-repeat left center,
-    url(/assets/call2action.png) repeat-x center left;
+    background: url(../assets/img/call2action_ribbon.jpg) no-repeat left center,
+    url(../assets/img/call2action.png) repeat-x center left;
 }
 
 #call2action_ribbon p {
@@ -113,7 +113,7 @@ main > div#homePage {
     height: 207px;
     position: relative;
     text-align: center;
-    background: url(/assets/call2action_circle_bg.png) left no-repeat;
+    background: url(../assets/img/call2action_circle_bg.png) left no-repeat;
 }
 
 #call2action_ribbon_prop .inside {
@@ -137,7 +137,7 @@ main > div#homePage {
 
 .ribbon_prop_1 {
     position: absolute;
-    background: url(/assets/call2action_circle.png) left 0px no-repeat;
+    background: url(../assets/img/call2action_circle.png) left 0px no-repeat;
     width: 206px;
     height: 205px;
     z-index: 2;
@@ -158,7 +158,7 @@ main > div#homePage {
 
 .ribbon_prop_2 {
     position: absolute;
-    background: url(/assets/call2action_circle.png) left -205px no-repeat;
+    background: url(../assets/img/call2action_circle.png) left -205px no-repeat;
     width: 206px;
     height: 205px;
 }

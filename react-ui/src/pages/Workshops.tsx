@@ -1,8 +1,26 @@
 import * as React from 'react'
 // @ts-ignore
-import bitcoin_essentials from '../img/bitcoin_essentials.png'
+const bitcoin_essentials = import('../assets/img/bitcoin_essentials.png')
 
-class Workshops extends React.Component {
+interface IState {
+  bitcoin_essentials?: string;
+}
+
+class Workshops extends React.Component<{}, IState> {
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      bitcoin_essentials: ''
+    }
+  }
+
+  async componentDidMount() {
+    this.setState({
+      bitcoin_essentials: await bitcoin_essentials.then()
+    })
+  }
+
   render() {
     return (
       <div id={'workshopPage'}>
@@ -40,7 +58,7 @@ class Workshops extends React.Component {
 
 
         <section id="workshopFlyer-workshopPage">
-          <img src={bitcoin_essentials} alt="bitcoin essential flyer"/>
+          <img src={this.state.bitcoin_essentials} alt="bitcoin essential flyer"/>
 
           <div id={'teaserWorkshop'}>
             <p>

@@ -33,7 +33,7 @@ body {
     padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: #e4e8e9 url(/assets/background.jpg) repeat left top;
+    background: #e4e8e9 url(../assets/img/background.jpg) repeat left top;
     color: #39444a;
     line-height: 180%;
 }
@@ -92,7 +92,7 @@ main > div {
 .hr {
     clear: both;
     height: 6px;
-    background: url(/assets/border.png) top repeat-x;
+    background: url(../assets/img/border.png) top repeat-x;
     width: 100%;
 }
 .hr hr {
@@ -101,7 +101,7 @@ main > div {
 .hr75pc {
     clear: both;
     height: 6px;
-    background: url(/assets/border.png) top repeat-x;
+    background: url(../assets/img/border.png) top repeat-x;
     width: 75%;
 }
 
@@ -245,12 +245,12 @@ and (max-width: 980px) {
 
 
 .nav ul li a:hover {
-    background: url(/assets/nav_item_hover.png) top no-repeat;
+    background: url(../assets/img/nav_item_hover.png) top no-repeat;
     text-decoration: none;
 }
 
 .nav ul li a.active {
-    background: url(/assets/nav_item_active.png) no-repeat 50% 0px;
+    background: url(../assets/img/nav_item_active.png) no-repeat 50% 0px;
     color: #fff;
 }
 
@@ -281,9 +281,9 @@ footer {
     padding-left: 20%;
     line-height: 140%;
 
-    background: url(/assets/footer_right_207px.png) no-repeat scroll right bottom,
-    url(/assets/footer_left_207px.png) no-repeat scroll left bottom,
-    url(/assets/footer_bg_207px.png) repeat scroll right bottom transparent;
+    background: url(../assets/img/footer_right_207px.png) no-repeat scroll right bottom,
+    url(../assets/img/footer_left_207px.png) no-repeat scroll left bottom,
+    url(../assets/img/footer_bg_207px.png) repeat scroll right bottom transparent;
 }
 
 footer > div {
@@ -327,14 +327,14 @@ footer > div > nav > ul > li > a {
     color: #39444a;
     text-decoration: none;
     padding-left: 14px;
-    background: url(/assets/footer_li_arrow.png) no-repeat 0px 1px;
+    background: url(../assets/img/footer_li_arrow.png) no-repeat 0px 1px;
 }
 
 footer > div > nav > ul > li > a:hover {
     color: #fff;
     text-decoration: none;
     padding-left: 14px;
-    background: url(/assets/footer_li_arrow.png) no-repeat 0px -18px;
+    background: url(../assets/img/footer_li_arrow.png) no-repeat 0px -18px;
 }
 @media screen and (max-width: 550px) {
     footer #services_footer {

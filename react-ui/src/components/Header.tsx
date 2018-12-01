@@ -1,8 +1,9 @@
 import * as React from 'react'
 import { Link } from 'fuse-react'
 
-type MyProps = {  };
-type MyState = { activeItem: string };
+type MyProps = {}
+type MyState = { activeItem: string }
+
 class Header extends React.Component<MyProps, MyState> {
 
   constructor(props) {
@@ -15,6 +16,7 @@ class Header extends React.Component<MyProps, MyState> {
   }
 
   componentDidMount() {
+    // @ts-ignore
     let page = window.location.pathname
     if (page === '/') this.setState({activeItem: 'HOME'})
     else if (page === '/workshops') this.setState({activeItem: 'WORKSHOPS'})

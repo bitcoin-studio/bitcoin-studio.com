@@ -1,6 +1,59 @@
 import * as React from 'react'
 
-class Home extends React.Component {
+// Import assets
+// @ts-ignore
+const lisbon = import('../assets/img/lisbon.jpg')
+// @ts-ignore
+const btc_logo = import('../assets/img/btc_logo.png')
+// @ts-ignore
+const software_512 = import('../assets/icons/software_512.png')
+// @ts-ignore
+const education_512 = import('../assets/icons/education_512.png')
+// @ts-ignore
+const thought_512 = import('../assets/icons/thought_512.png')
+// @ts-ignore
+const consulting_512 = import('../assets/icons/consulting_512.png')
+// @ts-ignore
+const hosting_512 = import('../assets/icons/hosting_512.png')
+
+
+interface IState {
+  lisbon?: string,
+  btc_logo?: string,
+  software_512?: string,
+  education_512?: string,
+  thought_512?: string,
+  consulting_512?: string,
+  hosting_512?: string
+}
+
+class Home extends React.Component<{}, IState> {
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      lisbon: '',
+      btc_logo:'',
+      software_512: '',
+      education_512: '',
+      thought_512: '',
+      consulting_512: '',
+      hosting_512: ''
+    }
+  }
+
+  async componentDidMount() {
+    this.setState({
+      lisbon: await lisbon.then(),
+      btc_logo: await btc_logo.then(),
+      software_512: await software_512.then(),
+      education_512: await education_512.then(),
+      thought_512: await thought_512.then(),
+      consulting_512: await consulting_512.then(),
+      hosting_512: await hosting_512.then()
+    })
+  }
+
   render() {
     return (
       <div id={'homePage'}>
@@ -19,11 +72,11 @@ class Home extends React.Component {
 
         <section id={'pictures-homePage'}>
           <figure id={'picture1'}>
-            <img src="assets/lisbon.jpg" alt="Lisbon"/>
+            <img src={this.state.lisbon} alt="Lisbon"/>
           </figure>
 
           <figure id={'picture2'}>
-            <img src="assets/btc_logo.png" alt="Bitcoin logo"/>
+            <img src={this.state.btc_logo} alt="Bitcoin logo"/>
           </figure>
         </section>
 
@@ -48,7 +101,7 @@ class Home extends React.Component {
 
         <section id={'servicesDetails-homePage'}>
           <div className={'serviceItem'}>
-            <img src="assets/icons/software_512.png" alt="software development"/>
+            <img src={this.state.software_512} alt="software development"/>
             <p>
               <span><em>Software development</em></span>
               Bitcoin Studio reconciles Bitcoin with web development (mainly Typescript, React, Redux), offering custom
@@ -59,8 +112,7 @@ class Home extends React.Component {
 
 
           <div className={'serviceItem'}>
-            {/*<img src="assets/icons/icons8-presentation-64.png" alt="workshops"/>*/}
-            <img src="assets/icons/education_512.png" alt="workshops"/>
+            <img src={this.state.education_512} alt="workshops"/>
             <p>
               <span><em>Workshops</em></span>
               We are offering three Bitcoin trainings, Practical, Essentials and In-depth, each of them being gradually
@@ -70,7 +122,7 @@ class Home extends React.Component {
           </div>
 
           <div className={'serviceItem'}>
-            <img src="assets/icons/thought_512.png" alt="in-house training"/>
+            <img src={this.state.thought_512} alt="in-house training"/>
             <p>
               <span><em>In-house training</em></span>
               Bitcoin trainings can be given directly at your office, tailored to your specific needs.
@@ -79,7 +131,7 @@ class Home extends React.Component {
           </div>
 
           <div className={'serviceItem'}>
-            <img src="assets/icons/consulting_512.png" alt="private consulting"/>
+            <img src={this.state.consulting_512} alt="private consulting"/>
             <p>
               <span><em>Private consulting</em></span>
               Bitcoin Studio can respond to your specific needs.
@@ -88,7 +140,7 @@ class Home extends React.Component {
           </div>
 
           <div className={'serviceItem'}>
-            <img src="assets/icons/hosting_512.png" alt="node as a service"/>
+            <img src={this.state.hosting_512} alt="node as a service"/>
             <p>
               <span><em>Full node</em></span>
               We can help you setting up Bitcoin full node, Lightning node and BTCPay server, on your single-board

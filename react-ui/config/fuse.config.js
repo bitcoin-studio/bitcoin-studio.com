@@ -10,6 +10,7 @@ const {
         EnvPlugin,
         SVGPlugin,
         /* LESSPlugin, Add LESS, SASS, etc here if needed */
+        CSSResourcePlugin,
         CSSPlugin,
         ImageBase64Plugin,
         JSONPlugin,
@@ -49,8 +50,11 @@ exports.initBuilder = function ({
         EnvPlugin(env),
         SVGPlugin(),
         /* [LESSPlugin(), CSSPlugin()],  Add LESS, SASS, etc here if needed */
-        CSSPlugin(),
-        ImageBase64Plugin({useDefault: true}),
+        [CSSResourcePlugin({
+          inline: true,
+        }),
+        CSSPlugin()],
+        ImageBase64Plugin(),
         JSONPlugin(),
         !component &&
         !componentdocs &&
