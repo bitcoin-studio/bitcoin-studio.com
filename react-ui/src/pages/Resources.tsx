@@ -17,12 +17,12 @@ class Resources extends React.Component {
 
         <section id={'resourcesPage-BitcoinJSGuide'}>
           <div className="hr"><hr/></div>
-          <h2>Programming Bitcoin with BitcoinJS</h2>
+          <h2>Bitcoin Programming with BitcoinJS</h2>
           <p>
             If you are interested learning Bitcoin programming with Javascript, you should definitely check out the 
             open-source guide we wrote on BitcoinJS. We present how to do all the various types of transaction, and is
             sufficiently detailed to be accessible to new developers. <br/>
-            <a href="https://github.com/bitcoin-studio/Programming-Bitcoin-with-BitcoinJS" target={"_blank"}>➱ Programming Bitcoin with BitcoinJS</a>
+            <a href="https://github.com/bitcoin-studio/Bitcoin-Programming-with-BitcoinJS" target={"_blank"}>➱ Bitcoin Programming with BitcoinJS</a>
           </p>
         </section>
 
