@@ -14,7 +14,6 @@ class Resources extends React.Component {
           </p>
         </div>
 
-
         <section id={'resourcesPage-BitcoinJSGuide'}>
           <div className="hr"><hr/></div>
           <h2>Bitcoin Programming with BitcoinJS</h2>
@@ -25,7 +24,6 @@ class Resources extends React.Component {
             <a href="https://github.com/bitcoin-studio/Bitcoin-Programming-with-BitcoinJS" target={"_blank"}>➱ Bitcoin Programming with BitcoinJS</a>
           </p>
         </section>
-
 
         <section id={'slides-resourcesPage'}>
           <div className="hr"><hr/></div>
@@ -40,7 +38,6 @@ class Resources extends React.Component {
               <a href="workshopSlides/TheBeginningOfYourBlockchainJourney_S_Roche.pdf" download>DOWNLOAD</a>
             </button>
           </div>
-
 
           <div className={'slideItemContainer2'}>
             <div className={'slideItemContainer'}>
@@ -83,7 +80,6 @@ class Resources extends React.Component {
             </button>
           </div>
 
-
           <div className={'slideItemContainer2'}>
             <div className={'slideItemContainer'}>
               <object className={'slideItem'} type="application/pdf"
@@ -94,7 +90,6 @@ class Resources extends React.Component {
             </button>
           </div>
 
-
           <div className={'slideItemContainer2'}>
             <div className={'slideItemContainer'}>
               <object className={'slideItem'} type="application/pdf"
@@ -104,7 +99,6 @@ class Resources extends React.Component {
               <a href="workshopSlides/Next_challenges_of_Bitcoin_S_Roche.pdf" download>DOWNLOAD</a>
             </button>
           </div>
-
 
           <div className={'slideItemContainer2 fakeItemContainer'}>
             <div className={'slideItemContainer'}>
