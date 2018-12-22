@@ -83,10 +83,10 @@ class Resources extends React.Component {
           <div className={'slideItemContainer2'}>
             <div className={'slideItemContainer'}>
               <object className={'slideItem'} type={"application/pdf"}
-                      data="workshopSlides/Next_challenges_of_Bitcoin_S_Roche.pdf"></object>
+                      data="workshopSlides/bitcoin_script_S_Roche.pdf"></object>
             </div>
             <button>
-              <a href="workshopSlides/Next_challenges_of_Bitcoin_S_Roche.pdf" download>DOWNLOAD</a>
+              <a href="workshopSlides/bitcoin_script_S_Roche.pdf" download>DOWNLOAD</a>
             </button>
           </div>
 
