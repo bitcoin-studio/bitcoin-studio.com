@@ -86,7 +86,7 @@ class Resources extends React.Component {
 
           <div className={'slideItemContainer2'}>
             <div className={'slideItemContainer'}>
-              <object className={'slideItem'}
+              <object className={'slideItem'} type="application/pdf"
                       data="workshopSlides/Bitcoin_script_S_Roche.pdf"></object>
             </div>
             <button>
