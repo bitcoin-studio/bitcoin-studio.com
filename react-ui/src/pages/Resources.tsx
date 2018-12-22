@@ -34,6 +34,17 @@ class Resources extends React.Component {
           <div className={'slideItemContainer2'}>
             <div className={'slideItemContainer'}>
               <object className={'slideItem'} type="application/pdf"
+                      data="workshopSlides/TheBeginningOfYourBlockchainJourney_S_Roche.pdf"></object>
+            </div>
+            <button>
+              <a href="workshopSlides/TheBeginningOfYourBlockchainJourney_S_Roche.pdf" download>DOWNLOAD</a>
+            </button>
+          </div>
+
+
+          <div className={'slideItemContainer2'}>
+            <div className={'slideItemContainer'}>
+              <object className={'slideItem'} type="application/pdf"
                       data="workshopSlides/Bitcoin_forks_history_S_Roche.pdf"></object>
             </div>
             <button>
@@ -61,16 +72,6 @@ class Resources extends React.Component {
             </button>
           </div>
 
-          <div className={'slideItemContainer2'}>
-            <div className={'slideItemContainer'}>
-              <object className={'slideItem'} type="application/pdf"
-                      data="workshopSlides/Next_challenges_of_Bitcoin_S_Roche.pdf"></object>
-            </div>
-            <button>
-            <a href="workshopSlides/Next_challenges_of_Bitcoin_S_Roche.pdf" download>DOWNLOAD</a>
-            </button>
-          </div>
-
 
           <div className={'slideItemContainer2'}>
             <div className={'slideItemContainer'}>
@@ -82,25 +83,28 @@ class Resources extends React.Component {
             </button>
           </div>
 
+
           <div className={'slideItemContainer2'}>
             <div className={'slideItemContainer'}>
-              <object className={'slideItem'} type="application/pdf"
-                      data="workshopSlides/TheBeginningOfYourBlockchainJourney_S_Roche.pdf"></object>
+              <object className={'slideItem'}
+                      data="workshopSlides/Bitcoin_script_S_Roche.pdf"></object>
             </div>
             <button>
-              <a href="workshopSlides/TheBeginningOfYourBlockchainJourney_S_Roche.pdf" download>DOWNLOAD</a>
+              <a href="workshopSlides/Bitcoin_script_S_Roche.pdf" download>DOWNLOAD</a>
             </button>
           </div>
 
-          <div className={'slideItemContainer2 fakeItemContainer'}>
+
+          <div className={'slideItemContainer2'}>
             <div className={'slideItemContainer'}>
-              <object className={'slideItem fakeItem'}
-                      data="workshopSlides/slide_fake.png"></object>
+              <object className={'slideItem'} type="application/pdf"
+                      data="workshopSlides/Next_challenges_of_Bitcoin_S_Roche.pdf"></object>
             </div>
             <button>
-              <a>DOWNLOAD</a>
+              <a href="workshopSlides/Next_challenges_of_Bitcoin_S_Roche.pdf" download>DOWNLOAD</a>
             </button>
           </div>
+
 
           <div className={'slideItemContainer2 fakeItemContainer'}>
             <div className={'slideItemContainer'}>
