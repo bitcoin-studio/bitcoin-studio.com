@@ -1,1 +1,52 @@
-Keybase proof
+### Keybase proof
+
+I hereby claim:
+
+  * I am an admin of https://www.bitcoin-studio.com
+  * I am janakasteph (https://keybase.io/janakasteph) on keybase.
+  * I have a public key ASCh5w4yksWUmV120H5lu5I26NLx9zC4Djes317AtA52MQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120a1e70e3292c594995d76d07e65bb9236e8d2f1f730b80e37acdf5ec0b40e76310a",
+      "host": "keybase.io",
+      "kid": "0120a1e70e3292c594995d76d07e65bb9236e8d2f1f730b80e37acdf5ec0b40e76310a",
+      "uid": "0864815fbfd55b2e6c011657aaa1d019",
+      "username": "janakasteph"
+    },
+    "merkle_root": {
+      "ctime": 1548693631,
+      "hash": "48a992d1f6c7812d116f237c539e794906efe0951598917f480ca99dc3cd094a617375ba2769b29ad890004504326b16bce9b2ae6199470ff78e9d12a666274e",
+      "hash_meta": "e53fafc12e5260d8c3c3af009e72907c3fa057f3034d589e4a888b0e53fb7190",
+      "seqno": 4637360
+    },
+    "service": {
+      "entropy": "REGDKS7wuPJcNm6Owp/n5uRy",
+      "hostname": "www.bitcoin-studio.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.13.2"
+  },
+  "ctime": 1548693974,
+  "expire_in": 504576000,
+  "prev": "d3f659365fea8c67317c472533600d0f02463bf5bf7773ad39631f7a4f29ec67",
+  "seqno": 29,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgoecOMpLFlJlddtB+ZbuSNujS8fcwuA43rN9ewLQOdjEKp3BheWxvYWTESpcCHcQg0/ZZNl/qjGcxfEclM2ANDwJGO/W/d3OtOWMfek8p7GfEIGn6/4tAT0jgGff8K61rmSkSdeovjVXCoTpxhXK5X6NwAgHCo3NpZ8RAWOzlAjafi6O61i0GC4XMkDWCh/ipeJvDk9PG9VMYxJUb+1465RNC0uiUkl71JxRnURIUa6eJdEFpMZJ/4VF8CqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIP097uKn3ojSoECTlr5pKes876MCiCL4jn7LDba3xw82o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/janakasteph
