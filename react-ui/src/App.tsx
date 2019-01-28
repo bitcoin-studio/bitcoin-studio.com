@@ -19,7 +19,7 @@ class App extends React.Component {
 
         <div id={'copyrights'}>
           <div className="strike"></div>
-          <p>Bitcoin Studio - 2018</p>
+          <p>Bitcoin Studio - 2019</p>
           <p>Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a> from <a
             href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a
             href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0
