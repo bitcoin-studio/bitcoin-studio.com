@@ -20,10 +20,10 @@ class Footer extends React.Component {
          <h2>CONNECT</h2>
          <nav>
            <ul>
-             <li><a target="_blank" href='https://github.com/Janaka-Steph'>Github</a></li>
-             <li><a target="_blank" href="http://twitter.com/JanakaSteph">Follow Stéphane on Twitter</a></li>
-             <li><a target="_blank" href="https://www.linkedin.com/in/stephane-roche">Follow Stéphane on Linkedin</a></li>
-             <li><a href='&#109;ailto&#58;&#114;s&#116;eph%61ne&#37;40%70ro%74%6Fn&#37;6D&#97;il&#46;co&#37;6&#68;'>Work with Us</a></li>
+             <li><a target="_blank" href='https://github.com/bitcoin-studio'>Github</a></li>
+             <li><a target="_blank" href="http://twitter.com/JanakaSteph">Twitter</a></li>
+             <li><a target="_blank" href="https://www.linkedin.com/in/stephane-roche">Linkedin</a></li>
+             <li><a target="_blank" href='https://janakasteph.keybase.pub/'>Keybase</a></li>
            </ul>
          </nav>
        </div>
