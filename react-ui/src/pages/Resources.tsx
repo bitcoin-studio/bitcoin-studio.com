@@ -28,6 +28,9 @@ class Resources extends React.Component {
         <section id={'slides-resourcesPage'}>
           <div className="hr"><hr/></div>
           <h2>BITCOIN TRAININGS SLIDES</h2>
+          <p className={"slidesDesc"}>
+            You can download all the presentations <a href="workshopSlides/Bitcoin_Training_Roche.zip" download>here</a>.
+          </p>
 
           <div className={'slideItemContainer2'}>
             <div className={'slideItemContainer'}>

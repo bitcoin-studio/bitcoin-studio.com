@@ -33,6 +33,12 @@ main > div#resourcesPage {
     justify-content: space-between;
 }
 
+.slidesDesc {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
 .slideItemContainer {
     overflow: hidden;
     height: 169px;
@@ -141,9 +147,4 @@ object.slideItem {
 object.slideItem.fakeItem {
     filter: blur(0.3rem);
     max-width: 300px;
-}
-
-#slides-resourcesPage h2 {
-    width: 100%;
-    margin-bottom: 1.5em;
 }
