@@ -104,9 +104,9 @@ class Home extends React.Component<{}, IState> {
             <img src={this.state.software_512} alt="software development"/>
             <p>
               <span><em>Software development</em></span>
-              Bitcoin Studio reconciles Bitcoin with web development (mainly Typescript, React, Redux), offering custom
-              software development on layer 1 and 2.
-              System architecture, complex transaction, scripts, …
+              Bitcoin Studio offers custom software development, working with Bitcoin layer 1 and the Lightning Network.
+              We pay particular attention to web development.
+
             </p>
           </div>
 
@@ -115,9 +115,8 @@ class Home extends React.Component<{}, IState> {
             <img src={this.state.education_512} alt="workshops"/>
             <p>
               <span><em>Workshops</em></span>
-              We are offering three Bitcoin trainings, Practical, Essentials and In-depth, each of them being gradually
-              more thorough.
-              They are taking place in the beautiful city of Lisbon, given by instructor Stéphane Roche.
+              We are offering Bitcoin trainings. Mixing theory and practice, they will allow you to quickly master the technology.
+              They are given by instructor Stéphane Roche.
             </p>
           </div>
 
@@ -126,7 +125,6 @@ class Home extends React.Component<{}, IState> {
             <p>
               <span><em>In-house training</em></span>
               Bitcoin trainings can be given directly at your office, tailored to your specific needs.
-              Prepare yourself for the financial revolution!
             </p>
           </div>
 
