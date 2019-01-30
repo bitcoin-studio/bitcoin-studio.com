@@ -42,7 +42,7 @@ main > div#resourcesPage {
     height: 169px;
     min-width: 100px;
     margin-bottom: 50px;
-    flex: 0 0 20em;
+    flex: 0 0 285px;
 }
 /* Trick for positioning last element correctly */
 .extraItem {
@@ -145,5 +145,9 @@ object.slideItem.fakeItem {
 
 #slides-resourcesPage h2 {
     width: 100%;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
+}
+
+.slidesDesc {
+    margin-top: 30px;
 }
