@@ -18,7 +18,7 @@ class Resources extends React.Component {
           <div className="hr"><hr/></div>
           <h2>Bitcoin Programming with BitcoinJS</h2>
           <p>
-            If you are interested learning Bitcoin programming with Javascript, you should definitely check out the 
+            If you are interested learning Bitcoin programming with Javascript, you should definitely check out the
             open-source guide we wrote on BitcoinJS. We present how to do all the various types of transaction, and is
             sufficiently detailed to be accessible to new developers. <br/>
             <a href="https://github.com/bitcoin-studio/Bitcoin-Programming-with-BitcoinJS" target={"_blank"}>➱ Bitcoin Programming with BitcoinJS</a>
@@ -34,9 +34,9 @@ class Resources extends React.Component {
               <object className={'slideItem'} type={'application/pdf'}
                       data="workshopSlides/TheBeginningOfYourBlockchainJourney_S_Roche.pdf"></object>
             </div>
-            <button>
+            <div className="slideButton">
               <a href="workshopSlides/TheBeginningOfYourBlockchainJourney_S_Roche.pdf" download>DOWNLOAD</a>
-            </button>
+            </div>
           </div>
 
           <div className={'slideItemContainer2'}>
@@ -44,9 +44,9 @@ class Resources extends React.Component {
               <object className={'slideItem'} type={'application/pdf'}
                       data="workshopSlides/Bitcoin_forks_history_S_Roche.pdf"></object>
             </div>
-            <button>
+            <div className="slideButton">
               <a href="workshopSlides/Bitcoin_forks_history_S_Roche.pdf" download>DOWNLOAD</a>
-            </button>
+            </div>
           </div>
 
           <div className={'slideItemContainer2'}>
@@ -54,9 +54,9 @@ class Resources extends React.Component {
               <object className={'slideItem'} type={'application/pdf'}
                       data="workshopSlides/Bitcoin_keys_addresses_wallets_S_Roche.pdf"></object>
             </div>
-            <button>
+            <div className="slideButton">
             <a href="workshopSlides/Bitcoin_keys_addresses_wallets_S_Roche.pdf" download>DOWNLOAD</a>
-            </button>
+            </div>
           </div>
 
           <div className={'slideItemContainer2'}>
@@ -64,9 +64,9 @@ class Resources extends React.Component {
               <object className={'slideItem'} type={'application/pdf'}
                       data="workshopSlides/Mining_consensus_forks_S_Roche.pdf"></object>
             </div>
-            <button>
+            <div className="slideButton">
             <a href="workshopSlides/Mining_consensus_forks_S_Roche.pdf" download>DOWNLOAD</a>
-            </button>
+            </div>
           </div>
 
 
@@ -75,9 +75,9 @@ class Resources extends React.Component {
               <object className={'slideItem'} type={'application/pdf'}
                       data="workshopSlides/Bitcoin_transaction_S_Roche.pdf"></object>
             </div>
-            <button>
+            <div className="slideButton">
             <a href="workshopSlides/Bitcoin_transaction_S_Roche.pdf" download>DOWNLOAD</a>
-            </button>
+            </div>
           </div>
 
           <div className={'slideItemContainer2'}>
@@ -85,9 +85,9 @@ class Resources extends React.Component {
               <object className={'slideItem'} type={'application/pdf'}
                       data="workshopSlides/Bitcoin_Script_Stephane_Roche.pdf"></object>
             </div>
-            <button>
+            <div className="slideButton">
               <a href="workshopSlides/Bitcoin_Script_Stephane_Roche.pdf" download>DOWNLOAD</a>
-            </button>
+            </div>
           </div>
 
           <div className={'slideItemContainer2'}>
@@ -95,9 +95,9 @@ class Resources extends React.Component {
               <object className={'slideItem'} type={'application/pdf'}
                       data="workshopSlides/Next_challenges_of_Bitcoin_S_Roche.pdf"></object>
             </div>
-            <button>
+            <div className="slideButton">
               <a href="workshopSlides/Next_challenges_of_Bitcoin_S_Roche.pdf" download>DOWNLOAD</a>
-            </button>
+            </div>
           </div>
 
           <div className={'slideItemContainer2 fakeItemContainer'}>
@@ -105,9 +105,9 @@ class Resources extends React.Component {
               <object className={'slideItem fakeItem'}
                       data="workshopSlides/slide_fake.png"></object>
             </div>
-            <button>
+            <div className="slideButton">
               <a>DOWNLOAD</a>
-            </button>
+            </div>
           </div>
 
           <div className={'slideItemContainer2 extraItem'}>

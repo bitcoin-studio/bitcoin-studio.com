@@ -52,7 +52,9 @@ main > div#resourcesPage {
     padding: 0;
 }
 
-.slideItemContainer2 button {
+.slideItemContainer2 div.slideButton {
+    text-align: center;
+    line-height: 140%;
     outline: none;
     width: 100%;
     border-radius: 0.1px;
@@ -68,7 +70,7 @@ main > div#resourcesPage {
     position: relative;
 }
 
-.slideItemContainer2 button a {
+.slideItemContainer2 div.slideButton a {
     text-decoration: none;
     color: #39444a;
     z-index: 2;
@@ -82,7 +84,7 @@ main > div#resourcesPage {
     letter-spacing: 10px;
 }
 
-.slideItemContainer2 button::before{
+.slideItemContainer2 div.slideButton::before{
     content: '';
     position: absolute;
     top: 0;
@@ -99,7 +101,7 @@ main > div#resourcesPage {
     -webkit-transform: scale(0.5, 1);
     transform: scale(0.5, 1);
 }
-.slideItemContainer2.fakeItemContainer button::before{
+.slideItemContainer2.fakeItemContainer div.slideButton::before{
     content: '';
     position: absolute;
     top: 0;
@@ -116,7 +118,7 @@ main > div#resourcesPage {
     -webkit-transform: scale(0.5, 1);
     transform: scale(0.5, 1);
 }
-.slideItemContainer2 button:hover::before{
+.slideItemContainer2 div.slideButton:hover::before{
     opacity: 1;
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
