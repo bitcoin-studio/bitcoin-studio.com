@@ -63,7 +63,7 @@ class Workshops extends React.Component<{}, IState> {
           <div id={'teaserWorkshop'}>
             <p>
               Buy 2 tickets for 3!<br/>
-              5 participants / session max<br/>
+              15 participants max<br/>
               Satisfied or refunded!
             </p>
           </div>
