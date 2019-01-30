@@ -81,7 +81,7 @@ main > div {
     display: grid;
     grid-template-columns: 2fr 6fr 2fr;
     font-family: "Roboto Slab",serif;
-    font-size: 14px;
+    font-size: 15px;
     letter-spacing: 0.3px;
 }
 
