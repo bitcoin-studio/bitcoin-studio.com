@@ -16,12 +16,24 @@ class Resources extends React.Component {
 
         <section id={'resourcesPage-BitcoinJSGuide'}>
           <div className="hr"><hr/></div>
-          <h2>Bitcoin Programming with BitcoinJS</h2>
+          <h2>Bitcoin Programming with BitcoinJS - Guide</h2>
           <p>
-            If you are interested learning Bitcoin programming with Javascript, you should definitely check out the
-            open-source guide we wrote on BitcoinJS. We present how to do all the various types of transaction, and is
+            If you are interested in learning Bitcoin programming using Javascript, you should definitely check out the
+            open-source guide we wrote on BitcoinJS. We present how to perform all of the various types of transaction. This guide is
             sufficiently detailed to be accessible to new developers. <br/>
             <a href="https://github.com/bitcoin-studio/Bitcoin-Programming-with-BitcoinJS" target={"_blank"}>➱ Bitcoin Programming with BitcoinJS</a>
+          </p>
+
+          <h2 className={'mt35'}>Bitcoin Mnemonic Code Template</h2>
+          <p>
+            A handy template to write down your mnemonic code (24 words back up). The idea behind it is to have a document that gathers
+            all the necessary information you need to be able to recover coins.
+            In particular, it prompts the user to fill in the derivation path, assuming the user knows or will search for it.
+            Having the right mnemonic code, but missing the derivation path does not permit coin recovery might make it very difficult to recover coins.
+            Finally, this template got its inspiration from the reading of Pamela Morgan <a href="https://empoweredlaw.com/books/" target={"_blank"}>Cryptoasset Inheritance Planning</a> book.
+            Bitcoin owners should make sure that the funds are redeemable by their heirs in the eventuality of their death.
+            <br/>
+            <a href="assets/bitcoin_mnemonic_code_template.pdf" download>➱ Bitcoin Mnemonic Code Template</a>
           </p>
         </section>
 

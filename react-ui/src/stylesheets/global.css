@@ -412,3 +412,8 @@ footer > div > nav > ul > li > a:hover {
 .toggle-box:checked + label:before {
     content: "\2212";
 }
+
+/* Margins, padding, ... */
+.mt35 {
+    margin-top: 35px;
+}
