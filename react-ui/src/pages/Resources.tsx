@@ -100,7 +100,17 @@ class Resources extends React.Component {
             </div>
           </div>
 
-          <div className={'slideItemContainer2 fakeItemContainer'}>
+          <div className={'slideItemContainer2'}>
+            <div className={'slideItemContainer'}>
+              <object className={'slideItem'} type={'application/pdf'}
+                      data="workshopSlides/Cryptographic_tools_S_Roche.pdf"></object>
+            </div>
+            <div className="slideButton">
+              <a href="workshopSlides/Cryptographic_tools_S_Roche.pdf" download>DOWNLOAD</a>
+            </div>
+          </div>
+
+          {/*<div className={'slideItemContainer2 fakeItemContainer'}>
             <div className={'slideItemContainer'}>
               <object className={'slideItem fakeItem'}
                       data="workshopSlides/slide_fake.png"></object>
@@ -108,7 +118,7 @@ class Resources extends React.Component {
             <div className="slideButton">
               <a>DOWNLOAD</a>
             </div>
-          </div>
+          </div>*/}
 
           <div className={'slideItemContainer2 extraItem'}>
           </div>
@@ -123,7 +133,7 @@ class Resources extends React.Component {
           </div>
 
           <p className={"slidesDesc"}>
-            You can download all the presentations <a href="workshopSlides/Bitcoin_Training_Roche.zip" download>here</a>.
+            You can download all the presentations <a href="workshopSlides/Bitcoin_Training_S_Roche.zip" download>here</a>.
           </p>
         </section>
       </div>
