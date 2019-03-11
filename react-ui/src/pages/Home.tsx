@@ -64,7 +64,7 @@ class Home extends React.Component<{}, IState> {
             Bitcoin company based in the beautiful city of Lisbon. We offer software development, workshops and in-house
             training, focusing on bitcoin technology and quality web development. Want to discover Bitcoin, or choose to
             integrate Bitcoin to your sales?
-            Need to refresh your website with a new user interface, experimenting with the power of digital money?
+            Need to refresh your website integrating digital money?
             Bitcoin Studio, a network of experts from a variety of backgrounds and driven by the same ideals, is here
             for you.
           </p>
@@ -84,16 +84,16 @@ class Home extends React.Component<{}, IState> {
           <div className="hr">
             <hr/>
           </div>
-          <h2>THE BEST BITCOIN STUDIO</h2>
+          <h2>A COMPANY DEDICATED TO BITCOIN</h2>
           <p>
-            Fascinated by the idea and realisation of a digital, decentralized, open platform, open source,
+            Fascinated by the idea and realisation of a digital, decentralized, permissionless, open source,
             censorship-resistant money, we at Bitcoin Studio have a strong will to take part of this revolution.
-            The company is led, and mainly composed, let's face it, by Stéphane Roche, blockchain developer (mainly
-            Bitcoin and Ethereum). Depending on your needs, a team can be made.
+            The company is led, and mainly composed, let's face it, by Stéphane Roche, Bitcoin engineer in the field since
+            2014. Depending on your needs, a team can be made.
           </p>
 
           <p>
-            If you look around you, there is more and more individuals paying attention to this strange, untangible
+            If you look around you, there is more and more individuals paying attention to this strange, intangible
             money. Many are laughing at it also! This is not a problem. We know why we are here. This technology is
             certainly the biggest revolution of our century and we want to be part of it.
           </p>
