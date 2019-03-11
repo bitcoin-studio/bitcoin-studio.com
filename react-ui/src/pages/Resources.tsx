@@ -7,7 +7,7 @@ class Resources extends React.Component {
         <div className={'hero'} id={'hero-resourcesPage'}>
           <h1>Resources</h1>
           <p>
-            At Bitcoin Studio we are dedicated to move the Bitcoin tech community forward. This is why we put at your
+            At Bitcoin Studio we are firmly resolved to move the Bitcoin tech community forward. This is why we put at your
             disposal various free educational works.
             The presentations made by Stéphane Roche are exploring numerous aspects of the Bitcoin protocol like
             cryptographic keys, HD wallet, consensus, mining, forks, transactions (legacy and Segwit format), etc.
@@ -30,7 +30,8 @@ class Resources extends React.Component {
             18.10 VirtualBox image (and Vagrant box) packaged with softwares for Bitcoin / Lightning Network.
             You can find Bitcoin Core, LND, c-lightning, Electrum, the BitcoinJS guide above, etc. <br/>
             The image is ideal for Bitcoin workshops, hackathons, etc. <br/>
-            <a href="https://github.com/bitcoin-studio/Bitcoin-VirtualMachine" target={"_blank"}>➱ Bitcoin Virtual Machine</a>
+            <a href="https://keybase.pub/janakasteph/ubuntu-18.10-desktop-amd64-disk001.vmdk">➱ Bitcoin Virtual Machine</a> <br/>
+            <a href="https://github.com/bitcoin-studio/Bitcoin-VirtualMachine" target={"_blank"}>➱ Bitcoin Virtual Machine Builder Repository</a>
           </p>
 
           <h2 className={'mt35'}>Bitcoin Mnemonic Code Template</h2>
