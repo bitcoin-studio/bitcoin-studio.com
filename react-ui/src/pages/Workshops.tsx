@@ -32,12 +32,22 @@ class Workshops extends React.Component<{}, IState> {
             Do you wonder how Bitcoin and blockchain works and how to use it?
             Let’s explore the first, most mature, secure and decentralized blockchain that has given birth to a whole
             new industry!
-            Bitcoin Studio offers you three different courses on Bitcoin depending on your needs (Practical, Essentials,
-            In-depth).
           </p>
         </div>
 
-        <section id={'section1-workshopPage'}>
+        <section id="workshopFlyer-workshopPage">
+          <img src={this.state.bitcoin_essentials} alt="bitcoin essential flyer"/>
+
+          <div id={'teaserWorkshop'}>
+            <p>
+              Buy 2 tickets for 3!<br/>
+              15 participants max<br/>
+              Satisfied or refunded!
+            </p>
+          </div>
+        </section>
+
+        <section id={'masterTheKing-workshopPage'}>
           <div className="hr">
             <hr/>
           </div>
@@ -56,191 +66,98 @@ class Workshops extends React.Component<{}, IState> {
           </p>
         </section>
 
-
-        <section id="workshopFlyer-workshopPage">
-          <img src={this.state.bitcoin_essentials} alt="bitcoin essential flyer"/>
-
-          <div id={'teaserWorkshop'}>
-            <p>
-              Buy 2 tickets for 3!<br/>
-              15 participants max<br/>
-              Satisfied or refunded!
-            </p>
-          </div>
-        </section>
-
         <section id="offers-workshopPage">
-          <section className={'practical-offer-workshopPage'}>
+          <section className={'intro-offer-workshopPage'}>
             <div className="hr hr75pc">
               <hr/>
             </div>
-            <h2>Practical Bitcoin workshop 1 day</h2>
-
-            <div>
-              <h3>Price</h3>
-              <p>100€ inc. VAT. Satisfied or refunded</p>
-            </div>
+            <h2 className={'offers-h2'}>Introduction To Bitcoin</h2>
+            <h3 className={'offers-h3'}>1 day workshop</h3>
 
             <div className={'goals-workshopPage'}>
               <h3>Goals</h3>
               <p>
-                Focused on the practical use of Bitcoin, participants install a Bitcoin Core node on their machine and
-                play with it, getting information from the blockchain, sending money, etc.
-                The session alternate between practice and a bit of theory to better grasp the technology.
-                We will cover all the most important things you need to know, how the Bitcoin blockchain works, wallets,
-                the different types of transactions etc.
-              </p>
-              <p>
-                After this course you will have a good understanding of the technology and capable of managing your
-                bitcoins like a pro. Using Bitcoin Core from the command line will certainly give you the real feeling.
-                After a day, chances are that you will never look at money the same way.
+                The goal of this one day workshop is to get familiar with the technology, little by little  over the course of the day, without being too technical.
               </p>
             </div>
 
             <div className={'public-workshopPage'}>
               <h3>Public and Prerequisite</h3>
               <p>
-                This workshop is a hands-on training accessible to everybody.
-                Attendees don't need prior knowledge on Bitcoin, blockchain or computer science.
-                Just bring your laptop and eventually an external hard drive.
+                This training is accessible to everybody. Attendees don't need prior knowledge of Bitcoin, blockchain or computer science.
               </p>
             </div>
 
             <div className={'programme-workshopPage'}>
               <h3>Programme</h3>
               <p>
-                We start the workshop by setting the environment on each participant machine. The instructor provide the
-                bitcoin testnet blockchain on external hard drives. Then the fun begins! We experience programmable
-                money
-                from the Bitcoin Core command line interface. When necessary we go back to the theory. All the teaching
-                materials
-                are on this website, <a href="resources">here</a>.
+                It will presented the main concepts you need to know to understand Bitcoin (transactions, mining, wallet, etc).
+                You will learn how to set up a wallet, how to create a secure backup, the best practices and how to be prepared for the worst (attacks, death).
               </p>
               <p>
-                The day generally end with an informal Q&A session where you will be able to ask any remaining question
-                you have.
+                We will experiment with the technology by receiving and sending money using different wallets, on-chain
+                and off-chain (Lightning Network), on a simulation network and on the real network (games, stores).
+                Then it will be shown how to use the blockchain to notarized document (timestamping and signing).
+              </p>
+              <p>
+                To raise your curiosity, the instructor will demo what we can do with the command line integrated to the Bitcoin Core software.
               </p>
             </div>
           </section>
 
-          <section className={'essentials-offer-workshopPage'}>
+          <section className={'programming-offer-workshopPage'}>
             <div className="hr hr75pc">
               <hr/>
             </div>
-            <h2>Essentials Bitcoin workshop 2 days</h2>
-
-            <div>
-              <h3>Price</h3>
-              <p>369€ inc. VAT. Satisfied or refunded</p>
-            </div>
+            <h2 className={'offers-h2'}>Bitcoin Programming with Bitcoin Core and BitcoinJS</h2>
+            <h3 className={'offers-h3'}>1 day workshop</h3>
 
             <div className={'goals-workshopPage'}>
               <h3>Goals</h3>
               <p>
-                Exploring the technology more closely, this intermediary course will give you a solid basis to start
-                your Bitcoin journey. The goal is really to deep dive into the Bitcoin protocol. We will explore how
-                Bitcoin works in enough details, diving into several Bitcoin Improvement Proposals (the formal
-                specifications) and looking into the broader ecosystem. You will learn all the specific concepts and
-                vocabulary in use.
-              </p>
-              <p>
-                We will mainly work with the Bitcoin Core software, and some other libraries depending on the need
-                (btcdeb, bitcoinJS, etc).
+                The goal of this training is to explore the Bitcoin protocol and learn how to craft different kind of
+                transactions and smart contracts, using Bitcoin Core RPC commands and the BitcoinJS library.
               </p>
 
             </div>
 
             <div className={'public-workshopPage'}>
               <h3>Public and Prerequisite</h3>
-              <p>This course should be accessible to anyone with a minimal computer science background.
-                It is intended for all individuals wishing to deepen their knowledge of Bitcoin and
-                blockchain technology, etc.</p>
-            </div>
-
-            <div className={'programme-workshopPage'}>
-              <h3>Programme</h3>
               <p>
-                Focusing on the essentials, this course will teach you the main technologies that compose Bitcoin
-                (asymmetric cryptography, P2P networking, proof-of-work consensus and mining) and how everything is
-                related
-                to produce transaction strored in immutable blocks.
+                This training is technical and only accessible to people comfortable with computers, Javascript (simple
+                code) and command line. It is recommended to already have some understanding of Bitcoin and to follow
+                the course Introduction To Bitcoin if it’s not the case.
               </p>
               <p>
-                We will illustrate the theory with practice using the Bitcoin Core software and some other libraries.
-              </p>
-            </div>
-          </section>
-
-
-          <section className={'indepth-offer-workshopPage'}>
-            <div className="hr hr75pc">
-              <hr/>
-            </div>
-            <h2>In-depth Bitcoin workshop 5 days</h2>
-
-            <div>
-              <h3>Price</h3>
-              <p>
-                500€ inc. VAT. Satisfied or refunded
-              </p>
-            </div>
-
-            <div className={'goals-workshopPage'}>
-              <h3>Goals</h3>
-              <p>Here we will study the Bitcoin protocol in depth, including the layer 2 solution Lightning Network and
-                the most recent developments. We will also have a look at various other aspects of Bitcoin like its
-                historical context, the broader ecosystem, the socio-economic implications, the governance of open
-                source decentralized systems, etc.
+                We will type some Bash commands in a terminal and Javascript commands in a Node.js console. You will need
+                to have Bitcoin Core, Node.js, JQ and a code editor installed on your machine. We will work on Regtest,
+                a local blockchain, so you don't need to download the Testnet blockchain.
               </p>
               <p>
-                Designed with an academic approach, this training will allow you to deeply understand Bitcoin and
-                evaluate other blockchain protocols, providing you a solid basis to further work in this field.
-              </p>
-
-              <input className="toggle-box" id="goalsInDepthToggle" type="checkbox"/>
-              <label htmlFor="goalsInDepthToggle">Read More</label>
-
-              <div id="expandCollapsible">
-                <p>
-                  Together we will explore every aspects of Bitcoin.
-                  We will learn how to construct regular and advanced transactions, P2SH/P2WSH smart contracts,
-                  multi-signatures, timelocks, etc.
-                </p>
-
-                <p>
-                  After this course, you’ll know everything you need to be able to separate fact from fiction when
-                  reading claims about Bitcoin and other cryptocurrencies. You’ll have the conceptual foundations you
-                  need in order to develop on top of Bitcoin or any blockchain.
-                </p>
-              </div>
-            </div>
-
-            <div className={'public-workshopPage'}>
-              <h3>Public and Prerequisite</h3>
-              <p>
-                This course has been designed for individuals that need a deep-dive into the Bitcoin protocol and are
-                not afraid of technicalities. It is suited to professional that work or want to work in the bitcoin or
-                blockchain space, or to people with a strong desire to learn Bitcoin seriously.
-                Bitcoin In-depth is primarily intended for developers that already master the basics of blockchain.
+                If you are not able to set up this environement you can download an Ubuntu 18.10 Virtual Machine image
+                with all the softwares included.
               </p>
             </div>
 
             <div className={'programme-workshopPage'}>
               <h3>Programme</h3>
               <p>
-                This five days training has been thought to be the most comprehensive as possible.
-                Starting with some general background, we will talk about the Cypherpunk movement, cryptography,
-                followed by some Bitcoin background (project history, block size debate, main Core developers,
-                governance model, ...).
+                Participants will install the Bitcoin Core software on their machine and perform different kind of
+                transactions by hand using Bitcoin RPC commands and Javascript.
               </p>
               <p>
-                We will then study extensively all the different technologies that compose Bitcoin, naming the P2P
-                network, mining, consensus, forks, wallets, keys, addresses, the different types of transactions,
-                advanced scripting, layer two scaling solution Lightning Network, atomic swaps, privacy solutions, etc.
-                We will alternate between lecture and code.
+                We will create P2PKH transactions, used to send bitcoins to someone; data anchoring using a special type
+                of transaction with OP_RETURN; P2SH, which consists of locking bitcoins to a custom smart contract
+                (puzzles, timelocks, hashlocks, multi-signatures).
+              </p>
+              <p>
+                You will learn how Bitcoin transaction works internally, how to read a raw transaction, what we can do
+                with Bitcoin scripts and all kinds of useful Bitcoin Core commands. We will not spend too much time on
+                the new Segwit transaction format as it is more advanced and not essential to understand how Bitcoin works.
               </p>
             </div>
           </section>
+
         </section>
       </div>
     )
