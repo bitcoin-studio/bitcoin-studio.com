@@ -54,6 +54,16 @@ class Resources extends React.Component {
           <div className={'slideItemContainer2'}>
             <div className={'slideItemContainer'}>
               <object className={'slideItem'} type={'application/pdf'}
+                      data="workshopSlides/Technical_Intro_Bitcoin_S_Roche_LQ.pdf"></object>
+            </div>
+            <div className="slideButton">
+              <a href="workshopSlides/Technical_Intro_Bitcoin_S_Roche_LQ.pdf" download>DOWNLOAD</a>
+            </div>
+          </div>
+
+          <div className={'slideItemContainer2'}>
+            <div className={'slideItemContainer'}>
+              <object className={'slideItem'} type={'application/pdf'}
                       data="workshopSlides/TheBeginningOfYourBlockchainJourney_S_Roche.pdf"></object>
             </div>
             <div className="slideButton">
@@ -95,10 +105,10 @@ class Resources extends React.Component {
           <div className={'slideItemContainer2'}>
             <div className={'slideItemContainer'}>
               <object className={'slideItem'} type={'application/pdf'}
-                      data="workshopSlides/Bitcoin_transaction_S_Roche.pdf"></object>
+                      data="workshopSlides/Bitcoin_transaction_S_Roche_LQ.pdf"></object>
             </div>
             <div className="slideButton">
-            <a href="workshopSlides/Bitcoin_transaction_S_Roche.pdf" download>DOWNLOAD</a>
+            <a href="workshopSlides/Bitcoin_transaction_S_Roche_LQ.pdf" download>DOWNLOAD</a>
             </div>
           </div>
 
@@ -132,7 +142,7 @@ class Resources extends React.Component {
             </div>
           </div>
 
-          {/*<div className={'slideItemContainer2 fakeItemContainer'}>
+          <div className={'slideItemContainer2 fakeItemContainer'}>
             <div className={'slideItemContainer'}>
               <object className={'slideItem fakeItem'}
                       data="workshopSlides/slide_fake.png"></object>
@@ -140,7 +150,27 @@ class Resources extends React.Component {
             <div className="slideButton">
               <a>DOWNLOAD</a>
             </div>
-          </div>*/}
+          </div>
+
+          <div className={'slideItemContainer2 fakeItemContainer'}>
+            <div className={'slideItemContainer'}>
+              <object className={'slideItem fakeItem'}
+                      data="workshopSlides/slide_fake.png"></object>
+            </div>
+            <div className="slideButton">
+              <a>DOWNLOAD</a>
+            </div>
+          </div>
+
+          <div className={'slideItemContainer2 fakeItemContainer'}>
+            <div className={'slideItemContainer'}>
+              <object className={'slideItem fakeItem'}
+                      data="workshopSlides/slide_fake.png"></object>
+            </div>
+            <div className="slideButton">
+              <a>DOWNLOAD</a>
+            </div>
+          </div>
 
           <div className={'slideItemContainer2 extraItem'}>
           </div>
