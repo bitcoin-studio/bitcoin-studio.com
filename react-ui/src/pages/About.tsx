@@ -7,9 +7,8 @@ class About extends React.Component {
         <div className={'hero'} id={'hero-aboutPage'}>
           <h1>About</h1>
           <p>
-            Based in Lisbon, Portugal, Bitcoin Studio is led by Stéphane Roche, P2P decentralized consensus systems aka
-            blockchain developer, and strong advocate of crypto-anarchy.
-            The company also has a vast network of talented people in France, Portugal and all over the world.
+            Geographically based in Lisbon, fiscally based in France, Bitcoin Studio is led by Stéphane Roche, Bitcoin
+            developer, educator, consultant and convinced cypherpunk activist.
           </p>
         </div>
 
@@ -29,18 +28,12 @@ class About extends React.Component {
           </p>
 
           <p>
-            Since mid-2017, he is focusing on Bitcoin, building a solid expertise, and now offering Bitcoin Workshops
-            (Practical, Essentials, In-depth) and custom development.
-            At Bitcoin Studio we use the best web technologies (Typescript, Fusebox, React, Redux, Redux-sagas, ...) and
-            the latest Bitcoin developments.
-            Over the years he gained lot of experience on Bitcoin and blockchain technology.
+            Since mid-2017, he is focusing uniquely on Bitcoin, building a solid expertise and now offering Bitcoin workshops and custom development.
+            Coming from web development (and before that Archaeology, yes it's a long story), Stéphane masters technologies like
+            Typescript, Fusebox, React, Redux, Redux-sagas, etc.
+            Over the years he gained a fair bit of experience on Bitcoin, blockchain technology, computer science, project management,
+            and is capable of successfully bring your project to fruition in a timely manner.
           </p>
-
-          <p>
-            Contact us at <a
-            href='ma&#105;lto&#58;rs&#116;&#101;&#37;70%&#54;8&#97;&#110;e&#64;&#37;70r&#111;t%&#54;Fn%6Dail&#46;%63om'>rs&#116;ephan&#101;&#64;proton&#109;&#97;il&#46;&#99;om</a>
-          </p>
-
         </section>
       </div>
     )
