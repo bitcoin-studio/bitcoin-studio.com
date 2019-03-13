@@ -9,6 +9,7 @@
   "dependencies": {
     "express": "^4.16.4",
     "fuse-react": "^1.0.21",
+    "lodash": ">=4.17.11",
     "merge": ">=1.2.1",
     "normalize.css": "^8.0.1",
     "react": "^16.6.3",
