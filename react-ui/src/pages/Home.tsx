@@ -105,7 +105,7 @@ class Home extends React.Component<{}, IState> {
             <p>
               <span><em>Software development</em></span>
               Bitcoin Studio offers custom software development, working with Bitcoin layer 1 and the Lightning Network.
-              We pay particular attention to web development.
+              We also pay particular attention to quality web development.
 
             </p>
           </div>
@@ -141,8 +141,8 @@ class Home extends React.Component<{}, IState> {
             <img src={this.state.hosting_512} alt="node as a service"/>
             <p>
               <span><em>Full node</em></span>
-              We can help you setting up Bitcoin full node, Lightning node and BTCPay server, on your single-board
-              computer or hosted and managed by our partners in a safe and production-ready infrastructure.
+              If you are a merchant wanting to accept payments or simply an individual, we can help you setting up
+              a Bitcoin full node, Lightning node or BTCPay server, on a single-board computer or hosted on a VPS.
             </p>
           </div>
         </section>
