@@ -16,8 +16,8 @@ class About extends React.Component {
           <div className="hr">
             <hr/>
           </div>
-          <h2>STEPHANE - CEO/CTO</h2>
-          <img className={'about-profile-img'} src="assets/stephane_roche_profile.jpg" alt="stephane roche profile"/>
+          <h2>STEPHANE ROCHE - CEO/CTO</h2>
+          <img className={'about-profile-img'} src="assets/stephane_roche_profile.png" alt="stephane roche profile"/>
           <p className={'about-content'}>
             Stéphane starts working on Bitcoin in 2015 at the hardware wallet company Ledger. From 2016 to mid-2017 he
             is working on the Ethereum Platform. He has co-founded the french non-profit organization Asseth to promote
