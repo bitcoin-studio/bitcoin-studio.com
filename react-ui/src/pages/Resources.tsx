@@ -30,6 +30,7 @@ class Resources extends React.Component {
             18.10 VirtualBox image and a Vagrant box packaged with softwares for Bitcoin / Lightning Network.
             You can find Bitcoin Core, LND, c-lightning, Electrum, the BitcoinJS guide above, etc. <br/>
             The image is ideal for Bitcoin workshops, hackathons, etc. <br/>
+            <a href="https://app.vagrantup.com/bitcoin-studio/boxes/Bitcoin-VirtualMachine" target={"_blank"}>➱ Vagrant box</a><br/>
             <a href="https://keybase.pub/janakasteph/Bitcoin-VirtualMachine" target={"_blank"}>➱ VirtualBox image</a><br/>
             <a href="https://github.com/bitcoin-studio/Bitcoin-VirtualMachine" target={"_blank"}>➱ Github Repository</a>
           </p>
