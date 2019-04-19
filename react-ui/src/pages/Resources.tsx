@@ -27,11 +27,11 @@ class Resources extends React.Component {
           <h2 className={'mt35'}>Bitcoin Virtual Machine image builder</h2>
           <p>
             This tool is made of three technologies, Packer, Vagrant and Ansible, allowing us to generate an Ubuntu
-            18.10 VirtualBox image (and Vagrant box) packaged with softwares for Bitcoin / Lightning Network.
+            18.10 VirtualBox image and a Vagrant box packaged with softwares for Bitcoin / Lightning Network.
             You can find Bitcoin Core, LND, c-lightning, Electrum, the BitcoinJS guide above, etc. <br/>
             The image is ideal for Bitcoin workshops, hackathons, etc. <br/>
-            <a href="https://keybase.pub/janakasteph/ubuntu-18.10-desktop-amd64-virtualbox-iso/" target={"_blank"}>➱ Bitcoin Virtual Machine image</a> <br/>
-            <a href="https://github.com/bitcoin-studio/Bitcoin-VirtualMachine" target={"_blank"}>➱ Bitcoin Virtual Machine Builder Repository</a>
+            <a href="https://keybase.pub/janakasteph/Bitcoin-VirtualMachine" target={"_blank"}>➱ VirtualBox image</a><br/>
+            <a href="https://github.com/bitcoin-studio/Bitcoin-VirtualMachine" target={"_blank"}>➱ Github Repository</a>
           </p>
 
           <h2 className={'mt35'}>Bitcoin Mnemonic Code Template</h2>
