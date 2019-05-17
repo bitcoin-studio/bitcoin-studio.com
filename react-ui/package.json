@@ -3,17 +3,24 @@
   "version": "1.0.0",
   "private": true,
   "devDependencies": {
-    "fuse-box-react-scripts": "^3.0.80",
-    "fuse-box-react-scripts-ts": "^3.0.80"
+    "@types/node": "^12.0.1",
+    "@types/react": "^16.8.17",
+    "@types/react-dom": "^16.8.4",
+    "fuse-box-react-scripts": "^4.0.4",
+    "fuse-box-react-scripts-ts": "^4.0.4"
   },
   "dependencies": {
     "express": "^4.16.4",
-    "fuse-react": "^1.0.21",
+    "fuse-react": "^2.0.8",
+    "i18next": "^15.1.0",
+    "i18next-browser-languagedetector": "^3.0.1",
+    "i18next-xhr-backend": "^2.0.1",
     "lodash": ">=4.17.11",
     "merge": ">=1.2.1",
     "normalize.css": "^8.0.1",
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-i18next": "^9.0.10"
   },
   "scripts": {
     "start": "fuse-box-react-scripts start",

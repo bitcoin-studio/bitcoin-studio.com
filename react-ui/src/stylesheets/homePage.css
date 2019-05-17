@@ -2,10 +2,10 @@ main > div#homePage {
     grid-template-areas:
             ".                 hero-hp           ."
             "pictures-hp       pictures-hp      pictures-hp"
-            "services-hp       services-hp       services-hp"
-            "details-hp  details-hp details-hp"
-            "workshops-hp      workshops-hp      workshops-hp"
-            "call2action-hp    call2action-hp    call2action-hp";
+            "services-hp       services-hp      services-hp"
+            "details-hp        details-hp       details-hp"
+            "network-hp        network-hp       network-hp"
+            "call2action-hp    call2action-hp   call2action-hp";
 }
 @media screen and (max-width: 780px) {
     main > div#homePage {
@@ -13,8 +13,8 @@ main > div#homePage {
                 "hero-hp           hero-hp           hero-hp  "
                 "pictures-hp       pictures-hp       pictures-hp"
                 "services-hp       services-hp       services-hp"
-                "details-hp  details-hp details-hp"
-                "workshops-hp      workshops-hp      workshops-hp"
+                "details-hp        details-hp        details-hp"
+                "network-hp        network-hp        network-hp"
                 "call2action-hp    call2action-hp    call2action-hp";
     }
 }
@@ -45,11 +45,11 @@ main > div#homePage {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 2.5em;
 }
-#workshops-homePage {
-    grid-area: workshops-hp;
+#network-homePage {
+    grid-area: network-hp;
 }
 @media screen and (min-width: 550px) {
-    #workshops-homePage {
+    #network-homePage {
         grid-column: 2 / 3;
     }
 }

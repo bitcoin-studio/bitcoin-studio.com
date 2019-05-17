@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { withNamespaces } from 'react-i18next'
 
 // Import assets
 // @ts-ignore
@@ -16,7 +17,9 @@ const consulting_512 = import('../assets/img/home_consulting_512.png')
 // @ts-ignore
 const hosting_512 = import('../assets/img/home_hosting_512.png')
 
-
+interface IProps {
+  t: ((string) => string)
+}
 interface IState {
   lisbon?: string,
   btc_logo?: string,
@@ -27,7 +30,7 @@ interface IState {
   hosting_512?: string
 }
 
-class Home extends React.Component<{}, IState> {
+class Home extends React.Component<IProps, IState> {
 
   constructor(props) {
     super(props)
@@ -55,18 +58,14 @@ class Home extends React.Component<{}, IState> {
   }
 
   render() {
+    const {t} = this.props
     return (
       <div id={'homePage'}>
 
         <div id={'hero-homePage'} className={'hero'}>
           <h1>BITCOIN STUDIO</h1>
           <p>
-            Bitcoin company based in the beautiful city of Lisbon. We offer software development, workshops and in-house
-            training, focusing on bitcoin technology and quality web development. Want to discover Bitcoin, or choose to
-            integrate Bitcoin to your sales?
-            Need to refresh your website integrating digital money?
-            Bitcoin Studio, a network of experts from a variety of backgrounds and driven by the same ideals, is here
-            for you.
+            {t('hero')}
           </p>
         </div>
 
@@ -84,29 +83,17 @@ class Home extends React.Component<{}, IState> {
           <div className="hr">
             <hr/>
           </div>
-          <h2>A COMPANY DEDICATED TO BITCOIN</h2>
-          <p>
-            Fascinated by the idea and realisation of a digital, decentralized, permissionless, open source,
-            censorship-resistant money, we at Bitcoin Studio have a strong will to take part of this revolution.
-            The company is led, and mainly composed, let's face it, by Stéphane Roche, Bitcoin engineer in the field since
-            2014. Depending on your needs, a team can be made.
-          </p>
-
-          <p>
-            If you look around you, there is more and more individuals paying attention to this strange, intangible
-            money. Many are laughing at it also! This is not a problem. We know why we are here. This technology is
-            certainly the biggest revolution of our century and we want to be part of it.
-          </p>
+          <h2>{t('services.title')}</h2>
+          <p>{t('services.p1')}</p>
+          <p>{t('services.p2')}</p>
         </section>
 
         <section id={'servicesDetails-homePage'}>
           <div className={'serviceItem'}>
             <img src={this.state.software_512} alt="software development"/>
             <p>
-              <span><em>Software development</em></span>
-              Bitcoin Studio offers custom software development, working with Bitcoin layer 1 and the Lightning Network.
-              We also pay particular attention to quality web development.
-
+              <span><em>{t('servicesDetails.1.title')}</em></span>
+              {t('servicesDetails.1.desc')}
             </p>
           </div>
 
@@ -114,86 +101,77 @@ class Home extends React.Component<{}, IState> {
           <div className={'serviceItem'}>
             <img src={this.state.education_512} alt="workshops"/>
             <p>
-              <span><em>Workshops</em></span>
-              We are offering Bitcoin trainings. Mixing theory and practice, they will allow you to quickly master the technology.
-              They are given by instructor Stéphane Roche.
+              <span><em>{t('servicesDetails.2.title')}</em></span>
+              {t('servicesDetails.2.desc')}
             </p>
           </div>
 
           <div className={'serviceItem'}>
             <img src={this.state.thought_512} alt="in-house training"/>
             <p>
-              <span><em>In-house training</em></span>
-              Bitcoin trainings can be given directly at your office, tailored to your specific needs.
+              <span><em>{t('servicesDetails.3.title')}</em></span>
+              {t('servicesDetails.3.desc')}
             </p>
           </div>
 
           <div className={'serviceItem'}>
             <img src={this.state.consulting_512} alt="private consulting"/>
             <p>
-              <span><em>Private consulting</em></span>
-              Bitcoin Studio can respond to your specific needs.
-              Key management best practices, endeavors to recover lost coins, recover coins from Bitcoin forks, etc.
+              <span><em>{t('servicesDetails.4.title')}</em></span>
+              {t('servicesDetails.4.desc')}
             </p>
           </div>
 
           <div className={'serviceItem'}>
             <img src={this.state.hosting_512} alt="node as a service"/>
             <p>
-              <span><em>Full node</em></span>
-              If you are a merchant wanting to accept payments or simply an individual, we can help you setting up
-              a Bitcoin full node, Lightning node or BTCPay server, on a single-board computer or hosted on a VPS.
+              <span><em>{t('servicesDetails.5.title')}</em></span>
+              {t('servicesDetails.5.desc')}
             </p>
           </div>
         </section>
 
-        <section id={'workshops-homePage'}>
+        <section id={'network-homePage'}>
           <div className="hr">
             <hr/>
           </div>
-          <h2>A NETWORK OF TALENTED PEOPLE</h2>
+          <h2>{t('network.title')}</h2>
           <p>
-            Finding the right people for the right job can be hard, especially where we have a shortage of manpower.
-            But still, hiring the right people is crucial for the success of your business.
-            After many years involved in the crypto space, Stéphane should know enough people to be able to constitute
-            the perfect team for your project. People are living in France, Portugal and all over the world.
+            {t('network.p1')}
           </p>
           <p>
-            Surely there are many awesome people with the desire to work in this delightful and refreshing field of
-            Bitcoin and digital currencies. Don't hesitate to contact us if you are interested to join our network and
-            motivated to lend your expertise, talents and creativity.
+            {t('network.p2')}
           </p>
         </section>
 
 
         <section id="call2action-homePage">
           <div id="call2action_ribbon">
-            <h3>STOP BEING A FOLLOWER</h3>
-            <p>Are you tired of the financial system? Let’s talk for real then.</p>
+            <h3>{t('call2action.title')}</h3>
+            <p>{t('call2action.p')}</p>
           </div>
 
           <div id="call2action_ribbon_prop" className="">
             <div className="ribbon_prop_1">
               <div className="inside">
-                <span><a href="mailto:hello@bitcoin-studio.co" className="clickhere">Click Here to</a></span>
-                <span><a href="mailto:hello@bitcoin-studio.co" className="request">REQUEST</a></span>
-                <span><a href="mailto:hello@bitcoin-studio.co" className="proposal">a Proposal</a></span>
+                <span><a href="mailto:hello@bitcoin-studio.co" className="clickhere">{t('call2action.circle.1')}</a></span>
+                <span><a href="mailto:hello@bitcoin-studio.co" className="request">{t('call2action.circle.2')}</a></span>
+                <span><a href="mailto:hello@bitcoin-studio.co" className="proposal">{t('call2action.circle.3')}</a></span>
               </div>
             </div>
 
             <div className="ribbon_prop_2">
               <div className="inside">
-                <span><a href="mailto:hello@bitcoin-studio.co" className="clickhere">Click Here to</a></span>
-                <span><a href="mailto:hello@bitcoin-studio.co" className="request">REQUEST</a></span>
-                <span><a href="mailto:hello@bitcoin-studio.co" className="proposal">a Proposal</a></span>
+                <span><a href="mailto:hello@bitcoin-studio.co" className="clickhere">{t('call2action.circle.1')}</a></span>
+                <span><a href="mailto:hello@bitcoin-studio.co" className="request">{t('call2action.circle.2')}</a></span>
+                <span><a href="mailto:hello@bitcoin-studio.co" className="proposal">{t('call2action.circle.3')}</a></span>
               </div>
             </div>
           </div>
         </section>
-
       </div>
     )
   }
 }
 
-export default Home
+export default withNamespaces('Home')(Home)

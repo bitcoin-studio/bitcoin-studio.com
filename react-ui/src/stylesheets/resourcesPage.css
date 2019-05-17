@@ -5,14 +5,14 @@
 main > div#resourcesPage {
     grid-template-areas:
             ".              hero-rp          ."
-            "btcJS-guide-rp btcJS-guide-rp   btcJS-guide-rp"
+            "projects-rp    projects-rp      projects-rp"
             "slides         slides           slides";
 }
 @media screen and (max-width: 780px) {
     main > div#resourcesPage {
         grid-template-areas:
                 "hero-rp           hero-rp           hero-rp"
-                "btcJS-guide-rp    btcJS-guide-rp    btcJS-guide-rp"
+                "projects-rp       projects-rp       projects-rp"
                 "slides            slides            slides";
     }
 }
@@ -22,8 +22,8 @@ main > div#resourcesPage {
     grid-area: hero-rp;
 }
 
-#resourcesPage-BitcoinJSGuide {
-    grid-area: btcJS-guide-rp;
+#projects-resourcesPage {
+    grid-area: projects-rp;
 }
 
 #slides-resourcesPage {

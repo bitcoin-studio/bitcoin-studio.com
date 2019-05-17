@@ -1,0 +1,158 @@
+{
+  "Header": {
+    "home": "HOME",
+    "workshops": "WORKSHOPS",
+    "resources": "RESOURCES",
+    "about": "ABOUT"
+  },
+  "Footer": {
+    "col1": {
+      "title": "SERVICES",
+      "1": "Homepage",
+      "2": "About our Studio",
+      "3": "Resources",
+      "4": "Contact Information"
+    },
+    "col2": {
+      "title": "CONNECT",
+      "1": "Github",
+      "2": "Twitter",
+      "3": "Linkedin",
+      "4": "Keybase"
+    }
+  },
+  "Home": {
+    "hero": "Bitcoin company based in the beautiful city of Lisbon. We offer software development, workshops and in-house training, focusing on bitcoin technology and quality web development. Want to discover Bitcoin, or choose to integrate Bitcoin to your sales? Need to refresh your website integrating digital money? Bitcoin Studio, a network of experts from a variety of backgrounds and driven by the same ideals, is here for you.",
+    "services": {
+      "title": "A COMPANY DEDICATED TO BITCOIN",
+      "p1": "Fascinated by the idea and realisation of a digital, decentralized, permissionless, open source, censorship-resistant money, we at Bitcoin Studio have a strong will to take part of this revolution. The company is led, and mainly composed, let's face it, by Stéphane Roche, Bitcoin engineer in the field since 2014. Depending on your needs, a team can be made.",
+      "p2": "If you look around you, there is more and more individuals paying attention to this strange, intangible money. Many are laughing at it also! This is not a problem. We know why we are here. This technology is certainly the biggest revolution of our century and we want to be part of it."
+    },
+    "servicesDetails": {
+      "1": {
+        "title": "Software development",
+        "desc": "Bitcoin Studio offers custom software development, working with Bitcoin layer 1 and the Lightning Network. We also pay particular attention to quality web development."
+      },
+      "2": {
+        "title": "Workshops",
+        "desc": "We are offering Bitcoin trainings. Mixing theory and practice, they will allow you to quickly master the technology. They are given by instructor Stéphane Roche."
+      },
+      "3": {
+        "title": "In-house training",
+        "desc": "Bitcoin trainings can be given directly at your office, tailored to your specific needs."
+      },
+      "4": {
+        "title": "Private consulting",
+        "desc": "Bitcoin Studio can respond to your specific needs. Key management best practices, endeavors to recover lost coins, recover coins from Bitcoin forks, etc."
+      },
+      "5": {
+        "title": "Full node",
+        "desc": "If you are a merchant wanting to accept payments or simply an individual, we can help you setting up a Bitcoin full node, Lightning node or BTCPay server, on a single-board computer or hosted on a VPS."
+      }
+    },
+    "network": {
+      "title": "A NETWORK OF TALENTED PEOPLE",
+      "p1": "Finding the right people for the right job can be hard, especially where we have a shortage of manpower. But still, hiring the right people is crucial for the success of your business. After many years involved in the crypto space, Stéphane should know enough people to be able to constitute the perfect team for your project. People are living in France, Portugal and all over the world.",
+      "p2": "Surely there are many awesome people with the desire to work in this delightful and refreshing field of Bitcoin and digital currencies. Don't hesitate to contact us if you are interested to join our network and motivated to lend your expertise, talents and creativity."
+    },
+    "call2action": {
+      "title": "STOP BEING A FOLLOWER",
+      "p": "Are you tired of the financial system? Let’s talk for real then.",
+      "circle": {
+        "1": "Click Here to",
+        "2": "REQUEST",
+        "3": "a Proposal"
+      }
+    }
+  },
+  "Workshops": {
+    "title": "BITCOIN WORKSHOPS",
+    "hero": "Do you wonder how Bitcoin and blockchain works and how to use it? Let’s explore the first, most mature, secure and decentralized blockchain that has given birth to a whole new industry!",
+    "teaserWorkshop": {
+      "1": "Buy 2 tickets for 3!",
+      "2": "15 participants max",
+      "3": "Satisfied or refunded!"
+    },
+    "masterTheKing": {
+      "title": "MASTER THE KING OF CRYPTO",
+      "p1": "If you plan to work anywhere in the blockchain industry, mastering Bitcoin is an essential skill. It is the first of its kind, which means the most attacked and therefore the most robust blockchain. Bitcoin Core developers are highly experienced, the ecosystem is big, has the biggest market capitalization, etc. More than 75% of the blockchains today are, directly or indirectly, software forks of Bitcoin.",
+      "p2": "Bitcoin is also a great start because it has the simplest protocol design, with a non-Turing-complete smart-contract functionality. Finally, the new micropayment feature Lightning Network is bringing tremendous new business opportunities."
+    },
+    "intro-offer": {
+      "title": "MASTERING BITCOIN FUNDAMENTALS",
+      "duration": "1 DAY WORKSHOP",
+      "goals": {
+        "title": "GOALS",
+        "p1": "The goal of this one day workshop is to help you gradually become familiar with the Bitcoin technology. You will benefit from the vast experience of the instructor, learn how to securely store your bitcoins and how to use it with confidence. While being the least technical as possible, you will still have to understand a few simple technical concepts."
+      },
+      "public": {
+        "title": "PUBLIC AND PREREQUISITE",
+        "p1": "This training is accessible to everybody. Attendees don't need prior knowledge of Bitcoin, blockchain or computer science. To follow along, it is much better if you can bring a laptop, where we will install at least one Bitcoin wallet. We may also install a mobile wallet."
+      },
+      "programme": {
+        "title": "PROGRAMME",
+        "p1": "First of all, it will presented to you the main concepts you need to know to understand Bitcoin, namely transactions, mining and wallet. We will take time to explain each of this topic separately, and at the end you will be able to understand how they relate to each other and to get the bigger picture.",
+        "p2": "We will set up a real Bitcoin wallet, which will be the occasion to teach you how to securely store digital assets. You will learn, not simply how to create a secure backup and the best practices, but really how to be prepared for the worst, namely attacks and death.",
+        "p3": "Then we will experiment with the technology by sending and receiving money, using different wallets, on-chain and off-chain (Lightning Network), on a simulation network and on the real network (games, stores). We will also use the blockchain to notarized a document (timestamping and signing). You will learn how to examine a transaction in a blockchain explorer, and this will also be the occasion to raise awareness about privacy in Bitcoin.",
+        "p4": "Lastly, mainly to raise your curiosity, the instructor will demo what you can do from the command line console integrated in the Bitcoin Core software."
+      }
+    },
+    "programming-offer": {
+      "title": "BITCOIN PROGRAMMING WITH BITCOIN CORE AND BITCOINJS",
+      "duration": "1 DAY WORKSHOP",
+      "goals": {
+        "title": "GOALS",
+        "p1": "The goal of this training is to explore the Bitcoin protocol and learn how to craft different kind of transactions and smart contracts, using Bitcoin Core RPC commands and the BitcoinJS library."
+      },
+      "public": {
+        "title": "PUBLIC AND PREREQUISITE",
+        "p1": "This training is technical and only accessible to people comfortable with computers, Javascript (simple code) and command line. It is recommended to already have some understanding of Bitcoin, starting with the Introduction To Bitcoin course otherwise.",
+        "p2": "We will type Bash commands in a terminal and Javascript commands in a Node.js console. You will need to have Bitcoin Core, Node.js, jq and a code editor installed on your machine. If you are not able or don't want to set up this environment on your machine you can download the <1>Ubuntu Virtual Machine image</1> that we provide, which includes all the required softwares. Also note that we will work in Regtest mode, which allows a fake blockchain local to the machine, so that we don't need to download any blockchain data."
+      },
+      "programme": {
+        "title": "PROGRAMME",
+        "p1": "To begin, we will focus on Bitcoin Core and its API. Participants will install the software on their machine (or use the provided virtual machine), determine how to interact with a Bitcoin node and how to perform different kind of transactions. Starting with the simplest commands we will gradually explore how to create more complex transactions by hand, and by doing so learning a lot about Bitcoin.",
+        "p2": "In a second time we will work with the BitcoinJS library to compose a variety of transactions in Javascript. We will create P2PKH transactions, used to send bitcoins to someone; data anchoring using a special type of transaction with OP_RETURN; P2SH, which consists of locking bitcoins to a custom smart contract. We will spend some time investigating how the Bitcoin scripting language works and the different building blocks that allows us to construct a variety of smart contracts like puzzles, timelocks, hashlocks and multi-signatures.",
+        "p3": "At the end of this day, you will understand how Bitcoin transaction works internally, how to read a raw transaction, how to interact with a node, getting various information from it and sending transactions. You will also discover the Bitcoin scripting language and what is possible to do with Bitcoin smart contracts.",
+        "p4": "Finally, note that we will not spend too much time on the new Segwit transaction format as it already requires to master Bitcoin programming and is in any way essential to understand Bitcoin."
+      }
+    },
+    "intro-ln-offer": {
+      "title": "INTRODUCTION TO LIGHTNING NETWORK (COMING SOON)",
+      "duration": "1 DAY WORKSHOP",
+      "goals": {
+        "title": "GOALS",
+        "p1": "The goal of this training is to explore the Lightning Network protocol and learn how to program with it."
+      }
+    }
+  },
+  "Resources": {
+    "title": "RESOURCES",
+    "hero": "At Bitcoin Studio we are firmly resolved to move the Bitcoin tech community forward. This is why we put at your disposal various free educational works. The presentations made by Stéphane Roche are exploring numerous aspects of the Bitcoin protocol like cryptographic keys, HD wallet, consensus, mining, forks, transactions (legacy and Segwit format), etc.",
+    "projects": {
+      "bitcoinJS": {
+        "title": "BITCOIN PROGRAMMING WITH BITCOINJS - GUIDE",
+        "p1": "If you are interested in learning Bitcoin programming using Javascript, you should definitely check out the open-source guide we wrote on BitcoinJS. We present how to perform all of the various types of transaction. This guide is sufficiently detailed to be accessible to new developers.<1></1><2>➱ Bitcoin Programming with BitcoinJS</2>"
+      },
+      "bitcoin-vm": {
+        "title": "BITCOIN VIRTUAL MACHINE IMAGE BUILDER",
+        "p1": " This tool is made of three technologies, Packer, Vagrant and Ansible, allowing us to generate an Ubuntu 18.10 VirtualBox image and a Vagrant box packaged with softwares for Bitcoin / Lightning Network. You can find Bitcoin Core, LND, c-lightning, Electrum, the BitcoinJS guide above, etc.<1></1> The image is ideal for Bitcoin workshops, hackathons, etc. <3></3><4>➱ Vagrant box</4><5></5><6>➱ VirtualBox image</6><7></7><8>➱ Github Repository</8>"
+      },
+      "mnemonic": {
+        "title": "BITCOIN MNEMONIC CODE TEMPLATE",
+        "p1": "A handy template to write down your mnemonic code (24 words back up). The idea behind it is to have a document that gathers all the necessary information you need to be able to recover coins. In particular, it prompts the user to fill in the derivation path, assuming the user knows or will search for it. Having the right mnemonic code, but missing the derivation path does not permit coin recovery might make it very difficult to recover coins. Finally, this template got its inspiration from the reading of Pamela Morgan <1>Cryptoasset Inheritance Planning</1> book. Bitcoin owners should make sure that the funds are redeemable by their heirs in the eventuality of their death.<3></3><4>➱ Bitcoin Mnemonic Code Template</4>"
+      }
+    },
+    "slides": {
+      "title": "BITCOIN TRAININGS SLIDES",
+      "download": "DOWNLOAD",
+      "slidesDesc": "You can download all the presentations <1>here</1>."
+    }
+  },
+  "About" : {
+    "title": "ABOUT",
+    "hero": "Geographically based in Lisbon, fiscally based in France, Bitcoin Studio is led by Stéphane Roche, Bitcoin developer, educator, consultant and convinced cypherpunk activist.",
+    "about-content-1": "Stéphane starts working on Bitcoin in 2015 at the hardware wallet company Ledger. From 2016 to mid-2017 he is working on the Ethereum Platform. He has co-founded the french non-profit organization Asseth to promote Ethereum, now the biggest Ethereum non-profit across Europe and created the website <1>asseth.fr</1>. To develop his skills, he undertook research work on the Dao1901 dapp, using Web3 and state of the art Javascript libraries, to later be involved in the making of the <3>Dether.io</3> smart contracts and Javascript tests.",
+    "about-content-2": "Since mid-2017, he is focusing uniquely on Bitcoin, building a solid expertise and now offering Bitcoin workshops and custom development. Coming from web development (and before that Archaeology, History and audiovisual archivist... yes it's a long story), Stéphane masters technologies like Typescript, Fusebox, React, Redux, Redux-sagas, etc. Over the years he gained a fair bit of experience on Bitcoin, blockchain technology, computer science, project management, and is capable of successfully bring your project to fruition in a timely manner."
+  }
+}
