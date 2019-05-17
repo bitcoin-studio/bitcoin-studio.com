@@ -17,7 +17,7 @@ class Footer extends React.Component<IProps, {}> {
              <li><a href="">{t('col1.1')}</a></li>
              <li><a href="./about">{t('col1.2')}</a></li>
              <li><a href="./resources">{t('col1.3')}</a></li>
-             <li><a href='&#109;ailto&#58;&#114;s&#116;eph%61ne&#37;40%70ro%74%6Fn&#37;6D&#97;il&#46;co&#37;6&#68;'>{t('col1.4')}</a></li>
+             <li><a href='m&#97;ilto&#58;bitc&#111;&#105;n&#37;2&#68;st&#117;d%69o&#64;pro%&#55;&#52;&#111;nm%61%69l&#46;co&#109;'>{t('col1.4')}</a></li>
            </ul>
          </nav>
        </div>

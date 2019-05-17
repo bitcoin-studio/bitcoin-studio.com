@@ -204,4 +204,5 @@ class Resources extends React.Component<IProps, IState> {
   }
 }
 
+// @ts-ignore
 export default  withNamespaces('Resources')(Resources)
