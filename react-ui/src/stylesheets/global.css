@@ -165,8 +165,9 @@ h3 {
     Links
  */
 a {
-    text-decoration: none;
     color: #1a057d;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
 }
 a:hover {
     color: #f79513;
