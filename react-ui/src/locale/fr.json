@@ -25,8 +25,8 @@
     "hero": "Nous proposons du développement logiciel, des formations et du conseil axés sur la technologie Bitcoin. Envie de découvrir Bitcoin, de l'intégrer à votre site web ou de développer un nouveau produit? Envie de posséder votre propre nœud Bitcoin et apprendre à vous en servir? Bitcoin Studio est à votre écoute!",
     "services": {
       "title": "UNE ENTREPRISE DÉDIÉE À BITCOIN",
-      "p1": "Fasciné par l’idée d’une monnaie numérique décentralisée, sans autorité centrale, open source, résistante à la censure, nous sommes convaincu chez Bitcoin Studio qu'il s'agit d'une révolution et nous avons la ferme volonté d'y prendre part. L'entreprise est dirigée par Stéphane Roche, développeur et éducateur Bitcoin, sur le terrain depuis 2014. Selon vos besoins, une équipe peut être constituée.",
-      "p2": "Si vous regardez autour de vous, de plus en plus de personnes s'intéressent à cet étrange et intangible monnaie. Beaucoup en rient aussi! Ce n'est pas un problème. Nous savons pourquoi nous sommes ici. Cette technologie est certainement la plus grande révolution de notre siècle et nous voulons en faire partie."
+      "p1": "Fascinés par l’idée d’une monnaie numérique décentralisée, sans autorité centrale, open source, résistante à la censure, nous sommes convaincus chez Bitcoin Studio qu'il s'agit d'une révolution et nous avons la ferme volonté d'y prendre part. L'entreprise est dirigée par Stéphane Roche, développeur et éducateur Bitcoin, sur le terrain depuis 2014. Selon vos besoins, une équipe peut être constituée.",
+      "p2": "Si vous regardez autour de vous, de plus en plus de personnes s'intéressent à cette étrange et intangible monnaie. Beaucoup en rient aussi! Ce n'est pas un problème. Nous savons pourquoi nous sommes ici. Cette technologie est certainement la plus grande révolution de notre siècle et nous voulons en faire partie."
     },
     "servicesDetails": {
       "1": {
@@ -38,12 +38,12 @@
         "desc": "Nous proposons des formations techniques et non-techniques. Alternant contenu pédagogique de qualité et atelier pratique, vous serez rapidement à même de maîtriser la technologie."
       },
       "3": {
-        "title": "Formations interne",
+        "title": "Formations internes",
         "desc": "Des formations peuvent également être données directement au sein de votre entreprise, adaptées à vos besoins spécifiques."
       },
       "4": {
         "title": "Conseil",
-        "desc": "Bitcoin Studio peut intervenir sur une multitude de cas. Conseil sur la gestion clés cryptographiques, aide à la récupération de portefeuille, récupérer de l'argent issu de forks, etc."
+        "desc": "Bitcoin Studio peut intervenir sur une multitude de cas. Conseil sur la gestion de clés cryptographiques, aide à la récupération de portefeuille, récupérer de l'argent issu de forks, etc."
       },
       "5": {
         "title": "Infrastructure",
@@ -83,7 +83,7 @@
       "duration": "1 JOURNÉE",
       "goals": {
         "title": "OBJECTIFS",
-        "p1": "L'objectif de cet atelier d'une journée est de vous aider à vous familiariser avec la technologie Bitcoin. Vous bénéficierez de la vaste expérience du formateur, apprendrez comment stocker en toute sécurité vos bitcoins et comment les utiliser en toute confiance. Tout en étant le moins technique possible, vous devrez néanmoins comprendre quelques concepts techniques simples."
+        "p1": "L'objectif de cet atelier d'une journée est de vous aider à vous familiariser avec la technologie Bitcoin. Vous bénéficierez de la vaste expérience du formateur, apprendrez comment stocker en toute sécurité vos bitcoins et comment utiliser le système en toute confiance. Tout en étant le moins technique possible, vous devrez néanmoins comprendre quelques concepts techniques simples."
       },
       "public": {
         "title": "PUBLIC ET PRÉREQUIS",
@@ -111,9 +111,9 @@
       },
       "programme": {
         "title": "PROGRAMME",
-        "p1": "Pour commencer, nous rappelerons les bases du fonctionnement de la blockchain, le modèle UTXO et le système de smart-contracts. Nous nous concentrerons ensuite sur Bitcoin Core et son API. Les participants devront installer le logiciel sur leur machine (ou utiliseront la machine virtuelle fournie), et vont apprendre à interagir avec un nœud Bitcoin et effectuer différents types de transactions. En commençant par les commandes les plus simples, nous explorerons progressivement la manière de créer manuellement des transactions plus complexes.",
-        "p2": "Dans un second temps, nous travaillerons avec la bibliothèque BitcoinJS pour composer diverses transactions en Javascript. Nous allons créer des transactions P2PKH simples, utilisées pour envoyer des bitcoins à une personne; de l'ancrage de données en utilisant un type spécial de transaction utilisant la fonction OP_RETURN; enfin des P2SH, consistants à verrouiller des bitcoins sur un smart-contract arbitraire. Nous aurons l'occasion d'étudier le langage de smart-contract propre à Bitcoin, lequel nous permet de construire une multitude smart-contracts tels que des équations algébriques, des verrous temporels, des puzzles cryptographiques et des smart-contracts qui mélangent tout cela, verrouillés par plusieurs personnes.",
-        "p3": "À la fin de cette journée, vous comprendrez comment fonctionne une transaction Bitcoin en interne, comment lire une transaction brute, comment interagir avec un nœud et en extraire diverses informations, de même que créer manuellement des transactions et les envoyer sur le réseau.",
+        "p1": "Pour commencer, nous rappelerons les bases du fonctionnement de la blockchain, le modèle UTXO et le système de smart-contracts. Nous nous concentrerons ensuite sur Bitcoin Core et son API. Les participants vont apprendre à interagir avec un nœud Bitcoin et effectuer différents types de transactions. En commençant par les commandes les plus simples, nous explorerons progressivement la manière de créer manuellement des transactions plus complexes.",
+        "p2": "Dans un second temps, nous travaillerons avec la bibliothèque BitcoinJS pour composer diverses transactions en Javascript. Nous allons créer des transactions P2PKH simples, utilisées pour envoyer des bitcoins à une personne; de l'ancrage de données en utilisant la fonction spéciale OP_RETURN; enfin des P2SH, consistants à verrouiller des bitcoins sur un smart-contract arbitraire. Nous aurons l'occasion d'étudier le langage de smart-contract propre à Bitcoin, lequel nous permet de construire une multitude smart-contracts tels que des équations algébriques, des verrous temporels, des puzzles cryptographiques, des multi-signatures et des smart-contracts qui mélangent tout cela.",
+        "p3": "À la fin de cette journée, vous comprendrez comment fonctionne une transaction Bitcoin en interne, comment lire une transaction brute, comment interagir avec un nœud et en extraire diverses informations, de même que créer manuellement des transactions et les envoyer sur le réseau. Vous découvrirez également le langage de script de Bitcoin et ce qu'il est possible de faire avec les smart-contracts.",
         "p4": "Enfin, veuillez noter que nous ne passerons pas trop de temps sur le nouveau format de transaction Segwit car il nécessite de déjà maîtriser la programmation Bitcoin et n'est en aucun cas essentiel pour cette formation d'introduction."
       }
     },
@@ -128,7 +128,7 @@
   },
   "Resources": {
     "title": "RESSOURCES",
-    "hero": "Chez Bitcoin Studio, nous sommes fermement résolus à faire progresser la communauté tech Bitcoin. C'est pourquoi nous mettons gratuitement à la disposition de tous divers travaux. Notamment, les présentations réalisées par Stéphane Roche explorent de nombreux aspects du protocole Bitcoin: clés cryptographiques, portefeuille, consensus, mining, forks, transactions (formats Legacy et Segwit), etc.",
+    "hero": "Chez Bitcoin Studio, nous sommes fermement résolus à faire progresser la communauté Bitcoin. C'est pourquoi nous mettons gratuitement à la disposition de tous divers travaux. Notamment, les présentations réalisées par Stéphane Roche explorent de nombreux aspects du protocole Bitcoin: clés cryptographiques, portefeuille, consensus, mining, forks, transactions (formats Legacy et Segwit), etc.",
     "projects": {
       "bitcoinJS": {
         "title": "Programmation Bitcoin avec BitcoinJS - Guide",
