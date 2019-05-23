@@ -107,7 +107,7 @@
       "public": {
         "title": "PUBLIC AND PREREQUISITE",
         "p1": "This training is technical and only accessible to people who are comfortable with computers, Javascript (beginner level) and the command line. It is strongly recommended that you first have a good understanding of Bitcoin, starting for example with the Mastering Bitcoin Fundamentals course.",
-        "p2": "We will type Bash commands in a terminal and Javascript commands in a Node.js console. Bitcoin Core, Node.js, jq and a code editor will need to be installed on your computer. If you can not or do not want to configure this environment on your machine, you can download the <1>Virtual Box image</1> that we provide, which includes all the required software. Also note that we are going to work in Regtest mode, which creates a fake local blockchain on the machine, so we do not need to download or sync a heavy blockchain."
+        "p2": "We will type Bash commands in a terminal and Javascript commands in a Node.js console. Bitcoin Core, Node.js, jq and a code editor will need to be installed on your computer. If you can not or do not want to configure this environment on your machine, you can download the <1>Virtual Box image</1> or use the <3>Vagrant box</3> that we provide, which includes all the required software. Also note that we are going to work in Regtest mode, which creates a fake local blockchain on the machine, so we do not need to download or sync a heavy blockchain."
       },
       "programme": {
         "title": "PROGRAMME",

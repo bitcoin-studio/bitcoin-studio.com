@@ -102,7 +102,8 @@ class Workshops extends React.Component<IProps, IState> {
               <p>{t('programming-offer.public.p1')}</p>
               <p>
                 <Trans i18nKey={"programming-offer.public.p2"}>
-                0 <a href="https://keybase.pub/janakasteph/Bitcoin-VirtualMachine/" target={'_blank'}>Ubuntu Virtual Machine image</a> 1
+                  0 <a href="https://keybase.pub/janakasteph/Bitcoin-VirtualMachine/" target={'_blank'}>Ubuntu Virtual Machine image</a>
+                  2 <a href="https://app.vagrantup.com/bitcoin-studio/boxes/Bitcoin-VirtualMachine" target={'_blank'}>Vagrant box</a>
                 </Trans>
               </p>
             </div>
