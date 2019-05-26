@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const cluster = require('cluster');
 const numCPUs = require('os').cpus().length;
-const forceDomain = require('forcedomain');
+//const forceDomain = require('forcedomain');
 
 const PORT = process.env.PORT || 3000;
 
@@ -22,10 +22,12 @@ if (cluster.isMaster) {
 } else {
   const app = express();
 
+  /*
   app.use(forceDomain({
     hostname: 'www.bitcoin-studio.com',
     protocol: 'https'
   }));
+  */
 
   // Priority serve any static files.
   app.use(express.static(path.resolve(__dirname, '../react-ui/build')));
