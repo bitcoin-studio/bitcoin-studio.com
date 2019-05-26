@@ -4,7 +4,7 @@ const cluster = require('cluster');
 const numCPUs = require('os').cpus().length;
 const forceDomain = require('forcedomain');
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 // Multi-process to utilize all CPU cores.
 if (cluster.isMaster) {
