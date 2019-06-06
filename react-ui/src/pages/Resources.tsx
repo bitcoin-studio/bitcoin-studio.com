@@ -63,10 +63,10 @@ class Resources extends React.Component<IProps, IState> {
           <div className={'slideItemContainer2'}>
             <div className={'slideItemContainer'}>
               <object className={'slideItem'} type={'application/pdf'}
-                      data="workshopSlides/Technical_Intro_Bitcoin_S_Roche_LQ.pdf"></object>
+                      data="workshopSlides/Technical_Intro_Bitcoin_S_Roche_HQ.pdf"></object>
             </div>
             <div className="slideButton">
-              <a href="workshopSlides/Technical_Intro_Bitcoin_S_Roche_LQ.pdf" download>{t('slides.download')}</a>
+              <a href="workshopSlides/Technical_Intro_Bitcoin_S_Roche_HQ.pdf" download>{t('slides.download')}</a>
             </div>
           </div>
 
