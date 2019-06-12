@@ -83,10 +83,10 @@ class Resources extends React.Component<IProps, IState> {
           <div className={'slideItemContainer2'}>
             <div className={'slideItemContainer'}>
               <object className={'slideItem'} type={'application/pdf'}
-                      data="workshopSlides/Bitcoin_Forks_history_S_Roche.pdf"></object>
+                      data="workshopSlides/Bitcoin_Forks_History_S_Roche.pdf"></object>
             </div>
             <div className="slideButton">
-              <a href="workshopSlides/Bitcoin_Forks_history_S_Roche.pdf" download>{t('slides.download')}</a>
+              <a href="workshopSlides/Bitcoin_Forks_History_S_Roche.pdf" download>{t('slides.download')}</a>
             </div>
           </div>
 
@@ -114,10 +114,10 @@ class Resources extends React.Component<IProps, IState> {
           <div className={'slideItemContainer2'}>
             <div className={'slideItemContainer'}>
               <object className={'slideItem'} type={'application/pdf'}
-                      data="workshopSlides/Bitcoin_transaction_S_Roche.pdf"></object>
+                      data="workshopSlides/Bitcoin_Transaction_S_Roche.pdf"></object>
             </div>
             <div className="slideButton">
-            <a href="workshopSlides/Bitcoin_transaction_S_Roche.pdf" download>{t('slides.download')}</a>
+            <a href="workshopSlides/Bitcoin_Transaction_S_Roche.pdf" download>{t('slides.download')}</a>
             </div>
           </div>
 
