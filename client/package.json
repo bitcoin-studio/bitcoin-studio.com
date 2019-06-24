@@ -10,7 +10,6 @@
     "fuse-box-react-scripts-ts": "^4.0.4"
   },
   "dependencies": {
-    "express": "^4.16.4",
     "fuse-react": "^2.0.8",
     "i18next": "^15.1.0",
     "i18next-browser-languagedetector": "^3.0.1",
