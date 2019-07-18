@@ -141,6 +141,10 @@
       "mnemonic": {
         "title": "BITCOIN MNEMONIC CODE TEMPLATE",
         "p1": "A convenient template to fill in your mnemonic code (24 words backup) as well as any other information needed to restore your bitcoins to a new wallet. The document notably invites the user to enter the derivation path, assuming that the user knows or searches for it. Having the right mnemonic code without the derivation path does not allow recovery of your bitcoins. Finally, this template is inspired by the reading of Pamela Morgan's book <1>Cryptoasset Inheritance Planning</1>. One of the key ideas is to ensure that the heirs of bitcoin owners can recover the funds in the event of their death.<3></3><4>➱ Bitcoin Mnemonic Code Template</4>"
+      },
+      "utxo": {
+        "title": "TRANSACTION TEMPLATES",
+        "p1": "Various Bitcoin transaction templates, varying the types of output and the number of inputs/outputs. This educational exercise teaches how the UTXO model works, the different types of standard scripts, the calculation of transaction fees, and so on. <1></1> <2>➱ Bitcoin Transaction Templates</2>"
       }
     },
     "slides": {

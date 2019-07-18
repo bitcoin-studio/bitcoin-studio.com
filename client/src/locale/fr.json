@@ -140,7 +140,11 @@
       },
       "mnemonic": {
         "title": "GABARIT DE CODE MNEMONIQUE BITCOIN",
-        "p1": "Un gabarit pratique pour renseigner votre code mnémonique (sauvegarde de 24 mots) ainsi que toute autre information nécessaire au rétablissement de vos bitcoins sur un nouveau portefeuille. Le document invite notamment l'utilisateur à renseigner le chemin de dérivation, en supposant que l'utilisateur le connaisse ou le recherche. Avoir le bon code mnémonique sans le chemin de dérivation ne permet pas la récupération de vos bitcoins. Enfin, ce gabarit s’inspire de la lecture du livre de Pamela Morgan <1>Cryptoasset Inheritance Planning</1>. Une des grandes idées directrices est de s'assurer que les héritiers des propriétaires de bitcoins puissent récupérer les fonds dans l’éventualité de leur décès.<3></3><4>➱ Gabarit de code mnémonique</4>"
+        "p1": "Un gabarit pratique pour renseigner votre code mnémonique (sauvegarde de 24 mots) ainsi que toute autre information nécessaire au rétablissement de vos bitcoins sur un nouveau portefeuille. Le document invite notamment l'utilisateur à renseigner le chemin de dérivation, en supposant que l'utilisateur le connaisse ou le recherche. Avoir le bon code mnémonique sans le chemin de dérivation ne permet pas la récupération de vos bitcoins. Enfin, ce gabarit s’inspire de la lecture du livre de Pamela Morgan <1>Cryptoasset Inheritance Planning</1>. Une des grandes idées directrices est de s'assurer que les héritiers des propriétaires de bitcoins puissent récupérer les fonds dans l’éventualité de leur décès.<3></3><4>➱ Gabarit de Code Mnémonique</4>"
+      },
+      "utxo": {
+        "title": "GABARITS DE TRANSACTIONS",
+        "p1": "Divers gabarits de transactions Bitcoin, variants le type d'output et le nombre d'inputs/outputs. Cet exercice pédagogique permet d'apprendre le fonctionnement du modèle UTXO, les différents types de script standard, le calcul des frais de transactions, etc. <1></1> <2>➱ Gabarits de Transaction Bitcoin</2>"
       }
     },
     "slides": {

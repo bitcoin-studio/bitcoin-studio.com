@@ -54,6 +54,15 @@ class Resources extends React.Component<IProps, IState> {
               <a href="assets/bitcoin_mnemonic_code_template.pdf" download>➱ Bitcoin Mnemonic Code Template</a>
             </Trans>
           </p>
+
+          <h2 className={'mt35'}>{t('projects.utxo.title')}</h2>
+          <p>
+            <Trans i18nKey={"projects.utxo.p1"}>
+              FAKE TEXT BLA BLA
+              <br/>
+              <a href="assets/transactions_utxo_model.pdf" download>➱ Bitcoin Transactions Templates</a>
+            </Trans>
+          </p>
         </section>
 
         <section id={'slides-resourcesPage'}>
