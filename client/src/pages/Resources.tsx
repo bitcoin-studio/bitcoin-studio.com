@@ -204,7 +204,8 @@ class Resources extends React.Component<IProps, IState> {
 
           <p className={"slidesDesc"}>
             <Trans i18nKey={"slides.slidesDesc"}>
-              You can download all the presentations <a href="workshopSlides/Bitcoin_Slides_S_Roche.zip" download>here</a>.
+              You can download all the presentations <a href="workshopSlides/Bitcoin_Slides_S_Roche.zip" download>here</a> or
+              consult them on <a href="https://www.slideshare.net/bitcoin-studio" target={"_blank"}>SlideShare</a>.
             </Trans>
           </p>
         </section>
