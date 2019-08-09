@@ -63,6 +63,26 @@ class Resources extends React.Component<IProps, IState> {
               <a href="assets/transactions_utxo_model.pdf" download>➱ Bitcoin Transactions Templates</a>
             </Trans>
           </p>
+
+          <h2 className={'mt35'}>{t('projects.nespressoLN.title')}</h2>
+          <div id={'nespressoLightningDesc'}>
+            <p>
+              <Trans i18nKey={"projects.nespressoLN.p1"}>
+                FAKE TEXT BLA BLA
+                <a href="https://www.elecrow.com/wiki/index.php?title=ESP8266_IOT_Board(Arduino_IDE_or_NodeMCU_Lua_Programming)" target={"_blank"}>ESP8266 --</a>
+                FAKE TEXT BLA BLA
+                <a href="http://theblock.cafe/" target={"_blank"}>The Block --</a>
+                FAKE TEXT BLA BLA
+                <br/>
+                <a href="https://coffee.bitcoin-studio.com" target={"_blank"}>➱ The custom user interface</a><br/>
+                <a href="https://github.com/bitcoin-studio/LightningNespressoUI" target={"_blank"}>➱ The custom user interface code</a><br/>
+                <a href="https://github.com/bitcoin-studio/LightningNespressoServer" target={"_blank"}>➱ The code that runs on the board</a><br/>
+                <a href="https://www.thingiverse.com/thing:3772726" target={"_blank"}>➱ CAD Files on Thingiverse</a><br/>
+                <a href="https://www.yoctopuce.com/EN/article/an-automatic-nespresso-capsule-dispenser" target={"_blank"}>➱ More info about the original machine</a>
+              </Trans>
+            </p>
+            <img src="assets/NespressoLightning_1.jpg" alt="Nespresso Lightning Vending Machine"/>
+          </div>
         </section>
 
         <section id={'slides-resourcesPage'}>

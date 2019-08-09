@@ -145,6 +145,10 @@
       "utxo": {
         "title": "GABARITS DE TRANSACTIONS",
         "p1": "Divers gabarits de transactions Bitcoin, variants le type d'output et le nombre d'inputs/outputs. Cet exercice pédagogique permet d'apprendre le fonctionnement du modèle UTXO, les différents types de script standard, le calcul des frais de transactions, etc. <1></1> <2>➱ Gabarits de Transaction Bitcoin</2>"
+      },
+      "nespressoLN": {
+        "title": "DISTRIBUTEUR DE CAPSULE NESPRESSO",
+        "p1": "Il s'agit d'un distributeur automatique de capsules Nespresso qui prend le Bitcoin via Lightning Network ! La machine a été réalisée en FabLab avec une découpeuse laser et une imprimante 3D. Une carte <1>ESP8266</1> avec WiFi contrôle cinq servomoteurs permettant de délivrer la capsule, le tout programmé avec le langage Lua. Quant à l'interface utilisateur, elle se décline en deux versions. Les clients peuvent payer via une application Web que j'ai réalisé, ou par le biais d'une application \"point de vente\" BTCPay. La machine est actuellement en service au coworking <3>The Block</3> à Lisbonne. <5></5> <6>➱ L'application point de vente</6> <7></7> <8>➱ Le code de l'application point de vente</8> <9></9> <10>➱ Le code qui s'exécute sur la carte IOT</10> <11></11> <12>➱ Les fichiers de CAD sur Thingiverse</12> <13></13> <14>➱ Plus d'info à propos de la machine originale</14>"
       }
     },
     "slides": {
