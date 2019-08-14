@@ -74,6 +74,8 @@ class Resources extends React.Component<IProps, IState> {
                 <a href="http://theblock.cafe/" target={"_blank"}>The Block --</a>
                 FAKE TEXT BLA BLA
                 <br/>
+                FAKE TEXT BLA BLA
+                <br/>
                 <a href="https://coffee.bitcoin-studio.com" target={"_blank"}>➱ The custom user interface</a><br/>
                 <a href="https://github.com/bitcoin-studio/LightningNespressoUI" target={"_blank"}>➱ The custom user interface code</a><br/>
                 <a href="https://github.com/bitcoin-studio/LightningNespressoServer" target={"_blank"}>➱ The code that runs on the board</a><br/>
