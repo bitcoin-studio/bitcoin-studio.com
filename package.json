@@ -28,6 +28,11 @@
     "Fusebox",
     "react"
   ],
+  "author": {
+    "name": "Stephane Roche",
+    "email": "bitcoin-studio@protonmail.com",
+    "url": "https://bitcoin-studio.com"
+  },
   "license": "MIT",
   "devDependencies": {}
 }

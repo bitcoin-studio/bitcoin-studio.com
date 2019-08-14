@@ -2,6 +2,11 @@
   "name": "bitcoin-studio",
   "version": "1.0.0",
   "private": true,
+  "author": {
+    "name": "Stephane Roche",
+    "email": "bitcoin-studio@protonmail.com",
+    "url": "https://bitcoin-studio.com"
+  },
   "devDependencies": {
     "@types/node": "^12.0.1",
     "@types/react": "^16.8.17",
