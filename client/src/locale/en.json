@@ -22,7 +22,7 @@
     }
   },
   "Home": {
-    "hero": "We offer software development, training and consulting focused on Bitcoin technology. Want to discover Bitcoin, integrate it into your website or develop a new product? Want to own your own Bitcoin node and learn how to use it? Bitcoin Studio is here for you!",
+    "hero": "We offer software development, training and consulting focused on Bitcoin technology. Want to discover Bitcoin, integrate it into your website or develop a new product? Want to possess your own Bitcoin node and learn how to use it? Bitcoin Studio is here for you!",
     "services": {
       "title": "A COMPANY DEDICATED TO BITCOIN",
       "p1": "Fascinated by the idea of a decentralized digital currency, without central authority, open source, resistant to censorship, we are convinced at Bitcoin Studio that this is a revolution and we are determined to take part in it. The company is managed by Stéphane Roche, Bitcoin developer and educator, in the field since 2014. Depending on your needs, a team can be formed.",
@@ -159,7 +159,7 @@
   },
   "About" : {
     "title": "ABOUT",
-    "hero": "Geographically based in Lisbon, fiscally based in France, Bitcoin Studio is led by Stéphane Roche, Bitcoin developer, educator, consultant and convinced cypherpunk activist.",
+    "hero": "Bitcoin Studio has been founded by Stéphane Roche, Bitcoin and web developer, educator, consultant, maker and convinced cypherpunk.",
     "about-content-1": "Stéphane started working on Bitcoin in 2015 at the French hardware wallet company Ledger. From 2016 to mid-2017, he works on the Ethereum platform. He co-founded the non-profit French association Asseth to promote Ethereum, today the largest Ethereum association in Europe, as well as creating its website <1>asseth.fr</1>. To develop his skills he undertook various works using and contributing to software libraries of the nascent ecosystem before participating in the <3>Dether.io</3> project.",
     "about-content-2": "Since mid-2017, he focuses exclusively on Bitcoin, developing solid expertise and offering trainings (Breaking Bitcoin 2019, Alyra, Eureka, ...), workshops, consulting and custom software development. Coming from web development (and before that audiovisual archivist, Archeology and History ...), Stéphane has a good mastery of web technologies. Over the years, he has gained a lot of experience on Bitcoin, blockchain technology, a multitude of areas of IT, project management and will be able to meet your needs."
   }

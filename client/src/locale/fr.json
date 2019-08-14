@@ -22,7 +22,7 @@
     }
   },
   "Home": {
-    "hero": "Nous proposons du développement logiciel, des formations et du conseil axés sur la technologie Bitcoin. Envie de découvrir Bitcoin, de l'intégrer à votre site web ou de développer un nouveau produit? Envie de posséder votre propre nœud Bitcoin et apprendre à vous en servir? Bitcoin Studio est à votre écoute!",
+    "hero": "Nous proposons du développement logiciel, des formations et du conseil axés sur la technologie Bitcoin. Envie de découvrir Bitcoin, de l'intégrer à votre site web ou de développer un nouveau produit? Envie de posséder votre propre nœud Bitcoin et apprendre à vous en servir? Bitcoin Studio est là pour vous!",
     "services": {
       "title": "UNE ENTREPRISE DÉDIÉE À BITCOIN",
       "p1": "Fascinés par l’idée d’une monnaie numérique décentralisée, sans autorité centrale, open source, résistante à la censure, nous sommes convaincus chez Bitcoin Studio qu'il s'agit d'une révolution et nous avons la ferme volonté d'y prendre part. L'entreprise est dirigée par Stéphane Roche, développeur et éducateur Bitcoin, sur le terrain depuis 2014. Selon vos besoins, une équipe peut être constituée.",
@@ -159,7 +159,7 @@
   },
   "About": {
     "title": "À PROPOS",
-    "hero": "Géographiquement basé à Lisbonne, basé fiscalement en France, Bitcoin Studio est dirigé par Stéphane Roche, développeur, éducateur, consultant en Bitcoin et militant cypherpunk convaincu.",
+    "hero": "Bitcoin Studio a été fondé par Stéphane Roche, développeur Bitcoin et web, éducateur, consultant, maker et cypherpunk convaincu.",
     "about-content-1": "Stéphane a commencé à travailler sur Bitcoin en 2015 au sein de la société de portefeuille matériel Ledger. De 2016 à mi-2017, il travaille sur la plateforme Ethereum. Il a cofondé l'association française à but non lucratif Asseth visant à promouvoir Ethereum, aujourd'hui la plus grande association Ethereum en Europe, de même qu'il a créé son site Web <1>asseth.fr</1>. Pour développer ses compétences il a entrepris divers travaux utilisant et contribuant aux bibiothèques logiciels de l'écosystème naissant, avant de participer au projet <3>Dether.io</3>.",
     "about-content-2": "Depuis mi-2017, il se concentre exclusivement sur Bitcoin, développant une solide expertise et proposant formations (Breaking Bitcoin 2019, Alyra, Eureka, ...), ateliers, conseil et développement logiciel sur mesure. Venant du développement web (et avant cela archiviste audiovisuel, Archéologie et Histoire...), Stéphane a notamment une bonne maîtrise des technologies web. Au fil des années, il a gagné beaucoup d’expérience sur Bitcoin, la technologie de blockchain, une multitude de domaines de l'informatique, la gestion de projet et sera capable de répondre à vos besoins."
   }
