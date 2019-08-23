@@ -1,19 +1,13 @@
 /**
     Polices
-
-    TrumpGothicEastMedium => Pathway Gothic One  (headers)
-
-    republic-web => roboto slab (normal text)
-
-    pill-gothic => roboto condensed (bold text)
-
-
+    - Pathway Gothic One  (headers)
+    - Roboto Slab (normal text)
+    - Roboto Condensed (bold text)
 
     CSS Grid
-    .wrapper => 5 cols (1, 2, 6, 2, 1)  nav, main, footer
-
-    main > div => 3 cols (2, 6, 2)
-
+    Same grid on .wrapper and main > div
+    5 cols (1, 2, 6, 2, 1)
+    Need to repeat as subgrid is not available yet
 
     Colors
     primary: #39444a;
@@ -41,52 +35,22 @@ body {
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr 6fr 2fr 1fr;
+    grid-template-areas:
+            "nav         nav         nav         nav         nav"
+            "main        main        main        main        main"
+            ".           footer      footer      footer      ."
+            ".           copyrights  copyrights  copyrights  .";
 }
-@media screen and (max-width: 550px) {
-    .wrapper {
-        grid-template-areas:
-                "nav         nav         nav       nav           nav"
-                ".           main        main        main        ."
-                ".           footer      footer      footer      ."
-                ".           copyrights  copyrights  copyrights  .";
-    }
-}
-@media screen
-and (min-width: 550px)
-and (max-width: 980px) {
-    .wrapper {
-        grid-template-areas:
-                "nav         nav         nav         nav         nav"
-                ".           main        main        main        ."
-                ".           footer      footer      footer      ."
-                ".           copyrights  copyrights  copyrights  .";
-    }
-}
-@media screen and (min-width: 980px) {
-    .wrapper {
-        grid-template-areas:
-                "nav         nav         nav         nav         nav"
-                "bg          bg          bg          bg          bg"
-                ".           main        main        main        ."
-                ".           footer      footer      footer      ."
-                ".           copyrights  copyrights  copyrights  .";
-    }
-}
-
-
 
 main {
     grid-area: main;
 }
 main > div {
     display: grid;
-    grid-template-columns: 2fr 6fr 2fr;
+    grid-template-columns: 1fr 2fr 6fr 2fr 1fr;
     font-family: "Roboto Slab",serif;
     font-size: 15px;
     letter-spacing: 0.3px;
-}
-.bgHome {
-    grid-area: bg;
 }
 
 /**
@@ -164,9 +128,7 @@ h3 {
 }
 
 
-/**
-    Links
- */
+/* Links --- */
 a {
     color: #1a057d;
     text-decoration: none;
@@ -175,6 +137,7 @@ a {
 a:hover {
     color: #f79513;
 }
+/* ---- */
 
 section {
     margin: 30px 0;
@@ -208,6 +171,12 @@ section {
     font-weight: normal;
     margin: 0 15px;
 }
+@media screen
+and (max-width: 350px) {
+    .nav ul li {
+        margin: 0 10px;
+    }
+}
 .nav ul li:first-child {
     position: absolute;
     top: 0px;
@@ -215,23 +184,20 @@ section {
     width: 50px;
     margin: 10px 0 0 120px;
 }
+@media screen
+and (max-width: 550px) {
+    .nav ul li:first-child {
+        margin: 10px 0 0 10px;
+    }
+}
 
-/*
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 620px) {
     .nav ul li {
         font-size: 16px;
         letter-spacing: -1px;
         left: 0;
     }
 }
-@media screen
-and (min-width: 550px)
-and (max-width: 980px) {
-    .nav ul li {
-        left: 0;
-    }
-}
-*/
 
 .nav ul li a {
     color: #39444a;
@@ -239,41 +205,11 @@ and (max-width: 980px) {
     cursor: pointer;
 }
 
-/*
-@media screen and (max-width: 550px) {
-    .nav ul li a {
-        width: 60px;
-        padding: 80px 0 0 0;
-    }
-}
-@media screen
-and (min-width: 550px)
-and (max-width: 980px) {
-    .nav ul li a {
-        padding: 80px 12px 10px 12px;
-    }
+/* Hero ---- */
+.hero {
+    margin-top: 30px;
 }
 
-
-
-.nav ul li a:hover {
-    background: url(../assets/img/nav_item_hover.png) top no-repeat;
-    text-decoration: none;
-}
-
-.nav ul li a.active {
-    background: url(../assets/img/nav_item_active.png) no-repeat 50% 0px;
-    color: #fff;
-}
-
-#translation-btn button {
-    width: 35px;
-}
-*/
-
-/**
-    Hero
- */
 .hero p {
     font-family: "Roboto Condensed", sans-serif;
     font-style: normal;
@@ -282,12 +218,10 @@ and (max-width: 980px) {
     line-height: 160%;
     margin-bottom: 30px;
 }
+/* ---- */
 
 
-
-/**
-    FOOTER
- */
+/* FOOTER */
 footer {
     grid-area: footer;
     display: flex;
@@ -357,6 +291,7 @@ footer > div > nav > ul > li > a:hover {
         display: none;
     }
 }
+/* ---- */
 
 #copyrights {
     grid-area: copyrights;

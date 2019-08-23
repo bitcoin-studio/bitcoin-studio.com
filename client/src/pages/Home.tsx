@@ -3,10 +3,6 @@ import { withNamespaces } from 'react-i18next'
 
 // Import assets
 // @ts-ignore
-const lisbon = import('../assets/img/lisbon.jpg')
-// @ts-ignore
-const btc_logo = import('../assets/img/btc_logo.png')
-// @ts-ignore
 const software_512 = import('../assets/img/home_software_512.png')
 // @ts-ignore
 const education_512 = import('../assets/img/home_education_512.png')
@@ -21,8 +17,6 @@ interface IProps {
   t: ((string) => string)
 }
 interface IState {
-  lisbon?: string,
-  btc_logo?: string,
   software_512?: string,
   education_512?: string,
   thought_512?: string,
@@ -35,8 +29,6 @@ class Home extends React.Component<IProps, IState> {
   constructor(props) {
     super(props)
     this.state = {
-      lisbon: '',
-      btc_logo:'',
       software_512: '',
       education_512: '',
       thought_512: '',
@@ -47,8 +39,6 @@ class Home extends React.Component<IProps, IState> {
 
   async componentDidMount() {
     this.setState({
-      lisbon: await lisbon.then(),
-      btc_logo: await btc_logo.then(),
       software_512: await software_512.then(),
       education_512: await education_512.then(),
       thought_512: await thought_512.then(),
@@ -61,6 +51,12 @@ class Home extends React.Component<IProps, IState> {
     const {t} = this.props
     return (
       <div id={'homePage'}>
+        <section id={'bgHome'}>
+          <p>
+            {t('hero')}
+          </p>
+        </section>
+
         <section id={'services-homePage'}>
           <div className="hr">
             <hr/>

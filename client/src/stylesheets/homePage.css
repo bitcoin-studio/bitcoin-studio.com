@@ -1,56 +1,101 @@
-main > div#homePage {
-    grid-template-areas:
-            "services-hp       services-hp      services-hp"
-            "details-hp        details-hp       details-hp"
-            "network-hp        network-hp       network-hp"
-            "call2action-hp    call2action-hp   call2action-hp";
+#bgHome {
+    background-image: url("../assets/img/bg_homepage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 70px);
+    grid-column: 1/6;
+    grid-row: 1;
+    margin: 0;
+    /* Grid container for the paragraph */
+    display: grid;
+    grid-template-columns: 1fr 2fr 6fr 2fr 1fr;
 }
-@media screen and (max-width: 780px) {
-    main > div#homePage {
-        grid-template-areas:
-                "services-hp       services-hp       services-hp"
-                "details-hp        details-hp        details-hp"
-                "network-hp        network-hp        network-hp"
-                "call2action-hp    call2action-hp    call2action-hp";
+
+
+#bgHome p {
+    font-family: "Roboto Condensed", sans-serif;
+    color: white;
+    font-weight: bold;
+    overflow: scroll;
+}
+@media screen
+and (max-width: 550px) {
+    #bgHome p {
+        margin-top: 15vw;
+        font-size: 4vw;
+        line-height: 42px;
+        letter-spacing: 1px;
+        grid-column: 2/4;
+    }
+}
+@media screen
+and (min-width: 550px)
+and (max-width: 768px) {
+    #bgHome p {
+        margin-top: 10vw;
+        font-size: 1.5vw;
+        line-height: 20px;
+        letter-spacing: 1px;
+        grid-column: 2/3;
+    }
+}
+@media screen
+and (min-width: 768px)
+and (max-width: 980px) {
+    #bgHome p {
+        margin-top: 12vw;
+        font-size: 1.5vw;
+        line-height: 22px;
+        letter-spacing: 1px;
+        grid-column: 2/3;
+    }
+}
+@media screen
+and (min-width: 980px)
+and (max-width: 1200px) {
+    #bgHome p {
+        margin-top: 15vw;
+        font-size: 1.5vw;
+        line-height: 25px;
+        letter-spacing: 1px;
+        grid-column: 2/3;
+    }
+}
+@media screen
+and (min-width: 1200px) {
+    #bgHome p {
+        margin-top: 17vw;
+        font-size: 1.5vw;
+        line-height: 30px;
+        letter-spacing: 1px;
+        grid-column: 2/3;
     }
 }
 
-
-/**
-    Hero
- */
-.bgHome {
-    grid-area: bg;
-    background-image: url("../assets/img/bg_homepage.png");
-    background-size: cover;
-    height: calc(100vh - 70px);
-}
-
-
-/**
-    Services (text content 1)
- */
+/* Services --- */
 #services-homePage {
-    grid-area: services-hp;
+    grid-row: 2;
+}
+@media screen and (max-width: 550px) {
+    #services-homePage {
+        grid-column: 2/5;
+    }
 }
 @media screen and (min-width: 550px) {
     #services-homePage {
-        grid-column: 2 / 3;
+        grid-column: 3/4;
     }
 }
+/**/
+
+
+/* Services Details */
 #servicesDetails-homePage {
-    grid-area: details-hp;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 2.5em;
-}
-#network-homePage {
-    grid-area: network-hp;
-}
-@media screen and (min-width: 550px) {
-    #network-homePage {
-        grid-column: 2 / 3;
-    }
+    grid-row: 3;
+    grid-column: 2/5;
 }
 
 #servicesDetails-homePage .serviceItem {
@@ -68,20 +113,36 @@ main > div#homePage {
         padding: 0 20px;
     }
 }
-
 #servicesDetails-homePage .serviceItem p span {
     margin-bottom: 5px;
     display: block;
     font-weight: bold;
     font-size: 1.25em;
 }
+/**/
 
+/* Network --- */
+#network-homePage {
+    grid-row: 4;
+}
+@media screen and (max-width: 550px) {
+    #network-homePage {
+        grid-column: 2/5;
+    }
+}
+@media screen and (min-width: 550px) {
+    #network-homePage {
+        grid-column: 3/4;
+    }
+}
+/* ---- */
 
-/**
-    Call 2 action
- */
+/* Call 2 action */
 #call2action-homePage {
-    grid-area: call2action-hp;
+    grid-row: 5;
+    grid-column: 2/5;
+}
+#call2action-homePage {
     display: grid;
     grid-template-columns: 5fr 1fr;
 }
@@ -166,11 +227,6 @@ main > div#homePage {
     opacity: 1;
 }
 
-
-
-/**
-
- */
 .request {
     font-family: 'Pathway Gothic One', Helvetica, Arial, "Trebuchet MS", sans-serif;
     font-size: 2.75em;
