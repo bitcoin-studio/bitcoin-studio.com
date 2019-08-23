@@ -1,7 +1,5 @@
 main > div#homePage {
     grid-template-areas:
-            ".                 hero-hp           ."
-            "pictures-hp       pictures-hp      pictures-hp"
             "services-hp       services-hp      services-hp"
             "details-hp        details-hp       details-hp"
             "network-hp        network-hp       network-hp"
@@ -10,8 +8,6 @@ main > div#homePage {
 @media screen and (max-width: 780px) {
     main > div#homePage {
         grid-template-areas:
-                "hero-hp           hero-hp           hero-hp  "
-                "pictures-hp       pictures-hp       pictures-hp"
                 "services-hp       services-hp       services-hp"
                 "details-hp        details-hp        details-hp"
                 "network-hp        network-hp        network-hp"
@@ -23,8 +19,11 @@ main > div#homePage {
 /**
     Hero
  */
-#hero-homePage {
-    grid-area: hero-hp;
+.bgHome {
+    grid-area: bg;
+    background-image: url("../assets/img/bg_homepage.png");
+    background-size: cover;
+    height: calc(100vh - 70px);
 }
 
 
@@ -179,29 +178,4 @@ main > div#homePage {
     margin-top: 10px;
     letter-spacing: 3px;
     display: block;
-}
-
-/**
-    Pictures home page
- */
-#pictures-homePage {
-    grid-area: pictures-hp;
-    display: grid;
-    grid-template-columns: 8fr 4fr;
-    grid-column-gap: 5em;
-    margin-top: 0;
-}
-@media screen and (max-width: 768px) {
-    #pictures-homePage {
-        display: none;
-    }
-}
-
-#pictures-homePage figure {
-    margin: 0;
-}
-
-#pictures-homePage img {
-    border: 10px solid #fff;
-    width: 100%;
 }

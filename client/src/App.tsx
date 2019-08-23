@@ -3,15 +3,31 @@ import * as React from 'react'
 import Header from './components/Header'
 import Main from './components/Main'
 import Footer from './components/Footer'
+import {withNamespaces} from 'react-i18next'
+
+interface IProps {
+  t: ((string) => string)
+}
 
 /**
  * Shell
  */
-class App extends React.Component {
+class App extends React.Component<IProps> {
+  constructor(props) {
+    super(props)
+  }
+
   render() {
+    const {t} = this.props
     return (
       <div className={'wrapper'}>
         <Header/>
+
+        <div className={'bgHome'}>
+          <p>
+            {t('hero')}
+          </p>
+        </div>
 
         <Main/>
 
@@ -33,4 +49,4 @@ class App extends React.Component {
   }
 }
 
-export default App
+export default withNamespaces('Home')(App)

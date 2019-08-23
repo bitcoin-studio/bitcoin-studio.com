@@ -61,24 +61,6 @@ class Home extends React.Component<IProps, IState> {
     const {t} = this.props
     return (
       <div id={'homePage'}>
-
-        <div id={'hero-homePage'} className={'hero'}>
-          <h1>BITCOIN STUDIO</h1>
-          <p>
-            {t('hero')}
-          </p>
-        </div>
-
-        <section id={'pictures-homePage'}>
-          <figure id={'picture1'}>
-            <img src={this.state.lisbon} alt="Lisbon"/>
-          </figure>
-
-          <figure id={'picture2'}>
-            <img src={this.state.btc_logo} alt="Bitcoin logo"/>
-          </figure>
-        </section>
-
         <section id={'services-homePage'}>
           <div className="hr">
             <hr/>

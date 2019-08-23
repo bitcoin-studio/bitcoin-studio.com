@@ -2,6 +2,7 @@ import * as React from 'react'
 import { Link } from 'fuse-react'
 import { withNamespaces } from 'react-i18next'
 import i18n from '../i18n'
+import * as logo from '../assets/img/bitcoin-studio-black.svg'
 
 interface IProps {
   t: ((string) => string)
@@ -44,7 +45,9 @@ class Header extends React.Component<IProps, IState> {
         <nav className={"nav"}>
           <ul>
             <li>
-              <Link className={this.state.activeItem === 'HOME' ? 'active' : ''}  onClick={this.activate.bind(this, 'HOME')} to="/">{t('home')}</Link>
+              <Link className={this.state.activeItem === 'HOME' ? 'active' : ''}  onClick={this.activate.bind(this, 'HOME')} to="/">
+                <img src={logo} alt="Bitcoin Studio Logo"/>
+              </Link>
             </li>
             <li>
               <Link className={this.state.activeItem === 'WORKSHOPS' ? 'active' : ''} onClick={this.activate.bind(this, 'WORKSHOPS')} to="/workshops">{t('workshops')}</Link>
@@ -57,12 +60,11 @@ class Header extends React.Component<IProps, IState> {
             </li>
 
             <li id={'translation-btn'}>
-              <button onClick={() => this.changeLanguage('en')}>en</button>
-              <button onClick={() => this.changeLanguage('fr')}>fr</button>
+              <a onClick={() => this.changeLanguage('en')}>EN</a>
+              {'/'}
+              <a onClick={() => this.changeLanguage('fr')}>FR</a>
             </li>
           </ul>
-
-
         </nav>
     )
   }

@@ -45,7 +45,7 @@ body {
 @media screen and (max-width: 550px) {
     .wrapper {
         grid-template-areas:
-                ".           nav         nav       nav           ."
+                "nav         nav         nav       nav           nav"
                 ".           main        main        main        ."
                 ".           footer      footer      footer      ."
                 ".           copyrights  copyrights  copyrights  .";
@@ -56,7 +56,7 @@ and (min-width: 550px)
 and (max-width: 980px) {
     .wrapper {
         grid-template-areas:
-                ".           .           nav         .           ."
+                "nav         nav         nav         nav         nav"
                 ".           main        main        main        ."
                 ".           footer      footer      footer      ."
                 ".           copyrights  copyrights  copyrights  .";
@@ -65,7 +65,8 @@ and (max-width: 980px) {
 @media screen and (min-width: 980px) {
     .wrapper {
         grid-template-areas:
-                ".           .           nav         .           ."
+                "nav         nav         nav         nav         nav"
+                "bg          bg          bg          bg          bg"
                 ".           main        main        main        ."
                 ".           footer      footer      footer      ."
                 ".           copyrights  copyrights  copyrights  .";
@@ -84,7 +85,9 @@ main > div {
     font-size: 15px;
     letter-spacing: 0.3px;
 }
-
+.bgHome {
+    grid-area: bg;
+}
 
 /**
     Lines
@@ -184,25 +187,36 @@ section {
  */
 .nav {
     grid-area: nav;
-    height: 145px;
+    background: white;
+    height: 70px;
+    box-shadow: 0 5px 50px #39444a;
 }
 
 .nav ul {
-    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    margin: 0 6%;
     padding: 0;
     list-style: none;
-
-    display: flex;
-    justify-content: space-between;
 }
 
 .nav ul li {
     font-family: 'Pathway Gothic One', Helvetica, Arial, "Trebuchet MS", sans-serif;
     font-size: 25px;
     font-weight: normal;
-    position: relative;
-    left: -25px;
+    margin: 0 15px;
 }
+.nav ul li:first-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 50px;
+    margin: 10px 0 0 120px;
+}
+
+/*
 @media screen and (max-width: 550px) {
     .nav ul li {
         font-size: 16px;
@@ -217,18 +231,15 @@ and (max-width: 980px) {
         left: 0;
     }
 }
+*/
 
 .nav ul li a {
-    height: 145px;
-    width: 100px;
     color: #39444a;
-    display: block;
     text-decoration: none;
-    padding-top: 70px;
-    text-align: center;
+    cursor: pointer;
 }
 
-
+/*
 @media screen and (max-width: 550px) {
     .nav ul li a {
         width: 60px;
@@ -258,6 +269,7 @@ and (max-width: 980px) {
 #translation-btn button {
     width: 35px;
 }
+*/
 
 /**
     Hero
