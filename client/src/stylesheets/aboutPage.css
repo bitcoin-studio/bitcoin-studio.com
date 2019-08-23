@@ -1,18 +1,4 @@
-/*
-main > div#aboutPage {
-    grid-template-areas:
-            ".           hero-ap        ."
-            "desc-ap     desc-ap        desc-ap";
-}
-@media screen and (max-width: 780px) {
-    main > div#aboutPage {
-        grid-template-areas:
-                "hero-ap           hero-ap           hero-ap  "
-                "desc-ap           desc-ap           desc-ap";
-    }
-}
-*/
-
+/* Row 1 */
 #hero-aboutPage {
     grid-column: 2/5;
     grid-row: 1;
@@ -23,6 +9,7 @@ main > div#aboutPage {
     }
 }
 
+/* Row 2 */
 #description-aboutPage {
     grid-column: 2/5;
     grid-row: 2;

@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Link } from 'fuse-react'
 import { withNamespaces } from 'react-i18next'
 import i18n from '../i18n'
-import * as logo from '../assets/img/bitcoin-studio-black.svg'
+const logo = require("../assets/img/bitcoin-studio-black.svg") as string;
 
 interface IProps {
   t: ((string) => string)
