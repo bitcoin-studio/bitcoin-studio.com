@@ -151,7 +151,8 @@ section {
     grid-area: nav;
     background: white;
     height: 70px;
-    box-shadow: 0 5px 50px #39444a;
+    box-shadow: 0 2px 40px #39444a;
+    z-index: 5;
 }
 
 .nav ul {
