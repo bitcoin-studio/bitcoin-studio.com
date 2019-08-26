@@ -18,6 +18,11 @@
     font-weight: bold;
     overflow: scroll;
 }
+/* Hide scrollbar */
+#bgHome p::-webkit-scrollbar {
+    display: none;
+}
+/* */
 @media screen
 and (max-width: 550px) {
     #bgHome p {
