@@ -19,17 +19,35 @@ function About({t}) {
           <div className="hr">
             <hr/>
           </div>
-          <h2>STEPHANE ROCHE - CEO/CTO</h2>
+          <h2>{t('about-title')}</h2>
           <img className={'about-profile-img'} src="assets/stephane_roche_profile.png" alt="stephane roche profile"/>
-          <p className={'about-content'}>
-            <Trans i18nKey="about-content-1">
-              0 <a href="http://asseth.fr" target={'_blank'}>asseth.fr</a>
-              2 <a href="https://dether.io/" target={'_blank'}>Dether.io</a>
-            </Trans>
+
+          <p>
+            {t('about-content-1')}
           </p>
 
           <p>
             {t('about-content-2')}
+          </p>
+
+          <p>
+            {t('about-content-3')}
+          </p>
+
+          <p>
+            {t('about-content-4')}
+          </p>
+
+          <p>
+            {t('about-content-5')}
+          </p>
+
+          <p>
+            {t('about-content-6')}
+          </p>
+
+          <p>
+            {t('about-content-7')}
           </p>
         </section>
       </div>
