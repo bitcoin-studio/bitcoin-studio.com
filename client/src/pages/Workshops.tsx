@@ -1,13 +1,13 @@
 import * as React from 'react'
 import {Trans, withNamespaces} from 'react-i18next'
 // @ts-ignore
-const bitcoin_essentials = import('../assets/img/bitcoin_essentials.png')
+const workshop_image = import('../assets/img/workshop_img.jpg')
 
 interface IProps {
   t: ((string) => string)
 }
 interface IState {
-  bitcoin_essentials?: string;
+  workshop_image?: string;
 }
 
 class Workshops extends React.Component<IProps, IState> {
@@ -15,13 +15,13 @@ class Workshops extends React.Component<IProps, IState> {
   constructor(props) {
     super(props)
     this.state = {
-      bitcoin_essentials: ''
+      workshop_image: ''
     }
   }
 
   async componentDidMount() {
     this.setState({
-      bitcoin_essentials: await bitcoin_essentials.then()
+      workshop_image: await workshop_image.then()
     })
   }
 
@@ -37,7 +37,7 @@ class Workshops extends React.Component<IProps, IState> {
         </div>
 
         <section id="workshopFlyer-workshopPage">
-          <img src={this.state.bitcoin_essentials} alt="bitcoin essential flyer"/>
+          <img src={this.state.workshop_image} alt="workshops"/>
 
           <div id={'teaserWorkshop'}>
             <p>
