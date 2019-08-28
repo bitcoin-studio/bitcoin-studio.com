@@ -20,7 +20,7 @@ function About({t}) {
             <hr/>
           </div>
           <h2>{t('about-title')}</h2>
-          <img className={'about-profile-img'} src="assets/stephane_roche_profile.png" alt="stephane roche profile"/>
+          <img className={'about-profile-img'} src="assets/stephane_roche_profile.jpg" alt="stephane roche profile"/>
 
           <p>
             {t('about-content-1')}

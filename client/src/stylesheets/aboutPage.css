@@ -26,7 +26,8 @@
     .about-profile-img {
         display: inline-block;
         width: 180px;
-        padding: 10px 25px 0 0;
+        margin: 20px 25px 0 0;
+        border: 10px solid #fff;
         float: left;
     }
     .about-content {

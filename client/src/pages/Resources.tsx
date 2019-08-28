@@ -185,7 +185,7 @@ class Resources extends React.Component<IProps, IState> {
           <div className={'slideItemContainer2 fakeItemContainer'}>
             <div className={'slideItemContainer'}>
               <object className={'slideItem fakeItem'}
-                      data="workshopSlides/slide_fake.png"></object>
+                      data="workshopSlides/slide_fake.jpg"></object>
             </div>
             <div className="slideButton">
               <a>{t('slides.download')}</a>
@@ -195,7 +195,7 @@ class Resources extends React.Component<IProps, IState> {
           <div className={'slideItemContainer2 fakeItemContainer'}>
             <div className={'slideItemContainer'}>
               <object className={'slideItem fakeItem'}
-                      data="workshopSlides/slide_fake.png"></object>
+                      data="workshopSlides/slide_fake.jpg"></object>
             </div>
             <div className="slideButton">
               <a>{t('slides.download')}</a>
@@ -205,7 +205,7 @@ class Resources extends React.Component<IProps, IState> {
           <div className={'slideItemContainer2 fakeItemContainer'}>
             <div className={'slideItemContainer'}>
               <object className={'slideItem fakeItem'}
-                      data="workshopSlides/slide_fake.png"></object>
+                      data="workshopSlides/slide_fake.jpg"></object>
             </div>
             <div className="slideButton">
               <a>{t('slides.download')}</a>
