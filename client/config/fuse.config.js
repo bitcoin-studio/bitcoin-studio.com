@@ -66,8 +66,9 @@ exports.initBuilder = function ({
         !component &&
         !componentdocs &&
         QuantumPlugin({
-          removeExportsInterop: false,
-          uglify: false,
+          removeExportsInterop: false, // https://fuse-box.org/docs/production-builds/quantum-configuration#removeexportsinterop
+          uglify: true,
+          treeshake: true
         }),
       ],
     })
