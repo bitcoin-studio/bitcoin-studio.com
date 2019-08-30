@@ -1,50 +1,14 @@
 import * as React from 'react'
 import { withNamespaces } from 'react-i18next'
 
-// Import assets
-// @ts-ignore
-const software_512 = import('../assets/img/home_software_512.png')
-// @ts-ignore
-const education_512 = import('../assets/img/home_education_512.png')
-// @ts-ignore
-const thought_512 = import('../assets/img/home_thought_512.png')
-// @ts-ignore
-const consulting_512 = import('../assets/img/home_consulting_512.png')
-// @ts-ignore
-const hosting_512 = import('../assets/img/home_hosting_512.png')
-
 interface IProps {
   t: ((string) => string)
 }
-interface IState {
-  software_512?: string,
-  education_512?: string,
-  thought_512?: string,
-  consulting_512?: string,
-  hosting_512?: string
-}
 
-class Home extends React.Component<IProps, IState> {
+class Home extends React.Component<IProps, {}> {
 
   constructor(props) {
     super(props)
-    this.state = {
-      software_512: '',
-      education_512: '',
-      thought_512: '',
-      consulting_512: '',
-      hosting_512: ''
-    }
-  }
-
-  async componentDidMount() {
-    this.setState({
-      software_512: await software_512.then(),
-      education_512: await education_512.then(),
-      thought_512: await thought_512.then(),
-      consulting_512: await consulting_512.then(),
-      hosting_512: await hosting_512.then()
-    })
   }
 
   render() {
@@ -68,7 +32,7 @@ class Home extends React.Component<IProps, IState> {
 
         <section id={'servicesDetails-homePage'}>
           <div className={'serviceItem'}>
-            <img src={this.state.software_512} alt="software development"/>
+            <img src={'assets/img/home_software_512.png'} alt="software development"/>
             <p>
               <span><em>{t('servicesDetails.1.title')}</em></span>
               {t('servicesDetails.1.desc')}
@@ -77,7 +41,7 @@ class Home extends React.Component<IProps, IState> {
 
 
           <div className={'serviceItem'}>
-            <img src={this.state.education_512} alt="workshops"/>
+            <img src={'assets/img/home_education_512.png'} alt="workshops"/>
             <p>
               <span><em>{t('servicesDetails.2.title')}</em></span>
               {t('servicesDetails.2.desc')}
@@ -85,7 +49,7 @@ class Home extends React.Component<IProps, IState> {
           </div>
 
           <div className={'serviceItem'}>
-            <img src={this.state.thought_512} alt="in-house training"/>
+            <img src={'assets/img/home_thought_512.png'} alt="in-house training"/>
             <p>
               <span><em>{t('servicesDetails.3.title')}</em></span>
               {t('servicesDetails.3.desc')}
@@ -93,7 +57,7 @@ class Home extends React.Component<IProps, IState> {
           </div>
 
           <div className={'serviceItem'}>
-            <img src={this.state.consulting_512} alt="private consulting"/>
+            <img src={'assets/img/home_consulting_512.png'} alt="private consulting"/>
             <p>
               <span><em>{t('servicesDetails.4.title')}</em></span>
               {t('servicesDetails.4.desc')}
@@ -101,7 +65,7 @@ class Home extends React.Component<IProps, IState> {
           </div>
 
           <div className={'serviceItem'}>
-            <img src={this.state.hosting_512} alt="node as a service"/>
+            <img src={'assets/img/home_hosting_512.png'} alt="node as a service"/>
             <p>
               <span><em>{t('servicesDetails.5.title')}</em></span>
               {t('servicesDetails.5.desc')}

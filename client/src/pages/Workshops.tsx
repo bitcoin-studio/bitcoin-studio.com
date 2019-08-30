@@ -1,14 +1,10 @@
 import * as React from 'react'
 import {Trans, withNamespaces} from 'react-i18next'
-// @ts-ignore
-const workshop_image = import('../assets/img/workshop_img.jpg')
 
 interface IProps {
   t: ((string) => string)
 }
-interface IState {
-  workshop_image?: string;
-}
+interface IState {}
 
 class Workshops extends React.Component<IProps, IState> {
 
@@ -17,12 +13,6 @@ class Workshops extends React.Component<IProps, IState> {
     this.state = {
       workshop_image: ''
     }
-  }
-
-  async componentDidMount() {
-    this.setState({
-      workshop_image: await workshop_image.then()
-    })
   }
 
   render() {
@@ -37,7 +27,7 @@ class Workshops extends React.Component<IProps, IState> {
         </div>
 
         <section id="workshopFlyer-workshopPage">
-          <img src={this.state.workshop_image} alt="workshops"/>
+          <img src={'assets/img/workshop_img.jpg'} alt="workshops"/>
 
           <div id={'teaserWorkshop'}>
             <p>

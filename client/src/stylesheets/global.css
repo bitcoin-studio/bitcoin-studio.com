@@ -27,8 +27,8 @@
     font-weight: 400;
     font-display: auto;
     src: local('Roboto Condensed'), local('RobotoCondensed-Regular'),
-    url('../assets/fonts/roboto-condensed-v18-latin/roboto-condensed-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('../assets/fonts/roboto-condensed-v18-latin/roboto-condensed-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('../../public/assets/fonts/roboto-condensed-v18-latin/roboto-condensed-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../../public/assets/fonts/roboto-condensed-v18-latin/roboto-condensed-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* roboto-slab-regular - latin */
@@ -38,8 +38,8 @@
     font-weight: 400;
     font-display: auto;
     src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
-    url('../assets/fonts/roboto-slab-v9-latin/roboto-slab-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('../assets/fonts/roboto-slab-v9-latin/roboto-slab-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('../../public/assets/fonts/roboto-slab-v9-latin/roboto-slab-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../../public/assets/fonts/roboto-slab-v9-latin/roboto-slab-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* pathway-gothic-one-regular - latin */
@@ -49,8 +49,8 @@
     font-weight: 400;
     font-display: auto;
     src: local('Pathway Gothic One Regular'), local('PathwayGothicOne-Regular'),
-    url('../assets/fonts/pathway-gothic-one-v8-latin/pathway-gothic-one-v8-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('../assets/fonts/pathway-gothic-one-v8-latin/pathway-gothic-one-v8-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('../../public/assets/fonts/pathway-gothic-one-v8-latin/pathway-gothic-one-v8-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../../public/assets/fonts/pathway-gothic-one-v8-latin/pathway-gothic-one-v8-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 body {
@@ -58,7 +58,7 @@ body {
     padding: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: #e4e8e9 url(../assets/img/background.jpg) repeat left top;
+    background: #e4e8e9 url('../../public/assets/img/background.jpg') repeat left top;
     color: #39444a;
     line-height: 180%;
 }
@@ -90,7 +90,7 @@ main > div {
 .hr {
     clear: both;
     height: 6px;
-    background: url(../assets/img/border.png) top repeat-x;
+    background: url('../../public/assets/img/border.png') top repeat-x;
     width: 100%;
 }
 .hr hr {
@@ -99,7 +99,7 @@ main > div {
 .hr75pc {
     clear: both;
     height: 6px;
-    background: url(../assets/img/border.png) top repeat-x;
+    background: url(../../public/assets/img/border.png) top repeat-x;
     width: 75%;
 }
 
@@ -263,9 +263,9 @@ footer {
     padding-left: 20%;
     line-height: 140%;
 
-    background: url(../assets/img/footer_right_207px.png) no-repeat scroll right bottom,
-    url(../assets/img/footer_left_207px.png) no-repeat scroll left bottom,
-    url(../assets/img/footer_bg_207px.png) repeat scroll right bottom transparent;
+    background: url(../../public/assets/img/footer_right_207px.png) no-repeat scroll right bottom,
+    url(../../public/assets/img/footer_left_207px.png) no-repeat scroll left bottom,
+    url(../../public/assets/img/footer_bg_207px.png) repeat scroll right bottom transparent;
 }
 
 footer > div {
@@ -309,14 +309,14 @@ footer > div > nav > ul > li > a {
     color: #39444a;
     text-decoration: none;
     padding-left: 14px;
-    background: url(../assets/img/footer_li_arrow.png) no-repeat 0px 1px;
+    background: url(../../public/assets/img/footer_li_arrow.png) no-repeat 0px 1px;
 }
 
 footer > div > nav > ul > li > a:hover {
     color: #fff;
     text-decoration: none;
     padding-left: 14px;
-    background: url(../assets/img/footer_li_arrow.png) no-repeat 0px -18px;
+    background: url(../../public/assets/img/footer_li_arrow.png) no-repeat 0px -18px;
 }
 @media screen and (max-width: 550px) {
     footer #services_footer {

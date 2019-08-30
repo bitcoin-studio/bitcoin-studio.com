@@ -2,7 +2,6 @@ import * as React from 'react'
 import { Link } from 'fuse-react'
 import { withNamespaces } from 'react-i18next'
 import i18n from '../i18n'
-const logo = require("../assets/img/bitcoin-studio-black.svg") as string;
 
 interface IProps {
   t: ((string) => string)
@@ -46,7 +45,7 @@ class Header extends React.Component<IProps, IState> {
           <ul>
             <li>
               <Link className={this.state.activeItem === 'HOME' ? 'active' : ''}  onClick={this.activate.bind(this, 'HOME')} to="/">
-                <img src={logo} alt="Bitcoin Studio Logo"/>
+                <img src={'assets/img/bitcoin-studio-black.svg'} alt="Bitcoin Studio Logo"/>
               </Link>
             </li>
             <li>

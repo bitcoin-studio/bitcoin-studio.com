@@ -12,7 +12,6 @@ const {
         /* LESSPlugin, Add LESS, SASS, etc here if needed */
         CSSResourcePlugin,
         CSSPlugin,
-        ImageBase64Plugin,
         JSONPlugin,
         QuantumPlugin,
         WebIndexPlugin,
@@ -51,10 +50,12 @@ exports.initBuilder = function ({
         SVGPlugin(),
         /* [LESSPlugin(), CSSPlugin()],  Add LESS, SASS, etc here if needed */
         [CSSResourcePlugin({
-          inline: true,
+          dist: `${__dirname}/../build`,
+          inline: false,
+          resolve: file => `${file}`,
+          useOriginalFilenames: false,
         }),
         CSSPlugin()],
-        ImageBase64Plugin(),
         JSONPlugin(),
         !component &&
         !componentdocs &&

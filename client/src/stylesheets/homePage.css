@@ -1,5 +1,5 @@
 #bgHome {
-    background-image: url("../assets/img/bg_homepage.jpg");
+    background-image: url(../../public/assets/img/bg_homepage.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: calc(100vh - 70px);
@@ -162,8 +162,8 @@ and (min-width: 1200px) {
     align-items: baseline;
     padding-top: 80px;
     padding-left: 52px;
-    background: url(../assets/img/call2action_ribbon.jpg) no-repeat left center,
-    url(../assets/img/call2action.png) repeat-x center left;
+    background: url(../../public/assets/img/call2action_ribbon.jpg) no-repeat left center,
+    url(../../public/assets/img/call2action.png) repeat-x center left;
 }
 
 #call2action_ribbon p {
@@ -178,7 +178,7 @@ and (min-width: 1200px) {
     height: 207px;
     position: relative;
     text-align: center;
-    background: url(../assets/img/call2action_circle_bg.png) left no-repeat;
+    background: url(../../public/assets/img/call2action_circle_bg.png) left no-repeat;
 }
 
 #call2action_ribbon_prop .inside {
@@ -202,7 +202,7 @@ and (min-width: 1200px) {
 
 .ribbon_prop_1 {
     position: absolute;
-    background: url(../assets/img/call2action_circle.png) left 0px no-repeat;
+    background: url(../../public/assets/img/call2action_circle.png) left 0px no-repeat;
     width: 206px;
     height: 205px;
     z-index: 2;
@@ -223,7 +223,7 @@ and (min-width: 1200px) {
 
 .ribbon_prop_2 {
     position: absolute;
-    background: url(../assets/img/call2action_circle.png) left -205px no-repeat;
+    background: url(../../public/assets/img/call2action_circle.png) left -205px no-repeat;
     width: 206px;
     height: 205px;
 }
