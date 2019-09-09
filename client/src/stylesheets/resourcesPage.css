@@ -16,24 +16,26 @@
 }
 
 /* Nespresso Lightning */
-#nespressoLightningDesc {
-    display: flex;
-    margin-top: -15px;
-}
-#nespressoLightningDesc p {
-    flex: 1 1 auto;
-}
 #nespressoLightningDesc img {
-    margin: 20px 0px 0 30px;
     border: 10px solid #fff;
+    display: block;
+    margin: 30px auto;
     width: 250px;
-    object-fit: contain;
-    align-self: flex-start;
 }
 @media screen and (max-width: 550px) {
     #nespressoLightningDesc img {
         display: none;
     }
+}
+#NespressoLightningPrice1 {
+    display: block;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+}
+#NespressoLightningPrice2 {
+    display: block;
 }
 /* ---- */
 

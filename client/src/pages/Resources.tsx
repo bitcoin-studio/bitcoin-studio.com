@@ -28,7 +28,7 @@ class Resources extends React.Component<IProps, IState> {
             </Trans>
           </p>
 
-          <h2 className={'mt35'}>{t('projects.bitcoin-vm.title')}</h2>
+          <h2 className={'mt45'}>{t('projects.bitcoin-vm.title')}</h2>
           <p>
             <Trans i18nKey={"projects.bitcoin-vm.p1"}>
               FAKE TEXT BLA BLA This tool is made of three technologies, Packer, Vagrant and Ansible, allowing us to generate an Ubuntu
@@ -41,7 +41,7 @@ class Resources extends React.Component<IProps, IState> {
             </Trans>
           </p>
 
-          <h2 className={'mt35'}>{t('projects.mnemonic.title')}</h2>
+          <h2 className={'mt45'}>{t('projects.mnemonic.title')}</h2>
           <p>
             <Trans i18nKey={"projects.mnemonic.p1"}>
               FAKE TEXT BLA BLA A handy template to write down your mnemonic code (24 words back up). The idea behind it is to have a document that gathers
@@ -55,7 +55,7 @@ class Resources extends React.Component<IProps, IState> {
             </Trans>
           </p>
 
-          <h2 className={'mt35'}>{t('projects.utxo.title')}</h2>
+          <h2 className={'mt45'}>{t('projects.utxo.title')}</h2>
           <p>
             <Trans i18nKey={"projects.utxo.p1"}>
               FAKE TEXT BLA BLA
@@ -64,7 +64,7 @@ class Resources extends React.Component<IProps, IState> {
             </Trans>
           </p>
 
-          <h2 className={'mt35'}>{t('projects.nespressoLN.title')}</h2>
+          <h2 className={'mt45'}>{t('projects.nespressoLN.title')}</h2>
           <div id={'nespressoLightningDesc'}>
             <p>
               <Trans i18nKey={"projects.nespressoLN.p1"}>
@@ -74,8 +74,6 @@ class Resources extends React.Component<IProps, IState> {
                 <a href="http://theblock.cafe/" target={"_blank"}>The Block --</a>
                 FAKE TEXT BLA BLA
                 <br/>
-                FAKE TEXT BLA BLA
-                <br/>
                 <a href="https://coffee.bitcoin-studio.com" target={"_blank"}>➱ The custom user interface</a><br/>
                 <a href="https://github.com/bitcoin-studio/LightningNespressoUI" target={"_blank"}>➱ The custom user interface code</a><br/>
                 <a href="https://github.com/bitcoin-studio/LightningNespressoServer" target={"_blank"}>➱ The code that runs on the board</a><br/>
@@ -83,7 +81,11 @@ class Resources extends React.Component<IProps, IState> {
                 <a href="https://www.yoctopuce.com/EN/article/an-automatic-nespresso-capsule-dispenser" target={"_blank"}>➱ More info about the original machine</a>
               </Trans>
             </p>
-            <img src={'assets/img/NespressoLightning_1.jpg'} alt="Nespresso Lightning Vending Machine"/>
+            <img id={'NespressoLightningPhoto'} src={'assets/img/NespressoLightning.jpg'} alt="Nespresso Lightning Vending Machine"/>
+            <p id={'NespressoLightningPrice'}>
+              <span id={'NespressoLightningPrice1'}>{t('projects.nespressoLN.price1')}</span>
+              <span id={'NespressoLightningPrice2'}>{t('projects.nespressoLN.price2')}</span>
+            </p>
           </div>
         </section>
 
