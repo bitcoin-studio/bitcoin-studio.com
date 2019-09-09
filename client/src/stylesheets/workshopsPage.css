@@ -84,6 +84,14 @@ and (max-width: 2500px) {
 }
 
 /* Row 4 */
+#next-session-p span.next-session-row {
+    display: block;
+}
+#next-session-p span.next-session-t {
+    font-weight: bold;
+}
+
+/* Row 5 */
 #offers-workshopPage {
     display: grid;
     grid-column: 2/5;

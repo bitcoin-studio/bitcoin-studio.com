@@ -78,6 +78,18 @@
       "p1": "If you plan to work anywhere in the cryptocurrency industry, mastering Bitcoin is an essential skill. This is the first of its kind and the basis of everything. Bitcoin Core developers have a high level of expertise, the ecosystem is vast, has the largest market capitalization, and so on. Today, more than 75% of blockchains are, directly or indirectly, Bitcoin software forks. It is also the most attacked blockchain and consequently the most robust.",
       "p2": "Bitcoin is also a good start, as the protocol design is relatively simple, with a non-Turing-complete smart-contract feature. Finally, the new instant payment feature of the Lightning network is still offering new horizons."
     },
+    "next-session": {
+      "title": "NEXT SESSIONS",
+      "t1": "What: ",
+      "p1": "Bitcoin Programming with Bitcoin Core and BitcoinJS",
+      "t2": "When: ",
+      "p2": "October 2nd, 2019",
+      "t3": "Where: ",
+      "p3": "The Block café, Lisbon",
+      "t4": "Price: ",
+      "p4": "50 EUR",
+      "contactMe": "You can contact me by email if you want to book your seat."
+    },
     "intro-offer": {
       "title": "MASTERING BITCOIN FUNDAMENTALS",
       "duration": "1 DAY WORKSHOP",

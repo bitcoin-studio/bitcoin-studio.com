@@ -78,6 +78,18 @@
       "p1": "Si vous envisagez de travailler n'importe où dans l'industrie des cryptomonnaies, la maîtrise de Bitcoin est une compétence essentielle. C'est la première du genre et à la base de tout. Les développeurs Bitcoin Core ont un haut niveau d'expertise, l'écosystème est vaste, possède la capitalisation boursière la plus importante, etc. Aujourd'hui, plus de 75% des blockchains sont, directement ou indirectement, des forks logiciels de Bitcoin. C'est aussi la blockchain la plus attaquée et par voie de conséquence la plus robuste.",
       "p2": "Bitcoin est également un bon début, car la conception du protocole est relativement simple, avec une fonctionnalité de smart-contract non Turing-complet. Enfin, la nouvelle fonctionnalité de paiement instantané que constitue le réseau Lightning offre encore de nouveaux horizons."
     },
+    "next-session": {
+      "title": "NEXT SESSIONS",
+      "t1": "Quoi: ",
+      "p1": "Programmation Bitcoin avec Bitcoin Core et BitcoinJS",
+      "t2": "Quand: ",
+      "p2": "2 Octobre 2019",
+      "t3": "Où: ",
+      "p3": "Le Block café, Lisbon",
+      "t4": "Prix: ",
+      "p4": "50 EUR",
+      "contactMe": "Vous pouvez me contacter par email si vous souhaitez réserver votre place."
+    },
     "intro-offer": {
       "title": "MAÎTRISE DES FONDAMENTAUX",
       "duration": "1 JOURNÉE",

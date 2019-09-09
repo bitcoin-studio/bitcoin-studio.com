@@ -48,6 +48,32 @@ class Workshops extends React.Component<IProps, IState> {
         </section>
 
         <section id="offers-workshopPage">
+          <section className={'next-session-workshopPage'}>
+            <div className="hr hr75pc">
+              <hr/>
+            </div>
+            <h2 className={'offers-h2'}>{t('next-session.title')}</h2>
+            <p id={'next-session-p'}>
+              <span className={'next-session-row'}>
+                <span className={'next-session-t'}>{t('next-session.t1')}</span>
+                <span>{t('next-session.p1')}</span>
+              </span>
+              <span className={'next-session-row'}>
+                <span className={'next-session-t'}>{t('next-session.t2')}</span>
+                <span>{t('next-session.p2')}</span>
+              </span>
+              <span className={'next-session-row'}>
+                <span className={'next-session-t'}>{t('next-session.t3')}</span>
+                <span>{t('next-session.p3')}</span>
+              </span>
+              <span className={'next-session-row'}>
+                <span className={'next-session-t'}>{t('next-session.t4')}</span>
+                <span>{t('next-session.p4')}</span>
+              </span>
+              <span>{t('next-session.contactMe')}</span>
+            </p>
+          </section>
+
           <section className={'intro-offer-workshopPage'}>
             <div className="hr hr75pc">
               <hr/>
