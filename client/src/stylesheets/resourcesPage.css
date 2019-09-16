@@ -16,17 +16,34 @@
 }
 
 /* Nespresso Lightning */
-#nespressoLightningDesc img {
+#nespressoLightningDesc video {
     border: 10px solid #fff;
     display: block;
-    margin: 30px auto;
-    width: 250px;
+    margin: 40px auto;
 }
 @media screen and (max-width: 550px) {
-    #nespressoLightningDesc img {
-        display: none;
+    #nespressoLightningDesc video {
+        width: 300px;
     }
 }
+@media screen and (min-width: 550px) and (max-width: 768px) {
+    #nespressoLightningDesc video {
+        width: 450px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 980px) {
+    #nespressoLightningDesc video {
+        width: 600px;
+    }
+}
+@media screen and (min-width: 980px) {
+    #nespressoLightningDesc video {
+        width: 700px;
+    }
+}
+/* */
+
+
 #NespressoLightningPrice1 {
     display: block;
     font-family: "Roboto Condensed", sans-serif;

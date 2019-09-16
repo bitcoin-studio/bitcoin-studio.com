@@ -81,7 +81,13 @@ class Resources extends React.Component<IProps, IState> {
                 <a href="https://www.yoctopuce.com/EN/article/an-automatic-nespresso-capsule-dispenser" target={"_blank"}>➱ More info about the original machine</a>
               </Trans>
             </p>
-            <img id={'NespressoLightningPhoto'} src={'assets/img/NespressoLightning.jpg'} alt="Nespresso Lightning Vending Machine"/>
+            <video
+              controls
+              loop
+              id={'NespressoLightningVideo'}
+              src={'assets/video/demo_nespressoLN.mp4'}
+            >Sorry, this video cannot be played in your current browser</video>
+
             <p id={'NespressoLightningPrice'}>
               <span id={'NespressoLightningPrice1'}>{t('projects.nespressoLN.price1')}</span>
               <span id={'NespressoLightningPrice2'}>{t('projects.nespressoLN.price2')}</span>
