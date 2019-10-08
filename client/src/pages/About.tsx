@@ -1,11 +1,11 @@
 import * as React from 'react'
-import { withNamespaces, Trans } from 'react-i18next'
+import { withNamespaces } from 'react-i18next'
 
 function About({t}) {
 
   return (
       <div id={'aboutPage'}>
-        <div className={'hero'} id={'hero-aboutPage'}>
+        <div className={'hero'}>
           <h1>
             {t('title')}
           </h1>

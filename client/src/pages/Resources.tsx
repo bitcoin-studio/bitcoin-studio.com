@@ -11,7 +11,7 @@ class Resources extends React.Component<IProps, IState> {
     const {t} = this.props
     return (
       <div id="resourcesPage">
-        <div className={'hero'} id={'hero-resourcesPage'}>
+        <div className={'hero'}>
           <h1>{t('title')}</h1>
           <p>{t('hero')}</p>
         </div>

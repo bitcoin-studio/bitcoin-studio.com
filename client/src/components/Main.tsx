@@ -3,6 +3,7 @@ import Home from '../pages/Home'
 import Workshops from '../pages/Workshops'
 import Resources from '../pages/Resources'
 import About from '../pages/About'
+import NotFound from '../pages/NotFound'
 import { Route, Switch } from "fuse-react"
 
 class Main extends React.Component {
@@ -14,6 +15,7 @@ class Main extends React.Component {
           <Route exact path='/workshops' component={Workshops}/>
           <Route exact path='/resources' component={Resources}/>
           <Route exact path='/about' component={About}/>
+          <Route path='' component={NotFound}/>
         </Switch>
       </main>
     )
