@@ -1,0 +1,14 @@
+https://www.bitcoin-studio.com
+https://www.bitcoin-studio.com/workshops
+https://www.bitcoin-studio.com/resources
+https://www.bitcoin-studio.com/about
+https://www.bitcoin-studio.com/assets/workshopSlides/Technical_Intro_Bitcoin_S_Roche.pdf
+https://www.bitcoin-studio.com/assets/workshopSlides/Beginning_Of_Your_Blockchain_Journey_S_Roche.pdf
+https://www.bitcoin-studio.com/assets/workshopSlides/Bitcoin_Forks_History_S_Roche.pdf
+https://www.bitcoin-studio.com/assets/workshopSlides/Bitcoin_keys_addresses_wallets_S_Roche.pdf
+https://www.bitcoin-studio.com/assets/workshopSlides/Mining_consensus_forks_S_Roche.pdf
+https://www.bitcoin-studio.com/assets/workshopSlides/Bitcoin_Transaction_S_Roche.pdf
+https://www.bitcoin-studio.com/assets/workshopSlides/Bitcoin_Script_S_Roche.pdf
+https://www.bitcoin-studio.com/assets/workshopSlides/Next_challenges_of_Bitcoin_S_Roche.pdf
+https://www.bitcoin-studio.com/assets/workshopSlides/Cryptographic_Tools_S_Roche.pdf
+https://www.bitcoin-studio.com/assets/video/demo_nespressoLN.mp4
