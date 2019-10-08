@@ -1,9 +1,4 @@
 import * as React from 'react'
-import Home from '../pages/Home'
-import Workshops from '../pages/Workshops'
-import Resources from '../pages/Resources'
-import About from '../pages/About'
-import NotFound from '../pages/NotFound'
 import { Route, Switch } from "fuse-react"
 
 class Main extends React.Component {
@@ -11,11 +6,11 @@ class Main extends React.Component {
     return (
       <main>
         <Switch>
-          <Route exact path='/' component={Home}/>
-          <Route exact path='/workshops' component={Workshops}/>
-          <Route exact path='/resources' component={Resources}/>
-          <Route exact path='/about' component={About}/>
-          <Route path='' component={NotFound}/>
+          <Route exact path='/' component={async () => import('../pages/Home')}/>
+          <Route exact path='/workshops' component={async () => import('../pages/Workshops')}/>
+          <Route exact path='/resources' component={async () => import('../pages/Resources')}/>
+          <Route exact path='/about' component={async () => import('../pages/About')}/>
+          <Route path='' component={async () => import('../pages/NotFound')}/>
         </Switch>
       </main>
     )
