@@ -11,4 +11,4 @@ https://www.bitcoin-studio.com/assets/workshopSlides/Bitcoin_Transaction_S_Roche
 https://www.bitcoin-studio.com/assets/workshopSlides/Bitcoin_Script_S_Roche.pdf
 https://www.bitcoin-studio.com/assets/workshopSlides/Next_challenges_of_Bitcoin_S_Roche.pdf
 https://www.bitcoin-studio.com/assets/workshopSlides/Cryptographic_Tools_S_Roche.pdf
-https://www.bitcoin-studio.com/assets/video/demo_nespressoLN.mp4
+https://www.bitcoin-studio.com/assets/video/LN_Nespresso_Vending_Machine.mp4

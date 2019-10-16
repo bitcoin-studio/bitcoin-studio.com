@@ -85,7 +85,8 @@ class Resources extends React.Component<IProps, IState> {
               controls
               loop
               id={'NespressoLightningVideo'}
-              src={'assets/video/demo_nespressoLN.mp4'}
+              poster={'assets/video/LN_Nespresso_Vending_Machine_Thumbnail.jpg'}
+              src={'assets/video/LN_Nespresso_Vending_Machine.mp4'}
             >Sorry, this video cannot be played in your current browser</video>
 
             <p id={'NespressoLightningPrice'}>
