@@ -24,7 +24,8 @@ class Resources extends React.Component<IProps, IState> {
               FAKE TEXT BLA BLA If you are interested in learning Bitcoin programming using Javascript, you should definitely check out the
               open-source guide we wrote on BitcoinJS. We present how to perform all of the various types of transaction. This guide is
               sufficiently detailed to be accessible to new developers. <br/>
-              <a href="https://github.com/bitcoin-studio/Bitcoin-Programming-with-BitcoinJS" target={"_blank"}>➱ Bitcoin Programming with BitcoinJS</a>
+              <a href="https://github.com/bitcoin-studio/Bitcoin-Programming-with-BitcoinJS" target={"_blank"}>➱ Github Repository: Bitcoin Programming with BitcoinJS</a>
+              <a href="https://bitcoinjs-guide.bitcoin-studio.com" target={"_blank"}>➱ GitBook: Bitcoin Programming with BitcoinJS</a>
             </Trans>
           </p>
 
