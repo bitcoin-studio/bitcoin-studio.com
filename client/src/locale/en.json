@@ -144,7 +144,7 @@
     "projects": {
       "bitcoinJS": {
         "title": "BITCOIN PROGRAMMING WITH BITCOINJS - GUIDE",
-        "p1": "If you are interested in learning Bitcoin programming using Javascript, you should definitely consult the open source guide we wrote on BitcoinJS. We present how to perform all of the various types of transaction. This guide is sufficiently detailed to be accessible to new developers.<1></1><2>➱ Bitcoin Programming with BitcoinJS</2>"
+        "p1": "If you are interested in learning Bitcoin programming using Javascript, you should definitely consult the open source guide we wrote on BitcoinJS. We present how to perform all of the various types of transaction. This guide is sufficiently detailed to be accessible to new developers.<1></1><2>➱ Github Repository: Bitcoin Programming with BitcoinJS</2><3></3><4>➱ GitBook: Bitcoin Programming with BitcoinJS</4>"
       },
       "bitcoin-vm": {
         "title": "BITCOIN VIRTUAL MACHINE IMAGE BUILDER",
