@@ -107,10 +107,10 @@ class Resources extends React.Component<IProps, IState> {
               <object
                 className={'slideItem'}
                 type={'application/pdf'}
-                data={'assets/workshopSlides/Technical_Intro_Bitcoin_S_Roche.pdf'}/>
+                data={'assets/education/Technical_Intro_Bitcoin_S_Roche.pdf'}/>
             </div>
             <div className="slideButton">
-              <a href={'assets/workshopSlides/Technical_Intro_Bitcoin_S_Roche.pdf'} download>
+              <a href={'assets/education/Technical_Intro_Bitcoin_S_Roche.pdf'} download>
                 {t('slides.download')}
               </a>
             </div>
@@ -121,10 +121,10 @@ class Resources extends React.Component<IProps, IState> {
               <object
                 className={'slideItem'}
                 type={'application/pdf'}
-                data={'assets/workshopSlides/Beginning_Of_Your_Blockchain_Journey_S_Roche.pdf'}/>
+                data={'assets/education/Beginning_Of_Your_Blockchain_Journey_S_Roche.pdf'}/>
             </div>
             <div className="slideButton">
-              <a href={'assets/workshopSlides/Beginning_Of_Your_Blockchain_Journey_S_Roche.pdf'} download>
+              <a href={'assets/education/Beginning_Of_Your_Blockchain_Journey_S_Roche.pdf'} download>
                 {t('slides.download')}
               </a>
             </div>
@@ -135,10 +135,10 @@ class Resources extends React.Component<IProps, IState> {
               <object
                 className={'slideItem'}
                 type={'application/pdf'}
-                data={'assets/workshopSlides/Bitcoin_Forks_History_S_Roche.pdf'}/>
+                data={'assets/education/Bitcoin_Forks_History_S_Roche.pdf'}/>
             </div>
             <div className="slideButton">
-              <a href={'assets/workshopSlides/Bitcoin_Forks_History_S_Roche.pdf'} download>
+              <a href={'assets/education/Bitcoin_Forks_History_S_Roche.pdf'} download>
                 {t('slides.download')}
               </a>
             </div>
@@ -149,10 +149,10 @@ class Resources extends React.Component<IProps, IState> {
               <object
                 className={'slideItem'}
                 type={'application/pdf'}
-                data={'assets/workshopSlides/Bitcoin_keys_addresses_wallets_S_Roche.pdf'}/>
+                data={'assets/education/Bitcoin_keys_addresses_wallets_S_Roche.pdf'}/>
             </div>
             <div className="slideButton">
-            <a href={'assets/workshopSlides/Bitcoin_keys_addresses_wallets_S_Roche.pdf'} download>
+            <a href={'assets/education/Bitcoin_keys_addresses_wallets_S_Roche.pdf'} download>
               {t('slides.download')}
             </a>
             </div>
@@ -163,10 +163,10 @@ class Resources extends React.Component<IProps, IState> {
               <object
                 className={'slideItem'}
                 type={'application/pdf'}
-                data={'assets/workshopSlides/Mining_consensus_forks_S_Roche.pdf'}/>
+                data={'assets/education/Mining_consensus_forks_S_Roche.pdf'}/>
             </div>
             <div className="slideButton">
-            <a href={'assets/workshopSlides/Mining_consensus_forks_S_Roche.pdf'} download>
+            <a href={'assets/education/Mining_consensus_forks_S_Roche.pdf'} download>
               {t('slides.download')}
             </a>
             </div>
@@ -178,10 +178,10 @@ class Resources extends React.Component<IProps, IState> {
               <object
                 className={'slideItem'}
                 type={'application/pdf'}
-                data={'assets/workshopSlides/Bitcoin_Transaction_S_Roche.pdf'}/>
+                data={'assets/education/Bitcoin_Transaction_S_Roche.pdf'}/>
             </div>
             <div className="slideButton">
-            <a href={'assets/workshopSlides/Bitcoin_Transaction_S_Roche.pdf'} download>
+            <a href={'assets/education/Bitcoin_Transaction_S_Roche.pdf'} download>
               {t('slides.download')}
             </a>
             </div>
@@ -192,10 +192,10 @@ class Resources extends React.Component<IProps, IState> {
               <object
                 className={'slideItem'}
                 type={'application/pdf'}
-                data={'assets/workshopSlides/Bitcoin_Script_S_Roche.pdf'}/>
+                data={'assets/education/Bitcoin_Script_S_Roche.pdf'}/>
             </div>
             <div className="slideButton">
-              <a href={'assets/workshopSlides/Bitcoin_Script_S_Roche.pdf'} download>{t('slides.download')}</a>
+              <a href={'assets/education/Bitcoin_Script_S_Roche.pdf'} download>{t('slides.download')}</a>
             </div>
           </div>
 
@@ -204,10 +204,10 @@ class Resources extends React.Component<IProps, IState> {
               <object
                 className={'slideItem'}
                 type={'application/pdf'}
-                data={'assets/workshopSlides/Next_challenges_of_Bitcoin_S_Roche.pdf'}/>
+                data={'assets/education/Next_challenges_of_Bitcoin_S_Roche.pdf'}/>
             </div>
             <div className="slideButton">
-              <a href={'assets/workshopSlides/Next_challenges_of_Bitcoin_S_Roche.pdf'} download>
+              <a href={'assets/education/Next_challenges_of_Bitcoin_S_Roche.pdf'} download>
                 {t('slides.download')}
               </a>
             </div>
@@ -218,10 +218,10 @@ class Resources extends React.Component<IProps, IState> {
               <object
                 className={'slideItem'}
                 type={'application/pdf'}
-                data={'assets/workshopSlides/Cryptographic_Tools_S_Roche.pdf'}/>
+                data={'assets/education/Cryptographic_Tools_S_Roche.pdf'}/>
             </div>
             <div className="slideButton">
-              <a href={'assets/workshopSlides/Cryptographic_Tools_S_Roche.pdf'} download>
+              <a href={'assets/education/Cryptographic_Tools_S_Roche.pdf'} download>
                 {t('slides.download')}
               </a>
             </div>
@@ -231,7 +231,7 @@ class Resources extends React.Component<IProps, IState> {
             <div className={'slideItemContainer'}>
               <object
                 className={'slideItem fakeItem'}
-                data={'assets/workshopSlides/slide_fake.jpg'}/>
+                data={'assets/education/slide_fake.jpg'}/>
             </div>
             <div className="slideButton">
               <a>{t('slides.download')}</a>
@@ -242,7 +242,7 @@ class Resources extends React.Component<IProps, IState> {
             <div className={'slideItemContainer'}>
               <object
                 className={'slideItem fakeItem'}
-                data={'assets/workshopSlides/slide_fake.jpg'}/>
+                data={'assets/education/slide_fake.jpg'}/>
             </div>
             <div className="slideButton">
               <a>{t('slides.download')}</a>
@@ -253,7 +253,7 @@ class Resources extends React.Component<IProps, IState> {
             <div className={'slideItemContainer'}>
               <object
                 className={'slideItem fakeItem'}
-                data={'assets/workshopSlides/slide_fake.jpg'}/>
+                data={'assets/education/slide_fake.jpg'}/>
             </div>
             <div className="slideButton">
               <a>{t('slides.download')}</a>
@@ -274,7 +274,7 @@ class Resources extends React.Component<IProps, IState> {
 
           <p className={"slidesDesc"}>
             <Trans i18nKey={"slides.slidesDesc"}>
-              You can download all the presentations <a href={'assets/workshopSlides/Bitcoin_Slides_S_Roche.zip'} download>here</a> or
+              You can download all the presentations <a href={'assets/education/Bitcoin_Slides_S_Roche.zip'} download>here</a> or
               consult them on <a href="https://www.slideshare.net/bitcoin-studio" target={"_blank"}>SlideShare</a>.
             </Trans>
           </p>
