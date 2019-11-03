@@ -12,6 +12,7 @@ const {
         /* LESSPlugin, Add LESS, SASS, etc here if needed */
         CSSResourcePlugin,
         CSSPlugin,
+        SassPlugin,
         JSONPlugin,
         QuantumPlugin,
         WebIndexPlugin,
@@ -48,14 +49,24 @@ exports.initBuilder = function ({
       plugins: [
         EnvPlugin(env),
         SVGPlugin(),
-        /* [LESSPlugin(), CSSPlugin()],  Add LESS, SASS, etc here if needed */
+        [
+          SassPlugin(),
+          CSSResourcePlugin({
+            dist: `${__dirname}/../build`,
+            inline: false,
+            resolve: file => `${file}`,
+            useOriginalFilenames: false,
+          }),
+          CSSPlugin()
+        ],
+        /*
         [CSSResourcePlugin({
           dist: `${__dirname}/../build`,
           inline: false,
           resolve: file => `${file}`,
           useOriginalFilenames: false,
         }),
-        CSSPlugin()],
+        CSSPlugin()],*/
         JSONPlugin(),
         !component &&
         !componentdocs &&

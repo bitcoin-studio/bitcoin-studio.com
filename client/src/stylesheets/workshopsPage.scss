@@ -1,0 +1,99 @@
+#workshopPage {
+	section#workshopFlyer {
+		display: grid;
+		grid-column: 2/12;
+		grid-row: 2;
+		row-gap: 20px;
+		
+		@media screen and (max-width: 550px) {
+			& {
+				display: none;
+			}
+		}
+		
+		@media screen and (min-width: 980px) {
+			& {
+				grid-column-gap: 5em;
+				grid-template-columns: 8fr 4fr;
+			}
+		}
+		
+		img {
+			width: 100%;
+			border: 7px solid #fff;
+			box-sizing: border-box;
+		}
+		
+		#teaserWorkshop {
+			font-weight: bold;
+			text-align: center;
+			border: 7px solid #fff;
+			align-self: center;
+			
+			@media screen and (max-width: 768px) {
+				& {
+					line-height: 2em;
+					font-size: 0.7em;
+				}
+			}
+			
+			@media screen and (min-width: 768px) and (max-width: 1024px) {
+				& {
+					line-height: 2em;
+					font-size: 1.1em;
+				}
+			}
+			
+			@media screen and (min-width: 1024px) and (max-width: 1200px) {
+				& {
+					line-height: 2em;
+					font-size: 1.4em;
+				}
+			}
+			
+			@media screen and (min-width: 1200px) {
+				& {
+					line-height: 3em;
+					font-size: 1.7em;
+				}
+			}
+		}
+	}
+	
+	
+	section#masterTheKing {
+		grid-column: 2/12;
+		grid-row: 3;
+		
+		@media screen and (min-width: 768px) {
+			& {
+				grid-column: 4/10;
+			}
+		}
+	}
+	
+	
+	section#offers {
+		display: grid;
+		grid-column: 2/12;
+		grid-row: 4;
+		
+		#next-session-p {
+			span.next-session-row {
+				display: block;
+			}
+			
+			span.next-session-t {
+				font-weight: bold;
+			}
+		}
+		
+		.offers-h2 {
+			margin-bottom: 5px;
+		}
+		
+		.offers-h3 {
+			margin-top: 10px;
+		}
+	}
+}

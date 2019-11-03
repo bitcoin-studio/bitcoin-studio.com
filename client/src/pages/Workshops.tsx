@@ -26,7 +26,7 @@ class Workshops extends React.Component<IProps, IState> {
           <p>{t('hero')}</p>
         </div>
 
-        <section id="workshopFlyer-workshopPage">
+        <section id="workshopFlyer">
           <img src={'assets/img/workshop_img.jpg'} alt="workshops"/>
 
           <div id={'teaserWorkshop'}>
@@ -38,7 +38,7 @@ class Workshops extends React.Component<IProps, IState> {
           </div>
         </section>
 
-        <section id={'masterTheKing-workshopPage'}>
+        <section id={'masterTheKing'}>
           <div className="hr">
             <hr/>
           </div>
@@ -47,7 +47,7 @@ class Workshops extends React.Component<IProps, IState> {
           <p>{t('masterTheKing.p2')}</p>
         </section>
 
-        <section id="offers-workshopPage">
+        <section id="offers">
           <section className={'next-session-workshopPage'}>
             <div className="hr hr75pc">
               <hr/>

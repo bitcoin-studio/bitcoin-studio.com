@@ -16,7 +16,7 @@ class Resources extends React.Component<IProps, IState> {
           <p>{t('hero')}</p>
         </div>
 
-        <section id={'projects-resourcesPage'}>
+        <section id={'projects'}>
           <div className="hr"><hr/></div>
           <h2>{t('projects.bitcoinJS.title')}</h2>
           <p>
@@ -98,7 +98,7 @@ class Resources extends React.Component<IProps, IState> {
           </div>
         </section>
 
-        <section id={'slides-resourcesPage'}>
+        <section id={'slides'}>
           <div className="hr"><hr/></div>
           <h2>{t('slides.title')}</h2>
 

@@ -1,17 +1,13 @@
 import * as React from 'react'
-
 import Header from './components/Header'
 import Main from './components/Main'
 import Footer from './components/Footer'
 
-/**
- * Shell
- */
 class App extends React.Component {
 
   render() {
     return (
-      <div className={'wrapper'}>
+      <>
         <Header/>
 
         <Main/>
@@ -19,7 +15,7 @@ class App extends React.Component {
         <Footer/>
 
         <div id={'copyrights'}>
-          <div className="strike"></div>
+          <div className="strike"/>
           <p>Bitcoin Studio - 2019</p>
           <p>SIRET 795 207 117 00016</p>
           <p>
@@ -29,7 +25,7 @@ class App extends React.Component {
             BY</a>
           </p>
         </div>
-      </div>
+      </>
     )
   }
 }

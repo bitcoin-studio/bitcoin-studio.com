@@ -21,7 +21,7 @@ class Home extends React.Component<IProps, {}> {
           </p>
         </section>
 
-        <section id={'services-homePage'}>
+        <section id={'services'}>
           <div className="hr">
             <hr/>
           </div>
@@ -30,7 +30,7 @@ class Home extends React.Component<IProps, {}> {
           <p>{t('services.p2')}</p>
         </section>
 
-        <section id={'servicesDetails-homePage'}>
+        <section id={'servicesDetails'}>
           <div className={'serviceItem'}>
             <img src={'assets/img/home_software_512.png'} alt="software development"/>
             <p>

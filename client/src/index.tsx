@@ -7,13 +7,7 @@ import './i18n'
 
 // Import CSS
 import 'normalize.css/normalize.css'
-import './stylesheets/global.css'
-import './stylesheets/homePage.css'
-import './stylesheets/workshopsPage.css'
-import './stylesheets/resourcesPage.css'
-import './stylesheets/aboutPage.css'
-import './stylesheets/contactPage.css'
-import './stylesheets/notFound.css'
+import "./stylesheets/main.scss"
 
 // @ts-ignore
 ReactDOM.render(<App />, document.getElementById('root'));

@@ -1,0 +1,19 @@
+#aboutPage {
+	section#description {
+		grid-column: 2/12;
+		grid-row: 2;
+		
+		.about-profile-img {
+			display: none;
+			@media screen and (min-width: 550px) {
+				& {
+					display: inline-block;
+					width: 180px;
+					margin: 20px 25px 0 0;
+					border: 10px solid #fff;
+					float: left;
+				}
+			}
+		}
+	}
+}

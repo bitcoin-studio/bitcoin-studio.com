@@ -9,11 +9,10 @@
   "Footer": {
     "col1": {
       "title": "SERVICES",
-      "1": "Accueil",
-      "2": "Formation",
-      "3": "Ressources",
-      "4": "À Propos",
-      "5": "Contact"
+      "1": "Formation",
+      "2": "Ressources",
+      "3": "À Propos",
+      "4": "Contact"
     },
     "col2": {
       "title": "NOUS SUIVRE",

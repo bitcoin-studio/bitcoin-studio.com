@@ -15,7 +15,7 @@ function About({t}) {
           </p>
         </div>
 
-        <section id={'description-aboutPage'}>
+        <section id={'description'}>
           <div className="hr">
             <hr/>
           </div>
