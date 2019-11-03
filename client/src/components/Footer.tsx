@@ -14,10 +14,11 @@ class Footer extends React.Component<IProps, {}> {
          <h2>{t('col1.title')}</h2>
          <nav>
            <ul>
-             <li><a href="">{t('col1.1')}</a></li>
-             <li><a href="./about">{t('col1.2')}</a></li>
+             <li><a href="/">{t('col1.1')}</a></li>
+             <li><a href="./workshops">{t('col1.2')}</a></li>
              <li><a href="./resources">{t('col1.3')}</a></li>
-             <li><a href='m&#97;ilto&#58;bitc&#111;&#105;n&#37;2&#68;st&#117;d%69o&#64;pro%&#55;&#52;&#111;nm%61%69l&#46;co&#109;'>{t('col1.4')}</a></li>
+             <li><a href="./about">{t('col1.4')}</a></li>
+             <li><a href='./contact'>{t('col1.5')}</a></li>
            </ul>
          </nav>
        </div>

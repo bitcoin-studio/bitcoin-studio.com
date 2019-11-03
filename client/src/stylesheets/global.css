@@ -6,7 +6,6 @@
 
     CSS Grid
     Same grid on .wrapper and main > div
-    5 cols (1, 2, 6, 2, 1)
     Need to repeat as subgrid is not available yet
 
     Colors
@@ -65,22 +64,18 @@ body {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr 2fr 6fr 2fr 1fr;
-    grid-template-areas:
-            "nav         nav         nav         nav         nav"
-            "main        main        main        main        main"
-            ".           footer      footer      footer      ."
-            ".           copyrights  copyrights  copyrights  .";
+    grid-template-columns: repeat(12, 1fr);
 }
 
 main {
-    grid-area: main;
+    grid-row: 2;
+    grid-column: 1/13;
 }
 main > div {
     display: grid;
-    grid-template-columns: 1fr 2fr 6fr 2fr 1fr;
+    grid-template-columns: repeat(12, 1fr);
     font-family: "Roboto Slab",serif;
-    font-size: 15px;
+    font-size: 17px;
     letter-spacing: 0.3px;
 }
 
@@ -180,7 +175,8 @@ section {
     Navigation - Header
  */
 .nav {
-    grid-area: nav;
+    grid-row: 1;
+    grid-column: 1/13;
     background: white;
     height: 70px;
     box-shadow: 0 2px 40px #39444a;
@@ -201,12 +197,12 @@ section {
     font-family: 'Pathway Gothic One', Helvetica, Arial, "Trebuchet MS", sans-serif;
     font-size: 25px;
     font-weight: normal;
-    margin: 0 15px;
+    margin: 0 8px;
 }
 @media screen
 and (max-width: 350px) {
     .nav ul li {
-        margin: 0 10px;
+        margin: 0 4px;
     }
 }
 .nav ul li:first-child {
@@ -240,12 +236,16 @@ and (max-width: 550px) {
 /* Hero ---- */
 .hero {
     margin-top: 30px;
-    grid-column: 2/5;
     grid-row: 1;
+}
+@media screen and (max-width: 550px) {
+    .hero {
+        grid-column: 2/12;
+    }
 }
 @media screen and (min-width: 550px) {
     .hero {
-        grid-column: 3/4;
+        grid-column: 4/10;
     }
 }
 
@@ -262,7 +262,8 @@ and (max-width: 550px) {
 
 /* FOOTER */
 footer {
-    grid-area: footer;
+    grid-row: 3;
+    grid-column: 2/12;
     display: flex;
     height: 207px;
     margin-top: 50px;
@@ -279,7 +280,7 @@ footer > div {
     width: 248px;
     padding-top: 20px;
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
     footer > div {
         width: 200px;
         padding: 20px;
@@ -333,7 +334,8 @@ footer > div > nav > ul > li > a:hover {
 /* ---- */
 
 #copyrights {
-    grid-area: copyrights;
+    grid-row: 4;
+    grid-column: 2/12;
     text-align: center;
     line-height: 75%;
     margin-bottom: 30px;
@@ -346,7 +348,7 @@ footer > div > nav > ul > li > a:hover {
     width: 50%;
     border: solid 0.5px;
 }
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
     #copyrights {
         line-height: 140%;
     }
@@ -355,4 +357,18 @@ footer > div > nav > ul > li > a:hover {
 /* Margins, padding, ... */
 .mt45 {
     margin-top: 45px;
+}
+/**/
+
+.e-mail:before {
+    content: attr(data-website) "\0040" attr(data-user);
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: #39444a solid 1px;
 }

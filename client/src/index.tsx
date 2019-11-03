@@ -12,6 +12,7 @@ import './stylesheets/homePage.css'
 import './stylesheets/workshopsPage.css'
 import './stylesheets/resourcesPage.css'
 import './stylesheets/aboutPage.css'
+import './stylesheets/contactPage.css'
 import './stylesheets/notFound.css'
 
 // @ts-ignore

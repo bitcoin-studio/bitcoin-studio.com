@@ -28,6 +28,7 @@ class Header extends React.Component<IProps, IState> {
     else if (page === '/workshops') this.setState({activeItem: 'WORKSHOPS'})
     else if (page === '/resources') this.setState({activeItem: 'RESOURCES'})
     else if (page === '/about') this.setState({activeItem: 'ABOUT'})
+    else if (page === '/contact') this.setState({activeItem: 'CONTACT'})
   }
 
   activate(item) {
@@ -56,6 +57,9 @@ class Header extends React.Component<IProps, IState> {
             </li>
             <li>
               <Link className={this.state.activeItem === 'ABOUT' ? 'active' : ''} onClick={this.activate.bind(this, 'ABOUT')} to="/about">{t('about')}</Link>
+            </li>
+            <li>
+              <Link className={this.state.activeItem === 'CONTACT' ? 'active' : ''} onClick={this.activate.bind(this, 'CONTACT')} to="/contact">{t('contact')}</Link>
             </li>
 
             <li id={'translation-btn'}>

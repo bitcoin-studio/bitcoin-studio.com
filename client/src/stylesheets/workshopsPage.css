@@ -10,7 +10,7 @@
     display: grid;
     grid-template-columns: 8fr 4fr;
     grid-column-gap: 5em;
-    grid-column: 2/5;
+    grid-column: 2/12;
     grid-row: 2;
 }
 @media screen and (max-width: 550px) {
@@ -63,12 +63,12 @@ and (max-width: 2500px) {
 
 /* Row 3 */
 #masterTheKing-workshopPage {
-    grid-column: 2/5;
+    grid-column: 2/12;
     grid-row: 3;
 }
 @media screen and (min-width: 550px) {
     #masterTheKing-workshopPage {
-        grid-column: 3/4;
+        grid-column: 4/10;
     }
 }
 
@@ -83,7 +83,7 @@ and (max-width: 2500px) {
 /* Row 5 */
 #offers-workshopPage {
     display: grid;
-    grid-column: 2/5;
+    grid-column: 2/12;
     grid-row: 4;
 }
 

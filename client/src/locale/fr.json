@@ -3,15 +3,17 @@
     "home": "ACCUEIL",
     "workshops": "FORMATIONS",
     "resources": "RESSOURCES",
-    "about": "À PROPOS"
+    "about": "À PROPOS",
+    "contact": "CONTACT"
   },
   "Footer": {
     "col1": {
       "title": "SERVICES",
-      "1": "Page d'accueil",
-      "2": "À propos du studio",
+      "1": "Accueil",
+      "2": "Formation",
       "3": "Ressources",
-      "4": "Contactez-nous"
+      "4": "À Propos",
+      "5": "Contact"
     },
     "col2": {
       "title": "NOUS SUIVRE",
@@ -57,7 +59,8 @@
     },
     "call2action": {
       "title": "CESSEZ D'ÊTRE UN SUIVEUR",
-      "p": "Prêt pour la révolution de la finance? Alors parlons sérieusement.",
+      "p1": "Prêt pour la révolution de la finance?",
+      "p2": "Alors parlons!",
       "circle": {
         "1": "Cliquez ici pour",
         "2": "DEMANDER",
@@ -83,11 +86,11 @@
       "t1": "Quoi: ",
       "p1": "Programmation Bitcoin avec Bitcoin Core et BitcoinJS",
       "t2": "Quand: ",
-      "p2": "12 Octobre 2019",
+      "p2": "À déterminer",
       "t3": "Où: ",
-      "p3": "Le Block café, Lisbonne",
+      "p3": "À déterminer",
       "t4": "Prix: ",
-      "p4": "50 EUR",
+      "p4": "À déterminer",
       "contactMe": "Vous pouvez me contacter par email si vous souhaitez réserver votre place."
     },
     "intro-offer": {
@@ -182,6 +185,25 @@
     "about-content-5": "En septembre 2017, j'ai déménagé à Lisbonne pour rejoindre un nouvel espace de coworking crypto-friendly appelé The Block, fondé par quelques Français (dont Kevin Loaec qui organise Breaking Bitcoin et Building on Bitcoin), et je me suis concentré exclusivement sur Bitcoin. Pendant deux ans, j'ai appris Bitcoin avec beaucoup de rigueur, en étudiant tous les différents aspects de la technologie et des sujets associés comme la cryptographie et la théorie des jeux. Je m'étais fixé comme objectif de faire des présentations techniques Bitcoin au coworking tous les deux mois. Les diapositives de chaque présentation sont sur ce site.",
     "about-content-6": "J'ai aussi réalisé divers projets éducatifs, ce qui a été un moyen très efficace pour moi d'apprendre. J'ai fait un guide complet qui explique comment créer tous les différents types de transactions avec BitcoinJS, un constructeur de machine virtuelle qui inclut tous les logiciels Bitcoin, un gabarit de code mnémonique, une sorte de jeu pour apprendre comment fonctionne les transactions Bitcoin, etc. Tout est sur le site et sur Github. Mon dernier projet est un distributeur automatique de capsules Nespresso qui utilise Bitcoin sur Lightning Network. La machine a été réalisée dans un FabLab avec un laser cutter et une imprimante 3D. Ce fut l'occasion d'apprendre la CAO, la programmation sur SBC avec Lua, etc. Quant à l'interface utilisateur, elle existe en deux versions. Les clients peuvent payer par le biais d'une application Web que j'ai faite, ou par le biais d'une application point de vente BTCPay. La machine est maintenant en service chez The Block coworking.",
     "about-content-7": "Pour conclure, je me considère aujourd'hui comme un développeur Javascript/Typescript Fullstack intermédiaire, avec de fortes connaissances sur Bitcoin et la technologie blockchain, ainsi que beaucoup d'autres choses qui ne peuvent pas tenir dans cette bio. En mars 2019, j'ai fondé la société Bitcoin Studio pour proposer des formations et du développement logiciel. Au fil des années, je pense avoir acquis suffisamment d'expérience pour avoir la capacité de répondre à vos besoins."
+  },
+  "Contact": {
+    "title": "CONTACT",
+    "send": "Envoyer",
+    "emailSent": "Merci! Votre email a été envoyé avec succès.",
+    "contact-info": {
+      "title": "Venez dire bonjour",
+      "p": "N'hésitez pas à me contacter. Je suis toujours prêt à discuter de nouveaux projets, d'idées créatives ou d'opportunités pour faire partie de vos visions.",
+      "subtitle1": "Besoin d'aide?",
+      "subtitle2": "Envie de discuter"
+    },
+    "contact-form": {
+      "errors": {
+        "emailInvalid": "Email non valide",
+        "required": "Ce champ est requis",
+        "tooLong": "Trop long",
+        "tooShort": "Trop court"
+      }
+    }
   },
   "NotFound": {
     "title": "PAGE NON TROUVÉE"

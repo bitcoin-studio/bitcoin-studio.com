@@ -90,7 +90,10 @@ class Home extends React.Component<IProps, {}> {
         <section id="call2action-homePage">
           <div id="call2action_ribbon">
             <h3>{t('call2action.title')}</h3>
-            <p>{t('call2action.p')}</p>
+            <div id={'call2action_text'}>
+              <span>{t('call2action.p1')}</span>
+              <span>{t('call2action.p2')}</span>
+            </div>
           </div>
 
           <div id="call2action_ribbon_prop" className="">
