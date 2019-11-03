@@ -8,19 +8,27 @@
 /* Row 2 */
 #workshopFlyer-workshopPage {
     display: grid;
-    grid-template-columns: 8fr 4fr;
-    grid-column-gap: 5em;
     grid-column: 2/12;
     grid-row: 2;
+    row-gap: 20px;
 }
-@media screen and (max-width: 550px) {
+@media screen
+and (max-width: 550px) {
     #workshopFlyer-workshopPage {
         display: none;
+    }
+}
+@media screen
+and (min-width: 768px) {
+    #workshopFlyer-workshopPage {
+        grid-column-gap: 5em;
+        grid-template-columns: 8fr 4fr;
     }
 }
 #workshopFlyer-workshopPage img {
     width:100%;
     border: 7px solid #fff;
+    box-sizing: border-box;
 }
 
 
@@ -66,7 +74,8 @@ and (max-width: 2500px) {
     grid-column: 2/12;
     grid-row: 3;
 }
-@media screen and (min-width: 550px) {
+@media screen
+and (min-width: 768px) {
     #masterTheKing-workshopPage {
         grid-column: 4/10;
     }
