@@ -163,7 +163,7 @@
       "nespressoLN": {
         "title": "NESPRESSO CAPSULE VENDING MACHINE",
         "p1": "This project is a Nespresso capsule vending machine that takes Bitcoin over Lightning Network! This machine is made in a FabLab with a laser cutter and a 3D printer, based on a previous open source project. An <1>ESP8266 board</1> with WiFi capability controls the five servomotors to deliver the capsule, all programmed with the Lua language. Regarding the user interface, it is available in two versions. Customers can pay their coffee via a web application that I made, or via a BTCPay Point-of-Sale application. One machine is currently operational at <3>The Block</3> coworking in Lisbon. <5></5> <6>➱ The point of sale web application</6> <7></7> <8>➱ The point of sale web application code</8> <9></9> <10>➱ The vending machine code</10> <11></11> <12>➱ The vending machine case CAD files</12> <13></13> <14>➱ More information about the original machine</14>",
-        "price1": "From 399 EUR",
+        "price1": "From 229 EUR",
         "price2": "The starter price doesn't include technical support to install the vending machine or the Point-of-Sale application, neither customisation like laser engraving your logo."
       }
     },
