@@ -201,6 +201,9 @@
         "required": "This field is required",
         "tooLong": "Too long",
         "tooShort": "Too short"
+      },
+      "placeholders": {
+        "name": "Name"
       }
     }
   },

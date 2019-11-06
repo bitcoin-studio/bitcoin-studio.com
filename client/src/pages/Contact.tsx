@@ -97,7 +97,7 @@ function Contact({t}) {
               })
           }}
           >
-          {({ errors, touched }) => (
+          {() => (
             <Form
               role="form"
               action={'/send-email'}
@@ -107,7 +107,7 @@ function Contact({t}) {
                 name="name"
                 type="text"
                 id="name"
-                placeholder="Name"
+                placeholder={t('contact-form.placeholders.name')}
                 required
               />
               <p>

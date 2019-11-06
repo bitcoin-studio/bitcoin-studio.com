@@ -201,6 +201,9 @@
         "required": "Ce champ est requis",
         "tooLong": "Trop long",
         "tooShort": "Trop court"
+      },
+      "placeholders": {
+        "name": "Nom"
       }
     }
   },
