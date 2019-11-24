@@ -131,12 +131,24 @@
         "p4": "Enfin, veuillez noter que nous ne passerons pas trop de temps sur le nouveau format de transaction Segwit car il nécessite de déjà maîtriser la programmation Bitcoin et n'est en aucun cas essentiel pour cette formation d'introduction."
       }
     },
-    "intro-ln-offer": {
-      "title": "INTRODUCTION AU LIGHTNING NETWORK (À VENIR)",
+    "ln": {
+      "title": "INITIATION AU LIGHTNING NETWORK",
       "duration": "1 JOURNÉE",
       "goals": {
         "title": "OBJECTIFS",
-        "p1": "Le but de cette formation est d'explorer le protocole Lightning Network et d'apprendre à programmer avec."
+        "p1": "Le but de cette formation est de découvrir le protocole Lightning Network, d'en acquérir une solide compréhension au travers de présentations théoriques et d'ateliers pratiques, voire aider à devenir autonome dans le développement de Lapps (applications Lightning)."
+      },
+      "public": {
+        "title": "PUBLIC ET PRÉREQUIS",
+        "p1": "Cette formation est technique et uniquement accessible aux personnes à l'aise avec les ordinateurs, le Javascript (niveau débutant) et la ligne de commande. Il est vivement recommandé d’avoir au préalable une bonne compréhension technique de Bitcoin, notamment être familier avec Bitcoin script. Si ce n'est pas le cas nous vous conseillons de commencer par la formation 'Programmation Bitcoin avec Bitcoin Core et BitcoinJS'.",
+        "p2": "Nous allons taper des commandes Bash dans un terminal et des commandes Javascript dans une console Node.js. Bitcoin Core, LND, Node.js, JQ (pour manipuler du JSON) et un éditeur de code devront être installés sur votre ordinateur. Si vous ne pouvez ou ne voulez pas configurer cet environnement sur votre machine, vous pouvez télécharger <1>l'image Virtual Box</1> ou utiliser la <3>box Vagrant</3> que nous fournissons, qui comprend tous les logiciels requis. Notez également que nous allons travailler en mode Regtest, ce qui permet de créer une fausse blockchain locale à la machine, de sorte que nous n’ayons pas besoin de télécharger ni de synchroniser une lourde blockchain."
+      },
+      "programme": {
+        "title": "PROGRAMME",
+        "p1": "Nous commencerons cette formation par une introduction théorique afin de poser les bases et évaluer le niveau des apprenants. Nous présenterons ensuite quelques explorateurs publics, ce qui nous permettra de prendre connaissance de l'état du réseau à travers certaines métriques. Nous testerons ensuite quelques Lapps (applications Lightning), ce qui sera aussi l'occasion de présenter différents portefeuilles Lightning.",
+        "p2": "Après cette introduction, nous passerons à l'atelier pratique. Nous installerons un cluster en local de trois nœuds LND, tous connectés à un back-end Bitcoin Core en regtest. Pour ceci nous devrons établir des cannaux de paiements. Nous verrons comment ceci se reflète sur la blockchain. Nous pourrons enfin faire des paiements entre ces trois nœuds, directement (single hop) et indirectement (multi hops).",
+        "p3": "Dans le deuxième volet de la formation nous ferons usage du Javascript. Le premier exercise consistera à réaliser un submarine swap en utilisant BitcoinJS ainsi que LND en ligne de commande. Nous imaginerons un cas de figure où un utilisateur va payer un smart contract on-chain afin que ce dernier paie un marchant off-chain. Cet exercise ludique et instructif devrait notamment nous permettre de prendre conscience que la frontière entre on-chain et off-chain n'est pas si étanche!",
+        "p4": "Nous verrons ensuite quelques bibliothèque logicielle Javascript pour intéragir avec un nœud LND, de même que nous inspecterons l’interface du distibuteur de capsule Nespresso réalisé par Bitcoin Studio. Avant de clôturer nous récapitulerons les enseignements de la journée et nous discuterons des derniers développements en cours."
       }
     }
   },

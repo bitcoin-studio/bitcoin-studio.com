@@ -20,9 +20,8 @@ class Workshops extends React.Component<IProps, IState> {
     return (
       <div id={'workshopPage'}>
 
-        <div id={'hero-workshopPage'} className={'hero'}>
+        <div className={'hero'}>
           <h1>{t('title')}</h1>
-
           <p>{t('hero')}</p>
         </div>
 
@@ -48,7 +47,7 @@ class Workshops extends React.Component<IProps, IState> {
         </section>
 
         <section id="offers">
-          <section className={'next-session-workshopPage'}>
+          <section>
             <div className="hr hr75pc">
               <hr/>
             </div>
@@ -74,24 +73,25 @@ class Workshops extends React.Component<IProps, IState> {
             </p>
           </section>
 
-          <section className={'intro-offer-workshopPage'}>
+          {/* Bitcoin Introduction Workshop */}
+          <section>
             <div className="hr hr75pc">
               <hr/>
             </div>
             <h2 className={'offers-h2'}>{t('intro-offer.title')}</h2>
             <h3 className={'offers-h3'}>{t('intro-offer.duration')}</h3>
 
-            <div className={'goals-workshopPage'}>
+            <div>
               <h3>{t('intro-offer.goals.title')}</h3>
               <p>{t('intro-offer.goals.p1')}</p>
             </div>
 
-            <div className={'public-workshopPage'}>
+            <div>
               <h3>{t('intro-offer.public.title')}</h3>
               <p>{t('intro-offer.public.p1')}</p>
             </div>
 
-            <div className={'programme-workshopPage'}>
+            <div>
               <h3>{t('intro-offer.programme.title')}</h3>
               <p>{t('intro-offer.programme.p1')}</p>
               <p>{t('intro-offer.programme.p2')}</p>
@@ -100,20 +100,20 @@ class Workshops extends React.Component<IProps, IState> {
             </div>
           </section>
 
-          <section className={'programming-offer-workshopPage'}>
+          {/* Bitcoin Programming Workshop */}
+          <section>
             <div className="hr hr75pc">
               <hr/>
             </div>
             <h2 className={'offers-h2'}>{t('programming-offer.title')}</h2>
             <h3 className={'offers-h3'}>{t('programming-offer.duration')}</h3>
 
-            <div className={'goals-workshopPage'}>
+            <div>
               <h3>{t('programming-offer.goals.title')}</h3>
               <p>{t('programming-offer.goals.p1')}</p>
-
             </div>
 
-            <div className={'public-workshopPage'}>
+            <div>
               <h3>{t('programming-offer.public.title')}</h3>
               <p>{t('programming-offer.public.p1')}</p>
               <p>
@@ -124,7 +124,7 @@ class Workshops extends React.Component<IProps, IState> {
               </p>
             </div>
 
-            <div className={'programme-workshopPage'}>
+            <div>
               <h3>{t('programming-offer.programme.title')}</h3>
               <p>{t('programming-offer.programme.p1')}</p>
               <p>{t('programming-offer.programme.p2')}</p>
@@ -133,17 +133,38 @@ class Workshops extends React.Component<IProps, IState> {
             </div>
           </section>
 
-          <section className={'intro-ln-offer-workshopPage'}>
+          {/* Lightning Workshop */}
+          <section>
             <div className="hr hr75pc">
               <hr/>
             </div>
-            <h2 className={'offers-h2'}>{t('intro-ln-offer.title')}</h2>
-            <h3 className={'offers-h3'}>{t('intro-ln-offer.duration')}</h3>
+            <h2 className={'offers-h2'}>{t('ln.title')}</h2>
+            <h3 className={'offers-h3'}>{t('ln.duration')}</h3>
 
-            <div className={'goals-workshopPage'}>
-              <h3>{t('intro-ln-offer.goals.title')}</h3>
-              <p>{t('intro-ln-offer.goals.p1')}</p>
+            <div>
+              <h3>{t('ln.goals.title')}</h3>
+              <p>{t('ln.goals.p1')}</p>
             </div>
+
+            <div>
+              <h3>{t('ln.public.title')}</h3>
+              <p>{t('ln.public.p1')}</p>
+              <p>
+                <Trans i18nKey={"ln.public.p2"}>
+                  0 <a href="https://keybase.pub/janakasteph/Bitcoin-VirtualMachine/" target={'_blank'}>Ubuntu Virtual Machine image</a>
+                  2 <a href="https://app.vagrantup.com/bitcoin-studio/boxes/Bitcoin-VirtualMachine" target={'_blank'}>Vagrant box</a>
+                </Trans>
+              </p>
+            </div>
+
+            <div>
+              <h3>{t('ln.programme.title')}</h3>
+              <p>{t('ln.programme.p1')}</p>
+              <p>{t('ln.programme.p2')}</p>
+              <p>{t('ln.programme.p3')}</p>
+              <p>{t('ln.programme.p4')}</p>
+            </div>
+
           </section>
         </section>
       </div>
