@@ -98,7 +98,8 @@ function Contact({t}) {
                   })
               })
               .catch(error => {
-                console.log('Error while submitting email form ', error.response)
+                console.log('Error while submitting email form ')
+                console.log(error)
               })
           }}
           >
