@@ -13,6 +13,13 @@ class Workshops extends React.Component<IProps, IState> {
     this.state = {
       workshop_image: ''
     }
+    this.handleLinkClick = this.handleLinkClick.bind(this)
+  }
+
+  handleLinkClick(e, id) {
+    e.preventDefault()
+    let el = document.getElementById(id)
+    el.scrollIntoView({behavior:"smooth", block: "start"})
   }
 
   render() {
@@ -47,7 +54,7 @@ class Workshops extends React.Component<IProps, IState> {
         </section>
 
         <section id="offers">
-          <section>
+          <section id={'next-sessions'}>
             <div className="hr hr75pc">
               <hr/>
             </div>
@@ -55,7 +62,13 @@ class Workshops extends React.Component<IProps, IState> {
             <p id={'next-session-p'}>
               <span className={'next-session-row'}>
                 <span className={'next-session-t'}>{t('next-session.t1')}</span>
-                <span>{t('next-session.p1')}</span>
+                <span>
+                  <Trans i18nKey={'next-session.p1'}>
+                    0 <a href={'#bitcoin-programming-workshop'} onClick={(e) => this.handleLinkClick(e, 'bitcoin-programming-workshop')}>{'xxx'}</a>
+                    2 <a href={'#lightning-workshop'} onClick={(e) => this.handleLinkClick(e, 'lightning-workshop')}>{'xxx'}</a>
+                    4
+                  </Trans>
+                </span>
               </span>
               <span className={'next-session-row'}>
                 <span className={'next-session-t'}>{t('next-session.t2')}</span>
@@ -63,7 +76,11 @@ class Workshops extends React.Component<IProps, IState> {
               </span>
               <span className={'next-session-row'}>
                 <span className={'next-session-t'}>{t('next-session.t3')}</span>
-                <span>{t('next-session.p3')}</span>
+                <span>
+                  <Trans i18nKey={'next-session.p3'}>
+                    <a href="https://goo.gl/maps/adzSdmLqrBjCA9BbA" target={'_blank'}>xx</a>
+                  </Trans>
+                </span>
               </span>
               <span className={'next-session-row'}>
                 <span className={'next-session-t'}>{t('next-session.t4')}</span>
@@ -74,7 +91,7 @@ class Workshops extends React.Component<IProps, IState> {
           </section>
 
           {/* Bitcoin Introduction Workshop */}
-          <section>
+          <section id={'bitcoin-intro-workshop'}>
             <div className="hr hr75pc">
               <hr/>
             </div>
@@ -101,7 +118,7 @@ class Workshops extends React.Component<IProps, IState> {
           </section>
 
           {/* Bitcoin Programming Workshop */}
-          <section>
+          <section id={'bitcoin-programming-workshop'}>
             <div className="hr hr75pc">
               <hr/>
             </div>
@@ -115,11 +132,17 @@ class Workshops extends React.Component<IProps, IState> {
 
             <div>
               <h3>{t('programming-offer.public.title')}</h3>
-              <p>{t('programming-offer.public.p1')}</p>
+              <p>
+                <Trans i18nKey={'programming-offer.public.p1'}>
+                  0 <a href={'#bitcoin-intro-workshop'} onClick={(e) => this.handleLinkClick(e, 'bitcoin-intro-workshop')}>{'xxx'}</a>
+                  2
+                </Trans>
+              </p>
               <p>
                 <Trans i18nKey={"programming-offer.public.p2"}>
                   0 <a href="https://keybase.pub/janakasteph/Bitcoin-VirtualMachine/" target={'_blank'}>Ubuntu Virtual Machine image</a>
                   2 <a href="https://app.vagrantup.com/bitcoin-studio/boxes/Bitcoin-VirtualMachine" target={'_blank'}>Vagrant box</a>
+                  4
                 </Trans>
               </p>
             </div>
@@ -134,7 +157,7 @@ class Workshops extends React.Component<IProps, IState> {
           </section>
 
           {/* Lightning Workshop */}
-          <section>
+          <section id={'lightning-workshop'}>
             <div className="hr hr75pc">
               <hr/>
             </div>
@@ -148,11 +171,17 @@ class Workshops extends React.Component<IProps, IState> {
 
             <div>
               <h3>{t('ln.public.title')}</h3>
-              <p>{t('ln.public.p1')}</p>
+              <p>
+                <Trans i18nKey={"ln.public.p1"}>
+                  0 <a href={'#bitcoin-programming-workshop'} onClick={(e) => this.handleLinkClick(e, 'bitcoin-programming-workshop')}>{'xxx'}</a>
+                  2
+                </Trans>
+              </p>
               <p>
                 <Trans i18nKey={"ln.public.p2"}>
                   0 <a href="https://keybase.pub/janakasteph/Bitcoin-VirtualMachine/" target={'_blank'}>Ubuntu Virtual Machine image</a>
                   2 <a href="https://app.vagrantup.com/bitcoin-studio/boxes/Bitcoin-VirtualMachine" target={'_blank'}>Vagrant box</a>
+                  4
                 </Trans>
               </p>
             </div>

@@ -81,15 +81,15 @@
       "p2": "Bitcoin est également un bon début, car la conception du protocole est relativement simple, avec une fonctionnalité de smart-contract non Turing-complet. Enfin, la nouvelle fonctionnalité de paiement instantané que constitue le réseau Lightning offre encore de nouveaux horizons."
     },
     "next-session": {
-      "title": "NEXT SESSIONS",
+      "title": "PROCHAINES SESSIONS",
       "t1": "Quoi: ",
-      "p1": "Programmation Bitcoin avec Bitcoin Core et BitcoinJS",
+      "p1": "1 journée <1>Programmation Bitcoin avec Bitcoin Core et BitcoinJS</1> + 1 journée <3>Initiation au Lightning Network</3>",
       "t2": "Quand: ",
-      "p2": "À déterminer",
+      "p2": "7 et 8 décembre 2019",
       "t3": "Où: ",
-      "p3": "À déterminer",
+      "p3": "<0>The Block, rua Latino Coelho 63, Lisbon</0>",
       "t4": "Prix: ",
-      "p4": "À déterminer",
+      "p4": "150€ pour les deux jours, 100€ pour une journée",
       "contactMe": "Vous pouvez me contacter par email si vous souhaitez réserver votre place."
     },
     "intro-offer": {
@@ -120,7 +120,7 @@
       },
       "public": {
         "title": "PUBLIC ET PRÉREQUIS",
-        "p1": "Cette formation est technique et uniquement accessible aux personnes à l'aise avec les ordinateurs, le Javascript (niveau débutant) et la ligne de commande. Il est vivement recommandé d’avoir au préalable une bonne compréhension de Bitcoin, en commençant par exemple par la formation Maîtrise des Fondamentaux.",
+        "p1": "Cette formation est technique et uniquement accessible aux personnes à l'aise avec les ordinateurs, le Javascript (niveau débutant) et la ligne de commande. Il est vivement recommandé d’avoir au préalable une bonne compréhension de Bitcoin, en commençant par exemple par la formation <1>Maîtrise des Fondamentaux</1>.",
         "p2": "Nous allons taper des commandes Bash dans un terminal et des commandes Javascript dans une console Node.js. Bitcoin Core, Node.js, jq et un éditeur de code devront être installés sur votre ordinateur. Si vous ne pouvez ou ne voulez pas configurer cet environnement sur votre machine, vous pouvez télécharger <1>l'image Virtual Box</1> ou utiliser la <3>box Vagrant</3> que nous fournissons, qui comprend tous les logiciels requis. Notez également que nous allons travailler en mode Regtest, ce qui permet de créer une fausse blockchain locale à la machine, de sorte que nous n’ayons pas besoin de télécharger ni de synchroniser une lourde blockchain."
       },
       "programme": {
@@ -140,7 +140,7 @@
       },
       "public": {
         "title": "PUBLIC ET PRÉREQUIS",
-        "p1": "Cette formation est technique et uniquement accessible aux personnes à l'aise avec les ordinateurs, le Javascript (niveau débutant) et la ligne de commande. Il est vivement recommandé d’avoir au préalable une bonne compréhension technique de Bitcoin, notamment être familier avec Bitcoin script. Si ce n'est pas le cas nous vous conseillons de commencer par la formation 'Programmation Bitcoin avec Bitcoin Core et BitcoinJS'.",
+        "p1": "Cette formation est technique et uniquement accessible aux personnes à l'aise avec les ordinateurs, le Javascript (niveau débutant) et la ligne de commande. Il est vivement recommandé d’avoir au préalable une bonne compréhension technique de Bitcoin, notamment être familier avec Bitcoin script. Si ce n'est pas le cas nous vous conseillons de commencer par la formation <1>Programmation Bitcoin avec Bitcoin Core et BitcoinJS</1>.",
         "p2": "Nous allons taper des commandes Bash dans un terminal et des commandes Javascript dans une console Node.js. Bitcoin Core, LND, Node.js, JQ (pour manipuler du JSON) et un éditeur de code devront être installés sur votre ordinateur. Si vous ne pouvez ou ne voulez pas configurer cet environnement sur votre machine, vous pouvez télécharger <1>l'image Virtual Box</1> ou utiliser la <3>box Vagrant</3> que nous fournissons, qui comprend tous les logiciels requis. Notez également que nous allons travailler en mode Regtest, ce qui permet de créer une fausse blockchain locale à la machine, de sorte que nous n’ayons pas besoin de télécharger ni de synchroniser une lourde blockchain."
       },
       "programme": {
