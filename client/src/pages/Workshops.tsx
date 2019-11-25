@@ -1,25 +1,206 @@
 import * as React from 'react'
 import {Trans, withNamespaces} from 'react-i18next'
+import {ErrorMessage, Field, Form, Formik} from 'formik'
+import {object, string} from 'yup'
+import axios from 'axios'
+import * as swal from '@sweetalert/with-react'
+import i18n from 'i18next'
 
 interface IProps {
   t: ((string) => string)
 }
-interface IState {}
+
+interface IState {
+  selectedOffer: string;
+}
+
+interface FormValues {
+  name: string;
+  email: string;
+  message: string;
+}
 
 class Workshops extends React.Component<IProps, IState> {
 
   constructor(props) {
     super(props)
     this.state = {
-      workshop_image: ''
+      selectedOffer: '100'
     }
     this.handleLinkClick = this.handleLinkClick.bind(this)
+    this.handleRegisterWorkshop = this.handleRegisterWorkshop.bind(this)
+    this.handleOfferRadio = this.handleOfferRadio.bind(this)
   }
 
   handleLinkClick(e, id) {
     e.preventDefault()
     let el = document.getElementById(id)
-    el.scrollIntoView({behavior:"smooth", block: "start"})
+    el.scrollIntoView({behavior: 'smooth', block: 'start'})
+  }
+
+  handleOfferRadio(e) {
+    let registerOfferPrice = document.getElementById('registerOfferPrice')
+    this.setState({
+      selectedOffer: e.target.value
+    }, () => {
+      // @ts-ignore
+      registerOfferPrice.value = this.state.selectedOffer
+    })
+  }
+
+  handleRegisterWorkshop(e, t) {
+    const initialValues: FormValues =
+      {
+        name: '',
+        email: '',
+        message: '',
+      }
+
+    swal({
+      content: (<Formik
+        initialValues={initialValues}
+        validationSchema={object().shape({
+          name: string()
+            .min(2, t('next-session.registerNow.errors.tooShort'))
+            .max(50, t('next-session.registerNow.errors.tooLong'))
+            .required(t('next-session.registerNow.errors.required')),
+          email: string()
+            .email(t('next-session.registerNow.errors.emailInvalid'))
+            .required(t('next-session.registerNow.errors.required')),
+          message: string()
+            .max(2000, t('next-session.registerNow.errors.tooLong'))
+            .required(t('next-session.registerNow.errors.required')),
+        })}
+        onSubmit={(values: FormValues, actions) => {
+          axios
+            .post('/send-email', values)
+            .then(() => {
+              actions.resetForm({values: initialValues})
+            })
+            .then(() => {
+              actions.setSubmitting(false)
+            })
+            .then(() => {
+              swal({
+                content: (
+                  <div id={'swalRegisterEmailSent'}>
+                    <div className={'swal-title'}>{t('next-session.registerNow.emailSent.title')}</div>
+                    <div className={'swal-text'}>{t('next-session.registerNow.emailSent.p1')}</div>
+                    <div className={'swal-text'}>{t('next-session.registerNow.emailSent.p2')}</div>
+                    <div className={'swal-text'}>{t('next-session.registerNow.emailSent.p3')}</div>
+                    <div id={'training-offers'}>
+                      <div>
+                        <input
+                          id="training1day"
+                          type="radio"
+                          name="training"
+                          onClick={this.handleOfferRadio}
+                          value="100"
+                        />
+                        <label htmlFor="training1day">1 Day Training - 100€</label>
+                      </div>
+                      <div>
+                        <input
+                          id="training2days"
+                          type="radio"
+                          name="training"
+                          onClick={this.handleOfferRadio}
+                          value="150"
+                        />
+                        <label htmlFor="training2days">2 Days Training - 150€</label>
+                      </div>
+                    </div>
+                    <div id={'buttons'}>
+                      <button className={'swal-button swal-button--cancel'} onClick={() => swal.close()}>
+                        {t('next-session.registerNow.emailSent.close')}
+                      </button>
+                      <form method="POST" action="https://nodes.bitcoin-studio.com/api/v1/invoices">
+                        <input type="hidden" name="storeId" value="BGdJzfMmXohC7J731eVuPBuDdWH3fZqBiitrN6HwGoeu"/>
+                        <input id={'registerOfferPrice'} type="hidden" name="price" value={this.state.selectedOffer}/>
+                        <input type="hidden" name="currency" value="EUR"/>
+                        <input type="hidden" name="checkoutDesc" value="Training"/>
+                        <input type="hidden" name="notifyEmail" value="rstephane@protonmail.com"/>
+                        <input type="hidden" name="browserRedirect" value="https://www.bitcoin-studio.com"/>
+                        {(i18n.language === 'fr') && (<input type="hidden" name="checkoutQueryString" value={'lang=fr-FR'}/>)}
+                        <input type="image" src="https://nodes.bitcoin-studio.com/img/paybutton/pay.svg" name="submit"
+                               alt="Pay with BTCPay, Self-Hosted Bitcoin Payment Processor"/>
+                      </form>
+                    </div>
+                  </div>),
+                icon: 'success',
+                button: false
+              })
+            })
+            .catch(error => {
+              console.log('Error while submitting email form ', error.response)
+            })
+        }}
+      >
+        {(values,
+          errors,
+          touched,
+          handleChange,
+          handleBlur,
+          handleSubmit,
+          isSubmitting) => (
+          <div id="swalRegisterForm">
+            <div className={'swal-title'}>{t('next-session.registerNow.swalRegisterForm.title')}</div>
+            <div className={'swal-text'}>{t('next-session.registerNow.swalRegisterForm.text')}</div>
+            <Form
+              role="form"
+              action={'/send-email'}
+              method="post"
+              className="form"
+            >
+              <Field
+                name="name"
+                type="text"
+                id="name"
+                placeholder={t('next-session.registerNow.placeholders.name')}
+                required
+              />
+              <p>
+                <ErrorMessage name="name"/>
+              </p>
+
+              <Field
+                type="email"
+                id="email"
+                name="email"
+                placeholder="E-mail"
+                required
+              />
+              <p>
+                <ErrorMessage name="email"/>
+              </p>
+
+              <Field
+                component="textarea"
+                id="message"
+                name="message"
+                placeholder="Message"
+                maxLength={2000}
+                rows={15}
+                required
+              />
+              <p>
+                <ErrorMessage name="message"/>
+              </p>
+
+              <button
+                className="btnYellowStyle"
+                id="submit"
+                name="submit"
+                type="submit"
+              >
+                {t('next-session.registerNow.sendMail')}
+              </button>
+            </Form>
+          </div>
+        )}
+      </Formik>),
+      button: false,
+    })
   }
 
   render() {
@@ -64,7 +245,8 @@ class Workshops extends React.Component<IProps, IState> {
                 <span className={'next-session-t'}>{t('next-session.t1')}</span>
                 <span>
                   <Trans i18nKey={'next-session.p1'}>
-                    0 <a href={'#bitcoin-programming-workshop'} onClick={(e) => this.handleLinkClick(e, 'bitcoin-programming-workshop')}>{'xxx'}</a>
+                    0 <a href={'#bitcoin-programming-workshop'}
+                         onClick={(e) => this.handleLinkClick(e, 'bitcoin-programming-workshop')}>{'xxx'}</a>
                     2 <a href={'#lightning-workshop'} onClick={(e) => this.handleLinkClick(e, 'lightning-workshop')}>{'xxx'}</a>
                     4
                   </Trans>
@@ -86,8 +268,15 @@ class Workshops extends React.Component<IProps, IState> {
                 <span className={'next-session-t'}>{t('next-session.t4')}</span>
                 <span>{t('next-session.p4')}</span>
               </span>
-              <span>{t('next-session.contactMe')}</span>
             </p>
+            <div id={'buttonRegisterWorkshop'}>
+              <button
+                className="btnYellowStyle"
+                onClick={(e) => this.handleRegisterWorkshop(e, t)}
+              >
+                {t('next-session.registerNow.button')}
+              </button>
+            </div>
           </section>
 
           {/* Bitcoin Introduction Workshop */}
@@ -139,7 +328,7 @@ class Workshops extends React.Component<IProps, IState> {
                 </Trans>
               </p>
               <p>
-                <Trans i18nKey={"programming-offer.public.p2"}>
+                <Trans i18nKey={'programming-offer.public.p2'}>
                   0 <a href="https://keybase.pub/janakasteph/Bitcoin-VirtualMachine/" target={'_blank'}>Ubuntu Virtual Machine image</a>
                   2 <a href="https://app.vagrantup.com/bitcoin-studio/boxes/Bitcoin-VirtualMachine" target={'_blank'}>Vagrant box</a>
                   4
@@ -172,13 +361,14 @@ class Workshops extends React.Component<IProps, IState> {
             <div>
               <h3>{t('ln.public.title')}</h3>
               <p>
-                <Trans i18nKey={"ln.public.p1"}>
-                  0 <a href={'#bitcoin-programming-workshop'} onClick={(e) => this.handleLinkClick(e, 'bitcoin-programming-workshop')}>{'xxx'}</a>
+                <Trans i18nKey={'ln.public.p1'}>
+                  0 <a href={'#bitcoin-programming-workshop'}
+                       onClick={(e) => this.handleLinkClick(e, 'bitcoin-programming-workshop')}>{'xxx'}</a>
                   2
                 </Trans>
               </p>
               <p>
-                <Trans i18nKey={"ln.public.p2"}>
+                <Trans i18nKey={'ln.public.p2'}>
                   0 <a href="https://keybase.pub/janakasteph/Bitcoin-VirtualMachine/" target={'_blank'}>Ubuntu Virtual Machine image</a>
                   2 <a href="https://app.vagrantup.com/bitcoin-studio/boxes/Bitcoin-VirtualMachine" target={'_blank'}>Vagrant box</a>
                   4

@@ -66,7 +66,7 @@ function Contact({t}) {
         </div>
       </section>
 
-      <section id={'contact-form'}>
+      <section className={'form'} id={'contact-form'}>
         <Formik
           initialValues={initialValues}
           validationSchema={object().shape({
@@ -144,6 +144,7 @@ function Contact({t}) {
               </p>
 
               <button
+                className="btnYellowStyle"
                 id="submit"
                 name="submit"
                 type="submit"

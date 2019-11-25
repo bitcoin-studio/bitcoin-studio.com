@@ -95,5 +95,52 @@
 		.offers-h3 {
 			margin-top: 10px;
 		}
+		
+		#buttonRegisterWorkshop {
+			text-align: center;
+			margin: 30px;
+			& button {
+				display: inline-block;
+			}
+		}
+	}
+}
+
+.swal-modal {
+	#swalRegisterForm {
+		.swal-text {
+			margin-bottom: 30px;
+		}
+		
+		button {
+			float: right;
+			margin-bottom: 20px;
+		}
+	}
+	
+	#swalRegisterEmailSent {
+		#training-offers {
+			margin-left: 50px;
+			margin-top: 20px;
+			text-align: start;
+		}
+		
+		#buttons {
+			margin-top: 50px;
+			
+			& > button, form {
+				display: inline-block;
+			}
+			
+			button {
+				margin-right: 10px;
+				position: relative;
+				bottom: 14px;
+			}
+			
+			form {
+				margin-left: 10px;
+			}
+		}
 	}
 }

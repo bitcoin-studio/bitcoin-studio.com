@@ -384,3 +384,60 @@ textarea:focus,
 button:focus {
 	outline: #39444a solid 1px;
 }
+input[type="radio"] {
+  outline: none;
+}
+
+button.btnYellowStyle {
+	background-color: #fdc300;
+	box-shadow: 0 0 2px 2px #5a626740;
+	border: none;
+	display: block;
+	font-family: "Roboto Slab", serif;
+	font-size: 1em;
+	height: 36px;
+	@media screen and (max-width: 980px) {
+		& {
+			width: 100%;
+		}
+	}
+	@media screen and (min-width: 980px) {
+		& {
+			width: 50%;
+		}
+	}
+	
+	&:hover {
+		cursor: pointer;
+		box-shadow: 0 0 15px 2px #5a626782;
+	}
+}
+
+.form {
+	& input, textarea {
+		box-sizing: border-box;
+		display: block;
+		font-size: 1em;
+		width: 100%;
+	}
+	
+	& input#name {
+		height: 35px;
+		border: #39444a solid 1px;
+	}
+	
+	& input#email {
+		height: 35px;
+		border: #39444a solid 1px;
+	}
+	
+	& textarea#message {
+		border: #39444a solid 1px;
+	}
+	
+	& p {
+		margin: 0;
+		height: 35px;
+		color: red;
+	}
+}

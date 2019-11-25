@@ -90,7 +90,30 @@
       "p3": "<0>The Block, rua Latino Coelho 63, Lisbon</0>",
       "t4": "Price: ",
       "p4": "150€ for the two days, 100€ for a day",
-      "contactMe": "You can contact me by email if you want to book your seat."
+      "registerNow": {
+        "button": "Register Now!",
+        "errors": {
+          "emailInvalid": "Invalid email",
+          "required": "This field is required",
+          "tooLong": "Too long",
+          "tooShort": "Too short"
+        },
+        "placeholders": {
+          "name": "Name"
+        },
+        "sendMail": "Send",
+        "swalRegisterForm": {
+          "title": "Registration",
+          "text": "Please describe which training you would like to register for, your expectations, and any information you think would be useful."
+        },
+        "emailSent": {
+          "title": "Thank you!",
+          "p1": "Your email has been sent successfully.",
+          "p2": "Do you want to proceed with payment now?",
+          "p3": "We only accept Bitcoin, on-chain and Lightning.",
+          "close": "Close"
+        }
+      }
     },
     "intro-offer": {
       "title": "MASTERING BITCOIN FUNDAMENTALS",
@@ -199,7 +222,7 @@
   },
   "Contact": {
     "title": "CONTACT",
-    "send": "Send over",
+    "send": "Send Over",
     "emailSent": {
       "title": "Thank you!",
       "text": "Your email has been sent successfully."

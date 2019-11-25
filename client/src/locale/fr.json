@@ -90,7 +90,30 @@
       "p3": "<0>The Block, rua Latino Coelho 63, Lisbon</0>",
       "t4": "Prix: ",
       "p4": "150€ pour les deux jours, 100€ pour une journée",
-      "contactMe": "Vous pouvez me contacter par email si vous souhaitez réserver votre place."
+      "registerNow": {
+        "button": "Inscrivez-vous Dès Maintenant!",
+        "errors": {
+          "emailInvalid": "Email non valide",
+          "required": "Ce champ est requis",
+          "tooLong": "Trop long",
+          "tooShort": "Trop court"
+        },
+        "placeholders": {
+          "name": "Nom"
+        },
+        "sendMail": "Envoyer",
+        "swalRegisterForm": {
+          "title": "Inscription",
+          "text": "Veuillez décrire à quelle formation vous souhaitez vous inscrire, vos attentes, ainsi que toute information que vous jugerez utile."
+        },
+        "emailSent": {
+          "title": "Merci!",
+          "p1": "Votre email a été envoyé avec succès.",
+          "p2": "Voulez-vous procéder dès maintenant au paiement?",
+          "p3": "Nous acceptons seulement Bitcoin, on-chain et Lightning.",
+          "close": "Fermer"
+        }
+      }
     },
     "intro-offer": {
       "title": "MAÎTRISE DES FONDAMENTAUX",
