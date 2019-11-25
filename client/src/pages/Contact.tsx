@@ -3,6 +3,7 @@ import { withNamespaces } from 'react-i18next'
 import { Formik, Field, Form, ErrorMessage } from 'formik'
 import { object, string } from 'yup'
 import axios from 'axios'
+import * as swal from '@sweetalert/with-react'
 
 
 interface FormValues {
@@ -81,16 +82,20 @@ function Contact({t}) {
               .required(t('contact-form.errors.required'))
           })}
           onSubmit={(values: FormValues, actions) => {
-            console.log({ values, actions })
-
             axios
               .post("/send-email", values)
               .then(() => {
                 actions.resetForm({values: initialValues})
               })
               .then(() => {
-                alert(t('emailSent'))
-                actions.setSubmitting(false)
+                swal({
+                  title: t('emailSent.title'),
+                  text: t('emailSent.text'),
+                  icon: "success",
+                })
+                  .then(() => {
+                    actions.setSubmitting(false)
+                  })
               })
               .catch(error => {
                 console.log('Error while submitting email form ', error.response)

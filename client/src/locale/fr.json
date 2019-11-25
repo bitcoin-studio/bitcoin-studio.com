@@ -200,7 +200,10 @@
   "Contact": {
     "title": "CONTACT",
     "send": "Envoyer",
-    "emailSent": "Merci! Votre email a été envoyé avec succès.",
+    "emailSent": {
+      "title": "Merci!",
+      "text": "Votre email a été envoyé avec succès."
+    },
     "contact-info": {
       "title": "Venez dire bonjour",
       "p": "N'hésitez pas à me contacter. Je suis toujours prêt à discuter de nouveaux projets, d'idées créatives ou d'opportunités pour faire partie de vos visions.",
