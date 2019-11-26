@@ -347,10 +347,19 @@ class Workshops extends React.Component<IProps, IState> {
 
             <div>
               <h3>{t('programming-offer.programme.title')}</h3>
-              <p>{t('programming-offer.programme.p1')}</p>
-              <p>{t('programming-offer.programme.p2')}</p>
+              <p>
+                <Trans i18nKey={'programming-offer.programme.p1'}>
+                  0 <a href="resources" target={'_blank'}>Resources</a>
+                  2
+                </Trans>
+              </p>
+              <p>
+                <Trans i18nKey={'programming-offer.programme.p2'}>
+                  0 <a href="https://bitcoinjs-guide.bitcoin-studio.com/" target={'_blank'}>BitcoinJS guide</a>
+                  2
+                </Trans>
+              </p>
               <p>{t('programming-offer.programme.p3')}</p>
-              <p>{t('programming-offer.programme.p4')}</p>
             </div>
           </section>
 

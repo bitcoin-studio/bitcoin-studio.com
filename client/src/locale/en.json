@@ -117,10 +117,10 @@
     },
     "intro-offer": {
       "title": "MASTERING BITCOIN FUNDAMENTALS",
-      "duration": "1 DAY WORKSHOP",
+      "duration": "1 DAY",
       "goals": {
         "title": "GOALS",
-        "p1": "The goal of this one day workshop (9h-17h) is to become familiar with Bitcoin. You'll benefit from the trainer's extensive experience to learn how Bitcoin works, how to use it with confidence and how to securely store it. While being the least technical possible, you will nevertheless need to understand some simple technical concepts."
+        "p1": "The goal of this one day workshop is to become familiar with Bitcoin. You'll benefit from the trainer's extensive experience to learn how Bitcoin works, how to use it with confidence and how to securely store it. While being the least technical possible, you will nevertheless need to understand some simple technical concepts."
       },
       "public": {
         "title": "PUBLIC AND PREREQUISITE",
@@ -136,27 +136,26 @@
     },
     "programming-offer": {
       "title": "BITCOIN PROGRAMMING WITH BITCOIN CORE AND BITCOINJS",
-      "duration": "1 DAY WORKSHOP",
+      "duration": "1 DAY",
       "goals": {
         "title": "GOALS",
-        "p1": "The purpose of this training is to explore the Bitcoin protocol and learn how to design different types of transactions and smart-contracts using the Bitcoin Core RPC commands and the BitcoinJS software library."
+        "p1": "The goal of this training is to get a solid understanding of the Bitcoin protocol, learn how to craft different types of transactions and how to write financial smart-contracts with the Bitcoin script language. Fot that purpose we will use Bitcoin Core through its command line interface and the BitcoinJS library to compose transaction with Javascript. At the end of this day, you will understand the internal mechanics of Bitcoin transactions, know how to interact with a Bitcoin full node, as well as how to manually construct transactions and send them over the network. You will also discover the Bitcoin scripting language and the often underestimated possibilities offered by Bitcoin smart-contracts."
       },
       "public": {
         "title": "PUBLIC AND PREREQUISITE",
-        "p1": "This training is technical and only accessible to people who are comfortable with computers, Javascript (beginner level) and the command line. It is strongly recommended that you first have a good understanding of Bitcoin, starting for example with the <1>Mastering Bitcoin Fundamentals</1> course.",
-        "p2": "We will type Bash commands in a terminal and Javascript commands in a Node.js console. Bitcoin Core, Node.js, jq and a code editor will need to be installed on your computer. If you can not or do not want to configure this environment on your machine, you can download the <1>Virtual Box image</1> or use the <3>Vagrant box</3> that we provide, which includes all the required software. Also note that we are going to work in Regtest mode, which creates a fake local blockchain on the machine, so we do not need to download or sync a heavy blockchain."
+        "p1": "This training is technical and only accessible to people comfortable with computers, Javascript (beginner level) and the command line. It is recommended that you first have a minimum understanding of Bitcoin, starting for example with the <1>Mastering Bitcoin Fundamentals</1> course if that is not the case.",
+        "p2": "We will type commands in a terminal and Javascript commands in a NodeJS console. Bitcoin Core, NodeJS, JQ (JSON parser) and a code editor will have to be installed on your computer. If you can not or do not want to configure this environment on your machine, you can download the <1>Virtual Box image</1> or use the <3>Vagrant box</3> that we provide, which includes all the required softwares. Also note that we are going to work in regtest mode, which allows us to create a blockchain residing only on the host machine so that we don't need to synchronize anything."
       },
       "programme": {
         "title": "PROGRAMME",
-        "p1": "To begin, we will recall the basics of how the blockchain works, the UTXO model and the smart-contracts system. We will then focus on Bitcoin Core and its API. Participants will learn to interact with a Bitcoin node and perform different types of transactions. Starting with the simplest commands, we will gradually explore how to manually create more complex transactions.",
-        "p2": "In a second step, we will work with the BitcoinJS library to compose various transactions in Javascript. We will create simple P2PKH transactions, used to send bitcoins to a person; data anchoring using the special OP_RETURN function; finally P2SH which lock bitcoins on an arbitrary smart-contract. We will have the opportunity to study Bitcoin's own smart-contract language, which allows us to build a multitude of smart-contracts such as algebraic equations, timelocks, cryptographic puzzles, multi-signatures and smart-contracts that mix all of this.",
-        "p3": "At the end of this day, you will understand how a Bitcoin transaction works internally, how to read a raw transaction, how to interact with a node and retrieve various information, as well as manually create transactions and send them over the network. You will also discover the Bitcoin scripting language and what is possible to do with Bitcoin smart-contracts.",
-        "p4": "Finally, please note that we will not spend too much time on the new Segwit transaction format as it requires already mastering Bitcoin programming and is by no means essential for this introductory course."
+        "p1": "To begin, we will walk through the fundamentals of blockchain and Bitcoin technology, the UTXO model and the smart-contract system. To get familiar with the UTXO model we will use an entertaining pen and paper game conceived by Bitcoin Studio (check out 'Transaction Templates' on the <1>Resources page</1>). This preliminary work is necessary before diving into Bitcoin programming. When we feel ready we will start exploring the Bitcoin Core API and learn interacting with a Bitcoin full node.",
+        "p2": "It will then be time to craft our first Bitcoin transaction by hand using the command line. We will then move on to Bitcoin programming with Javascript. We will use the <1>extensive BitcoinJS guide made by Bitcoin Studio</1> to learn how to compose various type of transactions. We will first create different Pay-To-Public-Key (P2PKH) transactions used to pay one or multiple persons. We will then construct more advanced transactions of type Pay-To-Script-Hash (P2SH) which consists on composing an arbitrary smart-contract and locking funds to it, redeemable under specific conditions such as hashlocks, timelocks and signatures. We will start by a simple algebraic puzzle, to continue with timelocks, cryptographic puzzles, multi-signatures and scripts that are mixing all of this. Last but not least, we will anchor data on the blockchain using the special OP_RETURN operator, which has multiple use cases like notarizing documents.",
+        "p3": "To conclude the instructor will present the latest developments occurring in the Bitcoin space and we will discuss any points that would remain unclear."
       }
     },
     "ln": {
       "title": "INITIATION TO THE LIGHTNING NETWORK",
-      "duration": "1 DAY WORKSHOP",
+      "duration": "1 DAY",
       "goals": {
         "title": "GOALS",
         "p1": "The aim of this training is to discover the Lightning Network protocol, to acquire a solid understanding through theoretical presentations and practical workshops, and even to help becoming autonomous in the development of Lapps (Lightning applications)."
