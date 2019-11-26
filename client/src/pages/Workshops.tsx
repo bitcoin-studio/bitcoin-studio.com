@@ -302,7 +302,16 @@ class Workshops extends React.Component<IProps, IState> {
               <p>{t('intro-offer.programme.p1')}</p>
               <p>{t('intro-offer.programme.p2')}</p>
               <p>{t('intro-offer.programme.p3')}</p>
-              <p>{t('intro-offer.programme.p4')}</p>
+              <p>
+                <Trans i18nKey={'intro-offer.programme.p4'}>
+                  0
+                  <a
+                    href={'#bitcoin-programming-workshop'}
+                    onClick={(e) => this.handleLinkClick(e, 'bitcoin-programming-workshop')}
+                  >{'xxx'}</a>
+                  2
+                </Trans>
+              </p>
             </div>
           </section>
 

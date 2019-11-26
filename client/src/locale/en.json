@@ -120,18 +120,18 @@
       "duration": "1 DAY WORKSHOP",
       "goals": {
         "title": "GOALS",
-        "p1": "The goal of this one-day workshop is to help you become familiar with Bitcoin technology. You'll benefit from the trainer's extensive experience, learn how to securely store your bitcoins and how to use the system with confidence. While being the least technical possible, you will nevertheless need to understand some simple technical concepts."
+        "p1": "The goal of this one day workshop (9h-17h) is to become familiar with Bitcoin. You'll benefit from the trainer's extensive experience to learn how Bitcoin works, how to use it with confidence and how to securely store it. While being the least technical possible, you will nevertheless need to understand some simple technical concepts."
       },
       "public": {
         "title": "PUBLIC AND PREREQUISITE",
-        "p1": "This training is accessible to all. Participants do not need prior knowledge of Bitcoin or computer science. To follow the training in the best conditions, it is advisable to bring a laptop on which we will install at least one Bitcoin wallet. We can also install a mobile wallet."
+        "p1": "This training is accessible to anyone. Participants do not need prior knowledge of Bitcoin or computer science. To follow this training in the best conditions, it is advisable to bring a laptop, on which we will install a Bitcoin wallet. We will also have a look at the current best mobile wallets."
       },
       "programme": {
         "title": "PROGRAMME",
-        "p1": "First of all, you will be introduced to the main concepts you need to know to understand Bitcoin, namely transactions, mining and electronic wallets. We will take the time to explain each topic, so that at the end of the day you will be able to have an overview.",
-        "p2": "We will install a real Bitcoin wallet, which will be an opportunity to learn to store digital assets in a secure way. You will not only learn how to create a backup as well as best practices, but also to prepare for the worst, namely attempted theft and even consider death.",
-        "p3": "We will then experiment with the technology by sending and receiving money, using different wallets, on-chain and off-chain (Lightning Network), on a simulation network and on the real network (games, online stores). We will also use the blockchain to notarize a document (timestamping and signature). You will learn how to examine a transaction in a blockchain explorer. On this occasion we will address the issue of confidentiality.",
-        "p4": "Finally, mainly to arouse your curiosity, the instructor will give a demonstration of what we can do from the command line console that is integrated with the Bitcoin Core software."
+        "p1": "We will start the day by introducing a few important concepts such as transactions, mining, electronic wallets and the new Lightning Network that allows instant transfers with minimum fees.",
+        "p2": "In order to have a better grasp of the theory we will install a Bitcoin wallet. You will choose if you are ready for the main network or if you prefer to experiment on a local test network. We will talk about the best practices, how to create a secure backup and the different possible strategies to store it safely. We will discuss what we can do to prepare for the worst, such as theft and death",
+        "p3": "During the second part of the day, it will be time to experiment with the technology by sending and receiving money, using different wallets, on-chain and off-chain (Lightning Network). We will interact with some cool applications, play games, browse online stores that accept Bitcoin and notarize documents on the blockchain. We will inspect our transactions on a public blockchain explorer, see how private they actually are and what we can do to optimize that.",
+        "p4": "Finally, mainly to arouse your curiosity, the instructor could give a demonstration of Bitcoin Core on command line, offering a glimpse of the <1>Bitcoin Programming With Bitcoin Core And BitcoinJS</1> training. Before leaving us, you will be able to ask any questions that may remain outstanding."
       }
     },
     "programming-offer": {
