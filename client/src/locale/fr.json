@@ -71,9 +71,9 @@
     "title": "FORMATIONS",
     "hero": "Vous souhaitez comprendre comment Bitcoin fonctionne et découvrir sa technologie blockchain sous-jacente? Explorons la première des blockchain, la plus mature, sécurisée et décentralisée, qui a donné naissance à une toute nouvelle industrie!",
     "teaserWorkshop": {
-      "1": "Achetez 2 billets pour 3!",
+      "1": "-25% pour 2 formations",
       "2": "15 participants max",
-      "3": "Satisfait ou remboursé!"
+      "3": "Satisfait ou remboursé"
     },
     "masterTheKing": {
       "title": "MAÎTRISEZ LE ROI DES CRYPTOS",
@@ -82,14 +82,36 @@
     },
     "next-session": {
       "title": "PROCHAINES SESSIONS",
-      "t1": "Quoi: ",
-      "p1": "1 journée (9h-17h) <1>Programmation Bitcoin avec Bitcoin Core et BitcoinJS</1> + 1 journée <3>Initiation au Lightning Network</3>",
-      "t2": "Quand: ",
-      "p2": "7 et 8 décembre 2019",
-      "t3": "Où: ",
-      "p3": "<0>The Block, rua Latino Coelho 63, Lisbon</0>",
-      "t4": "Prix: ",
-      "p4": "150€ pour les deux jours, 100€ pour une journée",
+      "masteringFundamentals" : {
+        "t1What": "What: ",
+        "p1What": "<0>Maîtrise des Fondamentaux</0>",
+        "t2When": "When: ",
+        "p2When": "14 Décembre 2019 (de 9h à 17h, 1 heure de pause déjeuner)",
+        "t3Where": "Where: ",
+        "p3Where": "<0>The Block, rua Latino Coelho 63, Lisbon</0>",
+        "t4Price": "Price: ",
+        "p4Price": "75€"
+      },
+      "bitcoinProgramming" : {
+        "t1What": "What: ",
+        "p1What": "<0>Programmation Bitcoin avec Bitcoin Core et BitcoinJS</0>",
+        "t2When": "When: ",
+        "p2When": "7 Décembre 2019 (de 9h à 17h, 1 heure de pause déjeuner)",
+        "t3Where": "Where: ",
+        "p3Where": "<0>The Block, rua Latino Coelho 63, Lisbon</0>",
+        "t4Price": "Price: ",
+        "p4Price": "100€"
+      },
+      "lightningNetwork" : {
+        "t1What": "What: ",
+        "p1What": "<0>Initiation au Lightning Network</0>",
+        "t2When": "When: ",
+        "p2When": "8 Décembre 2019 (de 9h à 17h, 1 heure de pause déjeuner)",
+        "t3Where": "Where: ",
+        "p3Where": "<0>The Block, rua Latino Coelho 63, Lisbon</0>",
+        "t4Price": "Price: ",
+        "p4Price": "100€"
+      },
       "registerNow": {
         "button": "Inscrivez-vous Dès Maintenant!",
         "errors": {

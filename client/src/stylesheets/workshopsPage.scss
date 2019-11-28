@@ -78,12 +78,8 @@
 		grid-column: 2/12;
 		grid-row: 4;
 		
-		#next-session-p {
-			span.next-session-row {
-				display: block;
-			}
-			
-			span.next-session-t {
+		.next-session {
+			& .next-session__li--bold {
 				font-weight: bold;
 			}
 		}

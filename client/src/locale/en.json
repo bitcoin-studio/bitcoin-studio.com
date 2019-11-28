@@ -71,9 +71,9 @@
     "title": "WORKSHOPS",
     "hero": "Want to understand how Bitcoin works and discover its underlying blockchain technology? Let's explore the first blockchain, the most mature, secure and decentralized, that gave birth to a brand new industry!",
     "teaserWorkshop": {
-      "1": "Buy 2 tickets for 3!",
+      "1": "-25% for 2 trainings",
       "2": "15 participants max",
-      "3": "Satisfied or refunded!"
+      "3": "Satisfied or refunded"
     },
     "masterTheKing": {
       "title": "MASTER THE KING OF CRYPTO",
@@ -82,14 +82,36 @@
     },
     "next-session": {
       "title": "NEXT SESSIONS",
-      "t1": "What: ",
-      "p1": "1 day (9h-17h) <1>Bitcoin Programming with Bitcoin Core and BitcoinJS</1> + 1 day <3>Initiation to Lightning Network</3>",
-      "t2": "When: ",
-      "p2": "December 7 and 8 2019",
-      "t3": "Where: ",
-      "p3": "<0>The Block, rua Latino Coelho 63, Lisbon</0>",
-      "t4": "Price: ",
-      "p4": "150€ for the two days, 100€ for a day",
+      "masteringFundamentals" : {
+        "t1What": "What: ",
+        "p1What": "<0>Mastering Fundamentals</0>",
+        "t2When": "When: ",
+        "p2When": "December 14, 2019 (from 9am to 5pm, 1 hour lunch)",
+        "t3Where": "Where: ",
+        "p3Where": "<0>The Block, rua Latino Coelho 63, Lisbon</0>",
+        "t4Price": "Price: ",
+        "p4Price": "75€"
+      },
+      "bitcoinProgramming" : {
+        "t1What": "What: ",
+        "p1What": "<0>Bitcoin Programming with Bitcoin Core and BitcoinJS</0>",
+        "t2When": "When: ",
+        "p2When": "December 7, 2019 (from 9am to 5pm, 1 hour lunch)",
+        "t3Where": "Where: ",
+        "p3Where": "<0>The Block, rua Latino Coelho 63, Lisbon</0>",
+        "t4Price": "Price: ",
+        "p4Price": "100€"
+      },
+      "lightningNetwork" : {
+        "t1What": "What: ",
+        "p1What": "<0>Initiation to Lightning Network</0>",
+        "t2When": "When: ",
+        "p2When": "December 8, 2019 (from 9am to 5pm, 1 hour lunch)",
+        "t3Where": "Where: ",
+        "p3Where": "<0>The Block, rua Latino Coelho 63, Lisbon</0>",
+        "t4Price": "Price: ",
+        "p4Price": "100€"
+      },
       "registerNow": {
         "button": "Register Now!",
         "errors": {

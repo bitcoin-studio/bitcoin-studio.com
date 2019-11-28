@@ -240,35 +240,101 @@ class Workshops extends React.Component<IProps, IState> {
               <hr/>
             </div>
             <h2 className={'offers-h2'}>{t('next-session.title')}</h2>
-            <p id={'next-session-p'}>
-              <span className={'next-session-row'}>
-                <span className={'next-session-t'}>{t('next-session.t1')}</span>
-                <span>
-                  <Trans i18nKey={'next-session.p1'}>
-                    0 <a href={'#bitcoin-programming-workshop'}
-                         onClick={(e) => this.handleLinkClick(e, 'bitcoin-programming-workshop')}>{'xxx'}</a>
-                    2 <a href={'#lightning-workshop'} onClick={(e) => this.handleLinkClick(e, 'lightning-workshop')}>{'xxx'}</a>
-                    4
+
+            {/* Mastering Fundamentals */}
+            <ul className={'next-session'}>
+              <li className={'next-session__li--bold'}>
+                  <Trans i18nKey={'next-session.masteringFundamentals.p1What'}>
+                    <a href={'#bitcoin-intro-workshop'}
+                         onClick={(e) => this.handleLinkClick(e, 'bitcoin-intro-workshop')}>
+                      {'xxx'}
+                    </a>
                   </Trans>
-                </span>
-              </span>
-              <span className={'next-session-row'}>
-                <span className={'next-session-t'}>{t('next-session.t2')}</span>
-                <span>{t('next-session.p2')}</span>
-              </span>
-              <span className={'next-session-row'}>
-                <span className={'next-session-t'}>{t('next-session.t3')}</span>
+              </li>
+
+              <li className={'next-session__li'}>
+                <span className={'next-session__li--bold'}>{t('next-session.masteringFundamentals.t2When')}</span>
+                <span>{t('next-session.masteringFundamentals.p2When')}</span>
+              </li>
+
+              <li className={'next-session__li'}>
+                <span className={'next-session__li--bold'}>{t('next-session.masteringFundamentals.t3Where')}</span>
                 <span>
-                  <Trans i18nKey={'next-session.p3'}>
+                  <Trans i18nKey={'next-session.masteringFundamentals.p3Where'}>
                     <a href="https://goo.gl/maps/adzSdmLqrBjCA9BbA" target={'_blank'}>xx</a>
                   </Trans>
                 </span>
-              </span>
-              <span className={'next-session-row'}>
-                <span className={'next-session-t'}>{t('next-session.t4')}</span>
-                <span>{t('next-session.p4')}</span>
-              </span>
-            </p>
+              </li>
+
+              <li className={'next-session__li'}>
+                <span className={'next-session__li--bold'}>{t('next-session.masteringFundamentals.t4Price')}</span>
+                <span>{t('next-session.masteringFundamentals.p4Price')}</span>
+              </li>
+            </ul>
+
+            {/* Bitcoin Programming */}
+            <ul className={'next-session'}>
+              <li className={'next-session__li--bold'}>
+                  <Trans i18nKey={'next-session.bitcoinProgramming.p1What'}>
+                    <a href={'#bitcoin-programming-workshop'}
+                       onClick={(e) => this.handleLinkClick(e, 'bitcoin-programming-workshop')}>
+                      {'xxx'}
+                    </a>
+                  </Trans>
+              </li>
+
+              <li className={'next-session__li'}>
+                <span className={'next-session__li--bold'}>{t('next-session.bitcoinProgramming.t2When')}</span>
+                <span>{t('next-session.bitcoinProgramming.p2When')}</span>
+              </li>
+
+              <li className={'next-session__li'}>
+                <span className={'next-session__li--bold'}>{t('next-session.bitcoinProgramming.t3Where')}</span>
+                <span>
+                  <Trans i18nKey={'next-session.bitcoinProgramming.p3Where'}>
+                    <a href="https://goo.gl/maps/adzSdmLqrBjCA9BbA" target={'_blank'}>xx</a>
+                  </Trans>
+                </span>
+              </li>
+
+              <li className={'next-session__li'}>
+                <span className={'next-session__li--bold'}>{t('next-session.bitcoinProgramming.t4Price')}</span>
+                <span>{t('next-session.bitcoinProgramming.p4Price')}</span>
+              </li>
+            </ul>
+
+            {/* Initiation to Lightning Network */}
+            <ul className={'next-session'}>
+              <li className={'next-session__li--bold'}>
+                  <Trans i18nKey={'next-session.lightningNetwork.p1What'}>
+                    <a
+                      href={'#lightning-workshop'}
+                      onClick={(e) => this.handleLinkClick(e, 'lightning-workshop')}>
+                      {'xxx'}
+                    </a>
+                  </Trans>
+              </li>
+
+              <li className={'next-session__li'}>
+                <span className={'next-session__li--bold'}>{t('next-session.lightningNetwork.t2When')}</span>
+                <span>{t('next-session.lightningNetwork.p2When')}</span>
+              </li>
+
+              <li className={'next-session__li'}>
+                <span className={'next-session__li--bold'}>{t('next-session.lightningNetwork.t3Where')}</span>
+                <span>
+                  <Trans i18nKey={'next-session.lightningNetwork.p3Where'}>
+                    <a href="https://goo.gl/maps/adzSdmLqrBjCA9BbA" target={'_blank'}>xx</a>
+                  </Trans>
+                </span>
+              </li>
+
+              <li className={'next-session__li'}>
+                <span className={'next-session__li--bold'}>{t('next-session.lightningNetwork.t4Price')}</span>
+                <span>{t('next-session.lightningNetwork.p4Price')}</span>
+              </li>
+            </ul>
+
             <div id={'buttonRegisterWorkshop'}>
               <button
                 className="btnYellowStyle"
@@ -279,7 +345,7 @@ class Workshops extends React.Component<IProps, IState> {
             </div>
           </section>
 
-          {/* Bitcoin Introduction Workshop */}
+          {/* Mastering Fundamentals Workshop */}
           <section id={'bitcoin-intro-workshop'}>
             <div className="hr hr75pc">
               <hr/>
@@ -349,7 +415,7 @@ class Workshops extends React.Component<IProps, IState> {
               <h3>{t('programming-offer.programme.title')}</h3>
               <p>
                 <Trans i18nKey={'programming-offer.programme.p1'}>
-                  0 <a href="resources" target={'_blank'}>Resources</a>
+                  0 <a href={'resources'} target={'_blank'}>Resources</a>
                   2
                 </Trans>
               </p>
