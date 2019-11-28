@@ -133,7 +133,10 @@
           "p1": "Your email has been sent successfully.",
           "p2": "Do you want to proceed with payment now?",
           "p3": "We only accept Bitcoin, on-chain and Lightning.",
-          "close": "Close"
+          "close": "Close",
+          "1-non-tech": "1 Non-Technical Training - 75€",
+          "1-tech": "1 Technical Training - 100€",
+          "2-tech": "2 Technical Trainings (-25%) - 150€"
         }
       }
     },

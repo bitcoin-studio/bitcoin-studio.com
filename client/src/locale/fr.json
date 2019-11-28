@@ -133,7 +133,10 @@
           "p1": "Votre email a été envoyé avec succès.",
           "p2": "Voulez-vous procéder dès maintenant au paiement?",
           "p3": "Nous acceptons seulement Bitcoin, on-chain et Lightning.",
-          "close": "Fermer"
+          "close": "Fermer",
+          "1-non-tech": "1 Formation Non-Technique - 75€",
+          "1-tech": "1 Formation Technique - 100€",
+          "2-tech": "2 Formations Techniques (-25%) - 150€"
         }
       }
     },

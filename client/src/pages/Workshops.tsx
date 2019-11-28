@@ -25,7 +25,7 @@ class Workshops extends React.Component<IProps, IState> {
   constructor(props) {
     super(props)
     this.state = {
-      selectedOffer: '100'
+      selectedOffer: '0'
     }
     this.handleLinkClick = this.handleLinkClick.bind(this)
     this.handleRegisterWorkshop = this.handleRegisterWorkshop.bind(this)
@@ -95,9 +95,19 @@ class Workshops extends React.Component<IProps, IState> {
                           type="radio"
                           name="training"
                           onClick={this.handleOfferRadio}
+                          value="75"
+                        />
+                        <label htmlFor="training1day">{t('next-session.registerNow.emailSent.1-non-tech')}</label>
+                      </div>
+                      <div>
+                        <input
+                          id="training1day"
+                          type="radio"
+                          name="training"
+                          onClick={this.handleOfferRadio}
                           value="100"
                         />
-                        <label htmlFor="training1day">1 Day Training - 100€</label>
+                        <label htmlFor="training1day">{t('next-session.registerNow.emailSent.1-tech')}</label>
                       </div>
                       <div>
                         <input
@@ -107,7 +117,7 @@ class Workshops extends React.Component<IProps, IState> {
                           onClick={this.handleOfferRadio}
                           value="150"
                         />
-                        <label htmlFor="training2days">2 Days Training - 150€</label>
+                        <label htmlFor="training2days">{t('next-session.registerNow.emailSent.2-tech')}</label>
                       </div>
                     </div>
                     <div id={'buttons'}>
