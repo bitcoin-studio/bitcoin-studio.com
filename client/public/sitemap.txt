@@ -12,7 +12,10 @@ https://www.bitcoin-studio.com/assets/education/bitcoin_transaction_bitcoin-stud
 https://www.bitcoin-studio.com/assets/education/bitcoin_script_bitcoin-studio.pdf
 https://www.bitcoin-studio.com/assets/education/next_challenges_bitcoin-studio.pdf
 https://www.bitcoin-studio.com/assets/education/cryptographic_tools_bitcoin-studio.pdf
+https://www.bitcoin-studio.com/assets/education/data_anchoring_bitcoin-studio.pdf
 https://www.bitcoin-studio.com/assets/education/slides_bitcoin-studio.zip
 https://www.bitcoin-studio.com/assets/bitcoin_mnemonic_code_template.pdf
 https://www.bitcoin-studio.com/assets/transactions_utxo_model.pdf
 https://www.bitcoin-studio.com/assets/video/LN_Nespresso_Vending_Machine.mp4
+https://bitcoinjs-guide.bitcoin-studio.com
+https://coffee.bitcoin-studio.com

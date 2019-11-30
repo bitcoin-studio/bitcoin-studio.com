@@ -227,14 +227,17 @@ class Resources extends React.Component<IProps, IState> {
             </div>
           </div>
 
-          <div className={'slideItemContainer2 fakeItemContainer'}>
+          <div className={'slideItemContainer2'}>
             <div className={'slideItemContainer'}>
               <object
-                className={'slideItem fakeItem'}
-                data={'assets/education/slide_fake.jpg'}/>
+                className={'slideItem'}
+                type={'application/pdf'}
+                data={'assets/education/data_anchoring_bitcoin-studio.pdf'}/>
             </div>
             <div className="slideButton">
-              <a>{t('slides.download')}</a>
+              <a href={'assets/education/data_anchoring_bitcoin-studio.pdf'} download>
+                {t('slides.download')}
+              </a>
             </div>
           </div>
 
