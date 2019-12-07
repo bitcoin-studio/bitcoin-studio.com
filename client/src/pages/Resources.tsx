@@ -26,7 +26,7 @@ class Resources extends React.Component<IProps, IState> {
               sufficiently detailed to be accessible to new developers. <br/>
               <a href="https://github.com/bitcoin-studio/Bitcoin-Programming-with-BitcoinJS" target={"_blank"}>➱ Github Repository: Bitcoin Programming with BitcoinJS</a>
               <br/>
-              <a href="https://bitcoinjs-guide.bitcoin-studio.com" target={"_blank"}>➱ GitBook: Bitcoin Programming with BitcoinJS</a>
+              <a href="https://bitcoinjs-guide.bitcoin-studio.com" target={"_blank"}>➱ Book: Bitcoin Programming with BitcoinJS</a>
             </Trans>
           </p>
 

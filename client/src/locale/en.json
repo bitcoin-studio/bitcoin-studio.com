@@ -204,8 +204,8 @@
     "hero": "At Bitcoin Studio, we are firmly committed to advancing the Bitcoin community. That's why we make various works free and available to all. In particular, the presentations made by Stéphane Roche explore many aspects of the Bitcoin protocol: cryptographic keys, wallets, consensus, mining, forks, transactions (Legacy and Segwit formats), etc.",
     "projects": {
       "bitcoinJS": {
-        "title": "BITCOIN PROGRAMMING WITH BITCOINJS - GUIDE",
-        "p1": "If you are interested in learning Bitcoin programming using Javascript, you should definitely consult the open source guide we wrote on BitcoinJS. We present how to perform all of the various types of transaction. This guide is sufficiently detailed to be accessible to new developers.<1></1><2>➱ Github Repository: Bitcoin Programming with BitcoinJS</2><3></3><4>➱ GitBook: Bitcoin Programming with BitcoinJS</4>"
+        "title": "BITCOIN PROGRAMMING WITH BITCOINJS - THE ULTIMATE GUIDE",
+        "p1": "If you plan learning Bitcoin programming, you should definitely consult the open source guide we wrote on BitcoinJS. We present how to perform all types of transaction using the most famous Bitcoin Javascript library. This guide is sufficiently detailed to be accessible to new developers.<1></1><2>➱ Github Repository: Bitcoin Programming with BitcoinJS</2><3></3><4>➱ Web Book: Bitcoin Programming with BitcoinJS</4>"
       },
       "bitcoin-vm": {
         "title": "BITCOIN VIRTUAL MACHINE IMAGE BUILDER",
