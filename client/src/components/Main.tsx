@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Route, Switch } from "fuse-react"
+import {Route, Switch} from 'fuse-react'
 
 class Main extends React.Component {
   render() {
