@@ -55,18 +55,15 @@
 body {
 	background: #e4e8e9 url('../../public/assets/img/background.jpg') repeat left top;
 	color: #39444a;
-	height: 100%;
 	line-height: 180%;
 	margin: auto;
 	padding: 0;
-	width: 100%;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	
 	#root {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
-		grid-template-rows: auto 1fr auto auto;
 		
 		main {
 			grid-row: 2;
@@ -78,9 +75,17 @@ body {
 				font-family: "Roboto Slab", serif;
 				font-size: 17px;
 				letter-spacing: 0.3px;
+				min-height: 700px;
 				
 				section {
 					margin: 30px 0;
+				}
+				
+				&.loader svg {
+					grid-column: 6;
+					height: auto;
+					margin-top: 120px;
+					width: 100%;
 				}
 			}
 		}
