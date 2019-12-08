@@ -53,17 +53,20 @@
 }
 
 body {
-	margin: auto;
-	padding: 0;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 	background: #e4e8e9 url('../../public/assets/img/background.jpg') repeat left top;
 	color: #39444a;
+	height: 100%;
 	line-height: 180%;
+	margin: auto;
+	padding: 0;
+	width: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 	
 	#root {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: auto 1fr auto auto;
 		
 		main {
 			grid-row: 2;
