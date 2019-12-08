@@ -207,6 +207,10 @@
         "title": "BITCOIN PROGRAMMING WITH BITCOINJS - THE ULTIMATE GUIDE",
         "p1": "If you plan learning Bitcoin programming, you should definitely consult the open source guide we wrote on BitcoinJS. We present how to perform all types of transaction using the most famous Bitcoin Javascript library. This guide is sufficiently detailed to be accessible to new developers.<1></1><2>➱ Github Repository: Bitcoin Programming with BitcoinJS</2><3></3><4>➱ Web Book: Bitcoin Programming with BitcoinJS</4>"
       },
+      "bitcointestwallets": {
+        "title": "BITCOIN TEST WALLETS GENERATOR",
+        "p1": "This tool aims to help bitcoin programmers by generating six test HD wallets (Alice, Bob, Carol, Dave Eve, Mallory). Starting from some bytes of entropy, it will generate the mnemonic, the various keys, all the way down to addresses. It records all those cryptographic materials in a JSON file and it also imports the private keys into Bitcoin Core.<1></1><2>➱ Github Repository</2>"
+      },
       "bitcoin-vm": {
         "title": "BITCOIN VIRTUAL MACHINE IMAGE BUILDER",
         "p1": "This tool is composed of three technologies, Packer, Vagrant and Ansible, allowing you to generate a VirtualBox image as well as a Vagrant box. Based on Ubuntu 18.10, the VM ships with preconfigured software for Bitcoin and the Lightning Network. You'll find Bitcoin Core, LND, c-lightning, Electrum, the BitcoinJS guide above, and more.<1></1> The image is ideal for Bitcoin workshops, hackathons, etc. <3></3><4>➱ Vagrant box</4><5></5><6>➱ VirtualBox image</6><7></7><8>➱ Github Repository</8>"
