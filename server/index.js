@@ -4,7 +4,7 @@ const nodeMailer = require('nodemailer')
 const bodyParser = require('body-parser')
 const path = require('path')
 require('dotenv').config()
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 8081
 
 const app = express()
 

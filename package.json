@@ -36,6 +36,5 @@
     "email": "bitcoin-studio@protonmail.com",
     "url": "https://bitcoin-studio.com"
   },
-  "license": "MIT",
-  "devDependencies": {}
+  "license": "MIT"
 }
