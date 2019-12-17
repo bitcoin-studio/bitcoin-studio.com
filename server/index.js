@@ -14,7 +14,6 @@ app.use(express.static(path.resolve(__dirname, '../client/build')))
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 
-// Answer API requests.
 app.get('/api', function (req, res) {
   res.set('Content-Type', 'application/json')
   res.send('{"message":"Hello from the bitcoin studio custom server!"}')
@@ -66,5 +65,5 @@ app.get('*', function(request, response) {
 })
 
 app.listen(PORT, function () {
-  console.error(`Node cluster worker ${process.pid}: listening on port ${PORT}`)
+  console.log(`Node cluster worker ${process.pid}: listening on port ${PORT}`)
 })
