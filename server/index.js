@@ -65,5 +65,5 @@ app.get('*', function(request, response) {
 })
 
 app.listen(PORT, function () {
-  console.log(`Node cluster worker ${process.pid}: listening on port ${PORT}`)
+  console.log(`Server listening on port ${PORT}`)
 })
