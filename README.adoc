@@ -1,0 +1,12 @@
+= Welcome to the Bitcoin Studio website repository
+
+This project was bootstrapped with https://github.com/offgridnetworks/fuse-box-create-react-app[Fuse-Box Create React App^] for TypeScript.
+
+* CSS
+** Sass pre-processor
+** CSS Grid layout
+
+Served with Express, Nginx, hosted on VPS
+
+
+
