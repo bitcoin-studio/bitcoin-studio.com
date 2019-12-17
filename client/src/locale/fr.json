@@ -83,34 +83,37 @@
     "next-session": {
       "title": "PROCHAINES SESSIONS",
       "masteringFundamentals" : {
-        "t1What": "What: ",
+        "t1What": "Quoi: ",
         "p1What": "<0>Maîtrise des Fondamentaux</0>",
-        "t2When": "When: ",
-        "p2When": "14 Décembre 2019 (de 9h à 17h, 1 heure de pause déjeuner)",
-        "t3Where": "Where: ",
-        "p3Where": "<0>The Block, rua Latino Coelho 63, Lisbon</0>",
-        "t4Price": "Price: ",
-        "p4Price": "75€"
+        "t2When": "Quand: ",
+        "p2When": "À déterminer (de 9h à 17h, 1 heure de pause déjeuner)",
+        "t3Where": "Où: ",
+        "p3Where_": "<0>The Block, rua Latino Coelho 63, Lisbon</0>",
+        "p3Where": "À déterminer",
+        "t4Price": "Prix: ",
+        "p4Price": "À déterminer"
       },
       "bitcoinProgramming" : {
-        "t1What": "What: ",
+        "t1What": "Quoi: ",
         "p1What": "<0>Programmation Bitcoin avec Bitcoin Core et BitcoinJS</0>",
-        "t2When": "When: ",
-        "p2When": "7 Décembre 2019 (de 9h à 17h, 1 heure de pause déjeuner)",
-        "t3Where": "Where: ",
-        "p3Where": "<0>The Block, rua Latino Coelho 63, Lisbon</0>",
-        "t4Price": "Price: ",
-        "p4Price": "100€"
+        "t2When": "Quand: ",
+        "p2When": "À déterminer (de 9h à 17h, 1 heure de pause déjeuner)",
+        "t3Where": "Où: ",
+        "p3Where_": "<0>The Block, rua Latino Coelho 63, Lisbon</0>",
+        "p3Where": "À déterminer",
+        "t4Price": "Prix: ",
+        "p4Price": "À déterminer"
       },
       "lightningNetwork" : {
-        "t1What": "What: ",
+        "t1What": "Quoi: ",
         "p1What": "<0>Initiation au Lightning Network</0>",
-        "t2When": "When: ",
-        "p2When": "8 Décembre 2019 (de 9h à 17h, 1 heure de pause déjeuner)",
-        "t3Where": "Where: ",
-        "p3Where": "<0>The Block, rua Latino Coelho 63, Lisbon</0>",
-        "t4Price": "Price: ",
-        "p4Price": "100€"
+        "t2When": "Quand: ",
+        "p2When": "À déterminer (de 9h à 17h, 1 heure de pause déjeuner)",
+        "t3Where": "Où: ",
+        "p3Where_": "<0>The Block, rua Latino Coelho 63, Lisbon</0>",
+        "p3Where": "À déterminer",
+        "t4Price": "Prix: ",
+        "p4Price": "À déterminer"
       },
       "registerNow": {
         "button": "Inscrivez-vous Dès Maintenant!",
@@ -240,13 +243,12 @@
     "title": "À PROPOS",
     "hero": "Bitcoin Studio a été fondé par Stéphane Roche, développeur Bitcoin et web, éducateur, consultant, maker et cypherpunk convaincu.",
     "about-title": "Stéphane Roche - Fondateur",
-    "about-content-1": "Lorsque j'ai entendu parler de Bitcoin en 2014, j'en suis rapidement devenu obsédé. Une alternative au système financier était pour moi très attrayante et je voulais en savoir plus. Je suis entré dans le terrier du lapin et cela a complètement changé ma vie.",
-    "about-content-2": "Un an et demi auparavant, j'obtenais ma maîtrise en Histoire et Gestion des archives audiovisuelles. Mais j'étais déjà amoureux de l'informatique et juste après le diplôme, je suivais des cours du soir pour apprendre le développement web. C'était mon premier geste audacieux. Ce n'était pas une situation confortable, mais plutôt une situation “réussir ou mourir”, en retournant au domicile parental à l'âge de 28 ans. Puis, pour mon stage de fin d'études en développement web en 2015, j'ai eu le privilège de travailler six mois pour la société française Ledger (hardware wallet) avec une petite équipe talentueuse où j'ai beaucoup appris sur Bitcoin et la programmation.",
-    "about-content-3": "Après quoi j'ai travaillé un an en tant que développeur Javascript dans une startup appelée Anaplan, située dans le quartier le plus exclusif de Paris (16ème arrondissement). Ce fut une expérience appréciable, mais fin 2016 je décidai de revenir sur les crypto-monnaies. L'environnement 'corporate' et les heures de travail rigides n'étaient pas pour moi. Je pouvais aussi voir le potentiel de la technologie blockchain (pun intended) quand personne autour de moi ne savait de quoi il s'agissait. Cependant, à l'époque, je pensais que se concentrer sur Ethereum était le choix évident en termes de business. J'appris alors à créer des smart-contrats avec le language Solidity, me suis impliqué dans différents projets, et co-fonda Asseth, une grande association à but non lucratif qui promeut Ethereum de différentes manières. J'étais à l'avant-garde, apprenant, programmant et enseignant Ethereum alors que la plateforme était encore toute jeune et inconnue de la vaste population.",
+    "about-content-1": "Réponse courte: Je me considère aujourd'hui comme un développeur Javascript/Typescript Fullstack intermédiaire, avec de fortes connaissances sur Bitcoin, la technologie blockchain et diverses disciplines associées. En mars 2019, j'ai fondé la société Bitcoin Studio pour proposer des formations et du développement logiciel. Au fil des années, je pense avoir acquis suffisamment d'expérience pour avoir la capacité de répondre à vos besoins.",
+    "about-content-2": "Réponse longue: Lorsque j'ai entendu parler de Bitcoin en 2014, j'en suis rapidement devenu obsédé. Une alternative au système financier était pour moi très attrayante et je voulais en savoir plus. Je suis entré dans le terrier du lapin et cela a complètement changé ma vie. Un an et demi auparavant, j'obtenais ma maîtrise en Histoire et Gestion des archives audiovisuelles. Mais j'étais déjà amoureux de l'informatique et juste après le diplôme, je suivais des cours du soir pour apprendre le développement web. C'était mon premier geste audacieux. Ce n'était pas une situation confortable, mais plutôt une situation “réussir ou mourir”, en retournant au domicile parental à l'âge de 28 ans. Puis, pour mon stage de fin d'études en développement web en 2015, j'ai eu le privilège de travailler six mois pour la société française Ledger (hardware wallet) avec une petite équipe talentueuse où j'ai beaucoup appris sur Bitcoin et la programmation.",
+    "about-content-3": "Après quoi j'ai travaillé un an en tant que développeur Javascript dans une startup appelée Anaplan, située dans le quartier le plus exclusif de Paris (16ème arrondissement). Ce fut une expérience appréciable, mais fin 2016 je décidai de revenir sur les crypto-monnaies. Je pouvais voir le potentiel de la technologie blockchain quand personne autour de moi ne savait de quoi il s'agissait. Cependant, à l'époque, je pensais que se concentrer sur Ethereum était le choix évident en termes de business. J'appris alors à créer des smart-contrats avec le language Solidity, me suis impliqué dans différents projets, et co-fonda Asseth, une grande association à but non lucratif qui promeut Ethereum de différentes manières. J'étais à l'avant-garde, apprenant, programmant et enseignant Ethereum alors que la plateforme était encore toute jeune et inconnue de la vaste population.",
     "about-content-4": "Le problème, c'est que je ne trouvais pas dans Ethereum les valeurs pour lesquelles je me battais. J'avais une bonne position dans l'industrie naissante, reconnu parmi la petite communauté française Ethereum que nous avions créée. C'était l'incompréhension pour bon nombre lorsque je quitta Ethereum au beau milieu de l'engouement des ICOs. Encore une autre initiative très audacieuse, que je ne regrette pas.",
     "about-content-5": "En septembre 2017, j'ai déménagé à Lisbonne pour rejoindre un nouvel espace de coworking crypto-friendly appelé The Block, fondé par quelques Français (dont Kevin Loaec qui organise Breaking Bitcoin et Building on Bitcoin), et je me suis concentré exclusivement sur Bitcoin. Pendant deux ans, j'ai appris Bitcoin avec beaucoup de rigueur, en étudiant tous les différents aspects de la technologie et des sujets associés comme la cryptographie et la théorie des jeux. Je m'étais fixé comme objectif de faire des présentations techniques Bitcoin au coworking tous les deux mois. Les diapositives de chaque présentation sont sur ce site.",
-    "about-content-6": "J'ai aussi réalisé divers projets éducatifs, ce qui a été un moyen très efficace pour moi d'apprendre. J'ai fait un guide complet qui explique comment créer tous les différents types de transactions avec BitcoinJS, un constructeur de machine virtuelle qui inclut tous les logiciels Bitcoin, un gabarit de code mnémonique, une sorte de jeu pour apprendre comment fonctionne les transactions Bitcoin, etc. Tout est sur le site et sur Github. Mon dernier projet est un distributeur automatique de capsules Nespresso qui utilise Bitcoin sur Lightning Network. La machine a été réalisée dans un FabLab avec un laser cutter et une imprimante 3D. Ce fut l'occasion d'apprendre la CAO, la programmation sur SBC avec Lua, etc. Quant à l'interface utilisateur, elle existe en deux versions. Les clients peuvent payer par le biais d'une application Web que j'ai faite, ou par le biais d'une application point de vente BTCPay. La machine est maintenant en service chez The Block coworking.",
-    "about-content-7": "Pour conclure, je me considère aujourd'hui comme un développeur Javascript/Typescript Fullstack intermédiaire, avec de fortes connaissances sur Bitcoin et la technologie blockchain, ainsi que beaucoup d'autres choses qui ne peuvent pas tenir dans cette bio. En mars 2019, j'ai fondé la société Bitcoin Studio pour proposer des formations et du développement logiciel. Au fil des années, je pense avoir acquis suffisamment d'expérience pour avoir la capacité de répondre à vos besoins."
+    "about-content-6": "J'ai aussi réalisé divers projets éducatifs, ce qui a été un moyen très efficace pour moi d'apprendre. J'ai fait un guide complet qui explique comment créer tous les différents types de transactions avec BitcoinJS, un constructeur de machine virtuelle qui inclut tous les logiciels Bitcoin, un gabarit de code mnémonique, une sorte de jeu pour apprendre comment fonctionne les transactions Bitcoin, etc. Tout est sur le site et sur Github. Mon dernier projet est un distributeur automatique de capsules Nespresso qui utilise Bitcoin sur Lightning Network. La machine a été réalisée dans un FabLab avec un laser cutter et une imprimante 3D. Ce fut l'occasion d'apprendre la CAO, la programmation sur SBC avec Lua, etc. Quant à l'interface utilisateur, elle existe en deux versions. Les clients peuvent payer par le biais d'une application Web que j'ai faite, ou par le biais d'une application point de vente BTCPay. La machine est maintenant en service chez The Block coworking."
   },
   "Contact": {
     "title": "CONTACT",

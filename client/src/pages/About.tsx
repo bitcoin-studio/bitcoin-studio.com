@@ -45,10 +45,6 @@ function About({t}) {
           <p>
             {t('about-content-6')}
           </p>
-
-          <p>
-            {t('about-content-7')}
-          </p>
         </section>
       </div>
   )
