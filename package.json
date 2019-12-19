@@ -5,6 +5,7 @@
   "engines": {
     "node": "8.9.x"
   },
+  "homepage": "https://bitcoin-studio.com",
   "scripts": {
     "start": "node server"
   },
