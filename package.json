@@ -7,7 +7,7 @@
   },
   "homepage": "https://bitcoin-studio.com",
   "scripts": {
-    "start": "node server"
+    "start": "nodemon server"
   },
   "cacheDirectories": [
     "node_modules",

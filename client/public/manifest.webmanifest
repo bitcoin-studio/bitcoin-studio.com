@@ -1,7 +1,7 @@
 {
   "short_name": "Bitcoin Studio",
   "name": "Bitcoin Studio",
-  "start_url": "https://www.bitcoin-studio.com",
+  "start_url": ".",
   "display": "standalone",
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
