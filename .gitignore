@@ -1,7 +1,4 @@
-# Fusebox
-.fusebox/
-client/.fusebox/
-
+build/
 
 # Local development
 *.env
