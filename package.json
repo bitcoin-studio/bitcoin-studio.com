@@ -33,18 +33,20 @@
     "react-i18next": "^11.2.7",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.3.0",
+    "source-map-explorer": "^2.1.2",
     "svg-loaders-react": "^2.1.0",
     "sweetalert": "^2.1.2",
     "typescript": "~3.7.2",
     "yup": "^0.28.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn start\"",
     "eject": "react-scripts eject",
     "server": "nodemon server",
-    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn start\""
+    "start": "react-scripts start",
+    "test": "react-scripts test"
   },
   "eslintConfig": {
     "extends": "react-app"
