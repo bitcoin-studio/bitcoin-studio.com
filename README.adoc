@@ -1,6 +1,10 @@
 = Welcome to the Bitcoin Studio website repository
 
-This project is based on Create-React-App, written in TypeScript.
+* Code
+** Based on Create-React-App
+** Typescript
+** ReactJS
+** Using function components and React Hooks!
 
 * Styling
 ** Sass pre-processor
