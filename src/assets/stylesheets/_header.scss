@@ -82,6 +82,7 @@
 	
 	nav.header__links {
 		height: 70px;
+		overflow: scroll;
 		
 		a, button {
 			color: $color-primary;
