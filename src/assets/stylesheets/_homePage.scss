@@ -14,7 +14,7 @@
 		
 		p {
 			font-family: "Roboto Condensed", sans-serif;
-			color: white;
+			color: $color-secondary;
 			font-weight: bold;
 			letter-spacing: 1px;
 			overflow: scroll;
@@ -246,7 +246,7 @@
 				}
 				
 				.inside span > a {
-					color: #ffffff;
+					color: $color-secondary;
 				}
 			}
 			
@@ -261,7 +261,7 @@
 				}
 				
 				.inside span > a {
-					color: #39444a;
+					color: $color-primary;
 				}
 			}
 		}

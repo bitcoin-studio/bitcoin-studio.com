@@ -1,7 +1,10 @@
-@import 'global';
-@import 'homePage';
-@import 'workshopsPage';
-@import 'resourcesPage';
-@import 'aboutPage';
-@import 'contactPage';
-@import 'notFound';
+@import "_variables";
+@import '_global';
+@import '_header';
+@import '_footer';
+@import '_homePage';
+@import '_workshopsPage';
+@import '_resourcesPage';
+@import '_aboutPage';
+@import '_contactPage';
+@import '_notFound';

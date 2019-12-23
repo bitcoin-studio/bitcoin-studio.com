@@ -5,7 +5,7 @@ import photo from '../assets/img/stephane_roche_profile.jpg'
 function About({t}: WithTranslation) {
 
   return (
-      <div id={'aboutPage'}>
+      <div className={'page'} id={'aboutPage'}>
         <div className={'hero'}>
           <h1>
             {t('title')}

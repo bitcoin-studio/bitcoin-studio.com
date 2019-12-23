@@ -1,0 +1,19 @@
+/* COLORS */
+$color-primary: #39444a;
+$color-secondary: #ffffff;
+$color-tertiary: #fdc300;
+$color-tertiary-dark: #f79513;
+$color-bg-menu: #bbb091;
+$color-danger: red;
+$color-link: #2d357d;
+$color-link-hover: $color-tertiary-dark;
+
+/* BREAKPOINTS */
+$screen-xs-min: 550px;
+$screen-xxs-max: ($screen-xs-min - 1);
+$screen-sm-min: 768px;
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-md-min: 980px;
+$screen-sm-max: ($screen-md-min - 1);
+$screen-lg-min: 1200px;
+$screen-md-max: ($screen-lg-min - 1);

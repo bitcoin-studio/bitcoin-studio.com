@@ -1,0 +1,187 @@
+.header__container {
+	grid-row: 1;
+	grid-column: 1/13;
+	background: $color-secondary;
+	box-shadow: 0 2px 40px $color-primary;
+	z-index: 1; // needed for box-shadow homepage
+	
+	button.menu-burger {
+		display: none;
+		
+		@media screen and (max-width: $screen-xs-max) {
+			position: absolute;
+			top: 20px;
+			right: 2rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			width: 2rem;
+			height: 2rem;
+			background: transparent;
+			border: none;
+			cursor: pointer;
+			padding: 0;
+			z-index: 10;
+			
+			&:focus {
+				outline: none;
+			}
+			
+			&.menu-burger--open {
+				:first-child {
+					transform: rotate(45deg);
+				}
+				
+				:nth-child(2) {
+					opacity: 0;
+					transform: translateX(20px);
+				}
+				
+				:nth-child(3) {
+					transform: rotate(-45deg);
+				}
+			}
+			
+			span {
+				width: 2rem;
+				height: 0.25rem;
+				background: $color-tertiary;
+				border-radius: 10px;
+				transition: all 0.3s linear;
+				position: relative;
+				transform-origin: 1px;
+				
+				:first-child {
+					transform: rotate(0);
+				}
+				
+				:nth-child(2) {
+					opacity: 1;
+					transform: translateX(0);
+				}
+				
+				:nth-child(3) {
+					transform: rotate(0);
+				}
+			}
+		}
+	}
+	
+	.header {
+		img {
+			left: 0;
+			margin: 10px 0 0 120px;
+			position: absolute;
+			top: 0;
+			width: 50px;
+			@media screen and (max-width: $screen-xs-max) {
+				margin: 10px 0 0 10px;
+			}
+		}
+	}
+	
+	nav.header__links {
+		height: 70px;
+		
+		a, button {
+			color: $color-primary;
+			cursor: pointer;
+			outline: none;
+			text-decoration: none;
+			text-transform: uppercase;
+			transition: color 0.3s linear;
+		}
+		
+		@media (max-width: $screen-xxs-max) {
+			width: 100%;
+		}
+		
+		@media screen and (max-width: $screen-xs-max) {
+			background: $color-bg-menu;
+			box-sizing: border-box;
+			height: 100vh;
+			left: 0;
+			padding: 5rem 2rem;
+			position: fixed;
+			text-align: left;
+			top: 0;
+			transition: transform 1s ease-in-out;
+			transform: translateX(-100%);
+			
+			&.nav__mobile--open {
+				transform: translateX(0);
+				opacity: 1;
+			}
+			
+			ul {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				list-style: none;
+				padding: 0;
+				
+				li {
+					padding: 2rem 0;
+					
+					a, button {
+						font-size: 2rem;
+						font-weight: bold;
+						letter-spacing: 0.5rem;
+						@media (max-width: 800px) {
+							font-size: 1.5rem;
+							text-align: center;
+						}
+						&:hover {
+							color: $color-tertiary;
+						}
+					}
+				}
+			}
+		}
+		
+		@media screen and (min-width: $screen-sm-min) {
+			ul {
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				height: 100%;
+				margin: 0 6%;
+				padding: 0;
+				list-style: none;
+				
+				li {
+					font-family: 'Pathway Gothic One', Helvetica, Arial, "Trebuchet MS", sans-serif;
+					font-size: 25px;
+					font-weight: normal;
+					margin: 0 8px;
+					
+					&:first-child {
+						display: none;
+					}
+					
+					@media screen and (max-width: 350px) {
+						& {
+							margin: 0 4px;
+						}
+					}
+					@media screen and (max-width: 620px) {
+						& {
+							font-size: 16px;
+							letter-spacing: -1px;
+							left: 0;
+						}
+					}
+					
+					a, button {
+						&.menu-item--active {
+							color: $color-tertiary-dark;
+						}
+						&:hover {
+							color: $color-link-hover;
+						}
+					}
+				}
+			}
+		}
+	}
+}

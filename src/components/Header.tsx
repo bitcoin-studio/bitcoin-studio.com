@@ -1,77 +1,80 @@
-import * as React from 'react'
-import { Link } from 'react-router-dom'
-import { withTranslation, WithTranslation } from 'react-i18next'
+import React, { useState } from 'react'
+import {Link} from 'react-router-dom'
+import {WithTranslation, withTranslation} from 'react-i18next'
+import {TFunction} from 'i18next'
 import i18n from '../i18n'
 import logo from '../assets/img/bitcoin-studio-black.svg'
 
-interface IProps extends WithTranslation {
-  t: ((s: string) => string)
-}
-interface IState {
-  activeItem: string
+interface IHeaderProps extends WithTranslation, React.HTMLAttributes<HTMLDivElement> {
+  isMenuOpen: boolean;
+  t: TFunction;
 }
 
-class Header extends React.Component<IProps & WithTranslation, IState> {
+function Header({t, isMenuOpen}: IHeaderProps) {
+  const [activeItem, setActiveItem] = useState(initialPage())
 
-  constructor(props: Readonly<IProps>) {
-    super(props)
-    this.activate = this.activate.bind(this)
-    this.changeLanguage = this.changeLanguage.bind(this)
-    this.state = {
-      activeItem: 'HOME'
+  function initialPage () {
+    switch (window.location.pathname) {
+      case ('/'):
+        return 'HOME'
+      case ('/workshops'):
+        return 'WORKSHOPS'
+      case ('/resources'):
+        return 'RESOURCES'
+      case ('/about'):
+        return 'ABOUT'
+      case ('/contact'):
+        return 'CONTACT'
+      default:
+        return 'NOTFOUND'
     }
   }
 
-  componentDidMount() {
-    let page = window.location.pathname
-    if (page === '/') this.setState({activeItem: 'HOME'})
-    else if (page === '/workshops') this.setState({activeItem: 'WORKSHOPS'})
-    else if (page === '/resources') this.setState({activeItem: 'RESOURCES'})
-    else if (page === '/about') this.setState({activeItem: 'ABOUT'})
-    else if (page === '/contact') this.setState({activeItem: 'CONTACT'})
-  }
-
-  activate(item: string) {
-    this.setState({activeItem: item})
-  }
-
-  changeLanguage = (lng: string) => {
+  function changeLanguage (lng: string) {
     i18n.changeLanguage(lng)
       .catch((e) => console.error(e))
   }
 
-  render() {
-    const {t} = this.props
-    return (
-        <nav className={"nav"}>
-          <ul>
-            <li>
-              <Link className={this.state.activeItem === 'HOME' ? 'active' : ''}  onClick={this.activate.bind(this, 'HOME')} to="/">
-                <img src={logo} alt="Bitcoin Studio Logo"/>
-              </Link>
-            </li>
-            <li>
-              <Link className={this.state.activeItem === 'WORKSHOPS' ? 'active' : ''} onClick={this.activate.bind(this, 'WORKSHOPS')} to="/workshops">{t('workshops')}</Link>
-            </li>
-            <li>
-              <Link className={this.state.activeItem === 'RESOURCES' ? 'active' : ''} onClick={this.activate.bind(this, 'RESOURCES')} to="/resources">{t('resources')}</Link>
-            </li>
-            <li>
-              <Link className={this.state.activeItem === 'ABOUT' ? 'active' : ''} onClick={this.activate.bind(this, 'ABOUT')} to="/about">{t('about')}</Link>
-            </li>
-            <li>
-              <Link className={this.state.activeItem === 'CONTACT' ? 'active' : ''} onClick={this.activate.bind(this, 'CONTACT')} to="/contact">{t('contact')}</Link>
-            </li>
+  const tabIndex = isMenuOpen ? 0 : -1
 
-            <li id={'translation-btn'}>
-              <button className={'btn-link'} onClick={() => this.changeLanguage('en')}>EN</button>
-              {'/'}
-              <button className={'btn-link'} onClick={() => this.changeLanguage('fr')}>FR</button>
-            </li>
-          </ul>
-        </nav>
-    )
-  }
+  return (
+    <div className={'header'}>
+      <Link className={activeItem === 'HOME' ? 'menu-item--active' : ''} onClick={() => setActiveItem('HOME')} to="/">
+        <img src={logo} alt="Bitcoin Studio Logo"/>
+      </Link>
+      <nav aria-hidden={!isMenuOpen} className={`header__links ${isMenuOpen ? 'nav__mobile--open' : ''}`}>
+        <ul>
+          <li>
+            <Link className={activeItem === 'HOME' ? 'menu-item--active' : ''} onClick={() => setActiveItem('HOME')} to="/" tabIndex={tabIndex}>
+              {t('home')}
+            </Link>
+          </li>
+          <li>
+            <Link className={activeItem === 'WORKSHOPS' ? 'menu-item--active' : ''} onClick={() => setActiveItem('WORKSHOPS')}
+                  to="/workshops" tabIndex={tabIndex}>{t('workshops')}</Link>
+          </li>
+          <li>
+            <Link className={activeItem === 'RESOURCES' ? 'menu-item--active' : ''} onClick={() => setActiveItem('RESOURCES')}
+                  to="/resources" tabIndex={tabIndex}>{t('resources')}</Link>
+          </li>
+          <li>
+            <Link className={activeItem === 'ABOUT' ? 'menu-item--active' : ''} onClick={() => setActiveItem('ABOUT')}
+                  to="/about" tabIndex={tabIndex}>{t('about')}</Link>
+          </li>
+          <li>
+            <Link className={activeItem === 'CONTACT' ? 'menu-item--active' : ''} onClick={() => setActiveItem('CONTACT')}
+                  to="/contact" tabIndex={tabIndex}>{t('contact')}</Link>
+          </li>
+
+          <li id={'translation-btn'}>
+            <button className={'btn-link'} onClick={() => changeLanguage('en')} tabIndex={tabIndex}>EN</button>
+            {'/'}
+            <button className={'btn-link'} onClick={() => changeLanguage('fr')} tabIndex={tabIndex}>FR</button>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  )
 }
 
 export default withTranslation('Header')(Header)

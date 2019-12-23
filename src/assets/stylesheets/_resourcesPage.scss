@@ -9,7 +9,7 @@
 		
 		#nespressoLightningDesc {
 			video {
-				border: 10px solid #fff;
+				border: 10px solid $color-secondary;
 				display: block;
 				margin: 40px auto;
 				
@@ -101,7 +101,7 @@
 				cursor: pointer;
 				margin-top: 5px;
 				background-color: rgba(0, 0, 0, 0);
-				color: rgba(255, 255, 255, 1);
+				color: $color-secondary;
 				-webkit-transition: all 0.5s;
 				-moz-transition: all 0.5s;
 				-o-transition: all 0.5s;

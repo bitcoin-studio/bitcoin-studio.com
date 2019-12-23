@@ -1,34 +1,67 @@
-import * as React from 'react'
+import React, {useState, useEffect, useRef} from 'react'
+import FocusLock from 'react-focus-lock'
+import {withRouter, RouteComponentProps} from 'react-router-dom'
 import Header from './components/Header'
 import Main from './components/Main'
 import Footer from './components/Footer'
+import Burger from './components/BurgerMenu'
+import { useOnClickOutside } from './hooks'
 
-class App extends React.Component {
+interface IAppProps extends RouteComponentProps {}
 
-  render() {
-    return (
-      <>
-        <Header/>
+function App({history}: IAppProps) {
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const node = useRef(null)
+  const menuId = 'main-menu'
+  useOnClickOutside(node, () => {
+    if (isMenuOpen) {
+      toggleScrolling()
+      setIsMenuOpen(false)
+    }
+  })
 
-        <Main/>
+  useEffect(() => {
+    return history.listen(() => {
+      setIsMenuOpen(false)
+      document.body.style.overflow = ''
+    })
+  })
 
-        <Footer/>
-
-        <div id={'copyrights'}>
-          <div className="strike"/>
-          <p>Bitcoin Studio - 2019</p>
-          <p>SIRET 795 207 117 00016</p>
-          <p>
-            Icons made by <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a>
-            from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-            is licensed by
-            <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" rel="noopener noreferrer" target="_blank">
-            CC 3.0 BY</a>
-          </p>
-        </div>
-      </>
-    )
+  function toggleScrolling() {
+    if (isMenuOpen && document.body.style.overflow === 'hidden') {
+      document.body.style.overflow = ''
+    } else {
+      document.body.style.overflow = 'hidden'
+    }
   }
+
+  function onToggleMenu() {
+    toggleScrolling()
+    setIsMenuOpen(!isMenuOpen)
+  }
+
+  return (
+    <>
+      <div ref={node} className={'header__container'}>
+        {/* FocusLock for A11y */}
+        <FocusLock disabled={!isMenuOpen}>
+          <Burger
+            aria-controls={menuId}
+            isMenuOpen={isMenuOpen}
+            onToggleMenu={() => onToggleMenu()}
+          />
+          <Header
+            id={menuId}
+            isMenuOpen={isMenuOpen}
+          />
+        </FocusLock>
+      </div>
+
+      <Main/>
+
+      <Footer/>
+    </>
+  )
 }
 
-export default App
+export default withRouter(App)
