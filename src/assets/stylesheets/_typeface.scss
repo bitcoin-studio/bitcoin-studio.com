@@ -1,0 +1,134 @@
+/**
+    Polices
+    - Pathway Gothic One  (headers)
+    - Roboto Slab (normal text)
+    - Roboto Condensed (bold text)
+ */
+
+/* roboto-condensed-regular - latin */
+@font-face {
+	font-family: 'Roboto Condensed';
+	font-style: normal;
+	font-weight: 400;
+	font-display: auto;
+	src: local('Roboto Condensed'), local('RobotoCondensed-Regular'),
+	url('../fonts/roboto-condensed-v18-latin/roboto-condensed-v18-latin-regular.woff2') format('woff2'),
+	url('../fonts/roboto-condensed-v18-latin/roboto-condensed-v18-latin-regular.woff') format('woff');
+}
+
+/* roboto-slab-regular - latin */
+@font-face {
+	font-family: 'Roboto Slab';
+	font-style: normal;
+	font-weight: 400;
+	font-display: auto;
+	src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
+	url('../fonts/roboto-slab-v9-latin/roboto-slab-v9-latin-regular.woff2') format('woff2'),
+	url('../fonts/roboto-slab-v9-latin/roboto-slab-v9-latin-regular.woff') format('woff');
+}
+
+/* pathway-gothic-one-regular - latin */
+@font-face {
+	font-family: 'Pathway Gothic One';
+	font-style: normal;
+	font-display: auto;
+	src: local('Pathway Gothic One Regular'), local('PathwayGothicOne-Regular'),
+	url('../fonts/pathway-gothic-one-v8-latin/pathway-gothic-one-v8-latin-regular.woff2') format('woff2'),
+	url('../fonts/pathway-gothic-one-v8-latin/pathway-gothic-one-v8-latin-regular.woff') format('woff');
+}
+
+/**
+    HEADERS
+ */
+h1, h2, h3 {
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-weight: normal;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+}
+
+h1 {
+	line-height: 85%;
+	margin: 20px 0 0 0;
+	white-space: nowrap;
+	
+	@media screen and (max-width: 350px) {
+		& {
+			font-size: 3.15em;
+		}
+	}
+	
+	@media screen and (min-width: 350px) and (max-width: 550px) {
+		& {
+			font-size: 3.5em;
+		}
+	}
+	
+	@media screen and (min-width: 550px) and (max-width: 768px) {
+		& {
+			font-size: 4.5em;
+		}
+	}
+	
+	@media screen and (min-width: 768px) and (max-width: 980px) {
+		& {
+			font-size: 5em;
+		}
+	}
+	@media screen and (min-width: 980px) and (max-width: 1200px) {
+		& {
+			font-size: 5.5em;
+		}
+	}
+	@media screen and (min-width: 1200px) {
+		& {
+			font-size: 6em;
+		}
+	}
+}
+
+
+h2 {
+	line-height: 100%;
+	margin: 15px 0 25px 0;
+	
+	@media screen and (max-width: 350px) {
+		& {
+			font-size: 2.3em;
+		}
+	}
+	
+	@media screen and (min-width: 350px) and (max-width: 550px) {
+		& {
+			font-size: 2.4em;
+		}
+	}
+	
+	@media screen and (min-width: 550px) and (max-width: 768px) {
+		& {
+			font-size: 2.5em;
+		}
+	}
+	
+	@media screen and (min-width: 768px) and (max-width: 980px) {
+		& {
+			font-size: 2.6em;
+		}
+	}
+	@media screen and (min-width: 980px) and (max-width: 1200px) {
+		& {
+			font-size: 2.7em;
+		}
+	}
+	@media screen and (min-width: 1200px) {
+		& {
+			font-size: 2.75em;
+		}
+	}
+}
+
+h3 {
+	font-size: 2em;
+	line-height: 100%;
+	margin: 30px 0 15px 0;
+}
