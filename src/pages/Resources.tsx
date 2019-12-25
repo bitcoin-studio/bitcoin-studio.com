@@ -4,7 +4,7 @@ import {withTranslation, Trans, WithTranslation} from 'react-i18next'
 function Resources({t}: WithTranslation) {
 
   return (
-    <div className={'page'} id="resourcesPage">
+    <div className={'page page--xs'} id="resourcesPage">
       <div className={'hero'}>
         <h1>{t('title')}</h1>
         <p>{t('hero')}</p>

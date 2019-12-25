@@ -5,7 +5,7 @@ import notFound from '../assets/img/notFound.jpg'
 function NotFound({t} : WithTranslation) {
 
   return (
-    <div className={'page'} id={'notFoundPage'}>
+    <div className={'page page--xs'} id={'notFoundPage'}>
       <div className={'hero'}>
         <h1>
           {t('title')}

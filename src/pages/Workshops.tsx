@@ -12,7 +12,7 @@ function Workshops({t}: WithTranslation) {
   }
 
   return (
-    <div className={'page'} id={'workshopPage'}>
+    <div className={'page page--xs'} id={'workshopPage'}>
 
       <div className={'hero'}>
         <h1>{t('title')}</h1>

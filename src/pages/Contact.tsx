@@ -25,7 +25,7 @@ function Contact({t}: WithTranslation) {
     }
 
   return (
-    <div className={'page'} id={'contactPage'}>
+    <div className={'page page--xs'} id={'contactPage'}>
       <div className={'hero'} id={'contact-hero'}>
         <h1>
           {t('title')}

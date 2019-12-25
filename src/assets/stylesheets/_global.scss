@@ -16,8 +16,8 @@
 	font-weight: 400;
 	font-display: auto;
 	src: local('Roboto Condensed'), local('RobotoCondensed-Regular'),
-	url('../fonts/roboto-condensed-v18-latin/roboto-condensed-v18-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-	url('../fonts/roboto-condensed-v18-latin/roboto-condensed-v18-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+	url('../fonts/roboto-condensed-v18-latin/roboto-condensed-v18-latin-regular.woff2') format('woff2'),
+	url('../fonts/roboto-condensed-v18-latin/roboto-condensed-v18-latin-regular.woff') format('woff');
 }
 
 /* roboto-slab-regular - latin */
@@ -27,8 +27,8 @@
 	font-weight: 400;
 	font-display: auto;
 	src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'),
-	url('../fonts/roboto-slab-v9-latin/roboto-slab-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-	url('../fonts/roboto-slab-v9-latin/roboto-slab-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+	url('../fonts/roboto-slab-v9-latin/roboto-slab-v9-latin-regular.woff2') format('woff2'),
+	url('../fonts/roboto-slab-v9-latin/roboto-slab-v9-latin-regular.woff') format('woff');
 }
 
 /* pathway-gothic-one-regular - latin */
@@ -38,8 +38,8 @@
 	font-weight: 400;
 	font-display: auto;
 	src: local('Pathway Gothic One Regular'), local('PathwayGothicOne-Regular'),
-	url('../fonts/pathway-gothic-one-v8-latin/pathway-gothic-one-v8-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-	url('../fonts/pathway-gothic-one-v8-latin/pathway-gothic-one-v8-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+	url('../fonts/pathway-gothic-one-v8-latin/pathway-gothic-one-v8-latin-regular.woff2') format('woff2'),
+	url('../fonts/pathway-gothic-one-v8-latin/pathway-gothic-one-v8-latin-regular.woff') format('woff');
 }
 
 body {
@@ -69,7 +69,7 @@ body {
 			grid-row: 2;
 			grid-column: 1/13;
 			
-			& > div {
+			& .page {
 				display: grid;
 				grid-template-columns: repeat(12, 1fr);
 				font-family: "Roboto Slab", serif;
@@ -318,7 +318,9 @@ button {
 
 
 .page {
-	@media screen and (max-width: $screen-xs-max) {
-		padding-top: 60px;
+	&--xs {
+		@media screen and (max-width: $screen-xs-max) {
+			padding-top: 60px;
+		}
 	}
 }

@@ -9,7 +9,7 @@ import hosting from '../assets/img/home_hosting_512.png'
 function Home({ t }: WithTranslation) {
 
   return (
-    <div id={'homePage'}>
+    <div className={'page'} id={'homePage'}>
       <section id={'bgHome'}>
         <p>
           {t('hero')}
