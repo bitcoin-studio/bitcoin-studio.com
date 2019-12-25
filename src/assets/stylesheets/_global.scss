@@ -69,6 +69,30 @@ body {
 			grid-row: 2;
 			grid-column: 1/13;
 			
+			/* Page Fading Transition */
+			.pageContainer-enter {
+				opacity: 0;
+				transform: scale(1.01);
+			}
+			
+			.pageContainer-enter-active {
+				opacity: 1;
+				transform: scale(1);
+				transition: opacity 300ms, transform 300ms;
+			}
+			
+			.pageContainer-exit {
+				opacity: 1;
+				transform: scale(1);
+			}
+			
+			.pageContainer-exit-active {
+				opacity: 0;
+				transform: scale(0.99);
+				transition: opacity 300ms, transform 300ms;
+			}
+			/**/
+			
 			& .page {
 				display: grid;
 				grid-template-columns: repeat(12, 1fr);
@@ -76,6 +100,12 @@ body {
 				font-size: 17px;
 				letter-spacing: 0.3px;
 				min-height: 700px;
+				
+				&--xs {
+					@media screen and (max-width: $screen-xs-max) {
+						padding-top: 60px;
+					}
+				}
 				
 				section {
 					margin: 30px 0;
@@ -313,14 +343,5 @@ button {
 		margin: 0;
 		height: 35px;
 		color: $color-danger;
-	}
-}
-
-
-.page {
-	&--xs {
-		@media screen and (max-width: $screen-xs-max) {
-			padding-top: 60px;
-		}
 	}
 }
