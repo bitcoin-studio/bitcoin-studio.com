@@ -2,6 +2,7 @@
   "name": "bitcoin-studio",
   "version": "2.0.0",
   "private": true,
+  "homepage": "https://www.bitcoin-studio.com",
   "license": "MIT",
   "dependencies": {
     "@sweetalert/with-react": "^0.1.1",
