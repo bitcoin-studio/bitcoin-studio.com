@@ -1,7 +1,8 @@
 import * as React from 'react'
 import {withTranslation, Trans, WithTranslation} from 'react-i18next'
 
-function Resources({t}: WithTranslation) {
+export const Resources: React.ComponentClass<any> | React.FunctionComponent<any> = withTranslation('Resources')
+(({t}: WithTranslation) => {
 
   return (
     <div className={'page page--xs'} id="resourcesPage">
@@ -293,6 +294,4 @@ function Resources({t}: WithTranslation) {
       </section>
     </div>
   )
-}
-
-export default withTranslation('Resources')(Resources)
+})

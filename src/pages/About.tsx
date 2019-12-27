@@ -2,7 +2,8 @@ import * as React from 'react'
 import {withTranslation, WithTranslation} from 'react-i18next'
 import photo from '../assets/img/stephane_roche_profile.jpg'
 
-function About({t}: WithTranslation) {
+export const About: React.ComponentClass<any> | React.FunctionComponent<any> = withTranslation('About')
+(({t}: WithTranslation) => {
 
   return (
       <div className={'page page--xs'} id={'aboutPage'}>
@@ -49,6 +50,4 @@ function About({t}: WithTranslation) {
         </section>
       </div>
   )
-}
-
-export default  withTranslation('About')(About)
+})

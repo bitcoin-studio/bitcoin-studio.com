@@ -1,19 +1,22 @@
-import React, { useState } from 'react'
+import React, {useCallback, useState} from 'react'
 import {Link} from 'react-router-dom'
 import {WithTranslation, withTranslation} from 'react-i18next'
-import {TFunction} from 'i18next'
 import i18n from '../i18n'
 import logo from '../assets/img/bitcoin-studio-black.svg'
 
-interface IHeaderProps extends WithTranslation, React.HTMLAttributes<HTMLDivElement> {
-  isMenuOpen: boolean;
-  t: TFunction;
+type Props = WithTranslation & {
+  isMenuOpen: boolean
 }
 
-function Header({t, isMenuOpen}: IHeaderProps) {
-  const [activeItem, setActiveItem] = useState(initialPage())
+export const Header: React.ComponentClass<any> | React.FunctionComponent<any> = withTranslation('Header')
+(({t, isMenuOpen}: Props) => {
 
-  function initialPage () {
+  const changeLanguage = useCallback((lng: string) => {
+    i18n.changeLanguage(lng)
+      .catch((e) => console.error(e))
+  }, [])
+
+  const initialPage = useCallback(() => {
     switch (window.location.pathname) {
       case ('/'):
         return 'HOME'
@@ -28,12 +31,9 @@ function Header({t, isMenuOpen}: IHeaderProps) {
       default:
         return 'NOTFOUND'
     }
-  }
+  }, [])
 
-  function changeLanguage (lng: string) {
-    i18n.changeLanguage(lng)
-      .catch((e) => console.error(e))
-  }
+  const [activeItem, setActiveItem] = useState(initialPage())
 
   const tabIndex = isMenuOpen ? 0 : -1
 
@@ -45,7 +45,8 @@ function Header({t, isMenuOpen}: IHeaderProps) {
       <nav aria-hidden={!isMenuOpen} className={`header__links ${isMenuOpen ? 'nav__mobile--open' : ''}`}>
         <ul>
           <li>
-            <Link className={activeItem === 'HOME' ? 'menu-item--active' : ''} onClick={() => setActiveItem('HOME')} to="/" tabIndex={tabIndex}>
+            <Link className={activeItem === 'HOME' ? 'menu-item--active' : ''} onClick={() => setActiveItem('HOME')} to="/"
+                  tabIndex={tabIndex}>
               {t('home')}
             </Link>
           </li>
@@ -75,6 +76,4 @@ function Header({t, isMenuOpen}: IHeaderProps) {
       </nav>
     </div>
   )
-}
-
-export default withTranslation('Header')(Header)
+})

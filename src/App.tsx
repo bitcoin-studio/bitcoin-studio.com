@@ -1,15 +1,13 @@
 import React, {useState, useEffect, useRef} from 'react'
 import FocusLock from 'react-focus-lock'
 import {withRouter, RouteComponentProps} from 'react-router-dom'
-import Header from './components/Header'
-import Main from './components/Main'
-import Footer from './components/Footer'
-import Burger from './components/BurgerMenu'
-import { useOnClickOutside } from './hooks'
+import {Header} from './components/Header'
+import {Main} from './components/Main'
+import {Footer} from './components/Footer'
+import {Burger} from './components/BurgerMenu'
+import {useOnClickOutside} from './hooks'
 
-interface IAppProps extends RouteComponentProps {}
-
-function App({history}: IAppProps) {
+export const App = withRouter(({history}: RouteComponentProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const node = useRef(null)
   const menuId = 'main-menu'
@@ -62,6 +60,4 @@ function App({history}: IAppProps) {
       <Footer/>
     </>
   )
-}
-
-export default withRouter(App)
+})

@@ -1,4 +1,5 @@
 build/
+src/react-app-env.d.ts
 
 # Local development
 *.env

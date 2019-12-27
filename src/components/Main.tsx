@@ -1,15 +1,12 @@
 import React, {memo} from 'react'
 import {Route} from 'react-router-dom'
-import {
-  CSSTransition,
-} from 'react-transition-group'
-
-import Home from '../pages/Home'
-import Workshops from '../pages/Workshops'
-import Resources from '../pages/Resources'
-import About from '../pages/About'
-import Contact from '../pages/Contact'
-import NotFound from '../pages/NotFound'
+import {CSSTransition} from 'react-transition-group'
+import {Home} from '../pages/Home'
+import {Workshops} from '../pages/Workshops'
+import {Resources} from '../pages/Resources'
+import {About} from '../pages/About'
+import {Contact} from '../pages/Contact'
+import {NotFound} from '../pages/NotFound'
 
 const routes = [
   {path: '/', Component: Home},
@@ -19,7 +16,7 @@ const routes = [
   {path: '/contact', Component: Contact},
 ]
 
-function SiteRoutes(): any {
+const SiteRoutes: any = () => {
   const routeComponents = routes.map(({path, Component}) => (
     <Route key={path} exact path={path}>
       {({match}) => (
@@ -63,12 +60,10 @@ function SiteRoutes(): any {
   return routeComponents
 }
 
-function Main() {
+export const Main = memo(() => {
   return (
     <main>
       <SiteRoutes/>
     </main>
   )
-}
-
-export default memo(Main)
+})

@@ -1,13 +1,12 @@
-import * as React from 'react'
+import React, {Suspense} from 'react'
 import * as ReactDOM from 'react-dom'
-import App from './App'
+import {BrowserRouter} from 'react-router-dom'
+import {App} from './App'
+import {DelayedFallbackLoader} from './components/DelayedFallbackLoader'
 import * as serviceWorker from './serviceWorker'
 import './i18n'
 import 'normalize.css/normalize.css'
 import './assets/stylesheets/main.scss'
-import {BrowserRouter} from 'react-router-dom'
-import {Suspense} from 'react'
-import DelayedFallbackLoader from './components/DelayedFallbackLoader'
 
 ReactDOM.render(
   <BrowserRouter>

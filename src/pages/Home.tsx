@@ -6,7 +6,8 @@ import training from '../assets/img/home_thought_512.png'
 import consulting from '../assets/img/home_consulting_512.png'
 import hosting from '../assets/img/home_hosting_512.png'
 
-function Home({ t }: WithTranslation) {
+export const Home: React.ComponentClass<any> | React.FunctionComponent<any> = withTranslation('Home')
+(({t}: WithTranslation) => {
 
   return (
     <div className={'page'} id={'homePage'}>
@@ -117,6 +118,4 @@ function Home({ t }: WithTranslation) {
       </section>
     </div>
   )
-}
-
-export default withTranslation('Home')(Home)
+})

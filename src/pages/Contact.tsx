@@ -1,7 +1,7 @@
 import * as React from 'react'
 import {withTranslation, WithTranslation} from 'react-i18next'
-import { Formik, Field, Form, ErrorMessage } from 'formik'
-import { object, string } from 'yup'
+import {Formik, Field, Form, ErrorMessage, FormikHelpers} from 'formik'
+import * as Yup from 'yup'
 import axios from 'axios'
 import * as swal from '@sweetalert/with-react'
 import keybase from '../assets/icons/keybase.svg'
@@ -9,20 +9,20 @@ import linkedin from '../assets/icons/linkedin.svg'
 import pgp from '../assets/icons/pgp.svg'
 import twitter from '../assets/icons/twitter.svg'
 
-interface FormValues {
-  name: string;
-  email: string;
-  message: string;
+type FormValues = {
+  name: string
+  email: string
+  message: string
 }
 
-function Contact({t}: WithTranslation) {
+const initialValues: FormValues = {
+  name: '',
+  email: '',
+  message: '',
+}
 
-  const initialValues: FormValues =
-    {
-      name: '',
-      email: '',
-      message: ''
-    }
+export const Contact: React.ComponentClass<any> | React.FunctionComponent<any> = withTranslation('Contact')
+(({t}: WithTranslation) => {
 
   return (
     <div className={'page page--xs'} id={'contactPage'}>
@@ -73,21 +73,21 @@ function Contact({t}: WithTranslation) {
       <section className={'form'} id={'contact-form'}>
         <Formik
           initialValues={initialValues}
-          validationSchema={object().shape({
-            name: string()
+          validationSchema={Yup.object().shape({
+            name: Yup.string()
               .min(2, t('contact-form.errors.tooShort'))
               .max(50, t('contact-form.errors.tooLong'))
               .required(t('contact-form.errors.required')),
-            email: string()
+            email: Yup.string()
               .email(t('contact-form.errors.emailInvalid'))
               .required(t('contact-form.errors.required')),
-            message: string()
+            message: Yup.string()
               .max(2000, t('contact-form.errors.tooLong'))
-              .required(t('contact-form.errors.required'))
+              .required(t('contact-form.errors.required')),
           })}
-          onSubmit={(values: FormValues, actions) => {
+          onSubmit={(values: FormValues, actions: FormikHelpers<FormValues>) => {
             axios
-              .post("/send-email", values)
+              .post('/send-email', values)
               .then(() => {
                 actions.resetForm({values: initialValues})
               })
@@ -95,63 +95,50 @@ function Contact({t}: WithTranslation) {
                 swal({
                   title: t('emailSent.title'),
                   text: t('emailSent.text'),
-                  icon: "success",
+                  icon: 'success',
                 })
                   .then(() => {
                     actions.setSubmitting(false)
                   })
               })
               .catch(error => {
-                console.log('Error while submitting email form ')
-                console.log(error)
+                console.log('Error while submitting email form')
+                console.log(error.response)
               })
           }}
-          >
+        >
           {() => (
-            <Form
-              role="form"
-              action={'/send-email'}
-              method="post"
-            >
+            <Form>
               <Field
                 name="name"
-                type="text"
-                id="name"
                 placeholder={t('contact-form.placeholders.name')}
-                required
+                type="text"
               />
               <p>
-                <ErrorMessage name="name" />
+                <ErrorMessage name="name"/>
               </p>
 
               <Field
-                type="email"
-                id="email"
                 name="email"
                 placeholder="E-mail"
-                required
+                type="email"
               />
               <p>
-                <ErrorMessage name="email" />
+                <ErrorMessage name="email"/>
               </p>
 
               <Field
                 component="textarea"
-                id="message"
                 name="message"
                 placeholder="Message"
-                maxLength={2000}
                 rows={15}
-                required
               />
               <p>
-                <ErrorMessage name="message" />
+                <ErrorMessage name="message"/>
               </p>
 
               <button
                 className="btn-yellow"
-                id="submit"
-                name="submit"
                 type="submit"
               >
                 {t('send')}
@@ -162,6 +149,4 @@ function Contact({t}: WithTranslation) {
       </section>
     </div>
   )
-}
-
-export default  withTranslation('Contact')(Contact)
+})

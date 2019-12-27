@@ -1,8 +1,9 @@
 import * as React from 'react'
-import { withTranslation, WithTranslation } from 'react-i18next'
+import {withTranslation, WithTranslation} from 'react-i18next'
 import notFound from '../assets/img/notFound.jpg'
 
-function NotFound({t} : WithTranslation) {
+export const NotFound: React.ComponentClass<any> | React.FunctionComponent<any> = withTranslation('NotFound')
+(({t}: WithTranslation) => {
 
   return (
     <div className={'page page--xs'} id={'notFoundPage'}>
@@ -16,6 +17,4 @@ function NotFound({t} : WithTranslation) {
       </div>
     </div>
   )
-}
-
-export default withTranslation('NotFound')(NotFound)
+})

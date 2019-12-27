@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 
-interface IBurgerProps {
-  isMenuOpen: boolean;
-  onToggleMenu: Function;
+type Props = {
+  isMenuOpen: boolean
+  onToggleMenu: Function
 }
 
-const Burger = ({ isMenuOpen, onToggleMenu }: IBurgerProps) => {
+export const Burger: React.FunctionComponent<Props> = ({isMenuOpen, onToggleMenu}) => {
   return (
     <button
       aria-expanded={isMenuOpen}
@@ -13,11 +13,9 @@ const Burger = ({ isMenuOpen, onToggleMenu }: IBurgerProps) => {
       className={`menu-burger ${isMenuOpen && 'menu-burger--open'}`}
       onClick={() => onToggleMenu()}
     >
-      <span />
-      <span />
-      <span />
+      <span/>
+      <span/>
+      <span/>
     </button>
   )
 }
-
-export default Burger

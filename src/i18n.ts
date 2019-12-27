@@ -1,5 +1,5 @@
 import i18n from 'i18next'
-import { initReactI18next } from "react-i18next"
+import {initReactI18next} from 'react-i18next'
 import LanguageDetector from 'i18next-browser-languagedetector'
 import en from './locale/en.json'
 import fr from './locale/fr.json'
@@ -24,7 +24,7 @@ const detectionOptions = {
   cookieDomain: 'www.bitcoin-studio.com',
 
   // optional htmlTag with lang attribute, the default is:
-  htmlTag: document.documentElement
+  htmlTag: document.documentElement,
 }
 
 i18n
@@ -40,7 +40,7 @@ i18n
     detection: detectionOptions,
     interpolation: {
       formatSeparator: ',',
-    }
+    },
   })
 
 export default i18n

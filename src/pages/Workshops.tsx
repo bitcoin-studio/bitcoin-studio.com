@@ -1,16 +1,17 @@
-import React from 'react'
+import React, {useCallback} from 'react'
 import {Trans, withTranslation, WithTranslation} from 'react-i18next'
 import workshopImg from '../assets/img/workshop_img.jpg'
 import swal from '@sweetalert/with-react'
 import {RegistrationFirstScreen} from './WorkshopsRegistration/RegistrationFirstScreen'
 
-function Workshops({t}: WithTranslation) {
+export const Workshops: React.ComponentClass<any> | React.FunctionComponent<any> = withTranslation('Workshops')
+(({t}: WithTranslation) => {
 
-  function handleLinkClick(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, id: string) {
+  const handleLinkClick = useCallback((e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, id: string) => {
     e.preventDefault()
-    let el = document.getElementById(id)
-    el?.scrollIntoView({behavior: 'smooth', block: 'start'})
-  }
+    const el = document.getElementById(id)
+    el && el.scrollIntoView({behavior: 'smooth', block: 'start'})
+  }, [])
 
   return (
     <div className={'page page--xs'} id={'workshopPage'}>
@@ -282,6 +283,4 @@ function Workshops({t}: WithTranslation) {
       </section>
     </div>
   )
-}
-
-export default withTranslation('Workshops')(Workshops)
+})

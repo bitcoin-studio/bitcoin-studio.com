@@ -1,7 +1,8 @@
 import * as React from 'react'
 import {withTranslation, WithTranslation} from 'react-i18next'
 
-function Footer({t}: WithTranslation) {
+export const Footer: React.ComponentClass<any> | React.FunctionComponent<any> = withTranslation('Footer')
+(({t}: WithTranslation) => {
 
   return (
     <footer>
@@ -45,6 +46,4 @@ function Footer({t}: WithTranslation) {
       </div>
     </footer>
   )
-}
-
-export default withTranslation('Footer')(Footer)
+})

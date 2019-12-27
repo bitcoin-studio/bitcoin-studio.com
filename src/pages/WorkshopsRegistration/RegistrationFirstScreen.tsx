@@ -39,7 +39,7 @@ const RegisterSchema = (t: TFunction) => Yup.object().shape({
 
 const submitForm = (
   values: FormValues,
-  actions: FormikHelpers<any>,
+  actions: FormikHelpers<FormValues>,
   ev: React.MouseEvent<HTMLButtonElement, MouseEvent>,
   t: TFunction) => {
 
@@ -59,7 +59,8 @@ const submitForm = (
       })
     })
     .catch(error => {
-      console.log('Error while submitting email form ', error.response)
+      console.log('Error while submitting email form')
+      console.log(error.response)
     })
 }
 
@@ -69,7 +70,7 @@ export const RegistrationFirstScreen: React.FunctionComponent<Props> = ({t, ev})
     <Formik
       initialValues={initialFormValues}
       validationSchema={() => RegisterSchema(t)}
-      onSubmit={(values, actions) => submitForm(values, actions, ev, t)}
+      onSubmit={(values: FormValues, actions: FormikHelpers<FormValues>) => submitForm(values, actions, ev, t)}
     >
       <div id="swalRegisterForm">
         <div className={'swal-title'}>{t('next-session.registerNow.swalRegisterForm.title')}</div>
