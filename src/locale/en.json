@@ -137,9 +137,12 @@
           "p2": "Do you want to proceed with payment now?",
           "p3": "We only accept Bitcoin, on-chain and Lightning.",
           "close": "Close",
-          "1-non-tech": "1 Non-Technical Training - 100€",
-          "1-tech": "1 Technical Training - 200€",
-          "2-tech": "2 Technical Trainings (-25%) - 300€"
+          "Face2Face1DayNonTech": "1 Face-To-Face Non-Technical Training",
+          "Face2Face1DayTech": "1 Face-To-Face Technical Training",
+          "Face2Face2Days": "2 Face-To-Face Technical Trainings (-25%)",
+          "Distance1DayNonTech": "1 Distance Non-Technical Training",
+          "Distance1DayTech": "1 Distance Technical Training",
+          "Distance2DaysTech": "2 Distance Technical Trainings (-25%)"
         }
       }
     },

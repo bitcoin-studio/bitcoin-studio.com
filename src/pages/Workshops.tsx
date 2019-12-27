@@ -1,7 +1,8 @@
 import React from 'react'
 import {Trans, withTranslation, WithTranslation} from 'react-i18next'
 import workshopImg from '../assets/img/workshop_img.jpg'
-import handleRegisterWorkshop from './WorkshopsRegistration'
+import swal from '@sweetalert/with-react'
+import {RegistrationFirstScreen} from './WorkshopsRegistration/RegistrationFirstScreen'
 
 function Workshops({t}: WithTranslation) {
 
@@ -144,7 +145,10 @@ function Workshops({t}: WithTranslation) {
           <div id={'buttonRegisterWorkshop'}>
             <button
               className="btn-yellow"
-              onClick={(e) => handleRegisterWorkshop({e, t})}
+              onClick={(ev) => swal({
+                content: <RegistrationFirstScreen t={t} ev={ev}/>,
+                button: false,
+              })}
             >
               {t('next-session.registerNow.button')}
             </button>
