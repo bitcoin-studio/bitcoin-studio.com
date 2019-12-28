@@ -26,15 +26,15 @@ const initialFormValues: FormValues =
 
 const RegisterSchema = (t: TFunction) => Yup.object().shape({
   name: Yup.string()
-    .min(2, t('next-session.registerNow.errors.tooShort'))
-    .max(50, t('next-session.registerNow.errors.tooLong'))
-    .required(t('next-session.registerNow.errors.required')),
+    .min(2, t('registration.errors.tooShort'))
+    .max(50, t('registration.errors.tooLong'))
+    .required(t('registration.errors.required')),
   email: Yup.string()
-    .email(t('next-session.registerNow.errors.emailInvalid'))
-    .required(t('next-session.registerNow.errors.required')),
+    .email(t('registration.errors.emailInvalid'))
+    .required(t('registration.errors.required')),
   message: Yup.string()
-    .max(2000, t('next-session.registerNow.errors.tooLong'))
-    .required(t('next-session.registerNow.errors.required')),
+    .max(2000, t('registration.errors.tooLong'))
+    .required(t('registration.errors.required')),
 })
 
 const submitForm = (
@@ -72,14 +72,14 @@ export const RegistrationFirstScreen: React.FunctionComponent<Props> = ({t, ev})
       validationSchema={() => RegisterSchema(t)}
       onSubmit={(values: FormValues, actions: FormikHelpers<FormValues>) => submitForm(values, actions, ev, t)}
     >
-      <div id="swalRegisterForm">
-        <div className={'swal-title'}>{t('next-session.registerNow.swalRegisterForm.title')}</div>
-        <div className={'swal-text'}>{t('next-session.registerNow.swalRegisterForm.text')}</div>
+      <div id="registrationFirstScreen">
+        <div className={'swal-title'}>{t('registration.firstScreen.title')}</div>
+        <div className={'swal-text'}>{t('registration.firstScreen.text')}</div>
         <Form className="form">
           <Field
             name="name"
             type="text"
-            placeholder={t('next-session.registerNow.placeholders.name')}
+            placeholder={t('registration.placeholders.name')}
           />
           <p>
             <ErrorMessage name="name"/>
@@ -108,7 +108,7 @@ export const RegistrationFirstScreen: React.FunctionComponent<Props> = ({t, ev})
             className="btn-yellow"
             type="submit"
           >
-            {t('next-session.registerNow.sendMail')}
+            {t('registration.sendMail')}
           </button>
         </Form>
       </div>

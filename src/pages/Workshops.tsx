@@ -42,120 +42,135 @@ export const Workshops: React.ComponentClass<any> | React.FunctionComponent<any>
         <p>{t('masterTheKing.p2')}</p>
       </section>
 
+      <section id={'agenda-container'}>
+        <div className="hr hr75pc">
+          <hr/>
+        </div>
+
+        <div id={'agenda'}>
+          <div className={'face2face'}>
+            <h2 className={'offers-h2'}>{t('agenda.face2face.title')}</h2>
+
+            {/* Mastering Fundamentals */}
+            <ul>
+              <li className={'bold'}>
+                <Trans i18nKey={'agenda.face2face.masteringFundamentals.p1What'} t={t}>
+                  <a href={'#bitcoin-intro-workshop'}
+                     onClick={(e) => handleLinkClick(e, 'bitcoin-intro-workshop')}>
+                    {'xxx'}
+                  </a>
+                </Trans>
+              </li>
+
+              <li className={'next-session__li'}>
+                <span className={'bold'}>{t('agenda.face2face.masteringFundamentals.t2When')}</span>
+                <span>{t('agenda.face2face.masteringFundamentals.p2When')}</span>
+              </li>
+
+              <li className={'next-session__li'}>
+                <span className={'bold'}>{t('agenda.face2face.masteringFundamentals.t3Where')}</span>
+                <span>
+                  <Trans i18nKey={'agenda.face2face.masteringFundamentals.p3Where'} t={t}>
+                    <a href="https://goo.gl/maps/adzSdmLqrBjCA9BbA" target={'_blank'}>xx</a>
+                  </Trans>
+                </span>
+              </li>
+
+              <li className={'next-session__li'}>
+                <span className={'bold'}>{t('agenda.face2face.masteringFundamentals.t4Price')}</span>
+                <span>{t('agenda.face2face.masteringFundamentals.p4Price')}</span>
+              </li>
+            </ul>
+
+            {/* Bitcoin Programming */}
+            <ul>
+              <li className={'bold'}>
+                <Trans i18nKey={'agenda.face2face.bitcoinProgramming.p1What'} t={t}>
+                  <a href={'#bitcoin-programming-workshop'}
+                     onClick={(e) => handleLinkClick(e, 'bitcoin-programming-workshop')}>
+                    {'xxx'}
+                  </a>
+                </Trans>
+              </li>
+
+              <li className={'next-session__li'}>
+                <span className={'bold'}>{t('agenda.face2face.bitcoinProgramming.t2When')}</span>
+                <span>{t('agenda.face2face.bitcoinProgramming.p2When')}</span>
+              </li>
+
+              <li className={'next-session__li'}>
+                <span className={'bold'}>{t('agenda.face2face.bitcoinProgramming.t3Where')}</span>
+                <span>
+                  <Trans i18nKey={'agenda.face2face.bitcoinProgramming.p3Where'} t={t}>
+                    <a href="https://goo.gl/maps/adzSdmLqrBjCA9BbA" target={'_blank'}>xx</a>
+                  </Trans>
+                </span>
+              </li>
+
+              <li className={'next-session__li'}>
+                <span className={'bold'}>{t('agenda.face2face.bitcoinProgramming.t4Price')}</span>
+                <span>{t('agenda.face2face.bitcoinProgramming.p4Price')}</span>
+              </li>
+            </ul>
+
+            {/* Initiation to Lightning Network */}
+            <ul>
+              <li className={'bold'}>
+                <Trans i18nKey={'agenda.face2face.lightningNetwork.p1What'} t={t}>
+                  <a
+                    href={'#lightning-workshop'}
+                    onClick={(e) => handleLinkClick(e, 'lightning-workshop')}>
+                    {'xxx'}
+                  </a>
+                </Trans>
+              </li>
+
+              <li className={'next-session__li'}>
+                <span className={'bold'}>{t('agenda.face2face.lightningNetwork.t2When')}</span>
+                <span>{t('agenda.face2face.lightningNetwork.p2When')}</span>
+              </li>
+
+              <li className={'next-session__li'}>
+                <span className={'bold'}>{t('agenda.face2face.lightningNetwork.t3Where')}</span>
+                <span>
+                  <Trans i18nKey={'agenda.face2face.lightningNetwork.p3Where'} t={t}>
+                    <a href="https://goo.gl/maps/adzSdmLqrBjCA9BbA" target={'_blank'}>xx</a>
+                  </Trans>
+                </span>
+              </li>
+
+              <li className={'next-session__li'}>
+                <span className={'bold'}>{t('agenda.face2face.lightningNetwork.t4Price')}</span>
+                <span>{t('agenda.face2face.lightningNetwork.p4Price')}</span>
+              </li>
+            </ul>
+          </div>
+
+          <div className={'distance'}>
+            <h2 className={'offers-h2'}>{t('agenda.distance.title')}</h2>
+            <p>{t('agenda.distance.p1')}</p>
+            <p className={'distance__prices'}>
+              {t('agenda.distance.p2.1')}<br/>
+              {t('agenda.distance.p2.2')}<br/>
+              {t('agenda.distance.p2.3')}
+            </p>
+          </div>
+        </div>
+
+        <div id={'buttonRegisterWorkshop'}>
+          <button
+            className="btn-yellow"
+            onClick={(ev) => swal({
+              content: <RegistrationFirstScreen t={t} ev={ev}/>,
+              button: false,
+            })}
+          >
+            {t('registration.button')}
+          </button>
+        </div>
+      </section>
+
       <section id="offers">
-        <section id={'next-sessions'}>
-          <div className="hr hr75pc">
-            <hr/>
-          </div>
-          <h2 className={'offers-h2'}>{t('next-session.title')}</h2>
-
-          {/* Mastering Fundamentals */}
-          <ul className={'next-session'}>
-            <li className={'next-session__li--bold'}>
-              <Trans i18nKey={'next-session.masteringFundamentals.p1What'} t={t}>
-                <a href={'#bitcoin-intro-workshop'}
-                   onClick={(e) => handleLinkClick(e, 'bitcoin-intro-workshop')}>
-                  {'xxx'}
-                </a>
-              </Trans>
-            </li>
-
-            <li className={'next-session__li'}>
-              <span className={'next-session__li--bold'}>{t('next-session.masteringFundamentals.t2When')}</span>
-              <span>{t('next-session.masteringFundamentals.p2When')}</span>
-            </li>
-
-            <li className={'next-session__li'}>
-              <span className={'next-session__li--bold'}>{t('next-session.masteringFundamentals.t3Where')}</span>
-              <span>
-                  <Trans i18nKey={'next-session.masteringFundamentals.p3Where'} t={t}>
-                    <a href="https://goo.gl/maps/adzSdmLqrBjCA9BbA" target={'_blank'}>xx</a>
-                  </Trans>
-                </span>
-            </li>
-
-            <li className={'next-session__li'}>
-              <span className={'next-session__li--bold'}>{t('next-session.masteringFundamentals.t4Price')}</span>
-              <span>{t('next-session.masteringFundamentals.p4Price')}</span>
-            </li>
-          </ul>
-
-          {/* Bitcoin Programming */}
-          <ul className={'next-session'}>
-            <li className={'next-session__li--bold'}>
-              <Trans i18nKey={'next-session.bitcoinProgramming.p1What'} t={t}>
-                <a href={'#bitcoin-programming-workshop'}
-                   onClick={(e) => handleLinkClick(e, 'bitcoin-programming-workshop')}>
-                  {'xxx'}
-                </a>
-              </Trans>
-            </li>
-
-            <li className={'next-session__li'}>
-              <span className={'next-session__li--bold'}>{t('next-session.bitcoinProgramming.t2When')}</span>
-              <span>{t('next-session.bitcoinProgramming.p2When')}</span>
-            </li>
-
-            <li className={'next-session__li'}>
-              <span className={'next-session__li--bold'}>{t('next-session.bitcoinProgramming.t3Where')}</span>
-              <span>
-                  <Trans i18nKey={'next-session.bitcoinProgramming.p3Where'} t={t}>
-                    <a href="https://goo.gl/maps/adzSdmLqrBjCA9BbA" target={'_blank'}>xx</a>
-                  </Trans>
-                </span>
-            </li>
-
-            <li className={'next-session__li'}>
-              <span className={'next-session__li--bold'}>{t('next-session.bitcoinProgramming.t4Price')}</span>
-              <span>{t('next-session.bitcoinProgramming.p4Price')}</span>
-            </li>
-          </ul>
-
-          {/* Initiation to Lightning Network */}
-          <ul className={'next-session'}>
-            <li className={'next-session__li--bold'}>
-              <Trans i18nKey={'next-session.lightningNetwork.p1What'} t={t}>
-                <a
-                  href={'#lightning-workshop'}
-                  onClick={(e) => handleLinkClick(e, 'lightning-workshop')}>
-                  {'xxx'}
-                </a>
-              </Trans>
-            </li>
-
-            <li className={'next-session__li'}>
-              <span className={'next-session__li--bold'}>{t('next-session.lightningNetwork.t2When')}</span>
-              <span>{t('next-session.lightningNetwork.p2When')}</span>
-            </li>
-
-            <li className={'next-session__li'}>
-              <span className={'next-session__li--bold'}>{t('next-session.lightningNetwork.t3Where')}</span>
-              <span>
-                  <Trans i18nKey={'next-session.lightningNetwork.p3Where'} t={t}>
-                    <a href="https://goo.gl/maps/adzSdmLqrBjCA9BbA" target={'_blank'}>xx</a>
-                  </Trans>
-                </span>
-            </li>
-
-            <li className={'next-session__li'}>
-              <span className={'next-session__li--bold'}>{t('next-session.lightningNetwork.t4Price')}</span>
-              <span>{t('next-session.lightningNetwork.p4Price')}</span>
-            </li>
-          </ul>
-
-          <div id={'buttonRegisterWorkshop'}>
-            <button
-              className="btn-yellow"
-              onClick={(ev) => swal({
-                content: <RegistrationFirstScreen t={t} ev={ev}/>,
-                button: false,
-              })}
-            >
-              {t('next-session.registerNow.button')}
-            </button>
-          </div>
-        </section>
-
         {/* Mastering Fundamentals Workshop */}
         <section id={'bitcoin-intro-workshop'}>
           <div className="hr hr75pc">

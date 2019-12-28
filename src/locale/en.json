@@ -80,70 +80,81 @@
       "p1": "If you plan to work anywhere in the cryptocurrency industry, mastering Bitcoin is an essential skill. This is the first of its kind and the basis of everything. Bitcoin Core developers have a high level of expertise, the ecosystem is vast, has the largest market capitalization, and so on. Today, more than 75% of blockchains are, directly or indirectly, Bitcoin software forks. It is also the most attacked blockchain and consequently the most robust.",
       "p2": "Bitcoin is also a good start, as the protocol design is relatively simple, with a non-Turing-complete smart-contract feature. Finally, the new instant payment feature of the Lightning network is still offering new horizons."
     },
-    "next-session": {
-      "title": "NEXT SESSIONS",
-      "masteringFundamentals" : {
-        "t1What": "What: ",
-        "p1What": "<0>Mastering Fundamentals</0>",
-        "t2When": "When: ",
-        "p2When": "TBD (from 9am to 5pm, 1 hour lunch)",
-        "t3Where": "Where: ",
-        "p3Where_": "<0>The Block, rua Latino Coelho 63, Lisbon</0>",
-        "p3Where": "TBD",
-        "t4Price": "Price: ",
-        "p4Price": "TBD"
-      },
-      "bitcoinProgramming" : {
-        "t1What": "What: ",
-        "p1What": "<0>Bitcoin Programming with Bitcoin Core and BitcoinJS</0>",
-        "t2When": "When: ",
-        "p2When": "TBD (from 9am to 5pm, 1 hour lunch)",
-        "t3Where": "Where: ",
-        "p3Where_": "<0>The Block, rua Latino Coelho 63, Lisbon</0>",
-        "p3Where": "TBD",
-        "t4Price": "Price: ",
-        "p4Price": "TBD"
-      },
-      "lightningNetwork" : {
-        "t1What": "What: ",
-        "p1What": "<0>Initiation to Lightning Network</0>",
-        "t2When": "When: ",
-        "p2When": "TBD (from 9am to 5pm, 1 hour lunch)",
-        "t3Where": "Where: ",
-        "p3Where_": "<0>The Block, rua Latino Coelho 63, Lisbon</0>",
-        "p3Where": "TBD",
-        "t4Price": "Price: ",
-        "p4Price": "TBD"
-      },
-      "registerNow": {
-        "button": "Register Now!",
-        "errors": {
-          "emailInvalid": "Invalid email",
-          "required": "This field is required",
-          "tooLong": "Too long",
-          "tooShort": "Too short"
+    "agenda": {
+      "face2face": {
+        "title": "FACE-TO-FACE",
+        "masteringFundamentals" : {
+          "t1What": "What: ",
+          "p1What": "<0>Mastering Bitcoin Fundamentals</0>",
+          "t2When": "When: ",
+          "p2When": "TBD (from 9am to 5pm, 1 hour lunch)",
+          "t3Where": "Where: ",
+          "p3Where_": "<0>The Block, rua Latino Coelho 63, Lisbon</0>",
+          "p3Where": "TBD",
+          "t4Price": "Price: ",
+          "p4Price": "€200"
         },
-        "placeholders": {
-          "name": "Name"
+        "bitcoinProgramming" : {
+          "t1What": "What: ",
+          "p1What": "<0>Bitcoin Programming with Bitcoin Core and BitcoinJS</0>",
+          "t2When": "When: ",
+          "p2When": "TBD (from 9am to 5pm, 1 hour lunch)",
+          "t3Where": "Where: ",
+          "p3Where_": "<0>The Block, rua Latino Coelho 63, Lisbon</0>",
+          "p3Where": "TBD",
+          "t4Price": "Price: ",
+          "p4Price": "€400"
         },
-        "sendMail": "Send",
-        "swalRegisterForm": {
-          "title": "Registration",
-          "text": "Please describe which training you would like to register for, your expectations, and any information you think would be useful."
-        },
-        "emailSent": {
-          "title": "Thank you!",
-          "p1": "Your email has been sent successfully.",
-          "p2": "Do you want to proceed with payment now?",
-          "p3": "We only accept Bitcoin, on-chain and Lightning.",
-          "close": "Close",
-          "Face2Face1DayNonTech": "1 Face-To-Face Non-Technical Training",
-          "Face2Face1DayTech": "1 Face-To-Face Technical Training",
-          "Face2Face2Days": "2 Face-To-Face Technical Trainings (-25%)",
-          "Distance1DayNonTech": "1 Distance Non-Technical Training",
-          "Distance1DayTech": "1 Distance Technical Training",
-          "Distance2DaysTech": "2 Distance Technical Trainings (-25%)"
+        "lightningNetwork" : {
+          "t1What": "What: ",
+          "p1What": "<0>Initiation to Lightning Network</0>",
+          "t2When": "When: ",
+          "p2When": "TBD (from 9am to 5pm, 1 hour lunch)",
+          "t3Where": "Where: ",
+          "p3Where_": "<0>The Block, rua Latino Coelho 63, Lisbon</0>",
+          "p3Where": "TBD",
+          "t4Price": "Price: ",
+          "p4Price": "€400"
         }
+      },
+      "distance": {
+        "title": "DISTANCE LEARNING",
+        "p1": "You can attend all our distance learning courses. To do so, fill in the registration form, and a session will be organized according to your availability.",
+        "p2": {
+          "1": "Mastering Bitcoin Fundamentals : €150",
+          "2": "Bitcoin Programming : €300",
+          "3": "Initiation to Lightning Network : €300"
+        }
+      }
+    },
+    "registration": {
+      "button": "Register Now!",
+      "errors": {
+        "emailInvalid": "Invalid email",
+        "required": "This field is required",
+        "tooLong": "Too long",
+        "tooShort": "Too short"
+      },
+      "placeholders": {
+        "name": "Name"
+      },
+      "sendMail": "Send",
+      "firstScreen": {
+        "title": "Registration",
+        "text": "Please describe which training you would like to register for, your expectations, and any information you think necessary."
+      },
+      "secondScreen": {
+        "title": "Thank you!",
+        "p1": "Your email has been sent successfully.",
+        "p2": "Do you want to proceed with payment now?",
+        "p3": "We only accept Bitcoin, on-chain and Lightning.",
+        "close": "Close",
+        "Face2Face1DayNonTech": "1 Face-To-Face Non-Technical Training",
+        "Face2Face1DayTech": "1 Face-To-Face Technical Training",
+        "Face2Face2Days": "2 Face-To-Face Technical Trainings (-25%)",
+        "Distance1DayNonTech": "1 Distance Non-Technical Training",
+        "Distance1DayTech": "1 Distance Technical Training",
+        "Distance2DaysTech": "2 Distance Technical Trainings (-25%)"
       }
     },
     "intro-offer": {

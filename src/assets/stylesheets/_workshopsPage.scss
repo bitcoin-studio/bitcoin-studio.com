@@ -1,6 +1,5 @@
 #workshopPage {
 	section#workshopFlyer {
-		display: grid;
 		grid-column: 2/12;
 		grid-row: 2;
 		row-gap: 20px;
@@ -13,6 +12,7 @@
 		
 		@media screen and (min-width: 980px) {
 			& {
+				display: grid;
 				grid-column-gap: 5em;
 				grid-template-columns: 8fr 4fr;
 			}
@@ -72,17 +72,49 @@
 		}
 	}
 	
-	
-	section#offers {
-		display: grid;
+	section#agenda-container {
 		grid-column: 2/12;
 		grid-row: 4;
 		
-		.next-session {
-			& .next-session__li--bold {
-				font-weight: bold;
+		#agenda {
+			display: grid;
+			grid-row-gap: 40px;
+			
+			@media screen and (min-width: $screen-md-min) {
+				grid-template-columns: 1fr 1fr;
+				column-gap: 7%;
+			}
+			
+			.distance {
+				&__prices {
+					border: 7px solid #fff;
+					font-weight: bold;
+					line-height: 4em;
+					margin: 3em 0 2em 0;
+					padding: 15px;
+					text-align: center;
+					
+					@media screen and (max-width: $screen-xxs-max) {
+						font-size: 0.75em;
+					}
+				}
 			}
 		}
+		
+		
+		#buttonRegisterWorkshop {
+			text-align: center;
+			margin: 15px;
+			
+			& button {
+				display: inline-block;
+			}
+		}
+	}
+	
+	section#offers {
+		grid-column: 2/12;
+		grid-row: 5;
 		
 		.offers-h2 {
 			margin-bottom: 5px;
@@ -91,19 +123,18 @@
 		.offers-h3 {
 			margin-top: 10px;
 		}
-		
-		#buttonRegisterWorkshop {
-			text-align: center;
-			margin: 30px;
-			& button {
-				display: inline-block;
-			}
-		}
 	}
 }
 
 .swal-modal {
-	#swalRegisterForm {
+	.swal-title {
+		font-family: 'Roboto Condensed', sans-serif;
+	}
+	.swal-text {
+		font-family: 'Roboto Slab', serif;
+	}
+	
+	#registrationFirstScreen {
 		.swal-text {
 			margin-bottom: 30px;
 		}
@@ -114,13 +145,15 @@
 		}
 	}
 	
-	#swalRegisterEmailSent {
+	#registrationSecondScreen {
 		#training-offers {
 			margin-left: 50px;
 			margin-top: 20px;
 			text-align: start;
 			
-			label {
+			.training__radio-label {
+				font-family: "Roboto Slab", serif;
+				font-size: 0.85em;
 				margin-left: 5px;
 			}
 		}

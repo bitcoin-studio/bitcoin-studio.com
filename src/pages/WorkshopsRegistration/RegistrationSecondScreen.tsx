@@ -6,32 +6,32 @@ const trainings = [
   {
     id: 'Face2Face1DayNonTech',
     price: '200',
-    txtLabel: 'next-session.registerNow.emailSent.Face2Face1DayNonTech',
+    txtLabel: 'registration.secondScreen.Face2Face1DayNonTech',
   },
   {
     id: 'Face2Face1DayTech',
     price: '400',
-    txtLabel: 'next-session.registerNow.emailSent.Face2Face1DayTech',
+    txtLabel: 'registration.secondScreen.Face2Face1DayTech',
   },
   {
     id: 'Face2Face2Days',
     price: '600',
-    txtLabel: 'next-session.registerNow.emailSent.Face2Face2Days',
+    txtLabel: 'registration.secondScreen.Face2Face2Days',
   },
   {
     id: 'Distance1DayNonTech',
     price: '150',
-    txtLabel: 'next-session.registerNow.emailSent.Distance1DayNonTech',
+    txtLabel: 'registration.secondScreen.Distance1DayNonTech',
   },
   {
     id: 'Distance1DayTech',
     price: '300',
-    txtLabel: 'next-session.registerNow.emailSent.Distance1DayTech',
+    txtLabel: 'registration.secondScreen.Distance1DayTech',
   },
   {
     id: 'Distance2DaysTech',
     price: '450',
-    txtLabel: 'next-session.registerNow.emailSent.Distance2DaysTech',
+    txtLabel: 'registration.secondScreen.Distance2DaysTech',
   },
 ]
 
@@ -52,8 +52,12 @@ const InputRadioTrainings: React.FunctionComponent<InputRadioTrainingsProps> = (
           onClick={() => setSelectedOffer((ev.target as HTMLInputElement).value)}
           value={training.price}
         />
-        <label htmlFor={training.id}>
-          {`${t(training.txtLabel)} - ${training.price}`}
+        <label className={'training__radio-label'} htmlFor={training.id}>
+          {
+            i18next.language === 'en'
+              ? `${t(training.txtLabel)} - €${training.price}`
+              : `${t(training.txtLabel)} - ${training.price}€`
+          }
         </label>
       </div>
     )
@@ -71,11 +75,11 @@ export const RegistrationSecondScreen: React.FunctionComponent<RegistrationSecon
   const [selectedOffer, setSelectedOffer] = useState('0')
 
   return (
-    <div id={'swalRegisterEmailSent'}>
-      <div className={'swal-title'}>{t('next-session.registerNow.emailSent.title')}</div>
-      <div className={'swal-text'}>{t('next-session.registerNow.emailSent.p1')}</div>
-      <div className={'swal-text'}>{t('next-session.registerNow.emailSent.p2')}</div>
-      <div className={'swal-text'}>{t('next-session.registerNow.emailSent.p3')}</div>
+    <div id={'registrationSecondScreen'}>
+      <div className={'swal-title'}>{t('registration.secondScreen.title')}</div>
+      <div className={'swal-text'}>{t('registration.secondScreen.p1')}</div>
+      <div className={'swal-text'}>{t('registration.secondScreen.p2')}</div>
+      <div className={'swal-text'}>{t('registration.secondScreen.p3')}</div>
 
       <div id={'training-offers'}>
         <InputRadioTrainings ev={ev} setSelectedOffer={setSelectedOffer} t={t}/>
@@ -83,7 +87,7 @@ export const RegistrationSecondScreen: React.FunctionComponent<RegistrationSecon
 
       <div id={'buttons'}>
         <button className={'swal-button swal-button--cancel'} onClick={() => swal.close()}>
-          {t('next-session.registerNow.emailSent.close')}
+          {t('registration.secondScreen.close')}
         </button>
         <form method="POST" action="https://nodes.bitcoin-studio.com/api/v1/invoices">
           <input type="hidden" name="storeId" value="BGdJzfMmXohC7J731eVuPBuDdWH3fZqBiitrN6HwGoeu"/>
