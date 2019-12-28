@@ -1,5 +1,5 @@
-import React, {useCallback, useState} from 'react'
-import {Link} from 'react-router-dom'
+import React, {useCallback} from 'react'
+import {Link, NavLink} from 'react-router-dom'
 import {WithTranslation, withTranslation} from 'react-i18next'
 import i18n from '../i18n'
 import logo from '../assets/img/bitcoin-studio-black.svg'
@@ -16,55 +16,39 @@ export const Header: React.ComponentClass<any> | React.FunctionComponent<any> = 
       .catch((e) => console.error(e))
   }, [])
 
-  const initialPage = useCallback(() => {
-    switch (window.location.pathname) {
-      case ('/'):
-        return 'HOME'
-      case ('/workshops'):
-        return 'WORKSHOPS'
-      case ('/resources'):
-        return 'RESOURCES'
-      case ('/about'):
-        return 'ABOUT'
-      case ('/contact'):
-        return 'CONTACT'
-      default:
-        return 'NOTFOUND'
-    }
-  }, [])
-
-  const [activeItem, setActiveItem] = useState(initialPage())
-
   const tabIndex = isMenuOpen ? 0 : -1
 
   return (
     <div className={'header'}>
-      <Link className={activeItem === 'HOME' ? 'menu-item--active' : ''} onClick={() => setActiveItem('HOME')} to="/">
+      <Link to={'/'}>
         <img src={logo} alt="Bitcoin Studio Logo"/>
       </Link>
       <nav aria-hidden={!isMenuOpen} className={`header__links ${isMenuOpen ? 'nav__mobile--open' : ''}`}>
         <ul>
           <li>
-            <Link className={activeItem === 'HOME' ? 'menu-item--active' : ''} onClick={() => setActiveItem('HOME')} to="/"
-                  tabIndex={tabIndex}>
+            <NavLink exact to={'/'} activeClassName={'menu-item--active'} tabIndex={tabIndex}>
               {t('home')}
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link className={activeItem === 'WORKSHOPS' ? 'menu-item--active' : ''} onClick={() => setActiveItem('WORKSHOPS')}
-                  to="/workshops" tabIndex={tabIndex}>{t('workshops')}</Link>
+            <NavLink exact to={'/workshops'} activeClassName={'menu-item--active'} tabIndex={tabIndex}>
+              {t('workshops')}
+            </NavLink>
           </li>
           <li>
-            <Link className={activeItem === 'RESOURCES' ? 'menu-item--active' : ''} onClick={() => setActiveItem('RESOURCES')}
-                  to="/resources" tabIndex={tabIndex}>{t('resources')}</Link>
+            <NavLink exact to={'/resources'} activeClassName={'menu-item--active'} tabIndex={tabIndex}>
+              {t('resources')}
+            </NavLink>
           </li>
           <li>
-            <Link className={activeItem === 'ABOUT' ? 'menu-item--active' : ''} onClick={() => setActiveItem('ABOUT')}
-                  to="/about" tabIndex={tabIndex}>{t('about')}</Link>
+            <NavLink exact to={'/about'} activeClassName={'menu-item--active'} tabIndex={tabIndex}>
+              {t('about')}
+            </NavLink>
           </li>
           <li>
-            <Link className={activeItem === 'CONTACT' ? 'menu-item--active' : ''} onClick={() => setActiveItem('CONTACT')}
-                  to="/contact" tabIndex={tabIndex}>{t('contact')}</Link>
+            <NavLink exact to={'/contact'} activeClassName={'menu-item--active'} tabIndex={tabIndex}>
+              {t('contact')}
+            </NavLink>
           </li>
 
           <li id={'translation-btn'}>
