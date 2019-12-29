@@ -1,23 +1,21 @@
-import React, {useCallback} from 'react'
+import React, {FC, useCallback} from 'react'
 import {Link, NavLink} from 'react-router-dom'
-import {WithTranslation, withTranslation, WithTranslationProps} from 'react-i18next'
-import i18n from '../i18n'
+import {useTranslation} from 'react-i18next'
 import logo from '../assets/img/bitcoin-studio-black.svg'
 
-type Props = WithTranslation & {
+type Props = {
   id: string
   isMenuOpen: boolean
 }
 
-type X = React.ComponentType<Omit<Props, keyof WithTranslation> & WithTranslationProps>
+export const Header: FC<Props> = ({isMenuOpen, id}) => {
 
-export const Header: X = withTranslation('Header')
-(({t, isMenuOpen, id}: Props) => {
+  const {t, i18n} = useTranslation('Header')
 
   const changeLanguage = useCallback((lng: string) => {
     i18n.changeLanguage(lng)
       .catch((e) => console.error(e))
-  }, [])
+  }, [i18n])
 
   const tabIndex = isMenuOpen ? 0 : -1
 
@@ -63,4 +61,4 @@ export const Header: X = withTranslation('Header')
       </nav>
     </div>
   )
-})
+}

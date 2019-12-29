@@ -1,11 +1,9 @@
-import * as React from 'react'
-import {withTranslation, WithTranslation, WithTranslationProps} from 'react-i18next'
+import React, {FC} from 'react'
+import {useTranslation} from 'react-i18next'
 
-type Props = WithTranslation & {}
-type X = React.ComponentType<Omit<Props, keyof WithTranslation> & WithTranslationProps>
+export const Footer: FC = () => {
 
-export const Footer: X = withTranslation('Footer')
-(({t}: Props) => {
+  const {t} = useTranslation('Footer')
 
   return (
     <footer>
@@ -49,4 +47,4 @@ export const Footer: X = withTranslation('Footer')
       </div>
     </footer>
   )
-})
+}

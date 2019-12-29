@@ -1,16 +1,15 @@
-import * as React from 'react'
-import {withTranslation, WithTranslation, WithTranslationProps} from 'react-i18next'
+import React, {FC} from 'react'
 import notFound from '../assets/img/notFound.jpg'
+import {useTranslation} from 'react-i18next'
 
-type Props = WithTranslation & {}
-type X = React.ComponentType<Omit<Props, keyof WithTranslation> & WithTranslationProps>
+export const NotFound: FC = () => {
 
-export const NotFound: X = withTranslation('NotFound')
-(({t}: Props) => {
+  const {t} = useTranslation('NotFound')
 
   return (
     <div className={'page page--xs'} id={'notFoundPage'}>
       <div className={'hero'}>
+
         <h1>
           {t('title')}
         </h1>
@@ -20,4 +19,4 @@ export const NotFound: X = withTranslation('NotFound')
       </div>
     </div>
   )
-})
+}

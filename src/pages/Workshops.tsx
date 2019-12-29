@@ -1,14 +1,12 @@
-import React, {useCallback} from 'react'
-import {Trans, withTranslation, WithTranslation, WithTranslationProps} from 'react-i18next'
-import workshopImg from '../assets/img/workshop_img.jpg'
+import React, {FC, useCallback} from 'react'
+import {Trans, useTranslation} from 'react-i18next'
 import swal from '@sweetalert/with-react'
+import workshopImg from '../assets/img/workshop_img.jpg'
 import {RegistrationFirstScreen} from './WorkshopsRegistration/RegistrationFirstScreen'
 
-type Props = WithTranslation & {}
-type X = React.ComponentType<Omit<Props, keyof WithTranslation> & WithTranslationProps>
+export const Workshops: FC = () => {
 
-export const Workshops: X = withTranslation('Workshops')
-(({t}: Props) => {
+  const {t} = useTranslation('Workshops')
 
   const handleLinkClick = useCallback((e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, id: string) => {
     e.preventDefault()
@@ -301,4 +299,4 @@ export const Workshops: X = withTranslation('Workshops')
       </section>
     </div>
   )
-})
+}

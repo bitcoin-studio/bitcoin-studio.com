@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {FC, useState} from 'react'
 import swal from '@sweetalert/with-react'
 import i18next, {TFunction} from 'i18next'
 
@@ -41,7 +41,7 @@ type InputRadioTrainingsProps = {
   setSelectedOffer: React.Dispatch<React.SetStateAction<string>>
 }
 
-const InputRadioTrainings: React.FunctionComponent<InputRadioTrainingsProps> = ({t, ev, setSelectedOffer}) => {
+const InputRadioTrainings: FC<InputRadioTrainingsProps> = ({t, ev, setSelectedOffer}) => {
   const trainingsElements = trainings.map((training) => {
     return (
       <div key={training.id}>
@@ -71,7 +71,7 @@ type RegistrationSecondScreenProps = {
   ev: React.MouseEvent<HTMLButtonElement, MouseEvent>
 }
 
-export const RegistrationSecondScreen: React.FunctionComponent<RegistrationSecondScreenProps> = ({t, ev}) => {
+export const RegistrationSecondScreen: FC<RegistrationSecondScreenProps> = ({t, ev}) => {
   const [selectedOffer, setSelectedOffer] = useState('0')
 
   return (

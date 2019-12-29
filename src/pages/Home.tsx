@@ -1,16 +1,14 @@
-import * as React from 'react'
-import {withTranslation, WithTranslation, WithTranslationProps} from 'react-i18next'
+import React, {FC} from 'react'
+import {useTranslation} from 'react-i18next'
 import software from '../assets/img/home_software_512.png'
 import education from '../assets/img/home_education_512.png'
 import training from '../assets/img/home_thought_512.png'
 import consulting from '../assets/img/home_consulting_512.png'
 import hosting from '../assets/img/home_hosting_512.png'
 
-type Props = WithTranslation & {}
-type X = React.ComponentType<Omit<Props, keyof WithTranslation> & WithTranslationProps>
+export const Home: FC = () => {
 
-export const Home: X = withTranslation('Home')
-(({t}: Props) => {
+  const {t} = useTranslation('Home')
 
   return (
     <div className={'page'} id={'homePage'}>
@@ -121,4 +119,4 @@ export const Home: X = withTranslation('Home')
       </section>
     </div>
   )
-})
+}

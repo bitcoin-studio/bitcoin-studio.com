@@ -1,4 +1,4 @@
-import React, {memo} from 'react'
+import React, {FC, memo} from 'react'
 import {Route} from 'react-router-dom'
 import {CSSTransition} from 'react-transition-group'
 import {Home} from '../pages/Home'
@@ -8,7 +8,7 @@ import {About} from '../pages/About'
 import {Contact} from '../pages/Contact'
 import {NotFound} from '../pages/NotFound'
 
-const routes = [
+const routes: Array<{path: string, Component: FC}> = [
   {path: '/', Component: Home},
   {path: '/workshops', Component: Workshops},
   {path: '/resources', Component: Resources},

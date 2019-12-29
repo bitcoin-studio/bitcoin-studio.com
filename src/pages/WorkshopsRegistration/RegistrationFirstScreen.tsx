@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {FC} from 'react'
 import {TFunction} from 'i18next'
 import {ErrorMessage, Field, Form, Formik, FormikHelpers} from 'formik'
 import * as Yup from 'yup'
@@ -64,7 +64,7 @@ const submitForm = (
     })
 }
 
-export const RegistrationFirstScreen: React.FunctionComponent<Props> = ({t, ev}) => {
+export const RegistrationFirstScreen: FC<Props> = ({t, ev}) => {
 
   return (
     <Formik

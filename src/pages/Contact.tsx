@@ -1,9 +1,9 @@
-import * as React from 'react'
-import {withTranslation, WithTranslation, WithTranslationProps} from 'react-i18next'
+import React, {FC} from 'react'
+import {useTranslation} from 'react-i18next'
 import {Formik, Field, Form, ErrorMessage, FormikHelpers} from 'formik'
 import * as Yup from 'yup'
 import axios from 'axios'
-import * as swal from '@sweetalert/with-react'
+import swal from '@sweetalert/with-react'
 import keybase from '../assets/icons/keybase.svg'
 import linkedin from '../assets/icons/linkedin.svg'
 import pgp from '../assets/icons/pgp.svg'
@@ -21,11 +21,9 @@ const initialValues: FormValues = {
   message: '',
 }
 
-type Props = WithTranslation & {}
-type X = React.ComponentType<Omit<Props, keyof WithTranslation> & WithTranslationProps>
+export const Contact: FC = () => {
 
-export const Contact: X = withTranslation('Contact')
-(({t}: Props) => {
+  const {t} = useTranslation('Contact')
 
   return (
     <div className={'page page--xs'} id={'contactPage'}>
@@ -152,4 +150,4 @@ export const Contact: X = withTranslation('Contact')
       </section>
     </div>
   )
-})
+}
