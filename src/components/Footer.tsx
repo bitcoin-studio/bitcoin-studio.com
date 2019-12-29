@@ -1,8 +1,11 @@
 import * as React from 'react'
-import {withTranslation, WithTranslation} from 'react-i18next'
+import {withTranslation, WithTranslation, WithTranslationProps} from 'react-i18next'
 
-export const Footer: React.ComponentClass<any> | React.FunctionComponent<any> = withTranslation('Footer')
-(({t}: WithTranslation) => {
+type Props = WithTranslation & {}
+type X = React.ComponentType<Omit<Props, keyof WithTranslation> & WithTranslationProps>
+
+export const Footer: X = withTranslation('Footer')
+(({t}: Props) => {
 
   return (
     <footer>

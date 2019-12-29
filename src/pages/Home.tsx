@@ -1,13 +1,16 @@
 import * as React from 'react'
-import {withTranslation, WithTranslation} from 'react-i18next'
+import {withTranslation, WithTranslation, WithTranslationProps} from 'react-i18next'
 import software from '../assets/img/home_software_512.png'
 import education from '../assets/img/home_education_512.png'
 import training from '../assets/img/home_thought_512.png'
 import consulting from '../assets/img/home_consulting_512.png'
 import hosting from '../assets/img/home_hosting_512.png'
 
-export const Home: React.ComponentClass<any> | React.FunctionComponent<any> = withTranslation('Home')
-(({t}: WithTranslation) => {
+type Props = WithTranslation & {}
+type X = React.ComponentType<Omit<Props, keyof WithTranslation> & WithTranslationProps>
+
+export const Home: X = withTranslation('Home')
+(({t}: Props) => {
 
   return (
     <div className={'page'} id={'homePage'}>
@@ -95,22 +98,22 @@ export const Home: React.ComponentClass<any> | React.FunctionComponent<any> = wi
         <div id="call2action_ribbon_prop" className="">
           <div className="ribbon_prop_1">
             <div className="inside">
-              <span><a href='m&#97;ilto&#58;bitc&#111;&#105;n&#37;2&#68;st&#117;d%69o&#64;pro%&#55;&#52;&#111;nm%61%69l&#46;co&#109;'
+              <span><a href={'m&#97;ilto&#58;bitc&#111;&#105;n&#37;2&#68;st&#117;d%69o&#64;pro%&#55;&#52;&#111;nm%61%69l&#46;co&#109;'}
                        className="clickhere">{t('call2action.circle.1')}</a></span>
-              <span><a href='m&#97;ilto&#58;bitc&#111;&#105;n&#37;2&#68;st&#117;d%69o&#64;pro%&#55;&#52;&#111;nm%61%69l&#46;co&#109;'
+              <span><a href={'m&#97;ilto&#58;bitc&#111;&#105;n&#37;2&#68;st&#117;d%69o&#64;pro%&#55;&#52;&#111;nm%61%69l&#46;co&#109;'}
                        className="request">{t('call2action.circle.2')}</a></span>
-              <span><a href='m&#97;ilto&#58;bitc&#111;&#105;n&#37;2&#68;st&#117;d%69o&#64;pro%&#55;&#52;&#111;nm%61%69l&#46;co&#109;'
+              <span><a href={'m&#97;ilto&#58;bitc&#111;&#105;n&#37;2&#68;st&#117;d%69o&#64;pro%&#55;&#52;&#111;nm%61%69l&#46;co&#109;'}
                        className="proposal">{t('call2action.circle.3')}</a></span>
             </div>
           </div>
 
           <div className="ribbon_prop_2">
             <div className="inside">
-              <span><a href='m&#97;ilto&#58;bitc&#111;&#105;n&#37;2&#68;st&#117;d%69o&#64;pro%&#55;&#52;&#111;nm%61%69l&#46;co&#109;'
+              <span><a href={'m&#97;ilto&#58;bitc&#111;&#105;n&#37;2&#68;st&#117;d%69o&#64;pro%&#55;&#52;&#111;nm%61%69l&#46;co&#109;'}
                        className="clickhere">{t('call2action.circle.1')}</a></span>
-              <span><a href='m&#97;ilto&#58;bitc&#111;&#105;n&#37;2&#68;st&#117;d%69o&#64;pro%&#55;&#52;&#111;nm%61%69l&#46;co&#109;'
+              <span><a href={'m&#97;ilto&#58;bitc&#111;&#105;n&#37;2&#68;st&#117;d%69o&#64;pro%&#55;&#52;&#111;nm%61%69l&#46;co&#109;'}
                        className="request">{t('call2action.circle.2')}</a></span>
-              <span><a href='m&#97;ilto&#58;bitc&#111;&#105;n&#37;2&#68;st&#117;d%69o&#64;pro%&#55;&#52;&#111;nm%61%69l&#46;co&#109;'
+              <span><a href={'m&#97;ilto&#58;bitc&#111;&#105;n&#37;2&#68;st&#117;d%69o&#64;pro%&#55;&#52;&#111;nm%61%69l&#46;co&#109;'}
                        className="proposal">{t('call2action.circle.3')}</a></span>
             </div>
           </div>

@@ -1,8 +1,11 @@
 import * as React from 'react'
-import {withTranslation, Trans, WithTranslation} from 'react-i18next'
+import {withTranslation, Trans, WithTranslation, WithTranslationProps} from 'react-i18next'
 
-export const Resources: React.ComponentClass<any> | React.FunctionComponent<any> = withTranslation('Resources')
-(({t}: WithTranslation) => {
+type Props = WithTranslation & {}
+type X = React.ComponentType<Omit<Props, keyof WithTranslation> & WithTranslationProps>
+
+export const Resources: X = withTranslation('Resources')
+(({t}: Props) => {
 
   return (
     <div className={'page page--xs'} id="resourcesPage">

@@ -16,7 +16,7 @@ const routes = [
   {path: '/contact', Component: Contact},
 ]
 
-const SiteRoutes: any = () => {
+const SiteRoutes: () => any = () => {
   const routeComponents = routes.map(({path, Component}) => (
     <Route key={path} exact path={path}>
       {({match}) => (

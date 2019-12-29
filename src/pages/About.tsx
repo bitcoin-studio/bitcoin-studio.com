@@ -1,9 +1,12 @@
 import * as React from 'react'
-import {withTranslation, WithTranslation} from 'react-i18next'
+import {withTranslation, WithTranslation, WithTranslationProps} from 'react-i18next'
 import photo from '../assets/img/stephane_roche_profile.jpg'
 
-export const About: React.ComponentClass<any> | React.FunctionComponent<any> = withTranslation('About')
-(({t}: WithTranslation) => {
+type Props = WithTranslation & {}
+type X = React.ComponentType<Omit<Props, keyof WithTranslation> & WithTranslationProps>
+
+export const About: X = withTranslation('About')
+(({t}: Props) => {
 
   return (
       <div className={'page page--xs'} id={'aboutPage'}>

@@ -1,5 +1,5 @@
 import * as React from 'react'
-import {withTranslation, WithTranslation} from 'react-i18next'
+import {withTranslation, WithTranslation, WithTranslationProps} from 'react-i18next'
 import {Formik, Field, Form, ErrorMessage, FormikHelpers} from 'formik'
 import * as Yup from 'yup'
 import axios from 'axios'
@@ -21,8 +21,11 @@ const initialValues: FormValues = {
   message: '',
 }
 
-export const Contact: React.ComponentClass<any> | React.FunctionComponent<any> = withTranslation('Contact')
-(({t}: WithTranslation) => {
+type Props = WithTranslation & {}
+type X = React.ComponentType<Omit<Props, keyof WithTranslation> & WithTranslationProps>
+
+export const Contact: X = withTranslation('Contact')
+(({t}: Props) => {
 
   return (
     <div className={'page page--xs'} id={'contactPage'}>
@@ -45,7 +48,7 @@ export const Contact: React.ComponentClass<any> | React.FunctionComponent<any> =
           <h3 className={'contact-subtitles'}>
             {t('contact-info.subtitle1')}
           </h3>
-          <a href="m&#97;ilto&#58;bitc&#111;&#105;n&#37;2&#68;st&#117;d%69o&#64;pro%&#55;&#52;&#111;nm%61%69l&#46;co&#109;">
+          <a href={'m&#97;ilto&#58;bitc&#111;&#105;n&#37;2&#68;st&#117;d%69o&#64;pro%&#55;&#52;&#111;nm%61%69l&#46;co&#109;'}>
             <span className="e-mail" data-user="oiduts-nioctib" data-website="moc.liamnotorp"/>
           </a>
 
