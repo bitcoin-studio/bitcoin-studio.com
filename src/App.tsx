@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef} from 'react'
+import React, {useState, useEffect, useRef, ReactElement, useCallback} from 'react'
 import FocusLock from 'react-focus-lock'
 import {withRouter, RouteComponentProps} from 'react-router-dom'
 import {Header} from './components/Header'
@@ -7,7 +7,7 @@ import {Footer} from './components/Footer'
 import {Burger} from './components/BurgerMenu'
 import {useOnClickOutside} from './hooks'
 
-export const App = withRouter(({history}: RouteComponentProps) => {
+export const App = withRouter(({history}: RouteComponentProps): ReactElement => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const node = useRef(null)
   const menuId = 'main-menu'
@@ -25,18 +25,18 @@ export const App = withRouter(({history}: RouteComponentProps) => {
     })
   })
 
-  function toggleScrolling() {
+  const toggleScrolling = useCallback(() => {
     if (isMenuOpen && document.body.style.overflow === 'hidden') {
       document.body.style.overflow = ''
     } else {
       document.body.style.overflow = 'hidden'
     }
-  }
+  }, [isMenuOpen])
 
-  function onToggleMenu() {
+  const onToggleMenu = useCallback(() => {
     toggleScrolling()
     setIsMenuOpen(!isMenuOpen)
-  }
+  }, [isMenuOpen, toggleScrolling])
 
   return (
     <>
