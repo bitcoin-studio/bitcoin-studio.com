@@ -41,27 +41,31 @@ type InputRadioTrainingsProps = {
   setSelectedOffer: React.Dispatch<React.SetStateAction<string>>
 }
 
-const InputRadioTrainings: FC<InputRadioTrainingsProps> = ({t, ev, setSelectedOffer}) => {
-  const trainingsElements = trainings.map((training) => {
-    return (
-      <div key={training.id}>
-        <input
-          id={training.id}
-          type="radio"
-          name="training"
-          onClick={() => setSelectedOffer((ev.target as HTMLInputElement).value)}
-          value={training.price}
-        />
-        <label className={'training__radio-label'} htmlFor={training.id}>
-          {
-            i18next.language === 'en'
-              ? `${t(training.txtLabel)} - €${training.price}`
-              : `${t(training.txtLabel)} - ${training.price}€`
-          }
-        </label>
-      </div>
-    )
-  })
+const InputRadioTrainings: FC<InputRadioTrainingsProps> = (
+  {
+    t,
+    ev,
+    setSelectedOffer,
+  }
+) => {
+  const trainingsElements = trainings.map((training) => (
+    <div key={training.id}>
+      <input
+        id={training.id}
+        type="radio"
+        name="training"
+        onClick={() => setSelectedOffer((ev.target as HTMLInputElement).value)}
+        value={training.price}
+      />
+      <label className={'training__radio-label'} htmlFor={training.id}>
+        {
+          i18next.language === 'en'
+            ? `${t(training.txtLabel)} - €${training.price}`
+            : `${t(training.txtLabel)} - ${training.price}€`
+        }
+      </label>
+    </div>
+  ))
   return <>{trainingsElements}</>
 }
 
@@ -86,7 +90,11 @@ export const RegistrationSecondScreen: FC<RegistrationSecondScreenProps> = ({t, 
       </div>
 
       <div id={'buttons'}>
-        <button className={'swal-button swal-button--cancel'} onClick={() => swal.close()}>
+        <button
+          className={'swal-button swal-button--cancel'}
+          onClick={() => swal.close()}
+          type={'button'}
+        >
           {t('registration.secondScreen.close')}
         </button>
         <form method="POST" action="https://nodes.bitcoin-studio.com/api/v1/invoices">
@@ -97,8 +105,12 @@ export const RegistrationSecondScreen: FC<RegistrationSecondScreenProps> = ({t, 
           <input type="hidden" name="notifyEmail" value="rstephane@protonmail.com"/>
           <input type="hidden" name="browserRedirect" value="https://www.bitcoin-studio.com"/>
           {(i18next.language === 'fr') && (<input type="hidden" name="checkoutQueryString" value={'lang=fr-FR'}/>)}
-          <input type="image" src="https://nodes.bitcoin-studio.com/img/paybutton/pay.svg" name="submit"
-                 alt="Pay with BTCPay, Self-Hosted Bitcoin Payment Processor"/>
+          <input
+            alt="Pay with BTCPay, Self-Hosted Bitcoin Payment Processor"
+            name="submit"
+            src="https://nodes.bitcoin-studio.com/img/paybutton/pay.svg"
+            type="image"
+          />
         </form>
       </div>
     </div>

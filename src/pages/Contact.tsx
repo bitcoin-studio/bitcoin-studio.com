@@ -1,4 +1,5 @@
 import React, {FC} from 'react'
+import log from 'loglevel'
 import {useTranslation} from 'react-i18next'
 import {Formik, Field, Form, ErrorMessage, FormikHelpers} from 'formik'
 import * as Yup from 'yup'
@@ -22,7 +23,6 @@ const initialValues: FormValues = {
 }
 
 export const Contact: FC = () => {
-
   const {t} = useTranslation('Contact')
 
   return (
@@ -53,19 +53,35 @@ export const Contact: FC = () => {
           <h3 className={'contact-subtitles'}>
             {t('contact-info.subtitle2')}
           </h3>
-          <a href={'https://twitter.com/janakaSteph'} target={'_blank'}>
+          <a
+            href={'https://twitter.com/janakaSteph'}
+            rel="noopener noreferrer"
+            target={'_blank'}
+          >
             <img className={'contact-icons'} src={twitter} alt="twitter logo"/>
           </a>
 
-          <a href={'https://www.linkedin.com/in/stephane-roche'} target={'_blank'}>
+          <a
+            href={'https://www.linkedin.com/in/stephane-roche'}
+            rel="noopener noreferrer"
+            target={'_blank'}
+          >
             <img className={'contact-icons'} src={linkedin} alt="linkedin logo"/>
           </a>
 
-          <a href={'https://keybase.io/janakasteph'} target={'_blank'}>
+          <a
+            href={'https://keybase.io/janakasteph'}
+            rel="noopener noreferrer"
+            target={'_blank'}
+          >
             <img className={'contact-icons'} src={keybase} alt="keybase logo"/>
           </a>
 
-          <a href={'assets/pgp_roche_33659843.asc'} target={'_blank'}>
+          <a
+            href={'assets/pgp_roche_33659843.asc'}
+            rel="noopener noreferrer"
+            target={'_blank'}
+          >
             <img className={'contact-icons'} src={pgp} alt="pgp logo"/>
           </a>
         </div>
@@ -102,9 +118,9 @@ export const Contact: FC = () => {
                     actions.setSubmitting(false)
                   })
               })
-              .catch(error => {
-                console.log('Error while submitting email form')
-                console.log(error.response)
+              .catch((error) => {
+                log.error('Error while submitting email form')
+                log.error(error.response)
               })
           }}
         >

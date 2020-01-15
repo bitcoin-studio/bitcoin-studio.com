@@ -13,20 +13,6 @@ export const App: FC = () => {
   const node = useRef(null)
   const history = useHistory()
 
-  useOnClickOutside(node, () => {
-    if (isMenuOpen) {
-      toggleScrolling()
-      setIsMenuOpen(false)
-    }
-  })
-
-  useEffect(() => {
-    return history.listen(() => {
-      setIsMenuOpen(false)
-      document.body.style.overflow = ''
-    })
-  })
-
   const toggleScrolling = useCallback(() => {
     if (isMenuOpen && document.body.style.overflow === 'hidden') {
       document.body.style.overflow = ''
@@ -34,6 +20,18 @@ export const App: FC = () => {
       document.body.style.overflow = 'hidden'
     }
   }, [isMenuOpen])
+
+  useOnClickOutside(node, () => {
+    if (isMenuOpen) {
+      toggleScrolling()
+      setIsMenuOpen(false)
+    }
+  })
+
+  useEffect(() => history.listen(() => {
+    setIsMenuOpen(false)
+    document.body.style.overflow = ''
+  }))
 
   const onToggleMenu = useCallback(() => {
     toggleScrolling()

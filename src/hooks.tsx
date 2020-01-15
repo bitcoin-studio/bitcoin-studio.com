@@ -7,18 +7,17 @@ import {useEffect} from 'react'
  */
 export const useOnClickOutside = (ref: any, handler: Function) => {
   useEffect(() => {
-      const listener = (event: { target: any }) => {
-        if (!ref.current || ref.current.contains(event.target)) {
-          return
-        }
-        handler(event)
+    const listener = (event: { target: any }) => {
+      if (!ref.current || ref.current.contains(event.target)) {
+        return
       }
-      document.addEventListener('mousedown', listener)
+      handler(event)
+    }
+    document.addEventListener('mousedown', listener)
 
-      return () => {
-        document.removeEventListener('mousedown', listener)
-      }
-    },
-    [ref, handler],
-  )
+    return () => {
+      document.removeEventListener('mousedown', listener)
+    }
+  },
+  [ref, handler])
 }

@@ -5,13 +5,12 @@ import workshopImg from '../assets/img/workshop_img.jpg'
 import {RegistrationFirstScreen} from './WorkshopsRegistration/RegistrationFirstScreen'
 
 export const Workshops: FC = () => {
-
   const {t} = useTranslation('Workshops')
 
   const handleLinkClick = useCallback((e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, id: string) => {
     e.preventDefault()
     const el = document.getElementById(id)
-    el && el.scrollIntoView({behavior: 'smooth', block: 'start'})
+    el?.scrollIntoView({behavior: 'smooth', block: 'start'})
   }, [])
 
   return (
@@ -27,8 +26,10 @@ export const Workshops: FC = () => {
 
         <div id={'teaserWorkshop'}>
           <p>
-            {t('teaserWorkshop.1')}<br/>
-            {t('teaserWorkshop.2')}<br/>
+            {t('teaserWorkshop.1')}
+            <br/>
+            {t('teaserWorkshop.2')}
+            <br/>
             {t('teaserWorkshop.3')}
           </p>
         </div>
@@ -56,8 +57,10 @@ export const Workshops: FC = () => {
             <ul>
               <li className={'bold'}>
                 <Trans i18nKey={'agenda.face2face.masteringFundamentals.p1What'} t={t}>
-                  <a href={'#bitcoin-intro-workshop'}
-                     onClick={(e) => handleLinkClick(e, 'bitcoin-intro-workshop')}>
+                  <a
+                    href={'#bitcoin-intro-workshop'}
+                    onClick={(e) => handleLinkClick(e, 'bitcoin-intro-workshop')}
+                  >
                     {'xxx'}
                   </a>
                 </Trans>
@@ -72,7 +75,13 @@ export const Workshops: FC = () => {
                 <span className={'bold'}>{t('agenda.face2face.masteringFundamentals.t3Where')}</span>
                 <span>
                   <Trans i18nKey={'agenda.face2face.masteringFundamentals.p3Where'} t={t}>
-                    <a href="https://goo.gl/maps/adzSdmLqrBjCA9BbA" target={'_blank'}>xx</a>
+                    <a
+                      href="https://goo.gl/maps/adzSdmLqrBjCA9BbA"
+                      rel="noopener noreferrer"
+                      target={'_blank'}
+                    >
+                      {'x'}
+                    </a>
                   </Trans>
                 </span>
               </li>
@@ -87,8 +96,10 @@ export const Workshops: FC = () => {
             <ul>
               <li className={'bold'}>
                 <Trans i18nKey={'agenda.face2face.bitcoinProgramming.p1What'} t={t}>
-                  <a href={'#bitcoin-programming-workshop'}
-                     onClick={(e) => handleLinkClick(e, 'bitcoin-programming-workshop')}>
+                  <a
+                    href={'#bitcoin-programming-workshop'}
+                    onClick={(e) => handleLinkClick(e, 'bitcoin-programming-workshop')}
+                  >
                     {'xxx'}
                   </a>
                 </Trans>
@@ -103,7 +114,13 @@ export const Workshops: FC = () => {
                 <span className={'bold'}>{t('agenda.face2face.bitcoinProgramming.t3Where')}</span>
                 <span>
                   <Trans i18nKey={'agenda.face2face.bitcoinProgramming.p3Where'} t={t}>
-                    <a href="https://goo.gl/maps/adzSdmLqrBjCA9BbA" target={'_blank'}>xx</a>
+                    <a
+                      href="https://goo.gl/maps/adzSdmLqrBjCA9BbA"
+                      rel="noopener noreferrer"
+                      target={'_blank'}
+                    >
+                      {'xx'}
+                    </a>
                   </Trans>
                 </span>
               </li>
@@ -120,7 +137,8 @@ export const Workshops: FC = () => {
                 <Trans i18nKey={'agenda.face2face.lightningNetwork.p1What'} t={t}>
                   <a
                     href={'#lightning-workshop'}
-                    onClick={(e) => handleLinkClick(e, 'lightning-workshop')}>
+                    onClick={(e) => handleLinkClick(e, 'lightning-workshop')}
+                  >
                     {'xxx'}
                   </a>
                 </Trans>
@@ -135,7 +153,13 @@ export const Workshops: FC = () => {
                 <span className={'bold'}>{t('agenda.face2face.lightningNetwork.t3Where')}</span>
                 <span>
                   <Trans i18nKey={'agenda.face2face.lightningNetwork.p3Where'} t={t}>
-                    <a href="https://goo.gl/maps/adzSdmLqrBjCA9BbA" target={'_blank'}>xx</a>
+                    <a
+                      href="https://goo.gl/maps/adzSdmLqrBjCA9BbA"
+                      rel="noopener noreferrer"
+                      target={'_blank'}
+                    >
+                      {'xx'}
+                    </a>
                   </Trans>
                 </span>
               </li>
@@ -151,8 +175,10 @@ export const Workshops: FC = () => {
             <h2 className={'offers-h2'}>{t('agenda.distance.title')}</h2>
             <p>{t('agenda.distance.p1')}</p>
             <p className={'distance__prices'}>
-              {t('agenda.distance.p2.1')}<br/>
-              {t('agenda.distance.p2.2')}<br/>
+              {t('agenda.distance.p2.1')}
+              <br/>
+              {t('agenda.distance.p2.2')}
+              <br/>
               {t('agenda.distance.p2.3')}
             </p>
           </div>
@@ -160,11 +186,12 @@ export const Workshops: FC = () => {
 
         <div id={'buttonRegisterWorkshop'}>
           <button
-            className="btn-yellow"
+            className={'btn-yellow'}
             onClick={(ev) => swal({
               content: <RegistrationFirstScreen t={t} ev={ev}/>,
               button: false,
             })}
+            type={'button'}
           >
             {t('registration.button')}
           </button>
@@ -201,7 +228,9 @@ export const Workshops: FC = () => {
                 <a
                   href={'#bitcoin-programming-workshop'}
                   onClick={(e) => handleLinkClick(e, 'bitcoin-programming-workshop')}
-                >{'xxx'}</a>
+                >
+                  {'x'}
+                </a>
                 2
               </Trans>
             </p>
@@ -225,14 +254,37 @@ export const Workshops: FC = () => {
             <h3>{t('programming-offer.public.title')}</h3>
             <p>
               <Trans i18nKey={'programming-offer.public.p1'} t={t}>
-                0 <a href={'#bitcoin-intro-workshop'} onClick={(e) => handleLinkClick(e, 'bitcoin-intro-workshop')}>{'xxx'}</a>
+                0
+                {' '}
+                <a
+                  href={'#bitcoin-intro-workshop'}
+                  onClick={(e) => handleLinkClick(e, 'bitcoin-intro-workshop')}
+                >
+                  {'x'}
+                </a>
                 2
               </Trans>
             </p>
             <p>
               <Trans i18nKey={'programming-offer.public.p2'} t={t}>
-                0 <a href="https://keybase.pub/janakasteph/Bitcoin-VirtualMachine/" target={'_blank'}>Ubuntu Virtual Machine image</a>
-                2 <a href="https://app.vagrantup.com/bitcoin-studio/boxes/Bitcoin-VirtualMachine" target={'_blank'}>Vagrant box</a>
+                0
+                {' '}
+                <a
+                  href="https://keybase.pub/janakasteph/Bitcoin-VirtualMachine/"
+                  rel="noopener noreferrer"
+                  target={'_blank'}
+                >
+                  Ubuntu Virtual Machine image
+                </a>
+                2
+                {' '}
+                <a
+                  href="https://app.vagrantup.com/bitcoin-studio/boxes/Bitcoin-VirtualMachine"
+                  rel="noopener noreferrer"
+                  target={'_blank'}
+                >
+                  {'Vagrant box'}
+                </a>
                 4
               </Trans>
             </p>
@@ -242,13 +294,29 @@ export const Workshops: FC = () => {
             <h3>{t('programming-offer.programme.title')}</h3>
             <p>
               <Trans i18nKey={'programming-offer.programme.p1'} t={t}>
-                0 <a href={'resources'} target={'_blank'}>Resources</a>
+                0
+                {' '}
+                <a
+                  href={'resources'}
+                  rel="noopener noreferrer"
+                  target={'_blank'}
+                >
+                  Resources
+                </a>
                 2
               </Trans>
             </p>
             <p>
               <Trans i18nKey={'programming-offer.programme.p2'} t={t}>
-                0 <a href="https://bitcoinjs-guide.bitcoin-studio.com/" target={'_blank'}>BitcoinJS guide</a>
+                0
+                {' '}
+                <a
+                  href="https://bitcoinjs-guide.bitcoin-studio.com/"
+                  rel="noopener noreferrer"
+                  target={'_blank'}
+                >
+                  {'BitcoinJS guide'}
+                </a>
                 2
               </Trans>
             </p>
@@ -273,15 +341,37 @@ export const Workshops: FC = () => {
             <h3>{t('ln.public.title')}</h3>
             <p>
               <Trans i18nKey={'ln.public.p1'} t={t}>
-                0 <a href={'#bitcoin-programming-workshop'}
-                     onClick={(e) => handleLinkClick(e, 'bitcoin-programming-workshop')}>{'xxx'}</a>
+                0
+                {' '}
+                <a
+                  href={'#bitcoin-programming-workshop'}
+                  onClick={(e) => handleLinkClick(e, 'bitcoin-programming-workshop')}
+                >
+                  {'x'}
+                </a>
                 2
               </Trans>
             </p>
             <p>
               <Trans i18nKey={'ln.public.p2'} t={t}>
-                0 <a href="https://keybase.pub/janakasteph/Bitcoin-VirtualMachine/" target={'_blank'}>Ubuntu Virtual Machine image</a>
-                2 <a href="https://app.vagrantup.com/bitcoin-studio/boxes/Bitcoin-VirtualMachine" target={'_blank'}>Vagrant box</a>
+                0
+                {' '}
+                <a
+                  href="https://keybase.pub/janakasteph/Bitcoin-VirtualMachine/"
+                  rel="noopener noreferrer"
+                  target={'_blank'}
+                >
+                  {'Ubuntu Virtual Machine image'}
+                </a>
+                2
+                {' '}
+                <a
+                  href="https://app.vagrantup.com/bitcoin-studio/boxes/Bitcoin-VirtualMachine"
+                  rel="noopener noreferrer"
+                  target={'_blank'}
+                >
+                  {'Vagrant box'}
+                </a>
                 4
               </Trans>
             </p>

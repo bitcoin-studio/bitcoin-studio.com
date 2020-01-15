@@ -18,13 +18,13 @@ const routes: Array<{path: string, Component: FC}> = [
 
 const SiteRoutes: () => any = () => {
   const routeComponents = routes.map(({path, Component}) => (
-    <Route key={path} exact path={path}>
+    <Route key={path} exact={true} path={path}>
       {({match}) => (
         <CSSTransition
           in={match != null}
           timeout={200}
           classNames="pageContainer"
-          unmountOnExit
+          unmountOnExit={true}
         >
           <div className="pageContainer">
             <Component/>
@@ -37,33 +37,30 @@ const SiteRoutes: () => any = () => {
   /* Hack to have 404 page working with CssTransition */
   routeComponents.push(
     <Route key={'NotFound'}>
-      {routeProps => {
-        if (routes.filter(r => r.path === routeProps.location.pathname).length === 0) {
+      {(routeProps) => {
+        if (routes.filter((r) => r.path === routeProps.location.pathname).length === 0) {
           return (
             <CSSTransition
               in={routeProps.match != null}
               timeout={200}
               classNames="pageContainer"
-              unmountOnExit
+              unmountOnExit={true}
             >
               <div className="pageContainer">
                 <NotFound/>
               </div>
             </CSSTransition>
           )
-        } else {
-          return <></>
         }
+        return <></>
       }}
     </Route>,
   )
   return routeComponents
 }
 
-export const Main = memo(() => {
-  return (
-    <main>
-      <SiteRoutes/>
-    </main>
-  )
-})
+export const Main = memo(() => (
+  <main>
+    <SiteRoutes/>
+  </main>
+))

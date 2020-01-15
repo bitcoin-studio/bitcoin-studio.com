@@ -1,9 +1,8 @@
 import React, {FC} from 'react'
-import notFound from '../assets/img/notFound.jpg'
 import {useTranslation} from 'react-i18next'
+import notFound from '../assets/img/notFound.jpg'
 
 export const NotFound: FC = () => {
-
   const {t} = useTranslation('NotFound')
 
   return (

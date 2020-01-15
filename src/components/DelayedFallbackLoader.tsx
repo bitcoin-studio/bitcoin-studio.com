@@ -2,11 +2,10 @@ import React, {useState, useEffect, FC} from 'react'
 import {TailSpin} from 'svg-loaders-react'
 
 export const DelayedFallbackLoader: FC = () => {
-
   const [show, setShow] = useState(false)
 
   useEffect(() => {
-    let timeout = setTimeout(() => setShow(true), 500)
+    const timeout = setTimeout(() => setShow(true), 500)
     return () => {
       clearTimeout(timeout)
     }
