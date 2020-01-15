@@ -82,7 +82,6 @@
 	
 	nav.header__links {
 		height: 70px;
-		overflow: scroll;
 		
 		a, button {
 			color: $color-primary;
@@ -94,6 +93,7 @@
 		}
 		
 		@media (max-width: $screen-xxs-max) {
+			overflow: scroll;
 			width: 100%;
 		}
 		
@@ -102,6 +102,7 @@
 			box-sizing: border-box;
 			height: 100vh;
 			left: 0;
+			overflow: scroll;
 			padding: 5rem 2rem;
 			position: fixed;
 			text-align: left;
