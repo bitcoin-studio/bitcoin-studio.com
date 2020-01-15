@@ -34,7 +34,7 @@ body {
 			.pageContainer-enter-active {
 				opacity: 1;
 				transform: scale(1);
-				transition: opacity 300ms, transform 300ms;
+				transition: opacity 200ms, transform 200ms;
 			}
 			
 			.pageContainer-exit {
@@ -45,7 +45,7 @@ body {
 			.pageContainer-exit-active {
 				opacity: 0;
 				transform: scale(0.99);
-				transition: opacity 300ms, transform 300ms;
+				transition: opacity 200ms, transform 200ms;
 			}
 			/**/
 			

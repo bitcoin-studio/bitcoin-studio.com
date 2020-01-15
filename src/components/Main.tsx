@@ -22,7 +22,7 @@ const SiteRoutes: () => any = () => {
       {({match}) => (
         <CSSTransition
           in={match != null}
-          timeout={300}
+          timeout={200}
           classNames="pageContainer"
           unmountOnExit
         >
@@ -42,7 +42,7 @@ const SiteRoutes: () => any = () => {
           return (
             <CSSTransition
               in={routeProps.match != null}
-              timeout={300}
+              timeout={200}
               classNames="pageContainer"
               unmountOnExit
             >
