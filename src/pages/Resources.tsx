@@ -95,7 +95,7 @@ export const Resources: FC = () => {
               rel="noopener noreferrer"
               target={'_blank'}
             >
-              {'xxx'}
+              {'x'}
             </a>
             2
             <br/>
@@ -123,7 +123,7 @@ export const Resources: FC = () => {
                 rel="noopener noreferrer"
                 target={'_blank'}
               >
-                xxx
+                {'x'}
               </a>
               2
               <a
@@ -405,13 +405,11 @@ export const Resources: FC = () => {
 
         <p className={'slidesDesc'}>
           <Trans i18nKey={'slides.slidesDesc'} t={t}>
-            You can download all the presentations
-            {' '}
-            <a href={'assets/education/slides_bitcoin-studio.zip'} download={true}>here</a>
-            {' '}
-            or
-            consult them on
-            {' '}
+            {'You can download all the presentations '}
+            <a href={'assets/education/slides_bitcoin-studio.zip'} download={true}>
+              {'here'}
+            </a>
+            {'or consult them on '}
             <a
               href="https://www.slideshare.net/bitcoin-studio"
               rel="noopener noreferrer"

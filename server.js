@@ -1,9 +1,14 @@
 const express = require('express')
-const { check, validationResult } = require('express-validator')
+const {check, validationResult} = require('express-validator')
 const nodeMailer = require('nodemailer')
 const bodyParser = require('body-parser')
 const path = require('path')
+const log = require('loglevel')
 require('dotenv').config()
+
+// Set log level
+log.setLevel('trace')
+
 const PORT = process.env.PORT || 8081
 
 const app = express()
@@ -14,25 +19,30 @@ app.use(express.static(path.resolve(__dirname, 'build')))
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 
-app.get('/api', function (req, res) {
+app.get('/api', (req, res) => {
   res.set('Content-Type', 'application/json')
   res.send('{"message":"Hello from the bitcoin studio custom server!"}')
 })
 
 app.post('/send-email', [
   check('name')
-    .isLength({ max: 50 }).withMessage('must be at max 50 chars long')
-    .trim().escape(),
+    .isLength({max: 50}).withMessage('must be at max 50 chars long')
+    .trim()
+    .escape(),
   check('email')
-    .isLength({ max: 50 }).withMessage('must be at max 50 chars long')
-    .isEmail().normalizeEmail().withMessage('email is not valid'),
+    .isLength({max: 50}).withMessage('must be at max 50 chars long')
+    .isEmail()
+    .normalizeEmail()
+    .withMessage('email is not valid'),
   check('message')
-    .isLength({ max: 2000 }).withMessage('must be at max 2000 chars long')
-    .trim().escape()
+    .isLength({max: 2000})
+    .withMessage('must be at max 2000 chars long')
+    .trim()
+    .escape()
 ], (req, res) => {
   const errors = validationResult(req)
   if (errors.isEmpty()) {
-    let transporter = nodeMailer.createTransport({
+    const transporter = nodeMailer.createTransport({
       host: 'smtp.gmail.com',
       port: 465,
       secure: true,
@@ -41,17 +51,18 @@ app.post('/send-email', [
         pass: process.env.SMTP_GMAIL_PASS
       }
     })
-    let mailOptions = {
-      from: `\"${req.body.name}\" <${req.body.email}>`,
+    const mailOptions = {
+      from: `"${req.body.name}" <${req.body.email}>`,
       to: 'bitcoin-studio@protonmail.com',
       subject: 'Bitcoin Studio Website Form',
       text: req.body.message
     }
     transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
-        return console.log(error)
+        log.error(error)
+      } else {
+        log.info('Message %s sent: %s', info.messageId, info.response)
       }
-      console.log('Message %s sent: %s', info.messageId, info.response)
     })
     res.end()
   } else {
@@ -60,10 +71,10 @@ app.post('/send-email', [
 })
 
 // All remaining requests return the React app, so it can handle routing.
-app.get('*', function(request, response) {
+app.get('*', (request, response) => {
   response.sendFile(path.resolve(__dirname, 'build', 'index.html'))
 })
 
-app.listen(PORT, function () {
-  console.log(`Server listening on port ${PORT}`)
+app.listen(PORT, () => {
+  log.info(`Server listening on port ${PORT}`)
 })

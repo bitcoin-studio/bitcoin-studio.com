@@ -24,6 +24,7 @@
     "jsx": "react"
   },
   "include": [
-    "src"
+    "src",
+    "server.js"
   ]
 }

@@ -1,5 +1,6 @@
 import React, {Suspense} from 'react'
 import ReactDOM from 'react-dom'
+import log from 'loglevel'
 import {BrowserRouter} from 'react-router-dom'
 import {App} from './App'
 import {DelayedFallbackLoader} from './components/DelayedFallbackLoader'
@@ -7,6 +8,13 @@ import * as serviceWorker from './serviceWorker'
 import './i18n'
 import 'normalize.css/normalize.css'
 import './assets/stylesheets/main.scss'
+
+if (process.env.NODE_ENV === 'production') {
+  log.setLevel('silent')
+} else {
+  log.setLevel('trace')
+  log.info('Looks like we are in development mode!')
+}
 
 ReactDOM.render(
   <BrowserRouter>

@@ -56,11 +56,11 @@
   "scripts": {
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "build": "react-scripts build",
-    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn start\"",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .ts,tsx src/",
-    "server": "nodemon server",
-    "start": "react-scripts start",
+    "start": "concurrently --kill-others-on-fail -n client,server \"yarn start:client\" \"yarn start:server\"",
+    "start:server": "nodemon server",
+    "start:client": "react-scripts start",
     "test": "react-scripts test"
   },
   "eslintConfig": {
