@@ -36,7 +36,7 @@ i18n
       fr,
     },
     fallbackLng: 'en',
-    debug: true,
+    debug: false,
     detection: detectionOptions,
     interpolation: {
       formatSeparator: ',',
