@@ -62,37 +62,17 @@
 			margin-bottom: 1em;
 		}
 		
-		.slideItemContainer2 {
+		.slide {
 			height: 169px;
 			min-width: 100px;
 			margin-bottom: 50px;
 			flex: 0 0 285px;
 			
-			.slideItemContainer {
-				overflow: hidden;
-				height: 169px;
-				
-				object.slideItem {
-					top: -56px;
-					position: relative;
-					height: 225px;
-					
-					/* Firefox only */
-					@-moz-document url-prefix() {
-						& {
-							top: -28px;
-							float: right;
-						}
-					}
-				}
-				
-				.fakeItem {
-					filter: blur(0.3rem);
-					max-width: 300px;
-				}
+			img {
+				width: 100%;
 			}
 			
-			.slideButton {
+			.slide__btn {
 				text-align: center;
 				line-height: 140%;
 				outline: none;
@@ -147,8 +127,19 @@
 			}
 		}
 		
-		.fakeItemContainer .slideButton::before {
-			background-color: rgba(201, 24, 0, 0.5);
+		.slide--fake {
+			img {
+				filter: blur(0.1rem);
+				max-width: 300px;
+			}
+			
+			button {
+				line-height: 140%;
+			}
+			
+			.slide__btn::before {
+				background-color: rgba(201, 24, 0, 0.5);
+			}
 		}
 		
 		/* Trick for positioning last element correctly */

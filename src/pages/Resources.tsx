@@ -1,5 +1,17 @@
 import React, {FC} from 'react'
 import {Trans, useTranslation} from 'react-i18next'
+// Slide covers
+import techIntro from '../assets/education/technical_intro_bitcoin_bitcoin-studio.jpg'
+import blockchainJourney from '../assets/education/blockchain_journey_bitcoin-studio.jpg'
+import forks from '../assets/education/forks_history_bitcoin-studio.jpg'
+import keys from '../assets/education/keys_addresses_wallets_bitcoin-studio.jpg'
+import mining from '../assets/education/mining_consensus_forks_bitcoin-studio.jpg'
+import transaction from '../assets/education/bitcoin_transaction_bitcoin-studio.jpg'
+import script from '../assets/education/bitcoin_script_bitcoin-studio.jpg'
+import challenges from '../assets/education/next_challenges_bitcoin-studio.jpg'
+import cryptoTools from '../assets/education/cryptographic_tools_bitcoin-studio.jpg'
+import dataAnchoring from '../assets/education/data_anchoring_bitcoin-studio.jpg'
+import fake from '../assets/education/slide_fake.jpg'
 
 export const Resources: FC = () => {
   const {t} = useTranslation('Resources')
@@ -200,80 +212,45 @@ export const Resources: FC = () => {
         </div>
         <h2>{t('slides.title')}</h2>
 
-        <div className={'slideItemContainer2'}>
-          <div className={'slideItemContainer'}>
-            <object
-              aria-label="slides"
-              className={'slideItem'}
-              type={'application/pdf'}
-              data={'assets/education/technical_intro_bitcoin_bitcoin-studio.pdf'}
-            />
-          </div>
-          <div className="slideButton">
+        <div className={'slide'}>
+          <img src={techIntro} alt="technical introduction to bitcoin"/>
+          <div className="slide__btn">
             <a href={'assets/education/technical_intro_bitcoin_bitcoin-studio.pdf'} download={true}>
               {t('slides.download')}
             </a>
           </div>
         </div>
 
-        <div className={'slideItemContainer2'}>
-          <div className={'slideItemContainer'}>
-            <object
-              aria-label="slides"
-              className={'slideItem'}
-              type={'application/pdf'}
-              data={'assets/education/blockchain_journey_bitcoin-studio.pdf'}
-            />
-          </div>
-          <div className="slideButton">
+        <div className={'slide'}>
+          <img src={blockchainJourney} alt="overview of blockchain technologies"/>
+          <div className="slide__btn">
             <a href={'assets/education/blockchain_journey_bitcoin-studio.pdf'} download={true}>
               {t('slides.download')}
             </a>
           </div>
         </div>
 
-        <div className={'slideItemContainer2'}>
-          <div className={'slideItemContainer'}>
-            <object
-              aria-label="slides"
-              className={'slideItem'}
-              type={'application/pdf'}
-              data={'assets/education/forks_history_bitcoin-studio.pdf'}
-            />
-          </div>
-          <div className="slideButton">
+        <div className={'slide'}>
+          <img src={forks} alt="bitcoin forks history"/>
+          <div className="slide__btn">
             <a href={'assets/education/forks_history_bitcoin-studio.pdf'} download={true}>
               {t('slides.download')}
             </a>
           </div>
         </div>
 
-        <div className={'slideItemContainer2'}>
-          <div className={'slideItemContainer'}>
-            <object
-              aria-label="slides"
-              className={'slideItem'}
-              type={'application/pdf'}
-              data={'assets/education/keys_addresses_wallets_bitcoin-studio.pdf'}
-            />
-          </div>
-          <div className="slideButton">
+        <div className={'slide'}>
+          <img src={keys} alt="keys, addresses and wallets"/>
+          <div className="slide__btn">
             <a href={'assets/education/keys_addresses_wallets_bitcoin-studio.pdf'} download={true}>
               {t('slides.download')}
             </a>
           </div>
         </div>
 
-        <div className={'slideItemContainer2'}>
-          <div className={'slideItemContainer'}>
-            <object
-              aria-label="slides"
-              className={'slideItem'}
-              type={'application/pdf'}
-              data={'assets/education/mining_consensus_forks_bitcoin-studio.pdf'}
-            />
-          </div>
-          <div className="slideButton">
+        <div className={'slide'}>
+          <img src={mining} alt="mining, consensus mechanism and forks"/>
+          <div className="slide__btn">
             <a href={'assets/education/mining_consensus_forks_bitcoin-studio.pdf'} download={true}>
               {t('slides.download')}
             </a>
@@ -281,93 +258,52 @@ export const Resources: FC = () => {
         </div>
 
 
-        <div className={'slideItemContainer2'}>
-          <div className={'slideItemContainer'}>
-            <object
-              aria-label="slides"
-              className={'slideItem'}
-              type={'application/pdf'}
-              data={'assets/education/bitcoin_transaction_bitcoin-studio.pdf'}
-            />
-          </div>
-          <div className="slideButton">
+        <div className={'slide'}>
+          <img src={transaction} alt="bitcoin transactions"/>
+          <div className="slide__btn">
             <a href={'assets/education/bitcoin_transaction_bitcoin-studio.pdf'} download={true}>
               {t('slides.download')}
             </a>
           </div>
         </div>
 
-        <div className={'slideItemContainer2'}>
-          <div className={'slideItemContainer'}>
-            <object
-              aria-label="slides"
-              className={'slideItem'}
-              type={'application/pdf'}
-              data={'assets/education/bitcoin_script_bitcoin-studio.pdf'}
-            />
-          </div>
-          <div className="slideButton">
+        <div className={'slide'}>
+          <img src={script} alt="bitcoin script"/>
+          <div className="slide__btn">
             <a href={'assets/education/bitcoin_script_bitcoin-studio.pdf'} download={true}>{t('slides.download')}</a>
           </div>
         </div>
 
-        <div className={'slideItemContainer2'}>
-          <div className={'slideItemContainer'}>
-            <object
-              aria-label="slides"
-              className={'slideItem'}
-              type={'application/pdf'}
-              data={'assets/education/next_challenges_bitcoin-studio.pdf'}
-            />
-          </div>
-          <div className="slideButton">
+        <div className={'slide'}>
+          <img src={challenges} alt="next challenges of bitcoin"/>
+          <div className="slide__btn">
             <a href={'assets/education/next_challenges_bitcoin-studio.pdf'} download={true}>
               {t('slides.download')}
             </a>
           </div>
         </div>
 
-        <div className={'slideItemContainer2'}>
-          <div className={'slideItemContainer'}>
-            <object
-              aria-label="slides"
-              className={'slideItem'}
-              type={'application/pdf'}
-              data={'assets/education/cryptographic_tools_bitcoin-studio.pdf'}
-            />
-          </div>
-          <div className="slideButton">
+        <div className={'slide'}>
+          <img src={cryptoTools} alt="cryptographic tools"/>
+          <div className="slide__btn">
             <a href={'assets/education/cryptographic_tools_bitcoin-studio.pdf'} download={true}>
               {t('slides.download')}
             </a>
           </div>
         </div>
 
-        <div className={'slideItemContainer2'}>
-          <div className={'slideItemContainer'}>
-            <object
-              aria-label="slides"
-              className={'slideItem'}
-              type={'application/pdf'}
-              data={'assets/education/data_anchoring_bitcoin-studio.pdf'}
-            />
-          </div>
-          <div className="slideButton">
+        <div className={'slide'}>
+          <img src={dataAnchoring} alt="data anchoring"/>
+          <div className="slide__btn">
             <a href={'assets/education/data_anchoring_bitcoin-studio.pdf'} download={true}>
               {t('slides.download')}
             </a>
           </div>
         </div>
 
-        <div className={'slideItemContainer2 fakeItemContainer'}>
-          <div className={'slideItemContainer'}>
-            <object
-              aria-label="slides"
-              className={'slideItem fakeItem'}
-              data={'assets/education/slide_fake.jpg'}
-            />
-          </div>
-          <div className="slideButton">
+        <div className={'slide slide--fake'}>
+          <img src={fake} alt=""/>
+          <div className="slide__btn">
             <button
               className={'btn-link'}
               type={'button'}
@@ -377,15 +313,9 @@ export const Resources: FC = () => {
           </div>
         </div>
 
-        <div className={'slideItemContainer2 fakeItemContainer'}>
-          <div className={'slideItemContainer'}>
-            <object
-              aria-label="slides"
-              className={'slideItem fakeItem'}
-              data={'assets/education/slide_fake.jpg'}
-            />
-          </div>
-          <div className="slideButton">
+        <div className={'slide slide--fake'}>
+          <img src={fake} alt=""/>
+          <div className="slide__btn">
             <button
               className={'btn-link'}
               type={'button'}
@@ -395,13 +325,13 @@ export const Resources: FC = () => {
           </div>
         </div>
 
-        <div className={'slideItemContainer2 extraItem'}/>
+        <div className={'slide extraItem'}/>
 
-        <div className={'slideItemContainer2 extraItem'}/>
+        <div className={'slide extraItem'}/>
 
-        <div className={'slideItemContainer2 extraItem'}/>
+        <div className={'slide extraItem'}/>
 
-        <div className={'slideItemContainer2 extraItem'}/>
+        <div className={'slide extraItem'}/>
 
         <p className={'slidesDesc'}>
           <Trans i18nKey={'slides.slidesDesc'} t={t}>
