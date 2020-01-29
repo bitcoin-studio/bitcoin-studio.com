@@ -54,25 +54,25 @@ export const Footer: FC = () => {
         <p>Bitcoin Studio - 2020</p>
         <p>SIRET 795 207 117 00016</p>
         <p>
-          Icons made by
-          {' '}
-          <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">Eucalyp</a>
-          from
-          {' '}
+          {'Icons made by '}
+          <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">
+            {'Eucalyp'}
+          </a>
+          {' from '}
           <a
             href="https://www.flaticon.com/"
             title="Flaticon"
           >
-            www.flaticon.com
+            {'www.flaticon.com'}
           </a>
-          is licensed by
+          {' license '}
           <a
             href="http://creativecommons.org/licenses/by/3.0/"
             title="Creative Commons BY 3.0"
             rel="noopener noreferrer"
             target="_blank"
           >
-            CC 3.0 BY
+            {'CC 3.0 BY'}
           </a>
         </p>
       </div>
