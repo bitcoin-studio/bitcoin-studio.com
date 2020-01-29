@@ -21,6 +21,7 @@ module.exports = {
     "import/prefer-default-export": ["off"],
     "max-len": ["warn", { "code": 130 }],
     "no-console": ["warn"],
+    "no-trailing-spaces": ["warn", { "skipBlankLines": true }],
     "no-underscore-dangle": ["off"],
     "object-curly-newline": ["off"],
     "object-curly-spacing": ["warn", "never"],

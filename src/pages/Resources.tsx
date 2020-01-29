@@ -340,9 +340,9 @@ export const Resources: FC = () => {
 
         <p className="slidesDesc">
           <Trans i18nKey="slides.slidesDesc" t={t}>
-            {'You can download all the presentations '}
+            {'You can download '}
             <a href={`${process.env.PUBLIC_URL}/assets/education/slides_bitcoin-studio.zip`} download={true}>
-              here
+              {'all the presentations in a zip archive '}
             </a>
             {'or consult them on '}
             <a
