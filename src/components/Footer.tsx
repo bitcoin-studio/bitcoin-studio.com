@@ -51,7 +51,7 @@ export const Footer: FC = () => {
 
       <div id="copyrights">
         <div className="strike"/>
-        <p>Bitcoin Studio - 2019</p>
+        <p>Bitcoin Studio - 2020</p>
         <p>SIRET 795 207 117 00016</p>
         <p>
           Icons made by
