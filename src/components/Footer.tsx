@@ -1,5 +1,6 @@
 import React, {FC} from 'react'
 import {useTranslation} from 'react-i18next'
+import {Link} from 'react-router-dom'
 
 export const Footer: FC = () => {
   const {t} = useTranslation('Footer')
@@ -11,10 +12,18 @@ export const Footer: FC = () => {
           <h2>{t('col1.title')}</h2>
           <nav>
             <ul>
-              <li><a href="./workshops">{t('col1.1')}</a></li>
-              <li><a href="./resources">{t('col1.2')}</a></li>
-              <li><a href="./about">{t('col1.3')}</a></li>
-              <li><a href="./contact">{t('col1.4')}</a></li>
+              <li>
+                <Link to="/workshops">{t('col1.1')}</Link>
+              </li>
+              <li>
+                <Link to="/resources">{t('col1.2')}</Link>
+              </li>
+              <li>
+                <Link to="/about">{t('col1.3')}</Link>
+              </li>
+              <li>
+                <Link to="/contact">{t('col1.4')}</Link>
+              </li>
             </ul>
           </nav>
         </div>

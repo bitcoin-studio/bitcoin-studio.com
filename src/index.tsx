@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import log from 'loglevel'
 import {BrowserRouter} from 'react-router-dom'
 import {App} from './App'
+import {ScrollToTop} from './components/ScrollToTop'
 import {DelayedFallbackLoader} from './components/DelayedFallbackLoader'
 import * as serviceWorker from './serviceWorker'
 import './i18n'
@@ -18,6 +19,7 @@ if (process.env.NODE_ENV === 'production') {
 
 ReactDOM.render(
   <BrowserRouter>
+    <ScrollToTop />
     <Suspense fallback={<DelayedFallbackLoader/>}>
       <App/>
     </Suspense>
