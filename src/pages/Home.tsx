@@ -10,14 +10,14 @@ export const Home: FC = () => {
   const {t} = useTranslation('Home')
 
   return (
-    <div className={'page'} id={'homePage'}>
-      <section id={'bgHome'}>
+    <div className="page" id="homePage">
+      <section id="bgHome">
         <p>
           {t('hero')}
         </p>
       </section>
 
-      <section id={'services'}>
+      <section id="services">
         <div className="hr">
           <hr/>
         </div>
@@ -26,8 +26,8 @@ export const Home: FC = () => {
         <p>{t('services.p2')}</p>
       </section>
 
-      <section id={'servicesDetails'}>
-        <div className={'serviceItem'}>
+      <section id="servicesDetails">
+        <div className="serviceItem">
           <img src={software} alt="software development"/>
           <p>
             <span><em>{t('servicesDetails.1.title')}</em></span>
@@ -36,7 +36,7 @@ export const Home: FC = () => {
         </div>
 
 
-        <div className={'serviceItem'}>
+        <div className="serviceItem">
           <img src={education} alt="workshops"/>
           <p>
             <span><em>{t('servicesDetails.2.title')}</em></span>
@@ -44,7 +44,7 @@ export const Home: FC = () => {
           </p>
         </div>
 
-        <div className={'serviceItem'}>
+        <div className="serviceItem">
           <img src={training} alt="in-house training"/>
           <p>
             <span><em>{t('servicesDetails.3.title')}</em></span>
@@ -52,7 +52,7 @@ export const Home: FC = () => {
           </p>
         </div>
 
-        <div className={'serviceItem'}>
+        <div className="serviceItem">
           <img src={consulting} alt="private consulting"/>
           <p>
             <span><em>{t('servicesDetails.4.title')}</em></span>
@@ -60,7 +60,7 @@ export const Home: FC = () => {
           </p>
         </div>
 
-        <div className={'serviceItem'}>
+        <div className="serviceItem">
           <img src={hosting} alt="node as a service"/>
           <p>
             <span><em>{t('servicesDetails.5.title')}</em></span>
@@ -69,7 +69,7 @@ export const Home: FC = () => {
         </div>
       </section>
 
-      <section id={'network-homePage'}>
+      <section id="network-homePage">
         <div className="hr">
           <hr/>
         </div>
@@ -86,7 +86,7 @@ export const Home: FC = () => {
       <section id="call2action-homePage">
         <div id="call2action_ribbon">
           <h3>{t('call2action.title')}</h3>
-          <div id={'call2action_text'}>
+          <div id="call2action_text">
             <span>{t('call2action.p1')}</span>
             <span>{t('call2action.p2')}</span>
           </div>

@@ -40,7 +40,7 @@ export const App: FC = () => {
 
   return (
     <>
-      <div ref={node} className={'header__container'}>
+      <div ref={node} className="header__container">
         {/* FocusLock for A11y */}
         <FocusLock disabled={!isMenuOpen}>
           <Burger

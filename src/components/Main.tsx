@@ -36,7 +36,7 @@ const SiteRoutes: () => any = () => {
 
   /* Hack to have 404 page working with CssTransition */
   routeComponents.push(
-    <Route key={'NotFound'}>
+    <Route key="NotFound">
       {(routeProps) => {
         if (routes.filter((r) => r.path === routeProps.location.pathname).length === 0) {
           return (

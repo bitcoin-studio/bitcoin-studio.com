@@ -11,10 +11,10 @@ export const Footer: FC = () => {
           <h2>{t('col1.title')}</h2>
           <nav>
             <ul>
-              <li><a href={'./workshops'}>{t('col1.1')}</a></li>
-              <li><a href={'./resources'}>{t('col1.2')}</a></li>
-              <li><a href={'./about'}>{t('col1.3')}</a></li>
-              <li><a href={'./contact'}>{t('col1.4')}</a></li>
+              <li><a href="./workshops">{t('col1.1')}</a></li>
+              <li><a href="./resources">{t('col1.2')}</a></li>
+              <li><a href="./about">{t('col1.3')}</a></li>
+              <li><a href="./contact">{t('col1.4')}</a></li>
             </ul>
           </nav>
         </div>
@@ -40,7 +40,7 @@ export const Footer: FC = () => {
         </div>
       </div>
 
-      <div id={'copyrights'}>
+      <div id="copyrights">
         <div className="strike"/>
         <p>Bitcoin Studio - 2019</p>
         <p>SIRET 795 207 117 00016</p>
@@ -54,16 +54,16 @@ export const Footer: FC = () => {
             href="https://www.flaticon.com/"
             title="Flaticon"
           >
-            {'www.flaticon.com'}
+            www.flaticon.com
           </a>
-          {'is licensed by'}
+          is licensed by
           <a
             href="http://creativecommons.org/licenses/by/3.0/"
             title="Creative Commons BY 3.0"
             rel="noopener noreferrer"
             target="_blank"
           >
-            {'CC 3.0 BY'}
+            CC 3.0 BY
           </a>
         </p>
       </div>

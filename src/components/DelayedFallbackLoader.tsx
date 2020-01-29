@@ -13,7 +13,7 @@ export const DelayedFallbackLoader: FC = () => {
 
   return (
     show
-      ? <div className={'loader'}><TailSpin viewBox="0 0 50 40"/></div>
+      ? <div className="loader"><TailSpin viewBox="0 0 50 40"/></div>
       : <></>
   )
 }

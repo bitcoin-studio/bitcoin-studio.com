@@ -20,57 +20,57 @@ export const Resources: FC = () => {
   const {t} = useTranslation('Resources')
 
   return (
-    <div className={'page page--xs'} id="resourcesPage">
-      <div className={'hero'}>
+    <div className="page page--xs" id="resourcesPage">
+      <div className="hero">
         <h1>{t('title')}</h1>
         <p>{t('hero')}</p>
       </div>
 
-      <section id={'projects'}>
+      <section id="projects">
         <div className="hr">
           <hr/>
         </div>
         <h2>{t('projects.bitcoinJS.title')}</h2>
         <p>
-          <Trans i18nKey={'projects.bitcoinJS.p1'} t={t}>
+          <Trans i18nKey="projects.bitcoinJS.p1" t={t}>
             0
             <br/>
             <a
               href="https://github.com/bitcoin-studio/Bitcoin-Programming-with-BitcoinJS"
               rel="noopener noreferrer"
-              target={'_blank'}
+              target="_blank"
             >
-              {'➱ xxx'}
+              ➱ xxx
             </a>
             <br/>
             <a
               href="https://bitcoinjs-guide.bitcoin-studio.com"
               rel="noopener noreferrer"
-              target={'_blank'}
+              target="_blank"
             >
-              {'➱ xxx'}
+              ➱ xxx
             </a>
           </Trans>
         </p>
 
-        <h2 className={'mt55'}>{t('projects.bitcointestwallets.title')}</h2>
+        <h2 className="mt55">{t('projects.bitcointestwallets.title')}</h2>
         <p>
-          <Trans i18nKey={'projects.bitcointestwallets.p1'} t={t}>
+          <Trans i18nKey="projects.bitcointestwallets.p1" t={t}>
             0
             <br/>
             <a
               href="https://github.com/bitcoin-studio/Bitcoin-Test-Wallets-Generator"
               rel="noopener noreferrer"
-              target={'_blank'}
+              target="_blank"
             >
-              {'➱ xxx'}
+              ➱ xxx
             </a>
           </Trans>
         </p>
 
-        <h2 className={'mt55'}>{t('projects.bitcoin-vm.title')}</h2>
+        <h2 className="mt55">{t('projects.bitcoin-vm.title')}</h2>
         <p>
-          <Trans i18nKey={'projects.bitcoin-vm.p1'} t={t}>
+          <Trans i18nKey="projects.bitcoin-vm.p1" t={t}>
             0
             <br/>
             2
@@ -78,116 +78,116 @@ export const Resources: FC = () => {
             <a
               href="https://app.vagrantup.com/bitcoin-studio/boxes/Bitcoin-VirtualMachine"
               rel="noopener noreferrer"
-              target={'_blank'}
+              target="_blank"
             >
-              {'➱ Vagrant box'}
+              ➱ Vagrant box
             </a>
             <br/>
             <a
               href="https://keybase.pub/janakasteph/Bitcoin-VirtualMachine"
               rel="noopener noreferrer"
-              target={'_blank'}
+              target="_blank"
             >
-              {'➱ VirtualBox image'}
+              ➱ VirtualBox image
             </a>
             <br/>
             <a
               href="https://github.com/bitcoin-studio/Bitcoin-VirtualMachine"
               rel="noopener noreferrer"
-              target={'_blank'}
+              target="_blank"
             >
-              {'➱ Github Repository'}
+              ➱ Github Repository
             </a>
           </Trans>
         </p>
 
-        <h2 className={'mt55'}>{t('projects.mnemonic.title')}</h2>
+        <h2 className="mt55">{t('projects.mnemonic.title')}</h2>
         <p>
-          <Trans i18nKey={'projects.mnemonic.p1'} t={t}>
+          <Trans i18nKey="projects.mnemonic.p1" t={t}>
             0
             <a
               href="https://empoweredlaw.com/books/"
               rel="noopener noreferrer"
-              target={'_blank'}
+              target="_blank"
             >
-              {'x'}
+              x
             </a>
             2
             <br/>
-            <a href={'assets/bitcoin_mnemonic_code_template.pdf'} download={true}>➱ xxx</a>
+            <a href={`${process.env.PUBLIC_URL}/assets/bitcoin_mnemonic_code_template.pdf`} download={true}>➱ xxx</a>
           </Trans>
         </p>
 
-        <h2 className={'mt55'}>{t('projects.utxo.title')}</h2>
+        <h2 className="mt55">{t('projects.utxo.title')}</h2>
         <p>
-          <Trans i18nKey={'projects.utxo.p1'} t={t}>
+          <Trans i18nKey="projects.utxo.p1" t={t}>
             0
             <br/>
-            <a href={'assets/transactions_utxo_model.pdf'} download={true}>➱ xxx</a>
+            <a href={`${process.env.PUBLIC_URL}/assets/transactions_utxo_model.pdf`} download={true}>➱ xxx</a>
           </Trans>
         </p>
 
-        <h2 className={'mt55'}>{t('projects.nespressoLN.title')}</h2>
-        <div id={'nespressoLightningDesc'}>
+        <h2 className="mt55">{t('projects.nespressoLN.title')}</h2>
+        <div id="nespressoLightningDesc">
           <p>
-            <Trans i18nKey={'projects.nespressoLN.p1'} t={t}>
+            <Trans i18nKey="projects.nespressoLN.p1" t={t}>
               0
               <a
                 // eslint-disable-next-line max-len
                 href="https://www.elecrow.com/wiki/index.php?title=ESP8266_IOT_Board(Arduino_IDE_or_NodeMCU_Lua_Programming)"
                 rel="noopener noreferrer"
-                target={'_blank'}
+                target="_blank"
               >
-                {'x'}
+                x
               </a>
               2
               <a
                 href="http://theblock.cafe/"
                 rel="noopener noreferrer"
-                target={'_blank'}
+                target="_blank"
               >
-                {'x'}
+                x
               </a>
               4
               <br/>
               <a
                 href="https://coffee.bitcoin-studio.com"
                 rel="noopener noreferrer"
-                target={'_blank'}
+                target="_blank"
               >
-                {'➱ The custom user interface'}
+                ➱ The custom user interface
               </a>
               <br/>
               <a
                 href="https://github.com/bitcoin-studio/LightningNespressoUI"
                 rel="noopener noreferrer"
-                target={'_blank'}
+                target="_blank"
               >
-                {'➱ The custom user interface code'}
+                ➱ The custom user interface code
               </a>
               <br/>
               <a
                 href="https://github.com/bitcoin-studio/LightningNespressoServer"
                 rel="noopener noreferrer"
-                target={'_blank'}
+                target="_blank"
               >
-                {'➱ The code that runs on the board'}
+                ➱ The code that runs on the board
               </a>
               <br/>
               <a
                 href="https://www.thingiverse.com/thing:3772726"
                 rel="noopener noreferrer"
-                target={'_blank'}
+                target="_blank"
               >
-                {'➱ CAD Files on Thingiverse'}
+                ➱ CAD Files on Thingiverse
               </a>
               <br/>
               <a
                 href="https://www.yoctopuce.com/EN/article/an-automatic-nespresso-capsule-dispenser"
                 rel="noopener noreferrer"
-                target={'_blank'}
+                target="_blank"
               >
-                {'➱ More info about the original machine'}
+                ➱ More info about the original machine
               </a>
             </Trans>
           </p>
@@ -195,160 +195,162 @@ export const Resources: FC = () => {
           <video
             controls={true}
             loop={true}
-            id={'NespressoLightningVideo'}
+            id="NespressoLightningVideo"
             poster={VendingMachineThumbnail}
             src={VendingMachineVideo}
           >
             Sorry, this video cannot be played in your current browser
           </video>
 
-          <p id={'NespressoLightningPrice'}>
-            <span id={'NespressoLightningPrice1'}>{t('projects.nespressoLN.price1')}</span>
-            <span id={'NespressoLightningPrice2'}>{t('projects.nespressoLN.price2')}</span>
+          <p id="NespressoLightningPrice">
+            <span id="NespressoLightningPrice1">{t('projects.nespressoLN.price1')}</span>
+            <span id="NespressoLightningPrice2">{t('projects.nespressoLN.price2')}</span>
           </p>
         </div>
       </section>
 
-      <section id={'slides'}>
+      <section id="slides">
         <div className="hr">
           <hr/>
         </div>
         <h2>{t('slides.title')}</h2>
 
-        <div className={'slide'}>
+        <div className="slide">
           <img src={techIntro} alt="technical introduction to bitcoin"/>
           <div className="slide__btn">
-            <a href={'assets/education/technical_intro_bitcoin_bitcoin-studio.pdf'} download={true}>
+            <a href={`${process.env.PUBLIC_URL}/assets/education/technical_intro_bitcoin_bitcoin-studio.pdf`} download={true}>
               {t('slides.download')}
             </a>
           </div>
         </div>
 
-        <div className={'slide'}>
+        <div className="slide">
           <img src={blockchainJourney} alt="overview of blockchain technologies"/>
           <div className="slide__btn">
-            <a href={'assets/education/blockchain_journey_bitcoin-studio.pdf'} download={true}>
+            <a href={`${process.env.PUBLIC_URL}/assets/education/blockchain_journey_bitcoin-studio.pdf`} download={true}>
               {t('slides.download')}
             </a>
           </div>
         </div>
 
-        <div className={'slide'}>
+        <div className="slide">
           <img src={forks} alt="bitcoin forks history"/>
           <div className="slide__btn">
-            <a href={'assets/education/forks_history_bitcoin-studio.pdf'} download={true}>
+            <a href={`${process.env.PUBLIC_URL}/assets/education/forks_history_bitcoin-studio.pdf`} download={true}>
               {t('slides.download')}
             </a>
           </div>
         </div>
 
-        <div className={'slide'}>
+        <div className="slide">
           <img src={keys} alt="keys, addresses and wallets"/>
           <div className="slide__btn">
-            <a href={'assets/education/keys_addresses_wallets_bitcoin-studio.pdf'} download={true}>
+            <a href={`${process.env.PUBLIC_URL}/assets/education/keys_addresses_wallets_bitcoin-studio.pdf`} download={true}>
               {t('slides.download')}
             </a>
           </div>
         </div>
 
-        <div className={'slide'}>
+        <div className="slide">
           <img src={mining} alt="mining, consensus mechanism and forks"/>
           <div className="slide__btn">
-            <a href={'assets/education/mining_consensus_forks_bitcoin-studio.pdf'} download={true}>
+            <a href={`${process.env.PUBLIC_URL}/assets/education/mining_consensus_forks_bitcoin-studio.pdf`} download={true}>
               {t('slides.download')}
             </a>
           </div>
         </div>
 
 
-        <div className={'slide'}>
+        <div className="slide">
           <img src={transaction} alt="bitcoin transactions"/>
           <div className="slide__btn">
-            <a href={'assets/education/bitcoin_transaction_bitcoin-studio.pdf'} download={true}>
+            <a href={`${process.env.PUBLIC_URL}/assets/education/bitcoin_transaction_bitcoin-studio.pdf`} download={true}>
               {t('slides.download')}
             </a>
           </div>
         </div>
 
-        <div className={'slide'}>
+        <div className="slide">
           <img src={script} alt="bitcoin script"/>
           <div className="slide__btn">
-            <a href={'assets/education/bitcoin_script_bitcoin-studio.pdf'} download={true}>{t('slides.download')}</a>
+            <a href={`${process.env.PUBLIC_URL}/assets/education/bitcoin_script_bitcoin-studio.pdf`} download={true}>
+              {t('slides.download')}
+            </a>
           </div>
         </div>
 
-        <div className={'slide'}>
+        <div className="slide">
           <img src={challenges} alt="next challenges of bitcoin"/>
           <div className="slide__btn">
-            <a href={'assets/education/next_challenges_bitcoin-studio.pdf'} download={true}>
+            <a href={`${process.env.PUBLIC_URL}/assets/education/next_challenges_bitcoin-studio.pdf`} download={true}>
               {t('slides.download')}
             </a>
           </div>
         </div>
 
-        <div className={'slide'}>
+        <div className="slide">
           <img src={cryptoTools} alt="cryptographic tools"/>
           <div className="slide__btn">
-            <a href={'assets/education/cryptographic_tools_bitcoin-studio.pdf'} download={true}>
+            <a href={`${process.env.PUBLIC_URL}/assets/education/cryptographic_tools_bitcoin-studio.pdf`} download={true}>
               {t('slides.download')}
             </a>
           </div>
         </div>
 
-        <div className={'slide'}>
+        <div className="slide">
           <img src={dataAnchoring} alt="data anchoring"/>
           <div className="slide__btn">
-            <a href={'assets/education/data_anchoring_bitcoin-studio.pdf'} download={true}>
+            <a href={`${process.env.PUBLIC_URL}/assets/education/data_anchoring_bitcoin-studio.pdf`} download={true}>
               {t('slides.download')}
             </a>
           </div>
         </div>
 
-        <div className={'slide slide--fake'}>
+        <div className="slide slide--fake">
           <img src={fake} alt=""/>
           <div className="slide__btn">
             <button
-              className={'btn-link'}
-              type={'button'}
+              className="btn-link"
+              type="button"
             >
               {t('slides.download')}
             </button>
           </div>
         </div>
 
-        <div className={'slide slide--fake'}>
+        <div className="slide slide--fake">
           <img src={fake} alt=""/>
           <div className="slide__btn">
             <button
-              className={'btn-link'}
-              type={'button'}
+              className="btn-link"
+              type="button"
             >
               {t('slides.download')}
             </button>
           </div>
         </div>
 
-        <div className={'slide extraItem'}/>
+        <div className="slide extraItem"/>
 
-        <div className={'slide extraItem'}/>
+        <div className="slide extraItem"/>
 
-        <div className={'slide extraItem'}/>
+        <div className="slide extraItem"/>
 
-        <div className={'slide extraItem'}/>
+        <div className="slide extraItem"/>
 
-        <p className={'slidesDesc'}>
-          <Trans i18nKey={'slides.slidesDesc'} t={t}>
+        <p className="slidesDesc">
+          <Trans i18nKey="slides.slidesDesc" t={t}>
             {'You can download all the presentations '}
-            <a href={'assets/education/slides_bitcoin-studio.zip'} download={true}>
-              {'here'}
+            <a href={`${process.env.PUBLIC_URL}/assets/education/slides_bitcoin-studio.zip`} download={true}>
+              here
             </a>
             {'or consult them on '}
             <a
               href="https://www.slideshare.net/bitcoin-studio"
               rel="noopener noreferrer"
-              target={'_blank'}
+              target="_blank"
             >
-              {'SlideShare'}
+              SlideShare
             </a>
           </Trans>
         </p>

@@ -71,8 +71,8 @@ export const RegistrationFirstScreen: FC<Props> = ({t, ev}) => (
     onSubmit={(values: FormValues, actions: FormikHelpers<FormValues>) => submitForm(values, actions, ev, t)}
   >
     <div id="registrationFirstScreen">
-      <div className={'swal-title'}>{t('registration.firstScreen.title')}</div>
-      <div className={'swal-text'}>{t('registration.firstScreen.text')}</div>
+      <div className="swal-title">{t('registration.firstScreen.title')}</div>
+      <div className="swal-text">{t('registration.firstScreen.text')}</div>
       <Form className="form">
         <Field
           name="name"

@@ -11,7 +11,7 @@ export const Burger: FC<Props> = ({isMenuOpen, onToggleMenu}) => (
     aria-label="Toggle menu"
     className={`menu-burger ${isMenuOpen && 'menu-burger--open'}`}
     onClick={() => onToggleMenu()}
-    type={'button'}
+    type="button"
   >
     <span/>
     <span/>

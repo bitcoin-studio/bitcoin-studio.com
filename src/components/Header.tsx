@@ -20,55 +20,55 @@ export const Header: FC<Props> = ({isMenuOpen, id}) => {
   const tabIndex = isMenuOpen ? 0 : -1
 
   return (
-    <div className={'header'} id={id}>
-      <Link to={'/'}>
+    <div className="header" id={id}>
+      <Link to="/">
         <img src={logo} alt="Bitcoin Studio Logo"/>
       </Link>
       <nav aria-hidden={!isMenuOpen} className={`header__links ${isMenuOpen ? 'nav__mobile--open' : ''}`}>
         <ul>
           <li>
-            <NavLink exact={true} to={'/'} activeClassName={'menu-item--active'} tabIndex={tabIndex}>
+            <NavLink exact={true} to="/" activeClassName="menu-item--active" tabIndex={tabIndex}>
               {t('home')}
             </NavLink>
           </li>
           <li>
-            <NavLink exact={true} to={'/workshops'} activeClassName={'menu-item--active'} tabIndex={tabIndex}>
+            <NavLink exact={true} to="/workshops" activeClassName="menu-item--active" tabIndex={tabIndex}>
               {t('workshops')}
             </NavLink>
           </li>
           <li>
-            <NavLink exact={true} to={'/resources'} activeClassName={'menu-item--active'} tabIndex={tabIndex}>
+            <NavLink exact={true} to="/resources" activeClassName="menu-item--active" tabIndex={tabIndex}>
               {t('resources')}
             </NavLink>
           </li>
           <li>
-            <NavLink exact={true} to={'/about'} activeClassName={'menu-item--active'} tabIndex={tabIndex}>
+            <NavLink exact={true} to="/about" activeClassName="menu-item--active" tabIndex={tabIndex}>
               {t('about')}
             </NavLink>
           </li>
           <li>
-            <NavLink exact={true} to={'/contact'} activeClassName={'menu-item--active'} tabIndex={tabIndex}>
+            <NavLink exact={true} to="/contact" activeClassName="menu-item--active" tabIndex={tabIndex}>
               {t('contact')}
             </NavLink>
           </li>
 
-          <li id={'translation-btn'}>
+          <li id="translation-btn">
             <button
-              className={'btn-link'}
+              className="btn-link"
               onClick={() => changeLanguage('en')}
               tabIndex={tabIndex}
-              type={'button'}
+              type="button"
             >
-              {'EN'}
+              EN
             </button>
-            {'/'}
+            /
             <button
-              className={'btn-link'}
+              className="btn-link"
               onClick={() => changeLanguage('fr')}
               tabIndex={tabIndex}
-              type={'button'}
+              type="button"
             >
-              {'FR'}
+              FR
             </button>
           </li>
         </ul>

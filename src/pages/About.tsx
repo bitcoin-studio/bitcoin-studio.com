@@ -6,8 +6,8 @@ export const About: FC = () => {
   const {t} = useTranslation('About')
 
   return (
-    <div className={'page page--xs'} id={'aboutPage'}>
-      <div className={'hero'}>
+    <div className="page page--xs" id="aboutPage">
+      <div className="hero">
         <h1>
           {t('title')}
         </h1>
@@ -17,12 +17,12 @@ export const About: FC = () => {
         </p>
       </div>
 
-      <section id={'description'}>
+      <section id="description">
         <div className="hr">
           <hr/>
         </div>
         <h2>{t('about-title')}</h2>
-        <img className={'about-profile-img'} src={photo} alt="stephane roche profile"/>
+        <img className="about-profile-img" src={photo} alt="stephane roche profile"/>
 
         <p>
           {t('about-content-1')}

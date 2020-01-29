@@ -26,14 +26,14 @@ export const Contact: FC = () => {
   const {t} = useTranslation('Contact')
 
   return (
-    <div className={'page page--xs'} id={'contactPage'}>
-      <div className={'hero'} id={'contact-hero'}>
+    <div className="page page--xs" id="contactPage">
+      <div className="hero" id="contact-hero">
         <h1>
           {t('title')}
         </h1>
       </div>
 
-      <section id={'contact-info'}>
+      <section id="contact-info">
         <div className="hr">
           <hr/>
         </div>
@@ -42,52 +42,52 @@ export const Contact: FC = () => {
           {t('contact-info.p')}
         </p>
 
-        <div id={'contact-info-links'}>
-          <h3 className={'contact-subtitles'}>
+        <div id="contact-info-links">
+          <h3 className="contact-subtitles">
             {t('contact-info.subtitle1')}
           </h3>
           <a href={'m&#97;ilto&#58;bitc&#111;&#105;n&#37;2&#68;st&#117;d%69o&#64;pro%&#55;&#52;&#111;nm%61%69l&#46;co&#109;'}>
             <span className="e-mail" data-user="oiduts-nioctib" data-website="moc.liamnotorp"/>
           </a>
 
-          <h3 className={'contact-subtitles'}>
+          <h3 className="contact-subtitles">
             {t('contact-info.subtitle2')}
           </h3>
           <a
-            href={'https://twitter.com/janakaSteph'}
+            href="https://twitter.com/janakaSteph"
             rel="noopener noreferrer"
-            target={'_blank'}
+            target="_blank"
           >
-            <img className={'contact-icons'} src={twitter} alt="twitter logo"/>
+            <img className="contact-icons" src={twitter} alt="twitter logo"/>
           </a>
 
           <a
-            href={'https://www.linkedin.com/in/stephane-roche'}
+            href="https://www.linkedin.com/in/stephane-roche"
             rel="noopener noreferrer"
-            target={'_blank'}
+            target="_blank"
           >
-            <img className={'contact-icons'} src={linkedin} alt="linkedin logo"/>
+            <img className="contact-icons" src={linkedin} alt="linkedin logo"/>
           </a>
 
           <a
-            href={'https://keybase.io/janakasteph'}
+            href="https://keybase.io/janakasteph"
             rel="noopener noreferrer"
-            target={'_blank'}
+            target="_blank"
           >
-            <img className={'contact-icons'} src={keybase} alt="keybase logo"/>
+            <img className="contact-icons" src={keybase} alt="keybase logo"/>
           </a>
 
           <a
-            href={'assets/pgp_roche_33659843.asc'}
+            href="assets/pgp_roche_33659843.asc"
             rel="noopener noreferrer"
-            target={'_blank'}
+            target="_blank"
           >
-            <img className={'contact-icons'} src={pgp} alt="pgp logo"/>
+            <img className="contact-icons" src={pgp} alt="pgp logo"/>
           </a>
         </div>
       </section>
 
-      <section className={'form'} id={'contact-form'}>
+      <section className="form" id="contact-form">
         <Formik
           initialValues={initialValues}
           validationSchema={Yup.object().shape({

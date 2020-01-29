@@ -14,9 +14,9 @@ export const Workshops: FC = () => {
   }, [])
 
   return (
-    <div className={'page page--xs'} id={'workshopPage'}>
+    <div className="page page--xs" id="workshopPage">
 
-      <div className={'hero'}>
+      <div className="hero">
         <h1>{t('title')}</h1>
         <p>{t('hero')}</p>
       </div>
@@ -24,7 +24,7 @@ export const Workshops: FC = () => {
       <section id="workshopFlyer">
         <img src={workshopImg} alt="workshops"/>
 
-        <div id={'teaserWorkshop'}>
+        <div id="teaserWorkshop">
           <p>
             {t('teaserWorkshop.1')}
             <br/>
@@ -35,7 +35,7 @@ export const Workshops: FC = () => {
         </div>
       </section>
 
-      <section id={'masterTheKing'}>
+      <section id="masterTheKing">
         <div className="hr">
           <hr/>
         </div>
@@ -44,137 +44,137 @@ export const Workshops: FC = () => {
         <p>{t('masterTheKing.p2')}</p>
       </section>
 
-      <section id={'agenda-container'}>
+      <section id="agenda-container">
         <div className="hr hr75pc">
           <hr/>
         </div>
 
-        <div id={'agenda'}>
-          <div className={'face2face'}>
-            <h2 className={'offers-h2'}>{t('agenda.face2face.title')}</h2>
+        <div id="agenda">
+          <div className="face2face">
+            <h2 className="offers-h2">{t('agenda.face2face.title')}</h2>
 
             {/* Mastering Fundamentals */}
             <ul>
-              <li className={'bold'}>
-                <Trans i18nKey={'agenda.face2face.masteringFundamentals.p1What'} t={t}>
+              <li className="bold">
+                <Trans i18nKey="agenda.face2face.masteringFundamentals.p1What" t={t}>
                   <a
-                    href={'#bitcoin-intro-workshop'}
+                    href="#bitcoin-intro-workshop"
                     onClick={(e) => handleLinkClick(e, 'bitcoin-intro-workshop')}
                   >
-                    {'xxx'}
+                    xxx
                   </a>
                 </Trans>
               </li>
 
-              <li className={'next-session__li'}>
-                <span className={'bold'}>{t('agenda.face2face.masteringFundamentals.t2When')}</span>
+              <li className="next-session__li">
+                <span className="bold">{t('agenda.face2face.masteringFundamentals.t2When')}</span>
                 <span>{t('agenda.face2face.masteringFundamentals.p2When')}</span>
               </li>
 
-              <li className={'next-session__li'}>
-                <span className={'bold'}>{t('agenda.face2face.masteringFundamentals.t3Where')}</span>
+              <li className="next-session__li">
+                <span className="bold">{t('agenda.face2face.masteringFundamentals.t3Where')}</span>
                 <span>
-                  <Trans i18nKey={'agenda.face2face.masteringFundamentals.p3Where'} t={t}>
+                  <Trans i18nKey="agenda.face2face.masteringFundamentals.p3Where" t={t}>
                     <a
                       href="https://goo.gl/maps/adzSdmLqrBjCA9BbA"
                       rel="noopener noreferrer"
-                      target={'_blank'}
+                      target="_blank"
                     >
-                      {'x'}
+                      x
                     </a>
                   </Trans>
                 </span>
               </li>
 
-              <li className={'next-session__li'}>
-                <span className={'bold'}>{t('agenda.face2face.masteringFundamentals.t4Price')}</span>
+              <li className="next-session__li">
+                <span className="bold">{t('agenda.face2face.masteringFundamentals.t4Price')}</span>
                 <span>{t('agenda.face2face.masteringFundamentals.p4Price')}</span>
               </li>
             </ul>
 
             {/* Bitcoin Programming */}
             <ul>
-              <li className={'bold'}>
-                <Trans i18nKey={'agenda.face2face.bitcoinProgramming.p1What'} t={t}>
+              <li className="bold">
+                <Trans i18nKey="agenda.face2face.bitcoinProgramming.p1What" t={t}>
                   <a
-                    href={'#bitcoin-programming-workshop'}
+                    href="#bitcoin-programming-workshop"
                     onClick={(e) => handleLinkClick(e, 'bitcoin-programming-workshop')}
                   >
-                    {'xxx'}
+                    xxx
                   </a>
                 </Trans>
               </li>
 
-              <li className={'next-session__li'}>
-                <span className={'bold'}>{t('agenda.face2face.bitcoinProgramming.t2When')}</span>
+              <li className="next-session__li">
+                <span className="bold">{t('agenda.face2face.bitcoinProgramming.t2When')}</span>
                 <span>{t('agenda.face2face.bitcoinProgramming.p2When')}</span>
               </li>
 
-              <li className={'next-session__li'}>
-                <span className={'bold'}>{t('agenda.face2face.bitcoinProgramming.t3Where')}</span>
+              <li className="next-session__li">
+                <span className="bold">{t('agenda.face2face.bitcoinProgramming.t3Where')}</span>
                 <span>
-                  <Trans i18nKey={'agenda.face2face.bitcoinProgramming.p3Where'} t={t}>
+                  <Trans i18nKey="agenda.face2face.bitcoinProgramming.p3Where" t={t}>
                     <a
                       href="https://goo.gl/maps/adzSdmLqrBjCA9BbA"
                       rel="noopener noreferrer"
-                      target={'_blank'}
+                      target="_blank"
                     >
-                      {'xx'}
+                      xx
                     </a>
                   </Trans>
                 </span>
               </li>
 
-              <li className={'next-session__li'}>
-                <span className={'bold'}>{t('agenda.face2face.bitcoinProgramming.t4Price')}</span>
+              <li className="next-session__li">
+                <span className="bold">{t('agenda.face2face.bitcoinProgramming.t4Price')}</span>
                 <span>{t('agenda.face2face.bitcoinProgramming.p4Price')}</span>
               </li>
             </ul>
 
             {/* Initiation to Lightning Network */}
             <ul>
-              <li className={'bold'}>
-                <Trans i18nKey={'agenda.face2face.lightningNetwork.p1What'} t={t}>
+              <li className="bold">
+                <Trans i18nKey="agenda.face2face.lightningNetwork.p1What" t={t}>
                   <a
-                    href={'#lightning-workshop'}
+                    href="#lightning-workshop"
                     onClick={(e) => handleLinkClick(e, 'lightning-workshop')}
                   >
-                    {'xxx'}
+                    xxx
                   </a>
                 </Trans>
               </li>
 
-              <li className={'next-session__li'}>
-                <span className={'bold'}>{t('agenda.face2face.lightningNetwork.t2When')}</span>
+              <li className="next-session__li">
+                <span className="bold">{t('agenda.face2face.lightningNetwork.t2When')}</span>
                 <span>{t('agenda.face2face.lightningNetwork.p2When')}</span>
               </li>
 
-              <li className={'next-session__li'}>
-                <span className={'bold'}>{t('agenda.face2face.lightningNetwork.t3Where')}</span>
+              <li className="next-session__li">
+                <span className="bold">{t('agenda.face2face.lightningNetwork.t3Where')}</span>
                 <span>
-                  <Trans i18nKey={'agenda.face2face.lightningNetwork.p3Where'} t={t}>
+                  <Trans i18nKey="agenda.face2face.lightningNetwork.p3Where" t={t}>
                     <a
                       href="https://goo.gl/maps/adzSdmLqrBjCA9BbA"
                       rel="noopener noreferrer"
-                      target={'_blank'}
+                      target="_blank"
                     >
-                      {'xx'}
+                      xx
                     </a>
                   </Trans>
                 </span>
               </li>
 
-              <li className={'next-session__li'}>
-                <span className={'bold'}>{t('agenda.face2face.lightningNetwork.t4Price')}</span>
+              <li className="next-session__li">
+                <span className="bold">{t('agenda.face2face.lightningNetwork.t4Price')}</span>
                 <span>{t('agenda.face2face.lightningNetwork.p4Price')}</span>
               </li>
             </ul>
           </div>
 
-          <div className={'distance'}>
-            <h2 className={'offers-h2'}>{t('agenda.distance.title')}</h2>
+          <div className="distance">
+            <h2 className="offers-h2">{t('agenda.distance.title')}</h2>
             <p>{t('agenda.distance.p1')}</p>
-            <p className={'distance__prices'}>
+            <p className="distance__prices">
               {t('agenda.distance.p2.1')}
               <br/>
               {t('agenda.distance.p2.2')}
@@ -184,14 +184,14 @@ export const Workshops: FC = () => {
           </div>
         </div>
 
-        <div id={'buttonRegisterWorkshop'}>
+        <div id="buttonRegisterWorkshop">
           <button
-            className={'btn-yellow'}
+            className="btn-yellow"
             onClick={(ev) => swal({
               content: <RegistrationFirstScreen t={t} ev={ev}/>,
               button: false,
             })}
-            type={'button'}
+            type="button"
           >
             {t('registration.button')}
           </button>
@@ -200,12 +200,12 @@ export const Workshops: FC = () => {
 
       <section id="offers">
         {/* Mastering Fundamentals Workshop */}
-        <section id={'bitcoin-intro-workshop'}>
+        <section id="bitcoin-intro-workshop">
           <div className="hr hr75pc">
             <hr/>
           </div>
-          <h2 className={'offers-h2'}>{t('intro-offer.title')}</h2>
-          <h3 className={'offers-h3'}>{t('intro-offer.duration')}</h3>
+          <h2 className="offers-h2">{t('intro-offer.title')}</h2>
+          <h3 className="offers-h3">{t('intro-offer.duration')}</h3>
 
           <div>
             <h3>{t('intro-offer.goals.title')}</h3>
@@ -223,13 +223,13 @@ export const Workshops: FC = () => {
             <p>{t('intro-offer.programme.p2')}</p>
             <p>{t('intro-offer.programme.p3')}</p>
             <p>
-              <Trans i18nKey={'intro-offer.programme.p4'} t={t}>
+              <Trans i18nKey="intro-offer.programme.p4" t={t}>
                 0
                 <a
-                  href={'#bitcoin-programming-workshop'}
+                  href="#bitcoin-programming-workshop"
                   onClick={(e) => handleLinkClick(e, 'bitcoin-programming-workshop')}
                 >
-                  {'x'}
+                  x
                 </a>
                 2
               </Trans>
@@ -238,12 +238,12 @@ export const Workshops: FC = () => {
         </section>
 
         {/* Bitcoin Programming Workshop */}
-        <section id={'bitcoin-programming-workshop'}>
+        <section id="bitcoin-programming-workshop">
           <div className="hr hr75pc">
             <hr/>
           </div>
-          <h2 className={'offers-h2'}>{t('programming-offer.title')}</h2>
-          <h3 className={'offers-h3'}>{t('programming-offer.duration')}</h3>
+          <h2 className="offers-h2">{t('programming-offer.title')}</h2>
+          <h3 className="offers-h3">{t('programming-offer.duration')}</h3>
 
           <div>
             <h3>{t('programming-offer.goals.title')}</h3>
@@ -253,26 +253,26 @@ export const Workshops: FC = () => {
           <div>
             <h3>{t('programming-offer.public.title')}</h3>
             <p>
-              <Trans i18nKey={'programming-offer.public.p1'} t={t}>
+              <Trans i18nKey="programming-offer.public.p1" t={t}>
                 0
                 {' '}
                 <a
-                  href={'#bitcoin-intro-workshop'}
+                  href="#bitcoin-intro-workshop"
                   onClick={(e) => handleLinkClick(e, 'bitcoin-intro-workshop')}
                 >
-                  {'x'}
+                  x
                 </a>
                 2
               </Trans>
             </p>
             <p>
-              <Trans i18nKey={'programming-offer.public.p2'} t={t}>
+              <Trans i18nKey="programming-offer.public.p2" t={t}>
                 0
                 {' '}
                 <a
                   href="https://keybase.pub/janakasteph/Bitcoin-VirtualMachine/"
                   rel="noopener noreferrer"
-                  target={'_blank'}
+                  target="_blank"
                 >
                   Ubuntu Virtual Machine image
                 </a>
@@ -281,9 +281,9 @@ export const Workshops: FC = () => {
                 <a
                   href="https://app.vagrantup.com/bitcoin-studio/boxes/Bitcoin-VirtualMachine"
                   rel="noopener noreferrer"
-                  target={'_blank'}
+                  target="_blank"
                 >
-                  {'Vagrant box'}
+                  Vagrant box
                 </a>
                 4
               </Trans>
@@ -293,13 +293,13 @@ export const Workshops: FC = () => {
           <div>
             <h3>{t('programming-offer.programme.title')}</h3>
             <p>
-              <Trans i18nKey={'programming-offer.programme.p1'} t={t}>
+              <Trans i18nKey="programming-offer.programme.p1" t={t}>
                 0
                 {' '}
                 <a
-                  href={'resources'}
+                  href="resources"
                   rel="noopener noreferrer"
-                  target={'_blank'}
+                  target="_blank"
                 >
                   Resources
                 </a>
@@ -307,15 +307,15 @@ export const Workshops: FC = () => {
               </Trans>
             </p>
             <p>
-              <Trans i18nKey={'programming-offer.programme.p2'} t={t}>
+              <Trans i18nKey="programming-offer.programme.p2" t={t}>
                 0
                 {' '}
                 <a
                   href="https://bitcoinjs-guide.bitcoin-studio.com/"
                   rel="noopener noreferrer"
-                  target={'_blank'}
+                  target="_blank"
                 >
-                  {'BitcoinJS guide'}
+                  BitcoinJS guide
                 </a>
                 2
               </Trans>
@@ -325,12 +325,12 @@ export const Workshops: FC = () => {
         </section>
 
         {/* Lightning Workshop */}
-        <section id={'lightning-workshop'}>
+        <section id="lightning-workshop">
           <div className="hr hr75pc">
             <hr/>
           </div>
-          <h2 className={'offers-h2'}>{t('ln.title')}</h2>
-          <h3 className={'offers-h3'}>{t('ln.duration')}</h3>
+          <h2 className="offers-h2">{t('ln.title')}</h2>
+          <h3 className="offers-h3">{t('ln.duration')}</h3>
 
           <div>
             <h3>{t('ln.goals.title')}</h3>
@@ -340,37 +340,37 @@ export const Workshops: FC = () => {
           <div>
             <h3>{t('ln.public.title')}</h3>
             <p>
-              <Trans i18nKey={'ln.public.p1'} t={t}>
+              <Trans i18nKey="ln.public.p1" t={t}>
                 0
                 {' '}
                 <a
-                  href={'#bitcoin-programming-workshop'}
+                  href="#bitcoin-programming-workshop"
                   onClick={(e) => handleLinkClick(e, 'bitcoin-programming-workshop')}
                 >
-                  {'x'}
+                  x
                 </a>
                 2
               </Trans>
             </p>
             <p>
-              <Trans i18nKey={'ln.public.p2'} t={t}>
+              <Trans i18nKey="ln.public.p2" t={t}>
                 0
                 {' '}
                 <a
                   href="https://keybase.pub/janakasteph/Bitcoin-VirtualMachine/"
                   rel="noopener noreferrer"
-                  target={'_blank'}
+                  target="_blank"
                 >
-                  {'Ubuntu Virtual Machine image'}
+                  Ubuntu Virtual Machine image
                 </a>
                 2
                 {' '}
                 <a
                   href="https://app.vagrantup.com/bitcoin-studio/boxes/Bitcoin-VirtualMachine"
                   rel="noopener noreferrer"
-                  target={'_blank'}
+                  target="_blank"
                 >
-                  {'Vagrant box'}
+                  Vagrant box
                 </a>
                 4
               </Trans>
