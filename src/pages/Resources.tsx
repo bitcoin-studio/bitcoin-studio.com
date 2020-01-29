@@ -1,5 +1,8 @@
 import React, {FC} from 'react'
 import {Trans, useTranslation} from 'react-i18next'
+// Video
+import VendingMachineVideo from '../assets/videos/LN_Nespresso_Vending_Machine.mp4'
+import VendingMachineThumbnail from '../assets/videos/LN_Nespresso_Vending_Machine_Thumbnail.jpg'
 // Slide covers
 import techIntro from '../assets/education/technical_intro_bitcoin_bitcoin-studio.jpg'
 import blockchainJourney from '../assets/education/blockchain_journey_bitcoin-studio.jpg'
@@ -193,8 +196,8 @@ export const Resources: FC = () => {
             controls={true}
             loop={true}
             id={'NespressoLightningVideo'}
-            poster={'assets/video/LN_Nespresso_Vending_Machine_Thumbnail.jpg'}
-            src={'assets/video/LN_Nespresso_Vending_Machine.mp4'}
+            poster={VendingMachineThumbnail}
+            src={VendingMachineVideo}
           >
             Sorry, this video cannot be played in your current browser
           </video>
