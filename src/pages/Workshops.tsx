@@ -1,6 +1,7 @@
 import React, {FC, useCallback} from 'react'
 import {Trans, useTranslation} from 'react-i18next'
 import swal from '@sweetalert/with-react'
+import {Link} from 'react-router-dom'
 import workshopImg from '../assets/img/workshop_img.jpg'
 import {RegistrationFirstScreen} from './WorkshopsRegistration/RegistrationFirstScreen'
 
@@ -58,7 +59,7 @@ export const Workshops: FC = () => {
               <li className="bold">
                 <Trans i18nKey="agenda.face2face.masteringFundamentals.p1What" t={t}>
                   <a
-                    href="#bitcoin-intro-workshop"
+                    href={`${process.env.PUBLIC_URL}/#bitcoin-intro-workshop`}
                     onClick={(e) => handleLinkClick(e, 'bitcoin-intro-workshop')}
                   >
                     xxx
@@ -97,7 +98,7 @@ export const Workshops: FC = () => {
               <li className="bold">
                 <Trans i18nKey="agenda.face2face.bitcoinProgramming.p1What" t={t}>
                   <a
-                    href="#bitcoin-programming-workshop"
+                    href={`${process.env.PUBLIC_URL}/#bitcoin-programming-workshop`}
                     onClick={(e) => handleLinkClick(e, 'bitcoin-programming-workshop')}
                   >
                     xxx
@@ -136,7 +137,7 @@ export const Workshops: FC = () => {
               <li className="bold">
                 <Trans i18nKey="agenda.face2face.lightningNetwork.p1What" t={t}>
                   <a
-                    href="#lightning-workshop"
+                    href={`${process.env.PUBLIC_URL}/#lightning-workshop`}
                     onClick={(e) => handleLinkClick(e, 'lightning-workshop')}
                   >
                     xxx
@@ -226,7 +227,7 @@ export const Workshops: FC = () => {
               <Trans i18nKey="intro-offer.programme.p4" t={t}>
                 0
                 <a
-                  href="#bitcoin-programming-workshop"
+                  href={`${process.env.PUBLIC_URL}/#bitcoin-programming-workshop`}
                   onClick={(e) => handleLinkClick(e, 'bitcoin-programming-workshop')}
                 >
                   x
@@ -255,9 +256,8 @@ export const Workshops: FC = () => {
             <p>
               <Trans i18nKey="programming-offer.public.p1" t={t}>
                 0
-                {' '}
                 <a
-                  href="#bitcoin-intro-workshop"
+                  href={`${process.env.PUBLIC_URL}/#bitcoin-intro-workshop`}
                   onClick={(e) => handleLinkClick(e, 'bitcoin-intro-workshop')}
                 >
                   x
@@ -268,7 +268,6 @@ export const Workshops: FC = () => {
             <p>
               <Trans i18nKey="programming-offer.public.p2" t={t}>
                 0
-                {' '}
                 <a
                   href="https://keybase.pub/janakasteph/Bitcoin-VirtualMachine/"
                   rel="noopener noreferrer"
@@ -277,7 +276,6 @@ export const Workshops: FC = () => {
                   Ubuntu Virtual Machine image
                 </a>
                 2
-                {' '}
                 <a
                   href="https://app.vagrantup.com/bitcoin-studio/boxes/Bitcoin-VirtualMachine"
                   rel="noopener noreferrer"
@@ -295,21 +293,15 @@ export const Workshops: FC = () => {
             <p>
               <Trans i18nKey="programming-offer.programme.p1" t={t}>
                 0
-                {' '}
-                <a
-                  href="resources"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
+                <Link to="/resources">
                   Resources
-                </a>
+                </Link>
                 2
               </Trans>
             </p>
             <p>
               <Trans i18nKey="programming-offer.programme.p2" t={t}>
                 0
-                {' '}
                 <a
                   href="https://bitcoinjs-guide.bitcoin-studio.com/"
                   rel="noopener noreferrer"
@@ -342,9 +334,8 @@ export const Workshops: FC = () => {
             <p>
               <Trans i18nKey="ln.public.p1" t={t}>
                 0
-                {' '}
                 <a
-                  href="#bitcoin-programming-workshop"
+                  href={`${process.env.PUBLIC_URL}/#bitcoin-programming-workshop`}
                   onClick={(e) => handleLinkClick(e, 'bitcoin-programming-workshop')}
                 >
                   x
@@ -355,7 +346,6 @@ export const Workshops: FC = () => {
             <p>
               <Trans i18nKey="ln.public.p2" t={t}>
                 0
-                {' '}
                 <a
                   href="https://keybase.pub/janakasteph/Bitcoin-VirtualMachine/"
                   rel="noopener noreferrer"
@@ -364,7 +354,6 @@ export const Workshops: FC = () => {
                   Ubuntu Virtual Machine image
                 </a>
                 2
-                {' '}
                 <a
                   href="https://app.vagrantup.com/bitcoin-studio/boxes/Bitcoin-VirtualMachine"
                   rel="noopener noreferrer"
