@@ -1,5 +1,6 @@
-import React, {FC} from 'react'
+import React from 'react'
 import {Trans, useTranslation} from 'react-i18next'
+import {useMetaTitle} from '../hooks'
 // Video
 import VendingMachineVideo from '../assets/videos/LN_Nespresso_Vending_Machine.mp4'
 import VendingMachineThumbnail from '../assets/videos/LN_Nespresso_Vending_Machine_Thumbnail.jpg'
@@ -16,8 +17,9 @@ import cryptoTools from '../assets/education/cryptographic_tools_bitcoin-studio.
 import dataAnchoring from '../assets/education/data_anchoring_bitcoin-studio.jpg'
 import fake from '../assets/education/slide_fake.jpg'
 
-export const Resources: FC = () => {
+export const Resources: React.FC = () => {
   const {t} = useTranslation('Resources')
+  useMetaTitle('Our Open Source Projects')
 
   return (
     <div className="page page--xs" id="resourcesPage">

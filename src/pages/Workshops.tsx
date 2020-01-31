@@ -1,12 +1,14 @@
-import React, {FC, useCallback} from 'react'
+import React, {useCallback} from 'react'
 import {Trans, useTranslation} from 'react-i18next'
 import swal from '@sweetalert/with-react'
 import {Link} from 'react-router-dom'
 import workshopImg from '../assets/img/workshop_img.jpg'
 import {RegistrationFirstScreen} from './WorkshopsRegistration/RegistrationFirstScreen'
+import {useMetaTitle} from '../hooks'
 
-export const Workshops: FC = () => {
+export const Workshops: React.FC = () => {
   const {t} = useTranslation('Workshops')
+  useMetaTitle('Learn Bitcoin With Us')
 
   const handleLinkClick = useCallback((e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, id: string) => {
     e.preventDefault()

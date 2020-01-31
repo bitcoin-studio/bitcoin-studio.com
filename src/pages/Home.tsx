@@ -1,13 +1,15 @@
-import React, {FC} from 'react'
+import React from 'react'
 import {useTranslation} from 'react-i18next'
 import software from '../assets/img/home_software_512.png'
 import education from '../assets/img/home_education_512.png'
 import training from '../assets/img/home_thought_512.png'
 import consulting from '../assets/img/home_consulting_512.png'
 import hosting from '../assets/img/home_hosting_512.png'
+import {useMetaTitle} from '../hooks'
 
-export const Home: FC = () => {
+export const Home: React.FC = () => {
   const {t} = useTranslation('Home')
+  useMetaTitle('A Company Dedicated To Bitcoin')
 
   return (
     <div className="page" id="homePage">

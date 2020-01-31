@@ -21,3 +21,9 @@ export const useOnClickOutside = (ref: any, handler: Function) => {
   },
   [ref, handler])
 }
+
+export const useMetaTitle = (title: string) => {
+  useEffect(() => {
+    document.title = `${title} - Bitcoin Studio`
+  }, [title])
+}

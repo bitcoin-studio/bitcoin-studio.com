@@ -1,4 +1,4 @@
-import React, {FC} from 'react'
+import React from 'react'
 import log from 'loglevel'
 import {useTranslation} from 'react-i18next'
 import {Formik, Field, Form, ErrorMessage, FormikHelpers} from 'formik'
@@ -9,6 +9,7 @@ import keybase from '../assets/icons/keybase.svg'
 import linkedin from '../assets/icons/linkedin.svg'
 import pgp from '../assets/icons/pgp.svg'
 import twitter from '../assets/icons/twitter.svg'
+import {useMetaTitle} from '../hooks'
 
 type FormValues = {
   name: string
@@ -22,8 +23,9 @@ const initialValues: FormValues = {
   message: '',
 }
 
-export const Contact: FC = () => {
+export const Contact: React.FC = () => {
   const {t} = useTranslation('Contact')
+  useMetaTitle('Get In Touch')
 
   return (
     <div className="page page--xs" id="contactPage">

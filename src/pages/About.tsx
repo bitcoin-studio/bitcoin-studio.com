@@ -1,9 +1,11 @@
-import React, {FC} from 'react'
+import React from 'react'
 import {useTranslation} from 'react-i18next'
+import {useMetaTitle} from '../hooks'
 import photo from '../assets/img/stephane_roche_profile.jpg'
 
-export const About: FC = () => {
+export const About: React.FC = () => {
   const {t} = useTranslation('About')
+  useMetaTitle('Know More About Us')
 
   return (
     <div className="page page--xs" id="aboutPage">

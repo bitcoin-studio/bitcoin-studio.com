@@ -1,9 +1,11 @@
-import React, {FC} from 'react'
+import React from 'react'
 import {useTranslation} from 'react-i18next'
 import notFound from '../assets/img/notFound.jpg'
+import {useMetaTitle} from '../hooks'
 
-export const NotFound: FC = () => {
+export const NotFound: React.FC = () => {
   const {t} = useTranslation('NotFound')
+  useMetaTitle('Not Found Page')
 
   return (
     <div className="page page--xs" id="notFoundPage">
