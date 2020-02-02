@@ -1,8 +1,8 @@
-import React, {FC} from 'react'
+import React from 'react'
 import {useTranslation} from 'react-i18next'
 import {Link} from 'react-router-dom'
 
-export const Footer: FC = () => {
+export const Footer: React.FC = () => {
   const {t} = useTranslation('Footer')
 
   return (

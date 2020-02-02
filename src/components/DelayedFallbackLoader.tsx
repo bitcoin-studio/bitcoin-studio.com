@@ -1,7 +1,7 @@
-import React, {useState, useEffect, FC} from 'react'
+import React, {useState, useEffect} from 'react'
 import {TailSpin} from 'svg-loaders-react'
 
-export const DelayedFallbackLoader: FC = () => {
+export const DelayedFallbackLoader: React.FC = () => {
   const [show, setShow] = useState(false)
 
   useEffect(() => {

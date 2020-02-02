@@ -2,8 +2,8 @@ import React from 'react'
 import {Trans, useTranslation} from 'react-i18next'
 import {useMetaTitle} from '../hooks'
 // Video
-import VendingMachineVideo from '../assets/videos/LN_Nespresso_Vending_Machine.mp4'
-import VendingMachineThumbnail from '../assets/videos/LN_Nespresso_Vending_Machine_Thumbnail.jpg'
+import VendingMachineVideo from '../assets/videos/bitcoin_nespresso_vending_machine.mp4'
+import VendingMachineThumbnail from '../assets/videos/bitcoin_nespresso_vending_machine_thumbnail.jpg'
 // Slide covers
 import techIntro from '../assets/education/technical_intro_bitcoin_bitcoin-studio.jpg'
 import blockchainJourney from '../assets/education/blockchain_journey_bitcoin-studio.jpg'

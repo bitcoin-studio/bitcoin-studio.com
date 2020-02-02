@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
+    <!--Pages-->
+    <url>
+        <loc>https://www.bitcoin-studio.com</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.bitcoin-studio.com" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.bitcoin-studio.com/fr/" />
+    </url>
+    <url>
+        <loc>https://www.bitcoin-studio.com/fr/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.bitcoin-studio.com" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.bitcoin-studio.com/fr/" />
+    </url>
+
+    <url>
+        <loc>https://www.bitcoin-studio.com/workshops</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.bitcoin-studio.com/workshops" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.bitcoin-studio.com/fr/formations" />
+    </url>
+    <url>
+        <loc>https://www.bitcoin-studio.com/fr/formations</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.bitcoin-studio.com/workshops" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.bitcoin-studio.com/fr/formations" />
+    </url>
+
+    <url>
+        <loc>https://www.bitcoin-studio.com/resources</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.bitcoin-studio.com/resources" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.bitcoin-studio.com/fr/ressources" />
+        <video:video>
+            <video:thumbnail_loc>
+                https://www.bitcoin-studio.com/assets/videos/bitcoin_nespresso_vending_machine_thumbnail.jpg
+            </video:thumbnail_loc>
+            <video:title>Bitcoin Nespresso Capsule Vending Machine</video:title>
+            <video:description>Now you can pay your coffee with bitcoin!</video:description>
+            <video:content_loc>https://www.bitcoin-studio.com/assets/videos/bitcoin_nespresso_vending_machine.mp4</video:content_loc>
+            <video:family_friendly>yes</video:family_friendly>
+        </video:video>
+    </url>
+    <url>
+        <loc>https://www.bitcoin-studio.com/fr/ressources</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.bitcoin-studio.com/resources" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.bitcoin-studio.com/fr/ressources" />
+        <video:video>
+            <video:thumbnail_loc>
+                https://www.bitcoin-studio.com/assets/videos/bitcoin_nespresso_vending_machine_thumbnail.jpg
+            </video:thumbnail_loc>
+            <video:title>Distributeur De Capsule Nespresso Avec Bitcoin</video:title>
+            <video:description>On peut enfin payer son café en bitcoin!</video:description>
+            <video:content_loc>https://www.bitcoin-studio.com/assets/videos/bitcoin_nespresso_vending_machine.mp4</video:content_loc>
+            <video:family_friendly>yes</video:family_friendly>
+        </video:video>
+    </url>
+
+    <url>
+        <loc>https://www.bitcoin-studio.com/about</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.bitcoin-studio.com/about" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.bitcoin-studio.com/fr/a-propos" />
+    </url>
+    <url>
+        <loc>https://www.bitcoin-studio.com/fr/a-propos</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.bitcoin-studio.com/about" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.bitcoin-studio.com/fr/a-propos" />
+    </url>
+
+    <url>
+        <loc>https://www.bitcoin-studio.com/contact</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.bitcoin-studio.com/contact" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.bitcoin-studio.com/fr/contact" />
+    </url>
+    <url>
+        <loc>https://www.bitcoin-studio.com/fr/contact</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.bitcoin-studio.com/contact" />
+        <xhtml:link rel="alternate" hreflang="fr" href="https://www.bitcoin-studio.com/fr/contact" />
+    </url>
+    <!--End Pages-->
+
+    <!--Slides-->
+    <url>
+        <loc>https://www.bitcoin-studio.com/assets/education/technical_intro_bitcoin_bitcoin-studio.pdf</loc>
+    </url>
+    <url>
+        <loc>https://www.bitcoin-studio.com/assets/education/blockchain_journey_bitcoin-studio.pdf</loc>
+    </url>
+    <url>
+        <loc>https://www.bitcoin-studio.com/assets/education/forks_history_bitcoin-studio.pdf</loc>
+    </url>
+    <url>
+        <loc>https://www.bitcoin-studio.com/assets/education/keys_addresses_wallets_bitcoin-studio.pdf</loc>
+    </url>
+    <url>
+        <loc>https://www.bitcoin-studio.com/assets/education/mining_consensus_forks_bitcoin-studio.pdf</loc>
+    </url>
+    <url>
+        <loc>https://www.bitcoin-studio.com/assets/education/bitcoin_transaction_bitcoin-studio.pdf</loc>
+    </url>
+    <url>
+        <loc>https://www.bitcoin-studio.com/assets/education/bitcoin_script_bitcoin-studio.pdf</loc>
+    </url>
+    <url>
+        <loc>https://www.bitcoin-studio.com/assets/education/next_challenges_bitcoin-studio.pdf</loc>
+    </url>
+    <url>
+        <loc>https://www.bitcoin-studio.com/assets/education/cryptographic_tools_bitcoin-studio.pdf</loc>
+    </url>
+    <url>
+        <loc>https://www.bitcoin-studio.com/assets/education/data_anchoring_bitcoin-studio.pdf</loc>
+    </url>
+    <!--End Slides-->
+
+    <!--Other Resources-->
+    <url>
+        <loc>https://www.bitcoin-studio.com/assets/bitcoin_mnemonic_code_template.pdf</loc>
+    </url>
+    <url>
+        <loc>https://www.bitcoin-studio.com/assets/transactions_utxo_model.pdf</loc>
+    </url>
+    <!--End Other Resources-->
+</urlset>

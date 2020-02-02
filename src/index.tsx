@@ -6,7 +6,7 @@ import {App} from './App'
 import {ScrollToTop} from './components/ScrollToTop'
 import {DelayedFallbackLoader} from './components/DelayedFallbackLoader'
 import * as serviceWorker from './serviceWorker'
-import './i18n'
+import i18n from './i18n'
 import 'normalize.css/normalize.css'
 import './assets/stylesheets/main.scss'
 
@@ -18,8 +18,10 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 ReactDOM.render(
-  <BrowserRouter>
-    <ScrollToTop />
+  <BrowserRouter
+    basename={i18n.language === 'fr' ? '/fr' : ''}
+  >
+    <ScrollToTop/>
     <Suspense fallback={<DelayedFallbackLoader/>}>
       <App/>
     </Suspense>

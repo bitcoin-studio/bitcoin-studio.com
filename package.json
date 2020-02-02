@@ -35,7 +35,7 @@
     "react-focus-lock": "^2.2.1",
     "react-i18next": "^11.2.7",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.3.0",
+    "react-scripts": "^3.3.1",
     "react-transition-group": "^4.3.0",
     "source-map-explorer": "^2.1.2",
     "svg-loaders-react": "^2.1.0",
@@ -51,6 +51,7 @@
     "eslint-plugin-import": "^2.20.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-app": "^6.1.0",
     "eslint-plugin-react-hooks": "^2.3.0"
   },
   "scripts": {
@@ -62,9 +63,6 @@
     "start:server": "nodemon server",
     "start:client": "react-scripts start",
     "test": "react-scripts test"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": {
     "production": [

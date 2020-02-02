@@ -1,5 +1,6 @@
 module.exports = {
   "extends": [
+    "plugin:react-app/recommended",
     "airbnb-typescript",
     "plugin:@typescript-eslint/recommended-requiring-type-checking"
   ],

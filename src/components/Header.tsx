@@ -1,4 +1,4 @@
-import React, {FC, useCallback} from 'react'
+import React, {useCallback} from 'react'
 import log from 'loglevel'
 import {Link, NavLink} from 'react-router-dom'
 import {useTranslation} from 'react-i18next'
@@ -9,11 +9,33 @@ type Props = {
   isMenuOpen: boolean
 }
 
-export const Header: FC<Props> = ({isMenuOpen, id}) => {
-  const {t, i18n} = useTranslation('Header')
+export const Header: React.FC<Props> = ({isMenuOpen, id}) => {
+  const {t, i18n} = useTranslation(['Header', 'Routes'])
 
-  const changeLanguage = useCallback((lng: string) => {
-    i18n.changeLanguage(lng)
+  const changeLanguage = useCallback((askedLng: string) => {
+    i18n.changeLanguage(askedLng)
+      // Rewrite current URL
+      .then(() => {
+        const subpaths = window.location.pathname.match(/\/([a-zA-Z-]*)/g)
+        const currentLng = subpaths?.[0] === '/fr' ? 'fr' : 'en'
+        const pathMapping = [
+          ['', ''],
+          ['workshops', 'formations'],
+          ['resources', 'ressources'],
+          ['about', 'a-propos'],
+          ['contact', 'contact'],
+        ]
+
+        // Use location.assign() to cause the window to load and display the document at the rewritten URL
+        // It allows re-setting BrowserRouter 'basename' property in the index.tsx
+        if (currentLng === 'en' && askedLng === 'fr') {
+          const path = pathMapping.find((p) => subpaths?.[0].substring(1) === p[0])
+          window.location.assign(`fr/${path?.[1]}`)
+        } else if (currentLng === 'fr' && askedLng === 'en') {
+          const path = pathMapping.find((p) => subpaths?.[1].substring(1) === p[1])
+          window.location.assign(`/${path?.[0]}`)
+        }
+      })
       .catch((e) => log.error(e))
   }, [i18n])
 
@@ -28,27 +50,27 @@ export const Header: FC<Props> = ({isMenuOpen, id}) => {
         <ul>
           <li>
             <NavLink exact={true} to="/" activeClassName="menu-item--active" tabIndex={tabIndex}>
-              {t('home')}
+              {t('Header:home')}
             </NavLink>
           </li>
           <li>
-            <NavLink exact={true} to="/workshops" activeClassName="menu-item--active" tabIndex={tabIndex}>
-              {t('workshops')}
+            <NavLink exact={true} to={`${t('Routes:workshops')}`} activeClassName="menu-item--active" tabIndex={tabIndex}>
+              {t('Header:workshops')}
             </NavLink>
           </li>
           <li>
-            <NavLink exact={true} to="/resources" activeClassName="menu-item--active" tabIndex={tabIndex}>
-              {t('resources')}
+            <NavLink exact={true} to={`${t('Routes:resources')}`} activeClassName="menu-item--active" tabIndex={tabIndex}>
+              {t('Header:resources')}
             </NavLink>
           </li>
           <li>
-            <NavLink exact={true} to="/about" activeClassName="menu-item--active" tabIndex={tabIndex}>
-              {t('about')}
+            <NavLink exact={true} to={`${t('Routes:about')}`} activeClassName="menu-item--active" tabIndex={tabIndex}>
+              {t('Header:about')}
             </NavLink>
           </li>
           <li>
-            <NavLink exact={true} to="/contact" activeClassName="menu-item--active" tabIndex={tabIndex}>
-              {t('contact')}
+            <NavLink exact={true} to={`${t('Routes:contact')}`} activeClassName="menu-item--active" tabIndex={tabIndex}>
+              {t('Header:contact')}
             </NavLink>
           </li>
 

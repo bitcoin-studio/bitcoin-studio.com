@@ -1,11 +1,11 @@
-import React, {FC} from 'react'
+import React from 'react'
 
 type Props = {
   isMenuOpen: boolean
   onToggleMenu: () => void
 }
 
-export const Burger: FC<Props> = ({isMenuOpen, onToggleMenu}) => (
+export const Burger: React.FC<Props> = ({isMenuOpen, onToggleMenu}) => (
   <button
     aria-expanded={isMenuOpen}
     aria-label="Toggle menu"

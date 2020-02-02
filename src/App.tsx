@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useRef, useCallback, FC} from 'react'
+import React, {useState, useEffect, useRef, useCallback} from 'react'
 import FocusLock from 'react-focus-lock'
 import {useHistory} from 'react-router-dom'
 import {Header} from './components/Header'
@@ -7,7 +7,7 @@ import {Footer} from './components/Footer'
 import {Burger} from './components/BurgerMenu'
 import {useOnClickOutside} from './hooks'
 
-export const App: FC = () => {
+export const App: React.FC = () => {
   const menuId = 'main-menu'
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const node = useRef(null)
