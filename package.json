@@ -55,7 +55,7 @@
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "lint": "eslint --ext .ts,tsx src/",
+    "lint": "eslint --ext .ts,.tsx src/",
     "start": "concurrently --kill-others-on-fail -n client,server \"yarn start:client\" \"yarn start:server\"",
     "start:server": "nodemon server",
     "start:client": "react-scripts start",

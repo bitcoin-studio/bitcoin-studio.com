@@ -75,8 +75,10 @@ const SiteRoutes: () => any = () => {
   return routeComponents
 }
 
-export const Main = memo(() => (
-  <main>
-    <SiteRoutes/>
-  </main>
-))
+export const Main = memo(function Main() {
+  return (
+    <main>
+      <SiteRoutes/>
+    </main>
+  )
+})

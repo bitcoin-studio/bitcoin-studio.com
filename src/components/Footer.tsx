@@ -1,5 +1,5 @@
 import React from 'react'
-import {useTranslation} from 'react-i18next'
+import {Trans, useTranslation} from 'react-i18next'
 import {Link} from 'react-router-dom'
 
 export const Footer: React.FC = () => {
@@ -54,26 +54,21 @@ export const Footer: React.FC = () => {
         <p>Bitcoin Studio - 2020</p>
         <p>SIRET 795 207 117 00016</p>
         <p>
-          {'Icons made by '}
-          <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">
-            {'Eucalyp'}
-          </a>
-          {' from '}
-          <a
-            href="https://www.flaticon.com/"
-            title="Flaticon"
-          >
-            {'www.flaticon.com'}
-          </a>
-          {' license '}
-          <a
-            href="http://creativecommons.org/licenses/by/3.0/"
-            title="Creative Commons BY 3.0"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            {'CC 3.0 BY'}
-          </a>
+          <Trans i18nKey="license" t={t}>
+            _
+            <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">_</a>
+            _
+            <a href="https://www.flaticon.com/" title="Flaticon">_</a>
+            _
+            <a
+              href="http://creativecommons.org/licenses/by/3.0/"
+              title="Creative Commons BY 3.0"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              _
+            </a>
+          </Trans>
         </p>
       </div>
     </footer>

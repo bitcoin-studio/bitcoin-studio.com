@@ -342,17 +342,15 @@ export const Resources: React.FC = () => {
 
         <p className="slidesDesc">
           <Trans i18nKey="slides.slidesDesc" t={t}>
-            {'You can download '}
-            <a href={`${process.env.PUBLIC_URL}/assets/education/slides_bitcoin-studio.zip`} download={true}>
-              {'all the presentations in a zip archive '}
-            </a>
-            {'or consult them on '}
+            _
+            <a href={`${process.env.PUBLIC_URL}/assets/education/slides_bitcoin-studio.zip`} download={true}>_</a>
+            _
             <a
               href="https://www.slideshare.net/bitcoin-studio"
               rel="noopener noreferrer"
               target="_blank"
             >
-              SlideShare
+              _
             </a>
           </Trans>
         </p>
