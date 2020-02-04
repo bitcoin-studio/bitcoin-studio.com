@@ -1,10 +1,4 @@
 {
-  "Routes": {
-    "workshops": "/workshops",
-    "resources": "/resources",
-    "about": "/about",
-    "contact": "/contact"
-  },
   "Header": {
     "home": "HOME",
     "workshops": "WORKSHOPS",
