@@ -48,7 +48,7 @@ export const Contact: React.FC = () => {
           <h3 className="contact-subtitles">
             {t('contact-info.subtitle1')}
           </h3>
-          <a href={'m&#97;ilto&#58;bitc&#111;&#105;n&#37;2&#68;st&#117;d%69o&#64;pro%&#55;&#52;&#111;nm%61%69l&#46;co&#109;'}>
+          <a href="m&#97;ilto&#58;bitc&#111;&#105;n&#37;2&#68;st&#117;d%69o&#64;pro%&#55;&#52;&#111;nm%61%69l&#46;co&#109;">
             <span className="e-mail" data-user="oiduts-nioctib" data-website="moc.liamnotorp"/>
           </a>
 
@@ -80,7 +80,7 @@ export const Contact: React.FC = () => {
           </a>
 
           <a
-            href="assets/pgp_roche_33659843.asc"
+            href={`${process.env.PUBLIC_URL}/assets/pgp_roche_33659843.asc`}
             rel="noopener noreferrer"
             target="_blank"
           >
