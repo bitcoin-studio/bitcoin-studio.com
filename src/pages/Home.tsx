@@ -97,58 +97,30 @@ export const Home: React.FC = () => {
         <div id="call2action_ribbon_prop" className="">
           <div className="ribbon_prop_1">
             <div className="inside">
-              <span>
-                <a
-                  href={'m&#97;ilto&#58;bitc&#111;&#105;n&#37;2&#68;st&#117;d%69o&#64;pro%&#55;&#52;&#111;nm%61%69l&#46;co&#109;'}
-                  className="clickhere"
-                >
+              <a href="m&#97;ilto&#58;bitc&#111;&#105;n&#37;2&#68;st&#117;d%69o&#64;pro%&#55;&#52;&#111;nm%61%69l&#46;co&#109;">
+                <span className="clickhere">
                   {t('call2action.circle.1')}
-                </a>
-              </span>
-              <span>
-                <a
-                  href={'m&#97;ilto&#58;bitc&#111;&#105;n&#37;2&#68;st&#117;d%69o&#64;pro%&#55;&#52;&#111;nm%61%69l&#46;co&#109;'}
-                  className="request"
-                >
+                </span>
+                <span className="request">
                   {t('call2action.circle.2')}
-                </a>
-              </span>
-              <span>
-                <a
-                  href={'m&#97;ilto&#58;bitc&#111;&#105;n&#37;2&#68;st&#117;d%69o&#64;pro%&#55;&#52;&#111;nm%61%69l&#46;co&#109;'}
-                  className="proposal"
-                >
+                </span>
+                <span className="proposal">
                   {t('call2action.circle.3')}
-                </a>
-              </span>
+                </span>
+              </a>
             </div>
           </div>
 
           <div className="ribbon_prop_2">
             <div className="inside">
-              <span>
-                <a
-                  href={'m&#97;ilto&#58;bitc&#111;&#105;n&#37;2&#68;st&#117;d%69o&#64;pro%&#55;&#52;&#111;nm%61%69l&#46;co&#109;'}
-                  className="clickhere"
-                >
-                  {t('call2action.circle.1')}
-                </a>
+              <span className="clickhere">
+                {t('call2action.circle.1')}
               </span>
-              <span>
-                <a
-                  href={'m&#97;ilto&#58;bitc&#111;&#105;n&#37;2&#68;st&#117;d%69o&#64;pro%&#55;&#52;&#111;nm%61%69l&#46;co&#109;'}
-                  className="request"
-                >
-                  {t('call2action.circle.2')}
-                </a>
+              <span className="request">
+                {t('call2action.circle.2')}
               </span>
-              <span>
-                <a
-                  href={'m&#97;ilto&#58;bitc&#111;&#105;n&#37;2&#68;st&#117;d%69o&#64;pro%&#55;&#52;&#111;nm%61%69l&#46;co&#109;'}
-                  className="proposal"
-                >
-                  {t('call2action.circle.3')}
-                </a>
+              <span className="proposal">
+                {t('call2action.circle.3')}
               </span>
             </div>
           </div>
