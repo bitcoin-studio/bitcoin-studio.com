@@ -25,7 +25,6 @@ export const Header: React.FC<Props> = ({isMenuOpen, id}) => {
       .then(() => {
         const subpaths = window.location.pathname.match(/\/([a-zA-Z-]*)/g)
         const currentLng = subpaths?.[0] === '/fr' ? 'fr' : 'en'
-
         // Use location.assign() to cause the window to load and display the document at the rewritten URL
         // It allows re-setting BrowserRouter 'basename' property in the index.tsx
         if (currentLng === 'en' && askedLng === 'fr') {
@@ -37,7 +36,7 @@ export const Header: React.FC<Props> = ({isMenuOpen, id}) => {
         }
       })
       .catch((e) => log.error(e))
-  }, [i18n])
+  }, [i18n, pathMapping])
 
   const tabIndex = isMenuOpen ? 0 : -1
 
