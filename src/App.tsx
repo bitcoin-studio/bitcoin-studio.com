@@ -47,7 +47,7 @@ export const App: React.FC = () => {
         <script type="application/ld+json">
           {`
             {
-              "@context":"http://schema.org",
+              "@context":"https://schema.org",
               "@type":"WebSite",
               "name":"Bitcoin Studio",
               "url":"https://www.bitcoin-studio.com"
