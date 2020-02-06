@@ -3,7 +3,13 @@ import {Trans, useTranslation} from 'react-i18next'
 import {Link} from 'react-router-dom'
 
 export const Footer: React.FC = () => {
-  const {t} = useTranslation('Footer')
+  const {t, i18n} = useTranslation('Footer')
+  const pathMapping = [
+    ['workshops', 'formations'],
+    ['resources', 'ressources'],
+    ['about', 'a-propos'],
+    ['contact', 'contact'],
+  ]
 
   return (
     <footer>
@@ -13,16 +19,24 @@ export const Footer: React.FC = () => {
           <nav>
             <ul>
               <li>
-                <Link to="/workshops">{t('col1.1')}</Link>
+                <Link to={`${i18n.language === 'fr' ? pathMapping[0][1] : pathMapping[0][0]}`}>
+                  {t('col1.1')}
+                </Link>
               </li>
               <li>
-                <Link to="/resources">{t('col1.2')}</Link>
+                <Link to={`${i18n.language === 'fr' ? pathMapping[1][1] : pathMapping[1][0]}`}>
+                  {t('col1.2')}
+                </Link>
               </li>
               <li>
-                <Link to="/about">{t('col1.3')}</Link>
+                <Link to={`${i18n.language === 'fr' ? pathMapping[2][1] : pathMapping[2][0]}`}>
+                  {t('col1.3')}
+                </Link>
               </li>
               <li>
-                <Link to="/contact">{t('col1.4')}</Link>
+                <Link to={`${i18n.language === 'fr' ? pathMapping[3][1] : pathMapping[3][0]}`}>
+                  {t('col1.4')}
+                </Link>
               </li>
             </ul>
           </nav>
