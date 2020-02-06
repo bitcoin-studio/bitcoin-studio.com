@@ -1,4 +1,20 @@
 {
+  "Meta": {
+    "title": {
+      "home": "A Company Dedicated To Bitcoin",
+      "workshops": "Learn Bitcoin With Us",
+      "resources": "Our Open Source Projects",
+      "about": "Know More About Us",
+      "contact": "Get In Touch"
+    },
+   "description": {
+     "home": "We offer software development, training and consulting focused on Bitcoin technology",
+     "workshops": "Learn Bitcoin and its underlying blockchain technology with our custom training courses",
+     "resources": "Discover our various pedagogical and technological works",
+     "about": "Bitcoin Studio has been founded by Stéphane Roche, Bitcoin and web developer, educator, consultant, maker and convinced cypherpunk",
+     "contact": "Feel free to get in touch with us. We are always open to discussing new projects, creative ideas or opportunities to be part of your visions"
+   }
+  },
   "Header": {
     "home": "HOME",
     "workshops": "WORKSHOPS",
@@ -274,7 +290,7 @@
     },
     "contact-info": {
       "title": "Just say hello",
-      "p": "Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your visions.",
+      "p": "Feel free to get in touch with us. We are always open to discussing new projects, creative ideas or opportunities to be part of your visions.",
       "subtitle1": "Need help",
       "subtitle2": "Feel like talking"
     },

@@ -1,4 +1,5 @@
 import React, {useState, useEffect, useRef, useCallback} from 'react'
+import {Helmet} from 'react-helmet'
 import FocusLock from 'react-focus-lock'
 import {useHistory} from 'react-router-dom'
 import {Header} from './components/Header'
@@ -40,6 +41,20 @@ export const App: React.FC = () => {
 
   return (
     <>
+      <Helmet
+        titleTemplate="%s - Bitcoin Studio"
+      >
+        <script type="application/ld+json">
+          {`
+            {
+              "@context":"http://schema.org",
+              "@type":"WebSite",
+              "name":"Bitcoin Studio",
+              "url":"https://www.bitcoin-studio.com"
+            }
+          `}
+        </script>
+      </Helmet>
       <div ref={node} className="header__container">
         {/* FocusLock for A11y */}
         <FocusLock disabled={!isMenuOpen}>
