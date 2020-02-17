@@ -6,7 +6,7 @@ import fr from './locale/fr.json'
 
 const detectionOptions: DetectorOptions = {
   // order and from where user language should be detected
-  order: ['customPath', 'localStorage', 'navigator'],
+  order: ['localStorage', 'customPath'],
   lookupLocalStorage: 'i18nextLng',
   caches: ['localStorage'],
   excludeCacheFor: ['cimode']
