@@ -1,0 +1,43 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: bitcoin-studio-ingress-service
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
+    # nginx.ingress.kubernetes.io/ssl-redirect: 'true'
+spec:
+  rules:
+  - host: localhost
+    http:
+      paths:
+        - path: /?(.*)
+          backend:
+            serviceName: bitcoin-studio-client-cluster-ip-service
+            servicePort: 3000
+        - path: /api/?(.*)
+          backend:
+            serviceName: bitcoin-studio-server-cluster-ip-service
+            servicePort: 5000
+  - host: rogue-paprika.top
+    http:
+      paths:
+        - path: /?(.*)
+          backend:
+            serviceName: bitcoin-studio-client-cluster-ip-service
+            servicePort: 3000
+        - path: /api/?(.*)
+          backend:
+            serviceName: bitcoin-studio-server-cluster-ip-service
+            servicePort: 5000
+  - host: www.rogue-paprika.top
+    http:
+      paths:
+        - path: /?(.*)
+          backend:
+            serviceName: bitcoin-studio-client-cluster-ip-service
+            servicePort: 3000
+        - path: /api/?(.*)
+          backend:
+            serviceName: bitcoin-studio-server-cluster-ip-service
+            servicePort: 5000

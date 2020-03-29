@@ -1,0 +1,32 @@
+sudo: required
+services:
+  - docker
+env:
+  global:
+    - SHA=$(git rev-parse HEAD)
+before_install:
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - docker build -t janakasteph/tmp -f ./client/Dockerfile.dev ./client
+
+  # Get doctl
+  - DOCTL_VERSION=`curl "https://api.github.com/repos/digitalocean/doctl/releases/latest" | jq -r .tag_name | sed "s/v//"`
+  - curl -LO "https://github.com/digitalocean/doctl/releases/download/v${DOCTL_VERSION}/doctl-${DOCTL_VERSION}-linux-amd64.tar.gz"
+  - tar xf ./doctl-${DOCTL_VERSION}-linux-amd64.tar.gz
+  - chmod +x ./doctl
+  - sudo mv ./doctl /usr/local/bin/doctl
+
+  # Get kubectl
+  - curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+  - chmod +x ./kubectl
+  - sudo mv ./kubectl /usr/local/bin/kubectl
+  # - mkdir ${HOME}/.kube
+  # - echo "$K8S_CONFIG" | base64 --decode > ${HOME}/.kube/config
+
+script:
+  - docker run -e CI=true janakasteph/tmp yarn test
+
+deploy:
+  provider: script
+  script: bash ./deploy.sh
+  on:
+    branch: k8s

@@ -44,7 +44,7 @@ const submitForm = (
   t: TFunction
 ) => {
   axios
-    .post('/send-email', values)
+    .post('/api/send-email', values)
     .then(() => {
       actions.resetForm({values: initialFormValues})
     })

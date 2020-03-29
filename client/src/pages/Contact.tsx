@@ -129,7 +129,7 @@ export const Contact: React.FC = () => {
             })}
             onSubmit={(values: FormValues, actions: FormikHelpers<FormValues>) => {
               axios
-                .post('/send-email', values)
+                .post('/api/send-email', values)
                 .then(() => {
                   actions.resetForm({values: initialValues})
                 })
