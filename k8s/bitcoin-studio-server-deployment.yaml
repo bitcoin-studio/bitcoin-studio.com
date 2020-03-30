@@ -23,15 +23,3 @@ spec:
                 secretKeyRef:
                   name: smtp-gmail-pass
                   key: SMTP_GMAIL_PASS
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: bitcoin-studio-server-cluster-ip-service
-spec:
-  type: ClusterIP
-  selector:
-    app: bitcoin-studio-server
-  ports:
-    - port: 5000
-      targetPort: 5000

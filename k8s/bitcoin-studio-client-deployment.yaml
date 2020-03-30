@@ -17,15 +17,3 @@ spec:
           image: janakasteph/bitcoin-studio-client
           ports:
             - containerPort: 3000
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: bitcoin-studio-client-cluster-ip-service
-spec:
-  type: ClusterIP
-  selector:
-    app: bitcoin-studio-client
-  ports:
-    - port: 3000
-      targetPort: 3000

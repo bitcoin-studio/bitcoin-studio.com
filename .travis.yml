@@ -1,9 +1,12 @@
-sudo: required
+language: minimal
+
 services:
   - docker
+
 env:
   global:
     - SHA=$(git rev-parse HEAD)
+
 before_install:
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker build -t janakasteph/tmp -f ./client/Dockerfile.dev ./client
@@ -19,8 +22,14 @@ before_install:
   - curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
   - chmod +x ./kubectl
   - sudo mv ./kubectl /usr/local/bin/kubectl
-  # - mkdir ${HOME}/.kube
-  # - echo "$K8S_CONFIG" | base64 --decode > ${HOME}/.kube/config
+
+  # Decode base64 KUBECONFIG env var and write it at ${HOME}/.kube/config
+  - mkdir ${HOME}/.kube
+  - echo "$KUBECONFIG" | base64 --decode > ${HOME}/.kube/config
+
+  # - sudo apt update
+  # - sudo apt install snap
+  # - sudo snap install helm --classic
 
 script:
   - docker run -e CI=true janakasteph/tmp yarn test
