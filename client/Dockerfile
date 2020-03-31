@@ -1,4 +1,4 @@
-FROM node:alpine AS builder
+FROM node:13-alpine AS builder
 WORKDIR '/app'
 COPY ./package.json ./
 RUN yarn install

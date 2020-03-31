@@ -7,6 +7,7 @@ metadata:
     nginx.ingress.kubernetes.io/rewrite-target: /$1
     cert-manager.io/cluster-issuer: 'letsencrypt-prod'
     nginx.ingress.kubernetes.io/ssl-redirect: 'true'
+    nginx.ingress.kubernetes.io/from-to-www-redirect: 'true'
 spec:
   tls:
   - hosts:
@@ -14,17 +15,6 @@ spec:
       - www.rogue-paprika.top
     secretName: rogue-paprika-top
   rules:
-  - host: rogue-paprika.top
-    http:
-      paths:
-        - path: /?(.*)
-          backend:
-            serviceName: bitcoin-studio-client-cluster-ip-service
-            servicePort: 3000
-        - path: /api/?(.*)
-          backend:
-            serviceName: bitcoin-studio-server-cluster-ip-service
-            servicePort: 5000
   - host: www.rogue-paprika.top
     http:
       paths:
