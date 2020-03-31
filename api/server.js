@@ -2,7 +2,6 @@ const express = require('express')
 const {check, validationResult} = require('express-validator')
 const nodeMailer = require('nodemailer')
 const bodyParser = require('body-parser')
-const path = require('path')
 const log = require('loglevel')
 require('dotenv').config()
 
@@ -13,18 +12,8 @@ const PORT = process.env.PORT || 5000
 
 const app = express()
 
-// Priority serve any static files.
-// app.use(express.static(path.resolve(__dirname, 'build')))
-
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
-
-/*
-app.get('/api', (req, res) => {
-  res.set('Content-Type', 'application/json')
-  res.send('{"message":"Hello from the bitcoin studio custom server!"}')
-})
-*/
 
 app.post('/send-email', [
   check('name')
@@ -71,13 +60,6 @@ app.post('/send-email', [
     res.status(422).json({errors: errors.array()})
   }
 })
-
-// All remaining requests return the React app, so it can handle routing.
-/*
-app.get('*', (request, response) => {
-  response.sendFile(path.resolve(__dirname, 'build', 'index.html'))
-})
-*/
 
 app.listen(PORT, () => {
   log.info(`Server listening on port ${PORT}`)
