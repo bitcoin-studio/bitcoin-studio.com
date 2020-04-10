@@ -34,8 +34,8 @@ before_install:
 script:
   - docker run -e CI=true janakasteph/tmp yarn test
 
-deploy:
-  provider: script
-  script: bash ./deploy.sh
-  on:
-    branch: k8s
+#deploy:
+#  provider: script
+#  script: bash ./deploy.sh
+#  on:
+#    branch: k8s

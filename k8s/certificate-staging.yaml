@@ -11,3 +11,5 @@ spec:
   dnsNames:
     - rogue-paprika.top
     - www.rogue-paprika.top
+    - bitcoinjs-guide.rogue-paprika.top
+    - coffee.rogue-paprika.top
