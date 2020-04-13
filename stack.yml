@@ -1,0 +1,12 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: https://openfaas.rogue-paprika.top
+  #gateway: https://openfaas-ingress-janaka-steph.cloud.okteto.net
+functions:
+  bitcoin-studio-client:
+    lang: node-custom
+    handler: ./client
+    image: janakasteph/bitcoin-studio-client:latest
+    #labels:
+    #  com.openfaas.scale.zero: false

@@ -1,7 +1,7 @@
 {
   "name": "bitcoin-studio-client",
   "version": "3.0.0",
-  "homepage": "https://www.bitcoin-studio.com",
+  "main": "handler.js",
   "license": "MIT",
   "scripts": {
     "analyze": "source-map-explorer 'build/static/js/*.js'",
@@ -10,9 +10,9 @@
     "lint": "eslint --ext .ts,.tsx src/",
     "prod": "concurrently -n client,server \"serve -l 3000 build\" \"yarn start:server\"",
     "start": "concurrently --kill-others-on-fail -n client,server \"yarn start:client\" \"yarn start:server\"",
-    "start:client": "react-scripts start",
+    "start:client": "HOST=0.0.0.0 PORT=8080 react-scripts start",
     "start:server": "cd ../api && yarn dev",
-    "test": "react-scripts test"
+    "test": "CI=true react-scripts test"
   },
   "browserslist": {
     "production": [
