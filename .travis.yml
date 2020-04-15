@@ -3,6 +3,10 @@ language: minimal
 services:
   - docker
 
+branches:
+  only:
+    - k8s
+
 env:
   global:
     - SHA=$(git rev-parse HEAD)

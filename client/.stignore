@@ -1,3 +1,10 @@
+# dotenv environment variables file
+#/.env
+#/.env.test
+
+/src/assets
+/public/assets
+
 /.git
 # Logs
 /logs
@@ -55,10 +62,6 @@
 # Yarn Integrity file
 /.yarn-integrity
 
-# dotenv environment variables file
-/.env
-/.env.test
-
 # parcel-bundler cache (https://parceljs.org/)
 /.cache
 
@@ -79,3 +82,6 @@
 
 # DynamoDB Local files
 /.dynamodb
+
+# MacOSx
+/.DS_Store

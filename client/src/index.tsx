@@ -19,7 +19,7 @@ if (process.env.NODE_ENV === 'production') {
 
 ReactDOM.render(
   <BrowserRouter
-    basename={i18n.language === 'fr' ? '/fr' : ''}
+    basename={i18n.language === 'fr' ? '/function/bitcoin-studio-client/fr' : '/function/bitcoin-studio-client'}
   >
     <ScrollToTop/>
     <Suspense fallback={<DelayedFallbackLoader/>}>

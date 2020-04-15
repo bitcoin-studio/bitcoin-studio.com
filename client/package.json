@@ -1,7 +1,6 @@
 {
   "name": "bitcoin-studio-client",
   "version": "3.0.0",
-  "main": "handler.js",
   "license": "MIT",
   "scripts": {
     "analyze": "source-map-explorer 'build/static/js/*.js'",

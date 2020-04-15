@@ -1,0 +1,33 @@
+FROM openfaas/of-watchdog:0.7.7 AS watchdog
+FROM node:12-alpine AS build
+
+#WORKDIR /home/app
+#RUN echo "Dockerfile.dev" > ./info.txt
+
+WORKDIR /home/app/function
+
+# Turn down the verbosity to default level.
+ENV NPM_CONFIG_LOGLEVEL warn
+
+COPY --from=watchdog /fwatchdog /usr/bin/fwatchdog
+
+RUN addgroup -S -g 998 app && adduser -S -u 998 -g app app
+RUN chown app:app -R /home/app && chmod 777 /tmp
+USER app
+
+ENV mode="static"
+ENV static_path="/home/app/function/public"
+
+ENV exec_timeout="10s"
+ENV write_timeout="11s"
+ENV read_timeout="11s"
+
+HEALTHCHECK --interval=5s CMD [ -e /tmp/.lock ] || exit 1
+
+COPY package.json ./
+
+RUN npm i
+
+COPY ./ ./
+
+CMD ["fwatchdog"]

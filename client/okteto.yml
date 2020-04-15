@@ -1,27 +1,14 @@
-# The name tells Okteto to replace the function named 'bitcoin-studio-client' with the dev environment
 name: bitcoin-studio-client
-image: okteto/node:10
+image: registry.cloud.okteto.net/janaka-steph/bitcoin-studio-client:dev
+labels:
+  faas_function: bitcoin-studio-client
 command:
-  - bash
+  - sh
 workdir: /home/app
 mountpath: /home/app/function
-persistentVolume:
-  enabled: false
-#volumes:
-  # This makes the go build cache persistent across development environments
-  #- /home/app/.cache/go-build/
+#persistentVolume:
+#  enabled: false
 securityContext:
-  # the user and group that OpenFaaS functions run as
-  runAsUser:  12000
-  runAsGroup: 12000
-  fsGroup:    12000
-  capabilities:
-    add:
-      # enables us to run the debugger inside the pod
-      - SYS_PTRACE
-#environment:
-  # overrides the one set by openfaas, enabling hot reload
-  #- fprocess=node index.js
-forward:
-  - 8080:8080
-  - 2345:2345
+  runAsUser: 998
+  runAsGroup: 998
+  fsGroup: 998
