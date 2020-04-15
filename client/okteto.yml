@@ -4,11 +4,16 @@ labels:
   faas_function: bitcoin-studio-client
 command:
   - sh
-workdir: /home/app
-mountpath: /home/app/function
-#persistentVolume:
-#  enabled: false
+workdir: /home/app/function
+persistentVolume:
+  enabled: true
 securityContext:
   runAsUser: 998
   runAsGroup: 998
   fsGroup: 998
+resources:
+  limits:
+    cpu: 2
+    memory: 2Gi
+environment:
+  - PUBLIC_URL=https://openfaas-ingress-janaka-steph.cloud.okteto.net/function/bitcoin-studio-client
