@@ -2,8 +2,8 @@
 #/.env
 #/.env.test
 
-/src/assets
-/public/assets
+# MacOSx
+.DS_Store
 
 /.git
 # Logs
@@ -82,6 +82,3 @@
 
 # DynamoDB Local files
 /.dynamodb
-
-# MacOSx
-/.DS_Store
