@@ -21,9 +21,9 @@ FROM alpine:3.10 AS runtime
 WORKDIR /home/app/
 RUN addgroup -S -g 998 app && adduser -S -u 998 -g app app
 
-COPY --from=build /root/build /home/app/public
-WORKDIR /home/app/public
-RUN echo "Dockerfile" > info.txt
+COPY --from=build /root/build /home/app/build
+WORKDIR /home/app/build
+RUN touch prod.txt
 
 COPY --from=watchdog /fwatchdog /usr/bin/fwatchdog
 
@@ -32,7 +32,7 @@ RUN chown app:app -R /home/app && chmod 777 /tmp
 USER app
 
 ENV mode="static"
-ENV static_path="/home/app/public"
+ENV static_path="/home/app/build"
 
 ENV exec_timeout="10s"
 ENV write_timeout="11s"
