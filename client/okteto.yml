@@ -9,6 +9,6 @@ mountpath: /home/app/function
 persistentVolume:
   enabled: true
 securityContext:
-  runAsUser: 998
-  runAsGroup: 998
-  fsGroup: 998
+  runAsUser: 1000
+  runAsGroup: 1000
+  fsGroup: 1000

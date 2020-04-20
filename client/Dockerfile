@@ -7,29 +7,28 @@ WORKDIR /root/
 ENV NPM_CONFIG_LOGLEVEL warn
 
 COPY package.json ./
+
 RUN npm i --production
 
 COPY ./ ./
-#COPY src        ./src
-#COPY public     ./public
-#COPY .env       ./.env
 
 RUN NODE_ENV=production npm run build
-RUN find build/
 
+###
 FROM alpine:3.10 AS runtime
-WORKDIR /home/app/
-RUN addgroup -S -g 998 app && adduser -S -u 998 -g app app
-
-COPY --from=build /root/build /home/app/build
-WORKDIR /home/app/build
-RUN touch prod.txt
 
 COPY --from=watchdog /fwatchdog /usr/bin/fwatchdog
+RUN chmod +x /usr/bin/fwatchdog
 
-RUN chown app:app -R /home/app && chmod 777 /tmp
+# Add non root user
+RUN addgroup -S app && adduser app -S -G app
+RUN chown app /home/app
+
+WORKDIR /home/app/
 
 USER app
+
+COPY --from=build /root/build /home/app/build
 
 ENV mode="static"
 ENV static_path="/home/app/build"
