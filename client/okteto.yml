@@ -12,3 +12,9 @@ securityContext:
   runAsUser: 1000
   runAsGroup: 1000
   fsGroup: 1000
+resources:
+  limits:
+    cpu: 2
+    memory: 2Gi
+environment:
+  - PUBLIC_URL=https://openfaas-ingress-janaka-steph.cloud.okteto.net/function/bitcoin-studio-client
