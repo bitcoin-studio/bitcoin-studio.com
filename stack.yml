@@ -11,3 +11,5 @@ functions:
     image: janakasteph/bitcoin-studio-client
     #image: registry.cloud.okteto.net/janaka-steph/bitcoin-studio-client:dev
     #image: registry.cloud.okteto.net/janaka-steph/bitcoin-studio-client:latest
+    environment:
+      write_debug: true
