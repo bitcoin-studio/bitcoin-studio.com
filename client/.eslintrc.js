@@ -16,7 +16,6 @@ module.exports = {
     'plugin:import/warnings',
     'plugin:jsx-a11y/recommended',
     'plugin:react/recommended',
-    'plugin:react-app/recommended',
   ],
   'plugins': [
     'jsx-a11y',

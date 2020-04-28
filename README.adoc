@@ -9,3 +9,60 @@
 * Styling
 ** Sass pre-processor
 ** CSS Grid for the layout
+
+
+== Hosting
+
+Based on OpenFaaS Dockerfile template, serving the app with Nginx:
+https://github.com/alexellis/static-site-template
+
+
+== Running the prod locally
+
+.In one tab
+ kubectl port-forward svc/gateway -n openfaas 8080:8080
+
+.In a other tab
+ faas up
+
+
+== Developing with Okteto
+
+.Build a dev image with NodeJS and Nginx into the local Docker library
+ DEV=dev faas build
+
+.Push that image to a remote container registry
+ DEV=dev faas push
+
+ cd client
+
+.Sync local source code with remote
+ okteto up
+
+=== Inside Okteto console
+
+.Run OpenFaaS watchdog in the background
+ fwatchdog &
+
+.Press Enter
+
+.Install dependencies
+ cd function
+
+ npm ci
+
+.Run build on file change
+ npm run watch
+
+
+=== Shortcomings
+
+==== No Hot Reloading
+
+For now, create-react-app doesn't give to possibility to write webpack-dev-server output to disk (see https://github.com/facebook/create-react-app/pull/6144[this thread]).
+We are forced to use an external tool. This project uses https://github.com/Nargonath/cra-build-watch[cra-build-watch].
+It works fine but doesn't allow for hot reloading.
+
+==== Service Worker
+
+The service worker may cause issues. If you activate it, make sure to develop the app in incognito window on Chrome or similar.

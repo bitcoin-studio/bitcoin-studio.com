@@ -9,14 +9,10 @@ workdir: /home/app
 mountpath: /home/app/function
 persistentVolume:
   enabled: true
-securityContext:
-  runAsUser: 1000
-  runAsGroup: 1000
-  fsGroup: 1000
 #resources:
 #  limits:
 #    cpu: 2
 #    memory: 4Gi
 environment:
   #- PUBLIC_URL=https://openfaas-ingress-janaka-steph.cloud.okteto.net/function/bitcoin-studio-client
-  - PUBLIC_URL=http://127.0.0.1:8080/function/bitcoin-studio-client
+  - PUBLIC_URL=/function/bitcoin-studio-client
