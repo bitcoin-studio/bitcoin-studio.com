@@ -117,13 +117,16 @@ export const Contact: React.FC = () => {
             initialValues={initialValues}
             validationSchema={Yup.object().shape({
               name: Yup.string()
+                .trim()
                 .min(2, t('contact-form.errors.tooShort'))
                 .max(50, t('contact-form.errors.tooLong'))
                 .required(t('contact-form.errors.required')),
               email: Yup.string()
+                .trim()
                 .email(t('contact-form.errors.emailInvalid'))
                 .required(t('contact-form.errors.required')),
               message: Yup.string()
+                .trim()
                 .max(2000, t('contact-form.errors.tooLong'))
                 .required(t('contact-form.errors.required')),
             })}

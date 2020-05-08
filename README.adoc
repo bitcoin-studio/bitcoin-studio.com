@@ -1,10 +1,9 @@
-= Welcome to the Bitcoin Studio website repository
+= Bitcoin Studio website - client repository
 
 * Code
 ** Based on Create-React-App
 ** Typescript
-** ReactJS
-** Using function components and React Hooks!
+** ReactJS (function components, React Hooks)
 
 * Styling
 ** Sass pre-processor
@@ -13,7 +12,8 @@
 
 == Hosting
 
-Based on OpenFaaS Dockerfile template, serving the app with Nginx:
+MicroService function hosted on OpenFaaS. +
+Based on OpenFaaS Dockerfile template, serving the app with Nginx: +
 https://github.com/alexellis/static-site-template
 
 
@@ -34,7 +34,7 @@ https://github.com/alexellis/static-site-template
 .Push that image to a remote container registry
  DEV=dev faas push
 
- cd client
+ cd function
 
 .Sync local source code with remote
  okteto up

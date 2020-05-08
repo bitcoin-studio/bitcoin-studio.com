@@ -26,6 +26,7 @@ RUN echo -n "daemon off;" | tee -a /etc/nginx/nginx.conf
 ENV fprocess="nginx"
 ENV mode="http"
 ENV upstream_url="http://127.0.0.1:8082"
+#ENV upstream_url="http://127.0.0.1:443"
 
 RUN chown -R nginx:nginx *
 

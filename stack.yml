@@ -4,11 +4,12 @@ provider:
   #gateway: https://openfaas.rogue-paprika.top
   #gateway: https://openfaas-ingress-janaka-steph.cloud.okteto.net
   gateway: http://127.0.0.1:8080
+
 functions:
   bitcoin-studio-client:
     lang: dockerfile${DEV}
-    handler: ./client
+    handler: ./function
     image: janakasteph/bitcoin-studio-client:${DEV:-latest}
     #image: registry.cloud.okteto.net/janaka-steph/bitcoin-studio-client:${DEV:-latest}
-    environment:
-      write_debug: true
+    #environment:
+    #  write_debug: true

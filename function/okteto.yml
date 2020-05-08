@@ -3,8 +3,8 @@ name: bitcoin-studio-client
 image: janakasteph/bitcoin-studio-client:dev
 labels:
   faas_function: bitcoin-studio-client
-command:
-  - sh
+#command:
+#  - sh
 workdir: /home/app
 mountpath: /home/app/function
 persistentVolume:
