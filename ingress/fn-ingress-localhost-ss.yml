@@ -4,11 +4,11 @@ metadata:
   name: bitcoin-studio-client-tls
   namespace: openfaas
 spec:
-  domain: "rogue-paprika.top"
+  domain: "localhost"
   function: "bitcoin-studio-client"
   ingressType: "nginx"
   tls:
     enabled: true
     issuerRef:
-      name: "letsencrypt-staging"
+      name: "selfsigned-issuer"
       kind: "Issuer"
