@@ -28,15 +28,18 @@ https://github.com/alexellis/static-site-template
 
 == Developing with Okteto
 
+.Make sure the prod image is deployed
+ faas up
+
 .Build a dev image with NodeJS and Nginx into the local Docker library
  DEV=dev faas build
 
-.Push that image to a remote container registry
+.Push that image to Okteto container registry
  DEV=dev faas push
 
  cd function
 
-.Sync local source code with remote
+.Sync local source code with remote using dev image
  okteto up
 
 === Inside Okteto console

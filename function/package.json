@@ -37,7 +37,7 @@
     "@typescript-eslint/eslint-plugin": "^2.26.0",
     "@typescript-eslint/parser": "^2.26.0",
     "axios": "^0.19.2",
-    "cra-build-watch": "^3.2.0",
+    "cra-build-watch": "github:Nargonath/cra-build-watch#cc18f98f74571d321227c8d8351f3fa37d09362b",
     "dotenv": "^8.2.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-typescript": "^7.2.1",

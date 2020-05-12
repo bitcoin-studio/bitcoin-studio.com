@@ -12,14 +12,14 @@ import pgp from '../assets/icons/pgp.svg'
 import twitter from '../assets/icons/twitter.svg'
 
 type FormValues = {
-  name: string
-  email: string
+  from_name: string
+  from_email: string
   message: string
 }
 
 const initialValues: FormValues = {
-  name: '',
-  email: '',
+  from_name: '',
+  from_email: '',
   message: '',
 }
 
@@ -116,12 +116,12 @@ export const Contact: React.FC = () => {
           <Formik
             initialValues={initialValues}
             validationSchema={Yup.object().shape({
-              name: Yup.string()
+              from_name: Yup.string()
                 .trim()
                 .min(2, t('contact-form.errors.tooShort'))
                 .max(50, t('contact-form.errors.tooLong'))
                 .required(t('contact-form.errors.required')),
-              email: Yup.string()
+              from_email: Yup.string()
                 .trim()
                 .email(t('contact-form.errors.emailInvalid'))
                 .required(t('contact-form.errors.required')),
@@ -132,7 +132,9 @@ export const Contact: React.FC = () => {
             })}
             onSubmit={(values: FormValues, actions: FormikHelpers<FormValues>) => {
               axios
-                .post('/api/send-email', values)
+                .post(`${process.env.REACT_APP_SEND_EMAIL_URL}`, {...values,
+                  to_email: 'bitcoin-studio@protonmail.com',
+                  subject: 'Bitcoin Studio Website Form'})
                 .then(() => {
                   actions.resetForm({values: initialValues})
                 })
@@ -155,21 +157,21 @@ export const Contact: React.FC = () => {
             {() => (
               <Form>
                 <Field
-                  name="name"
+                  name="from_name"
                   placeholder={t('contact-form.placeholders.name')}
                   type="text"
                 />
                 <p>
-                  <ErrorMessage name="name"/>
+                  <ErrorMessage name="from_name"/>
                 </p>
 
                 <Field
-                  name="email"
+                  name="from_email"
                   placeholder="E-mail"
                   type="email"
                 />
                 <p>
-                  <ErrorMessage name="email"/>
+                  <ErrorMessage name="from_email"/>
                 </p>
 
                 <Field
