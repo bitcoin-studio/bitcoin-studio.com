@@ -23,16 +23,24 @@ export const Header: React.FC<Props> = ({isMenuOpen, id}) => {
     i18n.changeLanguage(askedLng)
       // Rewrite current URL
       .then(() => {
-        const subpaths = window.location.pathname.match(/\/([a-zA-Z-]*)/g)
+        const subpathsMatches = window.location.pathname.match(/\/([a-zA-Z-]*)/g)
+        // If OpenFaaS function slice first 2 subpaths
+        let subpaths = (subpathsMatches?.[0].substring(1) === 'function') ? subpathsMatches.slice(2) : subpathsMatches
+        // Set currentLng
         const currentLng = subpaths?.[0] === '/fr' ? 'fr' : 'en'
+
         // Use location.assign() to cause the window to load and display the document at the rewritten URL
         // It allows re-setting BrowserRouter 'basename' property in the index.tsx
         if (currentLng === 'en' && askedLng === 'fr') {
+          // At EN root path, empty string
+          subpaths = subpaths?.length === 0 ? [''] : subpaths
           const path = pathMapping.find((p) => subpaths?.[0].substring(1) === p[0])
-          window.location.assign(`fr/${path?.[1]}`)
+          window.location.assign(process.env.PUBLIC_URL ? `${process.env.PUBLIC_URL}/fr/${path?.[1]}` : `/fr/${path?.[1]}`)
         } else if (currentLng === 'fr' && askedLng === 'en') {
-          const path = pathMapping.find((p) => subpaths?.[1].substring(1) === p[1])
-          window.location.assign(`/${path?.[0]}`)
+          // At FR root path, add trailing slash if not present
+          subpaths = (subpaths?.length === 1) ? subpaths.concat(["/"]) : subpaths
+          const path = pathMapping.find((p) => subpaths?.[1]?.substring(1) === p[1])
+          window.location.assign(process.env.PUBLIC_URL ? `${process.env.PUBLIC_URL}/${path?.[0]}` : `/${path?.[0]}`)
         }
       })
       .catch((e) => log.error(e))
