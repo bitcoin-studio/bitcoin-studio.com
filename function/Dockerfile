@@ -21,7 +21,7 @@ RUN chmod +x /usr/bin/fwatchdog
 WORKDIR /usr/share/nginx/html
 COPY --from=build /root/build .
 
-COPY ./nginx/default.conf /etc/nginx/conf.d/default.conf
+COPY ./nginx/* /etc/nginx/conf.d/
 RUN echo -n "daemon off;" | tee -a /etc/nginx/nginx.conf
 
 ENV fprocess="nginx"

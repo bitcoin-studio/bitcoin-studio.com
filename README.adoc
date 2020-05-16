@@ -69,3 +69,21 @@ It works fine but doesn't allow for hot reloading.
 ==== Service Worker
 
 The service worker may cause issues. If you activate it, make sure to develop the app in incognito window on Chrome or similar.
+
+
+
+== OpenFaaS Hosting Considerations
+
+=== 127.0.0.1 and Okteto Serving From SubPath
+
+.Set env variable
+ PUBLIC_URL=/function/bitcoin-studio-client
+
+Manifest.json start_url = "/function/bitcoin-studio-client/index.html"
+
+
+=== Custom Domain (using FunctionIngress CRD)
+
+No PUBLIC_URL env variable
+
+Manifest.json start_url = "."
