@@ -44,9 +44,9 @@ const submitForm = (
   t: TFunction
 ) => {
   axios
-    .post(`${process.env.REACT_APP_SEND_EMAIL_URL}`, {...values,
+    .post('/api/send-email',{...values,
       to_email: 'bitcoin-studio@protonmail.com',
-      subject: 'Bitcoin Studio Website Form'})
+      subject: 'Bitcoin Studio Workshop Registration'})
     .then(() => {
       actions.resetForm({values: initialFormValues})
     })
