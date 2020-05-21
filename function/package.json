@@ -64,5 +64,8 @@
     "sweetalert": "^2.1.2",
     "typescript": "~3.8.3",
     "yup": "^0.28.3"
+  },
+  "engines": {
+    "node": "14"
   }
 }
