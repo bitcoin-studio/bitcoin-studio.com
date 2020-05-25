@@ -1,25 +1,14 @@
 # Based on https://github.com/alexellis/static-site-template
 FROM openfaas/of-watchdog:0.7.7 AS watchdog
 
-###
-FROM node:12-alpine AS build
-WORKDIR /root
-
-COPY ./package*.json ./
-
-RUN apk add --no-cache git
-RUN npm ci --only=production
-COPY . .
-RUN npm run build
-
-###
 FROM nginxinc/nginx-unprivileged:1.17-alpine AS runtime
 USER root
 COPY --from=watchdog /fwatchdog /usr/bin/fwatchdog
 RUN chmod +x /usr/bin/fwatchdog
 
 WORKDIR /usr/share/nginx/html
-COPY --from=build /root/build .
+# Make sure you have run `npm run build` before
+COPY ./dist ./
 
 COPY ./nginx/* /etc/nginx/conf.d/
 RUN echo -n "daemon off;" | tee -a /etc/nginx/nginx.conf

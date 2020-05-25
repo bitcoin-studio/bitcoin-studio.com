@@ -38,7 +38,7 @@ export const Header: React.FC<Props> = ({isMenuOpen, id}) => {
           window.location.assign(process.env.PUBLIC_URL ? `${process.env.PUBLIC_URL}/fr/${path?.[1]}` : `/fr/${path?.[1]}`)
         } else if (currentLng === 'fr' && askedLng === 'en') {
           // At FR root path, add trailing slash if not present
-          subpaths = (subpaths?.length === 1) ? subpaths.concat(["/"]) : subpaths
+          subpaths = (subpaths?.length === 1) ? subpaths.concat(['/']) : subpaths
           const path = pathMapping.find((p) => subpaths?.[1]?.substring(1) === p[1])
           window.location.assign(process.env.PUBLIC_URL ? `${process.env.PUBLIC_URL}/${path?.[0]}` : `/${path?.[0]}`)
         }
