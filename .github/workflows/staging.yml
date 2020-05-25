@@ -1,0 +1,26 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Git checkout
+      uses: actions/checkout@v2
+      with:
+        ref: openfaas-nginx
+    - name: Login to Docker Hub
+      uses: actions/docker/login@master
+      env:
+        DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+    - name: Fetch Template
+      uses: LucasRoesler/openfaas-action/template_store_pull@v0.1.0
+      with:
+        name: "dockerfile"
+    - name: Build
+      uses: LucasRoesler/openfaas-action/build@v0.1.0
+    - name: Push image
+      uses: LucasRoesler/openfaas-action/push@v0.1.0
+      if: "success() && github.ref == 'refs/heads/openfaas-nginx' "
