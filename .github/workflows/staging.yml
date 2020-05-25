@@ -1,6 +1,9 @@
 name: CI
 
-on: [push]
+on: 
+  push:
+    branches:
+      - openfaas-nginx
 
 jobs:
   build:
@@ -8,13 +11,8 @@ jobs:
     steps:
     - name: Git checkout
       uses: actions/checkout@v2
-      with:
-        ref: openfaas-nginx
     - name: Login to Docker Hub
-      uses: actions/docker/login@master
-      env:
-        DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+      run: echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
     - name: Fetch Template
       uses: LucasRoesler/openfaas-action/template_store_pull@v0.1.0
       with:
