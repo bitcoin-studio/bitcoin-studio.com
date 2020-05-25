@@ -132,7 +132,7 @@ export const Contact: React.FC = () => {
             })}
             onSubmit={(values: FormValues, actions: FormikHelpers<FormValues>) => {
               axios
-                .post('/api/send-email',{...values,
+                .post(`${process.env.REACT_APP_SEND_EMAIL_URL}`,{...values,
                   to_email: 'bitcoin-studio@protonmail.com',
                   subject: 'Bitcoin Studio Website Form'})
                 .then(() => {
