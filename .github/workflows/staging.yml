@@ -1,9 +1,10 @@
 name: CI
 
-on: 
+on:
   push:
     branches:
       - openfaas-nginx
+      #- !master
 
 jobs:
   build:
@@ -11,14 +12,67 @@ jobs:
     steps:
     - name: Git checkout
       uses: actions/checkout@v2
-    - name: Login to Docker Hub
-      run: echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
-    - name: Fetch Template
+
+    #- name: Login to Docker Hub
+    #  run: echo ${{secrets.DOCKER_PASSWORD}} | docker login -u ${{secrets.DOCKER_USERNAME}} --password-stdin
+
+    #- name: Install Okteto CLI
+    #  run: curl https://get.okteto.com -sSfL | sh
+
+    #- name: Login to Okteto
+    #  run: okteto login --token ${{secrets.OKTETO_API_TOKEN}}
+
+    - name: Login Okteto Docker Registry
+      run: echo ${{secrets.OKTETO_API_TOKEN}} | docker login registry.cloud.okteto.net -u ${{secrets.OKTETO_EMAIL}} --password-stdin
+
+    #- name: Login to OpenFaaS on Okteto
+    #  uses: LucasRoesler/openfaas-action/login@v0.1.0
+    #  with:
+    #    gateway: "https://openfaas-ingress-janaka-steph.cloud.okteto.net"
+    #    username: ${{secrets.OKTETO_OPENFAAS_USERNAME}}
+    #    password: ${{secrets.OKTETO_OPENFAAS_PASSWORD}}
+
+    - name: Fetch OpenFaaS Template
       uses: LucasRoesler/openfaas-action/template_store_pull@v0.1.0
       with:
         name: "dockerfile"
-    - name: Build
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: '14.x'
+
+    - name: NPM install
+      run: npm install
+      working-directory: ./function
+
+    - name: NPM run test
+      run: npm run test
+      working-directory: ./function
+
+    - name: NPM run lint
+      run: npm run lint
+      working-directory: ./function
+
+    - name: NPM audit
+      uses: oke-py/npm-audit-action@v1.4.0
+      with:
+        audit_level: moderate
+        github_token: ${{secrets.GITHUB_TOKEN}}
+        issue_assignees: Janaka-Steph
+        issue_labels: vulnerability,test
+        working_directory: ./function
+
+    - name: NPM run build
+      run: npm run build --if-present
+      working-directory: ./function
+
+    - name: Build docker image
       uses: LucasRoesler/openfaas-action/build@v0.1.0
-    - name: Push image
+      with:
+        tag: "latest"
+
+    - name: Push docker image
       uses: LucasRoesler/openfaas-action/push@v0.1.0
-      if: "success() && github.ref == 'refs/heads/openfaas-nginx' "
+      with:
+        tag: "latest"
