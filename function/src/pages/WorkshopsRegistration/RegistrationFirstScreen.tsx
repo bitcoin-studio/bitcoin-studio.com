@@ -13,23 +13,23 @@ type Props = {
 }
 
 type FormValues = {
-  name: string
-  email: string
+  from_name: string
+  from_email: string
   message: string
 }
 
 const initialFormValues: FormValues = {
-  name: '',
-  email: '',
+  from_name: '',
+  from_email: '',
   message: '',
 }
 
 const RegisterSchema = (t: TFunction) => Yup.object().shape({
-  name: Yup.string()
+  from_name: Yup.string()
     .min(2, t('registration.errors.tooShort'))
     .max(50, t('registration.errors.tooLong'))
     .required(t('registration.errors.required')),
-  email: Yup.string()
+  from_email: Yup.string()
     .email(t('registration.errors.emailInvalid'))
     .required(t('registration.errors.required')),
   message: Yup.string()
@@ -44,7 +44,9 @@ const submitForm = (
   t: TFunction
 ) => {
   axios
-    .post('/send-email', values)
+    .post(`${process.env.REACT_APP_SEND_EMAIL_URL}`, {...values,
+      to_email: 'bitcoin-studio@protonmail.com',
+      subject: 'Bitcoin Studio Workshop Registration'})
     .then(() => {
       actions.resetForm({values: initialFormValues})
     })
@@ -75,21 +77,21 @@ export const RegistrationFirstScreen: FC<Props> = ({t, ev}) => (
       <div className="swal-text">{t('registration.firstScreen.text')}</div>
       <Form className="form">
         <Field
-          name="name"
+          name="from_name"
           type="text"
           placeholder={t('registration.placeholders.name')}
         />
         <p>
-          <ErrorMessage name="name"/>
+          <ErrorMessage name="from_name"/>
         </p>
 
         <Field
           type="email"
-          name="email"
+          name="from_email"
           placeholder="E-mail"
         />
         <p>
-          <ErrorMessage name="email"/>
+          <ErrorMessage name="from_email"/>
         </p>
 
         <Field

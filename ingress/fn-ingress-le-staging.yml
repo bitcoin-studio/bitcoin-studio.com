@@ -1,0 +1,14 @@
+apiVersion: openfaas.com/v1alpha2
+kind: FunctionIngress
+metadata:
+  name: bitcoin-studio-client-tls
+  namespace: openfaas
+spec:
+  domain: "bitcoin-studio.com"
+  function: "bitcoin-studio-client"
+  ingressType: "nginx"
+  tls:
+    enabled: true
+    issuerRef:
+      name: "letsencrypt-staging"
+      kind: "Issuer"

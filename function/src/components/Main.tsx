@@ -70,7 +70,7 @@ const SiteRoutes: () => any = () => {
         }
         return <></>
       }}
-    </Route>,
+    </Route>
   )
   return routeComponents
 }

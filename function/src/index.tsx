@@ -19,7 +19,7 @@ if (process.env.NODE_ENV === 'production') {
 
 ReactDOM.render(
   <BrowserRouter
-    basename={i18n.language === 'fr' ? '/fr' : ''}
+    basename={i18n.language === 'fr' ? `${process.env.PUBLIC_URL}/fr` : process.env.PUBLIC_URL}
   >
     <ScrollToTop/>
     <Suspense fallback={<DelayedFallbackLoader/>}>

@@ -1,0 +1,12 @@
+node_modules
+
+.DS_Store
+.git
+# Logs
+logs
+*.log
+npm-debug.log*
+
+lib-cov
+coverage
+.nyc_output

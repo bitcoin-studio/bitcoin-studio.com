@@ -1,0 +1,70 @@
+{
+  "name": "bitcoin-studio-client",
+  "version": "3.0.0",
+  "license": "MIT",
+  "scripts": {
+    "analyze": "source-map-explorer 'dist/static/js/*.js'",
+    "build": "react-scripts build && rm -rf dist && mv build dist",
+    "eject": "react-scripts eject",
+    "lint": "eslint --ext .ts,.tsx src/",
+    "start": "react-scripts start",
+    "start:fakeprod": "serve -l 3000 dist",
+    "test": "CI=true react-scripts test",
+    "watch": "cra-build-watch -p /function/bitcoin-studio-client/ -b /usr/share/nginx/html"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "@sweetalert/with-react": "^0.1.1",
+    "@types/node": "^14.0.5",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-helmet": "^6.0.0",
+    "@types/react-router-dom": "^5.1.5",
+    "@types/react-transition-group": "^4.4.0",
+    "@types/sweetalert": "^2.0.4",
+    "@types/yup": "^0.29.0",
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
+    "axios": "^0.19.2",
+    "cra-build-watch": "github:Nargonath/cra-build-watch#cc18f98f74571d321227c8d8351f3fa37d09362b",
+    "dotenv": "^8.2.0",
+    "eslint-config-airbnb-typescript": "^7.2.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.2",
+    "formik": "^2.1.4",
+    "i18next": "^19.4.4",
+    "i18next-browser-languagedetector": "^4.2.0",
+    "loglevel": "^1.6.8",
+    "node-sass": "^4.14.1",
+    "normalize.css": "^8.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-focus-lock": "^2.3.1",
+    "react-helmet": "^6.0.0",
+    "react-i18next": "^11.5.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.1",
+    "react-transition-group": "^4.4.1",
+    "source-map-explorer": "^2.4.2",
+    "svg-loaders-react": "^2.2.1",
+    "sweetalert": "^2.1.2",
+    "typescript": "~3.9.3",
+    "yup": "^0.29.0"
+  },
+  "engines": {
+    "node": "14"
+  }
+}

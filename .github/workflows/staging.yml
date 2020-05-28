@@ -1,9 +1,10 @@
 name: CI
 
-on: 
+on:
   push:
     branches:
       - openfaas-nginx
+      #- !master
 
 jobs:
   build:
@@ -11,14 +12,90 @@ jobs:
     steps:
     - name: Git checkout
       uses: actions/checkout@v2
+
+    #- name: Logout Docker
+    #  run: docker logout
+
     - name: Login to Docker Hub
-      run: echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
-    - name: Fetch Template
-      uses: LucasRoesler/openfaas-action/template_store_pull@v0.1.0
+      run: echo ${{secrets.DOCKER_PASSWORD}} | docker login -u ${{secrets.DOCKER_USERNAME}} --password-stdin
+
+    #- name: Cat for GitHub Actions
+    #  uses: pCYSl5EDgo/cat@1.0.0
+    #  id: docker_config
+    #  with:
+    #    path: /home/runner/.docker/config.json
+
+    #- run: echo $TEXT
+    #  env:
+    #    TEXT: ${{steps.docker_config.outputs.text}}
+
+
+    #- name: Login Okteto Docker Registry
+    #  run: echo ${{secrets.OKTETO_API_TOKEN}} | docker login registry.cloud.okteto.net -u ${{secrets.OKTETO_EMAIL}} --password-stdin
+
+    #- name: Install Okteto CLI
+    #  run: curl https://get.okteto.com -sSfL | sh
+
+    #- name: Login to Okteto
+    #  run: okteto login --token ${{secrets.OKTETO_API_TOKEN}}
+
+    # Fails with: `mkdir /github/home/.openfaas: permission denied`
+    - name: Login to OpenFaaS
+      uses: Janaka-Steph/openfaas-action/login@v0.2.0
+      with:
+        gateway: "https://openfaas-ingress-janaka-steph.cloud.okteto.net"
+        username: ${{secrets.OKTETO_OPENFAAS_USERNAME}}
+        password: ${{secrets.OKTETO_OPENFAAS_PASSWORD}}
+
+    - name: Fetch OpenFaaS Template
+      uses: Janaka-Steph/openfaas-action/template_store_pull@v0.2.0
       with:
         name: "dockerfile"
-    - name: Build
-      uses: LucasRoesler/openfaas-action/build@v0.1.0
-    - name: Push image
-      uses: LucasRoesler/openfaas-action/push@v0.1.0
-      if: "success() && github.ref == 'refs/heads/openfaas-nginx' "
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: '14.x'
+
+    - name: NPM install
+      run: npm install
+      working-directory: ./function
+
+    #- name: NPM run test
+    #  run: npm run test
+    #  working-directory: ./function
+
+    #- name: NPM run lint
+    #  run: npm run lint
+    #  working-directory: ./function
+
+    #- name: NPM audit
+    #  uses: oke-py/npm-audit-action@v1.4.0
+    #  with:
+    #    audit_level: moderate
+    #    github_token: ${{secrets.GITHUB_TOKEN}}
+    #    issue_assignees: Janaka-Steph
+    #    issue_labels: vulnerability,test
+    #    working_directory: ./function
+
+    - name: NPM run build
+      run: npm run build --if-present
+      working-directory: ./function
+
+    - name: Build docker image
+      uses: Janaka-Steph/openfaas-action/build@v0.2.0
+      with:
+        tag: "latest"
+
+    #- name: Docker images
+    #  run: docker images
+
+    #- name: Tag
+    #  run: docker tag janakasteph/bitcoin-studio-client index.docker.io/v1/janakasteph/bitcoin-studio-client:latest
+
+    - name: Push docker image
+      uses: Janaka-Steph/openfaas-action/push@v0.2.0
+      env:
+        OPENFAAS_URL: https://openfaas-ingress-janaka-steph.cloud.okteto.net
+      with:
+        tag: "latest"
