@@ -4,7 +4,7 @@ metadata:
   name: bitcoin-studio-client-tls
   namespace: openfaas
 spec:
-  domain: "bitcoin-studio-client.rogue-paprika.top"
+  domain: "bitcoin-studio.com"
   function: "bitcoin-studio-client"
   ingressType: "nginx"
   tls:
