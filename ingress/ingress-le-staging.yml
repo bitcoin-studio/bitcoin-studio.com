@@ -1,8 +1,13 @@
 apiVersion: openfaas.com/v1alpha2
 kind: FunctionIngress
 metadata:
-  name: bitcoin-studio-client-tls
+  name: bitcoin-studio-staging
   namespace: openfaas
+  annotations:
+    nginx.ingress.kubernetes.io/configuration-snippet: |
+      if ($host = "bitcoin-studio.com") {
+          return 308 https://www.bitcoin-studio.com$request_uri;
+      }
 spec:
   domain: "bitcoin-studio.com"
   function: "bitcoin-studio-client"
