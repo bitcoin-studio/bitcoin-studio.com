@@ -1,16 +1,9 @@
-name: bitcoin-studio-client
-image: registry.cloud.okteto.net/janaka-steph/bitcoin-studio-client:dev
-#image: janakasteph/bitcoin-studio-client:dev
+name: bitcoin-studio
 labels:
-  faas_function: bitcoin-studio-client
+  faas_function: bitcoin-studio
 workdir: /home/app
 mountpath: /home/app/function
 persistentVolume:
   enabled: true
-resources:
-  limits:
-    cpu: 2
-    memory: 4Gi
 environment:
-  #- PUBLIC_URL=https://openfaas-ingress-janaka-steph.cloud.okteto.net/function/bitcoin-studio-client
-  - PUBLIC_URL=/function/bitcoin-studio-client
+  - PUBLIC_URL=/function/bitcoin-studio
