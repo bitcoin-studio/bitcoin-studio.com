@@ -3,11 +3,6 @@ kind: FunctionIngress
 metadata:
   name: www-bitcoin-studio
   namespace: openfaas
-  annotations:
-    nginx.ingress.kubernetes.io/configuration-snippet: |
-      if ($host = "bitcoin-studio.com") {
-          return 308 https://www.bitcoin-studio.com$request_uri;
-      }
 spec:
   domain: "www.bitcoin-studio.com"
   function: "bitcoin-studio-client"
