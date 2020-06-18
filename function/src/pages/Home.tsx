@@ -44,7 +44,6 @@ export const Home: React.FC = () => {
             </p>
           </div>
 
-
           <div className="serviceItem">
             <img src={education} alt="workshops"/>
             <p>
@@ -90,7 +89,6 @@ export const Home: React.FC = () => {
             {t('network.p2')}
           </p>
         </section>
-
 
         <section id="call2action-homePage">
           <div id="call2action_ribbon">

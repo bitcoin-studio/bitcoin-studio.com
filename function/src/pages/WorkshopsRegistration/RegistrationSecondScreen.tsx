@@ -69,7 +69,6 @@ const InputRadioTrainings: FC<InputRadioTrainingsProps> = (
   return <>{trainingsElements}</>
 }
 
-
 type RegistrationSecondScreenProps = {
   t: TFunction
   ev: React.MouseEvent<HTMLButtonElement, MouseEvent>

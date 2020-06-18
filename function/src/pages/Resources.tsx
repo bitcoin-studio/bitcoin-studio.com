@@ -269,7 +269,6 @@ export const Resources: React.FC = () => {
             </div>
           </div>
 
-
           <div className="slide">
             <img src={transaction} alt="bitcoin transactions"/>
             <div className="slide__btn">
