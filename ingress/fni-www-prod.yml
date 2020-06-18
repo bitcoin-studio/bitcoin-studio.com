@@ -5,7 +5,7 @@ metadata:
   namespace: openfaas
 spec:
   domain: "www.bitcoin-studio.com"
-  function: "bitcoin-studio-client"
+  function: "bitcoin-studio"
   ingressType: "nginx"
   tls:
     enabled: true
