@@ -1,7 +1,7 @@
 # Based on https://github.com/alexellis/static-site-template
 FROM openfaas/of-watchdog:0.7.7 AS watchdog
 
-FROM nginxinc/nginx-unprivileged:1.17-alpine AS runtime
+FROM nginxinc/nginx-unprivileged:1.19-alpine AS runtime
 USER root
 COPY --from=watchdog /fwatchdog /usr/bin/fwatchdog
 RUN chmod +x /usr/bin/fwatchdog
