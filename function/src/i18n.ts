@@ -18,7 +18,9 @@ const customPath: CustomDetector = {
     let found
     if (typeof window !== 'undefined') {
       const language = window.location.pathname.match(/\/([a-zA-Z-]*)/g)
-      if (language?.[0] === '/fr') {
+      // /fr/ressources
+      // /function/bitcoin-studio/fr/ressources
+      if (language?.[0] === '/fr' || language?.[2] === '/fr') {
         found = 'fr'
       } else {
         found = 'en'

@@ -9,7 +9,7 @@ import {About} from '../pages/About'
 import {Contact} from '../pages/Contact'
 import {NotFound} from '../pages/NotFound'
 
-const routes: Array<{ path: () => string, Component: React.FC }> = [
+const routes: Array<{path(): string, Component: React.FC}> = [
   {
     path: () => '/',
     Component: Home,

@@ -10,7 +10,7 @@
     "start": "react-scripts start",
     "start:fakeprod": "serve -l 3000 dist",
     "test": "CI=true react-scripts test",
-    "watch": "cra-build-watch -p /function/bitcoin-studio-client/ -b /usr/share/nginx/html"
+    "watch": "cra-build-watch -p /function/bitcoin-studio/ -b /usr/share/nginx/html"
   },
   "browserslist": {
     "production": [

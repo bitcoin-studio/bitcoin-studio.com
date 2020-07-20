@@ -7,7 +7,7 @@ FROM janakasteph/nginx-nodejs AS runtime
 COPY --from=watchdog /fwatchdog /usr/bin/fwatchdog
 RUN chmod +x /usr/bin/fwatchdog
 
-COPY ./function/nginx/default.conf /etc/nginx/conf.d/default.conf
+COPY ./function/nginx/* /etc/nginx/conf.d/
 RUN echo -n "daemon off;" | tee -a /etc/nginx/nginx.conf
 
 ENV fprocess="nginx"

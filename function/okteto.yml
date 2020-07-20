@@ -1,4 +1,5 @@
 name: bitcoin-studio
+image: registry.cloud.okteto.net/janaka-steph/bitcoin-studio:dev
 labels:
   faas_function: bitcoin-studio
 workdir: /home/app
