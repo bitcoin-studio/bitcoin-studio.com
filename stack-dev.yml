@@ -1,0 +1,12 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: https://openfaas-ingress-janaka-steph.cloud.okteto.net
+  #gateway: https://openfaas.rogue-paprika.top
+  #gateway: http://127.0.0.1:8080
+
+functions:
+  bitcoin-studio:
+    lang: dockerfile${DEV}
+    handler: ./function
+    image: registry.cloud.okteto.net/janaka-steph/bitcoin-studio:${DEV:-latest}

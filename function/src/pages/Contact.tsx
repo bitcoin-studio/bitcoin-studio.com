@@ -10,6 +10,7 @@ import keybase from '../assets/icons/keybase.svg'
 import linkedin from '../assets/icons/linkedin.svg'
 import pgp from '../assets/icons/pgp.svg'
 import twitter from '../assets/icons/twitter.svg'
+import {sign} from '../hmac'
 
 type FormValues = {
   from_name: string
@@ -130,11 +131,15 @@ export const Contact: React.FC = () => {
                 .max(2000, t('contact-form.errors.tooLong'))
                 .required(t('contact-form.errors.required')),
             })}
-            onSubmit={(values: FormValues, actions: FormikHelpers<FormValues>) => {
+            onSubmit={async (values: FormValues, actions: FormikHelpers<FormValues>) => {
+              const data = {...values,
+                to_email: 'bitcoin-studio@protonmail.com',
+                subject: 'Bitcoin Studio Website Form'}
+
               axios
-                .post(`${process.env.REACT_APP_SEND_EMAIL_URL}`, {...values,
-                  to_email: 'bitcoin-studio@protonmail.com',
-                  subject: 'Bitcoin Studio Website Form'})
+                .post(`${process.env.REACT_APP_SEND_EMAIL_URL}`,
+                  data,
+                  {headers: {Hmac: await sign(JSON.stringify(data))}})
                 .then(() => {
                   actions.resetForm({values: initialValues})
                 })

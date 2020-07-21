@@ -6,6 +6,7 @@ import * as Yup from 'yup'
 import axios from 'axios'
 import swal from '@sweetalert/with-react'
 import {RegistrationSecondScreen} from './RegistrationSecondScreen'
+import {sign} from '../../hmac'
 
 type Props = {
   t: TFunction
@@ -37,16 +38,20 @@ const RegisterSchema = (t: TFunction) => Yup.object().shape({
     .required(t('registration.errors.required')),
 })
 
-const submitForm = (
+const submitForm = async (
   values: FormValues,
   actions: FormikHelpers<FormValues>,
   ev: React.MouseEvent<HTMLButtonElement, MouseEvent>,
   t: TFunction
 ) => {
+  const data = {...values,
+    to_email: 'bitcoin-studio@protonmail.com',
+    subject: 'Bitcoin Studio Workshop Registration'}
+
   axios
-    .post(`${process.env.REACT_APP_SEND_EMAIL_URL}`, {...values,
-      to_email: 'bitcoin-studio@protonmail.com',
-      subject: 'Bitcoin Studio Workshop Registration'})
+    .post(`${process.env.REACT_APP_SEND_EMAIL_URL}`,
+      data,
+      {headers: {Hmac: await sign(JSON.stringify(data))}})
     .then(() => {
       actions.resetForm({values: initialFormValues})
     })

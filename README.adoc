@@ -72,21 +72,33 @@ The service worker may cause issues. If you activate it, make sure to develop th
 
 
 
-== OpenFaaS Hosting Considerations
+== Differences in Dev/Prod Environments
 
-=== 127.0.0.1 and Okteto Serving From SubPath
+=== Development - 127.0.0.1 and Okteto Serving From SubPath
 
-.Set env variable
+.Environment variables
  PUBLIC_URL=/function/bitcoin-studio-client
  REACT_APP_SEND_EMAIL_URL=https://openfaas-ingress-janaka-steph.cloud.okteto.net/function/bitcoin-studio-client/api/send-email
 
-Manifest.json start_url = "/function/bitcoin-studio-client/index.html"
+.Manifest.json
+ start_url = "/function/bitcoin-studio-client/index.html"
+
+.Nginx
+ /api/email points to dev server
+
+.Deploy command
+ faas up -f stack-dev.yml -n janaka-steph
 
 
-=== Custom Domain (using FunctionIngress CRD)
+=== Production - Custom Domain (using FunctionIngress CRD)
 
-No PUBLIC_URL env variable
-
+.Environment variables
+ No PUBLIC_URL
  REACT_APP_SEND_EMAIL_URL=/api/send-email
 
-Manifest.json start_url = "."
+.Manifest.json
+ start_url = "."
+
+.Nginx
+ /api/email points to prod server
+
