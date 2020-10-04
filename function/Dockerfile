@@ -1,5 +1,5 @@
 # Based on https://github.com/alexellis/static-site-template
-FROM openfaas/of-watchdog:0.7.7 AS watchdog
+FROM openfaas/of-watchdog:0.8.1 AS watchdog
 
 FROM nginxinc/nginx-unprivileged:1.19-alpine AS runtime
 USER root
