@@ -8,6 +8,7 @@ spec:
   domain: "www.bitcoin-studio.com"
   function: "bitcoin-studio"
   ingressType: "nginx"
+  path: ""
   tls:
     enabled: true
     issuerRef:
