@@ -1,5 +1,7 @@
 = Bitcoin Studio website - client repository
 
+IMPORTANT: This branch was in prod until October 2022 but k8s/openfaas is a bit overkill and too expensive
+
 * Code
 ** Based on Create-React-App
 ** Typescript
