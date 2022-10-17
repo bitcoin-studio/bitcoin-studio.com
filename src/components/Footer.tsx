@@ -1,9 +1,10 @@
 import React from 'react'
 import {Trans, useTranslation} from 'react-i18next'
 import {Link} from 'react-router-dom'
+import {i18translateType} from "../../typings/types";
 
 export const Footer: React.FC = () => {
-  const {t, i18n} = useTranslation('Footer')
+  const {t, i18n}: i18translateType = useTranslation('Footer')
   const pathMapping = [
     ['workshops', 'formations'],
     ['resources', 'ressources'],
@@ -56,7 +57,7 @@ export const Footer: React.FC = () => {
                 <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/stephane-roche">{t('col2.3')}</a>
               </li>
               <li>
-                <a target="_blank" rel="noopener noreferrer" href="https://janakasteph.keybase.pub/">{t('col2.4')}</a>
+                <a target="_blank" rel="noopener noreferrer" href="src/components/Footer">{t('col2.4')}</a>
               </li>
             </ul>
           </nav>
@@ -72,10 +73,10 @@ export const Footer: React.FC = () => {
             _
             <a href="https://www.flaticon.com/authors/eucalyp" title="Eucalyp">_</a>
             _
-            <a href="https://www.flaticon.com/" title="Flaticon">_</a>
+            <a href="src/components/Footer" title="Flaticon">_</a>
             _
             <a
-              href="http://creativecommons.org/licenses/by/3.0/"
+              href="src/components/Footer"
               title="Creative Commons BY 3.0"
               rel="noopener noreferrer"
               target="_blank"

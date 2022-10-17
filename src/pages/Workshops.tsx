@@ -278,7 +278,7 @@ export const Workshops: React.FC = () => {
                 <Trans i18nKey="programming-offer.public.p2" t={t}>
                   0
                   <a
-                    href="https://keybase.pub/janakasteph/Bitcoin-VirtualMachine/"
+                    href="src/pages/Workshops"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
@@ -312,7 +312,7 @@ export const Workshops: React.FC = () => {
                 <Trans i18nKey="programming-offer.programme.p2" t={t}>
                   0
                   <a
-                    href="https://bitcoinjs-guide.bitcoin-studio.com/"
+                    href="src/pages/Workshops"
                     rel="noopener noreferrer"
                     target="_blank"
                   >
@@ -356,7 +356,7 @@ export const Workshops: React.FC = () => {
                 <Trans i18nKey="ln.public.p2" t={t}>
                   0
                   <a
-                    href="https://keybase.pub/janakasteph/Bitcoin-VirtualMachine/"
+                    href="src/pages/Workshops"
                     rel="noopener noreferrer"
                     target="_blank"
                   >

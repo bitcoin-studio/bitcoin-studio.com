@@ -6,7 +6,6 @@ import * as Yup from 'yup'
 import axios from 'axios'
 import swal from '@sweetalert/with-react'
 import {RegistrationSecondScreen} from './RegistrationSecondScreen'
-import {sign} from '../../hmac'
 
 type Props = {
   t: TFunction
@@ -49,9 +48,7 @@ const submitForm = async (
     subject: 'Bitcoin Studio Workshop Registration'}
 
   axios
-    .post(`${process.env.REACT_APP_SEND_EMAIL_URL}`,
-      data,
-      {headers: {Hmac: await sign(JSON.stringify(data))}})
+    .post(`${process.env.REACT_APP_SEND_EMAIL_URL}`, data)
     .then(() => {
       actions.resetForm({values: initialFormValues})
     })
@@ -87,6 +84,7 @@ export const RegistrationFirstScreen: FC<Props> = ({t, ev}) => (
           placeholder={t('registration.placeholders.name')}
         />
         <p>
+          {/*@ts-ignore*/}
           <ErrorMessage name="from_name"/>
         </p>
 
@@ -96,6 +94,7 @@ export const RegistrationFirstScreen: FC<Props> = ({t, ev}) => (
           placeholder="E-mail"
         />
         <p>
+          {/*@ts-ignore*/}
           <ErrorMessage name="from_email"/>
         </p>
 
@@ -106,6 +105,7 @@ export const RegistrationFirstScreen: FC<Props> = ({t, ev}) => (
           rows={15}
         />
         <p>
+          {/*@ts-ignore*/}
           <ErrorMessage name="message"/>
         </p>
 
