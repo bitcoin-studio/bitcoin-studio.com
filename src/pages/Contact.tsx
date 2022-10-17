@@ -4,13 +4,13 @@ import {useTranslation} from 'react-i18next'
 import {Formik, Field, Form, ErrorMessage, FormikHelpers} from 'formik'
 import * as Yup from 'yup'
 import axios from 'axios'
+// @ts-ignore
 import swal from '@sweetalert/with-react'
 import {Helmet} from 'react-helmet'
 import keybase from '../assets/icons/keybase.svg'
 import linkedin from '../assets/icons/linkedin.svg'
 import pgp from '../assets/icons/pgp.svg'
 import twitter from '../assets/icons/twitter.svg'
-import {sign} from '../hmac'
 
 type FormValues = {
   from_name: string
@@ -27,6 +27,7 @@ const initialValues: FormValues = {
 export const Contact: React.FC = () => {
   const {t, i18n} = useTranslation(['Contact', 'Meta'])
 
+  // @ts-ignore
   return (
     <>
       <Helmet>
@@ -137,9 +138,7 @@ export const Contact: React.FC = () => {
                 subject: 'Bitcoin Studio Website Form'}
 
               axios
-                .post(`${process.env.REACT_APP_SEND_EMAIL_URL}`,
-                  data,
-                  {headers: {Hmac: await sign(JSON.stringify(data))}})
+                .post(`${process.env.REACT_APP_SEND_EMAIL_URL}`, data)
                 .then(() => {
                   actions.resetForm({values: initialValues})
                 })
@@ -167,6 +166,7 @@ export const Contact: React.FC = () => {
                   type="text"
                 />
                 <p>
+                  {/*@ts-ignore*/}
                   <ErrorMessage name="from_name"/>
                 </p>
 
@@ -176,6 +176,7 @@ export const Contact: React.FC = () => {
                   type="email"
                 />
                 <p>
+                  {/*@ts-ignore*/}
                   <ErrorMessage name="from_email"/>
                 </p>
 
@@ -186,6 +187,7 @@ export const Contact: React.FC = () => {
                   rows={15}
                 />
                 <p>
+                  {/*@ts-ignore*/}
                   <ErrorMessage name="message"/>
                 </p>
 

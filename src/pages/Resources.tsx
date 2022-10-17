@@ -115,7 +115,7 @@ export const Resources: React.FC = () => {
             <Trans i18nKey="projects.mnemonic.p1" t={t}>
               0
               <a
-                href="https://empoweredlaw.com/books/"
+                href="src/pages/Resources"
                 rel="noopener noreferrer"
                 target="_blank"
               >
@@ -151,7 +151,7 @@ export const Resources: React.FC = () => {
                 </a>
                 2
                 <a
-                  href="http://theblock.cafe/"
+                  href="src/pages/Resources"
                   rel="noopener noreferrer"
                   target="_blank"
                 >

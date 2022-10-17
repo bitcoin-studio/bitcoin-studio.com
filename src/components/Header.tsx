@@ -3,6 +3,7 @@ import log from 'loglevel'
 import {Link, NavLink} from 'react-router-dom'
 import {useTranslation} from 'react-i18next'
 import logo from '../assets/img/bitcoin-studio-black.svg'
+import {i18translateType} from "../../typings/types";
 
 type Props = {
   id: string
@@ -10,7 +11,7 @@ type Props = {
 }
 
 export const Header: React.FC<Props> = ({isMenuOpen, id}) => {
-  const {t, i18n} = useTranslation(['Header'])
+  const {t, i18n}: i18translateType = useTranslation(['Header'])
   const pathMapping = [
     ['', ''],
     ['workshops', 'formations'],
@@ -23,9 +24,7 @@ export const Header: React.FC<Props> = ({isMenuOpen, id}) => {
     i18n.changeLanguage(askedLng)
       // Rewrite current URL
       .then(() => {
-        const subpathsMatches = window.location.pathname.match(/\/([a-zA-Z-]*)/g)
-        // If OpenFaaS function slice first 2 subpaths
-        let subpaths = (subpathsMatches?.[0].substring(1) === 'function') ? subpathsMatches.slice(2) : subpathsMatches
+        let subpaths = window.location.pathname.match(/\/([a-zA-Z-]*)/g)
         // Set currentLng
         const currentLng = subpaths?.[0] === '/fr' ? 'fr' : 'en'
 
@@ -43,7 +42,7 @@ export const Header: React.FC<Props> = ({isMenuOpen, id}) => {
           window.location.assign(process.env.PUBLIC_URL ? `${process.env.PUBLIC_URL}/${path?.[0]}` : `/${path?.[0]}`)
         }
       })
-      .catch((e) => log.error(e))
+      .catch((e: any) => log.error(e))
   }, [i18n, pathMapping])
 
   const tabIndex = isMenuOpen ? 0 : -1
