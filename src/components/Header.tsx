@@ -1,9 +1,9 @@
-import React, {useCallback} from 'react'
+import React, {useCallback, useMemo} from 'react'
 import log from 'loglevel'
 import {Link, NavLink} from 'react-router-dom'
 import {useTranslation} from 'react-i18next'
 import logo from '../assets/img/bitcoin-studio-black.svg'
-import {i18translateType} from "../../typings/types";
+import {i18translateType} from '../../typings/types'
 
 type Props = {
   id: string
@@ -12,13 +12,13 @@ type Props = {
 
 export const Header: React.FC<Props> = ({isMenuOpen, id}) => {
   const {t, i18n}: i18translateType = useTranslation(['Header'])
-  const pathMapping = [
+  const pathMapping = useMemo(() => [
     ['', ''],
     ['workshops', 'formations'],
     ['resources', 'ressources'],
     ['about', 'a-propos'],
     ['contact', 'contact'],
-  ]
+  ], [])
 
   const changeLanguage = useCallback((askedLng: string) => {
     i18n.changeLanguage(askedLng)
@@ -55,15 +55,21 @@ export const Header: React.FC<Props> = ({isMenuOpen, id}) => {
       <nav aria-hidden={!isMenuOpen} className={`header__links ${isMenuOpen ? 'nav__mobile--open' : ''}`}>
         <ul>
           <li>
-            <NavLink exact={true} to="/" activeClassName="menu-item--active" tabIndex={tabIndex}>
+            <NavLink
+              to="/"
+              className={({isActive}) =>
+                isActive ? 'menu-item--active' : undefined
+              }
+              tabIndex={tabIndex}>
               {t('Header:home')}
             </NavLink>
           </li>
           <li>
             <NavLink
-              exact={true}
               to={`${i18n.language === 'fr' ? pathMapping[1][1] : pathMapping[1][0]}`}
-              activeClassName="menu-item--active"
+              className={({isActive}) =>
+                isActive ? 'menu-item--active' : undefined
+              }
               tabIndex={tabIndex}
             >
               {t('Header:workshops')}
@@ -71,9 +77,10 @@ export const Header: React.FC<Props> = ({isMenuOpen, id}) => {
           </li>
           <li>
             <NavLink
-              exact={true}
               to={`${i18n.language === 'fr' ? pathMapping[2][1] : pathMapping[2][0]}`}
-              activeClassName="menu-item--active"
+              className={({isActive}) =>
+                isActive ? 'menu-item--active' : undefined
+              }
               tabIndex={tabIndex}
             >
               {t('Header:resources')}
@@ -81,9 +88,10 @@ export const Header: React.FC<Props> = ({isMenuOpen, id}) => {
           </li>
           <li>
             <NavLink
-              exact={true}
               to={`${i18n.language === 'fr' ? pathMapping[3][1] : pathMapping[3][0]}`}
-              activeClassName="menu-item--active"
+              className={({isActive}) =>
+                isActive ? 'menu-item--active' : undefined
+              }
               tabIndex={tabIndex}
             >
               {t('Header:about')}
@@ -91,9 +99,10 @@ export const Header: React.FC<Props> = ({isMenuOpen, id}) => {
           </li>
           <li>
             <NavLink
-              exact={true}
               to={`${i18n.language === 'fr' ? pathMapping[4][1] : pathMapping[4][0]}`}
-              activeClassName="menu-item--active"
+              className={({isActive}) =>
+                isActive ? 'menu-item--active' : undefined
+              }
               tabIndex={tabIndex}
             >
               {t('Header:contact')}

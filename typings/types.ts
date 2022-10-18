@@ -1,4 +1,4 @@
-import {StringMap, TOptions} from "i18next";
+import {StringMap, TOptions} from 'i18next'
 
 export type i18translateType = {
   i18n: any,

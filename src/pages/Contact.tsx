@@ -166,7 +166,6 @@ export const Contact: React.FC = () => {
                   type="text"
                 />
                 <p>
-                  {/*@ts-ignore*/}
                   <ErrorMessage name="from_name"/>
                 </p>
 
@@ -176,7 +175,6 @@ export const Contact: React.FC = () => {
                   type="email"
                 />
                 <p>
-                  {/*@ts-ignore*/}
                   <ErrorMessage name="from_email"/>
                 </p>
 
@@ -187,7 +185,6 @@ export const Contact: React.FC = () => {
                   rows={15}
                 />
                 <p>
-                  {/*@ts-ignore*/}
                   <ErrorMessage name="message"/>
                 </p>
 

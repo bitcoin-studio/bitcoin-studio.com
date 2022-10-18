@@ -9,7 +9,7 @@ const detectionOptions: DetectorOptions = {
   order: ['customPath', 'localStorage'],
   lookupLocalStorage: 'i18nextLng',
   caches: ['localStorage'],
-  excludeCacheFor: ['cimode']
+  excludeCacheFor: ['cimode'],
 }
 
 const customPath: CustomDetector = {
@@ -25,7 +25,7 @@ const customPath: CustomDetector = {
       }
     }
     return found
-  }
+  },
 }
 
 const languageDetector = new LanguageDetector(null, detectionOptions)

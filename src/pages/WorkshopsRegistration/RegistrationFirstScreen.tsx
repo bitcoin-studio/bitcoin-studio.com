@@ -41,7 +41,7 @@ const submitForm = async (
   values: FormValues,
   actions: FormikHelpers<FormValues>,
   ev: React.MouseEvent<HTMLButtonElement, MouseEvent>,
-  t: TFunction
+  t: TFunction,
 ) => {
   const data = {...values,
     to_email: 'bitcoin-studio@protonmail.com',
@@ -84,7 +84,7 @@ export const RegistrationFirstScreen: FC<Props> = ({t, ev}) => (
           placeholder={t('registration.placeholders.name')}
         />
         <p>
-          {/*@ts-ignore*/}
+          {/* @ts-ignore*/}
           <ErrorMessage name="from_name"/>
         </p>
 
@@ -94,7 +94,7 @@ export const RegistrationFirstScreen: FC<Props> = ({t, ev}) => (
           placeholder="E-mail"
         />
         <p>
-          {/*@ts-ignore*/}
+          {/* @ts-ignore*/}
           <ErrorMessage name="from_email"/>
         </p>
 
@@ -105,7 +105,7 @@ export const RegistrationFirstScreen: FC<Props> = ({t, ev}) => (
           rows={15}
         />
         <p>
-          {/*@ts-ignore*/}
+          {/* @ts-ignore*/}
           <ErrorMessage name="message"/>
         </p>
 

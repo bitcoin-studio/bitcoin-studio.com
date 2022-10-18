@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useRef, useCallback} from 'react'
 import {Helmet} from 'react-helmet'
 import FocusLock from 'react-focus-lock'
-import {useHistory} from 'react-router-dom'
+import {useLocation} from 'react-router-dom'
 import {Header} from './components/Header'
 import {Main} from './components/Main'
 import {Footer} from './components/Footer'
@@ -12,7 +12,7 @@ export const App: React.FC = () => {
   const menuId = 'main-menu'
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const node = useRef(null)
-  const history = useHistory()
+  const location = useLocation()
 
   const toggleScrolling = useCallback(() => {
     if (isMenuOpen && document.body.style.overflow === 'hidden') {
@@ -29,10 +29,10 @@ export const App: React.FC = () => {
     }
   })
 
-  useEffect(() => history.listen(() => {
+  useEffect(() => {
     setIsMenuOpen(false)
     document.body.style.overflow = ''
-  }))
+  }, [location])
 
   const onToggleMenu = useCallback(() => {
     toggleScrolling()

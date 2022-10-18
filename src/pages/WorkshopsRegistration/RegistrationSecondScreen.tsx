@@ -46,7 +46,7 @@ const InputRadioTrainings: FC<InputRadioTrainingsProps> = (
     t,
     ev,
     setSelectedOffer,
-  }
+  },
 ) => {
   const trainingsElements = trainings.map((training) => (
     <div key={training.id}>

@@ -1,7 +1,7 @@
 import React from 'react'
 import {Trans, useTranslation} from 'react-i18next'
 import {Link} from 'react-router-dom'
-import {i18translateType} from "../../typings/types";
+import {i18translateType} from '../../typings/types'
 
 export const Footer: React.FC = () => {
   const {t, i18n}: i18translateType = useTranslation('Footer')
