@@ -154,7 +154,7 @@ export const Contact: React.FC = () => {
                 })
                 .catch((error) => {
                   log.error('Error while submitting email form')
-                  log.error(error.response)
+                  log.error(error)
                 })
             }}
           >

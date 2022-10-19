@@ -25,3 +25,5 @@ logs
 
 # Misc
 commands.adoc
+# Local Netlify folder
+.netlify
